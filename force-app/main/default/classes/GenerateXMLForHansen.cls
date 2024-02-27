@@ -38,6 +38,7 @@ global without sharing class GenerateXMLForHansen implements IProcess {
                 Order.Account.AccountNumber,
                 vlocity_cmt__BillingAccountId__r.Description,
                 vlocity_cmt__BillingAccountId__r.AccountNumber,
+                vlocity_cmt__BillingAccountId__r.Parent.AccountNumber,
                 Order.vlocity_cmt__QuoteId__r.CreatedDate,
                 Order.vlocity_cmt__QuoteId__r.ARTL_CreatedDate__c,
                 Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber
@@ -155,7 +156,7 @@ global without sharing class GenerateXMLForHansen implements IProcess {
                 valueMap.put(XMLConstants.VALUEDETAIL, orderItem.Order.Account.AccountNumber);
                 //valueMap.put(XMLConstants.VALUEDETAIL, orderItem.Order.Account.Description);
             } else if (characteristicKeys == 'Customer_Ref') {
-                valueMap.put(XMLConstants.VALUEDETAIL, orderItem.Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber);
+                valueMap.put(XMLConstants.VALUEDETAIL, orderItem.vlocity_cmt__BillingAccountId__r.Parent.AccountNumber);
                 //valueMap.put(XMLConstants.VALUEDETAIL, orderItem.vlocity_cmt__BillingAccountId__r.Description);
             } else {
                 valueMap.put(XMLConstants.VALUEDETAIL, data.get(characteristicKeys));
@@ -179,7 +180,7 @@ global without sharing class GenerateXMLForHansen implements IProcess {
         Map < String, Object > attributeSpecMap = new Map < String, Object > ();
         primaryAttr.put('value', '-1');
         attributeMap.put('attributes', primaryAttr);
-        customerKeyMap.put(XMLConstants.EXTERNALKEY, orderItem.Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber);
+        customerKeyMap.put(XMLConstants.EXTERNALKEY, orderItem.vlocity_cmt__BillingAccountId__r.Parent.AccountNumber);
         //customerKeyMap.put(XMLConstants.EXTERNALKEY, orderItem.vlocity_cmt__BillingAccountId__r.Description);
         customerKeyMap.put(XMLConstants.PRIMARYKEY, attributeMap);
         customerKeyMap.put(XMLConstants.TYPE, 'Customer');

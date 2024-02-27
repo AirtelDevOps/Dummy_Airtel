@@ -37,6 +37,7 @@ global without sharing class GenerateXMLForMACD implements IProcess {
             orderItemDets = [select Id, OrderId, Order.OrderNumber, Order.Account.Name,
                 Order.EffectiveDate, Order.Hansen_Order_Status__c,
                 Order.Account.AccountNumber, vlocity_cmt__BillingAccountId__r.AccountNumber,
+                vlocity_cmt__BillingAccountId__r.Parent.AccountNumber,
                 Order.vlocity_cmt__QuoteId__r.CreatedDate,
                 Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber,
                 Order.vlocity_cmt__QuoteId__r.ARTL_CreatedDate__c
@@ -151,7 +152,7 @@ global without sharing class GenerateXMLForMACD implements IProcess {
             } else if (characteristicKeys == 'Oracle_Crm_Number') {
                 valueMap.put(XMLConstants.VALUEDETAIL, orderItem.Order.Account.AccountNumber);
             } else if (characteristicKeys == 'Customer_Ref') {
-                valueMap.put(XMLConstants.VALUEDETAIL, orderItem.Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber);
+                valueMap.put(XMLConstants.VALUEDETAIL, orderItem.vlocity_cmt__BillingAccountId__r.Parent.AccountNumber);
             } else {
                 valueMap.put(XMLConstants.VALUEDETAIL, data.get(characteristicKeys));
             }
@@ -174,7 +175,7 @@ global without sharing class GenerateXMLForMACD implements IProcess {
         Map < String, Object > attributeSpecMap = new Map < String, Object > ();
         primaryAttr.put('value', '-1');
         attributeMap.put('attributes', primaryAttr);
-        customerKeyMap.put(XMLConstants.EXTERNALKEY, orderItem.Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber);
+        customerKeyMap.put(XMLConstants.EXTERNALKEY, orderItem.vlocity_cmt__BillingAccountId__r.Parent.AccountNumber);
         customerKeyMap.put(XMLConstants.PRIMARYKEY, attributeMap);
         customerKeyMap.put(XMLConstants.TYPE, 'Customer');
         customerSpecKeyMap.put(XMLConstants.EXTERNALKEY, 'Customer');

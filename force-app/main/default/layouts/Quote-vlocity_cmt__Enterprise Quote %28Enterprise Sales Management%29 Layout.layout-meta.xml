@@ -172,6 +172,10 @@
                 <behavior>Edit</behavior>
                 <field>ARTL_ReliesOnValidationError__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ARTL_OVApprovedDate__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -568,10 +572,10 @@
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
         <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
         <fields>Document_Name__c</fields>
         <fields>Category__c</fields>
         <fields>Type__c</fields>
+        <fields>s3_Document_URL__c</fields>
         <relatedList>ARTL_Document__c.Quote__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
