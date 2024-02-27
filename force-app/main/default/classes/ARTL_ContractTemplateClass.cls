@@ -47,11 +47,11 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
                                         WHERE Id=:contractId];
                 String quoteId = contractRec.vlocity_cmt__QuoteId__c;
                 Quote thisQuote = [select id, ARTL_AnnualRecurringTotal__c,vlocity_cmt__EffectiveOneTimeTotal__c from quote where id=:quoteId Limit 1];				
-                Map<Id,ARTL_Billing_Staging__c>  QuotelineStagingMap=getBillStagingRecords(quoteId);
+                Map<String,ARTL_Billing_Staging__c>  QuotelineStagingMap=getBillStagingRecords(quoteId);
                 List<QuoteLineItem> lineitemlist = new List<QuoteLineItem>();
                 
                 // Construct Dynamic Query for QuoteLineItem Query
-                String LineItemQuery = 'select id,quote.vlocity_cmt__EffectiveOneTimeTotal__c,CND__c ,ARTL_Service_Type__c,quote.account.name,Quote.Name,Annual_Recurring_Total__c,Annual_Recurring_Charge__c,vlocity_cmt__AttributeSelectedValues__c,Quote.vlocity_cmt__OneTimeTotal__c,Quote.ARTL_AnnualRecurringTotal__c,Quote.vlocity_cmt__RecurringTotal__c,quote.QuoteNumber,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__City__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__State__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__PostalCode__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__Country__c,vlocity_cmt__AssetReferenceId__c,vlocity_cmt__JSONAttribute__c,vlocity_cmt__QuoteGroupId__c,vlocity_cmt__QuoteMemberId__c,vlocity_cmt__QuoteMemberId__r.DCP_Record__r.Contact__r.name,vlocity_cmt__QuoteMemberId__r.DCP_Record__r.Contact__r.phone,Product2id,Product2.Name,Product2.vlocity_cmt__IsLocationDependent__c,vlocity_cmt__QuoteGroupId__r.Name,vlocity_cmt__ParentItemId__c,vlocity_cmt__RootItemId__c,vlocity_cmt__OneTimeTotal__c,Quantity,vlocity_cmt__RecurringTotal__c,';
+                String LineItemQuery = 'select id,ARTL_LSI_OLI_Formula__c,quote.vlocity_cmt__EffectiveOneTimeTotal__c,CND__c ,ARTL_Service_Type__c,quote.account.name,Quote.Name,Annual_Recurring_Total__c,Annual_Recurring_Charge__c,vlocity_cmt__AttributeSelectedValues__c,Quote.vlocity_cmt__OneTimeTotal__c,Quote.ARTL_AnnualRecurringTotal__c,Quote.vlocity_cmt__RecurringTotal__c,quote.QuoteNumber,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__City__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__State__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__PostalCode__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__Country__c,vlocity_cmt__AssetReferenceId__c,vlocity_cmt__JSONAttribute__c,vlocity_cmt__QuoteGroupId__c,vlocity_cmt__QuoteMemberId__c,vlocity_cmt__QuoteMemberId__r.DCP_Record__r.Contact__r.name,vlocity_cmt__QuoteMemberId__r.DCP_Record__r.Contact__r.phone,Product2id,Product2.Name,Product2.vlocity_cmt__IsLocationDependent__c,vlocity_cmt__QuoteGroupId__r.Name,vlocity_cmt__ParentItemId__c,vlocity_cmt__RootItemId__c,vlocity_cmt__OneTimeTotal__c,Quantity,vlocity_cmt__RecurringTotal__c,';
                 LineItemQuery+='TotalPrice,Product2.vlocity_cmt__AttributeMetadata__c,Product2.Description,vlocity_cmt__EffectiveQuantity__c,Product2.ProductCode,vlocity_cmt__AttributeMetadataChanges__c,Product2.ARTL_LSIRequired__c from QuoteLineItem';
                 String LineItemwhereClause;
                 
@@ -148,13 +148,13 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
                         ARTL_Billing_Staging__c stagerecord=new  ARTL_Billing_Staging__c();
                         system.debug('memberAndRootItemMap QuotelineStagingMap=>'+JSON.serializePretty(QuotelineStagingMap));
                         system.debug('qLI.id::' + qLI.id);
-                        system.debug('QuotelineStagingMap.get(qLI.id)::' + QuotelineStagingMap.get(qLI.id));
+                        system.debug('QuotelineStagingMap.get(qLI.id)::' + QuotelineStagingMap.get(qLI.ARTL_LSI_OLI_Formula__c));
                         //this part is coming as null.Iterating with root qli and map contains primary link
                         //Map key :: link QLI :: value :: billing staging.
                         //its not going into if block
-                        if(QuotelineStagingMap.get(qLI.id)!=null){
+                        if(QuotelineStagingMap.get(qLI.ARTL_LSI_OLI_Formula__c)!=null){
                             system.debug('qLI.id::' + qLI.id);
-                            stagerecord=QuotelineStagingMap.get(qLI.id);
+                            stagerecord=QuotelineStagingMap.get(qLI.ARTL_LSI_OLI_Formula__c);
                         }
                         system.debug('qli.vlocity_cmt__OneTimeTotal__c '+qli.vlocity_cmt__OneTimeTotal__c);
                          
@@ -269,16 +269,16 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
         
     }
     
-    private Map<Id,ARTL_Billing_Staging__c>  getBillStagingRecords(String quoteId){
-        String billStagingFields='Installation_GST__c,Billing_GST__c,Quote_Line_Item__c,Delivery_Standard_Reason__c,Billing_Address__c,Billing_PinCode__c,Billing_State__c,Billing_Street__c,Billing_City__c,Billing_Country__c,DCP_First_Name__c,DCP_Last_Name__c,DCP_Phone__c';
+    private Map<String,ARTL_Billing_Staging__c>  getBillStagingRecords(String quoteId){
+        String billStagingFields='Installation_GST__c,LSI__c,Billing_GST__c,Quote_Line_Item__c,Delivery_Standard_Reason__c,Billing_Address__c,Billing_PinCode__c,Billing_State__c,Billing_Street__c,Billing_City__c,Billing_Country__c,DCP_First_Name__c,DCP_Last_Name__c,DCP_Phone__c';
         String whereClause='WHERE Quote__c=:quoteId' ;       
         String billStagingQuery='SELECT '+ billStagingFields+ ' FROM ARTL_Billing_Staging__c ' +whereClause;
         system.debug('billStagingQuery '+billStagingQuery);
         List<ARTL_Billing_Staging__c> billStaging=Database.query(billStagingQuery);
         system.debug('memberAndRootItemMap billStaging=>'+JSON.serializePretty(billStaging));
-        Map<Id,ARTL_Billing_Staging__c> QuotelineStagingMap=new Map<Id,ARTL_Billing_Staging__c> ();
+        Map<String,ARTL_Billing_Staging__c> QuotelineStagingMap=new Map<String,ARTL_Billing_Staging__c> ();
         for(ARTL_Billing_Staging__c stageRec:billStaging){
-            QuotelineStagingMap.put(stageRec.Quote_Line_Item__c,stageRec);
+            QuotelineStagingMap.put(stageRec.LSI__c,stageRec);
         } 
         system.debug('memberAndRootItemMap QuotelineStagingMap=>'+JSON.serializePretty(QuotelineStagingMap));
         return QuotelineStagingMap;

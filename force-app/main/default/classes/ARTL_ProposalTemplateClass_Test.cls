@@ -15,6 +15,7 @@ public with sharing class ARTL_ProposalTemplateClass_Test {
                 ARTL_Designation__c ='test',
                 ARTL_Contact_Role__c ='Billing Contact',
                 phone='1234567890998',
+                Country_Code__c = '91',
                 AccountId = testAccount.Id
             );
             insert testContact;
@@ -56,6 +57,7 @@ public with sharing class ARTL_ProposalTemplateClass_Test {
             Product2 testProduct = new Product2(
                 Name = 'Test Product',
                 ProductCode = 'P001',
+                ARTL_LSIRequired__c = true,
                 vlocity_cmt__IsLocationDependent__c = false
             );
             insert testProduct;

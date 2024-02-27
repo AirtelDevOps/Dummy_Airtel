@@ -29,7 +29,7 @@
         "dataType": null,
         "dateFormat": "MM-dd-yyyy",
         "disOnTplt": false,
-        "expression": "IF(\n        OR(\n            %InvoiceSR% == 'SEZ',\n            %InvoiceSR% == 'SEZ with taxes'\n        ),\n        'SEZ',\n        IF(\n            OR(\n                %InvoiceSR% == 'Non-SEZ',\n                %InvoiceSR% == 'Zero rated Supply - FTWZ',\n                %InvoiceSR% == 'Non taxable as transaction within same company'\n            ),\n            'Non-SEZ',\n            IF(\n                %InvoiceSR% == 'UIN',\n                'UIN',\n                ''\n            )\n        )\n    )",
+        "expression": "IF(\n        OR(\n            %InvoiceSR% == 'SEZ',\n            %InvoiceSR% == 'SEZ with taxes'\n        ),\n        'SEZ',\n        IF(\n            OR(\n                %InvoiceSR% == 'Non-SEZ',\n                %InvoiceSR% == 'Zero rated Supply - FTWZ',\n                %InvoiceSR% == 'Non Taxable as transactions within same Company'\n            ),\n            'Non-SEZ',\n            IF(\n                %InvoiceSR% == 'UIN',\n                'UIN',\n                ''\n            )\n        )\n    )",
         "hide": true,
         "hideGroupSep": false,
         "inputWidth": 12,

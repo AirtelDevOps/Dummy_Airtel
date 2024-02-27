@@ -5,7 +5,7 @@
 * @Reviewer:
 * @Review Date:
 * @Description: ARTL_ProposalTemplateClass for B2BExpressProposalTemplateDetailed and B2BExpressProposalTemplateSummary
-* @Last Modified By: 
+* @Last Modified By: Prakash Sahu
 * @Last Modified Date: 08/10/2023
 *******************************************************************************************************/
 global with sharing class ARTL_ProposalTemplateClass implements vlocity_cmt.VlocityOpenInterface2 
@@ -48,7 +48,7 @@ global with sharing class ARTL_ProposalTemplateClass implements vlocity_cmt.Vloc
             List<QuoteLineItem> lineitemlist = new List<QuoteLineItem>();
             
             // Construct Dynamic Query for QuoteLineItem Query
-            String LineItemQuery = 'select id,Quote.Name,Annual_Recurring_Charge__c,Annual_Recurring_Total__c,vlocity_cmt__AttributeSelectedValues__c,Quote.vlocity_cmt__OneTimeTotal__c,Quote.ARTL_Effective_Quote_Total__c,Quote.ARTL_AnnualRecurringTotal__c,Quote.vlocity_cmt__RecurringTotal__c,quote.QuoteNumber,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c,vlocity_cmt__AssetReferenceId__c,vlocity_cmt__JSONAttribute__c,vlocity_cmt__QuoteGroupId__c,vlocity_cmt__QuoteMemberId__c,Product2id,Product2.Name,Product2.vlocity_cmt__IsLocationDependent__c,vlocity_cmt__QuoteGroupId__r.Name,vlocity_cmt__ParentItemId__c,vlocity_cmt__RootItemId__c,vlocity_cmt__OneTimeTotal__c,Quantity,vlocity_cmt__RecurringTotal__c,TotalPrice,Product2.vlocity_cmt__AttributeMetadata__c,Product2.Description,vlocity_cmt__EffectiveQuantity__c,Product2.ProductCode,vlocity_cmt__AttributeMetadataChanges__c from QuoteLineItem';
+            String LineItemQuery = 'select id,product2.ARTL_LSIRequired__c,Quote.Name,Annual_Recurring_Charge__c,Annual_Recurring_Total__c,vlocity_cmt__AttributeSelectedValues__c,Quote.vlocity_cmt__OneTimeTotal__c,Quote.ARTL_Effective_Quote_Total__c,Quote.ARTL_AnnualRecurringTotal__c,Quote.vlocity_cmt__RecurringTotal__c,quote.QuoteNumber,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c,vlocity_cmt__AssetReferenceId__c,vlocity_cmt__JSONAttribute__c,vlocity_cmt__QuoteGroupId__c,vlocity_cmt__QuoteMemberId__c,Product2id,Product2.Name,Product2.vlocity_cmt__IsLocationDependent__c,vlocity_cmt__QuoteGroupId__r.Name,vlocity_cmt__ParentItemId__c,vlocity_cmt__RootItemId__c,vlocity_cmt__OneTimeTotal__c,Quantity,vlocity_cmt__RecurringTotal__c,TotalPrice,Product2.vlocity_cmt__AttributeMetadata__c,Product2.Description,vlocity_cmt__EffectiveQuantity__c,Product2.ProductCode,vlocity_cmt__AttributeMetadataChanges__c from QuoteLineItem';
             String LineItemwhereClasue;
             LineItemwhereClasue = 'QuoteId=:quoteId';
             
@@ -232,6 +232,41 @@ global with sharing class ARTL_ProposalTemplateClass implements vlocity_cmt.Vloc
                         // clsQRoot.RecurringTotal = qLIRoot.vlocity_cmt__RecurringTotal__c;
                         // List< cls_QuoteLineItemChild > clsCList = new List< cls_QuoteLineItemChild >();
                       //  List< Map< String, Object > > clsCList = new List< Map< String, Object > >();
+
+                      //check LSI products in offer level
+                      if(qLIRoot.product2.ARTL_LSIRequired__c && qLIRoot.vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c != null && qLIRoot.vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c == memberName ){
+                        Map< String, Object > alsQMC = new Map< String, Object>();
+                        memberCount++;
+                        alsQMC.put('SlNo',memberCount);
+                        alsQMC.put('MemberName',memberName);
+                        alsQMC.put('OfferName',qLIRoot.Product2.Name);
+
+                       // Map < String , Object > clsQC = new Map< String, Object >();
+                       alsQMC.put('ProductName',qLIRoot.Product2.Name);
+                       alsQMC.put('OneTimeTotal',qLIRoot.vlocity_cmt__OneTimeTotal__c);
+                       alsQMC.put('Quantity',qLIRoot.Quantity);
+                       alsQMC.put('RecurringTotal',qLIRoot.vlocity_cmt__RecurringTotal__c);
+                       alsQMC.put('AnnualRecurringCharge',qLIRoot.Annual_Recurring_Total__c);
+                        Map< String, String > attSelectedMap = new Map< String, String >();
+                        if(qLIRoot.vlocity_cmt__AttributeSelectedValues__c != null){
+                            attSelectedMap = (Map< String, String >)JSON.deserialize(qLIRoot.vlocity_cmt__AttributeSelectedValues__c, Map< String, String >.class);
+                        }
+                       if(attSelectedMap != null && attSelectedMap.keySet().size() >0 && attSelectedMap.containsKey('ATT_ACCESS_BANDWIDTH')){
+                        alsQMC.put('Bandwidth',attSelectedMap.get('ATT_ACCESS_BANDWIDTH'));
+                        System.debug('attSelectedMap.get(ATT_ACCESS_BANDWIDTH)---'+attSelectedMap.get('ATT_ACCESS_BANDWIDTH'));
+                       }else{
+                        System.debug('Data not exist');
+                       }
+                       
+                       if(attSelectedMap != null && attSelectedMap.keySet().size() >0 && attSelectedMap.containsKey('ATT_SERVICE_TYPE')){
+                        alsQMC.put('ServiceType',attSelectedMap.get('ATT_SERVICE_TYPE'));
+                        System.debug('attSelectedMap.get(ATT_SERVICE_TYPE)---'+attSelectedMap.get('ATT_SERVICE_TYPE'));
+                       }else{
+                        System.debug('Data not exist ATT_SERVICE_TYPE');
+                       }
+                       clsCList.add(alsQMC);
+                      }
+                     
                         if(parentChildProdMap != null && parentChildProdMap.containsKey(qLIRoot.vlocity_cmt__AssetReferenceId__c)){
                             for(QuoteLineItem qLIChild : parentChildProdMap.get(qLIRoot.vlocity_cmt__AssetReferenceId__c)){
                                 if(qLIChild.vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c != null && qLIChild.vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c == memberName){

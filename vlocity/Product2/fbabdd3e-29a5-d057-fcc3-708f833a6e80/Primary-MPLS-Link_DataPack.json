@@ -6,26 +6,28 @@
         "ATT_ACCESS_BANDWIDTH": null,
         "ATT_AREA_ID": null,
         "ATT_ASN_Type": null,
+        "ATT_BGP_ROUTING_TYPE_BGPHYD": null,
         "ATT_BILL_PLAN": null,
         "ATT_CASTING_TYPE_CFS": null,
-        "ATT_CHARGE_SELECTION": null,
         "ATT_CONTRACT_TERM": "12 Months",
         "ATT_CPE": null,
         "ATT_CROSS_CONNECT_REQD": "No",
         "ATT_CUSTOMER_LINK_TYPE": null,
         "ATT_Circuit_Type_CFS": null,
-        "ATT_DDOS_REQUIRED": "No",
         "ATT_ENTERPRISE_CONNECTIVITY_TYPE": "Primary",
         "ATT_INTERFACE": null,
         "ATT_IP_REQUIRED": "IPv4",
+        "ATT_KEEPALIVE_BGPHYD": null,
         "ATT_LAST_MILE": "Single Last Mile",
         "ATT_LEGACY_ACCESS_BANDWIDTH": null,
         "ATT_LEGACY_PORT_BANDWIDTH": null,
         "ATT_LinkTopology": null,
         "ATT_MEDIA": null,
+        "ATT_MINIMUM_INTERVAL_BGPHYD": null,
         "ATT_MPLS Handover Type": null,
         "ATT_MPLS_ProductType_CME": "L2 MPLS",
         "ATT_MTU_SIZE": null,
+        "ATT_MULTIPLIER_BGPHYD": null,
         "ATT_Multicast_Required_CFS": null,
         "ATT_NETWORK_TYPE_OSPF": null,
         "ATT_NUMBER_OF_LICENCES": null,
@@ -40,6 +42,8 @@
         "ATT_RATIO": "1:1",
         "ATT_REDUNDANCY": "No",
         "ATT_ROUTING_PROTOCOL_MPLS": null,
+        "ATT_ROUTING_TABLE_BGP": null,
+        "ATT_ROUTING_TABLE_HYD": null,
         "ATT_ROUTING_TYPE_MPLS": null,
         "ATT_RTBH": null,
         "ATT_SERVICE_TYPE": "Unmanaged",
@@ -58,7 +62,7 @@
                 "Code__c": "ATC_ENTERPRISE_DETAILS",
                 "Name": "Details",
                 "displaySequence": 300,
-                "id": "a0Z72000000xoooEAA",
+                "id": "a0Z72000000v9Y2EAI",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -66,7 +70,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000005abEHAAY",
+                            "attributeId": "a0a72000005AdbWAAS",
                             "cloneable": true,
                             "code": "ATT_ACCESS_BANDWIDTH",
                             "dataType": "text",
@@ -628,7 +632,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEXAAY",
+                            "attributeId": "a0a72000005Ae7lAAC",
                             "cloneable": true,
                             "code": "ATT_PORT_BANDWIDTH",
                             "dataType": "text",
@@ -1000,7 +1004,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abETAAY",
+                            "attributeId": "a0a72000005Ae4XAAS",
                             "cloneable": true,
                             "code": "ATT_MEDIA",
                             "dataType": "text",
@@ -1028,6 +1032,16 @@
                                     "name": "014d8390-b3c2-5aed-193b-3e64035bc681",
                                     "readonly": false,
                                     "value": "RF P2P"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "2433c70c-6d17-d172-e11e-379e0d524e5e",
+                                    "label": "5G",
+                                    "name": "2433c70c-6d17-d172-e11e-379e0d524e5e",
+                                    "readonly": false,
+                                    "value": "5G"
                                 },
                                 {
                                     "defaultSelected": false,
@@ -1102,7 +1116,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEKAAY",
+                            "attributeId": "a0a720000059XujAAE",
                             "cloneable": true,
                             "code": "ATT_CONTRACT_TERM",
                             "dataType": "text",
@@ -1334,7 +1348,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abERAAY",
+                            "attributeId": "a0a72000005KPVfAAO",
                             "cloneable": true,
                             "code": "ATT_LEGACY_ACCESS_BANDWIDTH",
                             "dataType": "text",
@@ -1360,7 +1374,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abESAAY",
+                            "attributeId": "a0a72000005KPH8AAO",
                             "cloneable": true,
                             "code": "ATT_LEGACY_PORT_BANDWIDTH",
                             "dataType": "text",
@@ -1386,7 +1400,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEWAAY",
+                            "attributeId": "a0a72000005RTsoAAG",
                             "cloneable": true,
                             "code": "ATT_POP",
                             "dataType": "text",
@@ -1428,7 +1442,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEQAAY",
+                            "attributeId": "a0a720000059dSHAAY",
                             "cloneable": true,
                             "code": "ATT_LAST_MILE",
                             "dataType": "text",
@@ -1470,7 +1484,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEPAAY",
+                            "attributeId": "a0a72000005KMJFAA4",
                             "cloneable": true,
                             "code": "ATT_IP_REQUIRED",
                             "dataType": "text",
@@ -1522,7 +1536,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEYAAY",
+                            "attributeId": "a0a72000005RYp7AAG",
                             "cloneable": true,
                             "code": "ATT_REDUNDANCY",
                             "dataType": "text",
@@ -1564,7 +1578,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abELAAY",
+                            "attributeId": "a0a720000059YqnAAE",
                             "cloneable": true,
                             "code": "ATT_CPE",
                             "dataType": "text",
@@ -1606,7 +1620,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEZAAY",
+                            "attributeId": "a0a720000059WsEAAU",
                             "cloneable": true,
                             "code": "ATT_SERVICE_TYPE",
                             "dataType": "text",
@@ -1658,59 +1672,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005aEZgAAM",
-                            "cloneable": true,
-                            "code": "ATT_DDOS_REQUIRED",
-                            "dataType": "text",
-                            "disabled": false,
-                            "displaySequence": 75,
-                            "filterable": false,
-                            "hasRules": true,
-                            "hidden": false,
-                            "inputType": "dropdown",
-                            "isNotTranslatable": false,
-                            "label": "DDOS Required",
-                            "messages": [
-                            ],
-                            "multiselect": false,
-                            "readonly": false,
-                            "required": false,
-                            "userValues": null,
-                            "values": [
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 30,
-                                    "id": "6911fd32-019a-0d89-59c3-30a8bdc34bd7",
-                                    "label": "ADVANCE_ARBOR",
-                                    "name": "6911fd32-019a-0d89-59c3-30a8bdc34bd7",
-                                    "readonly": false,
-                                    "value": "ADVANCE_ARBOR"
-                                },
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 20,
-                                    "id": "f1118096-a89e-86cb-f08f-235f9e4f9844",
-                                    "label": "PREMIUM_RADWARE",
-                                    "name": "f1118096-a89e-86cb-f08f-235f9e4f9844",
-                                    "readonly": false,
-                                    "value": "PREMIUM_RADWARE"
-                                },
-                                {
-                                    "defaultSelected": true,
-                                    "disabled": false,
-                                    "displaySequence": 10,
-                                    "id": "fc06ecd0-00f3-8886-57d8-8dff6c04ca53",
-                                    "label": "No",
-                                    "name": "fc06ecd0-00f3-8886-57d8-8dff6c04ca53",
-                                    "readonly": false,
-                                    "value": "No"
-                                }
-                            ]
-                        },
-                        {
-                            "attributeId": "a0a72000005kx8fAAA",
+                            "attributeId": "a0a72000005j7k1AAA",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_REQD",
                             "dataType": "text",
@@ -1752,7 +1714,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006yQH7AAM",
+                            "attributeId": "a0a72000006wxNgAAI",
                             "cloneable": true,
                             "code": "ATT_MPLS_ProductType_CME",
                             "dataType": "text",
@@ -1794,33 +1756,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEJAAY",
-                            "cloneable": true,
-                            "code": "ATT_CHARGE_SELECTION",
-                            "dataType": "text",
-                            "disabled": false,
-                            "displaySequence": 87,
-                            "filterable": false,
-                            "hasRules": false,
-                            "hidden": false,
-                            "inputType": "text",
-                            "isNotTranslatable": false,
-                            "label": "Charge Selection",
-                            "messages": [
-                            ],
-                            "multiselect": false,
-                            "readonly": false,
-                            "required": false,
-                            "userValues": null,
-                            "values": [
-                                {
-                                    "disabled": false,
-                                    "readonly": false
-                                }
-                            ]
-                        },
-                        {
-                            "attributeId": "a0a72000005abENAAY",
+                            "attributeId": "a0a72000005KOzPAAW",
                             "cloneable": true,
                             "code": "ATT_ENTERPRISE_CONNECTIVITY_TYPE",
                             "dataType": "text",
@@ -1862,7 +1798,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEOAAY",
+                            "attributeId": "a0a72000005AYDdAAO",
                             "cloneable": true,
                             "code": "ATT_INTERFACE",
                             "dataType": "text",
@@ -1944,7 +1880,335 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEVAAY",
+                            "attributeId": "a0a72000005OWlSAAW",
+                            "cloneable": true,
+                            "code": "ATT_BGP_ROUTING_TYPE_BGPHYD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 411,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "BGP Routing Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005OalrAAC",
+                            "cloneable": true,
+                            "code": "ATT_KEEPALIVE_BGPHYD",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 416,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Keepalive",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005OXrDAAW",
+                            "cloneable": true,
+                            "code": "ATT_MINIMUM_INTERVAL_BGPHYD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 417,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Minimum Interval",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "02750325-3f36-13cf-6307-35c3f8f51c68",
+                                    "label": "400",
+                                    "name": "02750325-3f36-13cf-6307-35c3f8f51c68",
+                                    "readonly": false,
+                                    "value": "400"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "3b4e7c2a-82e0-90bd-89bb-c4afa1b9c16a",
+                                    "label": "200",
+                                    "name": "3b4e7c2a-82e0-90bd-89bb-c4afa1b9c16a",
+                                    "readonly": false,
+                                    "value": "200"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "5570a33f-d3ed-eeff-2dac-1b7ef97ca9b6",
+                                    "label": "NA",
+                                    "name": "5570a33f-d3ed-eeff-2dac-1b7ef97ca9b6",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "77fbc79d-230c-4f81-8010-41ae451705ca",
+                                    "label": "100",
+                                    "name": "77fbc79d-230c-4f81-8010-41ae451705ca",
+                                    "readonly": false,
+                                    "value": "100"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "af858bfa-e6ff-8a4d-c5aa-7bc634a6f852",
+                                    "label": "500",
+                                    "name": "af858bfa-e6ff-8a4d-c5aa-7bc634a6f852",
+                                    "readonly": false,
+                                    "value": "500"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "f958e9d7-eb4e-5944-c096-8c319492e553",
+                                    "label": "300",
+                                    "name": "f958e9d7-eb4e-5944-c096-8c319492e553",
+                                    "readonly": false,
+                                    "value": "300"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005Og1dAAC",
+                            "cloneable": true,
+                            "code": "ATT_MULTIPLIER_BGPHYD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 418,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Multiplier",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "080d5de9-9a1e-864d-c71f-6bac57315ae7",
+                                    "label": "9",
+                                    "name": "080d5de9-9a1e-864d-c71f-6bac57315ae7",
+                                    "readonly": false,
+                                    "value": "9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "0ec3ec34-3a23-148d-5241-3c340d859474",
+                                    "label": "2",
+                                    "name": "0ec3ec34-3a23-148d-5241-3c340d859474",
+                                    "readonly": false,
+                                    "value": "2"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "3b1943bf-4f3e-1322-b91a-5bb41c9473e7",
+                                    "label": "1",
+                                    "name": "3b1943bf-4f3e-1322-b91a-5bb41c9473e7",
+                                    "readonly": false,
+                                    "value": "1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "462f6029-005f-2a47-7878-87debe71e4c5",
+                                    "label": "NA",
+                                    "name": "462f6029-005f-2a47-7878-87debe71e4c5",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "516a0b1c-1e4e-7fb3-6634-14aa916cdcb2",
+                                    "label": "5",
+                                    "name": "516a0b1c-1e4e-7fb3-6634-14aa916cdcb2",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "77613d89-5f69-8460-62ee-db3b3c5590bb",
+                                    "label": "3",
+                                    "name": "77613d89-5f69-8460-62ee-db3b3c5590bb",
+                                    "readonly": false,
+                                    "value": "3"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "9747b5c3-e75c-2f34-3b20-e1ee7ba70e68",
+                                    "label": "6",
+                                    "name": "9747b5c3-e75c-2f34-3b20-e1ee7ba70e68",
+                                    "readonly": false,
+                                    "value": "6"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "c49c2507-5f9a-c28d-d9db-c5cd34680418",
+                                    "label": "7",
+                                    "name": "c49c2507-5f9a-c28d-d9db-c5cd34680418",
+                                    "readonly": false,
+                                    "value": "7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "e34fa0a4-c569-2deb-866f-7678c4352f24",
+                                    "label": "8",
+                                    "name": "e34fa0a4-c569-2deb-866f-7678c4352f24",
+                                    "readonly": false,
+                                    "value": "8"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "ed987dc0-ec08-1811-16bf-af042cdcee30",
+                                    "label": "4",
+                                    "name": "ed987dc0-ec08-1811-16bf-af042cdcee30",
+                                    "readonly": false,
+                                    "value": "4"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005OhLtAAK",
+                            "cloneable": true,
+                            "code": "ATT_ROUTING_TABLE_BGP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 421,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Routing Table",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "49c848cb-6acb-b15b-4fad-caf276ad727d",
+                                    "label": "Bharti+Customer BGP",
+                                    "name": "49c848cb-6acb-b15b-4fad-caf276ad727d",
+                                    "readonly": false,
+                                    "value": "Bharti+Customer BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "699837ea-a0f3-4d86-aab2-69986ffd294b",
+                                    "label": "Default BGP",
+                                    "name": "699837ea-a0f3-4d86-aab2-69986ffd294b",
+                                    "readonly": false,
+                                    "value": "Default BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "78a6f1ab-55ed-b195-5f68-da89f3294155",
+                                    "label": "BGP",
+                                    "name": "78a6f1ab-55ed-b195-5f68-da89f3294155",
+                                    "readonly": false,
+                                    "value": "BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "edf68752-3fd8-e8ad-5357-aa44a047fb23",
+                                    "label": "Partial BGP",
+                                    "name": "edf68752-3fd8-e8ad-5357-aa44a047fb23",
+                                    "readonly": false,
+                                    "value": "Partial BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "effac9ae-ec36-20de-9137-656444bbc7b4",
+                                    "label": "Full BGP",
+                                    "name": "effac9ae-ec36-20de-9137-656444bbc7b4",
+                                    "readonly": false,
+                                    "value": "Full BGP"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005RWnQAAW",
                             "cloneable": true,
                             "code": "ATT_OFFNET_CAPEX",
                             "dataType": "number",
@@ -1970,7 +2234,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEIAAY",
+                            "attributeId": "a0a72000005L73dAAC",
                             "cloneable": true,
                             "code": "ATT_BILL_PLAN",
                             "dataType": "text",
@@ -2032,7 +2296,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEUAAY",
+                            "attributeId": "a0a72000005L302AAC",
                             "cloneable": true,
                             "code": "ATT_NUMBER_OF_LICENCES",
                             "dataType": "number",
@@ -2058,7 +2322,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEbAAI",
+                            "attributeId": "a0a72000005L3rGAAS",
                             "cloneable": true,
                             "code": "ATT_VPN_NAME",
                             "dataType": "text",
@@ -2084,7 +2348,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEcAAI",
+                            "attributeId": "a0a72000005L7RpAAK",
                             "cloneable": true,
                             "code": "ATT_VPN_TOPOLOGY",
                             "dataType": "text",
@@ -2126,7 +2390,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEdAAI",
+                            "attributeId": "a0a72000005L7MzAAK",
                             "cloneable": true,
                             "code": "ATT_VPN_TYPE",
                             "dataType": "text",
@@ -2168,7 +2432,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEaAAI",
+                            "attributeId": "a0a72000005AdmnAAC",
                             "cloneable": true,
                             "code": "ATT_UPTIME_SLA",
                             "dataType": "text",
@@ -2310,7 +2574,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005aEZwAAM",
+                            "attributeId": "a0a720000059a4cAAA",
                             "cloneable": true,
                             "code": "ATT_MTU_SIZE",
                             "dataType": "text",
@@ -2336,7 +2600,69 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcgAAAQ",
+                            "attributeId": "a0a72000006WcoKAAS",
+                            "cloneable": true,
+                            "code": "ATT_ROUTING_TABLE_HYD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1080,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Routing Table",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "253ce098-6d5c-4464-4115-8cc9dcd348a2",
+                                    "label": "Default BGP",
+                                    "name": "253ce098-6d5c-4464-4115-8cc9dcd348a2",
+                                    "readonly": false,
+                                    "value": "Default BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "26b44d77-a262-9b54-65b6-604d0718f0cc",
+                                    "label": "Bharti+Customer BGP",
+                                    "name": "26b44d77-a262-9b54-65b6-604d0718f0cc",
+                                    "readonly": false,
+                                    "value": "Bharti+Customer BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "81158ac7-6866-e3fe-c8b4-d6cdfd20fb6b",
+                                    "label": "Full BGP",
+                                    "name": "81158ac7-6866-e3fe-c8b4-d6cdfd20fb6b",
+                                    "readonly": false,
+                                    "value": "Full BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "9797496e-d6c7-7c55-db53-2c47a5058cb0",
+                                    "label": "Partial BGP",
+                                    "name": "9797496e-d6c7-7c55-db53-2c47a5058cb0",
+                                    "readonly": false,
+                                    "value": "Partial BGP"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006kfr9AAA",
                             "cloneable": true,
                             "code": "ATT_MPLS Handover Type",
                             "dataType": "text",
@@ -2388,7 +2714,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcg7AAA",
+                            "attributeId": "a0a72000006khBNAAY",
                             "cloneable": true,
                             "code": "ATT_LinkTopology",
                             "dataType": "text",
@@ -2440,7 +2766,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005aEaAAAU",
+                            "attributeId": "a0a720000059dbyAAA",
                             "cloneable": true,
                             "code": "ATT_RTBH",
                             "dataType": "text",
@@ -2492,7 +2818,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcjNAAQ",
+                            "attributeId": "a0a72000006kt7hAAA",
                             "cloneable": true,
                             "code": "ATT_VPN_Prefix_Limit",
                             "dataType": "text",
@@ -2518,14 +2844,14 @@
                             ]
                         }
                     ],
-                    "totalSize": 30
+                    "totalSize": 34
                 }
             },
             {
                 "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
                 "Name": "Technical Attributes",
                 "displaySequence": 1090,
-                "id": "a0Z72000000zL7ZEAU",
+                "id": "a0Z72000000yyirEAA",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -2533,7 +2859,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000006lcCsAAI",
+                            "attributeId": "a0a72000006kedKAAQ",
                             "cloneable": true,
                             "code": "ATT_ASN_Type",
                             "dataType": "text",
@@ -2575,7 +2901,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f1MUAAY",
+                            "attributeId": "a0a72000006e13ZAAQ",
                             "cloneable": true,
                             "code": "ATT_CASTING_TYPE_CFS",
                             "dataType": "text",
@@ -2607,7 +2933,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f1MVAAY",
+                            "attributeId": "a0a72000006e0kDAAQ",
                             "cloneable": true,
                             "code": "ATT_Circuit_Type_CFS",
                             "dataType": "text",
@@ -2649,7 +2975,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f28vAAA",
+                            "attributeId": "a0a72000006e0dmAAA",
                             "cloneable": true,
                             "code": "ATT_Multicast_Required_CFS",
                             "dataType": "text",
@@ -2691,7 +3017,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f28wAAA",
+                            "attributeId": "a0a72000006e1GTAAY",
                             "cloneable": true,
                             "code": "ATT_QOS_BUSINESS_MBPS_CFS",
                             "dataType": "text",
@@ -2717,7 +3043,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f28yAAA",
+                            "attributeId": "a0a72000006dz52AAA",
                             "cloneable": true,
                             "code": "ATT_QOS_PnRT_MBPS_CFS",
                             "dataType": "text",
@@ -2743,7 +3069,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f28xAAA",
+                            "attributeId": "a0a72000006e1JhAAI",
                             "cloneable": true,
                             "code": "ATT_QOS_PRT_MBPS_CFS",
                             "dataType": "text",
@@ -2769,7 +3095,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f28zAAA",
+                            "attributeId": "a0a72000006e1ZpAAI",
                             "cloneable": true,
                             "code": "ATT_QOS_STANDARD_MBPS_CFS",
                             "dataType": "text",
@@ -2795,7 +3121,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f290AAA",
+                            "attributeId": "a0a72000006e1zdAAA",
                             "cloneable": true,
                             "code": "ATT_QOS_TYPE_CFS",
                             "dataType": "text",
@@ -2837,7 +3163,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f1MWAAY",
+                            "attributeId": "a0a72000006dSFVAA2",
                             "cloneable": true,
                             "code": "ATT_ROUTING_PROTOCOL_MPLS",
                             "dataType": "text",
@@ -2919,7 +3245,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f1MXAAY",
+                            "attributeId": "a0a72000006dUVqAAM",
                             "cloneable": true,
                             "code": "ATT_ROUTING_TYPE_MPLS",
                             "dataType": "text",
@@ -3021,7 +3347,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005PoZvAAK",
+                            "attributeId": "a0a720000059QGXAA2",
                             "cloneable": true,
                             "code": "ATT_RATIO",
                             "dataType": "text",
@@ -3048,7 +3374,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005aEZdAAM",
+                            "attributeId": "a0a72000005OTCTAA4",
                             "cloneable": true,
                             "code": "ATT_CUSTOMER_LINK_TYPE",
                             "dataType": "text",
@@ -3090,7 +3416,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005knSfAAI",
+                            "attributeId": "a0a72000005hCMRAA2",
                             "cloneable": true,
                             "code": "ATT_AREA_ID",
                             "dataType": "text",
@@ -3116,7 +3442,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005knSkAAI",
+                            "attributeId": "a0a72000005hCvuAAE",
                             "cloneable": true,
                             "code": "ATT_NETWORK_TYPE_OSPF",
                             "dataType": "text",
@@ -3178,7 +3504,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006f1MYAAY",
+                            "attributeId": "a0a72000006eyq4AAA",
                             "cloneable": true,
                             "code": "ATT_TECH_PREFIX_LIMIT",
                             "dataType": "text",
@@ -3356,13 +3682,32 @@
     "%vlocity_namespace%__VersionEndDateTime__c": "",
     "%vlocity_namespace%__VersionLabel__c": "",
     "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_AnnualRecurringCharge__c": "",
+    "ARTL_Component_Id__c": "28016",
+    "ARTL_CustomerNeedByDate__c": "",
+    "ARTL_Demo_Duration__c": "",
+    "ARTL_FeasibilityID__c": "",
+    "ARTL_FeasibilityIdCrossConnect__c": "",
+    "ARTL_FeasibilityStatus__c": "",
+    "ARTL_FeasibiltyRemarks__c": "",
     "ARTL_Hansen_Primary_Key__c": "",
     "ARTL_LSIRequiredForHansen__c": false,
     "ARTL_LSIRequired__c": true,
+    "ARTL_ManageBy__c": "",
     "ARTL_NRCRebilling__c": false,
-    "ARTL_SDWAN_SubProductName__c": "SDWAN",
-    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_OFT_Product_Name__c": "MPLS",
+    "ARTL_OneTimeCharge__c": "",
+    "ARTL_OperatingUnit__c": "",
+    "ARTL_Parent_Products__c": "",
+    "ARTL_Quantity__c": "",
+    "ARTL_RouterMake__c": "",
+    "ARTL_RouterModel__c": "",
+    "ARTL_SDWAN_SubProductName__c": "",
+    "ARTL_SiteReadinessStatus__c": "",
+    "ARTL_SubProductName__c": "",
     "ARTL_TechnicalProduct__c": "VEPC_E_MPLS_CFS,VEPC_MPLS_LINK_CFS,VEPC_Port_Bandwidth_ARC_CFS,VEPC_Bandwidth_OTC_CFS,VEPC_Access_Bandwidth_ARC_CFS,VEPC_Dual_PoP_ARC_CFS,VEPC_ICONNECTIVITY_BILLING_CFS",
+    "ARTL_Terms_and_Conditions__c": "",
+    "ARTL_ThirdPartyName__c": "",
     "CanUseQuantitySchedule": false,
     "CanUseRevenueSchedule": false,
     "CurrencyIsoCode": "INR",
@@ -3420,5 +3765,6 @@
     "StockKeepingUnit": "",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "Product2",
-    "VlocityRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80"
+    "VlocityRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+    "sourceOrgUrl": "/01t720000010S8bAAE"
 }

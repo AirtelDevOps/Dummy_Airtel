@@ -1,6 +1,6 @@
 {
     "CurrencyIsoCode": "INR",
-    "IsActive": true,
+    "IsActive": false,
     "IsOmniScriptEmbeddable": false,
     "Name": "SEPOTerms",
     "OmniProcessId": {
@@ -15,7 +15,7 @@
         "elementErrorMap": {
             "POTerms": "PO Term should be greater than the Contract Term."
         },
-        "label": "",
+        "label": null,
         "message": {
         },
         "pubsub": false,

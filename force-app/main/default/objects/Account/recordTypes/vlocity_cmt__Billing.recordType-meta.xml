@@ -111,6 +111,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>VAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>WBO</fullName>
             <default>false</default>
         </values>
@@ -1057,19 +1061,39 @@
             <fullName>NDL</fullName>
             <default>false</default>
         </values>
-        <values>
-            <fullName>Normal</fullName>
-            <default>false</default>
-        </values>
     </picklistValues>
     <picklistValues>
         <picklist>ARTL_GST_Non_Applicable_Reason__c</picklist>
+        <values>
+            <fullName>Airtel- Foreign Legal Entity</fullName>
+            <default>false</default>
+        </values>
         <values>
             <fullName>Applied For</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exempt Supply - Trust%2FEntities 12AA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exempt Supply- Trust%2FEntities 12AA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exempt Supply- UNO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exempt-Trust%2FEntities 12AA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J%26K delivery - Out of GST Preview</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1089,7 +1113,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>SEZ With Taxes</fullName>
+            <fullName>SEZ with Taxes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Deductor</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1102,6 +1130,10 @@
         </values>
         <values>
             <fullName>Zero Rated Supply- FTWZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zero Rated Supply- SEZ</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1283,7 +1315,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Domestic</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Wholesale</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1323,6 +1363,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>M%26D</fullName>
             <default>false</default>
         </values>
@@ -1355,6 +1399,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Satellite Operator</fullName>
             <default>false</default>
         </values>
@@ -1376,6 +1424,10 @@
         </values>
         <values>
             <fullName>Wholesale Carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Voice</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1597,6 +1649,76 @@
         </values>
         <values>
             <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Step_1_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Step_2_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Step_3_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Step_4_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Step_5_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1930,19 +2052,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Expired</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Inactive</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pending</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Suspended</fullName>
             <default>false</default>
         </values>
     </picklistValues>
