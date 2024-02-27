@@ -1,0 +1,102 @@
+[
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"},{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-OrderItem\",\"op\":\"!=\",\"right-side\":\"Network Change\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "1dd3a3-a1c9c2-a83927-167d22-564ac9639",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Provisioning",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Provisioning",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Provisioning Primary MPLS Link in Provisioning",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Provisioning Primary MPLS Link in Provisioning/1dd3a3-a1c9c2-a83927-167d22-564ac9639/Product2/d6f95169-15b5-a8b9-95ee-29bd66834f5a"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Disconnect",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
+        "%vlocity_namespace%__GlobalKey__c": "4354515e-e744-c969-d1c8-e843fe197055",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Permanent Disconnect - EILL and MPLS",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Permanent Disconnect - EILL and MPLS",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Disconnect MPLS Scenario",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Disconnect MPLS Scenario/4354515e-e744-c969-d1c8-e843fe197055/Product2/d6f95169-15b5-a8b9-95ee-29bd66834f5a"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"Network Change\"}",
+        "%vlocity_namespace%__GlobalKey__c": "5d7c7d01-beee-a712-5269-4e160a06157f",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "ARTL Network Change Orchestration Plan",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/ARTL Network Change Orchestration Plan",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Network Change Scenerio 2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Network Change Scenerio 2/5d7c7d01-beee-a712-5269-4e160a06157f/Product2/d6f95169-15b5-a8b9-95ee-29bd66834f5a"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"right-side\":\"PO Renewal\",\"op\":\"=\"}",
+        "%vlocity_namespace%__GlobalKey__c": "3bbf8657-fce9-c5e1-7f96-cdd242ba62c3",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "ARTL PO Renewal Orchestration Plan",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/ARTL PO Renewal Orchestration Plan",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "d6f95169-15b5-a8b9-95ee-29bd66834f5a",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "ARTL PO Renewal For MPLS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/ARTL PO Renewal For MPLS/3bbf8657-fce9-c5e1-7f96-cdd242ba62c3/Product2/d6f95169-15b5-a8b9-95ee-29bd66834f5a"
+    }
+]

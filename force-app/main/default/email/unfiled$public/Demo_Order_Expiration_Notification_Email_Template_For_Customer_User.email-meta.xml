@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Airtel_Letterhead</letterhead>
+    <name>Demo Order Expiration Notification Email Template For Customer User</name>
+    <style>freeForm</style>
+    <subject>Demo Order Expiry Notification for Customer User</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+
+Demo Order {!Order.OrderNumber} is about to expire on {!Order.ARTL_Demo_Expiry_Date__c}.
+
+Kindly confirm your acceptance or otherwise exercise the option to reject through this bellow:
+
+https://business-force-5632--artldevp2.sandbox.lightning.force.com/lightning/cmp/vlocity_cmt__vlocityLWCOmniWrapper?c__target=c:aRTLDemoOrderRequestStatusEnglish&amp;c__layout=lightning&amp;c__tabIcon=custom:custom18&amp;c__tabLabel=DemoOrderRequestStatus&amp;c__ContextId={!Order.Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

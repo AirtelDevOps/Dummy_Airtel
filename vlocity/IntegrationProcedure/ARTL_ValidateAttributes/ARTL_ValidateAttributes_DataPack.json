@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_ValidateAttributes_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ValidateAttributes",
+    "OmniProcessElement": [
+        "ARTL_ValidateAttributes_Element_getPdtRelationship.json",
+        "ARTL_ValidateAttributes_Element_DRPostForNoRelationship.json",
+        "ARTL_ValidateAttributes_Element_IFValidQLIRExist.json",
+        "ARTL_ValidateAttributes_Element_updateQuoteValidationStatus.json",
+        "ARTL_ValidateAttributes_Element_invokeAttValidation.json",
+        "ARTL_ValidateAttributes_Element_ResponseAction2.json",
+        "ARTL_ValidateAttributes_Element_SetRetMessage.json",
+        "ARTL_ValidateAttributes_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_ValidateAttributes",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_ValidateAttributes_PropertySetConfig.json",
+    "SubType": "ValidateAttributes",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/ValidateAttributes/Procedure"
+}

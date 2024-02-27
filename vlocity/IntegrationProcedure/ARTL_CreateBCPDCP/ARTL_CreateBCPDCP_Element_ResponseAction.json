@@ -1,0 +1,40 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction",
+    "OmniProcessId": {
+        "Name": "CreateBCPDCP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateBCPDCP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "Contact Number": "=%DRExtractContactNumber:ContactNumber%",
+            "Error Message": "= IF(%DRCreateBCPDCP:Contact_1:UpsertSuccess% == true, \"Contact has been Created Successfully\",\"Contact has not been Created Successfully\")",
+            "Id": "=%DRCreateBCPDCP:Contact_1:Id%",
+            "Status": "= IF(ISNOTBLANK(%DRCreateBCPDCP:Contact_1:Id%) && %DRCreateBCPDCP:Contact_1:Id% != null, \"Success\",\"Failed\")"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBCPDCP/Procedure/ResponseAction"
+}

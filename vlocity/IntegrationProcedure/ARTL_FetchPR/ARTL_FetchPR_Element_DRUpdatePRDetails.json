@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRUpdatePRDetails",
+    "OmniProcessId": {
+        "Name": "FetchPR",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FetchPR/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "orderId": "%orderId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DRL_LoadPRDetails",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "apiSuccess": "=IF(LIKE(%HTTPFetchPR:getPurchaseRequestDetailsResMsg:dataArea:getPurchaseRequestDetailsResponse:status:statusDescription% ,\"Request Processed Successfully\"),true,false)",
+            "errorMessage": "=%DRUpdatePRDetails%"
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "HTTPFetchPR:getPurchaseRequestDetailsResMsg:dataArea:getPurchaseRequestDetailsResponse",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FetchPR/Procedure/DRUpdatePRDetails"
+}

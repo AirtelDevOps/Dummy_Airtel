@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Escalation to BSG TL Template</name>
+    <style>none</style>
+    <subject>Escalation Alert : Unattended Opportunity</subject>
+    <textOnly>Dear BSG TL,
+
+This is an automated notification from our system.
+
+We would like to bring to your attention an opportunity that requires immediate action. The opportunity (ID: {!Opportunity.Opportunity_Number__c}) was assigned to {!Opportunity.BSG_User_Name__c} on {!Opportunity.BSG_Tagged_Time__c}. However, as of now, there has been no activity on this opportunity.
+
+According to our records, this opportunity has remained unattended for more than 72 hours.
+
+
+
+Best regards, Airtel</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

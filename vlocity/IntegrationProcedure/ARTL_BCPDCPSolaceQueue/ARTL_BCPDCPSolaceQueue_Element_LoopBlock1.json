@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "LoopBlock1",
+    "OmniProcessId": {
+        "Name": "BCPDCPSolaceQueue",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/BCPDCPSolaceQueue/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "LoopBlock1",
+        "loopList": "DRGetCaseTrackingDetails",
+        "loopOutput": {
+            "description": "%HTTPSolaceQueueInfo:statusCode% %HTTPSolaceQueueInfo:status%",
+            "recordId": "%DRGetCaseTrackingDetails:caseTrackingId%",
+            "status": "=IF(%HTTPSolaceQueueInfo:statusCode% == 200, 'Success', 'Error')"
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/BCPDCPSolaceQueue/Procedure/LoopBlock1"
+}

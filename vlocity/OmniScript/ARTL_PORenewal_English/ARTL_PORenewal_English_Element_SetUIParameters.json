@@ -1,0 +1,93 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetUIParameters",
+    "OmniProcessId": {
+        "Name": "ARTL_PORenewal",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/PORenewal/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "CreateSelectQuote": {
+                "transactionType": "PO Renewal"
+            },
+            "columns": [
+                {
+                    "fieldName": "LSI",
+                    "label": "LSI",
+                    "type": "text"
+                },
+                {
+                    "fieldName": "Product",
+                    "label": "Product",
+                    "type": "text"
+                },
+                {
+                    "fieldName": "POId",
+                    "label": "PO Id",
+                    "type": "text"
+                },
+                {
+                    "fieldName": "PONumber",
+                    "label": "PO Number",
+                    "type": "text"
+                },
+                {
+                    "fieldName": "POAmount",
+                    "label": "PO Amount",
+                    "type": "text"
+                },
+                {
+                    "fieldName": "POTerm",
+                    "label": "PO Term",
+                    "type": "text"
+                },
+                {
+                    "fieldName": "POExpiryDate",
+                    "label": "PO Expiry Date",
+                    "type": "text"
+                }
+            ],
+            "recordType": "EnterpriseQuote",
+            "selectOptions": [
+                {
+                    "label": "LSI",
+                    "value": "LSI"
+                },
+                {
+                    "label": "PO Id",
+                    "value": "POId"
+                },
+                {
+                    "label": "PO Number",
+                    "value": "PONumber"
+                },
+                {
+                    "label": "Account Number",
+                    "value": "AccountNumber"
+                }
+            ]
+        },
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/PORenewal/English/SetUIParameters"
+}

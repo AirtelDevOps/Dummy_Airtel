@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_FetchPO_SampleInput.json",
+    "Description": "Input to this IP:    %prId% - prId %prRecordId% - consumerTransactionId",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FetchPO",
+    "OmniProcessElement": [
+        "ARTL_FetchPO_Element_RADebugLogger.json",
+        "ARTL_FetchPO_Element_HTTPFetchPO.json",
+        "ARTL_FetchPO_Element_RAResponseLogger.json",
+        "ARTL_FetchPO_Element_SVMockResponseSuccess.json",
+        "ARTL_FetchPO_Element_SetValues2.json",
+        "ARTL_FetchPO_Element_DataRaptorPostAction2.json",
+        "ARTL_FetchPO_Element_DRUpdatePODetails.json",
+        "ARTL_FetchPO_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_FetchPO",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FetchPO_PropertySetConfig.json",
+    "SubType": "FetchPO",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FetchPO/Procedure"
+}

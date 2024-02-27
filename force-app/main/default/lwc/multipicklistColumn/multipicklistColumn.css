@@ -1,0 +1,29 @@
+.picklist-section{
+    position: relative !important;
+    min-width: 10%;
+    z-index: 99999999999999999999999999;
+    width: 400px;
+}
+.picklist-section .slds-dropdown{
+    /*position: fixed !important;*/
+    max-height: 120px;
+    max-width: fit-content;
+    overflow: auto;
+}
+
+.slds-grid .slds-hyphenate {
+    width: 100%
+}
+
+.slds-grid .slds-truncate {
+    width: 100%
+}
+
+.slds-listbox{
+    z-index: 99999999999999999999999999!important;
+}
+
+.slds-cell-edit-2 {
+    display: flex;
+    width: 400px;
+}

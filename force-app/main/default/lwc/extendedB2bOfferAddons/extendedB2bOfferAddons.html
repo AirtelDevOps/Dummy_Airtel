@@ -1,0 +1,53 @@
+<template>
+    <div class="nds-form-element" if:true={currentOffer}>
+      <template if:true={isCollapseHierarchy}>
+        <div>
+          <div class="nds-m-horizontal_small nds-m-top_small">
+            {labels.CMEXAddProducts}
+          </div>
+          <!--<lightning-button label="GetProducts" onclick={fetchProductsOnDemand}></lightning-button>-->
+          <vlocity_cmt-b2b-typeahead type="text"
+            onclick={handletypeaheadSelectCustom}
+            oninput={handletypeaheadInput} onselect={handletypeaheadSelect}
+            onclear={handletypeaheadClear} options={typeaheadOptions} icon-name-right="utility:search"
+            no-results-found-message={labels.CMEXNoResults} theme="nds"
+            remote-source=true single-select=true data-omni-input>
+          </vlocity_cmt-b2b-typeahead>
+        </div>
+      </template>
+  
+      <template if:true={currentOffer.lineItems}>
+        <div for:each={currentOffer.lineItems} for:item="lineItem" key={lineItem.id}>
+          <template if:true={lineItem.quantity}>
+            <c-extended-b2b-config-card extra-actions={extraActions} parent={offer} title={lineItem.name} offer={lineItem} children="true" grand-child={childAddons} macd={macd}></c-extended-b2b-config-card>
+          </template>
+        </div>
+      </template>
+  
+      <template if:true={currentOffer.productGroups}>
+        <div for:each={currentOffer.productGroups} for:item="productGroup" key={productGroup.id}>
+          <c-extended-b2b-config-card extra-actions={extraActions} parent={offer} title={productGroup.name} offer={productGroup} grand-child={isGrandChild} expand={expand} macd={macd}></c-extended-b2b-config-card>
+        </div>
+      </template>
+  
+      <template if:true={currentOffer.childProducts}>
+        <div if:false={isCollapseHierarchy} class={addonsClassName}>
+          <vlocity_cmt-b2b-items-grid>
+            <div slot="items" class="nds-b2b-items-grid_container" if:true={enableAttributes}>
+              <template for:each={currentOffer.childProducts} for:item="childProduct" if:false={childProduct.isAlreadyExist}>
+                <vlocity_cmt-b2b-product-item key={childProduct.id} product={childProduct} disable-child={disableChild}></vlocity_cmt-b2b-product-item>
+              </template>
+            </div>
+            <div slot="items" class="nds-b2b-items-grid_container disabled-field" if:false={enableAttributes}>
+              <template for:each={currentOffer.childProducts} for:item="childProduct" if:false={childProduct.isAlreadyExist}>
+                <vlocity_cmt-b2b-product-item key={childProduct.id} product={childProduct} disable-child={disableChild}></vlocity_cmt-b2b-product-item>
+              </template>
+            </div>
+          </vlocity_cmt-b2b-items-grid>
+        </div>
+      </template>
+      <div class="slds-spinner_container" if:true={loading}>
+        <lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+      </div>
+    </div>
+  </template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_Number_Required</fullName>
+    <active>true</active>
+    <description>Mobile number is mandatory to make OFT check working</description>
+    <errorConditionFormula>ISBLANK(MobilePhone) &amp;&amp;  Profile.Name = &apos;Sales&apos;</errorConditionFormula>
+    <errorMessage>Mobile Phone is Mandatory</errorMessage>
+</ValidationRule>

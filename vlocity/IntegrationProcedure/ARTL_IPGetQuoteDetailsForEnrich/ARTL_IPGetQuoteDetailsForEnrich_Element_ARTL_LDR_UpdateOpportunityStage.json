@@ -1,0 +1,42 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ARTL_LDR_UpdateOpportunityStage",
+    "OmniProcessId": {
+        "Name": "ARTL_IPGetQuoteDetailsForEnrich",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/IPGetQuoteDetailsForEnrich/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "oppId": "%ARTL_DRE_GetQuoteDetails:OpportunityId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_UpdateOpportunityStage",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%ARTL_DRE_GetQuoteDetails:OpportunityStageName% == 'Proposal Stage'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/IPGetQuoteDetailsForEnrich/Procedure/ARTL_LDR_UpdateOpportunityStage"
+}

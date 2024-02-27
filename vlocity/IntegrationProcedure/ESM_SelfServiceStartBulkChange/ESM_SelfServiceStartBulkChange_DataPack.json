@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_SelfServiceStartBulkChange_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_SelfServiceStartBulkChange",
+    "OmniProcessElement": [
+        "ESM_SelfServiceStartBulkChange_Element_SetUserId.json",
+        "ESM_SelfServiceStartBulkChange_Element_StartAsyncJobForOrder.json",
+        "ESM_SelfServiceStartBulkChange_Element_OrderResponse.json"
+    ],
+    "OmniProcessKey": "ESM_SelfServiceStartBulkChange",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_SelfServiceStartBulkChange_PropertySetConfig.json",
+    "SubType": "SelfServiceStartBulkChange",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/SelfServiceStartBulkChange/Procedure"
+}

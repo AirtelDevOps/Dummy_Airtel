@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_CEOps_SAM_Edit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED( Name ), OR($Permission.ARTL_CE_Ops_User, $Permission.SAM_TL_and_Above_Role ) )</errorConditionFormula>
+    <errorMessage>Edit on this record is prevented</errorMessage>
+</ValidationRule>

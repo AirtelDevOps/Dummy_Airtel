@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Task Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FAULT_REPAIR</fullName>
+                <default>false</default>
+                <label>FAULT_REPAIR</label>
+            </value>
+            <value>
+                <fullName>PLANNING</fullName>
+                <default>false</default>
+                <label>PLANNING</label>
+            </value>
+            <value>
+                <fullName>INSTALLATION</fullName>
+                <default>false</default>
+                <label>INSTALLATION</label>
+            </value>
+            <value>
+                <fullName>WIRING</fullName>
+                <default>false</default>
+                <label>WIRING</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

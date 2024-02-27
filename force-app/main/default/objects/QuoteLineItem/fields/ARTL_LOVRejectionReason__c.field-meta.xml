@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_LOVRejectionReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Rejection Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Document related customer is minor less than 15 Years</fullName>
+                <default>false</default>
+                <label>Document related customer is minor less than 15 Years</label>
+            </value>
+            <value>
+                <fullName>MNP - Competition Bill copy customer name not clear</fullName>
+                <default>false</default>
+                <label>MNP - Competition Bill copy customer name not clear</label>
+            </value>
+            <value>
+                <fullName>POA copy not clear</fullName>
+                <default>false</default>
+                <label>POA copy not clear</label>
+            </value>
+            <value>
+                <fullName>POA related issue - POA not allowed</fullName>
+                <default>false</default>
+                <label>POA related issue - POA not allowed</label>
+            </value>
+            <value>
+                <fullName>POI copy not clear POI copy not complete</fullName>
+                <default>false</default>
+                <label>POI copy not clear POI copy not complete</label>
+            </value>
+            <value>
+                <fullName>POI related issue - POI not allowed Local address entered with dummy details</fullName>
+                <default>false</default>
+                <label>POI related issue - POI not allowed Local address entered with dummy details</label>
+            </value>
+            <value>
+                <fullName>Customer live photo not clear Live photo not matching with POI/POA Details mismatch data entry vs attached upload document Punching related rejected due to incomplete punching</fullName>
+                <default>false</default>
+                <label>Customer live photo not clear Live photo not matching with POI/POA Details mismatch data entry vs attached upload document Punching related rejected due to incomplete punching</label>
+            </value>
+            <value>
+                <fullName>MNP - Competition Bill copy customer name vs punching Customer name different ARC/OTC charges mismatch between attached PO V/s punched in system</fullName>
+                <default>false</default>
+                <label>MNP - Competition Bill copy customer name vs punching Customer name different ARC/OTC charges mismatch between attached PO V/s punched in system</label>
+            </value>
+            <value>
+                <fullName>Attached all documents not readable</fullName>
+                <default>false</default>
+                <label>Attached all documents not readable</label>
+            </value>
+            <value>
+                <fullName>Attached COI not readable</fullName>
+                <default>false</default>
+                <label>Attached COI not readable</label>
+            </value>
+            <value>
+                <fullName>Attached deed not readable</fullName>
+                <default>false</default>
+                <label>Attached deed not readable</label>
+            </value>
+            <value>
+                <fullName>Attached POI not readable</fullName>
+                <default>false</default>
+                <label>Attached POI not readable</label>
+            </value>
+            <value>
+                <fullName>City name/Pin code/State mismatch between attached PO V/s punched in system</fullName>
+                <default>false</default>
+                <label>City name/Pin code/State mismatch between attached PO V/s punched in system</label>
+            </value>
+            <value>
+                <fullName>Company stamp missing on PO</fullName>
+                <default>false</default>
+                <label>Company stamp missing on PO</label>
+            </value>
+            <value>
+                <fullName>Complete GST Document not attached</fullName>
+                <default>false</default>
+                <label>Complete GST Document not attached</label>
+            </value>
+            <value>
+                <fullName>Contract period mismatch between attached PO V/s system GST Number not available in SEZ File (SEZ team approval mail required) Incorrect Date captured on PO</fullName>
+                <default>false</default>
+                <label>Contract period mismatch between attached PO V/s system GST Number not available in SEZ File (SEZ team approval mail required) Incorrect Date captured on PO</label>
+            </value>
+            <value>
+                <fullName>Incorrect total amount captured (OTC + ARC + contract period)</fullName>
+                <default>false</default>
+                <label>Incorrect total amount captured (OTC + ARC + contract period)</label>
+            </value>
+            <value>
+                <fullName>Instead of OTC amount, ARC Amount captured or Vice/ Versa</fullName>
+                <default>false</default>
+                <label>Instead of OTC amount, ARC Amount captured or Vice/ Versa</label>
+            </value>
+            <value>
+                <fullName>Legal Entity mismatch between attached PO V/s system</fullName>
+                <default>false</default>
+                <label>Legal Entity mismatch between attached PO V/s system</label>
+            </value>
+            <value>
+                <fullName>Mismatch of Billing terms/frequency between PO Vs. system</fullName>
+                <default>false</default>
+                <label>Mismatch of Billing terms/frequency between PO Vs. system</label>
+            </value>
+            <value>
+                <fullName>Mismatch of Company name between Company Pan Card VS COI/Society Registration/Trust Deed/Partnership deed</fullName>
+                <default>false</default>
+                <label>Mismatch of Company name between Company Pan Card VS COI/Society Registration/Trust Deed/Partnership deed</label>
+            </value>
+            <value>
+                <fullName>Mismatch of Company name between System VS GST Document</fullName>
+                <default>false</default>
+                <label>Mismatch of Company name between System VS GST Document</label>
+            </value>
+            <value>
+                <fullName>Mismatch of contract Period vs contract termination clause under T&amp;C Mismatch of Product manageability between PO Vs. system</fullName>
+                <default>false</default>
+                <label>Mismatch of contract Period vs contract termination clause under T&amp;C Mismatch of Product manageability between PO Vs. system</label>
+            </value>
+            <value>
+                <fullName>Multiple City name appearing against same Pin Code in Billing/Installation/Company Address</fullName>
+                <default>false</default>
+                <label>Multiple City name appearing against same Pin Code in Billing/Installation/Company Address</label>
+            </value>
+            <value>
+                <fullName>Multiple city/Correct city not appearing against same PIN code selected</fullName>
+                <default>false</default>
+                <label>Multiple city/Correct city not appearing against same PIN code selected</label>
+            </value>
+            <value>
+                <fullName>Multiple Pin Code appearing against same City in Billing/Installation/Company Address</fullName>
+                <default>false</default>
+                <label>Multiple Pin Code appearing against same City in Billing/Installation/Company Address</label>
+            </value>
+            <value>
+                <fullName>Non-taxable order logged instead of taxable</fullName>
+                <default>false</default>
+                <label>Non-taxable order logged instead of taxable</label>
+            </value>
+            <value>
+                <fullName>Organization proof not attached</fullName>
+                <default>false</default>
+                <label>Organization proof not attached</label>
+            </value>
+            <value>
+                <fullName>Taxable order logged instead of Non-taxable</fullName>
+                <default>false</default>
+                <label>Taxable order logged instead of Non-taxable</label>
+            </value>
+            <value>
+                <fullName>Taxation approval not attached/not readable</fullName>
+                <default>false</default>
+                <label>Taxation approval not attached/not readable</label>
+            </value>
+            <value>
+                <fullName>BCP/DCP/Invoice address mismatch between System Vs PO/ Document</fullName>
+                <default>false</default>
+                <label>BCP/DCP/Invoice address mismatch between System Vs PO/ Document</label>
+            </value>
+            <value>
+                <fullName>Approve epcn / Finance approval mail missing</fullName>
+                <default>false</default>
+                <label>Approve epcn / Finance approval mail missing</label>
+            </value>
+            <value>
+                <fullName>GST undertaking missing</fullName>
+                <default>false</default>
+                <label>GST undertaking missing</label>
+            </value>
+            <value>
+                <fullName>POA copy not complete Document related - Rejeced due to document non compliant</fullName>
+                <default>false</default>
+                <label>POA copy not complete Document related - Rejeced due to document non compliant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

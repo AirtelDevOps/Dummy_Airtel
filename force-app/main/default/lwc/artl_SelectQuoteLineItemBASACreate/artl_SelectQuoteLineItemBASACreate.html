@@ -1,0 +1,13 @@
+<template>
+    <h2> Select Quote Line Items</h2>
+    <lightning-datatable
+                key-field="Id"
+                data-id="qlitable"
+                data={data}
+                columns={columns}
+                onrowselection={handleRowSelection}
+                >
+        </lightning-datatable>
+        <!-- <lightning-button label='Save' onclick={handleSave} variant="brand">
+        </lightning-button> -->
+</template>

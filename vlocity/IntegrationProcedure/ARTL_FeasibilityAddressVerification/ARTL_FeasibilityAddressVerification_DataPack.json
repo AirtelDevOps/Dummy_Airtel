@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_FeasibilityAddressVerification_SampleInput.json",
+    "Description": "Copy of v3(Dev) + Added errors if QM not exist",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FeasibilityAddressVerification",
+    "OmniProcessElement": [
+        "ARTL_FeasibilityAddressVerification_Element_DRAddressVerificationQM.json",
+        "ARTL_FeasibilityAddressVerification_Element_IFValidQMExist.json",
+        "ARTL_FeasibilityAddressVerification_Element_AddressVerificationBatch.json",
+        "ARTL_FeasibilityAddressVerification_Element_ResponseAction2.json",
+        "ARTL_FeasibilityAddressVerification_Element_ResponseAction3.json"
+    ],
+    "OmniProcessKey": "ARTL_FeasibilityAddressVerification",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FeasibilityAddressVerification_PropertySetConfig.json",
+    "SubType": "FeasibilityAddressVerification",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FeasibilityAddressVerification/Procedure"
+}

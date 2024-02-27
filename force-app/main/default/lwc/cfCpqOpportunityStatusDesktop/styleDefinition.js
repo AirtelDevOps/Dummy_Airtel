@@ -1,0 +1,3 @@
+let styleDefinition =
+      {"state0element0":[{"conditions":"default","styleObject":{"class":"slds-col  condition-element custom-btn slds-size_2-of-12  ","style":"     : #ccc 1px solid; \n         ","styleProperties":{}}}],"state0element1":[{"conditions":"default","styleObject":{"class":"slds-col  condition-element custom-btn slds-size_1-of-12  ","style":"     : #ccc 1px solid; \n         ","styleProperties":{}}}]};
+  export default styleDefinition

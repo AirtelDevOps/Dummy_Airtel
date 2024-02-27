@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_ContactStatusSync_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_ContactStatusSync",
+    "OmniProcessElement": [
+        "ARTL_ContactStatusSync_Element_RAFetchSObjectDetails.json",
+        "ARTL_ContactStatusSync_Element_DRGetCaseTrackingDetails.json",
+        "ARTL_ContactStatusSync_Element_DRUpdateStepStatusOnCaseTracking.json",
+        "ARTL_ContactStatusSync_Element_RAErrorLog.json",
+        "ARTL_ContactStatusSync_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_ContactStatusSync",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_ContactStatusSync_PropertySetConfig.json",
+    "SubType": "ContactStatusSync",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/ContactStatusSync/Procedure"
+}

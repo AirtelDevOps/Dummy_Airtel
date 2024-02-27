@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues1",
+    "OmniProcessId": {
+        "Name": "CheckLeadCreationIsAllowed",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CheckLeadCreationIsAllowed/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "AllowedPSUser": "='ARTL_SAM;ARTL_VRM;ARTL_VRM_TL;ARTL_GRM;ARTL_TSM;ARTL_ZSM;ART_Sales_Operation;ARTL_CBH;ARTL_AM;ARTL_TL;ARTL_KAM_Sales;ARTL_BSG;ARTL_BSG_TL;ARTL_DSG;ARTL_SAM_PSG;ARTL_VRM_PSG;ARTL_VRM_TL_PSG;ARTL_GRM_PSG;ARTL_TSM_PSG;ARTL_ZSM_PSG;ARTL_SalesOps_PSG;ARTL_BSG_PSG;ARTL_BSG_TL_PSG;ARTL_CBH_PSG;ARTL_AM_PSG;ARTL_KAM_TL_PSG;ARTL_KAM_PSG;ARTL_DSG_PSG'"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CheckLeadCreationIsAllowed/Procedure/SetValues1"
+}

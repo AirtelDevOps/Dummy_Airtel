@@ -1,0 +1,98 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "016bc2c5-f8fd-9718-241c-b6c1aed33d0e",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/016bc2c5-f8fd-9718-241c-b6c1aed33d0e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "97a18c62-a513-ad9a-0f8c-76b23cf42012",
+        "%vlocity_namespace%__MappingsData__c": "",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Hardware to Hardware OTC CFS Comp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Hardware to Hardware OTC CFS Comp/Product2/fd0e81b9-d9ac-76cb-1746-4dbc4c902470"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "60077f1e-a7b5-eaa4-7beb-159863ce6f21",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/60077f1e-a7b5-eaa4-7beb-159863ce6f21",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d1b22865-fc41-163c-ce98-a24ee7ae6e2c",
+        "%vlocity_namespace%__MappingsData__c": "",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Hardware to Hardware ARC CFS Comp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Hardware to Hardware ARC CFS Comp/Product2/fd0e81b9-d9ac-76cb-1746-4dbc4c902470"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ec804682-9f34-e094-a3c1-25e7d022a8a0",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/ec804682-9f34-e094-a3c1-25e7d022a8a0",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "da84ecbd-0191-4743-4db5-04ebe4442073",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"Make\",\"source_attr_code\":\"ATT_MAKE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Make\",\"destination_attr_code\":\"ATT_MAKE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Model\",\"source_attr_code\":\"ATT_MODEL\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Model\",\"destination_attr_code\":\"ATT_MODEL\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"HSN Code\",\"source_attr_code\":\"ATT_HSN_CODE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"HSN Code\",\"destination_attr_code\":\"ATT_HSN_CODE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Router Ownership\",\"source_attr_code\":\"ATT_ROUTER_OWNERSHIP\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Router Ownership\",\"destination_attr_code\":\"ATT_ROUTER_OWNERSHIP\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Device Type\",\"source_attr_code\":\"ATT_DeviceType\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Device Type\",\"destination_attr_code\":\"ATT_DeviceType\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"SAC Code\",\"source_attr_code\":\"ATT_SAC_CODE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"SAC Code\",\"destination_attr_code\":\"ATT_SAC_CODE\"},{\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Item Code\",\"destination_attr_code\":\"ATT_ITEM_CODE\",\"source_attr_name\":\"Item Code\",\"source_attr_code\":\"ATT_ITEM_CODE\",\"source_type\":\"Attribute\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "fd0e81b9-d9ac-76cb-1746-4dbc4c902470",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Hardware to Hardware CFS Comp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Hardware to Hardware CFS Comp/Product2/fd0e81b9-d9ac-76cb-1746-4dbc4c902470"
+    }
+]

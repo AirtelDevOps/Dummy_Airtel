@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Resident_Engineers_Duplicate</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND(ARTL_Resident_Engineer_1__c &lt;&gt; &apos;&apos;,
+OR(ARTL_Resident_Engineer_1__c  = ARTL_Resident_Engineer_2__c,
+ARTL_Resident_Engineer_1__c  = ARTL_Resident_Engineer_3__c,  ARTL_Resident_Engineer_1__c  = ARTL_Resident_Engineer_4__c,
+ARTL_Resident_Engineer_1__c  = ARTL_Resident_Engineer_5__c)),
+AND(ARTL_Resident_Engineer_2__c &lt;&gt; &apos;&apos;,
+OR(ARTL_Resident_Engineer_2__c = ARTL_Resident_Engineer_3__c,
+ARTL_Resident_Engineer_2__c = ARTL_Resident_Engineer_4__c,
+ARTL_Resident_Engineer_2__c = ARTL_Resident_Engineer_5__c)),
+AND(ARTL_Resident_Engineer_3__c &lt;&gt; &apos;&apos;,
+OR(ARTL_Resident_Engineer_3__c = ARTL_Resident_Engineer_4__c,
+ARTL_Resident_Engineer_3__c = ARTL_Resident_Engineer_5__c)),
+AND(ARTL_Resident_Engineer_4__c &lt;&gt; &apos;&apos;,
+OR(ARTL_Resident_Engineer_4__c = ARTL_Resident_Engineer_5__c))
+)</errorConditionFormula>
+    <errorMessage>Please select a unique Resident engineer. We cannot map the same user on either Resident Engineer placeholder.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,223 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaSequence": 1,
+        "GlobalKey": "DR_PO_InsertIterationCustom8112",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom2142",
+        "InputFieldName": "Step1:OpportunityDetails:NewOpportunityDetails:OpportunityAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Amount__c",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "DR_PO_InsertIterationCustom4741",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom6994",
+        "InputFieldName": "Step1:TransactionType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Journey_Type__c",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom5555",
+        "InputFieldName": "Step1:OpportunityDetails:NewOpportunityDetails:OpportunityCloseDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity_Close_Date__c",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom8872",
+        "InputFieldName": "Step1:OpportunityDetails:ExistingOpportunity-Block:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity_Id__c",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom5774",
+        "InputFieldName": "Step1:OpportunityDetails:NewOpportunityDetails:OpportunityName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity_Name__c",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom948",
+        "InputFieldName": "Step1:OpportunityDetails:NewOpportunityDetails:OpportunityStage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity_Stage__c",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom3742",
+        "InputFieldName": "Step1:QuoteDetails:ExistingQuote-Block:QuoteId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote_Id__c",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom6964",
+        "InputFieldName": "Step1:QuoteDetails:QuoteName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote_Name__c",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_PO_InsertIterationCustom5326",
+        "InputFieldName": "BulkAssetRecrdType:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_PO_InsertIteration",
+        "OmniDataTransformationId": {
+            "Name": "DR_PO_InsertIteration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_PO_InsertIteration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "ARTL_Bulk_Upload_Iteration__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CGServiceStatusCheck_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CGServiceStatusCheck",
+    "OmniProcessElement": [
+        "ARTL_CGServiceStatusCheck_Element_DRGetTransactionId.json",
+        "ARTL_CGServiceStatusCheck_Element_DRFetchRequestPayloadList.json",
+        "ARTL_CGServiceStatusCheck_Element_RAFetchRequestAttributes.json",
+        "ARTL_CGServiceStatusCheck_Element_SetValues1.json",
+        "ARTL_CGServiceStatusCheck_Element_HTTPAction1.json",
+        "ARTL_CGServiceStatusCheck_Element_DataRaptorPostAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_CGServiceStatusCheck",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CGServiceStatusCheck_PropertySetConfig.json",
+    "SubType": "CGServiceStatusCheck",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CGServiceStatusCheck/Procedure"
+}

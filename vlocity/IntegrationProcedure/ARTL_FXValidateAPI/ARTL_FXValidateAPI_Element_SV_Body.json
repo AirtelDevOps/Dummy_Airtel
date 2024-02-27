@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SV_Body",
+    "OmniProcessId": {
+        "Name": "FXValidateAPI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FXValidateAPI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Body": {
+                "getCustomerPlanOldNewMappingReqMsg": {
+                    "dataArea": {
+                        "getCustomerPlanOldNewMapping": {
+                            "customerAccount": {
+                                "identification": {
+                                    "id": "",
+                                    "type": "ParentAccountNumber"
+                                }
+                            },
+                            "logicalResource": {
+                                "identification": {
+                                    "id": "%qliLSI%",
+                                    "type": ""
+                                },
+                                "type": "MSISDN"
+                            }
+                        }
+                    },
+                    "ebmHeader": {
+                        "consumerTransactionId": "",
+                        "customerMigrated": "true",
+                        "domain": "B2B",
+                        "lob": "AES"
+                    }
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FXValidateAPI/Procedure/SV_Body"
+}

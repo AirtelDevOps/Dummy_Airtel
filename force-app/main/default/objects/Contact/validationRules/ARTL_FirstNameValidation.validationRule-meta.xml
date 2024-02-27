@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_FirstNameValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(REGEX( FirstName ,&quot;[a-zA-Z0-9 ./()&amp;.-]*&quot;))</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>First Name should not contain Special Characters except  ./()&amp;.-.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,197 @@
+<messaging:emailTemplate subject="Letter of Commissioning : Bharti Airtel - Order Reference :OrderNumber" recipientType="User" relatedToType="Order">
+
+<messaging:htmlEmailBody >
+       <html>
+       <style>
+ 
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .buttonAccept {
+          background-color: #04AA6D; 
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          width:6rem;
+          height:2rem;
+          border-radius: 8px;
+        }
+        .buttonReject {
+          background-color: red; 
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          width:6rem;
+          height:2rem;
+          border-radius: 8px;
+        }
+ 
+</style>
+        <body >
+            <img src="https://assets.airtel.in/static-assets/siebel/locubanner.png"/><br/><br/>      
+            <p>Dear Customer, </p> <br/>
+            
+            Greetings from Airtel Business. <br/>
+           
+<p> We are pleased to inform you that your service with reference to Order No. <Strong>OrderNumber</Strong> and Circuit ID(LSI) <Strong>Circuitid</Strong> has now been commissioned as per the purchase order received. 
+The Billing Start Date of the service is <Strong>BillingStartDate</Strong></p>
+<p>lease click "Accept", between <Strong>CommissioningDate</Strong> and <Strong>GracePeriodDate</Strong> to acknowledge your approval of the delivered services.</p>
+<p>Please note that by clicking 'Accept' you are authorizing Airtel Business to commence the billing of the respective sites.</p>
+<p>In case the services delivered are not as per your requirement, please notify Airtel Business by clicking the "Reject" button.</p>  
+<div style="text-align: center"><a href="https://urldefense.com/v3/__https:/www.airtel.in/business/thanksforbusiness/login/?redirectUrl=https:**Awww.airtel.in*business*thanksforbusiness*selfcare*data*track-orders*confirmed**A7borderId*7d*details&scrollTo=sites&sitesFilter=locReady__;Ly8vLy8vLy8vJSUv!!L7AK7Ig!MdnRuGAbOp0oz2Uw3QXM0On1jm804ov2eJlkfeRuPB6t2bpC5UeAeds0TSpn1We7eWme5RCRjMksnWfuPVSMcmZ2IxIa$"><button class="buttonAccept">Accept</button></a> <a href="https://urldefense.com/v3/__https:/www.airtel.in/business/thanksforbusiness/login/?redirectUrl=https:**Awww.airtel.in*business*thanksforbusiness*selfcare*data*track-orders*confirmed**A7borderId*7d*details&scrollTo=sites&sitesFilter=locReady__;Ly8vLy8vLy8vJSUv!!L7AK7Ig!MdnRuGAbOp0oz2Uw3QXM0On1jm804ov2eJlkfeRuPB6t2bpC5UeAeds0TSpn1We7eWme5RCRjMksnWfuPVSMcmZ2IxIa$"> <button class="buttonReject">Reject</button></a></div>
+<p> <strong>Below are the important details of your order for future reference. More details are attached for your reference:</strong></p>
+ <table>
+       <tbody>
+           <tr>
+               <td><Strong>Customer Name:</Strong></td>
+               <td>AccountName</td>
+           </tr>
+           <tr>
+               <td><Strong>Order No.:</Strong></td>
+               <td>OrderNumber</td>
+           </tr>
+           <tr>
+               <td><Strong>Order Type:</Strong></td>
+               <td>OrderType</td>
+                
+           </tr>
+           <tr>
+               <td><Strong>Customer PO Date:</Strong></td>
+               <td>PoDate</td>
+           </tr>
+            <tr>
+               <td><Strong>PO Value:</Strong></td>
+               <td>PoValue</td>
+            </tr>
+            
+             <tr>
+               <td><Strong>PO Term:</Strong></td>
+               <td>PoTerm</td>
+            </tr>
+           
+           <tr>
+               <td><Strong>CAF Number:</Strong></td>
+               <td>CafNumber</td>
+           </tr>
+           <tr>
+               <td><Strong>Customers Address:</Strong></td>
+               <td>ShippingAddress </td>
+           </tr>
+           <tr>
+               <td><Strong>Customer Delivery Contact Name:</Strong></td>
+               <td>DeliveryContactName</td>
+           </tr>
+           <tr>
+               <td><Strong>Customer Delivery Contact E-mail:</Strong></td>
+               <td>DeliveryEmail</td>
+           </tr>
+           <tr>
+               <td><Strong>Product:</Strong></td>
+               <td>Product2</td>
+           </tr>
+           <tr>
+               <td><Strong>BandWidth:</Strong></td>
+               <td>Bandwidth2</td>
+           </tr>
+           <tr>
+               <td><Strong>New Media:</Strong></td>
+               <td>Media</td>
+           </tr>
+           <tr>
+               <td><Strong>Link Type:</Strong></td>
+               <td></td>
+           </tr>
+           <tr>
+               <td><Strong>Circuit ID (LSI): </Strong></td>
+               <td>Circuitid </td>
+           </tr>
+           <tr>
+               <td><Strong>Hardware Made:</Strong></td>
+               <td>RouterMake</td>
+           </tr>
+           <tr>
+               <td><Strong>Hardware Model:</Strong></td>
+               <td>RouterModel</td>
+           </tr>
+           <tr>
+               <td><Strong>Billing Start Date:</Strong></td>
+               <td>BillingStartDate</td>
+           </tr>
+           <tr> 
+               <td rowspan="3"><Strong>Details (Utilization Report):</Strong></td> 
+               <td>URL: <a href="http://90902:0000">http://90902:0000</a></td> 
+           </tr>
+           <tr>
+                <td>Username: admin@CNC1</td> 
+           </tr>
+           <tr>
+               <td>Password:CNC1#3431  </td> 
+           </tr> 
+       </tbody>
+</table>
+
+<br/>
+<p>You  may  reach  out  to  <Strong>ProjectManager</Strong>,  your  dedicated  Project  Manager,  for updates, action plans and other support services for quality and timely execution of our service.</p>
+ <p>The relevant contact details are shared below for ready reference:</p>
+<table border="1 px;">
+<tbody>
+   <tr>
+       <td><Strong>Designation</Strong></td>
+        <td><Strong>Name</Strong></td>
+         <td><Strong>Email ID</Strong></td>
+          <td><Strong>Contact Details</Strong></td>
+   </tr>
+    <tr>
+       <td><Strong>Project manager</Strong></td>
+        <td>ProjectManager</td>
+         <td>ManagerEmail</td>
+          <td>ManagerPhone</td>
+   </tr>
+    <tr>
+       <td><Strong>Project Lead</Strong></td>
+        <td>ManagerProjectLead</td>
+         <td>ProjectLeadEmail</td>
+          <td>ProjectLeadPhone</td>
+   </tr>
+ </tbody>  
+</table>
+
+<br/>
+
+<p> You may track the status of your order on our digital self-care portal <a href="https://www.airtel.in/business/enterprise-hub/login/">Airtel Thanks for Business</a> </p>
+
+  <br/>
+<p>Thank you for choosing Bharti Airtel. We value your association with us and we are looking forward to serve you.</p>
+<br/>
+
+<p> Regards,<br/>
+Bharti Airtel Ltd.
+</p>
+<br/><br/>
+<div class="myDiv">
+<p style="background-color: #ff0000; color: #ffffff; font-family: arial; font-size: medium;">This is an auto-generated email. Please do not reply to it. In case of any query or discrepancy in the details above, please reach out to your dedicated Project Manager with your Circuit ID(LSI). </p> 
+</div>
+<br/>
+<div style="text-align:center;">
+    Follow Us <a href="https://www.linkedin.com/company/airtel-business/">
+    <img src="{!$Resource.LinkedinLogo}" alt="icon" width="15" height="15"/>
+</a> <a href="https://www.youtube.com/channel/UC62RQR1TkP_945zTN6Jwecg">
+    <img src="{!$Resource.YoutubeImage}" alt="icon" width="15" height="15"/>
+</a> | www.airtel.in/business
+    </div>
+  </body>
+    </html>         
+        
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

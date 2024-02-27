@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RADebugLogger",
+    "OmniProcessId": {
+        "Name": "FetchMRR",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FetchMRR/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "logData:request:activityAction": "MrrDetails",
+            "logData:request:consumerTransactionId": "=%poRecordId%",
+            "logData:request:domain": "B2B",
+            "logData:request:endpoint": "=%endpoint%",
+            "logData:request:namedCredentials": "=%namedCredentials%",
+            "logData:request:operatingUnit": "=%operatingUnit%",
+            "logData:request:poNumber": "=%poNumber%",
+            "logData:request:programmeName": "fetchPRDetails",
+            "logData:response": "=%HTTPFetchPO%",
+            "name": "=\"FetchMRR\"",
+            "type": "=\"Integration Procedure\""
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "ARTL_OmniActionUtil",
+        "remoteMethod": "logDebug",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "VlocityNoRootNode",
+        "sendJSONPath": "null",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FetchMRR/Procedure/RADebugLogger"
+}

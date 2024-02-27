@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "ARTL_PORenewal",
+    "OmniProcessElement": [
+        "ARTL_PORenewal_English_Element_SetUIParameters.json",
+        "ARTL_PORenewal_English_Element_PORenewalProcessStep.json",
+        "ARTL_PORenewal_English_Element_TextBlock.json",
+        "ARTL_PORenewal_English_Element_DisplayLSIForPORenewal.json",
+        "ARTL_PORenewal_English_Element_GetBusinessAccount.json",
+        "ARTL_PORenewal_English_Element_AssetViewerOSNavigate.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "ARTL_PORenewal_English_PropertySetConfig.json",
+    "SubType": "PORenewal",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/PORenewal/English"
+}

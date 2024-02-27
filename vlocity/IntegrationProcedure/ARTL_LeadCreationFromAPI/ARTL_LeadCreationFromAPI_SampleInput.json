@@ -1,0 +1,33 @@
+{
+    "LeadRequest": {
+        "msg": {
+            "action": "Create",
+            "requestApi": "MarketingLeadCreateApi",
+            "transactionId": ""
+        },
+        "payload": {
+            "leadDetail": {
+                "ARC__c": "1234111",
+                "Campaign__c": "Adroit Outbound",
+                "Channel": "Organic",
+                "Country_Code__c": "91",
+                "Description": "Testing API callout",
+                "Id": "00Q7200000Asq5XEAR",
+                "LeadSource": "BambooBox",
+                "LeadSubSource": "WhatsApp",
+                "Phone": "92872666522",
+                "Related_Contact__c": "C-2125590",
+                "Remarks__c": "Got the lead from my old colleague",
+                "Status": "Initial",
+                "Title": "Engineer ",
+                "accountNumber": "ab1-01652471",
+                "email": "test@abc.com",
+                "firstName": "Sanchit",
+                "lastName": "Arora",
+                "leadOwner": "A1RF5S5K",
+                "productInterest": "DSL; Internet",
+                "subCampaign": ""
+            }
+        }
+    }
+}

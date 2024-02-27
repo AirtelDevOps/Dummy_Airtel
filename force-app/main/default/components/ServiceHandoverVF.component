@@ -1,0 +1,179 @@
+<apex:component controller="ARTL_GetFieldAndAttrForLOCRejection" access="global">
+  
+     <style>
+     
+     .button {
+         
+        width: 115px;
+        height: 25px;
+        background: green;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+    }
+    
+    
+    .myDiv {
+      border: 1px outset red;
+      background-color: red;    
+      text-align: center;
+    }
+    
+
+     </style>
+
+     <apex:attribute name="orderId" type="Id" description="Id of the Order" assignTo="{!ordId}"/>
+         
+     <apex:outputPanel rendered="{!OrderRelDetails}"></apex:outputpanel>
+     <apex:outputText value="Date: {!todaysDate}" ></apex:outputText>
+          <br/><br/>
+     <apex:outputText value="Dear Customer,"></apex:outputText> 
+          <br/><br/>
+
+     <apex:outputText value="Greetings from Airtel Business."></apex:outputText>
+         <br/><br/>
+         
+          
+     <apex:outputText value="Your link is up and running now. Please find the details of the same below:"></apex:outputText>
+          <br/><br/><br/>
+      <table>
+            <tbody>
+                <tr>
+                    <td>Circuit ID (LSI).: </td>
+                    <td>{!ciruitId}</td>
+                </tr>
+                <tr>
+                    <td>Customer Name:</td>
+                    <td>{!AccountName}</td>
+                </tr>
+                <tr>
+                    <td>Order No.:</td>
+                    <td>{!subOrder}</td>
+                </tr>
+                <tr>
+                    <td>PO Date: </td>
+                    <td>{!PODate}</td>
+                </tr>
+                <tr>
+                    <td>PO Number:</td>
+                    <td>{!PONumber}</td>
+                </tr>
+                <tr>
+                    <td>Billing Start Date:</td>
+                    <td></td>
+                </tr>
+                
+                
+                <tr>
+                    <td>Product:</td>
+                    <td>{!Product}</td>
+                </tr>
+                <tr>
+                    <td>Bandwidth:</td>
+                    <td>{!bandWidth}</td>
+                </tr>
+                <tr>
+                    <td>Media:</td>
+                    <td>{!media}</td>
+                </tr>
+                 <tr>
+                    <td>Manageability: </td>
+                    <td>{!manageability}</td>
+                </tr>
+                <tr>
+                    <td>Installation Address:</td>
+                    <td>{!customerAddress}</td>
+                </tr>
+                <tr>
+                    <td>One-time charge (OTC): </td>
+                    <td>{!Onetimecharge}</td>
+                </tr>
+                <tr>
+                    <td>Annual Recurring Charge (ARC):</td>
+                    <td>{!AnnualRecurringCharge}</td>
+                </tr>
+                
+            </tbody>
+    </table>
+    
+    <br/>
+               
+    
+    <apex:outputText value="In case you face any issues in the future, you may visit our digital self-care portal –  "></apex:outputText><apex:outputlink value="https://www.airtel.in/business/enterprise-hub/login/">Airtel Thanks for Business.</apex:outputlink>
+    
+    <br/><br/>
+    
+    <apex:outputText value="Alternatively, you may use the below contact matrix for any support required.Kindly mention your Circuit ID (LSI) while communicating with us via mail for an expedited resolution."></apex:outputText>
+   
+    <br/><br/>
+    <div style="text-align:center;">
+    <b><apex:outputText value="Customer Services Support Matrix: "></apex:outputText>
+   </b></div>
+    <br/>
+    <div class="myDiv">
+    <p>Global Services Management Centre (GSMC) || WEB: www.airtel.in/business || <br/>
+    1800102001 Toll Free || +91 124 4609696 (Toll no) || E-mail: datasupport@airtel.com</p> 
+    </div>
+     
+     <table border="1 px;">
+        <tr>
+            <td>Service Assurance Escalation Matrix </td>
+             <td>Service (Unmanaged Data Services) </td>
+              <td>Service (Managed Data Services)</td>
+        </tr>
+         <tr>
+            <td>Level 0 (24 x 7)(1 Hrs.) </td>
+             <td>WEB: www.airtel.in/businessToll-free no: 1800102001Toll-free no: +91 124 4609696</td>
+              <td>GSOC Shift ManagerTel: +91 124-4282480/4282481sm.gsoc@airtel.com</td>
+               
+        </tr>
+         <tr>
+            <td>Level 1 (24 x 7)(2 Hrs.)</td>
+             <td>B2B SOC Shift Manager, Tel-0124-4844721/4844722, shift.manager@airtel.com  </td>
+              
+        </tr>
+        <tr>
+            <td>Level 2 (3 Hrs.) </td>
+             <td>B2B SOC Operation Head, Mobile- +91 8527812323 , Operation.Head@airtel.com </td>
+              
+        </tr>
+        <tr>
+            <td>Level 3 (6 Hrs.)</td>
+             <td>Head Channel Business, Mob: 8448519145 , Davender.Kumar@airtel.com </td>
+              
+        </tr>
+        <tr>
+            <td>Level 4 (10 Hrs.) </td>
+             <td>B2B SOC Head, Mob: +91-7042000229 , b2bsoc.head@airtel.com </td>
+              
+        </tr>
+        
+    </table>
+    <br/>
+    <apex:outputText value="We value your association with us and we are looking forward to serve you."></apex:outputText>
+   
+    <br/>
+    
+    
+    <p> Regards,<br/>
+    Bharti Airtel Ltd.
+    </p>
+    <br/>
+    <div class="myDiv">
+    <p>This is an auto-generated email. Please do not reply to it. In case of any query, please  reach  out  to Customerservices.helpdesk@airtel.com  with  your  Order No. and LSI No.</p> 
+    </div>
+    <br/>
+    <div style="text-align:center;">
+    Follow Us  <a href="https://www.linkedin.com/company/airtel-business/">
+    <img src="{!$Resource.LinkedinLogo}" alt="icon" width="15" height="15"/>
+</a> <a href="https://www.youtube.com/channel/UC62RQR1TkP_945zTN6Jwecg">
+    <img src="{!$Resource.YoutubeImage}" alt="icon" width="15" height="15"/>
+</a>| www.airtel.in/business
+    </div>
+    
+  
+</apex:component>

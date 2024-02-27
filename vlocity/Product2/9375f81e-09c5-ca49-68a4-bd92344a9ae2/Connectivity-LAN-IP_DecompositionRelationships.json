@@ -1,0 +1,162 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"ATT_ADDITIONAL_IP_BLOCK\",\"left-side-datatype\":\"Checkbox\",\"left-side-type\":\"attribute\",\"left-side-category\":\"Interface Details\",\"left-side-name\":\"Additional IP Block\",\"op\":\"=\",\"right-side\":\"true\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0e8aa07a-2e54-1881-64f1-ca44be0b7047",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/0e8aa07a-2e54-1881-64f1-ca44be0b7047",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "",
+        "%vlocity_namespace%__MappingsData__c": "[]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iconnectivity LAN IP to IP OTC CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iconnectivity LAN IP to IP OTC CFS Decomp/Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"ATT_ADDITIONAL_IP_BLOCK\",\"left-side-datatype\":\"Checkbox\",\"left-side-type\":\"attribute\",\"left-side-category\":\"Interface Details\",\"left-side-name\":\"Additional IP Block\",\"op\":\"=\",\"right-side\":\"true\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3dfc429f-6179-82f6-ba10-df8abcfd70d7",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/3dfc429f-6179-82f6-ba10-df8abcfd70d7",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_ARCCharge__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"IP Charge ARC\",\"destination_attr_code\":\"ATT_IP_CHARGE_ARC\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_OTCCharge__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"IP Charge OTC\",\"destination_attr_code\":\"ATT_IP_Charge_OTC\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Add LAN IPV6 Subnet\",\"source_attr_code\":\"ATT_Add_LAN_IPV6_Subnet\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Add LAN IPV6 Subnet\",\"destination_attr_code\":\"ATT_Add_LAN_IPV6_Subnet\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Delete LAN IPv6\",\"source_attr_code\":\"ATT_Delete_LAN_IPv6\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Delete LAN IPv6\",\"destination_attr_code\":\"ATT_Delete_LAN_IPv6\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Add LAN IPv6\",\"source_attr_code\":\"ATT_Add_LAN_IPv6\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Add LAN IPv6\",\"destination_attr_code\":\"ATT_Add_LAN_IPv6\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Add LAN IPv4\",\"source_attr_code\":\"ATT_Add_LAN_IPv4\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Add LAN IPv4\",\"destination_attr_code\":\"ATT_Add_LAN_IPv4\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Delete LAN IPv4\",\"source_attr_code\":\"ATT_Delete_LAN_IPv4\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Delete LAN IPv4\",\"destination_attr_code\":\"ATT_Delete_LAN_IPv4\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Additional LAN IPv4\",\"source_attr_code\":\"ATT_Additional_LAN_IPv4\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Additional LAN IPv4\",\"destination_attr_code\":\"ATT_Additional_LAN_IPv4\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Add LAN IPV4 Subnet\",\"source_attr_code\":\"ATT_Add_LAN_IPV4_Subnet\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Add LAN IPV4 Subnet\",\"destination_attr_code\":\"ATT_Add_LAN_IPV4_Subnet\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Additional LAN IPv6\",\"source_attr_code\":\"ATT_Additional_LAN_IPv6\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Additional LAN IPv6\",\"destination_attr_code\":\"ATT_Additional_LAN_IPv6\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iconnectivity LAN IP to iconnectivity Additional IP Block CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iconnectivity LAN IP to iconnectivity Additional IP Block CFS Decomp/Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"ATT_ADDITIONAL_IP_BLOCK\",\"left-side-datatype\":\"Checkbox\",\"left-side-type\":\"attribute\",\"left-side-category\":\"Interface Details\",\"left-side-name\":\"Additional IP Block\",\"op\":\"=\",\"right-side\":\"true\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "732981af-6424-abbc-7d79-e2b0eccf1321",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/732981af-6424-abbc-7d79-e2b0eccf1321",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "",
+        "%vlocity_namespace%__MappingsData__c": "[]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iconnectivity LAN IP to IP Charge ARC CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iconnectivity LAN IP to IP Charge ARC CFS Decomp/Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side-type\":\"attribute\",\"left-side\":\"ATT_ADDITIONAL_IP_BLOCK\",\"left-side-name\":\"Is Additional IP Block?\",\"left-side-category\":\"Details\",\"left-side-datatype\":\"Text\",\"op\":\"!=\",\"right-side\":\"true\"}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3bb3b828-de7f-5712-3f7c-627459e16c2a",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/3bb3b828-de7f-5712-3f7c-627459e16c2a",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"LAN IPv4 Subnet Mask\",\"source_attr_code\":\"ATT_LAN_IPV4_SUBNET_MASK\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"LAN IPv4 Subnet Mask\",\"destination_attr_code\":\"ATT_LAN_IPV4_SUBNET_MASK\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"LAN IPv4\",\"source_attr_code\":\"ATT_LAN_IPV4\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"LAN IPv4\",\"destination_attr_code\":\"ATT_LAN_IPV4\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"LAN IPv6\",\"source_attr_code\":\"ATT_LAN_IPV6\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"LAN IPv6\",\"destination_attr_code\":\"ATT_LAN_IPV6\"},{\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"LAN IPv6 Subnet Mask\",\"destination_attr_code\":\"ATT_LAN_IPV6_SUBNET_MASK\",\"source_attr_name\":\"LAN IPv6 Subnet Mask\",\"source_attr_code\":\"ATT_LAN_IPV6_SUBNET_MASK\",\"source_type\":\"Attribute\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iconnectivity LAN IP Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iconnectivity LAN IP Decomp/Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side-type\":\"field-OrderItem\",\"left-side\":\"%vlocity_namespace%__Product2Id__r.Name\",\"left-side-datatype\":\"String\",\"op\":\"=\",\"right-side\":\"Connectivity WAN IP\"}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "bf66dc47-c2ed-6f4f-9a97-5ccf6fb8b921",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/bf66dc47-c2ed-6f4f-9a97-5ccf6fb8b921",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "86395a48-d88a-beb8-cce7-757b781e0812",
+        "%vlocity_namespace%__MappingsData__c": "",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iConnectivity LAN to WAN IP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iConnectivity LAN to WAN IP/Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2"
+    }
+]

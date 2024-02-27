@@ -1,0 +1,103 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "updateQuoteMemberRecCustom412",
+        "InputFieldName": "result:ARTL_Feasibility_Error_Margin__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "updateQuoteMemberRec",
+        "OmniDataTransformationId": {
+            "Name": "updateQuoteMemberRec",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/updateQuoteMemberRec",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Feasibility_Error_Margin__c",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "updateQuoteMemberRecCustom4217",
+        "InputFieldName": "result:ARTL_Feasibility_Geolocation__Latitude__s",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "updateQuoteMemberRec",
+        "OmniDataTransformationId": {
+            "Name": "updateQuoteMemberRec",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/updateQuoteMemberRec",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Feasibility_Geolocation__Latitude__s",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "updateQuoteMemberRecCustom2061",
+        "InputFieldName": "result:ARTL_Feasibility_Geolocation__Longitude__s",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "updateQuoteMemberRec",
+        "OmniDataTransformationId": {
+            "Name": "updateQuoteMemberRec",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/updateQuoteMemberRec",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Feasibility_Geolocation__Longitude__s",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "updateQuoteMemberRecCustom2716",
+        "InputFieldName": "result:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "updateQuoteMemberRec",
+        "OmniDataTransformationId": {
+            "Name": "updateQuoteMemberRec",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/updateQuoteMemberRec",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "updateQuoteMemberRecCustom4933",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "updateQuoteMemberRec",
+        "OmniDataTransformationId": {
+            "Name": "updateQuoteMemberRec",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/updateQuoteMemberRec",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

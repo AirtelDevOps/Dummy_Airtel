@@ -1,0 +1,33 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": 0,
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "CurrencyIsoCode": "INR",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "UTM",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "746bb77b-b105-ba51-5e15-82a397be873d",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "746bb77b-b105-ba51-5e15-82a397be873d",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/746bb77b-b105-ba51-5e15-82a397be873d",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "3c6df3ca-4424-4131-bde3-c3ea5d5b5925",
+        "UnitPrice": 0,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/746bb77b-b105-ba51-5e15-82a397be873d"
+    }
+]

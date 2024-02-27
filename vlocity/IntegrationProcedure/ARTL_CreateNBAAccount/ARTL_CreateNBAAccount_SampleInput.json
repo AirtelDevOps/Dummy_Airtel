@@ -1,0 +1,41 @@
+{
+    "BusinessAccountName": "Green Field Telco Ltd",
+    "GSTDetailsStep": {
+        "BillingAddress": {
+            "isBillingApplicable": false
+        },
+        "BillingAddressBlock": {
+            "BillingCityRead": "Panchkula",
+            "BillingCountryRead": "India",
+            "BillingPincodeRead": "134109",
+            "BillingStateRead": "Haryana",
+            "BillingStreetRead": "SCO 52,PANCHKULA"
+        },
+        "BillingAddressLookup-Block": {
+            "Address": "SCO 52,PANCHKULA,Panchkula,Haryana,India",
+            "BillingAccountAddress": "134109",
+            "BillingAddressLookup": "134109",
+            "TABillingAccountId": "0010T00000bLlNTQA0",
+            "TABillingCity": "Panchkula",
+            "TABillingCountry": "India",
+            "TABillingPincode": "134109",
+            "TABillingState": "Haryana",
+            "TABillingStreet": "SCO 52,PANCHKULA"
+        },
+        "BillingAddressManual": {
+            "BillingPincode-Block": null
+        },
+        "DeliveryAddress": {
+            "DeliveryGSTNumber": "06AAACH2702H1Z4",
+            "isDeliveryApplicable": true
+        },
+        "NonBillingAggregator-Block": {
+            "NonBillingAggregator": "wer",
+            "ShortCode": "123"
+        },
+        "msgBillStandardReasonRequired": true,
+        "msgBothSelectedError": true,
+        "msgDeliveryStandardReasonRequired": true
+    },
+    "businessAccountId": "0010T00000bJCdrQAG"
+}

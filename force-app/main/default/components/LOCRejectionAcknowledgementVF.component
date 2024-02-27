@@ -1,0 +1,160 @@
+<apex:component controller="ARTL_GetFieldAndAttrForLOCRejection" access="global">
+  
+     <style>
+     
+     .button {
+         
+        width: 115px;
+        height: 25px;
+        background: green;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+    }
+    
+    .buttonReject{
+        
+        width: 115px;
+        height: 25px;
+        background: red;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+    }
+    
+    .myDiv {
+      border: 1px outset red;
+      background-color: red;    
+      text-align: center;
+    }
+
+     </style>
+
+     <apex:attribute name="orderId" type="Id" description="Id of the Order" assignTo="{!ordId}"/>
+         
+     <apex:outputPanel rendered="{!OrderRelDetails}">
+     <apex:outputText value="This is in reference to your Airtel Order No. {!masterOrder} on LSI {!ciruitId}, Sub-order No. {!subOrder}." ></apex:outputText>
+          <br/><br/><br/>
+     <apex:outputText value="We have received your rejection of the Letter of Commissioning. We will reach out to you shortly to understand your concerns and address them."></apex:outputText> 
+          <br/><br/><br/>
+
+     <apex:outputText value="Please  note,  that  your  new  billing  start  date  will  be  communicated  to  you  in  the revised Letter of Commissioning."></apex:outputText>
+         <br/><br/><br/>
+         
+          
+     <apex:outputText value="Here are the important details related to your Airtel Order. The site-wise details have been attached herewith for your reference."></apex:outputText>
+          <br/><br/>
+      <table>
+            <tbody>
+                <tr>
+                    <td>Customer Name:</td>
+                    <td>{!AccountName}</td>
+                </tr>
+                <tr>
+                    <td>Master Order No.:</td>
+                    <td>{!masterOrder}</td>
+                </tr>
+                <tr>
+                    <td>Sub Order No.:</td>
+                    <td>{!subOrder}</td>
+                </tr>
+                <tr>
+                    <td>Circuit ID (LSI).: </td>
+                    <td>{!ciruitId}</td>
+                </tr>
+                <tr>
+                    <td>Product:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Bandwidth:</td>
+                    <td>{!bandWidth}</td>
+                </tr>
+                <tr>
+                    <td>Media:</td>
+                    <td>{!media}</td>
+                </tr>
+                 <tr>
+                    <td>Manageability: </td>
+                    <td>{!manageability}</td>
+                </tr>
+                <tr>
+                    <td>Installation Address:</td>
+                    <td>{!customerAddress}</td>
+                </tr>
+                
+            </tbody>
+    </table>
+    
+    <br/><br/><br/>
+    
+    
+    
+    <apex:outputText value="You may reach out to {!projectmanager}, your dedicated project manager for any queries, </br> 
+                        The relevant contact details are shared below for ready reference:">
+                        
+    </apex:outputText>
+    
+    <br/><br/><br/>
+
+    
+    <table border="1 px;">
+        <tr>
+            <td>Designation</td>
+             <td>Name</td>
+              <td>Email ID</td>
+               <td>Contact Details</td>
+        </tr>
+         <tr>
+            <td>Project manager</td>
+             <td>{!projectmanager}</td>
+              <td>{!projectManagerPhone}</td>
+               <td>{!projectManagerEmail}</td>
+        </tr>
+         <tr>
+            <td>Project Team Lead</td>
+             <td>{!projectmanagerlead}</td>
+              <td>{!projectManagerleadPhone}</td>
+               <td>{!projectManagerleadEmail}</td>
+        </tr>
+        
+    </table>
+    
+    </apex:outputPanel>
+    
+    <br/><br/><br/>
+    
+    <apex:outputText value="Thanks for your patience and understanding."></apex:outputText>
+    
+    <br/><br/><br/>
+    
+    <apex:outputText value="We value your association with us and we are looking forward to serve you."></apex:outputText>
+   
+    <br/><br/><br/>
+    
+    <p> Regards,<br/>
+    Bharti Airtel Ltd.
+    </p>
+    <br/><br/>
+    <div class="myDiv">
+    <p>This is an auto-generated email. Please do not reply to it. In case of any query, please  reach  out  to Customerservices.helpdesk@airtel.com  with  your  Order No. and LSI No.</p> 
+    </div>
+    <br/><br/><br/>
+    <div style="text-align:center;">
+    Follow Us <a href="https://www.linkedin.com/company/airtel-business/">
+    <img src="{!$Resource.LinkedinLogo}" alt="icon" width="15" height="15"/>
+</a> <a href="https://www.youtube.com/channel/UC62RQR1TkP_945zTN6Jwecg">
+    <img src="{!$Resource.YoutubeImage}" alt="icon" width="15" height="15"/>
+</a> | www.airtel.in/business
+    </div>
+    
+  
+</apex:component>

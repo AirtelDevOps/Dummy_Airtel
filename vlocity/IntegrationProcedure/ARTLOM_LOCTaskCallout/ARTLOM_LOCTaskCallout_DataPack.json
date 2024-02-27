@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "LOCTaskCallout",
+    "OmniProcessElement": [
+        "ARTLOM_LOCTaskCallout_Element_DR_PayloadTransform.json",
+        "ARTLOM_LOCTaskCallout_Element_HTTP_SolaceQueue.json",
+        "ARTLOM_LOCTaskCallout_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTLOM_LOCTaskCallout",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTLOM_LOCTaskCallout_PropertySetConfig.json",
+    "SubType": "LOCTaskCallout",
+    "Type": "ARTLOM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTLOM/LOCTaskCallout/Procedure"
+}

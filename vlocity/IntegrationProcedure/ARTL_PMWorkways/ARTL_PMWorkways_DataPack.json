@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_PMWorkways_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PMWorkways",
+    "OmniProcessElement": [
+        "ARTL_PMWorkways_Element_DRFetchTaskPayloadForPMWorkways.json",
+        "ARTL_PMWorkways_Element_DRFetchRequestPayloadList.json",
+        "ARTL_PMWorkways_Element_RAFetchRequestAttributes.json",
+        "ARTL_PMWorkways_Element_LAMergePayload.json",
+        "ARTL_PMWorkways_Element_HTTPAction.json",
+        "ARTL_PMWorkways_Element_RALoggerResponse.json",
+        "ARTL_PMWorkways_Element_UpdateResponse.json",
+        "ARTL_PMWorkways_Element_GetExecLogId.json",
+        "ARTL_PMWorkways_Element_LinkExecutionLog.json",
+        "ARTL_PMWorkways_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_PMWorkways",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_PMWorkways_PropertySetConfig.json",
+    "SubType": "PMWorkways",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/PMWorkways/Procedure"
+}

@@ -1,0 +1,207 @@
+[
+    {
+        "CurrencyIsoCode": "USD",
+        "FormulaExpression": "IF( %itemDetail:type% == \"HSN\", %itemDetail:code%, $Vlocity.NULL )",
+        "FormulaResultPath": "itemDetail:HSNCode",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom8176",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "USD",
+        "FormulaExpression": "IF( %itemDetail:type% == \"SAC\", %itemDetail:code%, $Vlocity.NULL )",
+        "FormulaResultPath": "itemDetail:SACCode",
+        "FormulaSequence": 2,
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom1784",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom153",
+        "InputFieldName": "itemDetail:HSNCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "@ATT_HSN_CODE",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom8130",
+        "InputFieldName": "itemDetail:description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "@ATT_ITEM_DESCRIPTION",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "USD",
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom1793",
+        "InputFieldName": "itemDetail:SACCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "@ATT_SAC_CODE",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom3137",
+        "InputFieldName": "itemDetail:ext:name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "@ATT_TAXATION_TYPE",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom8935",
+        "InputFieldName": "itemDetail:ext:value",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "@ATT_TAX_PERC",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom2525",
+        "InputFieldName": "itemDetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Fetch_Item_Code_Response__c",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom8744",
+        "InputFieldName": "QLIId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ARTL_DRL_LoadItemCodeDetailsOnQLICustom8664",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_LoadItemCodeDetailsOnQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

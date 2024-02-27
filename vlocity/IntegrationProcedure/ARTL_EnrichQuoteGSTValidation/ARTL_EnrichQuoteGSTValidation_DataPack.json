@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_EnrichQuoteGSTValidation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_EnrichQuoteGSTValidation",
+    "OmniProcessElement": [
+        "ARTL_EnrichQuoteGSTValidation_Element_ARTL_GetGSTAPIConfig.json",
+        "ARTL_EnrichQuoteGSTValidation_Element_RADebugLogger.json",
+        "ARTL_EnrichQuoteGSTValidation_Element_HTTPGSTValidationCreate.json",
+        "ARTL_EnrichQuoteGSTValidation_Element_RAResponseLogger.json",
+        "ARTL_EnrichQuoteGSTValidation_Element_SV2.json",
+        "ARTL_EnrichQuoteGSTValidation_Element_ResponseAction4.json"
+    ],
+    "OmniProcessKey": "ARTL_EnrichQuoteGSTValidation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_EnrichQuoteGSTValidation_PropertySetConfig.json",
+    "SubType": "EnrichQuoteGSTValidation",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteGSTValidation/Procedure"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_IsDemo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((ISPICKVAL(QuoteLineItem.Quote.ARTL_Quote_Type__c, &apos;Demo&apos;)),True,IF(( ISPICKVAL(QuoteLineItem.Quote.ARTL_Quote_Type__c, &apos;Permanent Disconnect&apos;) &amp;&amp;   (QuoteLineItem.vlocity_cmt__AssetId__r.ARTL_IsDemo__c == True)), True, False ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Demo</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,69 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SameAsShippingAddress",
+    "OmniProcessId": {
+        "Name": "ARTL/EnrishQuoteBASACreate",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "BillingInformationStep",
+        "OmniProcessId": {
+            "Name": "ARTL/EnrishQuoteBASACreate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/BillingInformationStep",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "BillingInformationStep",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 3,
+        "elementValueMap": {
+            "ShippingCityRead": "=IF(%GSTDetailsStep:BillingAddressManual:BillingPincode-Block:BillingCity% != NULL, %GSTDetailsStep:BillingAddressManual:BillingPincode-Block:BillingCity% , %GSTDetailsStep:BillingAddressBlock:BillingCityRead%) ",
+            "ShippingCountryRead": "=IF(%GSTDetailsStep:BillingAddressManual:BillingPincode-Block:BillingCountry% != NULL, %GSTDetailsStep:BillingAddressManual:BillingPincode-Block:BillingCountry% , %GSTDetailsStep:BillingAddressBlock:BillingCountryRead%) ",
+            "ShippingPincodeRead": "=IF(%GSTDetailsStep:BillingAddressManual:BillingPincode-Block:BillingPincode% != NULL, %GSTDetailsStep:BillingAddressManual:BillingPincode-Block:BillingPincode% , %GSTDetailsStep:BillingAddressBlock:BillingPincodeRead%) ",
+            "ShippingStateRead": "=IF(%GSTDetailsStep:BillingAddressManual:BillingPincode-Block:BillingState% != NULL, %GSTDetailsStep:BillingAddressManual:BillingPincode-Block:BillingState% , %GSTDetailsStep:BillingAddressBlock:BillingStateRead%) ",
+            "ShippingStreetRead": "=IF(%BillingStreet% != NULL, %BillingStreet% , %BillingStreetRead%) ",
+            "isShippingSameAsBilling": true
+        },
+        "label": "Same as Billing",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "isShippingSameAsBilling"
+                    },
+                    {
+                        "condition": "=",
+                        "data": null,
+                        "field": "isShippingSameAsBilling"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/SameAsShippingAddress"
+}

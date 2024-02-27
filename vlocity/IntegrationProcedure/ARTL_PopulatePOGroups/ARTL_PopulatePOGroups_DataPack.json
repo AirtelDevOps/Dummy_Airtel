@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_PopulatePOGroups_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_PopulatePOGroups",
+    "OmniProcessElement": [
+        "ARTL_PopulatePOGroups_Element_DataRaptorExtractAction.json",
+        "ARTL_PopulatePOGroups_Element_RemoteActionLabel.json",
+        "ARTL_PopulatePOGroups_Element_ResponseActionLabel.json"
+    ],
+    "OmniProcessKey": "ARTL_PopulatePOGroups",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_PopulatePOGroups_PropertySetConfig.json",
+    "SubType": "PopulatePOGroups",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/PopulatePOGroups/Procedure"
+}

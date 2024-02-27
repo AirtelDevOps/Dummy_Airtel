@@ -1,0 +1,43 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetBCPValue",
+    "OmniProcessId": {
+        "Name": "ARTL_CreateBillingStageEntriesBulk",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Address 1": "=%SetBCPValueList:BCPString|6%",
+            "City": "=%SetBCPValueList:BCPString|7%",
+            "ContactId": "=%SetBCPValueList:BCPString|1%",
+            "Country": "=%SetBCPValueList:BCPString|5%",
+            "EmailId": "=%SetBCPValueList:BCPString|5%",
+            "FirstName": "=%SetBCPValueList:BCPString|2%",
+            "GST Applicable": "=%SetBCPValueList:BCPString|5%",
+            "GST Number": "=%SetBCPValueList:BCPString|10%",
+            "LastName": "=%SetBCPValueList:BCPString|3%",
+            "MobileNumber": "=%SetBCPValueList:BCPString|4%",
+            "Pincode": "=%SetBCPValueList:BCPString|9%",
+            "Standard Reason": "=%SetBCPValueList:BCPString|11%",
+            "State": "=%SetBCPValueList:BCPString|8%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues5",
+        "responseJSONNode": "PODataDetails",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure/SetBCPValue"
+}

@@ -1,0 +1,152 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GuidedCustomQMFieldMapper",
+    "OmniProcessId": {
+        "Name": "CustomViewSetup",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CustomViewSetup/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Location": [
+                {
+                    "editable": false,
+                    "label": "Premises",
+                    "lookupConfig": {
+                        "label": "Add Premises",
+                        "leadingIcon": "utility:add",
+                        "lookupObject": "%vlocity_namespace%__Premises__c"
+                    },
+                    "name": "%vlocity_namespace%__PremisesId__r.Name",
+                    "topic": [
+                        "All"
+                    ],
+                    "type": "lookup"
+                },
+                {
+                    "editable": false,
+                    "label": "Service Point",
+                    "lookupConfig": {
+                        "label": "Add Service Point",
+                        "leadingIcon": "utility:add",
+                        "lookupObject": "%vlocity_namespace%__ServicePoint__c"
+                    },
+                    "name": "%vlocity_namespace%__ServicePointId__r.Name",
+                    "topic": [
+                        "All"
+                    ],
+                    "type": "lookup"
+                },
+                {
+                    "editable": false,
+                    "label": "Street Address",
+                    "name": "%vlocity_namespace%__StreetAddress__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "editable": false,
+                    "label": "City",
+                    "name": "%vlocity_namespace%__City__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "editable": false,
+                    "label": "State",
+                    "name": "%vlocity_namespace%__State__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "editable": false,
+                    "label": "Country",
+                    "name": "%vlocity_namespace%__Country__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "editable": false,
+                    "label": "Postal Code",
+                    "name": "%vlocity_namespace%__PostalCode__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "label": "Broadband Connection Type",
+                    "name": "%vlocity_namespace%__BroadbandConnectionType__c",
+                    "topic": [
+                        "Serviceability"
+                    ]
+                },
+                {
+                    "label": "Max Download Speed",
+                    "name": "%vlocity_namespace%__MaxDownloadSpeed__c",
+                    "topic": [
+                        "Serviceability"
+                    ]
+                },
+                {
+                    "label": "Max Upload Speed",
+                    "name": "%vlocity_namespace%__MaxUploadSpeed__c",
+                    "topic": [
+                        "Serviceability"
+                    ]
+                },
+                {
+                    "editable": false,
+                    "label": "Pincode Validation Result",
+                    "name": "ARTL_Pincode_Validation_Result__c",
+                    "topic": [
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "editable": false,
+                    "label": "Pincode Validation Error",
+                    "name": "ARTL_Pincode_Validation_Error__c",
+                    "topic": [
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "editable": false,
+                    "label": "Address Validation Result",
+                    "name": "%vlocity_namespace%__AddressValidationResult__c",
+                    "topic": [
+                        "Address Validation"
+                    ]
+                }
+            ],
+            "Subscriber": [
+            ]
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues5",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CustomViewSetup/Procedure/GuidedCustomQMFieldMapper"
+}

@@ -1,0 +1,89 @@
+<template>
+	<div class="via-slds slds-grid b2b-data-table-wrapper">
+		<div class={getTableWrapperClass}>
+			<div class="slds-m-around_x-small">
+				<div if:true={showUpload} class={uploadClass}>
+					<div class="slds-align_absolute-center b2b-upload_wrapper">
+						<div
+							class="slds-grid slds-grid_vertical slds-size_12-of-12 slds-small-size_10-of-12 slds-large-size_6-of-12">
+							<div if:true={isUploadModal} onclick={cancelUpload}
+								class="slds-grid slds-grid_align-end slds-p-bottom_small">
+								<vlocity_cmt-icon theme="slds" icon-name="utility:close" size="xx-small"
+									color="#fff"></vlocity_cmt-icon>
+							</div>
+							<vlocity_cmt-b2b-file-upload name="member-upload" title="Field Mapping"
+								member-type={memberType} available-fields={getAvailableFields}
+								oncpqmemberupload={handleFileUpload}>
+							</vlocity_cmt-b2b-file-upload>
+						</div>
+					</div>
+				</div>
+				<div class="slds-is-relative b2b-show-upload" if:false={showUpload}>
+					<template if:true={tableData}>
+						<template if:true={tableData.length}>
+							<!--map component -->
+							<div class={toggleMap}>
+								<div class="b2b-panel-container">
+									<div class={panelClass} aria-hidden="false">
+										<div>
+											<vlocity_cmt-b2b-map oncpqmapupdate={handleMapUpdate}
+												wrap-locations={locValue} hold-val={holdData}></vlocity_cmt-b2b-map>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end map -->
+						</template>
+					</template>
+				</div>
+				<template if:false={showCartSummary}>
+					<!--kanchan-->
+					<div class="slds-grid slds-grid_reverse">
+						<lightning-button theme="slds" variant="neutral" label="Add Locations"
+							icon-size="x-small" onclick={handleLinkAddressClick}>
+						</lightning-button>
+					</div>
+					<template if:true={showLocation}>
+						<template if:true={isShiftingQuote}>
+							<c-artl_-m-a-c-d-location-update record-id={masterQuote} is-modal-open=true onclosemodalpopup={closeModal}
+							onrefreshmemberscustom={refreshMem}></c-artl_-m-a-c-d-location-update>
+						</template>
+						<template if:false={isShiftingQuote}>
+						<c-artl-upload-locations record-id={masterQuote} onclosemodalpopup={closeModal}
+							onrefreshmemberscustom={refreshMem}></c-artl-upload-locations>
+						</template>
+					</template>
+					<!--kanchan done-->
+					<template if:true={tableColumns.length}>
+						<template if:false={loading}>
+							<slot name="memberTableWrapperSlot">
+								<c-cb2b-data-table onmemberdelete={handleMemberDelete} show-upload={showUpload}
+									show-map={showMap} onmaptoggle={handleMapToggle}
+									oncpqtableupdated={handleTableUpdate} ontabledatachange={handleTableDataChange}
+									ongetpagedata={getAllMembers} quote-id={masterQuote} member-type={memberType}
+									total-number-of-pages={totalNumberOfPages} total-records-count={totalRecords}
+									pagelimit="5" pagesize={pageSize} group-by={gpy} columns={tableColumns}
+									custom-groups={customGroups} records={tableData} group-details={grpDetails}>
+								</c-cb2b-data-table>
+							</slot>
+						</template>
+					</template>
+				</template>
+				<template if:true={showCartSummary}>
+					<div>
+						<slot name="quoteSummarySlot">
+							<!--<vlocity_cmt-b2b-quote-summary quote-id={masterQuote}></vlocity_cmt-b2b-quote-summary>-->
+							<c-cb2b-quote-summary quote-id={masterQuote}></c-cb2b-quote-summary>
+						</slot>
+					</div>
+				</template>
+			</div>
+		</div>
+		<div if:true={isDiscountPanelOpen} class="slds-size_4-of-12 b2b-discount-panel-wrapper via-nds">
+			<vlocity_cmt-b2b-discount-panel></vlocity_cmt-b2b-discount-panel>
+		</div>
+	</div>
+	<div class="slds-spinner_container" if:true={loading}>
+		<lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+	</div>
+</template>

@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "InvoiceDetails",
+    "OmniProcessElement": [
+        "ARTL_invoiceDetails_English_Element_SetValues1.json",
+        "ARTL_invoiceDetails_English_Element_Step1.json",
+        "ARTL_invoiceDetails_English_Element_Messaging1.json",
+        "ARTL_invoiceDetails_English_Element_dateCheck.json",
+        "ARTL_invoiceDetails_English_Element_startDate.json",
+        "ARTL_invoiceDetails_English_Element_endDate.json",
+        "ARTL_invoiceDetails_English_Element_CustomLWC1.json",
+        "ARTL_invoiceDetails_English_Element_Block2.json",
+        "ARTL_invoiceDetails_English_Element_Submit.json",
+        "ARTL_invoiceDetails_English_Element_TextBlock1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "ARTL_invoiceDetails_English_PropertySetConfig.json",
+    "SubType": "invoiceDetails",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/invoiceDetails/English"
+}

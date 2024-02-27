@@ -1,0 +1,1177 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "NIPS-Service_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_ARC_DESCRIPTION": null,
+        "ATT_CONTRACT_TERM": null,
+        "ATT_ChargeFrequency": null,
+        "ATT_ITEM_CODE": null,
+        "ATT_ITEM_DESCRIPTION": null,
+        "ATT_OTC_Description": null,
+        "ATT_OrderDeliveryType_CME": null,
+        "ATT_PaymentTermMilestone1Value_CME": null,
+        "ATT_PaymentTermMilestone1_CME": "1-Advance",
+        "ATT_PaymentTermMilestone2Value_CME": null,
+        "ATT_PaymentTermMilestone2_CME": "2-Shipper",
+        "ATT_PaymentTermMilestone3Value_CME": null,
+        "ATT_PaymentTermMilestone3_CME": "3-Delivery",
+        "ATT_PaymentTermMilestone4Value_CME": null,
+        "ATT_PaymentTermMilestone4_CME": "4-Installed",
+        "ATT_PaymentTermMilestone5Value_CME": null,
+        "ATT_PaymentTermMilestone5_CME": "5-From Date of Invoice",
+        "ATT_PaymentTermMilestone_UOM_CME": null,
+        "ATT_SAC_CODE": null,
+        "ATT_Sale_Type": null,
+        "ATT_TAX_PERC": null,
+        "ATT_TYPE_OF_SERVICE": null,
+        "Proforma Required": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_ENTERPRISE_DETAILS",
+                "Name": "Details",
+                "displaySequence": 300,
+                "id": "a0Z72000000xoooEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abG3AAI",
+                            "cloneable": true,
+                            "code": "ATT_TYPE_OF_SERVICE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 11,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Type of Service",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "13cb73a5-e4e9-0395-32e8-571fe8766b21",
+                                    "label": "PS_Others",
+                                    "name": "13cb73a5-e4e9-0395-32e8-571fe8766b21",
+                                    "readonly": false,
+                                    "value": "PS_Others"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "1a882929-409b-0010-de7e-6554a1aeec06",
+                                    "label": "UC_Licenses",
+                                    "name": "1a882929-409b-0010-de7e-6554a1aeec06",
+                                    "readonly": false,
+                                    "value": "UC_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "1de081fe-6654-4434-9b1e-e4aac81a0784",
+                                    "label": "PS_Network Audit",
+                                    "name": "1de081fe-6654-4434-9b1e-e4aac81a0784",
+                                    "readonly": false,
+                                    "value": "PS_Network Audit"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "24989fe5-9dec-2bfa-47f0-34f84a00edb3",
+                                    "label": "PS_Warranty",
+                                    "name": "24989fe5-9dec-2bfa-47f0-34f84a00edb3",
+                                    "readonly": false,
+                                    "value": "PS_Warranty"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "32b3ce42-5d69-576f-14fb-8a95c1e77578",
+                                    "label": "PS_Managed Services",
+                                    "name": "32b3ce42-5d69-576f-14fb-8a95c1e77578",
+                                    "readonly": false,
+                                    "value": "PS_Managed Services"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "3c23b0a3-737b-6a4b-a060-8ec50c1c566c",
+                                    "label": "PS_FMS",
+                                    "name": "3c23b0a3-737b-6a4b-a060-8ec50c1c566c",
+                                    "readonly": false,
+                                    "value": "PS_FMS"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "52f8b823-0083-9f2a-7c5c-39740a3bcbd0",
+                                    "label": "EN_Licenses",
+                                    "name": "52f8b823-0083-9f2a-7c5c-39740a3bcbd0",
+                                    "readonly": false,
+                                    "value": "EN_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "57fef0df-9978-7b77-1538-d333a6d46b8d",
+                                    "label": "PS_I&C",
+                                    "name": "57fef0df-9978-7b77-1538-d333a6d46b8d",
+                                    "readonly": false,
+                                    "value": "PS_I&C"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "74d45321-f716-23bb-f73b-80533450bef9",
+                                    "label": "DC_Licenses",
+                                    "name": "74d45321-f716-23bb-f73b-80533450bef9",
+                                    "readonly": false,
+                                    "value": "DC_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "c5edc0cb-ef81-33a8-124c-eaf6b99d703c",
+                                    "label": "PS_AMC",
+                                    "name": "c5edc0cb-ef81-33a8-124c-eaf6b99d703c",
+                                    "readonly": false,
+                                    "value": "PS_AMC"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "d057de32-d351-9a1a-4945-aebfd19d71bb",
+                                    "label": "Others",
+                                    "name": "d057de32-d351-9a1a-4945-aebfd19d71bb",
+                                    "readonly": false,
+                                    "value": "Others"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abElAAI",
+                            "cloneable": true,
+                            "code": "ATT_ITEM_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 15,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFxAAI",
+                            "cloneable": true,
+                            "code": "ATT_ITEM_DESCRIPTION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abG1AAI",
+                            "cloneable": true,
+                            "code": "ATT_SAC_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 25,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "SAC Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFtAAI",
+                            "cloneable": true,
+                            "code": "ATT_ARC_DESCRIPTION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 30,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "ARC Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006K5g4AAC",
+                            "cloneable": true,
+                            "code": "ATT_OTC_Description",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 35,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "OTC Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEKAAY",
+                            "cloneable": true,
+                            "code": "ATT_CONTRACT_TERM",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 40,
+                            "filterable": false,
+                            "hasRules": true,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Contract Term",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abG2AAI",
+                            "cloneable": true,
+                            "code": "ATT_TAX_PERC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 880,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Tax %",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "185d7369-cc0f-3515-a50d-d379b901b033",
+                                    "label": "18",
+                                    "name": "185d7369-cc0f-3515-a50d-d379b901b033",
+                                    "readonly": false,
+                                    "value": "18"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "8c027f59-81cb-9b5f-88b1-6d153917fc15",
+                                    "label": "12",
+                                    "name": "8c027f59-81cb-9b5f-88b1-6d153917fc15",
+                                    "readonly": false,
+                                    "value": "12"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "c42b5eac-760c-0bae-876a-9ec683c8eb3a",
+                                    "label": "28",
+                                    "name": "c42b5eac-760c-0bae-876a-9ec683c8eb3a",
+                                    "readonly": false,
+                                    "value": "28"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "d708faf2-df9a-60e2-ef96-a116261f673a",
+                                    "label": "5",
+                                    "name": "d708faf2-df9a-60e2-ef96-a116261f673a",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 5,
+                                    "id": "ec246973-cdb8-c157-3f47-97b97050aaea",
+                                    "label": "0",
+                                    "name": "ec246973-cdb8-c157-3f47-97b97050aaea",
+                                    "readonly": false,
+                                    "value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMomAAE",
+                            "cloneable": true,
+                            "code": "ATT_Sale_Type",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2095,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Sale Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "29503b4e-e8de-dc89-f9e1-6a4fbd8ac8b8",
+                                    "label": "Outright Sale",
+                                    "name": "29503b4e-e8de-dc89-f9e1-6a4fbd8ac8b8",
+                                    "readonly": false,
+                                    "value": "Outright Sale"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "2c11e0b1-d848-cd27-1819-050d1a886a37",
+                                    "label": "Operating Lease",
+                                    "name": "2c11e0b1-d848-cd27-1819-050d1a886a37",
+                                    "readonly": false,
+                                    "value": "Operating Lease"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "47f0de42-ae23-ec47-b683-8d2fef56a706",
+                                    "label": "Financing Lease",
+                                    "name": "47f0de42-ae23-ec47-b683-8d2fef56a706",
+                                    "readonly": false,
+                                    "value": "Financing Lease"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yQDtAAM",
+                            "cloneable": true,
+                            "code": "ATT_ChargeFrequency",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3000,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Charge Frequency",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "1ab692f7-e18b-4d7f-0f74-47dfd31894e4",
+                                    "label": "Quarterly 365",
+                                    "name": "1ab692f7-e18b-4d7f-0f74-47dfd31894e4",
+                                    "readonly": false,
+                                    "value": "Quarterly 365"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "1b1254d3-35d4-e94d-b412-8474458e1821",
+                                    "label": "Half-Yearly Billing",
+                                    "name": "1b1254d3-35d4-e94d-b412-8474458e1821",
+                                    "readonly": false,
+                                    "value": "Half-Yearly Billing"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "4d4c99ca-1b6b-f475-2da2-a031d2d88303",
+                                    "label": "Monthly 365",
+                                    "name": "4d4c99ca-1b6b-f475-2da2-a031d2d88303",
+                                    "readonly": false,
+                                    "value": "Monthly 365"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "53b7d9a3-60f1-18df-90b7-4a58ecb22932",
+                                    "label": "Weekly Billing",
+                                    "name": "53b7d9a3-60f1-18df-90b7-4a58ecb22932",
+                                    "readonly": false,
+                                    "value": "Weekly Billing"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "5826ed28-78ba-b2b5-0802-fb59e6a726b5",
+                                    "label": "Yearly Billing",
+                                    "name": "5826ed28-78ba-b2b5-0802-fb59e6a726b5",
+                                    "readonly": false,
+                                    "value": "Yearly Billing"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "67136d56-8791-fe15-41d1-4c6f5d40a5a4",
+                                    "label": "Quarterly Billing",
+                                    "name": "67136d56-8791-fe15-41d1-4c6f5d40a5a4",
+                                    "readonly": false,
+                                    "value": "Quarterly Billing"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "87fa6149-a54b-c899-1f66-6a0521b0aa8f",
+                                    "label": "Third Month of Odd Quarter",
+                                    "name": "87fa6149-a54b-c899-1f66-6a0521b0aa8f",
+                                    "readonly": false,
+                                    "value": "Third Month of Odd Quarter"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "cb111fc9-fca1-4adc-80b8-0dcc5a949357",
+                                    "label": "Monthly Billing",
+                                    "name": "cb111fc9-fca1-4adc-80b8-0dcc5a949357",
+                                    "readonly": false,
+                                    "value": "Monthly Billing"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "d7bd6a87-907f-e2fb-7aca-8294410fec75",
+                                    "label": "Yearly 365",
+                                    "name": "d7bd6a87-907f-e2fb-7aca-8294410fec75",
+                                    "readonly": false,
+                                    "value": "Yearly 365"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "e10d85fb-9943-d02b-fef7-3af0c7e5d0db",
+                                    "label": "Second Month of Odd Quarter",
+                                    "name": "e10d85fb-9943-d02b-fef7-3af0c7e5d0db",
+                                    "readonly": false,
+                                    "value": "Second Month of Odd Quarter"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "e2f2ec09-0f69-6433-708f-9c6700d93e65",
+                                    "label": "Half-Yearly 365",
+                                    "name": "e2f2ec09-0f69-6433-708f-9c6700d93e65",
+                                    "readonly": false,
+                                    "value": "Half-Yearly 365"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yQH8AAM",
+                            "cloneable": true,
+                            "code": "ATT_OrderDeliveryType_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3010,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Order Delivery Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "2546fc15-8579-7045-1e34-cbffdba193bd",
+                                    "label": "DTA",
+                                    "name": "2546fc15-8579-7045-1e34-cbffdba193bd",
+                                    "readonly": false,
+                                    "value": "DTA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "393ba9dd-32b0-2ff0-35eb-eda14ad626a7",
+                                    "label": "SEZ",
+                                    "name": "393ba9dd-32b0-2ff0-35eb-eda14ad626a7",
+                                    "readonly": false,
+                                    "value": "SEZ"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "5a245c56-4a5a-31bd-5f53-eda66854d4f8",
+                                    "label": "FTWZ",
+                                    "name": "5a245c56-4a5a-31bd-5f53-eda66854d4f8",
+                                    "readonly": false,
+                                    "value": "FTWZ"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "650be869-990a-a8fe-4c9e-1e9609bb7962",
+                                    "label": "DTS",
+                                    "name": "650be869-990a-a8fe-4c9e-1e9609bb7962",
+                                    "readonly": false,
+                                    "value": "DTS"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "c031befb-8b5e-0248-deeb-7d3b07e3c5de",
+                                    "label": "STPR",
+                                    "name": "c031befb-8b5e-0248-deeb-7d3b07e3c5de",
+                                    "readonly": false,
+                                    "value": "STPR"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yQ94AAE",
+                            "cloneable": true,
+                            "code": "Proforma Required",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3020,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Proforma Required",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMolAAE",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone_UOM_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3030,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone UOM",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "11218826-c01c-0ff3-63f4-1b22dcf461e1",
+                                    "label": "Month",
+                                    "name": "11218826-c01c-0ff3-63f4-1b22dcf461e1",
+                                    "readonly": false,
+                                    "value": "Month"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "37ef48ac-69ec-9f27-6101-2eccb204056c",
+                                    "label": "Year",
+                                    "name": "37ef48ac-69ec-9f27-6101-2eccb204056c",
+                                    "readonly": false,
+                                    "value": "Year"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "7d0974b9-cf65-a52c-359f-ecde94eeec90",
+                                    "label": "%",
+                                    "name": "7d0974b9-cf65-a52c-359f-ecde94eeec90",
+                                    "readonly": false,
+                                    "value": "%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "856ff69b-e6dc-5cf3-f110-32c791614a71",
+                                    "label": "Days",
+                                    "name": "856ff69b-e6dc-5cf3-f110-32c791614a71",
+                                    "readonly": false,
+                                    "value": "Days"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yQHAAA2",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone1_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3040,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone1",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "1-Advance",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yQH9AAM",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone1Value_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3050,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone1 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMoeAAE",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone2_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3060,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone2",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "2-Shipper",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yQHBAA2",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone2Value_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3070,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone2 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMogAAE",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone3_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3080,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone3",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "3-Delivery",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMofAAE",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone3Value_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3090,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone3 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMoiAAE",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone4_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3100,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone4",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "4-Installed",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMohAAE",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone4Value_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3110,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone4 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMokAAE",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone5_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3120,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone5",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "5-From Date of Invoice",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMojAAE",
+                            "cloneable": true,
+                            "code": "ATT_PaymentTermMilestone5Value_CME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3130,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone5 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 23
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": [
+        {
+            "actions": {
+            },
+            "childCategories": [
+                {
+                    "actions": {
+                    },
+                    "childCategories": [
+                    ],
+                    "displaySequence": -1,
+                    "fields": {
+                    },
+                    "id": "a177200000hwR7QAAU",
+                    "messages": [
+                    ],
+                    "name": "NIPS",
+                    "nameResult": {
+                    },
+                    "uiStates": {
+                    }
+                }
+            ],
+            "displaySequence": -1,
+            "fields": {
+            },
+            "id": "a177200000hw7oGAAQ",
+            "messages": [
+            ],
+            "name": "Enterprise Sales Catalog",
+            "nameResult": {
+            },
+            "uiStates": {
+            }
+        }
+    ],
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DecompositionRelationship__c": "NIPS-Service_DecompositionRelationships.json",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-09-27",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-27T08:28:58.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "eefaa4a1-a1e6-9aee-c095-a867a04a3cf2",
+    "%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "5831f5b5-4093-99be-7e80-c18a33fe7ba4",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/5831f5b5-4093-99be-7e80-c18a33fe7ba4",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "NIPS Service  Product Object Type",
+    "%vlocity_namespace%__OrchestrationScenario__c": "NIPS-Service_OrchestrationScenarios.json",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "NIPS-Service_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "NIPS-Service_ProductChildItems.json",
+    "%vlocity_namespace%__ProductRelationship__c": "NIPS-Service_ProductRelationships.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-27T08:28:55.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Simple",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_Hansen_Primary_Key__c": "",
+    "ARTL_LSIRequiredForHansen__c": false,
+    "ARTL_LSIRequired__c": true,
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "NIPS Service",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "NIPS-Service_PricebookEntries.json",
+    "ProductCode": "c09a2e70-64af-4ad6-8427-06c8489234d7",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": "",
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "NIPS Service",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "c09a2e70-64af-4ad6-8427-06c8489234d7",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05"
+}

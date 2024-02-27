@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_SelfServiceCreateLineItemsFinishProcess_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_SelfServiceCreateLineItemsFinishProcess",
+    "OmniProcessElement": [
+        "ESM_SelfServiceCreateLineItemsFinishProcess_Element_SetExecuteNextStep.json",
+        "ESM_SelfServiceCreateLineItemsFinishProcess_Element_responseAction.json"
+    ],
+    "OmniProcessKey": "ESM_SelfServiceCreateLineItemsFinishProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_SelfServiceCreateLineItemsFinishProcess_PropertySetConfig.json",
+    "SubType": "SelfServiceCreateLineItemsFinishProcess",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/SelfServiceCreateLineItemsFinishProcess/Procedure"
+}

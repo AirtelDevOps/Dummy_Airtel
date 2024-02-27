@@ -1,0 +1,46 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues2",
+    "OmniProcessId": {
+        "Name": "ARTL_CreateBillingStageEntriesBulk",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Id": "=%Id%",
+            "bCity": "=%PODataDetails:City%",
+            "bCountry": "=%PODataDetails:Country%",
+            "bEmail": "=%PODataDetails:EmailId%",
+            "bGST": "=%PODataDetails:GST Number%",
+            "bState": "=%PODataDetails:State%",
+            "bStdReason": "=%PODataDetails:Standard Reason%",
+            "bStreet": "=%PODataDetails:Address 1%",
+            "bcpId": "=%BCP:BCPId%",
+            "bfirstname": "=%PODataDetails:FirstName%",
+            "blastname": "=%PODataDetails:LastName%",
+            "bmobile": "=%PODataDetails:MobileNumber%",
+            "shipCity": "=%PODataDetails:City%",
+            "shipPincode": "=%PODataDetails:Pincode%",
+            "shipState": "=%PODataDetails:State%",
+            "shipStreet": "=%PODataDetails:Address 1%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "BCPData",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure/SetValues2"
+}

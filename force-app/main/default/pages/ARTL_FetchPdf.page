@@ -1,0 +1,9 @@
+<apex:page controller="ARTL_InvoicePdfVFController">
+    <apex:form rendered="{!pdf == null}">
+        <apex:pageblock >
+            <apex:pageMessages rendered="{!pdf == null}"></apex:pageMessages>
+        </apex:pageblock>
+    </apex:form>
+    <apex:iframe src="{!pdf}" id="theFrame" title="Invoice" />
+    <script>document.getElementById('theFrame').height = window.innerHeight;</script>
+</apex:page>

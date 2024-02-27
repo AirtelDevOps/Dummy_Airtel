@@ -1,0 +1,112 @@
+<template>
+    <template if:true={showLoading}>
+        <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+    </template>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-modal_large slds-fade-in-open">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={closeModal}>
+                    <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                        size="small"></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Enterprise Quote Sites and Connection
+                </h2>
+            </header>
+            <div class="slds-modal__content  slds-p-around_medium" id="modal-content-id-1">
+                <template if:true={invalidSitesExist}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_12-of-12 slds-scrollable_y" style="max-height: 28rem;">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_fixed-layout" style="max-width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="slds-size_1-of-12">
+                                            <div class="slds-truncate" title="Select">Select</div>
+                                        </th>
+                                        <th scope="col" class="slds-size_5-of-12" >
+                                            <div class="slds-truncate" title="Site">Site</div>
+                                        </th>
+                                        <th scope="col" class="slds-size_2-of-12">
+                                            <div class="slds-truncate" title="Latitude">Latitude</div>
+                                        </th>
+                                        <th scope="col" class="slds-size_2-of-12">
+                                            <div class="slds-truncate" title="Longitude">Longitude</div>
+                                        </th>
+                                        <th scope="col" class="slds-size_2-of-12">
+                                            <div class="slds-truncate" title="Correctness">Correctness</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={ipResult} for:item="item">
+                                        <tr key={item.Id}>
+                                            <td data-label="Select" >
+                                                <lightning-input type="checkbox"  label="Select"
+                                                    variant="label-hidden" data-id={item.Id}
+                                                    onchange={handleCheckboxChange} checked={item.isChecked}></lightning-input>
+                                            </td>
+                                            <td data-label="Site"  >
+                                                <div class="slds-truncate" title={item.vlocity_cmt__StreetAddress__c}>
+                                                    {item.vlocity_cmt__StreetAddress__c}
+                                                </div>
+                                            </td>
+                                            <td data-label="Latitude">
+                                                <div if:true = {isGeoLocation} class="slds-truncate">
+                                                    {item.ARTL_Feasibility_Geolocation__Latitude__s}
+                                                </div>
+                                                <div if:false = {isGeoLocation} class="slds-truncate">
+                                                    
+                                                </div>
+                                            </td>
+                                            <td data-label="Longitude" >
+                                                <div if:true = {isGeoLocation} class="slds-truncate">
+                                                    {item.ARTL_Feasibility_Geolocation__Longitude__s}
+                                                </div>
+                                                <div if:false = {isGeoLocation} class="slds-truncate">
+                                                    
+                                                </div>
+                                            </td>
+                                            <td data-label="Correctness" style="text-align: center;">
+                                                <div >
+                                                    <lightning-formatted-rich-text value={item.ARTL_Address_Verification_Status__c}></lightning-formatted-rich-text>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <template if:true={item.isChecked}>
+                                            <tr key={item.Id}>
+                                                <td colspan="5">
+                                                    <iframe src={iframeUrl} title="Oft Widget" height='380' style="width: 100%;"></iframe>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                        
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--<div class="slds-col slds-size_3-of-12" style="padding-left: 0px;">
+                            
+                        </div>-->
+                    </div>
+                </template>
+                <template if:false={invalidSitesExist}>
+                    <div class="slds-notify slds-notify_alert slds-alert_error" role="alert">
+                        <span class="slds-assistive-text">error</span>
+                        <span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small" title="Description of icon when needed">
+                          <lightning-icon icon-name="utility:error" alternative-text="Error" variant="inverse" size="small"></lightning-icon>
+                        </span>
+                        <h2>No invalid sites are available for Address Correction
+                        </h2>
+                      </div>
+                </template>
+            </div>
+            <footer class="slds-modal__footer movefooter">
+                <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+                <button class="slds-button slds-button_brand" onclick={handleSubmit} title="OK">Submit</button>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>

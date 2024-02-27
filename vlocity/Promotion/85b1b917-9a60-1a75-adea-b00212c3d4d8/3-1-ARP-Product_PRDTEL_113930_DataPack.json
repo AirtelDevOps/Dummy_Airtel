@@ -1,0 +1,55 @@
+{
+    "%vlocity_namespace%__AppliesToAllItems__c": false,
+    "%vlocity_namespace%__BenefitTimePlanId__c": "",
+    "%vlocity_namespace%__BenefitTimePolicyId__c": "",
+    "%vlocity_namespace%__CannotBeCombined__c": false,
+    "%vlocity_namespace%__Code__c": "PRDTEL_113930",
+    "%vlocity_namespace%__CpqEngineHints__c": "",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DiscountType__c": "",
+    "%vlocity_namespace%__DurationTimePlanId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "136ca02b-8adf-9be5-750c-688b31dc4e76",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__TimePlan__c/136ca02b-8adf-9be5-750c-688b31dc4e76",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__TimePlan__c"
+    },
+    "%vlocity_namespace%__DurationTimePolicyId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "35808c3c-3156-1e94-5d62-0f459e6201d4",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__TimePolicy__c/35808c3c-3156-1e94-5d62-0f459e6201d4",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__TimePolicy__c"
+    },
+    "%vlocity_namespace%__DurationUnitOfMeasure__c": "Month",
+    "%vlocity_namespace%__Duration__c": "",
+    "%vlocity_namespace%__EffectiveEndDate__c": "",
+    "%vlocity_namespace%__EffectiveStartDate__c": "2023-10-31T18:30:00.000Z",
+    "%vlocity_namespace%__EnableAutoAddProducts__c": false,
+    "%vlocity_namespace%__EnableAutoApplyPromotion__c": true,
+    "%vlocity_namespace%__FollowOnPromotionId__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "85b1b917-9a60-1a75-adea-b00212c3d4d8",
+    "%vlocity_namespace%__IsActive__c": false,
+    "%vlocity_namespace%__IsLimitedQuantity__c": true,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__PriceListId__c": {
+        "%vlocity_namespace%__Code__c": "PL_B2B_ENTERPRISE",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__PriceList__c/PL_B2B_ENTERPRISE",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__PriceList__c"
+    },
+    "%vlocity_namespace%__Quantity__c": "",
+    "%vlocity_namespace%__RankOrder__c": "",
+    "%vlocity_namespace%__RedeemableCode__c": "",
+    "%vlocity_namespace%__ServiceContinuation__c": "Not Applicable",
+    "CurrencyIsoCode": "INR",
+    "Name": "3+1 ARP Product_PRDTEL_113930",
+    "RecordTypeId": {
+        "DeveloperName": "Promotion",
+        "SobjectType": "%vlocity_namespace%__Promotion__c",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/%vlocity_namespace%__Promotion__c/Promotion",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Promotion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Promotion__c/85b1b917-9a60-1a75-adea-b00212c3d4d8"
+}

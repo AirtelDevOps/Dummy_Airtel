@@ -1,0 +1,6 @@
+/* fullWidthColumnsTable.css */
+.scrollable-container {
+    max-height: 300px; /* Set a maximum height for the scrollable container */
+    overflow-y: auto;
+    overflow-x: auto; /* Enable horizontal scrolling if the content overflows */
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set group is for SAMTL and CE Head user both.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ARTL_SAMTL_CEHEAD_PSG</label>
+    <permissionSets>ARTL_EditTask_Additional_PS</permissionSets>
+    <permissionSets>ARTL_SAM_TL_Above_Role</permissionSets>
+    <permissionSets>OmniStudioAdmin</permissionSets>
+    <permissionSets>OmniStudio_KAM_User_Extras</permissionSets>
+    <permissionSets>RevenueIntelligenceAnalytics</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

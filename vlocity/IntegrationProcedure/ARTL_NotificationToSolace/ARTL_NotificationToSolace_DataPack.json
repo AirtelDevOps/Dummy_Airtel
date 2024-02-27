@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_NotificationToSolace_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_NotificationToSolace",
+    "OmniProcessElement": [
+        "ARTL_NotificationToSolace_Element_DRGetPartyAccountDetails.json",
+        "ARTL_NotificationToSolace_Element_HTTPNotificationToSolace.json",
+        "ARTL_NotificationToSolace_Element_DRUpdateStepStatusOnAccount.json",
+        "ARTL_NotificationToSolace_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_NotificationToSolace",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_NotificationToSolace_PropertySetConfig.json",
+    "SubType": "NotificationToSolace",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/NotificationToSolace/Procedure"
+}

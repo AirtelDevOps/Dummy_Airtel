@@ -1,0 +1,102 @@
+<template >
+    
+    <ul class="slds-accordion" style="background:#F3F3F3">
+        <div class="slds-p-around_medium">
+            <li class="slds-accordion__list-item">
+                <section class={blockClasses}>
+                <div class="slds-accordion__summary">
+                    <div class="slds-accordion__summary-heading">
+                    <template if:true={_propSetMap.repeat}>
+                        <button if:true={blockLabel}
+                                aria-controls="content"
+                                tabindex="0"
+                                aria-expanded={expandContent}
+                                class="slds-button slds-button_reset slds-accordion__summary-action"
+                                onclick={toggleContent}>
+                        <vlocity_cmt-icon extraclass="slds-accordion__summary-action-icon slds-m-right_x-small"
+                                iconposition="left"
+                                icon-name="utility:switch"
+                                size="x-small">
+                        </vlocity_cmt-icon>
+                        <h3 class="slds-truncate"
+                            aria-live="polite">
+                            {blockLabel}
+                        </h3>
+                        </button>
+                    </template>
+                    <template if:false={_propSetMap.repeat}>
+                        <button if:true={blockLabel}
+                                aria-controls="content"
+                                tabindex="0"
+                                aria-expanded={expandContent}
+                                class="slds-button slds-button_reset slds-accordion__summary-action"
+                                onclick={toggleContent}>
+                        <vlocity_cmt-icon extraclass="slds-accordion__summary-action-icon slds-m-right_x-small"
+                                iconposition="left"
+                                icon-name="utility:switch"
+                                size="x-small">
+                        </vlocity_cmt-icon>
+                        <h3 class="slds-truncate"
+                            aria-live="polite">
+                            {blockLabel}
+                        </h3>
+                        </button>
+                    </template>
+                    </div>
+                    <template if:true={_propSetMap.repeat}>
+                    <div class="slds-button-group slds-p-right_large"
+                        role="group">
+                        <!-- <vlocity_cmt-button if:true={canRepeat}
+                                variant="base"
+                                onclick={handleAdd}
+                                label={allCustomLabelsUtil.OmniAdd}
+                                aria-label={_addAriaLabel}>
+                        </vlocity_cmt-button> -->
+                            
+                            <lightning-icon if:true={canRemove} 
+                            icon-name="utility:delete" 
+                            alternative-text="Delete"
+                            size="xx-small"
+                            onclick={handleRemove}
+                            title="Delete Pet"></lightning-icon>
+                        <!-- <vlocity_cmt-button if:true={canRemove}
+                                variant="brand"
+                                onclick={handleRemove}
+                                label={allCustomLabelsUtil.OmniDelete}
+                                class="slds-m-left_x-small"
+                                aria-label={_removeAriaLabel}>
+                        </vlocity_cmt-button> -->
+                    
+                    </div>
+                    </template>
+                </div>
+                <div if:true={showValidation}
+                    class="slds-has-error">
+                    <div class="slds-form-element__help">
+                    <span class="slds-text-link_faux"
+                            onclick={toggleContent}>
+                        {allCustomLabelsUtil.OmniBlockError}
+                    </span>
+                    </div>
+                </div>
+                <fieldset id="content"
+                            class={_blockContentContainer}>
+                    <legend></legend>
+                    <slot></slot>
+                </fieldset>
+                </section>
+                <!-- <div if:true={canRepeat} class="slds-box slds-align_absolute-center" style="height:2rem;max-width:7rem" onclick={handleAdd}> -->
+                    
+                    <!-- <lightning-icon 
+                            icon-name="utility:add" 
+                            alternative-text="Approved"
+                            
+                            size="xx-small"
+                            variant="brand"
+                            title="Add Pet"></lightning-icon>
+                            <a>Add Pet</a> -->
+                <!-- </div> -->
+            </li>
+        </div>
+    </ul>
+  </template>

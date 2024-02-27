@@ -1,0 +1,1366 @@
+[
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_LAST_MILE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Dual Last Mile\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "2d67b2d1-8574-21ab-875d-821f36700853",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/2d67b2d1-8574-21ab-875d-821f36700853",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "4f3c474c-78e2-3bb3-f431-96702e6b38f6",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link CPE As Dual - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/4f3c474c-78e2-3bb3-f431-96702e6b38f6"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1472\"}],\"index\":0},\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"99%\"}],\"index\":1}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "16561f77-59f8-60d1-809f-684f2ebbbf17",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/16561f77-59f8-60d1-809f-684f2ebbbf17",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "88e5747c-17e6-06cd-600a-d2fbf0f67890",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Media As FTTH - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/88e5747c-17e6-06cd-600a-d2fbf0f67890"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1472\"}],\"index\":0},\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"99%\"}],\"index\":1}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "1fc8cc31-e22d-c2e9-4394-f50951c3f503",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/1fc8cc31-e22d-c2e9-4394-f50951c3f503",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "b5929784-e581-e4d3-8f1b-ad10c264476b",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Media As Copper - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/b5929784-e581-e4d3-8f1b-ad10c264476b"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":0},\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"99.5%\"}],\"index\":1}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "cb0db87b-c252-98f8-9ffb-24d7c61b576f",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/cb0db87b-c252-98f8-9ffb-24d7c61b576f",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "777eef0d-7b12-e5da-f2d5-5d2f62e5c2a3",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Media As Fiber On Net - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/777eef0d-7b12-e5da-f2d5-5d2f62e5c2a3"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "130f4f86-cb77-a2af-1379-ae8ec1369553",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/130f4f86-cb77-a2af-1379-ae8ec1369553",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "9ce72066-8f1f-1d37-44a5-3b8a7386f539",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 700 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/9ce72066-8f1f-1d37-44a5-3b8a7386f539"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "6d1a9eaa-9c61-7dff-05ba-a24446286f53",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/6d1a9eaa-9c61-7dff-05ba-a24446286f53",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "59e743e8-9f3f-2472-3ff9-51bd66853950",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 900 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/59e743e8-9f3f-2472-3ff9-51bd66853950"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "a033d234-e46a-47f3-e5f0-292df37340ff",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/a033d234-e46a-47f3-e5f0-292df37340ff",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "3e71bfc2-c073-f061-c081-1c507c869594",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 800 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/3e71bfc2-c073-f061-c081-1c507c869594"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b2f5d8f2-4e53-f756-cd47-b09c56c5d177",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/b2f5d8f2-4e53-f756-cd47-b09c56c5d177",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "5dac82fd-f035-94bb-8460-f929110b23f0",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 600 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/5dac82fd-f035-94bb-8460-f929110b23f0"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b3ff8921-c296-dbd7-8b00-8d8e276215ce",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/b3ff8921-c296-dbd7-8b00-8d8e276215ce",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "ac160be4-9bfe-c2fa-2e73-2acb7fd2caa9",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 1 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/ac160be4-9bfe-c2fa-2e73-2acb7fd2caa9"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "bdf5248a-0f5c-3c51-2632-9088b3e66b15",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/bdf5248a-0f5c-3c51-2632-9088b3e66b15",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "473e14b0-fbbc-9d9a-4012-e035a7b1796b",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 1 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/473e14b0-fbbc-9d9a-4012-e035a7b1796b"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c7fb3c5b-bb9d-7879-f83d-5f4bc1f0c53b",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/c7fb3c5b-bb9d-7879-f83d-5f4bc1f0c53b",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "662e2325-d317-7916-a0d7-38067ee0ee27",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 10 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/662e2325-d317-7916-a0d7-38067ee0ee27"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "65d33a62-3379-cb54-4223-cb3ae6b65174",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/65d33a62-3379-cb54-4223-cb3ae6b65174",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "ff52b353-d316-2e05-38c9-424d6ed10c83",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 10 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/ff52b353-d316-2e05-38c9-424d6ed10c83"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0f01c0ce-c528-9ae9-bc2b-6e522313c485",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/0f01c0ce-c528-9ae9-bc2b-6e522313c485",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "32e82191-0372-a01e-0cb6-3d903c83141b",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 100 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/32e82191-0372-a01e-0cb6-3d903c83141b"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0f5933d9-5305-0701-6314-33ae981d6540",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/0f5933d9-5305-0701-6314-33ae981d6540",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "a89bcd71-1579-e618-b8d6-905cfd52eacb",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 80 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/a89bcd71-1579-e618-b8d6-905cfd52eacb"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "40572e11-3d00-a5fd-6c7d-94be3a98005d",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/40572e11-3d00-a5fd-6c7d-94be3a98005d",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "7bfa664e-ec8b-f406-5a05-15eda67c7584",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 60 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/7bfa664e-ec8b-f406-5a05-15eda67c7584"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "67238081-c13b-90ad-36b8-78f9753d5a02",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/67238081-c13b-90ad-36b8-78f9753d5a02",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "0ff48ef2-b120-2679-b285-cf7d840e8e15",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 70 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/0ff48ef2-b120-2679-b285-cf7d840e8e15"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c635f361-5fbb-da85-29b3-30dcfd4b1fed",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/c635f361-5fbb-da85-29b3-30dcfd4b1fed",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "85199659-380c-88af-6b42-2af3d1dc5b73",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 90 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/85199659-380c-88af-6b42-2af3d1dc5b73"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b580e342-4e47-41d6-be8d-5949a80ef43c",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/b580e342-4e47-41d6-be8d-5949a80ef43c",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "c431b30b-7f3e-9415-b5c7-26b9ac9672e2",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 15 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/c431b30b-7f3e-9415-b5c7-26b9ac9672e2"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "00ce5f22-a1d5-df4d-9e1b-75aa21a35a57",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/00ce5f22-a1d5-df4d-9e1b-75aa21a35a57",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "291d6aa7-67f2-bc41-926c-14f831646998",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 150 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/291d6aa7-67f2-bc41-926c-14f831646998"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f6f88998-bcb9-416b-876c-037011229ede",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/f6f88998-bcb9-416b-876c-037011229ede",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "333441e6-045c-98c4-4ba1-61c3d3d1eb7c",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 155 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/333441e6-045c-98c4-4ba1-61c3d3d1eb7c"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f3627216-850d-e656-6c2e-299ae0283c32",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/f3627216-850d-e656-6c2e-299ae0283c32",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "f44d5ff5-5a04-d785-d54a-7d8358bf8238",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 2 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/f44d5ff5-5a04-d785-d54a-7d8358bf8238"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "163e7a75-6195-a85d-2a10-de13f283bd19",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/163e7a75-6195-a85d-2a10-de13f283bd19",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "36d2d08e-1f5d-204b-9aba-fa5af742ac7d",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 2 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/36d2d08e-1f5d-204b-9aba-fa5af742ac7d"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "76875dc0-bc5f-a95e-47a9-eb5abc33dd6c",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/76875dc0-bc5f-a95e-47a9-eb5abc33dd6c",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "82313d1a-e82a-ade1-87ee-107da9cb1054",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 20 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/82313d1a-e82a-ade1-87ee-107da9cb1054"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "1b10b1aa-b197-503c-7615-43f065cf470a",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/1b10b1aa-b197-503c-7615-43f065cf470a",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "276984c2-174c-c0d4-9b30-9e9ee4456a6f",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 12 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/276984c2-174c-c0d4-9b30-9e9ee4456a6f"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "28454fff-760b-af47-777a-5bc609952bbb",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/28454fff-760b-af47-777a-5bc609952bbb",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "acfb28e1-bf0e-5b91-3502-99fb743ce077",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 20 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/acfb28e1-bf0e-5b91-3502-99fb743ce077"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "29768bdc-80ac-9c14-f951-9a3b2824eee5",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/29768bdc-80ac-9c14-f951-9a3b2824eee5",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "938fd348-36e6-f00c-0588-09e2a6a99c1e",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 15 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/938fd348-36e6-f00c-0588-09e2a6a99c1e"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "025270f0-aa06-0a7d-c49c-99357e71ffe6",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/025270f0-aa06-0a7d-c49c-99357e71ffe6",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "3b0bc5ad-be8d-0392-5272-7ef637de80b0",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 200 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/3b0bc5ad-be8d-0392-5272-7ef637de80b0"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "4c153daf-6104-8939-941d-1fabfdbc6211",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/4c153daf-6104-8939-941d-1fabfdbc6211",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "debcb718-cc69-e359-0249-5c00264a25b3",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 25 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/debcb718-cc69-e359-0249-5c00264a25b3"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "a3897225-c347-fe04-c697-fb1ad3915420",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/a3897225-c347-fe04-c697-fb1ad3915420",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d1ed8922-175e-b6e5-c93c-8d463992069b",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 3 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/d1ed8922-175e-b6e5-c93c-8d463992069b"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "30871517-4da0-d4d6-6fa6-bf16c8963c30",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/30871517-4da0-d4d6-6fa6-bf16c8963c30",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "a97131b8-c004-38ba-149e-500521dd1312",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 30 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/a97131b8-c004-38ba-149e-500521dd1312"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "155bbc69-1a95-be4b-d746-165e806dc2be",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/155bbc69-1a95-be4b-d746-165e806dc2be",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "7fff89c7-f563-996d-ffd4-f5cd354a5cfc",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 30 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/7fff89c7-f563-996d-ffd4-f5cd354a5cfc"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "219e01d8-2c7e-45d5-3158-4ed92afaacd8",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/219e01d8-2c7e-45d5-3158-4ed92afaacd8",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "17b71752-2898-67a3-58f7-5bf136fe37c6",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 25 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/17b71752-2898-67a3-58f7-5bf136fe37c6"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ab4aeeb1-8258-3bb3-8412-056129ca9ece",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/ab4aeeb1-8258-3bb3-8412-056129ca9ece",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "9eb261fe-bb2c-9306-7cb8-d4a5a610c03f",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 250 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/9eb261fe-bb2c-9306-7cb8-d4a5a610c03f"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f7c55636-d771-12f3-7280-1b0fbc523c38",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/f7c55636-d771-12f3-7280-1b0fbc523c38",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "4abe52fd-eb7f-17df-59fe-bd59c673f98d",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 300 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/4abe52fd-eb7f-17df-59fe-bd59c673f98d"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "dce8c81d-0ac9-25e4-760d-ff1d5255e587",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/dce8c81d-0ac9-25e4-760d-ff1d5255e587",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "b71e1528-b883-6ecd-dbfe-2b3aa3d3cc32",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 35 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/b71e1528-b883-6ecd-dbfe-2b3aa3d3cc32"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3e94286a-a586-4932-7f18-092b6e6a5299",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/3e94286a-a586-4932-7f18-092b6e6a5299",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "f6e96cb5-4a00-cc43-43c9-d82fd219e131",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 4 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/f6e96cb5-4a00-cc43-43c9-d82fd219e131"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "1b4eece2-ca8c-8ccc-1e19-822e8f783655",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/1b4eece2-ca8c-8ccc-1e19-822e8f783655",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "4ea1c4ee-cd56-0f31-0779-5d7da4ddf36f",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 40 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/4ea1c4ee-cd56-0f31-0779-5d7da4ddf36f"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "21782e7c-ec98-ff96-68e8-51cda1a910cf",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/21782e7c-ec98-ff96-68e8-51cda1a910cf",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "a92c1fe5-c6a6-b3df-ae7b-18275345c661",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 35 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/a92c1fe5-c6a6-b3df-ae7b-18275345c661"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "54bbe853-2cb3-9080-bc57-e19ac6f1f2fd",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/54bbe853-2cb3-9080-bc57-e19ac6f1f2fd",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "cfaec9f4-12d9-c51d-a77d-00f8e01e83d2",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 40 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/cfaec9f4-12d9-c51d-a77d-00f8e01e83d2"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ced06d53-baa2-1c63-1ae4-9bce8530ad55",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/ced06d53-baa2-1c63-1ae4-9bce8530ad55",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "eef1786f-4926-a907-4c70-627dc87d2289",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 45 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/eef1786f-4926-a907-4c70-627dc87d2289"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "69664c30-1079-fbbe-2792-1e00a04f68e1",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/69664c30-1079-fbbe-2792-1e00a04f68e1",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "34ea26b6-cddb-f06a-8ac1-037819699d59",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 5 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/34ea26b6-cddb-f06a-8ac1-037819699d59"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c78d27f8-cb46-e636-a94d-bd6cc945ff00",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/c78d27f8-cb46-e636-a94d-bd6cc945ff00",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "62411349-c1a2-edc5-b811-bf9a7c54bc45",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 50 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/62411349-c1a2-edc5-b811-bf9a7c54bc45"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7b2c37b0-3499-1f10-de3f-26c5d0f7cba7",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/7b2c37b0-3499-1f10-de3f-26c5d0f7cba7",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "980813a4-63c5-1621-d3e0-54ebbb68c0b4",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 50 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/980813a4-63c5-1621-d3e0-54ebbb68c0b4"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fc27b1ea-928e-9dfb-a9ee-e910849d1aa3",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/fc27b1ea-928e-9dfb-a9ee-e910849d1aa3",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "3b83bfbc-0f7c-9bfa-5d3a-f193b849e421",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 45 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/3b83bfbc-0f7c-9bfa-5d3a-f193b849e421"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0582e5fa-6aa9-1b6a-729d-57cffa1f3e97",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/0582e5fa-6aa9-1b6a-729d-57cffa1f3e97",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "0a457c09-7142-a447-bd90-db0a3702ac19",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 450 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/0a457c09-7142-a447-bd90-db0a3702ac19"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "2d6eeacf-afa7-0ec0-864a-fb2010271f5d",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/2d6eeacf-afa7-0ec0-864a-fb2010271f5d",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "4a2395de-e34c-7b93-1440-359c2c447098",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 500 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/4a2395de-e34c-7b93-1440-359c2c447098"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "846ff7cb-3679-13d7-0fc7-6b441e1240a2",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/846ff7cb-3679-13d7-0fc7-6b441e1240a2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "e7711d20-cf0d-c424-f37a-ee675635e1b8",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 400 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/e7711d20-cf0d-c424-f37a-ee675635e1b8"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "a663f6ac-f61a-bbc3-0aac-b5fcba8dd705",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/a663f6ac-f61a-bbc3-0aac-b5fcba8dd705",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d2257016-cda5-3660-efa7-1c7739e19104",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 350 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/d2257016-cda5-3660-efa7-1c7739e19104"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d091d875-1659-e04d-6fc9-43101090b583",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/d091d875-1659-e04d-6fc9-43101090b583",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "269dfd68-f4e8-cf72-76fb-9ebcfb7c3804",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 475 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/269dfd68-f4e8-cf72-76fb-9ebcfb7c3804"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "125c4526-4d61-857b-d105-bdf1f625dd11",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/125c4526-4d61-857b-d105-bdf1f625dd11",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "669c979d-27c2-9354-6d0f-fa1c874f9560",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 5 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/669c979d-27c2-9354-6d0f-fa1c874f9560"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fef39451-3286-3a27-6763-44ed1cf5a98b",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/fef39451-3286-3a27-6763-44ed1cf5a98b",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "a85b5adc-93c5-e58a-eb48-ae500155958c",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 6 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/a85b5adc-93c5-e58a-eb48-ae500155958c"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "83f93d6c-c1e1-747d-902f-5076b44206fd",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/83f93d6c-c1e1-747d-902f-5076b44206fd",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "a4563448-cca4-595f-3f61-d92deb8612b4",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 60 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/a4563448-cca4-595f-3f61-d92deb8612b4"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "73e2b67e-8de8-a8d1-ebcd-e2abb28d2e2e",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/73e2b67e-8de8-a8d1-ebcd-e2abb28d2e2e",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "5c5f09bb-e124-c2b0-bb0a-7053497eebb9",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 70 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/5c5f09bb-e124-c2b0-bb0a-7053497eebb9"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8c889b66-a94a-1c70-3363-550e500bc373",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/8c889b66-a94a-1c70-3363-550e500bc373",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "2aa693ff-3cbb-1222-15dc-bc3dcb7860a4",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 8 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/2aa693ff-3cbb-1222-15dc-bc3dcb7860a4"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fb554123-db5c-e4c0-fa05-59c00a771e60",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/fb554123-db5c-e4c0-fa05-59c00a771e60",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "b538b52f-e795-1348-95d4-bea604c339ce",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 80 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/b538b52f-e795-1348-95d4-bea604c339ce"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\",\"90 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fd2db1fd-18da-4076-23f3-b481fe533f45",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/fd2db1fd-18da-4076-23f3-b481fe533f45",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "c2ce0bbf-3f2f-d2b8-3106-e1b0627c6909",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 90 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/c2ce0bbf-3f2f-d2b8-3106-e1b0627c6909"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\",\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f6ca71d7-f1b6-42dd-7b1b-60df0bc804a2",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/f6ca71d7-f1b6-42dd-7b1b-60df0bc804a2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d7e9096a-6fd5-ca86-652b-5e6d8095b90b",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As 100 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/d7e9096a-6fd5-ca86-652b-5e6d8095b90b"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3f214fb8-d915-0ccc-ccee-73c4e9a42632",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/3f214fb8-d915-0ccc-ccee-73c4e9a42632",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "45906d16-f538-3ba7-74c1-963f734fb7fd",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Access Bandwidth As NA - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/45906d16-f538-3ba7-74c1-963f734fb7fd"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"98.5%\"}],\"index\":1},\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "44179ea3-a957-beec-af5c-db662609f001",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/44179ea3-a957-beec-af5c-db662609f001",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "fed960ef-9982-890b-2698-8cee4c58eb2a",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Media As RF P2P - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/fed960ef-9982-890b-2698-8cee4c58eb2a"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"98.5%\"}],\"index\":1},\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "501a93f8-e4de-1a40-4c21-5f58b5b4259d",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/501a93f8-e4de-1a40-4c21-5f58b5b4259d",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "69c5559e-8b1b-c206-6743-01e3a97eec88",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Media As RF P2MP - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/69c5559e-8b1b-c206-6743-01e3a97eec88"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"98.5%\"}],\"index\":1},\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "6e503f9a-94d8-fe76-6118-fd5bec7b3c35",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/6e503f9a-94d8-fe76-6118-fd5bec7b3c35",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "ebbf86ee-b09d-eef6-4553-81bb967ead87",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Media As Third Party - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/ebbf86ee-b09d-eef6-4553-81bb967ead87"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"99.5%\"}],\"index\":1},\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "05148693-378c-e5cf-2dde-09af37f2effb",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/05148693-378c-e5cf-2dde-09af37f2effb",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "dd3eb9f0-e20b-d316-d0d3-90526a720e37",
+        "%vlocity_namespace%__ProductGroupKey__c": "76b8365f-8ced-af31-5228-8675111acd60",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Secondary Link Media As Fiber Off Net - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/dd3eb9f0-e20b-d316-d0d3-90526a720e37"
+    }
+]

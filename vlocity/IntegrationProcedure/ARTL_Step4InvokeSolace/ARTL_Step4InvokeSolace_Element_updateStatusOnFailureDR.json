@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "updateStatusOnFailureDR",
+    "OmniProcessId": {
+        "Name": "Step4InvokeSolace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/Step4InvokeSolace/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "description": "Send to Solace Failed",
+            "recordId": "=%recordId%",
+            "status": "Error"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DRP_UpdateContact",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "HTTPCalloutSolace:HTTPSolaceQueueInfo:statusCode == 400",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/Step4InvokeSolace/Procedure/updateStatusOnFailureDR"
+}

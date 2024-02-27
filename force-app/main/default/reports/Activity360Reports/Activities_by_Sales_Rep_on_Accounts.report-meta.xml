@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.UnifiedActivities$Subject</field>
+    </columns>
+    <columns>
+        <field>User.UnifiedActivities$ActivityDateTime</field>
+    </columns>
+    <columns>
+        <field>User.UnifiedActivities.UnifiedActivityRelations$Name</field>
+    </columns>
+    <description>My sales reps&apos; activities across all channels this month.
+The report shows activities for you and the reps in your role hierarchy.</description>
+    <filter>
+        <criteriaItems>
+            <column>User.UnifiedActivities.UnifiedActivityRelations$Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>001</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.UnifiedActivities$ActivityType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Activities by Sales Rep on Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_with_Activities_Unified__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.UnifiedActivities$ActivityDateTime</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

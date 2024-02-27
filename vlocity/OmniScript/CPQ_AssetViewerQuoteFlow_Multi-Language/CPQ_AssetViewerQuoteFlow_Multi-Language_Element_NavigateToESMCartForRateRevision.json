@@ -1,0 +1,39 @@
+{
+    "CurrencyIsoCode": "INR",
+    "EmbeddedOmniScriptKey": "CPQ|ChangeToQuote|Multi-Language",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToESMCartForRateRevision",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Quote Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerQuoteFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "Multi-Language",
+        "Sub Type": "ChangeToQuote",
+        "Type": "CPQ",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Change",
+                        "field": "transactionType"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "Rate Revision",
+                        "field": "transactionSubType"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerQuoteFlow/Multi-Language/NavigateToESMCartForRateRevision"
+}

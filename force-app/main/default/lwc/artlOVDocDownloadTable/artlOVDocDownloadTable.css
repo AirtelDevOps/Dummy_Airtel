@@ -1,0 +1,25 @@
+.card{
+    position: relative;
+    z-index: 1;
+}
+.card-header {
+    background-color: rgb(96, 188, 164);
+    padding: 0.5rem;
+}
+.slds-table thead th {
+    background-color: rgb(243, 243, 243);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-right: var(--lwc-borderWidthThin,1px) solid var(--slds-g-color-border-base-1, var(--lwc-colorBorder,rgb(229, 229, 229)));
+}
+
+.slds-table_fixed-layout {
+    border: var(--lwc-borderWidthThin,1px) solid var(--slds-g-color-border-base-1, var(--lwc-colorBorder,rgb(229, 229, 229)));
+}
+td.align-btn {
+    text-align: center;
+}
+
+.card-holder {
+    padding: 1rem;
+}

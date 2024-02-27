@@ -1,0 +1,487 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(ISBLANK(%userID%),%QueueID%,%userID%)",
+        "FormulaResultPath": "OwnerIDFormula",
+        "FormulaSequence": 1,
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom4453",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom6134",
+        "InputFieldName": "LeadConfig:ARC__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARC__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom5338",
+        "InputFieldName": "LeadConfig:Channel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Lead_Channel__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom9612",
+        "InputFieldName": "LeadConfig:LeadSubSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Lead_Sub_Source__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom8963",
+        "InputFieldName": "LeadConfig:subCampaign",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Sub_Campaign__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom3104",
+        "InputFieldName": "LeadConfig:transactionId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "ARTL_transaction_Id__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom1523",
+        "InputFieldName": "LeadConfig:Campaign__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Campaign__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "Salesforce",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom4640",
+        "InputFieldName": "LeadConfig:Company",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Company",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom6810",
+        "InputFieldName": "LeadConfig:Country_Code__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Country_Code__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom1093",
+        "InputFieldName": "LeadConfig:Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Description",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom8184",
+        "InputFieldName": "LeadConfig:email",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Email",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom1400",
+        "InputFieldName": "LeadConfig:firstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstName",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom7692",
+        "InputFieldName": "LeadConfig:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom1126",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom8621",
+        "InputFieldName": "LeadConfig:lastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LastName",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom3652",
+        "InputFieldName": "LeadConfig:LeadSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LeadSource",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom8449",
+        "InputFieldName": "OwnerIDFormula",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom9328",
+        "InputFieldName": "LeadConfig:Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Phone",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom8731",
+        "InputFieldName": "LeadConfig:productInterest",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Product_Interest__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom9251",
+        "InputFieldName": "accountID",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Account__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom9391",
+        "InputFieldName": "contactID",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Contact__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom3801",
+        "InputFieldName": "LeadConfig:Remarks__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Remarks__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom5739",
+        "InputFieldName": "LeadConfig:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ATRL_DRL_LeadCreationUsingAPICustom7291",
+        "InputFieldName": "LeadConfig:Title",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ATRL_DRL_LeadCreationUsingAPI",
+        "OmniDataTransformationId": {
+            "Name": "ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ATRL_DRL_LeadCreationUsingAPI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Title",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

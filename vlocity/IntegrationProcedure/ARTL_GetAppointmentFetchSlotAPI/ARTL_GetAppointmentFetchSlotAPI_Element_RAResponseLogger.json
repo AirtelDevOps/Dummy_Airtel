@@ -1,0 +1,52 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RAResponseLogger",
+    "OmniProcessId": {
+        "Name": "GetAppointmentFetchSlotAPI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/GetAppointmentFetchSlotAPI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "logData:request:apiKey": "=%getCustomMetadataRecord:calloutMetadata|1:ARTL_API_Key__c%",
+            "logData:request:endpoint": "=%getCustomMetadataRecord:calloutMetadata|1:ARTL_EndPointURL__c%",
+            "logData:request:namedCredentials": "=%namedCredentials%",
+            "logData:response": "=\"HTTPPOSTAction\"",
+            "name": "=\"GetAppointmentFetchSlotAPI\"",
+            "type": "=\"Integration Procedure\""
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "ARTL_OmniActionUtil",
+        "remoteMethod": "logInfo",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "VlocityNoRootNode",
+        "sendJSONPath": "null",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/GetAppointmentFetchSlotAPI/Procedure/RAResponseLogger"
+}

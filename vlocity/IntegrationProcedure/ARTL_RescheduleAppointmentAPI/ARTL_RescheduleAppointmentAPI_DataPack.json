@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_RescheduleAppointmentAPI_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "RescheduleAppointmentAPI",
+    "OmniProcessElement": [
+        "ARTL_RescheduleAppointmentAPI_Element_DRPrepareRescheduleAppointmentPayload.json",
+        "ARTL_RescheduleAppointmentAPI_Element_getCustomMetadataRecord.json",
+        "ARTL_RescheduleAppointmentAPI_Element_RADebugLogger.json",
+        "ARTL_RescheduleAppointmentAPI_Element_HTTPPOSTAction.json",
+        "ARTL_RescheduleAppointmentAPI_Element_RAResponseLogger.json",
+        "ARTL_RescheduleAppointmentAPI_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_RescheduleAppointmentAPI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_RescheduleAppointmentAPI_PropertySetConfig.json",
+    "SubType": "RescheduleAppointmentAPI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/RescheduleAppointmentAPI/Procedure"
+}

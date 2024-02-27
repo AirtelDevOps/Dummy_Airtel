@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LOC</fullName>
+    <active>true</active>
+    <label>LOC</label>
+    <picklistValues>
+        <picklist>ARTL_Disposition__c</picklist>
+        <values>
+            <fullName>Opportunity Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Not Created</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ARTL_Key_timelines__c</picklist>
+        <values>
+            <fullName>Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ARTL_LOC_Trigger_to_Customer__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ARTL_Rejection_Category__c</picklist>
+        <values>
+            <fullName>Invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ARTL_TaskType__c</picklist>
+        <values>
+            <fullName>MRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM NW Jeopardy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM Workways</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM approval for LoC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validate Hardware Delivery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ARTL_locAcceptanceCriteria__c</picklist>
+        <values>
+            <fullName>Deemed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Deemed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ARTL_locRejectionReason__c</picklist>
+        <values>
+            <fullName>Customer Denied %E2%80%93B%2FW throughput issue-NSG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Denied %E2%80%93Billing Concern-PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Denied %E2%80%93Business Plan Changed-PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Denied %E2%80%93Delay in Delivery-PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Denied %E2%80%93Location Shifted-PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Denied %E2%80%93Service Issue-NSG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Denied-Link Not Tested-NSG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer End Hardware Pending-NSG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer End Testing Pending %E2%80%93NSG</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ARTL_locStatus__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Status__c</picklist>
+        <values>
+            <fullName>Answered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disconnected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accepted by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accepted by PMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved by PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>PMO Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected by PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected by PMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uploaded LOC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__EventStatus__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

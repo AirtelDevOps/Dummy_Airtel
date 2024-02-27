@@ -1,0 +1,42 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SVCreatePayload",
+    "OmniProcessId": {
+        "Name": "CreateServiceNowIncident",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateServiceNowIncident/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "payload": {
+                "application": "Service Now",
+                "assignment_group": "IN_ServiceNow_Support",
+                "caller_id": "%DRExtractUserOIMDetail:OIMId%",
+                "category": "MIS Reports",
+                "circle": "Airtel",
+                "contact_type": "Email",
+                "description": "%incidentDescription%",
+                "lob": "DC",
+                "opened_by": "%DRExtractUserOIMDetail:OIMId%",
+                "short_description": "%incidentDescription%"
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateServiceNowIncident/Procedure/SVCreatePayload"
+}

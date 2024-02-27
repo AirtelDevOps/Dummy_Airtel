@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_PANandTANDetailsValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+            RecordType.DeveloperName == &apos;Business&apos;,
+            OR(
+                AND(  ISPICKVAL( ARTL_Identification_Type__c ,&apos;PAN&apos;) ,  ISCHANGED( ARTL_TAN__c ),  NOT(  ISBLANK(ARTL_TAN__c)  )  ),
+                AND( ISPICKVAL( ARTL_Identification_Type__c ,&apos;TAN&apos;),  ISCHANGED( ARTL_PAN__c ), NOT(  ISBLANK(ARTL_PAN__c)  ) )
+            )
+        )</errorConditionFormula>
+    <errorMessage>If Identification type is PAN then only PAN is allowed to be changed and If Identification type is TAN then only TAN is allowed to be changed.</errorMessage>
+</ValidationRule>

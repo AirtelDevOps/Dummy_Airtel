@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "04/14/22 SGK Added new conditional step to merge documents",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": true,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "Multi-Language",
+    "LastPreviewPage": "Lightning",
+    "Name": "Doc Gen Component",
+    "OmniProcessElement": [
+        "DocGen_Component_Multi-Language_Element_setRequiredComponentInputValues.json",
+        "DocGen_Component_Multi-Language_Element_IPgetTemplateDetailsForDocGen.json",
+        "DocGen_Component_Multi-Language_Element_setGenerationOption.json",
+        "DocGen_Component_Multi-Language_Element_generateDocument.json",
+        "DocGen_Component_Multi-Language_Element_GenerateDocumentWord.json",
+        "DocGen_Component_Multi-Language_Element_generateMergeDocument.json",
+        "DocGen_Component_Multi-Language_Element_CustomLWC1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "DocGen_Component_Multi-Language_PropertySetConfig.json",
+    "SubType": "Component",
+    "Type": "DocGen",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/DocGen/Component/Multi-Language"
+}

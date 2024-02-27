@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Account_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISNEW(),
+    NOT( Is_Converted_From_Lead__c ),
+    ISBLANK( AccountId  )
+)</errorConditionFormula>
+    <errorMessage>Please provide a valid Account.</errorMessage>
+</ValidationRule>

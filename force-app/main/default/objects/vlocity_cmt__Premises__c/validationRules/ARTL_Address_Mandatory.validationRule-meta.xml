@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Address_Mandatory</fullName>
+    <active>true</active>
+    <description>Make Address field Mandatory SFDC-3504</description>
+    <errorConditionFormula>OR(ISBLANK(vlocity_cmt__StreetAddress__c),ISBLANK(vlocity_cmt__PostalCode__c))</errorConditionFormula>
+    <errorMessage>A valid Pincode and Street Address is mandatory</errorMessage>
+</ValidationRule>

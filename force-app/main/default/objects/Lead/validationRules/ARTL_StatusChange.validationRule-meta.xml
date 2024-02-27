@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_StatusChange</fullName>
+    <active>true</active>
+    <description>SFDC- 3060: If Lead is converted, Closed Dropped, Closed Lost, then apart from system admin, no one can change the status to lower statuses.</description>
+    <errorConditionFormula>AND(NOT($Profile.Name = &quot;System Administrator&quot;),NOT(ISNEW()),ISCHANGED(Status),OR(ISPICKVAL(PRIORVALUE(Status),&quot;Closed Dropped&quot;),ISPICKVAL(PRIORVALUE(Status),&quot;Closed Lost&quot;),ISPICKVAL(PRIORVALUE(Status),&quot;Converted&quot;)))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>You don&apos;t have permissions to change the status after the Lead is Converted/Closed Dropped/Closed Lost</errorMessage>
+</ValidationRule>

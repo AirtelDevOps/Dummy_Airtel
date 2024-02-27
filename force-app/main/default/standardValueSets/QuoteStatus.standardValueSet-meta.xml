@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Draft</fullName>
+        <default>true</default>
+        <label>Draft</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+        <label>Negotiation</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Feasibility in Progress</fullName>
+        <default>false</default>
+        <label>Feasibility in Progress</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Feasibility Completed</fullName>
+        <default>false</default>
+        <label>Feasibility Completed</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>DOA Approval in Progress</fullName>
+        <default>false</default>
+        <label>DOA Approval in Progress</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>DOA Approved</fullName>
+        <default>false</default>
+        <label>DOA Approved</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>DOA Rejected</fullName>
+        <default>false</default>
+        <label>DOA Rejected</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal Sent</fullName>
+        <default>false</default>
+        <label>Proposal Sent</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal Accepted</fullName>
+        <default>false</default>
+        <label>Proposal Accepted</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Assigned to OV</fullName>
+        <default>false</default>
+        <label>Assigned to OV</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>OV In Progress</fullName>
+        <default>false</default>
+        <label>OV In Progress</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>OV Approved</fullName>
+        <default>false</default>
+        <label>OV Approved</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>OV Rejected</fullName>
+        <default>false</default>
+        <label>OV Rejected</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Generated</fullName>
+        <default>false</default>
+        <label>Contract Generated</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Signed</fullName>
+        <default>false</default>
+        <label>Customer Signed</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Created</fullName>
+        <default>false</default>
+        <label>Order Created</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+</StandardValueSet>

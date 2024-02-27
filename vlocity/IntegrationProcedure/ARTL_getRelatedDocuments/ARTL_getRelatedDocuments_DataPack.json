@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_getRelatedDocuments_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_GetRelatedDocuments",
+    "OmniProcessElement": [
+        "ARTL_getRelatedDocuments_Element_GetDocuments.json",
+        "ARTL_getRelatedDocuments_Element_Response.json"
+    ],
+    "OmniProcessKey": "ARTL_getRelatedDocuments",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_getRelatedDocuments_PropertySetConfig.json",
+    "SubType": "getRelatedDocuments",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/getRelatedDocuments/Procedure"
+}

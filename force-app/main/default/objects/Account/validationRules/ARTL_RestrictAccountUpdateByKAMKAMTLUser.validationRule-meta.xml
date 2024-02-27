@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_RestrictAccountUpdateByKAMKAMTLUser</fullName>
+    <active>false</active>
+    <description>SFDC-3041
+NOT(ISCHANGED(ARTL_PAN__c)) is included in VR because by default we update it to upper case NOT(ISCHANGED(ARTL_Last_Account_Coverage_Date__c) due to con/opp update</description>
+    <errorConditionFormula>AND(
+    NOT(ISNEW()),
+     RecordType.DeveloperName = &quot;Business&quot;,
+    $Profile.Name != &quot;System Administrator&quot;,
+    NOT(ISCHANGED(Last_Account_Coverage_DateTime__c)),
+    OR(
+       ISPICKVAL(vlocity_cmt__Status__c,&apos;Active&apos;),
+       ISPICKVAL(vlocity_cmt__Status__c,&apos;Approved&apos;)
+    ),
+    OR(
+       $Permission.ARTL_KAM_General_User ,  
+       $Permission.ARTL_KAMTL_User
+    )
+)</errorConditionFormula>
+    <errorMessage>You don&apos;t have sufficient permissions to edit this record once the Account is Approved/Active. Please contact your System Administrator for more information.</errorMessage>
+</ValidationRule>

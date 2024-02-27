@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_QueryBCPDCPIP_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_QueryBCPDCPIP",
+    "OmniProcessElement": [
+        "ARTL_QueryBCPDCPIP_Element_RemoteAction1.json",
+        "ARTL_QueryBCPDCPIP_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_QueryBCPDCPIP",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_QueryBCPDCPIP_PropertySetConfig.json",
+    "SubType": "QueryBCPDCPIP",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/QueryBCPDCPIP/Procedure"
+}

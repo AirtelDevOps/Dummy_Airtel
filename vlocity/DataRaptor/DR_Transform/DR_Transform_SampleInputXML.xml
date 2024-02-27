@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Siebel-Property-Set EscapeNames="true"?>
+<PropertySet REST="true" RESTReqType="Service">
+    <SiebelMessage MessageId="1-LDWU2" IntObjectName="B2B PMW Create Task IO" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">
+        <ListOfB2B_spcPMW_spcCreate_spcTask_spcIO>
+            <B2B_spcAction_spcPM_spcWorkbench_spcThin_spcBC Activity_spcUID="1-40QK40U" OMTaskId="T004" AltKey="2308147044321_8721002_T004" LSI="2308147044321" TaskType="PMWTask" Order_spcId="00000412" Jeopardy_spcCode="LWIP" B2BOutcome="Open" Task_spcName="PM NW Jeopardy" TaskCreationTime="26/09/2023 16:21:15">
+                <ListOfB2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="/30" Name="WAN IPv4 Subnet"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="2023-09-13" Name="Customer Need By Date"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="GRG/UVI/003" Name="ISP/MPLS POP Network Location Code"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="rejected" Name="Point Rejection Remarks"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="Static" Name="Routing Type"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="GRG/GUV/901" Name="Access POP Network Location Code"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="Internet" Name="productName"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="2 Mbps" Name="Port_Bandwidth"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="NCR" Name="Business Circle"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="LWIP" Name="Point Rejection Code"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="PMJ - LAN and WAN Detail Required/Routing Protocol/Topology Mismatch" Name="Point Rejection Code Description"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="2308147044321" Name="LSI"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="Fiber On-net" Name="Media"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="topology mismatch" Name="Point Rejection Code Reason"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="2 Mbps" Name="Access Bandwidth"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="New" Name="Order Type"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="SIT1-ILL-2308147044321" Name="Circuit ID"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="DELHI NCR" Name="Implementation Circle"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="2023-09-13" Name="RFS Date"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="Fully Managed" Name="Service_Type"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="1-40QK40U" Name="Activity UID"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="Internet" Name="subProductName"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="147/9, Sec-67," Name="Address Line 1"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="DLF cyber city" Name="Address Line 2"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="/29" Name="LAN IPv4 Subnet"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="GRG/GBV/901" Name="Customer Network Location code"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                    <B2B_spcInput_spcTask_spcDFF_spcBC Value="Tower-3" Name="Address Line 3"></B2B_spcInput_spcTask_spcDFF_spcBC>
+                </ListOfB2B_spcInput_spcTask_spcDFF_spcBC>
+            </B2B_spcAction_spcPM_spcWorkbench_spcThin_spcBC>
+        </ListOfB2B_spcPMW_spcCreate_spcTask_spcIO>
+    </SiebelMessage>
+</PropertySet>

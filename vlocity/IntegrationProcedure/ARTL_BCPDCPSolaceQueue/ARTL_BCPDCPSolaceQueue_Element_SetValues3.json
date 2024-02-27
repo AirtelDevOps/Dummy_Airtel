@@ -1,0 +1,71 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues3",
+    "OmniProcessId": {
+        "Name": "BCPDCPSolaceQueue",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/BCPDCPSolaceQueue/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "payload": {
+                "Payload": {
+                    "Contacts": [
+                        {
+                            "Address Line 1": "%DRFetchPayloadDetails:Payload:Contacts:Address Line 1%",
+                            "Address Line 2": "%DRFetchPayloadDetails:Payload:Contacts:Address Line 2%",
+                            "Address Line 3": null,
+                            "AlternativeEmail": null,
+                            "BCPId": "%DRFetchPayloadDetails:Payload:Contacts:BCPId%",
+                            "Channel": "SFDC",
+                            "City": "%DRFetchPayloadDetails:Payload:Contacts:City%",
+                            "Country": "%DRFetchPayloadDetails:Payload:Contacts:Country%",
+                            "DCPId": "%DRFetchPayloadDetails:Payload:Contacts:DCPId%",
+                            "Designation": "%DRFetchPayloadDetails:Payload:Contacts:Designation%",
+                            "EmailAddress": "%DRFetchPayloadDetails:Payload:Contacts:EmailAddress%",
+                            "Fax": null,
+                            "First Name": "%DRFetchPayloadDetails:Payload:Contacts:First Name%",
+                            "GST": "%DRFetchPayloadDetails:Payload:Contacts:GST%",
+                            "GST Applicable": "%DRFetchPayloadDetails:Payload:Contacts:GST Applicable%",
+                            "GST Non Applicable Reason": "%DRFetchPayloadDetails:Payload:Contacts:GST Non Applicable Reason%",
+                            "Id": "%DRFetchPayloadDetails:Payload:Contacts:Id%",
+                            "Last Name": "%DRFetchPayloadDetails:Payload:Contacts:Last Name%",
+                            "Middle Name": "%DRFetchPayloadDetails:Payload:Contacts:Middle Name%",
+                            "Mobile": "%DRFetchPayloadDetails:Payload:Contacts:Mobile%",
+                            "NBAAccountNumber": "%DRFetchPayloadDetails:Payload:Contacts:NBAAccountNumber%",
+                            "OperationType": "%SetValues2:optype%",
+                            "PartyAccountNumber": "%DRFetchPayloadDetails:Payload:Contacts:PartyAccountNumber%",
+                            "Phone Area Code": null,
+                            "Pincode": "%DRFetchPayloadDetails:Payload:Contacts:Pincode%",
+                            "Remarks": "%DRFetchPayloadDetails:Payload:Contacts:Remarks%",
+                            "Responsibility": null,
+                            "Role": "%DRFetchPayloadDetails:Payload:Contacts:Role%",
+                            "State": "%DRFetchPayloadDetails:Payload:Contacts:State%",
+                            "Status": "%DRFetchPayloadDetails:Payload:Contacts:Status%",
+                            "Title": "%DRFetchPayloadDetails:Payload:Contacts:Title%",
+                            "UpdateBy": null
+                        }
+                    ],
+                    "Type": "BCP/DCP Contact"
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/BCPDCPSolaceQueue/Procedure/SetValues3"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_date_before_2_days</fullName>
+    <active>false</active>
+    <description>Cannot create or rechedule a meeting two days before the meeting start date</description>
+    <errorConditionFormula>(AND(ISNEW(),(ActivityDateTime - Now())&lt; 2) &amp;&amp; CONTAINS($UserRole.Name,&quot;SAM&quot;)) ||  ((ISCHANGED(ActivityDateTime)  &amp;&amp; (ActivityDateTime - Now())&lt; 2) &amp;&amp; CONTAINS($UserRole.Name,&quot;SAM&quot;))</errorConditionFormula>
+    <errorMessage>Meeting cannot be scheduled within two days of the current date</errorMessage>
+</ValidationRule>

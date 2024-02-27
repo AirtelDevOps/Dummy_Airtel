@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "validateBillingStagingFields",
+    "OmniProcessElement": [
+        "ARTL_validateBillingStagingFields_Element_getMetadata.json",
+        "ARTL_validateBillingStagingFields_Element_billingStagingFields.json",
+        "ARTL_validateBillingStagingFields_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_validateBillingStagingFields",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_validateBillingStagingFields_PropertySetConfig.json",
+    "SubType": "validateBillingStagingFields",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/validateBillingStagingFields/Procedure"
+}

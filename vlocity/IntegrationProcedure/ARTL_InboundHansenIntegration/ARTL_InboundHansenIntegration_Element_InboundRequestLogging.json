@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "InboundRequestLogging",
+    "OmniProcessId": {
+        "Name": "InboundHansenIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundHansenIntegration/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ALTKey": "=IF(%body:Message:MessageType% == \"TaskCreation\" || %body:Message:MessageType% == \"OrderStatus\" || %body:Message:MessageType% == \"TaskUpdate\" ,%body:Message:B2B Action PM Workbench Thin BC:AltKey%, IF(%body:SiebelMessage:MessageType% == \"Integration Object\",%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:AltKey%,%SiebelMessage:ListOfCreateTaskDetails:CreateTask:ALTkey%))",
+            "OrderId": "%GetOrderDetails:OrderId%",
+            "Request": "%body%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DR_TaskLogging",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(%body%) || ISNOTBLANK(%SiebelMessage%)",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction5",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundHansenIntegration/Procedure/InboundRequestLogging"
+}

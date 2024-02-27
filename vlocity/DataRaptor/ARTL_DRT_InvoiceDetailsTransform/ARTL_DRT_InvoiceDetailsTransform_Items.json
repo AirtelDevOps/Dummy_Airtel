@@ -1,0 +1,266 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(LISTSIZE(%dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails%) > 1, LISTSIZE(%dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails%), IF(%dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails%, 1, 0))",
+        "FormulaResultPath": "isInvoicesExist",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom8552",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(LISTSIZE(%dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails%) > 1, LISTSIZE(%dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails%),0)",
+        "FormulaResultPath": "isInvoicesExist",
+        "FormulaSequence": 2,
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom9675",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom2813",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerBillingCycle:partyBill:baseAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:baseAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom4050",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerPayment:partyPayment:billResets",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:billResets",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom5111",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerBillingCycle:billingDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:billingDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom5911",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerBillingCycle:partyBill:dueAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:dueAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransform9178576182212066",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customer:customerAccount:identification:id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:invoice_Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom3044",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerBillingCycle:partyBill:netAmountPayable",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:netAmountPayable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom3724",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerBillingCycle:paymentDueDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:paymentDueDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom8890",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerPayment:partyPayment:referenceNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:referenceNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom6862",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerBillingCycle:partyBill:taxAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:taxAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom49",
+        "InputFieldName": "dataArea:getCustomerInvoiceSummaryResponse:invoiceDetails:customerBillingCycle:partyBill:totalPaymentMade",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "invoiceDetails:totalPaymentMade",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_InvoiceDetailsTransformCustom2523",
+        "InputFieldName": "isInvoicesExist",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_InvoiceDetailsTransform",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_InvoiceDetailsTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "isInvoicesExist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

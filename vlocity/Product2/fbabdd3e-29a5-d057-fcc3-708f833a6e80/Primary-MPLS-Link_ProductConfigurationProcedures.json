@@ -1,0 +1,1058 @@
+[
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_LAST_MILE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Dual Last Mile\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "498cd06f-39c3-f4ef-01e2-96f6fab44e41",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/498cd06f-39c3-f4ef-01e2-96f6fab44e41",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "dc270980-4647-982c-1e91-c23e2c235e29",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link CPE As Dual - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/dc270980-4647-982c-1e91-c23e2c235e29"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MPLS_ProductType_CME\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"L2 MPLS\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ac658f7e-ba07-fe7c-cdf1-75168b84a689",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/ac658f7e-ba07-fe7c-cdf1-75168b84a689",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "319789ee-3ded-e09a-20e2-55a41ac34f90",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Service Type As Unmanaged",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/319789ee-3ded-e09a-20e2-55a41ac34f90"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MPLS_ProductType_CME\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"L3 MPLS\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "00c44ac0-0cb9-fc5c-f90b-7d13bffc9877",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/00c44ac0-0cb9-fc5c-f90b-7d13bffc9877",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "0fe33895-d498-fc71-b910-36006b5f998c",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Service Type Not As Unmanaged",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/0fe33895-d498-fc71-b910-36006b5f998c"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":1},\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"98.5%\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3c148714-60ec-d1e6-a18d-20ee7a231a0e",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/3c148714-60ec-d1e6-a18d-20ee7a231a0e",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "3fd2b422-59e9-4003-2411-9048ea0c9c81",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Media As Third Party - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/3fd2b422-59e9-4003-2411-9048ea0c9c81"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":1},\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"98.5%\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "71154190-6f77-f6fb-3577-d8f53b4c13db",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/71154190-6f77-f6fb-3577-d8f53b4c13db",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "0261e445-c9fb-9aaf-338c-cf747524cc33",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Media As RF P2MP - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/0261e445-c9fb-9aaf-338c-cf747524cc33"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":1},\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"98.5%\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8eb2cbd7-7611-b300-3946-765594a6bb2d",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/8eb2cbd7-7611-b300-3946-765594a6bb2d",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d5fc4051-5466-5a38-5a91-8c85b880ee68",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Media As RF P2P - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/d5fc4051-5466-5a38-5a91-8c85b880ee68"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":1},\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"99.5%\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "5dc6cbd6-c00d-76a3-417f-b3bfc9b7981a",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/5dc6cbd6-c00d-76a3-417f-b3bfc9b7981a",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "acd0871e-e594-4e44-bc92-a03cad185db3",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Media As Fiber On Net - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/acd0871e-e594-4e44-bc92-a03cad185db3"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1500\"}],\"index\":1},\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"99.5%\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9f41b74f-28e4-fea0-e3ba-fa41b159f518",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/9f41b74f-28e4-fea0-e3ba-fa41b159f518",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "60c8d519-606d-937b-bc30-d67b40e76187",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Media As Fiber OFF Net - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/60c8d519-606d-937b-bc30-d67b40e76187"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "e4b8c276-f2a1-35d7-e3bc-4a90b8006435",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/e4b8c276-f2a1-35d7-e3bc-4a90b8006435",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "311046d2-3b1a-e881-d7a3-0759e9311e50",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 600 Mbps - 1 GBPS - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/311046d2-3b1a-e881-d7a3-0759e9311e50"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "55d62a4f-db80-ecb9-6f75-fe23063ec805",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/55d62a4f-db80-ecb9-6f75-fe23063ec805",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "914acc89-bbb4-1fb5-20e1-115fef175dc1",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 1 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/914acc89-bbb4-1fb5-20e1-115fef175dc1"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea667200-cbbe-c776-74d5-9bdbce8be481",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/ea667200-cbbe-c776-74d5-9bdbce8be481",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "faafccc8-3fe6-f741-bba5-a4e6a0e9b521",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 10 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/faafccc8-3fe6-f741-bba5-a4e6a0e9b521"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "e6e2c650-3cd0-6e89-b313-426540720cc1",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/e6e2c650-3cd0-6e89-b313-426540720cc1",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "9cb9de77-da47-e097-cf3a-55afa5ee80ce",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 10 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/9cb9de77-da47-e097-cf3a-55afa5ee80ce"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c395eb4b-05e0-1662-4a4d-26141ef3693a",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/c395eb4b-05e0-1662-4a4d-26141ef3693a",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "83f96d5d-b093-74b7-bd9e-6b0a7901bf1e",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 100 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/83f96d5d-b093-74b7-bd9e-6b0a7901bf1e"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "6cff27f2-30c6-b591-7319-a4db065a4ad7",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/6cff27f2-30c6-b591-7319-a4db065a4ad7",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "b5450db6-120e-b091-37e3-8c50467c0609",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 60-100 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/b5450db6-120e-b091-37e3-8c50467c0609"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c6ed69ab-355a-4fcd-f320-1531ca1ba268",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/c6ed69ab-355a-4fcd-f320-1531ca1ba268",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "872b49ff-9606-2578-08d2-99ce0822cf29",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 15 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/872b49ff-9606-2578-08d2-99ce0822cf29"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "86d3028b-b974-136b-d4f3-beadc115afd5",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/86d3028b-b974-136b-d4f3-beadc115afd5",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "496c72ce-97ae-b510-e921-601fa0b55756",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 150 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/496c72ce-97ae-b510-e921-601fa0b55756"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0b77be4f-c6d5-5ce9-69ec-2ac2bd1fd142",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/0b77be4f-c6d5-5ce9-69ec-2ac2bd1fd142",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "cd5a76aa-92e3-aea0-dc03-8a917c217433",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 155 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/cd5a76aa-92e3-aea0-dc03-8a917c217433"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8b4b3e9d-f79d-2833-7290-bb9cdb47d6c8",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/8b4b3e9d-f79d-2833-7290-bb9cdb47d6c8",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "53505ed3-79f0-198d-8ff6-f6736ec71f15",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 2 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/53505ed3-79f0-198d-8ff6-f6736ec71f15"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "5ca603d2-68f2-c3f9-dd0d-565db59f56e4",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/5ca603d2-68f2-c3f9-dd0d-565db59f56e4",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "6cbc250d-f59f-0530-1dde-b873ebdd7c84",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 2 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/6cbc250d-f59f-0530-1dde-b873ebdd7c84"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "059d1d8e-c754-6db8-71a8-5b82ce5bbcde",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/059d1d8e-c754-6db8-71a8-5b82ce5bbcde",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "3a6e1311-a14d-1c6a-d426-b77ce315125a",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 20 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/3a6e1311-a14d-1c6a-d426-b77ce315125a"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0f628018-f7b0-56e6-ad29-bb7f8dbed3ef",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/0f628018-f7b0-56e6-ad29-bb7f8dbed3ef",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "56a80f15-0c56-06a5-80bd-39c1c896c362",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 20 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/56a80f15-0c56-06a5-80bd-39c1c896c362"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "2d3ce202-a4c2-9300-d505-6079d51cf1ab",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/2d3ce202-a4c2-9300-d505-6079d51cf1ab",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "b53bb217-d94d-e031-0a04-784bcb92cb3e",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 15 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/b53bb217-d94d-e031-0a04-784bcb92cb3e"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "705d35cd-74ed-3946-e61d-d14c71969817",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/705d35cd-74ed-3946-e61d-d14c71969817",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "e5596bf3-05cb-7c59-110f-8ec11a7127cf",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 12 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/e5596bf3-05cb-7c59-110f-8ec11a7127cf"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ce4d6163-f100-dcc0-d51d-450396e92e75",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/ce4d6163-f100-dcc0-d51d-450396e92e75",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "88111346-40ba-a8f0-613e-3971059fd5b5",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 200 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/88111346-40ba-a8f0-613e-3971059fd5b5"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "1d389069-61de-01ae-73da-db3b374cc1be",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/1d389069-61de-01ae-73da-db3b374cc1be",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "c02e0827-9617-1db6-5eeb-84d24b1c0e08",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 25 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/c02e0827-9617-1db6-5eeb-84d24b1c0e08"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "6e16b542-c130-514c-a351-c133d4ee6c0c",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/6e16b542-c130-514c-a351-c133d4ee6c0c",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "3d54498a-b107-9b7d-6a19-7e791a81b3a5",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 3 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/3d54498a-b107-9b7d-6a19-7e791a81b3a5"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "64c9fcad-af17-8007-f27f-da152890c764",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/64c9fcad-af17-8007-f27f-da152890c764",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "31c105d1-017d-d353-e60b-b07794993ebe",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 30 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/31c105d1-017d-d353-e60b-b07794993ebe"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "79028607-9c24-8b16-ce9e-395bb0362d73",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/79028607-9c24-8b16-ce9e-395bb0362d73",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "fcbe729f-7823-0f28-b95c-218917b28b9b",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 25 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/fcbe729f-7823-0f28-b95c-218917b28b9b"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "6e831c94-5605-c652-f9bc-a73b39b0e634",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/6e831c94-5605-c652-f9bc-a73b39b0e634",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "1e28f9fd-8c36-f1ed-8188-5f4290ee2fb8",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 250-300 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/1e28f9fd-8c36-f1ed-8188-5f4290ee2fb8"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "47bfb08f-627a-c4a1-cc5f-bd9745e07fe4",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/47bfb08f-627a-c4a1-cc5f-bd9745e07fe4",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d1231341-d3ab-b997-78a4-2eb7d7750e5e",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 35 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/d1231341-d3ab-b997-78a4-2eb7d7750e5e"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c060243e-c5e1-0550-84d9-7b7cf56912d8",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/c060243e-c5e1-0550-84d9-7b7cf56912d8",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "f962a4ae-322c-711a-3c04-fa6d62143d96",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 4 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/f962a4ae-322c-711a-3c04-fa6d62143d96"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8efd9f54-9fa7-27f4-78f7-5d4dac05c458",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/8efd9f54-9fa7-27f4-78f7-5d4dac05c458",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "c9e6543b-2fc2-47c3-43ec-ef8e0ac055c7",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 40 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/c9e6543b-2fc2-47c3-43ec-ef8e0ac055c7"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8483ea2b-0f04-f5b9-a7a2-35e943e57e26",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/8483ea2b-0f04-f5b9-a7a2-35e943e57e26",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "ced98219-5802-f40f-2c99-5a262dd971a7",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 35 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/ced98219-5802-f40f-2c99-5a262dd971a7"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "32251ae7-4bd4-e2b9-7050-11318cda9561",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/32251ae7-4bd4-e2b9-7050-11318cda9561",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "a88e7386-1415-3944-de12-0ade90d54646",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 45 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/a88e7386-1415-3944-de12-0ade90d54646"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "bdeefaa9-40ae-ce76-5da1-8decbd3eaabf",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/bdeefaa9-40ae-ce76-5da1-8decbd3eaabf",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "ca978502-cc23-c960-135d-15e907bb2ef5",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 5 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/ca978502-cc23-c960-135d-15e907bb2ef5"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "5a10d32d-b6b0-bd91-51cf-d072ea3b2645",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/5a10d32d-b6b0-bd91-51cf-d072ea3b2645",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "200b2e82-88ee-d138-c25b-fbadbdf61adb",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 50 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/200b2e82-88ee-d138-c25b-fbadbdf61adb"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "e18b17d7-d7b7-b2bf-6612-78c6580d8bc6",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/e18b17d7-d7b7-b2bf-6612-78c6580d8bc6",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "ee92556c-c158-cb93-56f9-33160a6ee9cb",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 45 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/ee92556c-c158-cb93-56f9-33160a6ee9cb"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8b9e9f94-314a-0a57-151e-9b28d71354e6",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/8b9e9f94-314a-0a57-151e-9b28d71354e6",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "b94b72b6-f1a2-1aa0-fe8a-bfff183be3ac",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 350-500 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/b94b72b6-f1a2-1aa0-fe8a-bfff183be3ac"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "18270291-215f-5a3a-6872-c736107fae5b",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/18270291-215f-5a3a-6872-c736107fae5b",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "4db97668-67b5-8dcd-ab0b-82551a0cefac",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 5 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/4db97668-67b5-8dcd-ab0b-82551a0cefac"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"Not Applicable\"],\"actionType\":\"include\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "153270c6-0986-8328-755f-ba34a00594d0",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/153270c6-0986-8328-755f-ba34a00594d0",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "5c64d709-72c3-7f95-3f5a-5a0ca68bdcd7",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 6 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/5c64d709-72c3-7f95-3f5a-5a0ca68bdcd7"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f42b8d93-0c99-e255-a661-cc26b22b74b9",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/f42b8d93-0c99-e255-a661-cc26b22b74b9",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "de905442-b0d8-bc6a-a22a-6ba51d0b54bf",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 60 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/de905442-b0d8-bc6a-a22a-6ba51d0b54bf"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "a5651dab-f6d4-9b65-b858-d5f1739cb8ab",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/a5651dab-f6d4-9b65-b858-d5f1739cb8ab",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "5d5cc347-7f22-ce02-0f11-fc19720df538",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 70 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/5d5cc347-7f22-ce02-0f11-fc19720df538"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3306ab81-5cad-563b-d3d8-3f0ad6cc0d0c",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/3306ab81-5cad-563b-d3d8-3f0ad6cc0d0c",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d9d1741c-ff4f-157c-233b-d5a8205d1c5e",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 8 Mbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/d9d1741c-ff4f-157c-233b-d5a8205d1c5e"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7479228e-e09c-6185-5c2e-de041cbfcdf1",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/7479228e-e09c-6185-5c2e-de041cbfcdf1",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "a0f6617e-d80f-548a-7cc2-d6ee9fd4bdeb",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 80 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/a0f6617e-d80f-548a-7cc2-d6ee9fd4bdeb"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"Not Applicable\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "e3edc032-bb5e-67bd-aeb5-e3cbe26b06ff",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/e3edc032-bb5e-67bd-aeb5-e3cbe26b06ff",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "6c8b591f-dc1d-25d5-608e-0aeda9260526",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As 90 Gbps - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/6c8b591f-dc1d-25d5-608e-0aeda9260526"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_PORT_BANDWIDTH\":{\"actionsList\":[{\"action\":\"CONSTRAIN\",\"value\":[\"Not Applicable\"],\"actionType\":\"include\"},{\"action\":\"CONSTRAIN\",\"value\":[\"1 Mbps\",\"2 Mbps\",\"4 Mbps\",\"6 Mbps\",\"8 Mbps\",\"10 Mbps\",\"20 Mbps\",\"30 Mbps\",\"40 Mbps\",\"50 Mbps\",\"100 Mbps\",\"150 Mbps\",\"155 Mbps\",\"200 Mbps\",\"300 Mbps\",\"500 Mbps\",\"1 Gbps\",\"2 Gbps\",\"3 Gbps\",\"5 Gbps\",\"10 Gbps\",\"15 Gbps\",\"20 Gbps\",\"25 Gbps\",\"30 Gbps\",\"35 Gbps\",\"40 Gbps\",\"45 Gbps\",\"50 Gbps\",\"60 Gbps\",\"70 Gbps\",\"80 Gbps\",\"90 Gbps\",\"100 Gbps\"],\"actionType\":\"exclude\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "19dee107-d13c-1b4b-ea2a-a4af218499c7",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/19dee107-d13c-1b4b-ea2a-a4af218499c7",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "c6515863-78ab-d569-70ab-44fb3018a174",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Access Bandwidth As NA - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/c6515863-78ab-d569-70ab-44fb3018a174"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"99%\"}],\"index\":0},\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1472\"}],\"index\":1}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0cc66cdd-d933-d780-d1a2-6db0f6c49f36",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/0cc66cdd-d933-d780-d1a2-6db0f6c49f36",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "86ea80aa-988f-6fa5-a26a-824cdb2a81f3",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Media As FTTH - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/86ea80aa-988f-6fa5-a26a-824cdb2a81f3"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_UPTIME_SLA\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"99%\"}],\"index\":0},\"ATT_MTU_SIZE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"1472\"}],\"index\":1}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ab14b4bd-129c-54ea-9ebe-600a413bd7d5",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/ab14b4bd-129c-54ea-9ebe-600a413bd7d5",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "06fe70ca-d44b-af5d-6ffe-16838b167ec4",
+        "%vlocity_namespace%__ProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "MPLS Primary Link Media As Copper - PCP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/06fe70ca-d44b-af5d-6ffe-16838b167ec4"
+    }
+]

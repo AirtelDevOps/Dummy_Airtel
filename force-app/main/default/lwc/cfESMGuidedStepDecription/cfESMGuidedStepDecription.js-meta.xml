@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+<apiVersion>58</apiVersion>
+<runtimeNamespace>vlocity_cmt</runtimeNamespace>
+<isExposed>true</isExposed>
+<masterLabel>ESMGuidedStepDecription</masterLabel>
+<targets>
+<target>lightningCommunity__Default</target>
+<target>lightningCommunity__Page</target>
+<target>lightning__RecordPage</target>
+<target>lightning__HomePage</target>
+<target>lightning__AppPage</target>
+</targets>
+<targetConfigs><targetConfig xmlns="http://soap.sforce.com/2006/04/metadata" targets="lightning__AppPage"><property name="cfTitle" type="String" label="Title" default="Quote Creation Journey"/></targetConfig><targetConfig xmlns="http://soap.sforce.com/2006/04/metadata" targets="lightning__HomePage"><property name="cfTitle" type="String" label="Title" default="Quote Creation Journey"/></targetConfig><targetConfig xmlns="http://soap.sforce.com/2006/04/metadata" targets="lightningCommunity__Default"><property name="cfIconType" type="String" label="Icon Type" default="standard:quotes"/><property name="cfTitle" type="String" label="Title" default="Quote Creation Journey"/><property name="cfDescription" type="String" label="Description" default="Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id dee doo da fauxet la gigman roo. i"/></targetConfig><targetConfig xmlns="http://soap.sforce.com/2006/04/metadata" targets="lightning__RecordPage"><property name="cfTitle" type="String" label="Title" default="Quote Creation Journey"/></targetConfig></targetConfigs>
+</LightningComponentBundle>

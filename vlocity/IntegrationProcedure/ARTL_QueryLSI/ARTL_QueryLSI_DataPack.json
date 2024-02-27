@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_QueryLSI",
+    "OmniProcessElement": [
+        "ARTL_QueryLSI_Element_RA_FetchOrderItem.json",
+        "ARTL_QueryLSI_Element_OrderItemResponse.json"
+    ],
+    "OmniProcessKey": "ARTL_QueryLSI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_QueryLSI_PropertySetConfig.json",
+    "SubType": "QueryLSI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/QueryLSI/Procedure"
+}

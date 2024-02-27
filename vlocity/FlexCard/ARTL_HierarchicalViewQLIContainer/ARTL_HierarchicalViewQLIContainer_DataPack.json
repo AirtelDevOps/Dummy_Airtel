@@ -1,0 +1,109 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 10,
+                    "name": "recordId",
+                    "val": "0Q0720000006pizCAA"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "HierarchicalViewQLIContainer": "true",
+                    "offsetInit": "0",
+                    "quoteId": "{recordId}"
+                },
+                "ipMethod": "ARTL_CustomViewOfQLI",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        },
+        "state0element1block_element3_0": {
+            "contextVariables": [
+                {
+                    "id": 6,
+                    "name": "offsetValueSV",
+                    "val": ""
+                },
+                {
+                    "id": 7,
+                    "name": "recordId",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "HierarchicalViewQLIContainer": "true",
+                    "offsetValuePrev": "{offsetValueSV}",
+                    "quoteId": "{recordId}"
+                },
+                "ipMethod": "ARTL_CustomViewOfQLI",
+                "jsonMap": "{\"offsetValueSV\":\"{offsetValueSV}\",\"recordId\":\"{recordId}\"}",
+                "vlocityAsync": false
+            }
+        },
+        "state0element1block_element4_0": {
+            "contextVariables": [
+                {
+                    "id": 6,
+                    "name": "offsetValueSV",
+                    "val": ""
+                },
+                {
+                    "id": 7,
+                    "name": "recordId",
+                    "val": "0Q0720000005FxhCAE"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "HierarchicalViewQLIContainer": "true",
+                    "offsetValueNext": "{offsetValueSV}",
+                    "quoteId": "{recordId}"
+                },
+                "ipMethod": "ARTL_CustomViewOfQLI",
+                "jsonMap": "{\"offsetValueSV\":\"{offsetValueSV}\",\"recordId\":\"{recordId}\"}",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_HierarchicalViewQLIContainer",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_HierarchicalViewQLIContainer/BhartiAirtelLimited/32.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_HierarchicalViewQLIContainer.json",
+    "SampleDataSourceResponse": "{\"QM\":[{\"Id\":\"DONOTFETCH\",\"Name\":\"-\"}],\"offsetValueSV\":0,\"action\":\"STOP\",\"QMExist\":false}",
+    "StylingConfiguration": "{\"customStyles\":\".slds-icon-standard-quotes  {\\n    width: 24px;\\n    height: 24px;\\n}\"}",
+    "UniqueName": "",
+    "VersionNumber": 32,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_HierarchicalViewQLIContainer",
+    "sourceOrgUrl": "/0ko720000000IHtAAM"
+}

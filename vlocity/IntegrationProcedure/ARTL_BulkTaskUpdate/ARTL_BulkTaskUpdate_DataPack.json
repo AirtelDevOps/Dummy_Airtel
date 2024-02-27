@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_BulkTaskUpdate_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "BulkTaskUpdate",
+    "OmniProcessElement": [
+        "ARTL_BulkTaskUpdate_Element_TryCatchBlock1.json",
+        "ARTL_BulkTaskUpdate_Element_CheckTransactionType.json",
+        "ARTL_BulkTaskUpdate_Element_DataRaptorPostAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_BulkTaskUpdate",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_BulkTaskUpdate_PropertySetConfig.json",
+    "SubType": "BulkTaskUpdate",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/BulkTaskUpdate/Procedure",
+    "WebComponentKey": "f2137a65-835a-61ad-df56-ce50261eb313",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001RZFEA2"
+}

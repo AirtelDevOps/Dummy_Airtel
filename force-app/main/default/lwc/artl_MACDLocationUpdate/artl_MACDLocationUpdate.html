@@ -1,0 +1,147 @@
+<template>
+
+    <!--lightning-button variant="brand" label="Update Location" onclick={openModal}></lightning-button-->
+
+    <template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Update Location</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <template if:true={isLoading}>
+                        <div class="slds-spinner_container slds-is-relative">
+                            <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+                        </div>
+                    </template>
+
+                    <template if:true={hasDTW}>
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="slds-cell-wrap" style="width: 25%;">Existing Address</th>
+                                    <th scope="col" class="slds-cell-wrap" style="width: 15%;">New Street</th>
+                                    <th scope="col" class="slds-cell-wrap" style="width: 15%;">New City</th>
+                                    <th scope="col" class="slds-cell-wrap" style="width: 15%;">New State</th>
+                                    <th scope="col" class="slds-cell-wrap" style="width: 15%;">New Country</th>
+                                    <th scope="col" class="slds-cell-wrap" style="width: 15%;">New Pincode</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={dtwList} for:item="dtw">
+                                    <tr key={dtw.qmId}>
+                                        <td class="slds-cell-wrap">{dtw.streetAddress}</td>
+                                        <td class="slds-cell-wrap">
+                                            <lightning-input class="validity" type="text" label="Street"
+                                                data-id={dtw.qmId} data-name={Street} variant="label-hidden"
+                                                placeholder="Street" onchange={handlechange}
+                                                disabled={isDisabled}></lightning-input>
+                                        </td>
+                                        <td class="slds-cell-wrap">
+                                            <lightning-input class="validity" type="text" label="City"
+                                                data-id={dtw.qmId} data-name={City} variant="label-hidden"
+                                                placeholder="City" onchange={handlechange}
+                                                disabled={isDisabled}></lightning-input>
+                                        </td>
+                                        <td class="slds-cell-wrap">
+                                            <lightning-input class="validity" type="text" label="State"
+                                                data-id={dtw.qmId} data-name={State} variant="label-hidden"
+                                                placeholder="State" onchange={handlechange}
+                                                disabled={isDisabled}></lightning-input>
+                                        </td>
+                                        <td class="slds-cell-wrap">
+                                            <lightning-input class="validity" type="text" label="Country"
+                                                data-id={dtw.qmId} data-name={Country} variant="label-hidden"
+                                                placeholder="Country" onchange={handlechange}
+                                                disabled={isDisabled}></lightning-input>
+                                        </td>
+                                        <td class="slds-cell-wrap">
+                                            <lightning-input class="validity" type="text" label="Pincode"
+                                                data-id={dtw.qmId} data-name={Pincode} variant="label-hidden"
+                                                placeholder="Pincode" onchange={handlechange}
+                                                disabled={isDisabled}></lightning-input>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                        <div class="slds-p-around_small slds-text-align_right slds-float_right" style="width: 100%;">
+                            <lightning-button variant="brand" label="Validate" onclick={handleValidate}
+                                disabled={isDisabled}></lightning-button>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <template if:true={isChildModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeChildModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">Validate Locations</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    <template if:true={isLoading}>
+                        <div class="slds-spinner_container slds-is-relative">
+                            <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+                        </div>
+                    </template>
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="slds-cell-wrap">QM Id</th>
+                                <th scope="col" class="slds-cell-wrap">Street</th>
+                                <th scope="col" class="slds-cell-wrap">New City</th>
+                                <th scope="col" class="slds-cell-wrap">New State</th>
+                                <th scope="col" class="slds-cell-wrap">New Country</th>
+                                <th scope="col" class="slds-cell-wrap">New Pincode</th>
+                                <th scope="col" class="slds-cell-wrap">Validation Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={inputDataList} for:item="dtw">
+                                <tr key={dtw.qmId}>
+                                    <td class="slds-cell-wrap">{dtw.qmId}</td>
+                                    <td class="slds-cell-wrap">{dtw.Street}</td>
+                                    <td class="slds-cell-wrap">{dtw.City}</td>
+                                    <td class="slds-cell-wrap">{dtw.State}</td>
+                                    <td class="slds-cell-wrap">{dtw.Country}</td>
+                                    <td class="slds-cell-wrap">{dtw.Pincode}</td>
+                                    <td class="slds-cell-wrap">{dtw.ValidationMessage}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                    <div class="slds-p-around_small slds-text-align_right slds-float_right" style="width: 100%;">
+                        <lightning-button variant="brand" label="Update" onclick={handleUpdate}
+                            disabled={isDisabled}></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+</template>

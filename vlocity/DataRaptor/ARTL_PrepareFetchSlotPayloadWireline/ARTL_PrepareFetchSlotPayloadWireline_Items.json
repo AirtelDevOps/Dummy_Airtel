@@ -1,0 +1,335 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "fetchSlotsRequests",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem3",
+        "InputFieldName": "appointmentDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:appointmentDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem4",
+        "InputFieldName": "customerSegment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:customerSegment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem9",
+        "InputFieldName": "circle",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:formData:circle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem11",
+        "InputFieldName": "city",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:formData:city",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem10",
+        "InputFieldName": "media",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:formData:media",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem7",
+        "InputFieldName": "operatingBoundaryLabel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:formData:operatingBoundaryLabel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem8",
+        "InputFieldName": "orderType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:formData:orderType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem13",
+        "InputFieldName": "pincode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:formData:pincode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem12",
+        "InputFieldName": "rsu",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:formData:rsu",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem6",
+        "InputFieldName": "taskType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:formData:taskType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem1",
+        "InputFieldName": "operatingBoundaryValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:operatingBoundaryValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem5",
+        "InputFieldName": "orderType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:orderType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem0",
+        "InputFieldName": "process",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "fetchSlotsRequests:orgProcessPath",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom986",
+        "InputFieldName": "rsu",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "fetchSlotsRequests:rsu",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_PrepareFetchSlotPayloadWirelineCustom0jI720000000NFxEAMItem2",
+        "InputFieldName": "taskType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_PrepareFetchSlotPayloadWireline",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "fetchSlotsRequests:taskType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

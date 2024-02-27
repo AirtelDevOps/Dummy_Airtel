@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Order_Dispatch_Confirmation</letterhead>
+    <name>NIPS Order Dispatch Confirmation</name>
+    <style>freeForm</style>
+    <subject>Dispatch Confirmation: Bharti Airtel Service - Order Reference: {! Order.ARTL_MO_Number__c}_&lt;DCP ID&gt;</subject>
+    <textOnly>Dear Customer,
+
+Greetings from Airtel Business.
+
+We are pleased to inform you that hardware with reference to Order No. &lt;Master Order Number&gt; is now ready for dispatch to the below mentioned address as per the purchase order received.
+
+
+
+Below are the important details of your order for future reference. Additional details are attached for your reference.
+
+
+
+Customer Name: {!Order.Customer_Name__c}
+Order No: {!Order. OrderNumber}
+Customer PO Date: {!Order. vlocity_cmt__PoDate__c}
+Customer&apos;s Address: {!Order. ShippingAddress}
+Customer Delivery Contact Name:  {!Order.Customer_}
+Customer Delivery Contact Email: {!Order.Customer_Email__c}
+
+
+You  may  reach  out  to {!Order.PM_Name__c},  your  dedicated  Project  Manager,  for updates, action plans and other support services for quality and timely execution of our service.
+
+
+
+The relevant contact details are shared below for ready reference:
+
+Designation.  Name.    Email ID              Contact Details
+Project Manager  {! Order.PM_Name__c} {! Order.PM_Email__c} {! Order.PM_Phone__c}
+Project Team Lead {! Order.PM_Team_Lead__c} {! Order.PM_Team_Lead_Email__c} {! Order.PM_Team_Lead_Phone__c}
+
+
+
+
+Thank you once again for choosing us. We look forward to building a long-term business relationship with you.
+
+
+Regards,
+Bharti Airtel Service Ltd.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

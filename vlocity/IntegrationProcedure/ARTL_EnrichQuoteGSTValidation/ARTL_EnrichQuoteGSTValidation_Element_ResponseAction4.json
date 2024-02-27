@@ -1,0 +1,41 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction4",
+    "OmniProcessId": {
+        "Name": "ARTL_EnrichQuoteGSTValidation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteGSTValidation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "BillingGSTValidated": "=IF(gstType == 'Billing', true, false)",
+            "DeliveryGSTValidated": "=IF(gstType == 'Delivery', true, false)",
+            "errorMessage": "=IF(%result:success% != true || %HTTPGSTValidationCreate:success% != true, IF(%result:errorMsg%!=null,%result:errorMsg%,IF(%HTTPGSTValidationCreate:errorMsg% !=null,%HTTPGSTValidationCreate:errorMsg%,\"An internal Salesforce error has occurred. Please contact the Administrator.\")), '')",
+            "result": "%result%",
+            "success": "=IF(%HTTPGSTValidationCreate:success% == true , true, false)"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction4",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "VlocityNoRootNode",
+        "sendJSONPath": "null",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteGSTValidation/Procedure/ResponseAction4"
+}

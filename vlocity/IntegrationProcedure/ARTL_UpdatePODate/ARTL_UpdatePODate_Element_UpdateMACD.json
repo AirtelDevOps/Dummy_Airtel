@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateMACD",
+    "OmniProcessId": {
+        "Name": "ARTL_UpdatePODate",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/UpdatePODate/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ExpiryDate": "=IF(%ExtractPO:LatestPO:EndDate% == '' ,%ExtractPO:Order:NewExpiryDate% , '')",
+            "Id": "%ExtractPO:PO:Id%",
+            "StartDate": "=IF(%ExtractPO:LatestPO:StartDate% == '' ,%ExtractPO:Order:TaskAcceptanceDate% , '')"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_UpdatePurchaseOrder",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%ExtractPO:Order:Type% != 'PO Renewal' && %ExtractPO:Order:Type% != 'Rate Revision' && %ExtractPO:Order:Type% != 'Rebilling'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/UpdatePODate/Procedure/UpdateMACD"
+}

@@ -1,0 +1,99 @@
+{
+    "dataArea": {
+        "getCustomerInvoiceSummaryResponse": {
+            "invoiceDetails": [
+                {
+                    "billPeriod": {
+                        "endDate": "2023-10-15T00:00:00.000+05:30",
+                        "startDate": "2023-10-03T00:00:00.000+05:30"
+                    },
+                    "customer": {
+                        "customerAccount": [
+                            {
+                                "identification": [
+                                    {
+                                        "id": "261414"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "customerBillingCycle": {
+                        "billActivationDate": "2023-09-26T00:00:00.000+05:30",
+                        "billingDate": "2023-09-26T00:00:00.000+05:30",
+                        "lateExemptCharges": "0",
+                        "partyBill": {
+                            "baseAmount": "20000",
+                            "carriedForward": "0",
+                            "dueAmount": "20000",
+                            "netAmountPayable": "20000",
+                            "taxAmount": "0",
+                            "totalAdjustment": "0",
+                            "totalPaymentMade": "0"
+                        },
+                        "paymentDueDate": "2023-10-26T00:00:00.000+05:30"
+                    },
+                    "customerPayment": {
+                        "partyPayment": {
+                            "amount": "20000",
+                            "billResets": "48",
+                            "originalReferenceNumber": null,
+                            "referenceNumber": "BNDD272410B00069",
+                            "remainingAmount": "20000"
+                        }
+                    }
+                },
+                {
+                    "billPeriod": {
+                        "endDate": "2023-10-26T00:00:00.000+05:30",
+                        "startDate": "2023-10-15T00:00:00.000+05:30"
+                    },
+                    "customer": {
+                        "customerAccount": [
+                            {
+                                "identification": [
+                                    {
+                                        "id": "261414"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "customerBillingCycle": {
+                        "billActivationDate": "2023-10-07T00:00:00.000+05:30",
+                        "billingDate": "2023-10-07T00:00:00.000+05:30",
+                        "lateExemptCharges": "0",
+                        "partyBill": {
+                            "baseAmount": "0",
+                            "carriedForward": "20000",
+                            "dueAmount": "20000",
+                            "netAmountPayable": "0",
+                            "taxAmount": "0",
+                            "totalAdjustment": "0",
+                            "totalPaymentMade": "0"
+                        },
+                        "paymentDueDate": "2023-10-28T00:00:00.000+05:30"
+                    },
+                    "customerPayment": {
+                        "partyPayment": {
+                            "amount": "0",
+                            "billResets": "48",
+                            "originalReferenceNumber": null,
+                            "paymentToDate": "2023-10-17T16:16:51.000+05:30",
+                            "referenceNumber": "455617976",
+                            "remainingAmount": "0"
+                        }
+                    }
+                }
+            ],
+            "status": {
+                "statusCode": "GetCustomerInvoiceSummary-0000-S",
+                "statusDescription": "Request Processed Successfully"
+            }
+        }
+    },
+    "ebmHeader": {
+        "consumerTransactionId": "113433wt43645",
+        "lob": "AES"
+    }
+}

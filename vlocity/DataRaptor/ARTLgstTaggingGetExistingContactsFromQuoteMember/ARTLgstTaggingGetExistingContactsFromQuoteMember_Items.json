@@ -1,0 +1,376 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "recordId",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember671172848368367",
+        "InputFieldName": "ARTL_Quote_Member__c",
+        "InputObjectName": "ARTL_QuoteMember_Contact__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QmContact",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "ORDER BY",
+        "FilterValue": "createdDate DESC",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMemberCustom5925",
+        "InputObjectName": "ARTL_QuoteMember_Contact__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QmContact",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QmContact:ARTL_Contact__c",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember3224102730195806",
+        "InputFieldName": "Id",
+        "InputObjectName": "Contact",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QmContact:Contact",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember878814947622186",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember36217580782931",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "result",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMemberCustom380",
+        "InputFieldName": "QmContact:Contact:ARTL_Contact_Role__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:ContactRole",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember9735659921307287",
+        "InputFieldName": "QmContact:Contact:FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:DCPfirstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember6227136646017948",
+        "InputFieldName": "QmContact:Contact:LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:DCPlastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMemberCustom5768",
+        "InputFieldName": "QmContact:Contact:ARTL_Designation__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:Designation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember17939521410996262",
+        "InputFieldName": "QmContact:Contact:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember40076464093204267",
+        "InputFieldName": "QmContact:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:QMContactId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember196982735774337",
+        "InputFieldName": "QmContact:Contact:Email",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:email",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMemberCustom4417",
+        "InputFieldName": "QmContact:Contact:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:nBAAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember24739130212128968",
+        "InputFieldName": "QmContact:Contact:Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:phone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMemberCustom4534",
+        "InputFieldName": "QmContact:Contact:RecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:recordTypeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMemberCustom2156",
+        "InputFieldName": "QmContact:Contact:Salutation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:salutation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember1362041063486159",
+        "InputFieldName": "QmContact:ARTL_Quote_Member__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:siteid",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLgstTaggingGetExistingContactsFromQuoteMember38123104903840743",
+        "InputFieldName": "QmContact:ARTL_Type__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLgstTaggingGetExistingContactsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

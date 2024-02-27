@@ -1,0 +1,69 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetParameters",
+    "OmniProcessId": {
+        "Name": "IPCreateOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTLOM/CreateOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "CartParams": {
+                "inputFields": [
+                    {
+                        "%vlocity_namespace%__PriceListId__c": "%DRExtractPriceListId:B2BPriceListId%"
+                    },
+                    {
+                        "Status": "Draft"
+                    },
+                    {
+                        "AccountId": "%AccountId%"
+                    },
+                    {
+                        "Name": "4GOrder"
+                    },
+                    {
+                        "effectivedate": "%DRExtractPriceListId:effectivedate%"
+                    },
+                    {
+                        "%vlocity_namespace%__DefaultBillingAccountId__c": "%BillingAccountId%"
+                    },
+                    {
+                        "%vlocity_namespace%__DefaultServiceAccountId__c": "%ServiceAccountId%"
+                    },
+                    {
+                        "QuoteId": "%QuoteId%"
+                    },
+                    {
+                        "RecordTypeId": "%DRExtractPriceListId:SubOrderRecTypeId%"
+                    },
+                    {
+                        "%vlocity_namespace%__ParentOrderId__c": "%ParentOrderId%"
+                    },
+                    {
+                        "Type": "New"
+                    }
+                ]
+            },
+            "attributes": "=SERIALIZE(%Attributes%)",
+            "fields": "Id,Name,EffectiveDate"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTLOM/CreateOrder/Procedure/SetParameters"
+}

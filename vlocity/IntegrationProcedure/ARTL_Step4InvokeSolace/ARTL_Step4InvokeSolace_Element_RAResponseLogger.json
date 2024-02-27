@@ -1,0 +1,52 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RAResponseLogger",
+    "OmniProcessId": {
+        "Name": "Step4InvokeSolace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/Step4InvokeSolace/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "logData:request:apiKey": "=%getCustomMetadataRecord:calloutMetadata|1:ARTL_API_Key__c%",
+            "logData:request:endpoint": "=%getCustomMetadataRecord:calloutMetadata|1:ARTL_EndPointURL__c%",
+            "logData:request:namedCredentials": "=%namedCredentials%",
+            "logData:response": "=%HTTPCalloutSolace%",
+            "name": "=\"Step4InvokeSolace\"",
+            "type": "=\"Integration Procedure\""
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "ARTL_OmniActionUtil",
+        "remoteMethod": "logInfo",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "VlocityNoRootNode",
+        "sendJSONPath": "null",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/Step4InvokeSolace/Procedure/RAResponseLogger"
+}

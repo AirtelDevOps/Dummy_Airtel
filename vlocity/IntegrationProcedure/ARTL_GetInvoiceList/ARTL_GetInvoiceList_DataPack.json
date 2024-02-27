@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_GetInvoiceList_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetInvoiceList",
+    "OmniProcessElement": [
+        "ARTL_GetInvoiceList_Element_GetAccountNumber.json",
+        "ARTL_GetInvoiceList_Element_GetAPIDetails.json",
+        "ARTL_GetInvoiceList_Element_RandomNumberGenerator.json",
+        "ARTL_GetInvoiceList_Element_ApiCallout.json",
+        "ARTL_GetInvoiceList_Element_InvoiceDetailsTransform.json",
+        "ARTL_GetInvoiceList_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_GetInvoiceList",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_GetInvoiceList_PropertySetConfig.json",
+    "SubType": "GetInvoiceList",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/GetInvoiceList/Procedure"
+}

@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTLOM_CreateOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "IPCreateOrder",
+    "OmniProcessElement": [
+        "ARTLOM_CreateOrder_Element_DRExtractPriceListId.json",
+        "ARTLOM_CreateOrder_Element_SetParameters.json",
+        "ARTLOM_CreateOrder_Element_RACreateCart.json",
+        "ARTLOM_CreateOrder_Element_PostCartItems.json",
+        "ARTLOM_CreateOrder_Element_ValidateAndSubmit.json",
+        "ARTLOM_CreateOrder_Element_ReturnCartDetails.json"
+    ],
+    "OmniProcessKey": "ARTLOM_CreateOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTLOM_CreateOrder_PropertySetConfig.json",
+    "SubType": "CreateOrder",
+    "Type": "ARTLOM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTLOM/CreateOrder/Procedure",
+    "WebComponentKey": "29fafd85-7d1c-4c53-b2ff-34d9b61f7346",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001UQfEAM"
+}

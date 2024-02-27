@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_Callout_After_PDOrderCreation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Callout_After_PDOrderCreation",
+    "OmniProcessElement": [
+        "ARTL_Callout_After_PDOrderCreation_Element_DataRaptorTurboAction1.json",
+        "ARTL_Callout_After_PDOrderCreation_Element_HTTPAction1.json",
+        "ARTL_Callout_After_PDOrderCreation_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_Callout_After_PDOrderCreation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_Callout_After_PDOrderCreation_PropertySetConfig.json",
+    "SubType": "Callout_After_PDOrderCreation",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/Callout_After_PDOrderCreation/Procedure",
+    "WebComponentKey": "e40de859-38e7-e652-b5b2-d250cd5fb4ac",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001dH3EAI"
+}

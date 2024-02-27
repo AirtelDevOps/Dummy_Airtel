@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Check_if_remarks_is_not_empty</name>
+        <label>Check if remarks is not empty</label>
+        <locationX>572</locationX>
+        <locationY>371</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ARTL_Remarks__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.vlocity_cmt__EventStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.vlocity_cmt__EventStatus__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_remarks_on_Account</targetReference>
+            </connector>
+            <label>Not empty</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>CompletedDateAndUsername</name>
+        <dataType>String</dataType>
+        <expression>&apos;[&apos;+TEXT({!$Record.vlocity_cmt__CompletedDate__c})+ &apos; - &apos; + {!$User.FirstName}+ &apos; &apos; + {!$User.LastName}+ &apos;] - &apos;</expression>
+    </formulas>
+    <formulas>
+        <name>UpdatedRemarks</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    NOT(
+        ISBLANK({!$Record.Account.ARTL_Activity_Remarks__c})
+        ),
+       {!CompletedDateAndUsername} + &apos; &apos; + {!$Record.ARTL_Remarks__c} + &apos;,       &apos; + {!$Record.Account.ARTL_Activity_Remarks__c},
+       {!CompletedDateAndUsername}+ &apos; &apos; + {!$Record.ARTL_Remarks__c}
+)</expression>
+    </formulas>
+    <interviewLabel>Event_AfterTriggerFlow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Event_AfterTriggerFlow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_remarks_on_Account</name>
+        <label>Update remarks on Account</label>
+        <locationX>440</locationX>
+        <locationY>480</locationY>
+        <inputAssignments>
+            <field>ARTL_Activity_Remarks__c</field>
+            <value>
+                <elementReference>UpdatedRemarks</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Account</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>446</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Check_if_remarks_is_not_empty</targetReference>
+        </connector>
+        <object>Event</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

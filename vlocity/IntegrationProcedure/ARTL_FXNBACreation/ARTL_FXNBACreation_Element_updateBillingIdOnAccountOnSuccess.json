@@ -1,0 +1,46 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "updateBillingIdOnAccountOnSuccess",
+    "OmniProcessId": {
+        "Name": "FXNBACreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FXNBACreation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "accountId": "=%recordId%",
+            "description": "Send to FX Successful",
+            "name": "=%DRExtractFXBillingAccount:dataArea:createBillingAccount:customerAccount:customerName:organization:identification:name%",
+            "status": "Success",
+            "successFlag": "=%true%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DRE_updateAccount",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "HTTPSyncNBAAccount:dataArea:createBillingAccountResponse:customerOrderItem:billingAccountId != NULL",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "HTTPSyncNBAAccount",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FXNBACreation/Procedure/updateBillingIdOnAccountOnSuccess"
+}

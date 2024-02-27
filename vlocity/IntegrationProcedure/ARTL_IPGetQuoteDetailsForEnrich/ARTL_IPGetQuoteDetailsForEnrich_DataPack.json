@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_IPGetQuoteDetailsForEnrich_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_IPGetQuoteDetailsForEnrich",
+    "OmniProcessElement": [
+        "ARTL_IPGetQuoteDetailsForEnrich_Element_ARTL_DRE_GetQuoteDetails.json",
+        "ARTL_IPGetQuoteDetailsForEnrich_Element_ARTL_LDR_UpdateOpportunityStage.json",
+        "ARTL_IPGetQuoteDetailsForEnrich_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_IPGetQuoteDetailsForEnrich",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_IPGetQuoteDetailsForEnrich_PropertySetConfig.json",
+    "SubType": "IPGetQuoteDetailsForEnrich",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/IPGetQuoteDetailsForEnrich/Procedure"
+}

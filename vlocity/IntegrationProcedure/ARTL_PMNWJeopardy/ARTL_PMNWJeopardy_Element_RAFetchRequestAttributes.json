@@ -1,0 +1,50 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RAFetchRequestAttributes",
+    "OmniProcessId": {
+        "Name": "PMNWJeopardy",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/PMNWJeopardy/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "isFetchTechAttrMap": true,
+            "requestPL": "=%DRFetchRequestPayloadList:reqPL:ListOfB2B_spcPMW_spcCreate_spcTask_spcIO:B2B_spcAction_spcPM_spcWorkbench_spcThin_spcBC:ListOfB2B_spcInput_spcTask_spcDFF_spcBC:B2B_spcInput_spcTask_spcDFF_spcBC%",
+            "taskId": "=%DRFetchTaskPayloadForPMNWJeopardy:taskId%",
+            "taskType": "PM_NW_Jeopardy"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "ARTL_TechnicalAttributeProcessor",
+        "remoteMethod": "extractAttributesFromJSON",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "vlocityNoRootNode",
+        "sendJSONPath": "null",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/PMNWJeopardy/Procedure/RAFetchRequestAttributes"
+}

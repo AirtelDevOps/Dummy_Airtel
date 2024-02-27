@@ -1,0 +1,92 @@
+<template>
+    <div if:true={cellData} onclick={onClickFieldValue} data-cell-position={cellData.position}
+        data-editable={cellData.editable} data-field-name={columnData.fieldName}
+        data-row-original-index={cellData.originalItemIndex} class={dataTableCellClass} style="min-width: 130px;">
+        <div if:false={cellData.editMode} class="slds-hyphenate b2b-table-cell-field-wrapper">
+            <!--<span class="slds-truncate" title={getCellValue}>{getCellValue}</span>
+            <vlocity_cmt-icon tabindex="0" if:true={isPicklistCellEditable} class="b2b-hover-icon slds-transition-hide" icon-name="utility:edit"
+                data-cell-position={cellData.position} size="xx-small" theme={theme} extraclass="slds-m-left_x-small"
+                onclick={editDataCell} onkeypress={editDataCell} data-field-name={columnData.fieldName}
+                data-row-original-index={cellData.originalItemIndex}>
+            </vlocity_cmt-icon>-->
+        </div>
+
+        <!--Checkbox-->
+        <lightning-input if:true={cellData.checkbox} type="checkbox" checked={cellData.value}
+        data-field-name={columnData.fieldName} data-row-original-index={cellData.originalItemIndex}
+        data-cell-position={cellData.position} onchange={editDataCell}></lightning-input>
+
+        <!--Currency-->
+        <vlocity_cmt-input if:true={cellData.currency} class="b2b-field_edit slds-input" data-field-name={columnData.fieldName}
+            data-row-original-index={cellData.originalItemIndex} data-cell-position={cellData.position}
+            onblur={editDataCell} theme={theme} type="number" value={cellData.value} formatter="currency">
+        </vlocity_cmt-input>
+
+        <!--Date-->
+        <lightning-input if:true={cellData.date} data-field-name={columnData.fieldName} data-row-original-index={cellData.originalItemIndex} 
+        data-cell-position={cellData.position} onchange={onChangeDate} type="date" value={cellData.value}></lightning-input>
+
+        <!--Date Time-->
+        <lightning-input if:true={cellData.datetime} data-field-name={columnData.fieldName} data-row-original-index={cellData.originalItemIndex} 
+        data-cell-position={cellData.position} onchange={onChangeDate} type="date" value={cellData.value}></lightning-input>
+
+        <!--Email-->
+        <vlocity_cmt-input if:true={cellData.email} class="b2b-field_edit slds-input" data-field-name={columnData.fieldName}
+            data-row-original-index={cellData.originalItemIndex} data-cell-position={cellData.position}
+            onblur={editDataCell} theme={theme} type="email" value={cellData.value}>
+        </vlocity_cmt-input>
+
+        <!--Number-->
+        <vlocity_cmt-input if:true={cellData.number} class="b2b-field_edit  slds-input" data-field-name={columnData.fieldName}
+            data-row-original-index={cellData.originalItemIndex} data-cell-position={cellData.position}
+            onblur={editDataCell} theme={theme} type="number" value={cellData.value}>
+        </vlocity_cmt-input>
+
+        <!--Percent-->
+        <vlocity_cmt-input if:true={cellData.percent} class="b2b-field_edit slds-input" data-field-name={columnData.fieldName}
+            data-row-original-index={cellData.originalItemIndex} data-cell-position={cellData.position}
+            onblur={editDataCell} theme={theme} type="number" value={cellData.value} formatter="percent" step="0.01">
+        </vlocity_cmt-input>
+
+        <!--Text-->
+        <vlocity_cmt-input if:true={cellData.text} class="b2b-field_edit slds-input" data-field-name={columnData.fieldName}
+            data-row-original-index={cellData.originalItemIndex} data-cell-position={cellData.position}
+            onblur={editDataCell} theme={theme} type="text" value={cellData.value}>
+        </vlocity_cmt-input>
+
+        <!--Textarea-->
+        <vlocity_cmt-textarea if:true={cellData.textarea} class="b2b-field_edit slds-input" extraclass="slds-show"
+            data-field-name={columnData.fieldName} data-row-original-index={cellData.originalItemIndex}
+            data-cell-position={cellData.position} theme={theme} onblur={editDataCell} value={cellData.value}>
+        </vlocity_cmt-textarea>
+
+        <!-- Lookup -->
+        <template if:true={cellData.lookup}>
+            <vlocity_cmt-b2b-typeahead if:true={columnData.config} type="text" field-level-help={columnData.config.fieldLevelHelp}
+            field-level-help-position={columnData.config.fieldLevelHelpPosition} label={columnData.config.fieldLabel}
+            oninput={handletypeaheadInput} onblur={handletypeaheadBlur} onselect={handletypeaheadSelect} onfocus={handletypeaheadFocus}
+            onclear={handletypeaheadClear} options={typeaheadOptions} placeholder={columnData.config.placeholder}
+            required={columnData.config.required} min-length={columnData.config.minLength}
+            max-length={columnData.config.maxLength} required-label={columnData.config.requiredLabel}
+            no-results-found-message={labels.CMEXNoResults}
+            message-when-value-missing={columnData.config.valueMissingMessage}
+            message-when-too-short={columnData.config.valueShortMessage}
+            message-when-too-long={columnData.config.valueLongMessage} theme="slds"
+            remote-source=true edit-mode=true single-select=true disable-filter={columnData.config.disableFilter} json-data={columnData.config}
+            data-field-name={columnData.fieldName}
+            data-row-original-index={cellData.originalItemIndex} data-cell-position={cellData.position}
+            icon-name-right="utility:search" data-omni-input
+            data-index={cellData.originalItemIndex}>
+            </vlocity_cmt-b2b-typeahead>
+        </template>
+
+        <!-- Picklist -->
+        <!--<template if:true={cellData.picklist}>-->
+            <vlocity_cmt-combobox theme="slds" options={picklistValues} if:true={picklistValues.length} value={getCellValue}
+                class="b2b-input b2b-policy" onchange={editDataCell}
+                data-field-name={columnData.fieldName}
+                data-row-original-index={cellData.originalItemIndex} data-cell-position={cellData.position}>
+            </vlocity_cmt-combobox>
+        <!--</template>-->
+    </div>
+</template>

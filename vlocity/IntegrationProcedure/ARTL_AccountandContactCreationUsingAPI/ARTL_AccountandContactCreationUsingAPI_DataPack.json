@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_AccountandContactCreationUsingAPI_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "AccountandContactCreationUsingAPI",
+    "OmniProcessElement": [
+        "ARTL_AccountandContactCreationUsingAPI_Element_DRfetchUserDetails.json",
+        "ARTL_AccountandContactCreationUsingAPI_Element_DRCreateAccountandContact.json",
+        "ARTL_AccountandContactCreationUsingAPI_Element_DRUpdateStepStatuses.json",
+        "ARTL_AccountandContactCreationUsingAPI_Element_DR_GetAccountNumber.json",
+        "ARTL_AccountandContactCreationUsingAPI_Element_ResponseAction.json",
+        "ARTL_AccountandContactCreationUsingAPI_Element_ErrorResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_AccountandContactCreationUsingAPI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_AccountandContactCreationUsingAPI_PropertySetConfig.json",
+    "SubType": "AccountandContactCreationUsingAPI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/AccountandContactCreationUsingAPI/Procedure"
+}

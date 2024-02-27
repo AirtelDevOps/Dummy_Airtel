@@ -1,0 +1,9 @@
+<aura:component implements = "force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <aura:html tag="style">             
+        .slds-modal__container{        
+        width: 100% !important;
+        max-width: 95rem !important;
+        }        
+    </aura:html>
+    <c:artl_CreateDCP recordId="{!v.recordId}" />
+</aura:component>

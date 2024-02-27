@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "doc_Generation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "IPgetTemplateDetailsForDocGen",
+    "OmniProcessElement": [
+        "doc_Generation_Element_templatesLoop.json",
+        "doc_Generation_Element_FetchDocumentTemplateFromName.json",
+        "doc_Generation_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "doc_Generation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "doc_Generation_PropertySetConfig.json",
+    "SubType": "Generation",
+    "Type": "doc",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/doc/Generation/Procedure"
+}

@@ -1,0 +1,82 @@
+<template>
+    <div class={className}>
+      <div class="slds-p-horizontal_medium slds-p-bottom_small">
+        <slot name="totalBarLeftActions">
+  
+        </slot>
+      </div>
+      <div
+        class="slds-col slds-size_6-of-12 slds-large-size_4-of-12 slds-p-bottom_small b2b-footer">
+        <slot name="locations">
+          <div class="b2b-quantity slds-size_3-of-12 slds-p-left_x-small">
+            <p class="b2b-configure_label">{memberType}</p>
+            <p>
+              <input disabled class="b2b-qty-box" type="text" value={members} />
+              <vlocity_cmt-icon icon-name="utility:warning" size="xx-small" color="#FF487D" if:false={members}
+                extraclass="slds-icon-text-default" class="slds-m-left_xx-small"></vlocity_cmt-icon>
+            </p>
+          </div>
+        </slot>
+        <slot name="oneTimeTotal">
+          <div class="b2b-total slds-size_3-of-12 slds-p-left_x-small">
+            <p class="b2b-configure_label">{labels.CMEXOneTimeTotal}</p>
+            <p class="b2b-configure_locations">{dueTotalEsm}</p>
+          </div>
+        </slot>
+        <!-- <slot name="annualTotal">
+            <div class="b2b-total slds-size_3-of-12 slds-p-left_x-small">
+              <p class="b2b-configure_label">{label.ArcTotal}</p>
+              <p class="b2b-configure_locations">{annualRecurringTotal}</p>
+            </div>
+        </slot> -->
+        <slot name="monthlyTotal">
+          <div class="b2b-total slds-size_3-of-12 slds-p-left_x-small">
+            <p class="b2b-configure_label">{labels.CMEXMonthlyTotal}</p>
+            <p class="b2b-configure_locations">{recurringTotalEsm}</p>
+          </div>
+        </slot>
+        <slot name="totalBarCenterActions">
+          <div class="slds-size_3-of-12 slds-p-left_x-small" if:true={showStatusBar}>
+            <button disabled={disableLinkProduct} class="slds-button b2b-link-button slds-m-top_x-small"
+              onclick={linkProducts}>{labels.CMEXLinkProducts}
+              <div aria-describedby="dialog-body-id-110" aria-labelledby="dialog-heading-id-4"
+                class="b2b-button-info-tooltip_top slds-popover slds-popover_walkthrough slds-nubbin_bottom" role="dialog">
+                <div class="slds-popover__body">
+                  <div class="slds-media">
+                    <div class="slds-media__body">
+                      <div class="slds-media">
+                        <div class="slds-media__body slds-text-align_center">
+                          <p>{labels.CMEXLinkProductsHelpText}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </button>
+          </div>
+        </slot>
+      </div>
+      <div
+        class="slds-col slds-size_6-of-12 slds-large-size_5-of-12 slds-p-horizontal_large slds-m-top_x-small slds-p-bottom_small b2b-price_container b2b-footer-btn">
+        <slot name="totalbarBackBtn">
+          <button class="slds-button slds-button_neutral" onclick={handleRouteBack}>{labels.CMEXBack}</button>
+        </slot>
+        <slot name="totalbarBtn">
+          <div class="slds-grid" if:true={showStatusBar}>
+            <span class="slds-m-top_xx-small slds-m-right_xx-small" if:true={showConfirmAllUpdateTooltip}>
+              <lightning-helptext content={labels.CMEXDisableAddToCartTooltip}></lightning-helptext>
+            </span>
+            <button class="slds-button slds-button_brand" onclick={addToLocations} if:false={disableAddProduct}>{addMemberButtonLabel}</button>
+            <button class="slds-button slds-button_brand" disabled if:true={disableAddProduct}>{addMemberButtonLabel}</button>
+          </div>
+        </slot>
+        <slot name="totalBarRightActions">
+          
+        </slot>
+      </div>
+      <div class="slds-spinner_container" if:true={loading}>
+        <lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+      </div>
+    </div>
+  </template>

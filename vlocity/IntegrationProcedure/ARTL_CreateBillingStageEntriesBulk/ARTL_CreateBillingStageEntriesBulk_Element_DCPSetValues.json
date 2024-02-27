@@ -1,0 +1,40 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DCPSetValues",
+    "OmniProcessId": {
+        "Name": "ARTL_CreateBillingStageEntriesBulk",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "DCPAddress": "=%PODataDetails:DCPAddress%",
+            "DCPCity": "=%PODataDetails:DCPCity%",
+            "DCPCountry": "=%PODataDetails:DCPCountry%",
+            "DCPEmail": "=%PODataDetails:DCPEmail%",
+            "DCPFirstName": "=%PODataDetails:DCPFirstName%",
+            "DCPLastName": "=%PODataDetails:DCPLastName%",
+            "DCPMobileNumber": "=%PODataDetails:DCPMobileNumber%",
+            "DCPPinCode": "=%PODataDetails:DCPPinCode%",
+            "DCPState": "=%PODataDetails:DCPState%",
+            "dcpId": "=%DCP:DCPId%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "DCPData",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure/DCPSetValues"
+}

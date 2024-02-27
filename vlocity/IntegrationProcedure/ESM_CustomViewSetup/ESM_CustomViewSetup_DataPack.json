@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_CustomViewSetup_SampleInput.json",
+    "Description": "Copy of V14(Dev) + to Remove all header actions and service account column from location.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CustomViewSetup",
+    "OmniProcessElement": [
+        "ESM_CustomViewSetup_Element_ReadOnlyFields.json",
+        "ESM_CustomViewSetup_Element_CustomViewFieldsMapper.json",
+        "ESM_CustomViewSetup_Element_getOsStandardRuntimeSetting.json",
+        "ESM_CustomViewSetup_Element_CustomViewOMMapper.json",
+        "ESM_CustomViewSetup_Element_CustomViewOMMapperOSRuntime.json",
+        "ESM_CustomViewSetup_Element_CustomMemberHeaderActions.json",
+        "ESM_CustomViewSetup_Element_GuidedCustomMemberHeaderActions.json",
+        "ESM_CustomViewSetup_Element_CustomQMFieldMapper.json",
+        "ESM_CustomViewSetup_Element_GuidedCustomQMFieldMapper.json",
+        "ESM_CustomViewSetup_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ESM_CustomViewSetup",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_CustomViewSetup_PropertySetConfig.json",
+    "SubType": "CustomViewSetup",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/CustomViewSetup/Procedure"
+}

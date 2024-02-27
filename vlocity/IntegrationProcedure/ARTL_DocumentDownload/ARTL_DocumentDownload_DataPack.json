@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_DocumentDownload_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_DocumentDownload",
+    "OmniProcessElement": [
+        "ARTL_DocumentDownload_Element_GetDocumentDetails.json",
+        "ARTL_DocumentDownload_Element_RequestLog.json",
+        "ARTL_DocumentDownload_Element_SetEndpoint.json",
+        "ARTL_DocumentDownload_Element_DocDownloadCallout.json",
+        "ARTL_DocumentDownload_Element_IPCreateIncident.json",
+        "ARTL_DocumentDownload_Element_ResponseLog.json",
+        "ARTL_DocumentDownload_Element_SetURL.json",
+        "ARTL_DocumentDownload_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_DocumentDownload",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_DocumentDownload_PropertySetConfig.json",
+    "SubType": "DocumentDownload",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/DocumentDownload/Procedure",
+    "WebComponentKey": "f0b3f66d-2185-c8c0-52d2-147d09d2c732",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN72000000127pEAA"
+}

@@ -1,0 +1,131 @@
+<template>
+
+    <lightning-modal-header label="Update BCP/DCP"></lightning-modal-header>
+    <lightning-modal-body>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+        </template>
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-progress-indicator current-step={currentStep} type="base" has-error={error}>
+                    <lightning-progress-step label="Step 1" value="1"></lightning-progress-step>
+                    <lightning-progress-step label="Step 2" value="2"></lightning-progress-step>
+                    <!-- <lightning-progress-step label="Step 3" value="3"></lightning-progress-step> -->
+                </lightning-progress-indicator>
+            </lightning-layout-item>
+            <lightning-layout-item size="12">
+                <!-- <template if:true={showDatatable}>
+                    <lightning-layout-item size="12" class="slds-p-horizontal_xx-small">
+                        <div class="slds-text-heading_medium">Contact Premise Records</div>
+                        <div class="line-separator slds-border_top slds-m-bottom_small slds-m-top_x-small">
+                        </div>
+                    </lightning-layout-item>
+                    <template if:true={data}>
+                        <lightning-datatable data={data} columns={columns} key-field="Id"
+                            onrowselection={handleRowSelection} onrowaction={handleRowAction} max-row-selection="1">
+                        </lightning-datatable>
+                    </template>
+                    <template if:true={error}>
+                        {error}
+                    </template>
+                </template> -->
+                <template if:true={showDetails}>
+                    <lightning-layout multiple-rows="true">
+                        <lightning-layout-item size="12" class="slds-p-horizontal_xx-small">
+                            <div class="slds-text-heading_medium">Contact Details</div>
+                            <div class="line-separator slds-border_top slds-m-bottom_small slds-m-top_x-small">
+                            </div>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item size="12" small-device-size="3" class="slds-p-horizontal_xx-small">
+                            <lightning-combobox name="salutation" label="Salutation" value={salutationValue}
+                                placeholder="Select" options={salutationOptions} onchange={handleChange}
+                                required></lightning-combobox>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="3" class="slds-p-horizontal_xx-small">
+                            <lightning-input type="text" name="firstName" label="First Name" value={firstNameValue}
+                                onchange={handleChange} required pattern="[a-zA-Z .]*"
+                                message-when-pattern-mismatch="First Name should not contain any Numbers/Special Characters."></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="3" class="slds-p-horizontal_xx-small">
+                            <lightning-input type="text" name="middleName" label="Middle Name" value={middleNameValue}
+                                onchange={handleChange}></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="3" class="slds-p-horizontal_xx-small">
+                            <lightning-input type="text" name="lastName" label="Last Name" value={lastNameValue}
+                                onchange={handleChange} required pattern="[a-zA-Z .]*"
+                                message-when-pattern-mismatch="Last Name should not contain any Numbers/Special Characters."></lightning-input>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item size="12" small-device-size="4" class="slds-p-horizontal_xx-small">
+                            <lightning-input type="email" name="email" label="Email" value={emailAddressValue}
+                                onchange={handleChange} required></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="4" class="slds-p-horizontal_xx-small">
+                            <lightning-input type="tel" name="phone" label="Phone" value={phoneValue} maxlength="13"
+                                minlength="8" onchange={handleChange} required pattern="[0-9]{8,13}$"
+                                message-when-pattern-mismatch="Only Numeric Values (0-9) up to 13 digits are allowed in Phone Number. Alphabets and Special characters are not allowed."></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="4" class="slds-p-horizontal_xx-small">
+                            <lightning-combobox name="role" label="Role" value={roleValue} placeholder="Select"
+                                options={roleOptions} onchange={handleChange} required disabled></lightning-combobox>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item size="12" small-device-size="4" class="slds-p-horizontal_xx-small">
+                            <lightning-input type="email" name="alternateEmail" label="Alternate Email"
+                                value={alternateEmailValue} onchange={handleChange}></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="3" class="slds-p-horizontal_xx-small">
+                            <lightning-input type="tel" name="fax" label="Fax" value={faxValue} onchange={handleChange}
+                                maxlength="10"></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="3" class="slds-p-horizontal_xx-small">
+                            <lightning-input type="text" name="designation" label="Designation" value={designationValue}
+                                onchange={handleChange} required data-element="designation"
+                                message-when-pattern-mismatch="Designation should not contain any Special Characters except ./'"></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" small-device-size="2" class="slds-p-horizontal_xx-small">
+                            <lightning-combobox name="status" label="Status" value={statusValue} placeholder="Select"
+                                options={statusOptions} onchange={handleChange}></lightning-combobox>
+                        </lightning-layout-item>
+                        <!-- <lightning-layout-item size="6" class="slds-p-horizontal_xx-small">
+                            <lightning-combobox name="gstApplicable" label="GST Applicable" value={gstApplicableValue}
+                                placeholder="Select" options={gstApplicableOptions}
+                                onchange={handleGstApplicableChange}></lightning-combobox>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6" class="slds-p-horizontal_xx-small">
+                            <lightning-combobox name="standardReason" label="Standard Reason"
+                                value={standardReasonValue} placeholder="Select" options={standardReasonOptions}
+                                onchange={handleChange}></lightning-combobox>
+                        </lightning-layout-item> -->
+                    </lightning-layout>
+                </template>
+                <template if:true={showAddress}>
+                    <!-- searchable input -->
+                    <lightning-layout-item size="12" class="slds-p-horizontal_xx-small">
+                        <c-a-r-t-l_-searchable-combobox address-details={addressDetails}
+                            onupdatedaddress={addressUpdated}></c-a-r-t-l_-searchable-combobox>
+                    </lightning-layout-item>
+                    <!-- searchable input -->
+                    <lightning-layout-item size="12" class="slds-p-horizontal_xx-small">
+                        <c-a-r-t-l-_gst-details-in-bcp-dcp-lwc state-value={stateValue}
+                            nba-account-id-value={nbaAccountIdValue} onstandardvalue={handleStandardValue}
+                            ongstselectedvalue={gstValueUpdated} gst-applicable-value-input={gstApplicableValue}
+                            standard-reason-value-input={standardReasonValue} is-update="true"
+                            gst-selected-value-input={gstId}></c-a-r-t-l-_gst-details-in-bcp-dcp-lwc>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item size="12" flexibility="auto">
+                <lightning-button if:true={showPrevious} label="Previous" onclick={handlePrevious}
+                    variant="brand-outline" class="slds-p-right_medium"></lightning-button>
+                <lightning-button label={NextButtonLabel} onclick={handleNext} variant="brand"></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-modal-footer>
+</template>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_PANandTANMandatoryValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName == &apos;Business&apos;, 
+    ISNEW(),
+    NOT(ISBLANK(ARTL_IntegrationId__c)),
+    OR(
+        AND( ISPICKVAL( ARTL_Identification_Type__c ,&apos;PAN&apos;) , ISBLANK(ARTL_PAN__c) ),
+        AND( ISPICKVAL( ARTL_Identification_Type__c ,&apos;TAN&apos;), ISBLANK( ARTL_TAN__c ) ) 
+    )
+   )</errorConditionFormula>
+    <errorMessage>If Identification type is PAN, then PAN is mandatory. If Identification type is TAN, then TAN is mandatory.</errorMessage>
+</ValidationRule>

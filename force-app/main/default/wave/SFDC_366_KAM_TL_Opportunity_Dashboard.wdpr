@@ -1,0 +1,233 @@
+{
+  "version" : "60.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "IsDeleted", "AccountId", "RecordTypeId", "IsPrivate", "Name", "Description", "StageName", "Amount", "Probability", "ExpectedRevenue", "TotalOpportunityQuantity", "CloseDate", "Type", "NextStep", "LeadSource", "IsClosed", "IsWon", "ForecastCategory", "ForecastCategoryName", "CurrencyIsoCode", "CampaignId", "HasOpportunityLineItem", "Pricebook2Id", "OwnerId", "CreatedDate", "AgeInDays", "CreatedById", "LastModifiedDate", "LastModifiedById", "SystemModstamp", "LastActivityDate", "LastActivityInDays", "PushCount", "LastStageChangeDate", "LastStageChangeInDays", "FiscalQuarter", "FiscalYear", "Fiscal", "ContactId", "LastViewedDate", "LastReferencedDate", "SyncedQuoteId", "ContractId", "HasOpenActivity", "HasOverdueTask", "LastAmountChangedHistoryId", "LastCloseDateChangedHistoryId", "IsPriorityRecord", "ActivityMetricId", "Budget_Confirmed__c", "Discovery_Completed__c", "ROI_Analysis_Completed__c", "Loss_Reason__c", "vlocity_cmt__AccountSLA__c", "vlocity_cmt__AsyncJobId__c", "vlocity_cmt__AsyncOperation__c", "vlocity_cmt__BudgetAmount__c", "vlocity_cmt__DefaultCurrencyPaymentMode__c", "vlocity_cmt__EffectiveBaseOneTimeCharge__c", "vlocity_cmt__EffectiveBaseRecurringCharge__c", "vlocity_cmt__EffectiveOneTimeCostTotal__c", "vlocity_cmt__EffectiveOneTimeLoyaltyTotal__c", "vlocity_cmt__EffectiveRecurringCostTotal__c", "vlocity_cmt__EffectiveUsageCostTotal__c", "vlocity_cmt__EffectiveUsagePriceTotal__c", "vlocity_cmt__Email__c", "vlocity_cmt__Fax__c", "vlocity_cmt__FollowUpTo__c", "vlocity_cmt__FrameContractId__c", "vlocity_cmt__IsContractRequired__c", "vlocity_cmt__LockedBy__c", "vlocity_cmt__LockedFor__c", "vlocity_cmt__NumberOfContractedMonths__c", "vlocity_cmt__OneTimeLoyaltyTotal__c", "vlocity_cmt__OneTimeMarginTotal__c", "vlocity_cmt__OpportunityMarginTotal__c", "vlocity_cmt__OrderNumber__c", "vlocity_cmt__OriginatingChannel__c", "vlocity_cmt__OriginatingContractId__c", "vlocity_cmt__PartyId__c", "vlocity_cmt__Phone__c", "vlocity_cmt__PriceListId__c", "vlocity_cmt__RecurringMarginTotal__c", "vlocity_cmt__ShippingPostalCode__c", "vlocity_cmt__ShippingState__c", "vlocity_cmt__TrackingNumber__c", "vlocity_cmt__UsageMarginTotal__c", "vlocity_cmt__ValidationDate__c", "vlocity_cmt__ValidationMessage__c", "vlocity_cmt__ValidationStatus__c", "vlocity_cmt__EffectiveOneTimeTotal__c", "vlocity_cmt__EffectiveRecurringTotal__c", "vlocity_cmt__OneTimeTotal__c", "vlocity_cmt__RecurringTotal__c", "vlocity_cmt__AccountRecordType__c", "vlocity_cmt__EffectiveOpportunityTotal__c", "vlocity_cmt__OpportunityTotal__c", "Campaign__c", "Customer_Contact__c", "Parent_Opportunity__c", "PSS_User__c", "Month_projection__c", "Opportunity_Type__c", "Opportunity_Category__c", "Opportunity_Number__c", "Oracle_CRM_Number__c", "Lead_Id__c", "High_Win_Probability__c", "BSG_User__c", "Collection_Manager__c", "IsOSP__c", "Product_Solution__c", "Amount_of_Multi_Year__c", "Reciprocal_Opportunity__c", "PO_number__c", "BSG_Tagged_Time__c", "Solution_Architect__c", "BSG_TAT__c", "BSG_Remarks__c", "Currency__c", "Product__c", "PM__c", "BSG_User_Name__c", "BSG_User_Role_Name__c", "Product_Interest__c", "Opportunity_Closure_Status__c", "ARTL_Comments__c", "ARTL_Key_Competitors__c", "Lost_Reason__c", "Reason_of_Win_Loss__c", "isPMequalsCurrentUser__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Opportunity",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Opportunity"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "AccountNumber", "NumberOfEmployees", "vlocity_cmt__BillNumberOfCopies__c", "vlocity_cmt__NumberofLocations__c", "vlocity_cmt__vSLASerialNumber__c", "ARTL_Registration_Number__c", "ARTL_CIN_Number__c", "ARTL_FX_Leo_Account_Number__c", "ARTL_FX_Old_Account_Number__c", "Id", "IsDeleted", "MasterRecordId", "Name", "Type", "RecordTypeId", "ParentId", "BillingStreet", "BillingCity", "BillingState", "BillingPostalCode", "BillingCountry", "BillingLatitude", "BillingLongitude", "BillingGeocodeAccuracy", "ShippingStreet", "ShippingCity", "ShippingState", "ShippingPostalCode", "ShippingCountry", "ShippingLatitude", "ShippingLongitude", "ShippingGeocodeAccuracy", "Phone", "Fax", "Website", "PhotoUrl", "Sic", "Industry", "AnnualRevenue", "Ownership", "TickerSymbol", "Description", "Rating", "Site", "CurrencyIsoCode", "OwnerId", "CreatedDate", "CreatedById", "LastModifiedDate", "LastModifiedById", "SystemModstamp", "LastActivityDate", "LastViewedDate", "LastReferencedDate", "Jigsaw", "JigsawCompanyId", "AccountSource", "SicDesc", "ActivityMetricId", "vlocity_cmt__AccountPaymentType__c", "vlocity_cmt__Active__c", "vlocity_cmt__AutoPaymentAmount__c", "vlocity_cmt__AutoPaymentLimitAmount__c", "vlocity_cmt__AutoPaymentMethodId__c", "vlocity_cmt__BillCycle__c", "vlocity_cmt__BillDeliveryMethod__c", "vlocity_cmt__BillFormat__c", "vlocity_cmt__BillFrequency__c", "vlocity_cmt__BillingAccountStatus__c", "vlocity_cmt__BillingEmailAddress__c", "vlocity_cmt__CLTV__c", "vlocity_cmt__CalculatedAddress__c", "vlocity_cmt__Churn__c", "vlocity_cmt__ContactPreferences__c", "vlocity_cmt__CreditRating__c", "vlocity_cmt__CreditScore__c", "vlocity_cmt__CustomerClass__c", "vlocity_cmt__CustomerOfBrand__c", "vlocity_cmt__CustomerPriority__c", "vlocity_cmt__CustomerSinceDate__c", "vlocity_cmt__CustomerValue__c", "vlocity_cmt__DateFounded__c", "vlocity_cmt__DirectoryListed__c", "vlocity_cmt__Disclosure1__c", "vlocity_cmt__Disclosure2__c", "vlocity_cmt__Disclosure3__c", "vlocity_cmt__EnableAutopay__c", "vlocity_cmt__FraudReason__c", "vlocity_cmt__HasFraud__c", "vlocity_cmt__IsPersonAccount__c", "vlocity_cmt__IsRootResolved__c", "vlocity_cmt__Juridsiction1__c", "vlocity_cmt__Jurisdiction2__c", "vlocity_cmt__LegalForm__c", "vlocity_cmt__NetWorth__c", "vlocity_cmt__PartyId__c", "vlocity_cmt__PersonContactId__c", "vlocity_cmt__PreferredLanguage__c", "vlocity_cmt__PremisesId__c", "vlocity_cmt__PrepayReloadThreshold__c", "vlocity_cmt__PrimaryContactId__c", "vlocity_cmt__ReferredByContactId__c", "vlocity_cmt__RootAccountId__c", "vlocity_cmt__SLA__c", "vlocity_cmt__Status__c", "vlocity_cmt__TaxExemptionEndDate__c", "vlocity_cmt__TaxExemptionPercentage__c", "vlocity_cmt__TaxExemptionStartDate__c", "vlocity_cmt__TaxExemptionType__c", "vlocity_cmt__TaxID__c", "vlocity_cmt__UpsellOpportunity__c", "vlocity_cmt__vCustomerPriority__c", "vlocity_cmt__vSLAExpirationDate__c", "vlocity_cmt__vSLA__c", "vlocity_cmt__AutoPaymentCardType__c", "ARTL_Owner_OLM_Id__c", "ARTL_Customer_Segment__c", "ARTL_Identification_Type__c", "ARTL_Category__c", "ARTL_PAN__c", "ARTL_TAN__c", "ARTL_Service_Segment__c", "ARTL_Vertical_Segment__c", "ARTL_CO_Care_Of__c", "ARTL_Is_DMU__c", "ARTL_Parent_DMU__c", "ARTL_TL__c", "ARTL_Business_Circle_Region__c", "ARTL_DSG_Owner__c", "ARTL_GST_IN__c", "ARTL_Collection_Manager__c", "ARTL_TL_OLM_Id__c", "ARTL_DSG_Owner_OLM_Id__c", "PM__c", "ARTL_Country_Code__c", "ARTL_Billing_Pincode__c", "ARTL_IsPANVerified__c", "ARTL_Error_Message__c", "ARTL_Business_Unit__c", "ARTL_PPI__c", "ARTL_Last_Account_Coverage_Date__c", "ARTL_Account_Covered_in_last_15_days__c", "ARTL_Is_GST_Verified__c", "ARTL_Activity_Remarks__c", "Products_Services__c", "Markets_Customers__c", "Revenue__c", "Net_Income__c", "Clients_Top_Competitors__c", "Prospect__c", "ARTL_SAM_Account_Visit_Frequency__c", "Activation_Date__c", "ARTL_Bill_Type__c", "Exempt_Reason__c", "Billing_Level__c", "ARTL_Bill_Franchise_Tax_Code__c", "Short_Code__c", "ARTL_billingId__c", "MD5Hash__c", "ARTL_FXSynch__c", "SAM_MBR_Date__c", "SAM_QBR_Date__c", "MBR_Completion_Date__c", "QBR_Completion_date__c", "ARTL_Legal_Entity__c", "ARTL_License_Company__c", "ARTL_Taxation__c", "ARTL_Credit_Period__c", "ARTL_Store__c", "ARTL_Usage_Flag__c", "ARTL_Account_Billing_Credit_Limit__c", "ARTL_Resident_Engineer_1__c", "ARTL_Resident_Engineer_2__c", "ARTL_Resident_Engineer_3__c", "ARTL_Resident_Engineer_4__c", "ARTL_Resident_Engineer_5__c", "ARTL_Alias__c", "ARTL_Channel__c", "ARTL_GST_Applicable__c", "ARTL_GST_Non_Applicable_Reason__c", "ARTL_Fx_System_Id__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN0" : {
+      "action" : "join",
+      "sources" : [ "JOIN2", "LOAD_DATASET1" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "AccountId" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "JOIN1" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "OpportunityAccountDataset",
+          "name" : "OpportunityAccountDataset",
+          "folderName" : "KAM_Dashboard",
+          "rowLevelSharingSource" : "Opportunity"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET2" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "UserRoleId", "Id", "Username", "LastName", "FirstName", "Name" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET3" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "IsConverted", "Id", "Name", "Company", "City", "Country", "LeadSource", "Status", "Industry", "Rating", "OwnerId", "ConvertedDate", "ConvertedAccountId", "ConvertedContactId", "ConvertedOpportunityId", "IsUnreadByOwner", "CreatedDate", "LastModifiedDate", "SystemModstamp", "FirstCallDateTime", "FirstEmailDateTime", "ARC__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Lead",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Lead"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN1" : {
+      "action" : "join",
+      "sources" : [ "JOIN0", "LOAD_DATASET2" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "OwnerId" ],
+        "rightQualifier" : "User",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN2" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET0", "LOAD_DATASET3" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "Lead",
+        "rightKeys" : [ "ConvertedOpportunityId" ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "Opportunity",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 252.7,
+        "left" : 392.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN0" : {
+        "label" : "Join Account",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 392
+      },
+      "OUTPUT0" : {
+        "label" : "Output 0",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 672
+      },
+      "LOAD_DATASET2" : {
+        "label" : "User",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 532.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET3" : {
+        "label" : "Lead",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 252,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN1" : {
+        "label" : "Join User",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 532
+      },
+      "JOIN2" : {
+        "label" : "Join Lead",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 252
+      }
+    },
+    "connectors" : [ {
+      "source" : "JOIN2",
+      "target" : "JOIN0"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "JOIN0"
+    }, {
+      "source" : "JOIN1",
+      "target" : "OUTPUT0"
+    }, {
+      "source" : "JOIN0",
+      "target" : "JOIN1"
+    }, {
+      "source" : "LOAD_DATASET2",
+      "target" : "JOIN1"
+    }, {
+      "source" : "LOAD_DATASET0",
+      "target" : "JOIN2"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "JOIN2"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

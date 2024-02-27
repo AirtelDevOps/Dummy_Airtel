@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Fetch Link Line Item Details",
+    "OmniProcessElement": [
+        "ARTL_FetchLinkLineItemDetails_Element_DRFetchLinkDetails.json",
+        "ARTL_FetchLinkLineItemDetails_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_FetchLinkLineItemDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FetchLinkLineItemDetails_PropertySetConfig.json",
+    "SubType": "FetchLinkLineItemDetails",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FetchLinkLineItemDetails/Procedure"
+}

@@ -1,0 +1,46 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "ARTL_OVDocumentTable/BhartiAirtelLimited/1.0",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 13,
+                    "name": "recordId",
+                    "val": "0Q0720000004vPVCAY"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "quoteId": "{recordId}"
+                },
+                "ipMethod": "ARTL_getRelatedDocuments",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "[\"Docs\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_OVDocumentListTable",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_OVDocumentListTable/BhartiAirtelLimited/6.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_OVDocumentListTable.json",
+    "SampleDataSourceResponse": "{\"Docs\":[{\"Document_Name__c\":\"GST certificate\",\"Category__c\":\"organizationDocument\",\"Name\":\"a7L7200000Mp59s\",\"Type__c\":\"TEMPLATE\",\"Id\":\"a7L7200000Mp59sEAB\"},{\"Document_Name__c\":\"GST certificate\",\"Category__c\":\"organizationDocument\",\"Name\":\"a7L7200000Mp59s\",\"Type__c\":\"TEMPLATE\",\"Id\":\"a7L7200000MrwSgEAJ\"},{\"s3_Document_URL__c\":\"http://s3n5.india.airtel.itm/b2b_data/contact_update_bb2f43b3-c277-447a-a732-b8eca527460d_POI.jpg\",\"Document_Name__c\":\"POI\",\"Category__c\":\"AUTHORIZED_SIGNATORY\",\"Name\":\"bb2f43b3-c277-447a-a732-b8eca527460d\",\"Id\":\"a7L7200000Ms1c9EAB\"}]}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 6,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_OVDocumentListTable"
+}

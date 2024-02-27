@@ -1,0 +1,124 @@
+<template>
+    <template lwc:if={showLoading}> 
+        <lightning-spinner alternative-text="Loading" size="x-small"></lightning-spinner>
+    </template>
+    <div class="slds-box slds-p-around--none">
+        <div class="slds-page-header slds-theme--default">
+            <div class="slds-page-header__row">
+                <div class="slds-page-header__col-title slds-text-align--left slds-p-top--xx-small">
+                    <div class="slds-media">
+                        <div class="slds-media__body">
+                            <div class="slds-page-header__name">
+                                <div class="slds-page-header__name-title">
+                                    <h1>
+                                        <span class="slds-page-header__title slds-truncate" title="Recently Viewed">Add
+                                            / Update Contacts</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-page-header__col-actions">
+                    <div class="slds-page-header__controls">
+                        <div class="slds-page-header__control">
+                            <ul class="slds-button-group-list">
+                                <li>
+                                    <lightning-button variant="base" label="Add New" title="Add New" icon-name="utility:add" class="slds-m-left_x-small" onclick={addField}></lightning-button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <template if:true={addInfo}>
+            <lightning-datatable hide-checkbox-column="true" key-field="Id" data={addInfo} columns={columns} onsave={handleSave}
+                draft-values={saveDraftValues} show-row-number-column>
+            </lightning-datatable>
+        </template> -->
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered"
+            aria-label="Example default base table of Opportunities">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate slds-p-vertical--x-small" title="Designation">Designation
+                        </div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate slds-p-vertical--x-small" title="Salutation">Salutation
+                        </div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate slds-p-vertical--x-small" title="DCP First Name">DCP First Name
+                        </div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate slds-p-vertical--x-small" title="DCP LAst Name">DCP Last Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate slds-p-vertical--x-small" title="Phone">Phone</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate slds-p-vertical--x-small" title="Email">Email</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate slds-p-vertical--x-small" title="Type">Type</div>
+                    </th>
+                    <th class="" scope="col">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr if:true={addInfo} class="slds-hint-parent" for:each={addInfo} for:item="info" key={info.Id}>
+                    <th data-label="Designation" scope="row">
+                        <lightning-input data-field="Designation" data-id={info.Id} style="margin-top: -15px;"
+                            onchange={handleInputChange} value={info.Designation}
+                            class="slds-m-bottom_x_small slds-m-horizontal--xxx-small"></lightning-input>
+                    </th>
+                    <th data-label="Salutation" scope="row">
+                            <lightning-combobox name="salutation" placeholder="Select Salutation" style="margin-top: -15px;"
+                            options={salutations} data-field="salutation" data-id={info.Id} value={info.salutation}
+                            class="slds-m-bottom_x_small slds-m-horizontal--xxx-small"
+                            onchange={handleInputChange}></lightning-combobox>
+                    </th>
+                    <th data-label="DCP First Name" scope="row">
+                        <lightning-input data-field="DCPfirstName" data-id={info.Id} style="margin-top: -15px;"
+                            onchange={handleInputChange} value={info.DCPfirstName}
+                            class="slds-m-bottom_x_small slds-m-horizontal--xxx-small"></lightning-input>
+                    </th>
+                    <td data-label="DCP Last Name">
+                        <lightning-input data-field="DCPlastName" data-id={info.Id} style="margin-top: -15px;"
+                            onchange={handleInputChange} value={info.DCPlastName}
+                            class="slds-m-bottom_x_small slds-m-horizontal--xxx-small"></lightning-input>
+                    </td>
+                    <td data-label="Phone">
+                        <lightning-input type="tel" data-field="phone" data-id={info.Id} style="margin-top: -15px;"
+                            onchange={handleInputChange} value={info.phone}
+                            class="slds-m-bottom_x_small slds-m-horizontal--xxx-small"></lightning-input>
+                    </td>
+                    <td data-label="Email">
+                        <lightning-input type="email" data-field="email" data-id={info.Id} style="margin-top: -15px;"
+                            onchange={handleInputChange} value={info.email}
+                            class="slds-m-bottom_x_small slds-m-horizontal--xxx-small"></lightning-input>
+                    </td>
+                    <td data-label="Type">
+                        <lightning-combobox name="type" placeholder="Select Progress" style="margin-top: -15px;"
+                            options={options} data-field="type" data-id={info.Id} value={info.type}
+                            class="slds-m-bottom_x_small slds-m-horizontal--xxx-small"
+                            onchange={handleInputChange}></lightning-combobox>
+                    </td>
+                    <td data-label="Type">
+                        <lightning-button-icon if:false={info.QMContactId} icon-name="utility:delete"  alternative-text="Delete" size="small"  variant="bare" class="slds-m-left_xx-small" title="Delete" data-id={info.Id} onclick={deleteItem}></lightning-button-icon>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <lightning-modal-footer>
+            <lightning-button variant="brand" label="Cancel" title="Primary action" onclick={cancelContact}
+                class="slds-m-left_x-small"></lightning-button>
+            <lightning-button label="Save" title="Primary action" onclick={viewJson}
+                class="slds-m-left_x-small"></lightning-button>
+        </lightning-modal-footer>
+    </div>
+</template>

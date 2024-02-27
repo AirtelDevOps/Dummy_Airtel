@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Contact_GST_Party_Account</fullName>
+    <active>true</active>
+    <description>Party Account for Contact and GST should Match SFDC-3484</description>
+    <errorConditionFormula>(Contact__r.Account.ParentId  &lt;&gt;  GST__r.Account__c) &amp;&amp; (NOT(ISBLANK(GST__r.Account__c)))</errorConditionFormula>
+    <errorMessage>This GST number is not available under the related Business Account. Please add the GST number to the Business Account before adding to the BCP/DCP.</errorMessage>
+</ValidationRule>

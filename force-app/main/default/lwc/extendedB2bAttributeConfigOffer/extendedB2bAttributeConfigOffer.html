@@ -1,0 +1,146 @@
+<template>
+  <!-- attributes.length -->
+  <div class="via-slds b2b-enterprise-attribute-comp-container" if:true={editAttributes}>
+    <div class="b2b-enterprise-attribute-list b2b-enterprise-attribute-parent-padding">
+      <template for:each={attributes} for:item="attributeItem">
+        <div key={attributeItem.id} if:true={attributeItem.attributes.length} class="b2b-enterprise-attribute-category-name b2b-enterprise-attribute-category-name slds-p-vertical_x-small  slds-m-top_small">
+          {attributeItem.name}</div>
+        <div class="slds-grid slds-wrap slds-gutters" key={attributeItem.id}>
+          <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_3-of-12" for:each={attributeItem.attributes}
+            for:item="record" for:index="index" key={record.attributeId}>
+            <template if:true={record.radio}>
+              <div class="b2b-enterprise-attribute-config-offer_radio">
+                 <!-- Enable Attributes -->
+                  <vlocity_cmt-radio-group if:true={enableAttributes} name={record.uniqueAttributeId} value={record.userValues} options={record.values}
+                  label={record.label} type="button" theme="slds" onchange={onChangeCombobox} data-attributeid={record.attributeId} required={record.required}
+                  disabled={record.disabled} field-level-help={record.description}></vlocity_cmt-radio-group>
+                   <!-- Disable Attributes -->
+                  <vlocity_cmt-radio-group if:false={enableAttributes} class="disabled-field" name={record.uniqueAttributeId} value={record.userValues} options={record.values}
+                  label={record.label} type="button" theme="slds" onchange={onChangeCombobox} data-attributeid={record.attributeId} required={record.required}
+                  disabled field-level-help={record.description} ></vlocity_cmt-radio-group>
+              </div>
+            </template>
+            <template if:true={record.text}>
+              <div class="b2b-enterprise-attribute-config-offer_combobox">
+                <!-- Enable Attributes -->
+                <vlocity_cmt-masked-input if:true={enableAttributes} type="text" imask={record.imaskAttributes} theme="slds" required={record.required} disabled={record.disabled}
+                  label={record.label} value={record.userValues} onchange={onChangeInputText}
+                  data-attributeid={record.attributeId} field-level-help={record.description}></vlocity_cmt-masked-input>
+                  <!-- Disable Attributes -->
+                  <vlocity_cmt-masked-input if:false={enableAttributes} class="disabled-field" type="text" imask={record.imaskAttributes} theme="slds" required={record.required} disabled
+                  label={record.label} value={record.userValues} onchange={onChangeInputText}
+                  data-attributeid={record.attributeId} field-level-help={record.description} ></vlocity_cmt-masked-input>
+              </div>
+            </template>
+            <template if:true={record.number}>
+              <div class="b2b-enterprise-attribute-config-offer_combobox">
+                <!-- Enable Attributes -->
+                <lightning-input if:true={enableAttributes} step="any" type="number" required={record.required}
+                disabled={record.disabled} label={record.label} value={record.userValues} min={record.min} max={record.max}
+                onfocusout={onChangeInputNumber} data-attributeid={record.attributeId} message-when-range-overflow={labels.CMEXRangeOverflowMessage} message-when-range-underflow={labels.CMEXRangeUnderflowMessage} field-level-help={record.description}>
+                </lightning-input>
+                  <!-- Disable Attributes -->
+                <lightning-input if:false={enableAttributes} class="disabled-field" step="any" type="number" required={record.required}
+                disabled label={record.label} value={record.userValues} min={record.min} max={record.max}
+                onfocusout={onChangeInputNumber} data-attributeid={record.attributeId} message-when-range-overflow={labels.CMEXRangeOverflowMessage} message-when-range-underflow={labels.CMEXRangeUnderflowMessage} field-level-help={record.description}>
+                </lightning-input>
+              </div>
+            </template>
+            <template if:true={record.date}>
+              <div class="b2b-enterprise-attribute-config-offer_combobox">
+                <!-- Enable Attributes -->
+                <vlocity_cmt-input if:true={enableAttributes} theme="slds" type="date" required={record.required}
+                  disabled={record.disabled} label={record.label} value={record.userValues} onchange={onChangeInputText}
+                  data-attributeid={record.attributeId} field-level-help={record.description}>
+                </vlocity_cmt-input>
+                 <!-- Disable Attributes -->
+                <vlocity_cmt-input if:false={enableAttributes} class="disabled-field" theme="slds" type="date" required={record.required}
+                  disabled label={record.label} value={record.userValues} onchange={onChangeInputText}
+                  data-attributeid={record.attributeId} field-level-help={record.description}>
+                </vlocity_cmt-input>
+              </div>
+            </template>
+            <template if:true={record.datetime}>
+              <div class="b2b-enterprise-attribute-config-offer_datetime">
+                <!-- Enable Attributes -->
+                <vlocity_cmt-datetime-picker if:true={enableAttributes} theme="slds" required={record.required}
+                  disabled={record.disabled} label={record.label} value={record.userValues}
+                  onchange={onChangeDatePicker} data-attributeid={record.attributeId} field-level-help={record.description} >
+                </vlocity_cmt-datetime-picker>
+                <!-- Disable Attributes -->
+                <vlocity_cmt-datetime-picker if:false={enableAttributes} class="disabled-field" theme="slds" required={record.required}
+                  disabled label={record.label} value={record.userValues}
+                  onchange={onChangeDatePicker} data-attributeid={record.attributeId} field-level-help={record.description} >
+                </vlocity_cmt-datetime-picker>
+              </div>
+            </template>
+            <template if:true={record.dropdown}>
+              <div class="b2b-enterprise-attribute-config-offer_combobox b2b-enterprise-combobox b2b-enterprise-combobox-position">
+                <!-- Enable Attributes -->
+                <vlocity_cmt-combobox if:true={enableAttributes} theme="slds" label={record.label} options={record.values} value={record.userValues}
+                  placeholder="Select" required={record.required} disabled={record.disabled} class="b2b-enterprise-input"
+                  onchange={onChangeCombobox} delete-multiple="true" data-attributeid={record.attributeId} data-multiselect={record.multiselect} multiple={record.multiselect} field-level-help={record.description}>
+                </vlocity_cmt-combobox>
+                  <!-- Disable Attributes -->
+                <vlocity_cmt-combobox if:false={enableAttributes} class="b2b-enterprise-input disabled-field" theme="slds" label={record.label} options={record.values} value={record.userValues}
+                placeholder="Select" required={record.required} disabled
+                onchange={onChangeCombobox} delete-multiple="true" data-attributeid={record.attributeId} data-multiselect={record.multiselect} multiple={record.multiselect} field-level-help={record.description}>
+              </vlocity_cmt-combobox>
+              </div>
+            </template>
+            <template if:true={record.checkbox}>
+              <div class="b2b-enterprise-attribute-config-offer_combobox">
+                <!-- Enable Attributes -->
+                <vlocity_cmt-input if:true={enableAttributes} theme="slds" type="checkbox" required={record.required}
+                  disabled={record.disabled} label={record.label} value={record.userValues} checked={record.userValues}
+                  onchange={onChangeInputText} data-attributeid={record.attributeId} field-level-help={record.description}></vlocity_cmt-input>
+                  <!-- Disable Attributes -->
+                  <vlocity_cmt-input if:false={enableAttributes} class="disabled-field" theme="slds" type="checkbox" required={record.required}
+                  disabled label={record.label} value={record.userValues} checked={record.userValues}
+                  onchange={onChangeInputText} data-attributeid={record.attributeId} field-level-help={record.description}></vlocity_cmt-input>
+              </div>
+            </template>
+            <template if:true={record.matrix}>
+              <div class="b2b-enterprise-attribute-config-offer_matrix">
+                <div class="b2b-enterprise-config-label">{record.label}</div>
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th for:each={record.configurations} for:item="configuration" key={configuration.value}
+                      data-configuration={configuration.value}>{configuration.label}</th>
+                  </tr>
+                  <tr for:each={record.values} for:item="attribute" key={attribute.id}>
+                    <td>
+                      <span class="slds-radio b2b-enterprise-attribute-radio">
+                        <!-- Enable Attributes -->
+                        <input type="radio" if:true={enableAttributes} id={attribute.value} name={record.attributeId}
+                          data-attributeid={record.attributeId} value={attribute.value}
+                          checked={attribute.defaultSelected} onclick={updateAttribute}>
+                         <!-- Disable Attributes -->
+                          <input type="radio" if:false={enableAttributes} class="disabled-field" id={attribute.value} name={record.attributeId}
+                          data-attributeid={record.attributeId} value={attribute.value} disabled
+                          checked={attribute.defaultSelected} onclick={updateAttribute}>
+                          
+                        <label class="slds-radio__label" for={attribute.value}><span
+                            class="slds-radio_faux"></span></label>
+                      </span>{attribute.label}
+                    </td>
+                    <td>$0.00</td>
+                    <td for:each={attribute.rows} for:item="eachRow" key={eachRow}>{eachRow}</td>
+                  </tr>
+                </table>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+      <template if:true={isRapidAttributeEnabled}  class="slds-clearfix slds-p-around_small">
+        <div if:true={showUpdate} class="b2b-enterprise-rapid-content slds-grid b2b-enterprise-justify-content slds-float_right">
+          <span><lightning-helptext content={labels.CMEXRapidAttrHelpTxt}></lightning-helptext></span>
+          <button class="slds-button slds-button_brand" onclick={rapidAttributesUpdate} disabled={disableUpdate}>{labels.CMEXRapidUpdate}</button>
+        </div>
+      </template>
+    </div>
+  </div>
+</template>

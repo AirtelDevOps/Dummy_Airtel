@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Account_Covered_in_last_15_days__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        RecordType.DeveloperName = &apos;Business&apos;,
+        OR(
+            ISPICKVAL(ARTL_Customer_Segment__c, &apos;AB&apos;),
+            ISPICKVAL(ARTL_Customer_Segment__c, &apos;Global&apos;)
+        ),
+        OR(
+            TODAY() - DATEVALUE (Last_Account_Coverage_DateTime__c) &lt; 15,
+            TODAY() - LastActivityDate &lt; 15, 
+            TODAY() - DATEVALUE(LastModifiedDate) &lt; 15 
+        )
+    ),
+    true, 
+    false
+)</formula>
+    <label>Account Covered in last 15 days</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

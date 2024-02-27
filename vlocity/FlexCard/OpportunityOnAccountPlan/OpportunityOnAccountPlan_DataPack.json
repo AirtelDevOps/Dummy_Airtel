@@ -1,0 +1,47 @@
+{
+    "AuthorName": "ARTL",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "recordId",
+                    "val": "a7O720000000Ak9EAE"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "flexcard_accountPlanId": "{recordId}"
+                },
+                "ipMethod": "ARTL_OpportunityOnAccountPlan",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "[\"Opportunity\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "OpportunityOnAccountPlan",
+    "Namespace": "",
+    "OmniUiCardKey": "OpportunityOnAccountPlan/ARTL/6.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "OpportunityOnAccountPlan.json",
+    "SampleDataSourceResponse": "{\"HistBUC\":[{\"productSoln\":\"null\",\"productCategory\":\"null\",\"currentYrTotalSpend\":0,\"currentYrAirtelSpend\":0,\"Prev2YrTotalSpend\":14679996,\"Prev2YrAirtelSpend\":145452,\"Prev1YrTotalSpend\":0,\"Prev1YrAirtelSpend\":0},{\"productSoln\":\"null\",\"productCategory\":\"Multiplay\",\"currentYrTotalSpend\":41508552,\"currentYrAirtelSpend\":7204002,\"Prev2YrTotalSpend\":8552422,\"Prev2YrAirtelSpend\":73938,\"Prev1YrTotalSpend\":0,\"Prev1YrAirtelSpend\":0},{\"productSoln\":\"Networking\",\"productCategory\":\"Network\",\"currentYrTotalSpend\":0,\"currentYrAirtelSpend\":0,\"Prev2YrTotalSpend\":4893332,\"Prev2YrAirtelSpend\":48484,\"Prev1YrTotalSpend\":0,\"Prev1YrAirtelSpend\":0}],\"Opportunity\":[{\"description\":\"Sample description\",\"comments\":\"Sample Comment\",\"closeDate\":\"2024-01-18\",\"sizing\":1231324,\"name\":\"Cloudy Consulting - Test lead\",\"keyTimeline\":\"Q4\",\"keyStakeholder\":\"Test Cloudy3\",\"keyCompetitors\":\"NTT\",\"immediateSteps\":\"Test ext Step\",\"id\":\"0067200000AD6bKAAT\"},{\"closeDate\":\"2024-06-11\",\"name\":\"Closed Won\",\"keyTimeline\":\"Q4\",\"id\":\"0067200000AJ1VjAAL\"},{\"closeDate\":\"2024-12-17\",\"name\":\"Closed Lost\",\"keyTimeline\":\"Q4\",\"id\":\"0067200000AJ28RAAT\"}],\"Task\":[{\"Status\":\"Closed\",\"Sizing\":121,\"Name\":\"Call\",\"KeyTimelines\":\"Q2\",\"KeyStakeHolder\":\"Test\",\"KeyCompetitors\":\"NTT\",\"ImmediateStepsEngagementPlans\":\"Test\",\"Description\":\"sam\",\"Comments\":\"sam\"},{\"Status\":\"Closed\",\"Name\":\"Call\"},{\"Status\":\"Closed\",\"Name\":\"Call\"},{\"Status\":\"Closed\",\"Sizing\":12,\"Name\":\"Call\",\"KeyStakeHolder\":\"test\",\"KeyCompetitors\":\"Jio\",\"ImmediateStepsEngagementPlans\":\"test\",\"Description\":\"test\",\"Comments\":\"test\"}],\"WinLoss\":[{\"reasonOfWinLoss\":\"\",\"amount\":\"\",\"timeline\":\"Q1\",\"name\":\"Closed Won\",\"isSalesTeamLostReason\":true,\"isProdOfferingLostReason\":true,\"isPricingLostReason\":true,\"isMiscLostReason\":false,\"isFeasTimelineLostReason\":false,\"id\":\"0067200000AJ1VjAAL\",\"finalStatus\":\"Closed Won\",\"categorizationOfLoss\":\"Pricing;Product Offering;Sales Team\"},{\"reasonOfWinLoss\":\"\",\"categorizationOfLoss\":\"\",\"amount\":\"\",\"timeline\":\"Q3\",\"name\":\"Closed Lost\",\"isSalesTeamLostReason\":false,\"isProdOfferingLostReason\":false,\"isPricingLostReason\":false,\"isMiscLostReason\":false,\"isFeasTimelineLostReason\":false,\"id\":\"0067200000AJ28RAAT\",\"finalStatus\":\"Closed Won\"},{\"reasonOfWinLoss\":\"\",\"categorizationOfLoss\":\"\",\"amount\":\"\",\"timeline\":\"Q3\",\"name\":\"Sample testing\",\"isSalesTeamLostReason\":false,\"isProdOfferingLostReason\":false,\"isPricingLostReason\":false,\"isMiscLostReason\":false,\"isFeasTimelineLostReason\":false,\"id\":\"0067200000AgDzBAAV\",\"finalStatus\":\"Closed Won\"}],\"BUCTotalSpend\":0,\"BUCTotalAirtelSpend\":0,\"fiscalYear\":2024,\"prev2YrTotalTotalSpend\":28125750,\"prev2YrTotalAirtelSpend\":267874,\"prev2Year\":2021,\"prev1YrTotalTotalSpend\":0,\"prev1YrTotalAirtelSpend\":0,\"prev1Year\":2022,\"currentYrTotalTotalSpend\":41508552,\"currentYrTotalAirtelSpend\":7204002,\"currentYear\":2023,\"TaskRecordTypeId\":\"01272000000NDNxAAO\",\"NetIncome\":0,\"Market\":\"Telecom\",\"KAMName\":\"Rishab Kalra\",\"AccountName\":\"Cloudy Consulting\",\"Weakness\":\"test\",\"TopCompetitors\":\"Cloudy Consulting\",\"TLName\":\"sujay dey\",\"Strengths\":\"test\",\"SAMTLName\":\"Sheriff Singla\",\"SAMName\":\"Ishita Khare\",\"Revenue\":0,\"RTB_KeyMetrics\":\"<p>test</p>\",\"RTB_KeyInitiatives\":\"<p>test</p>\",\"RTB_KeyCompetitorSummary\":\"<p>Test Check by Ritesh</p>\",\"Product\":\"NIPS , EILL\"}",
+    "StylingConfiguration": "{\"styleObjects\":{\"Text wrap\":{\"sizeClass\":\"slds-size_12-of-12 \",\"padding\":[],\"margin\":[],\"background\":{\"color\":\"\",\"image\":\"\",\"size\":\"\",\"repeat\":\"\",\"position\":\"\"},\"size\":{\"isResponsive\":false,\"default\":\"12\"},\"container\":{\"class\":\"\"},\"border\":{\"type\":\"\",\"width\":\"\",\"color\":\"\",\"radius\":\"\",\"style\":\"\"},\"elementStyleProperties\":{\"styles\":{\"cellMargin\":[],\"cellPadding\":[]}},\"text\":{\"align\":\"\",\"color\":\"\"},\"inlineStyle\":\"\",\"class\":\"WrappedHeaderTable\",\"style\":\"      \\n         \",\"customClass\":\"WrappedHeaderTable\",\"selectedStyles\":\"Text wrap\",\"element\":\"flexDatatable\"}},\"customStyles\":\"\"}",
+    "UniqueName": "",
+    "VersionNumber": 6,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/OpportunityOnAccountPlan",
+    "sourceOrgUrl": "/0ko720000000HKDAA2"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_DispositionSRRaised</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(vlocity_cmt__EventStatus__c)=&apos;Completed&apos; &amp;&amp; ISPICKVAL( ARTL_Disposition__c ,&apos;SR Raised&apos;) &amp;&amp;  ISBLANK( SR_FTR_Number__c ) &amp;&amp; $Permission.ARTL_SAM_General_User</errorConditionFormula>
+    <errorMessage>Enter the SR Number or FTR Number for the customer interaction</errorMessage>
+</ValidationRule>

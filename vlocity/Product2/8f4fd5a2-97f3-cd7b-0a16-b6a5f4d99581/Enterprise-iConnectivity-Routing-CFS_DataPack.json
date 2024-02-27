@@ -1,0 +1,351 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Enterprise-iConnectivity-Routing-CFS_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_MPLS_Routing_Protocol": "Static",
+        "ATT_PRIMARY_KEY": null,
+        "ATT_ROUTING_TYPE_MPLS": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
+                "Name": "Technical Attributes",
+                "displaySequence": 1090,
+                "id": "a0Z72000000zL7ZEAU",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000006lcgBAAQ",
+                            "cloneable": true,
+                            "code": "ATT_MPLS_Routing_Protocol",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "iconnectivity Routing Protocol",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 25,
+                                    "id": "349be526-84f3-aa7a-6780-fe85253e53dc",
+                                    "label": "Public BGP",
+                                    "name": "349be526-84f3-aa7a-6780-fe85253e53dc",
+                                    "readonly": false,
+                                    "value": "Public BGP"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "61e053ea-4466-fdc2-cdeb-ffb77319eaac",
+                                    "label": "Static",
+                                    "name": "61e053ea-4466-fdc2-cdeb-ffb77319eaac",
+                                    "readonly": false,
+                                    "value": "Static"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "67f13e4f-ff05-f738-91a3-0bd99a53083f",
+                                    "label": "OSPF",
+                                    "name": "67f13e4f-ff05-f738-91a3-0bd99a53083f",
+                                    "readonly": false,
+                                    "value": "OSPF"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "699ba991-19d7-e225-f2d5-90e940b03605",
+                                    "label": "Static with Public BGP",
+                                    "name": "699ba991-19d7-e225-f2d5-90e940b03605",
+                                    "readonly": false,
+                                    "value": "Static with Public BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "7ac81059-cadd-a502-abda-d615a238299b",
+                                    "label": "Private BGP",
+                                    "name": "7ac81059-cadd-a502-abda-d615a238299b",
+                                    "readonly": false,
+                                    "value": "Private BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 28,
+                                    "id": "809fbe92-cead-f583-1a74-cc068a69e2e3",
+                                    "label": "Static with Private BGP",
+                                    "name": "809fbe92-cead-f583-1a74-cc068a69e2e3",
+                                    "readonly": false,
+                                    "value": "Static with Private BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "9223e1b4-39a1-efff-c4a3-d6738294ee2b",
+                                    "label": "None",
+                                    "name": "9223e1b4-39a1-efff-c4a3-d6738294ee2b",
+                                    "readonly": false,
+                                    "value": "None"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "d4fde1c3-9041-52ee-b477-fb48d2948a8d",
+                                    "label": "EIGRP",
+                                    "name": "d4fde1c3-9041-52ee-b477-fb48d2948a8d",
+                                    "readonly": false,
+                                    "value": "EIGRP"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006f1MXAAY",
+                            "cloneable": true,
+                            "code": "ATT_ROUTING_TYPE_MPLS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Routing Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 25,
+                                    "id": "349be526-84f3-aa7a-6780-fe85253e53dc",
+                                    "label": "Public BGP",
+                                    "name": "349be526-84f3-aa7a-6780-fe85253e53dc",
+                                    "readonly": false,
+                                    "value": "Public BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "61e053ea-4466-fdc2-cdeb-ffb77319eaac",
+                                    "label": "Static",
+                                    "name": "61e053ea-4466-fdc2-cdeb-ffb77319eaac",
+                                    "readonly": false,
+                                    "value": "Static"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "67f13e4f-ff05-f738-91a3-0bd99a53083f",
+                                    "label": "OSPF",
+                                    "name": "67f13e4f-ff05-f738-91a3-0bd99a53083f",
+                                    "readonly": false,
+                                    "value": "OSPF"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "699ba991-19d7-e225-f2d5-90e940b03605",
+                                    "label": "Static with Public BGP",
+                                    "name": "699ba991-19d7-e225-f2d5-90e940b03605",
+                                    "readonly": false,
+                                    "value": "Static with Public BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "7ac81059-cadd-a502-abda-d615a238299b",
+                                    "label": "Private BGP",
+                                    "name": "7ac81059-cadd-a502-abda-d615a238299b",
+                                    "readonly": false,
+                                    "value": "Private BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 28,
+                                    "id": "809fbe92-cead-f583-1a74-cc068a69e2e3",
+                                    "label": "Static with Private BGP",
+                                    "name": "809fbe92-cead-f583-1a74-cc068a69e2e3",
+                                    "readonly": false,
+                                    "value": "Static with Private BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "9223e1b4-39a1-efff-c4a3-d6738294ee2b",
+                                    "label": "None",
+                                    "name": "9223e1b4-39a1-efff-c4a3-d6738294ee2b",
+                                    "readonly": false,
+                                    "value": "None"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "d4fde1c3-9041-52ee-b477-fb48d2948a8d",
+                                    "label": "EIGRP",
+                                    "name": "d4fde1c3-9041-52ee-b477-fb48d2948a8d",
+                                    "readonly": false,
+                                    "value": "EIGRP"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006lchgAAA",
+                            "cloneable": true,
+                            "code": "ATT_PRIMARY_KEY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 88,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Primary Key",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-12-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-11-30T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "dba325a6-053e-c898-3c43-c2722ff4e410",
+    "%vlocity_namespace%__GlobalKey__c": "8f4fd5a2-97f3-cd7b-0a16-b6a5f4d99581",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Enterprise-iConnectivity-Routing-CFS_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "ILL Service Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "Enterprise-iConnectivity-Routing-CFS_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-11-30T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_Hansen_Primary_Key__c": "392d8e1d-cfe4-4864-a4bf-430ae4c86c13",
+    "ARTL_LSIRequiredForHansen__c": false,
+    "ARTL_LSIRequired__c": false,
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Enterprise iConnectivity Routing CFS",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "ProductCode": "ARTL_Enterprise_iConnectivity_Routing_CFS",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/8f4fd5a2-97f3-cd7b-0a16-b6a5f4d99581"
+}

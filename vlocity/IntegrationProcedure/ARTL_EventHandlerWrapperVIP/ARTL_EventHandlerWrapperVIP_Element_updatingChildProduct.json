@@ -1,0 +1,50 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "updatingChildProduct",
+    "OmniProcessId": {
+        "Name": "ARTL_EventHandlerWrapperVIP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EventHandlerWrapperVIP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "WorkingCartId": "=%ESMCloneSalesQToWCWithDiscount:WorkingCartId%",
+            "bulkIterationLogList": "=%bulkIterationLogList%",
+            "ddosType": "=%ddosType%",
+            "ipAdditionChildProducts": "=%ipAdditionChildProducts%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%ARTL_UpdateLineItems:ReturnResponse% == \"success\" && %ESMCloneSalesQToWCWithDiscount:ReturnResponse% == \"success\"",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction6",
+        "remoteClass": "ARTL_BulkCartPlatformEvtTriggerHandler",
+        "remoteMethod": "updateChildProductAtrributes",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EventHandlerWrapperVIP/Procedure/updatingChildProduct"
+}

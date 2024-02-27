@@ -1,0 +1,245 @@
+{
+    "BillingGSTValidated": false,
+    "BusinessAccountName": "Green Field Telco Ltd",
+    "BusinessAccountPAN": "AAACH2702B",
+    "ClickedFirstNext": true,
+    "ContextId": "0Q0720000003yajCAA",
+    "DeliveryGSTValidated": false,
+    "GSTDetailsStep": {
+        "NonBillingAggregator-Block": {
+            "NBAId": "0017200000U8IONAA3"
+        }
+    },
+    "NBADetailsStep": {
+        "BillingAddressBlock": {
+            "BillingCityRead": "Panchkula",
+            "BillingCountryRead": "India",
+            "BillingPincodeRead": "134109",
+            "BillingStateRead": "Haryana",
+            "BillingStreetRead": "SCO 52,PANCHKULA"
+        },
+        "BillingAddressLookup-Block": {
+            "Address": "134109, SCO 52,PANCHKULA, Panchkula, Haryana, India",
+            "BillingAccountAddress": "134109",
+            "BillingAddressLookup": "134109, SCO 52,PANCHKULA, Panchkula, Haryana, India",
+            "TABillingAccountId": "0010T00000bLlNTQA0",
+            "TABillingCity": "Panchkula",
+            "TABillingCountry": "India",
+            "TABillingPincode": "134109",
+            "TABillingState": "Haryana",
+            "TABillingStreet": "SCO 52,PANCHKULA"
+        },
+        "BillingAddressManual": {
+            "BillingPincode-Block": null
+        },
+        "NonBillingAggregator-Block": {
+            "NBAAccountNumber": "BA-00000319",
+            "NBADisplayName": "Green Field Telco Ltd - BA-00000319 - 123",
+            "NBAId": "0017200000Tpm0KAAR",
+            "NBAName": "Green Field Telco Ltd",
+            "NonBillingAggregator": "Green Field Telco Ltd - BA-00000319 - 123",
+            "ShortCode": "123"
+        }
+    },
+    "NBAId": null,
+    "PODetailsStep": {
+        "BCPDetails": {
+            "BCPCity": "Bangalore",
+            "BCPCountry": "India",
+            "BCPEmail": "kjo@email.test.com",
+            "BCPFirstName": "Karan",
+            "BCPGST": null,
+            "BCPLastName": "Johar",
+            "BCPMobile": "7960753432",
+            "BCPPhone": "7960753432",
+            "BCPPinCode": "560006",
+            "BCPStandardReason": null,
+            "BCPState": "Karnataka",
+            "BCPStreet": "Vishal Tower, 18th Main, 5th Cross, Indiranagar"
+        },
+        "BillType": "Advance",
+        "BillingContactPerson-Block": {
+            "BCPCity": "Bangalore",
+            "BCPCountry": "India",
+            "BCPEmail": "kjo@email.test.com",
+            "BCPFirstName": "Karan",
+            "BCPId": "a7e7200000005m5AAA",
+            "BCPLastName": "Johar",
+            "BCPMobile": "7960753432",
+            "BCPNumber": "BCP-00006",
+            "BCPPhone": "7960753432",
+            "BCPPostalCode": "560006",
+            "BCPState": "Karnataka",
+            "BCPStreet": "Vishal Tower, 18th Main, 5th Cross, Indiranagar",
+            "BillingContactPerson": "BCP-00006 - Karan Johar - 7960753432 - kjo@email.test.com - Vishal Tower, 18th Main, 5th Cross, Indiranagar - Bangalore - 560006 -"
+        },
+        "BillingLevel": "PO Level",
+        "CreateNewPO": false,
+        "CreditPeriod": "AES Advanced Billing Default",
+        "GSTApplicableForBillingC": "Delivery GST",
+        "GSTApplicableForBillingNC": null,
+        "InvoiceDetails": "Same As BCP Address",
+        "InvoiceEditBlock": null,
+        "InvoiceReadBlock": {
+            "InvoiceCityRead": "Bangalore",
+            "InvoiceCountryRead": "India",
+            "InvoiceGSTRead": null,
+            "InvoicePinCodeRead": "560006",
+            "InvoiceSRRead": null,
+            "InvoiceStateRead": "Karnataka",
+            "InvoiceStreetRead": "Vishal Tower, 18th Main, 5th Cross, Indiranagar"
+        },
+        "LegalEntity": "AES-Carrier",
+        "POAmount": 12000,
+        "POGroup-Block": {
+            "Id": "a7W720000000Hk1EAE",
+            "Name": "PGO-000138",
+            "POGroup": "PGO-000138"
+        },
+        "PONumber": 654327632,
+        "POStartDate": "2023-12-01",
+        "POTerms": 5,
+        "Store": "COC"
+    },
+    "POGroupId": "a7W720000000Hk1EAE",
+    "POGroups": [
+        {
+            "Id": "a7W720000000HgnEAE",
+            "Name": "PGO-000136"
+        },
+        {
+            "Id": "a7W720000000Hk1EAE",
+            "Name": "PGO-000138"
+        }
+    ],
+    "POId": "a7V72000000045FEAQ",
+    "PostPurchaseOrder": {
+        "ARTL_Purchase_Order__c_2": [
+            {
+                "ARTL_PO_Number__c": "654327632",
+                "Id": "a7V72000000045FEAQ",
+                "PO_Group__c": "a7W720000000Hk1EAE",
+                "Start_Date__c": "2023-12-01",
+                "Tenure__c": 5,
+                "UpsertSuccess": true
+            }
+        ],
+        "ActualTime": 113,
+        "CpuTime": 146,
+        "PO_Group__c_1": [
+            {
+                "Id": "a7W720000000Hk1EAE",
+                "UpsertSuccess": true
+            }
+        ],
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "PostPurchaseOrderStatus": true,
+    "QLIs": [
+        {
+            "Address": "Mariner Square Loop, Alameda, California, US, 94501",
+            "Family": "Internet",
+            "Id": "0QL720000004Cx4GAE",
+            "LSI": 800027112315369,
+            "LineNumber": "00145543",
+            "Product": "Primary Link",
+            "State": "California"
+        },
+        {
+            "Address": "Mariner Square Loop, Alameda, California, US, 94501",
+            "Family": "Internet",
+            "Id": "0QL720000004Cx5GAE",
+            "LSI": 100,
+            "LineNumber": "00145544",
+            "Product": "Connectivity IP Block",
+            "State": "California"
+        },
+        {
+            "Address": "Durant Avenue, Berkeley, California, US, 94704",
+            "Family": "Internet",
+            "Id": "0QL720000004CxAGAU",
+            "LSI": 800027112384571,
+            "LineNumber": "00145549",
+            "Product": "Primary Link",
+            "State": "California"
+        },
+        {
+            "Address": "Redwood Highway, Corte Madera, California, US, 94925",
+            "Family": "Internet",
+            "Id": "0QL720000004CxGGAU",
+            "LSI": 800027112358083,
+            "LineNumber": "00145555",
+            "Product": "Primary Link",
+            "State": "California"
+        },
+        {
+            "Address": "Skyline Plaza, Daly City, California, US, 94015",
+            "Family": "Internet",
+            "Id": "0QL720000004CxMGAU",
+            "LSI": 800027112354702,
+            "LineNumber": "00145561",
+            "Product": "Primary Link",
+            "State": "California"
+        },
+        {
+            "Address": "Thornton Avenue, Newark, California, US, 94560",
+            "Family": "Internet",
+            "Id": "0QL720000004CxSGAU",
+            "LSI": 800027112327858,
+            "LineNumber": "00145567",
+            "Product": "Primary Link",
+            "State": "California"
+        },
+        {
+            "Address": ", , , , ",
+            "Family": "Broadband",
+            "Id": "0QL720000005C0XGAU",
+            "LSI": 100,
+            "LineNumber": "00149500",
+            "Product": "Airtel-UL-Office Internet 6999 6500GB COMBO Plan"
+        }
+    ],
+    "QuoteLineItemId": [
+        {
+            "Id": "0QL720000004Cx4GAE"
+        },
+        {
+            "Id": "0QL720000004CxAGAU"
+        }
+    ],
+    "SelectQuoteLineItem": {
+        "Messaging1": true,
+        "Messaging2": true
+    },
+    "businessAccountId": "0010T00000bJCdrQAG",
+    "family": "Internet",
+    "localTimeZoneName": "Asia/Calcutta",
+    "omniProcessId": "0jN7200000013blEAA",
+    "options": {
+        "chainable": false,
+        "ignoreCache": true,
+        "queueableChainable": false,
+        "resetCache": false,
+        "useQueueableApexRemoting": false
+    },
+    "restrictNext": false,
+    "rows": [
+        {
+            "Id": "0QL720000004Cx4GAE"
+        },
+        {
+            "Id": "0QL720000004CxAGAU"
+        }
+    ],
+    "showAddressError": false,
+    "showFamilyError": false,
+    "state": "'California'",
+    "timeStamp": "2023-12-13T04:04:44.926Z",
+    "userCurrencyCode": "INR",
+    "userId": "00572000005eptlAAA",
+    "userName": "nabanita.mukherjee@salesforce.com.artldevp2",
+    "userProfile": "System Administrator",
+    "userTimeZone": "330",
+    "userTimeZoneName": "Asia/Kolkata"
+}

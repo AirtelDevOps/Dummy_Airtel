@@ -1,0 +1,55 @@
+<template>
+    <div>
+        <div style="margin-left:4%" class="slds-form-element">
+            <template if:true={showLoadingSpinner}>
+                    <lightning-spinner alternative-text="Loading..." size="medium"></lightning-spinner>
+            </template>
+        </div>
+        <br/>
+        <div if:true={error}>
+            {error}
+        </div>
+        <br/>
+        <template if:false={showLoadingSpinner}>
+            <template if:true={contactList}>
+                <lightning-datatable
+                        key-field="Id"
+                        data={contactList}
+                        columns={columns}
+                        show-row-number-column
+                        row-number-offset={rowOffset}
+                        data-id="datatable"
+                        selected-rows={selectedRows}
+                        onrowselection={handleRowSelection}
+                        >
+                </lightning-datatable>
+
+                <div class="slds-align_absolute-center slds-m-top_small">
+                    <lightning-button 
+                        label="Previous Page" 
+                        icon-name="utility:chevronleft"
+                        onclick={previousPageHandler}
+                        class="slds-m-right_large"
+                        disabled={disablePreviousPage} 
+                    ></lightning-button>
+            
+            
+                    <p class="slds-text-align_center">
+                    Page  
+                    <lightning-badge label={currentPage} class="pending-badge slds-m-right_small slds-m-left_x-small"></lightning-badge>
+                    of 
+                    <lightning-badge label={totalPage} class="pending-badge slds-m-left_x-small"></lightning-badge> </p>
+                    
+                    <lightning-button 
+                        label="Next Page" 
+                        icon-name="utility:chevronright" icon-position="right"
+                        onclick={nextPageHandler}
+                        disabled={disableNextPage}
+                        class="slds-m-left_large"
+                    ></lightning-button>
+                </div>
+                <br>
+            </template>
+        </template>
+    </div>
+</template>

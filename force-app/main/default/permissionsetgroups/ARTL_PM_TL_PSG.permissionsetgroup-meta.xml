@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>this permission set group is for PM TL user.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ARTL_PM_TL_PSG</label>
+    <permissionSets>ARTL_EditTask_Additional_PS</permissionSets>
+    <permissionSets>OmniStudioAdmin</permissionSets>
+    <permissionSets>OmniStudio_KAM_User_Extras</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

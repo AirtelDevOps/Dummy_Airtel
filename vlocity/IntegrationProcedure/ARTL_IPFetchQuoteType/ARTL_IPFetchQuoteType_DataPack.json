@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_IPFetchQuoteType_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_IPFetchQuoteType",
+    "OmniProcessElement": [
+        "ARTL_IPFetchQuoteType_Element_FetchQuoteType.json",
+        "ARTL_IPFetchQuoteType_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_IPFetchQuoteType",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_IPFetchQuoteType_PropertySetConfig.json",
+    "SubType": "IPFetchQuoteType",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/IPFetchQuoteType/Procedure",
+    "WebComponentKey": "cc57b1ba-db80-e424-10e4-cdb0474f0d3c",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001D9hEAE"
+}

@@ -1,0 +1,33 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": 0,
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "CurrencyIsoCode": "INR",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Calling Line ID Presentation(CLIP)",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "a3e5f31f-3c70-ae54-837c-bd79b991feb1",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "a3e5f31f-3c70-ae54-837c-bd79b991feb1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/a3e5f31f-3c70-ae54-837c-bd79b991feb1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "FLCLIP",
+        "UnitPrice": 0,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/a3e5f31f-3c70-ae54-837c-bd79b991feb1"
+    }
+]

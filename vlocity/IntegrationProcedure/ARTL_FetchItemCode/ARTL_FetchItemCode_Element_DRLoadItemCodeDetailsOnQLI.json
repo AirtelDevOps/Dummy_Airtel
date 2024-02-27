@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRLoadItemCodeDetailsOnQLI",
+    "OmniProcessId": {
+        "Name": "FetchItemCode",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FetchItemCode/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "QLIId": "%QLIId%",
+            "itemDetail": "=IF( ISNOTBLANK(%HTTPFetchItemDetailsFromItemCode:dataArea%), %HTTPFetchItemDetailsFromItemCode:dataArea:getMetaDataResponse:metaDataDetails:itemDetail%, %APIResponseForFAILURE:itemDetail%)"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DRL_LoadItemCodeDetailsOnQLI",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "apiSuccess": "=IF(LIKE(%HTTPFetchItemDetailsFromItemCode:dataArea:getMetaDataResponse:status:statusDescription% ,\"Request Processed Successfully\"), true, false)",
+            "errorMessage": "=%DRLoadItemCodeDetailsOnQLI%"
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FetchItemCode/Procedure/DRLoadItemCodeDetailsOnQLI"
+}

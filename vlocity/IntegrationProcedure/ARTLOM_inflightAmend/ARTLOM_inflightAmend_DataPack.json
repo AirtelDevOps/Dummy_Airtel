@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTLOM_inflightAmend_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "inflightAmendIP",
+    "OmniProcessElement": [
+        "ARTLOM_inflightAmend_Element_RA_createSupplementalOrder.json",
+        "ARTLOM_inflightAmend_Element_RA_UpdateOrderItemAttr.json",
+        "ARTLOM_inflightAmend_Element_RA_CartValidation.json",
+        "ARTLOM_inflightAmend_Element_RA_DecomposeAndSubmit.json",
+        "ARTLOM_inflightAmend_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTLOM_inflightAmend",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTLOM_inflightAmend_PropertySetConfig.json",
+    "SubType": "inflightAmend",
+    "Type": "ARTLOM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTLOM/inflightAmend/Procedure"
+}

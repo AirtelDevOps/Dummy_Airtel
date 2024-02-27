@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ATT_IP_Type</label>
+    <protected>false</protected>
+    <values>
+        <field>AttributeCode__c</field>
+        <value xsi:type="xsd:string">ATT_IP_Type</value>
+    </values>
+    <values>
+        <field>Attribute_JSON__c</field>
+        <value xsi:type="xsd:string">{&quot;isRequired&quot;:false,&quot;regex&quot;:&quot;&quot;,&quot;isDependentValue&quot;:false,&quot;dependentAttribtue&quot;:&quot;&quot;,&quot;value&quot;:{&quot;IPv4&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;operator&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;,&quot;attributesToHide&quot;:[&quot;ATT_Add_LAN_IPv6&quot;,&quot;ATT_Add_LAN_IPV6_Subnet&quot;,&quot;ATT_Additional_LAN_IPv6&quot;,&quot;ATT_Delete_LAN_IPv6&quot;,&quot;ATT_LAN_IPV6&quot;,&quot;ATT_WAN_IPV6_CE&quot;,&quot;ATT_LAN_IPV6_SUBNET_MASK&quot;,&quot;ATT_WAN_IPV6_CE_SUBNET_MASK&quot;,&quot;ATT_WAN_IPV6_PE&quot;,&quot;ATT_WAN_IPV6_PE_SUBNET_MASK&quot;],&quot;error&quot;:&quot;&quot;},&quot;IPv6&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;operator&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;,&quot;attributesToHide&quot;:[&quot;ATT_Add_LAN_IPv4&quot;,&quot;ATT_Add_LAN_IPV4_Subnet&quot;,&quot;ATT_Additional_LAN_IPv4&quot;,&quot;ATT_Delete_LAN_IPv4&quot;,&quot;ATT_LAN_IPV4&quot;,&quot;ATT_LAN_IPV4_SUBNET_MASK&quot;,&quot;ATT_WAN_IPV4_CE&quot;,&quot;ATT_WAN_IPV4_CE_SUBNET_MASK&quot;,&quot;ATT_WAN_IPV4_PE&quot;,&quot;ATT_WAN_IPV4_PE_SUBNET_MASK&quot;],&quot;error&quot;:&quot;&quot;}}}</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem</value>
+    </values>
+</CustomMetadata>

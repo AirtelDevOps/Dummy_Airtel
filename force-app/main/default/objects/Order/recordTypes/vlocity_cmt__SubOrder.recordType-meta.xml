@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__SubOrder</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Order_Compact_layout</compactLayoutAssignment>
+    <description>A sub-order is an order that is part of a large master order. Each sub-order is often targeted to a single service point, site or subscriber.</description>
+    <label>Sub Order</label>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Sign Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Jeopardy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provisioning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L1-L3 Construct Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSI Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate Revision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shifting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

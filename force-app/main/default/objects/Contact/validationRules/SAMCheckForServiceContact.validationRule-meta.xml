@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAMCheckForServiceContact</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Permission.ARTL_SAM_General_User,
+    ISPICKVAL(ARTL_Contact_Role__c, &quot;Service Contact&quot;),
+    NOT(ISNEW()),
+    NOT(ISCHANGED(LastName)),
+    NOT(ISCHANGED(FirstName)),
+    NOT(ISCHANGED(MiddleName)),
+    NOT(ISCHANGED(Phone)),
+    NOT(ISCHANGED(Email)),
+    NOT(ISCHANGED(vlocity_cmt__ContactNumber__c)),
+    NOT(ISCHANGED(ARTL_SAM_Validation_Date__c))
+)</errorConditionFormula>
+    <errorMessage>SAM User only modify Contact Name, Contact number, Email ID.</errorMessage>
+</ValidationRule>

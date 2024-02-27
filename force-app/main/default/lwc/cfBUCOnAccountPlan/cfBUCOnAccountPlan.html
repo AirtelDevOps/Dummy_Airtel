@@ -1,0 +1,55 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <vlocity_cmt-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </vlocity_cmt-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-m-bottom_x-small " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><vlocity_cmt-flex-datatable data-style-id="state0element0_child"   record={record}  card={card}  columns='\[]'  issearchavailable="false"  issortavailable="true"  records={records}  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div><div data-style-id="state0element1" class="slds-col    slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><vlocity_cmt-flex-datatable data-style-id="state0element1_child"   record={record}  card={card}  cell-level-edit="true"  columns='\[{"fieldName":"Account_Name__c","label":"Account Name","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Name","label":"Bottom Up Name","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Fiscal_Year__c","format":"DD/MM/YYYY","label":"Fiscal Year","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Key_Competitor_and_Comments__c","label":"Key Competitor and Comments","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Product_Category__c","label":"Product Category","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Product_Solution__c","label":"Product Solution","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Spends_with_Airtel__c","label":"Spends with Airtel","searchable":true,"sortable":true,"type":"currency"},{"fieldName":"Total_Competitor_Spends__c","label":"Total Competitor Spends","searchable":true,"sortable":true,"type":"currency"},{"fieldName":"RMS","label":"RMS","searchable":true,"sortable":true,"type":"percent"},{"fieldName":"TotalSpends","label":"Total Spend (INR- Mn) -KAM","searchable":true,"sortable":true,"type":"currency"}]'  draggable="false"  group-order="asc"  issearchavailable="false"  issortavailable="false"  pagelimit="3"  records={records}  row-level-edit="false"  specialcharactersort="false"  styles='\{"cellBorderColor":"#DDDDDD","cellBorderType":["border_right","border_top"],"cellBorderWidth":"0.5","cellMargin":[],"cellPadding":[],"headBgColor":"#DDDDDD","headFontWeight":"bold","tableBorderColor":"#D7D7D7","tableBorderType":["border_top","border_right","border_bottom","border_left"],"tableBorderWidth":"0.7"}'  user-selectable-column="false"  user-selectable-row="false"  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+                <template if:false={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-m-bottom_x-small " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><vlocity_cmt-flex-datatable data-style-id="state0element0_child"   record={record}  card={card}  columns='\[]'  issearchavailable="false"  issortavailable="true"  records={records}  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div><div data-style-id="state0element1" class="slds-col    slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><vlocity_cmt-flex-datatable data-style-id="state0element1_child"   record={record}  card={card}  cell-level-edit="true"  columns='\[{"fieldName":"Account_Name__c","label":"Account Name","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Name","label":"Bottom Up Name","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Fiscal_Year__c","format":"DD/MM/YYYY","label":"Fiscal Year","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Key_Competitor_and_Comments__c","label":"Key Competitor and Comments","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Product_Category__c","label":"Product Category","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Product_Solution__c","label":"Product Solution","searchable":true,"sortable":true,"type":"text"},{"fieldName":"Spends_with_Airtel__c","label":"Spends with Airtel","searchable":true,"sortable":true,"type":"currency"},{"fieldName":"Total_Competitor_Spends__c","label":"Total Competitor Spends","searchable":true,"sortable":true,"type":"currency"},{"fieldName":"RMS","label":"RMS","searchable":true,"sortable":true,"type":"percent"},{"fieldName":"TotalSpends","label":"Total Spend (INR- Mn) -KAM","searchable":true,"sortable":true,"type":"currency"}]'  draggable="false"  group-order="asc"  issearchavailable="false"  issortavailable="false"  pagelimit="3"  records={records}  row-level-edit="false"  specialcharactersort="false"  styles='\{"cellBorderColor":"#DDDDDD","cellBorderType":["border_right","border_top"],"cellBorderWidth":"0.5","cellMargin":[],"cellPadding":[],"headBgColor":"#DDDDDD","headFontWeight":"bold","tableBorderColor":"#D7D7D7","tableBorderType":["border_top","border_right","border_bottom","border_left"],"tableBorderWidth":"0.7"}'  user-selectable-column="false"  user-selectable-row="false"  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

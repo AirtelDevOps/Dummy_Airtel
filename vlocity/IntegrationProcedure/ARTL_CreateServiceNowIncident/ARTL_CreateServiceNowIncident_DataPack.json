@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CreateServiceNowIncident_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateServiceNowIncident",
+    "OmniProcessElement": [
+        "ARTL_CreateServiceNowIncident_Element_DRExtractUserOIMDetail.json",
+        "ARTL_CreateServiceNowIncident_Element_SVCreatePayload.json",
+        "ARTL_CreateServiceNowIncident_Element_HTTPCreateIncident.json",
+        "ARTL_CreateServiceNowIncident_Element_ResponseAction.json",
+        "ARTL_CreateServiceNowIncident_Element_RACreateIncident.json"
+    ],
+    "OmniProcessKey": "ARTL_CreateServiceNowIncident",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CreateServiceNowIncident_PropertySetConfig.json",
+    "SubType": "CreateServiceNowIncident",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateServiceNowIncident/Procedure"
+}

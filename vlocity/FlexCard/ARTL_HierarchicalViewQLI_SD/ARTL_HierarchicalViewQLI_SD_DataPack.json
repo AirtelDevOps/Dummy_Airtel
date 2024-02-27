@@ -1,0 +1,47 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "ARTL_HierarchicalViewQLI/BhartiAirtelLimited/13.0",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 6,
+                    "name": "Parent.quoteId",
+                    "val": "0Q0720000006mI5CAI"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "quoteId": "{Parent.quoteId}"
+                },
+                "ipMethod": "ARTL_CustomViewOfQLI_SD",
+                "jsonMap": "{\"Parent.quoteId\":\"{Parent.quoteId}\"}",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_HierarchicalViewQLI_SD",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_HierarchicalViewQLI_SD/BhartiAirtelLimited/4.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_HierarchicalViewQLI_SD.json",
+    "SampleDataSourceResponse": "{\"QLIExist\":false}",
+    "StylingConfiguration": "{\"customStyles\":\".allign-cells .slds-data-table[%vlocity_namespace%-dataTable_dataTable_slds] .slds-data-table-row-cell[%vlocity_namespace%-dataTable_dataTable_slds]  { width: 180px;}\\n.allign-cells .slds-data-table[%vlocity_namespace%-dataTable_dataTable_slds] .slds-data-table-head-cell[%vlocity_namespace%-dataTable_dataTable_slds] { width: 180px;}\\n\\n\\n\\n\\n\\n\"}",
+    "UniqueName": "",
+    "VersionNumber": 4,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_HierarchicalViewQLI_SD",
+    "sourceOrgUrl": "/0ko720000000I9pAAE"
+}

@@ -1,0 +1,30 @@
+<template>
+    <lightning-tile
+      label={attribute.label}
+      type="media"
+      if:true={_attributeList.length}
+      for:each={_attributeList}
+      for:item="attribute"
+      key={attribute.label}
+    >
+      <lightning-icon slot="media" icon-name="standard:variation_attribute_setup"></lightning-icon>
+      <dl class="slds-dl_horizontal">
+        <dt class="slds-dl_horizontal__label">
+          <p class="slds-truncate" title={attribute.assetValue}>Asset Value:</p>
+        </dt>
+        <dd class="slds-dl_horizontal__detail slds-tile__meta">
+          <p class="slds-truncate" title={attribute.assetValue}>
+            {attribute.assetValue}
+          </p>
+        </dd>
+        <dt class="slds-dl_horizontal__label">
+          <p class="slds-truncate" title={attribute.currentValue} style="color:#ba0517">Current Value:</p>
+        </dt>
+        <dd class="slds-dl_horizontal__detail slds-tile__meta">
+          <p class="slds-truncate" title={attribute.currentValue} style="color:#ba0517"> 
+            {attribute.currentValue}
+          </p>
+        </dd>
+      </dl>
+    </lightning-tile>
+  </template>

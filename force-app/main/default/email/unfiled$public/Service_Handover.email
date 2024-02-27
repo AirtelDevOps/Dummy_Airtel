@@ -1,0 +1,18 @@
+<messaging:emailTemplate subject="Service Handover : Bharti Airtel - Order Reference : 669429 Circuit ID: 11222333  " recipientType="User" relatedToType="Order">
+
+<messaging:htmlEmailBody >
+        <html>
+        <body style="font-size:15px;">
+            
+            
+           
+            <apex:image url="{!$Resource.ServiceHandover}" width="1000" height="500"/><br/><br/>
+           <c:ServiceHandoverVF orderId="{!relatedTo.Id}"></c:ServiceHandoverVF>
+           
+           
+           
+           
+        </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

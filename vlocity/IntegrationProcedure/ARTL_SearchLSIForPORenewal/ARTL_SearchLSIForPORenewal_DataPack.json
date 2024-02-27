@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_SearchLSIForPORenewal_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_SearchLSIForPORenewal",
+    "OmniProcessElement": [
+        "ARTL_SearchLSIForPORenewal_Element_DRPONumberSearch.json",
+        "ARTL_SearchLSIForPORenewal_Element_PONumberResponseAction.json",
+        "ARTL_SearchLSIForPORenewal_Element_DRPOIdSearch.json",
+        "ARTL_SearchLSIForPORenewal_Element_POIdResponseAction.json",
+        "ARTL_SearchLSIForPORenewal_Element_DRLSISearch.json",
+        "ARTL_SearchLSIForPORenewal_Element_LSIResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_SearchLSIForPORenewal",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_SearchLSIForPORenewal_PropertySetConfig.json",
+    "SubType": "SearchLSIForPORenewal",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/SearchLSIForPORenewal/Procedure"
+}

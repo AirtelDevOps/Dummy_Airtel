@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_ValidateCINNumber</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+    NOT(ISBLANK(ARTL_CIN_Number__c)),
+    NOT(REGEX( ARTL_CIN_Number__c , &quot;^[a-zA-Z0-9-]*$&quot;)),
+    NOT($Profile.Name  = &apos;System Administrator&apos;)
+    )</errorConditionFormula>
+    <errorDisplayField>ARTL_CIN_Number__c</errorDisplayField>
+    <errorMessage>Only Numeric Values (0-9) are allowed in CIN Number. Please remove any alphabets and/or special characters.</errorMessage>
+</ValidationRule>

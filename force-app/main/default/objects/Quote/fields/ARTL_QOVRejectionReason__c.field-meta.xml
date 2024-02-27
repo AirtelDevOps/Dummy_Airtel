@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_QOVRejectionReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Rejection Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Document related</fullName>
+                <default>false</default>
+                <label>Document related</label>
+            </value>
+            <value>
+                <fullName>Document related - Customer is Minor</fullName>
+                <default>false</default>
+                <label>Document related - Customer is Minor</label>
+            </value>
+            <value>
+                <fullName>POA Related - POA copy not clear</fullName>
+                <default>false</default>
+                <label>POA Related - POA copy not clear</label>
+            </value>
+            <value>
+                <fullName>POA Related - POA not allowed</fullName>
+                <default>false</default>
+                <label>POA Related - POA not allowed</label>
+            </value>
+            <value>
+                <fullName>POI Related - POI Copy not Clear</fullName>
+                <default>false</default>
+                <label>POI Related - POI Copy not Clear</label>
+            </value>
+            <value>
+                <fullName>POI Related - POI Copy not Complete</fullName>
+                <default>false</default>
+                <label>POI Related - POI Copy not Complete</label>
+            </value>
+            <value>
+                <fullName>POI Related - POI not allowed</fullName>
+                <default>false</default>
+                <label>POI Related - POI not allowed</label>
+            </value>
+            <value>
+                <fullName>MNP - Competition Bill copy customer name vs punching Customer name different ARC/OTC charges mismatch between attached PO V/s punched in system</fullName>
+                <default>false</default>
+                <label>MNP - Competition Bill copy customer name vs punching Customer name different ARC/OTC charges mismatch between attached PO V/s punched in system</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

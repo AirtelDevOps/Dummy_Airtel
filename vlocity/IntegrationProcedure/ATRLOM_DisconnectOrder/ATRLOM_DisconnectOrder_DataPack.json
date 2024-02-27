@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ATRLOM_DisconnectOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTLDisconnectOrderIP",
+    "OmniProcessElement": [
+        "ATRLOM_DisconnectOrder_Element_DRGetCaseAndProductDetails.json",
+        "ATRLOM_DisconnectOrder_Element_DRAssettoorderpayload.json",
+        "ATRLOM_DisconnectOrder_Element_RAassetToOrder.json",
+        "ATRLOM_DisconnectOrder_Element_DRGetRootProductId.json",
+        "ATRLOM_DisconnectOrder_Element_RADisconnectInternet.json",
+        "ATRLOM_DisconnectOrder_Element_RAAddPTCFee.json",
+        "ATRLOM_DisconnectOrder_Element_IPValidateAndSubmitOrder.json",
+        "ATRLOM_DisconnectOrder_Element_ResponseA_returnCartID.json",
+        "ATRLOM_DisconnectOrder_Element_RAValidateCart.json",
+        "ATRLOM_DisconnectOrder_Element_RASubmitAndDecompose.json"
+    ],
+    "OmniProcessKey": "ATRLOM_DisconnectOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ATRLOM_DisconnectOrder_PropertySetConfig.json",
+    "SubType": "DisconnectOrder",
+    "Type": "ATRLOM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ATRLOM/DisconnectOrder/Procedure"
+}

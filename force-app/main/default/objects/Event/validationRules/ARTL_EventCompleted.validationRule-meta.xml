@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_EventCompleted</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(Meeting_Notes_External__c),TEXT(vlocity_cmt__EventStatus__c)=&apos;Completed&apos;,$Permission.ARTL_SAM_General_User)</errorConditionFormula>
+    <errorDisplayField>Meeting_Notes_External__c</errorDisplayField>
+    <errorMessage>Fill Meeting Notes before closing the Meet</errorMessage>
+</ValidationRule>

@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_OVQLITable_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "OVQLITable",
+    "OmniProcessElement": [
+        "ARTL_OVQLITable_Element_ARTLGetRootQLI.json",
+        "ARTL_OVQLITable_Element_RootQLISV.json",
+        "ARTL_OVQLITable_Element_ARTLGetQLIByRootItemId.json",
+        "ARTL_OVQLITable_Element_ChildQLISV.json",
+        "ARTL_OVQLITable_Element_ARTLGetRootQLIResponse.json",
+        "ARTL_OVQLITable_Element_ARTLGetQLIByRootItemIdResponse.json"
+    ],
+    "OmniProcessKey": "ARTL_OVQLITable",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_OVQLITable_PropertySetConfig.json",
+    "SubType": "OVQLITable",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/OVQLITable/Procedure",
+    "WebComponentKey": "cb361d8e-ba40-4d43-29c0-613009067a12",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001GxBEAU"
+}

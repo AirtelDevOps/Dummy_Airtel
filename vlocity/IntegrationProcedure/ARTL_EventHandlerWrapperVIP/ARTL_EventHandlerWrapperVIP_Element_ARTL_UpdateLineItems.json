@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ARTL_UpdateLineItems",
+    "OmniProcessId": {
+        "Name": "ARTL_EventHandlerWrapperVIP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EventHandlerWrapperVIP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "lineItems": "%payload:lineItems%"
+        },
+        "additionalOutput": {
+            "DR_LineItemUpdation": "=%ARTL_UpdateLineItems:QuoteLineItem_1%",
+            "ReturnResponse": "=IF( ISBLANK(%ARTL_UpdateLineItems:errors%) , \"success\" , \"fail\")"
+        },
+        "bundle": "ARTL_UpdateLineItems",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%SobjectType% == 'Quote'",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EventHandlerWrapperVIP/Procedure/ARTL_UpdateLineItems"
+}

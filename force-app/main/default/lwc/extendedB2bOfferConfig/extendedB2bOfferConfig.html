@@ -1,0 +1,101 @@
+<template>
+  <div class="via-nds">
+    <vlocity_cmt-b2b-header category={headerData.category} description={headerData.description} 
+    show-tabs={showTabs} show-assign-services-tab={showAssignServicesTab}></vlocity_cmt-b2b-header>
+  </div>
+  <div if:false={loading}>
+    <div if:true={showSelectServices}>
+      <div class="b2b-enterprise-configure-offer-container">
+        <div class="slds-grid b2b-enterprise-configure-offer-sub-comtainer">
+          <div class="slds-size_10-of-12">
+            {labels.CMEXProducts} ({cartItems.records.length}<span if:true={isShowMoreButtonApplicable}>+</span>)
+          </div>
+          <div class="b2b-btn-container slds-size_2-of-12" if:true={isShowSyncWorkingCartButton}>
+            <div class="slds-grid">
+              <span class="slds-m-top_xx-small slds-m-right_x-small">
+                <lightning-helptext content={labels.CMEXSyncCartHelpTxt}></lightning-helptext>
+              </span>
+              <vlocity_cmt-b2b-button theme="slds" variant="neutral" label={labels.CMEXSyncCart}
+                icon-name="utility:rotate" icon-variant="default" icon-size="x-small" onclick={syncWorkingCart}>
+              </vlocity_cmt-b2b-button>
+            </div>
+           </div>
+        </div>
+        <div if:true={cartMessages.length}>
+          <div class="slds-m-bottom_small b2b-enterprise-error-message">
+              <div class="slds-text-heading_small b2b-enterprise-grey-35">
+                <vlocity_cmt-icon icon-name="utility:warning" color="#000000" size="small" extraclass="slds-p-right_xx-small"></vlocity_cmt-icon>
+                &nbsp;{labels.CMEXReview}&nbsp;{cartMessages.length}&nbsp;{labels.CMEXAlertsInYourCart}&nbsp;-&nbsp;<span class="b2b-enterprise-cart-review-head" onclick={showError}>{labels.CMEXClickToReviewAll}</span>
+                <div class="slds-p-left_xx-small b2b-enterprise-inline-block-relative">
+                  <div>
+                    <section if:true={isShowError} aria-label="Dialog title" aria-describedby="popover-body-id" role="dialog">
+                      <div id="popover-body-id" class="slds-popover__body">
+                        <div for:each={cartMessages} for:item="message" key={message.messageId}>
+                            <li>
+                              <span if:true={message.hasError} class="b2b-enterprise-text-color-red">*&nbsp;</span>
+                              <span class="slds-text-body_regular">{message.message}</span>
+                            </li>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div if:true={cartItems.records.length}>
+          <div for:each={cartItems.records} for:item="cartItem" key={cartItem.id}>
+            <!-- promotions -->
+            <div if:true={cartItem.promotions}>
+              <template if:true={cartItem.promotions.records}>
+                <div class={promotionBorderClass} for:each={cartItem.promotions.records} for:item="promo"
+                  key={promo.Id}>
+                  <vlocity_cmt-b2b-config-promotion promotion={promo} product={cartItem}></vlocity_cmt-b2b-config-promotion>
+                </div>
+              </template>
+            </div>
+            <!--Product-->
+            <template if:true={eligibilityErrors}>
+              <c-extended-b2b-config-card extra-actions={configCardExtraActions} title={cartItem.name}
+                eligibile-error={eligibilityErrors} offer={cartItem} expand={expand} parent={cartItem}
+                macd={cartItem.isAssets} cart-count={cartItems.records.length}></c-extended-b2b-config-card>
+            </template>
+            <!-- Suresh Plavadi-->
+            <!--<template if:true={eligibilityErrors}>
+              <c-cb2b-config-card extra-actions={configCardExtraActions} title={cartItem.name}
+                eligibile-error={eligibilityErrors} offer={cartItem} expand={expand} parent={cartItem}
+                macd={cartItem.isAssets} cart-count={cartItems.records.length}></c-cb2b-config-card>
+            </template>-->
+            <hr class="b2b-enterprise-hr">
+          </div>
+          <div if:true={isShowMoreButtonApplicable} class="slds-text-align_center slds-m-top_x-large">
+            <vlocity_cmt-button variant="neutral" label={labels.CMEXShowMore} onclick={showMoreCartItems} theme={theme}>
+            </vlocity_cmt-button>
+          </div>
+        </div>
+      </div>
+      <div if:false={cartItems.records.length} class="slds-align_absolute-center b2b-config-offer">
+        {labels.CMEXNoItemsCart}</div>
+    </div>
+    <div class="nds-m-bottom_xx-large" if:false={showSelectServices}>
+      <div class="b2b-cart-summary-tabs slds-size_12-of-12">
+        <slot name="tabs">
+          <vlocity_cmt-tabset id="quoteTab" theme="slds" class="b2b-tabs_default" active-tab-value={activeTab} ontabchange={handleMemberTabChange}>
+            <vlocity_cmt-tab tab-id="Location" label={labels.CMEXLocation}></vlocity_cmt-tab>
+            <vlocity_cmt-tab tab-id="Subscriber" label={labels.CMEXSubscriber}></vlocity_cmt-tab>
+          </vlocity_cmt-tabset>
+        </slot>
+      </div>
+      <vlocity_cmt-b2b-data-table-wrapper></vlocity_cmt-b2b-data-table-wrapper>
+    </div>
+    <div>
+      <slot name="totalBarConfigSlot">
+          <c-extended-b2b-total-bar route-back="selectOffer" due-total={oneTimeTotal} due-total-esm={oneTimeTotal} recurring-total={recurringTotal} recurring-total-esm={recurringTotal} cart-count={cartItems.records.length}
+          disable-add-product={isCartHasError} line-item-relationship-map={lineItemRelationshipMap}></c-extended-b2b-total-bar>
+      </slot>
+    </div>
+  </div>
+  <div class="slds-spinner_container" if:true={loading}>
+    <lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+  </div>
+</template>

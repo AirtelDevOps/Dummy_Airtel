@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Plans</value>
+    </caseValues>
+    <layouts>
+        <layout>Account Plan</layout>
+        <sections>
+            <label></label>
+            <section>Account Intelligence - Customer Overview</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Plan</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Team</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Historical Analysis</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Relationship Assessment - Perception Analysis</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>ARTL_New_Task</name>
+    </quickActions>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label></label>
+        <name>ARTL_Generate_Account_Plan_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

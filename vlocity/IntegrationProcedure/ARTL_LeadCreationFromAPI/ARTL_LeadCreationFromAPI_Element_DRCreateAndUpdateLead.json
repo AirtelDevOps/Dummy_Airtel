@@ -1,0 +1,47 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRCreateAndUpdateLead",
+    "OmniProcessId": {
+        "Name": "LeadCreationFromAPI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/LeadCreationFromAPI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "LeadConfig": "=%LeadRequest:payload:leadDetail%",
+            "QueueID": "=%QueueId%",
+            "accountID": "=%accountId%",
+            "contactID": "=%contactId%",
+            "transactionId": "=%LeadRequest:msg:transactionId%",
+            "userID": "=%userId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ATRL_DRL_LeadCreationUsingAPI",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%accountId% != null && %accountId% != \"\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/LeadCreationFromAPI/Procedure/DRCreateAndUpdateLead"
+}

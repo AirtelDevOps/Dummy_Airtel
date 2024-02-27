@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Contacts__c</fullName>
+    <description>These are additional recipients who need to be added to event invitation and are not contacts or leads.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Please add only non-existing contacts. Also, ensure Email IDs are valid and separated by comma</inlineHelpText>
+    <label>External Contacts</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

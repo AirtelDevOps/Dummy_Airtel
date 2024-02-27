@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_GetContactPersonDetails_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetContactPersonDetails",
+    "OmniProcessElement": [
+        "ARTL_GetContactPersonDetails_Element_fetchContactPerson.json",
+        "ARTL_GetContactPersonDetails_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_GetContactPersonDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_GetContactPersonDetails_PropertySetConfig.json",
+    "SubType": "GetContactPersonDetails",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/GetContactPersonDetails/Procedure"
+}

@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRUpdateStepStatusOnAccount",
+    "OmniProcessId": {
+        "Name": "PartyCreationFromSolaceQueue",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/PartyCreationFromSolaceQueue/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "%recordId%",
+            "StepThreeDescription": "%HTTPSolaceQueueInfo:statusCode% %HTTPSolaceQueueInfo:status%",
+            "StepThreeStatus": "=IF(%HTTPSolaceQueueInfo:statusCode% && %HTTPSolaceQueueInfo:statusCode% == 200, 'Success','Error')"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL DR Update Step Statuses On Account",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/PartyCreationFromSolaceQueue/Procedure/DRUpdateStepStatusOnAccount"
+}

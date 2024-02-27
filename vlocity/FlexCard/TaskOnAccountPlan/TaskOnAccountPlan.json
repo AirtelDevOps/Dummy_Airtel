@@ -1,0 +1,461 @@
+{
+    "customStyleSheet": "WrappedHeaderTable",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "recordId",
+                "val": "a7O720000000Ak9EAE"
+            }
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "dsDelay": "",
+            "inputMap": {
+                "flexcard_accountPlanId": "{recordId}"
+            },
+            "ipMethod": "ARTL_OpportunityOnAccountPlan",
+            "jsonMap": "{\"recordId\":\"{recordId}\"}",
+            "resultVar": "[\"Task\"]",
+            "vlocityAsync": false
+        }
+    },
+    "enableLwc": true,
+    "globalCSS": true,
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfTaskOnAccountPlan_2_ARTL",
+        "Id": "0Rb72000000ACvxCAG",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfTaskOnAccountPlan_2_ARTL",
+        "NamespacePrefix": "c"
+    },
+    "selectableMode": "Multi",
+    "sessionVars": [
+        {
+            "isApi": true,
+            "name": "RecordId",
+            "val": ""
+        }
+    ],
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "flexDatatable",
+                            "elementLabel": "Datatable-1",
+                            "name": "Datatable",
+                            "property": {
+                                "card": "{card}",
+                                "columns": [
+                                ],
+                                "issearchavailable": "false",
+                                "issortavailable": "true",
+                                "record": "{record}",
+                                "records": "{records}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "slds-size_12-of-12"
+                            },
+                            "type": "element"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "flexDatatable",
+                            "elementLabel": "opportunityDatatable",
+                            "name": "Datatable",
+                            "property": {
+                                "card": "{card}",
+                                "cellLevelEdit": true,
+                                "columns": [
+                                    {
+                                        "fieldName": "Status",
+                                        "label": "Status",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Sizing",
+                                        "label": "Sizing",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Name",
+                                        "label": "Name",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "KeyTimelines",
+                                        "label": "KeyTimelines",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "KeyStakeHolder",
+                                        "label": "KeyStakeHolder",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "KeyCompetitors",
+                                        "label": "KeyCompetitors",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "ImmediateStepsEngagementPlans",
+                                        "label": "ImmediateStepsEngagementPlans",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Description",
+                                        "label": "Description",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Comments",
+                                        "label": "Comments",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    }
+                                ],
+                                "draggable": false,
+                                "groupOrder": "asc",
+                                "issearchavailable": false,
+                                "issortavailable": false,
+                                "pagelimit": 3,
+                                "record": "{record}",
+                                "records": "{records}",
+                                "rowLevelEdit": false,
+                                "specialcharactersort": false,
+                                "styles": {
+                                    "cellBorderColor": "#DDDDDD",
+                                    "cellBorderType": [
+                                        "border_right",
+                                        "border_top"
+                                    ],
+                                    "cellBorderWidth": "0.5",
+                                    "cellMargin": [
+                                    ],
+                                    "cellPadding": [
+                                    ],
+                                    "headBgColor": "#DDDDDD",
+                                    "headFontWeight": "bold",
+                                    "tableBorderColor": "#D7D7D7",
+                                    "tableBorderType": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "tableBorderWidth": "0.7"
+                                },
+                                "userSelectableColumn": false,
+                                "userSelectableRow": false
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#000000",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": [
+                                    ],
+                                    "width": ""
+                                },
+                                "class": " ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "customClass": "",
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "cellBorderColor": "#DDDDDD",
+                                        "cellBorderType": [
+                                            "border_right",
+                                            "border_top"
+                                        ],
+                                        "cellBorderWidth": "0.5",
+                                        "cellMargin": [
+                                        ],
+                                        "cellPadding": [
+                                        ],
+                                        "headBgColor": "#DDDDDD",
+                                        "headFontWeight": "bold",
+                                        "tableBorderColor": "#D7D7D7",
+                                        "tableBorderType": [
+                                            "border_top",
+                                            "border_right",
+                                            "border_bottom",
+                                            "border_left"
+                                        ],
+                                        "tableBorderWidth": "0.7"
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "      \n         ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#000000",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": [
+                                            ],
+                                            "width": ""
+                                        },
+                                        "class": " ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "customClass": "",
+                                        "elementStyleProperties": {
+                                            "styles": {
+                                                "cellBorderColor": "#DDDDDD",
+                                                "cellBorderType": [
+                                                    "border_right",
+                                                    "border_top"
+                                                ],
+                                                "cellBorderWidth": "0.5",
+                                                "cellMargin": [
+                                                ],
+                                                "cellPadding": [
+                                                ],
+                                                "headBgColor": "#DDDDDD",
+                                                "headFontWeight": "bold",
+                                                "tableBorderColor": "#D7D7D7",
+                                                "tableBorderType": [
+                                                    "border_top",
+                                                    "border_right",
+                                                    "border_bottom",
+                                                    "border_left"
+                                                ],
+                                                "tableBorderWidth": "0.7"
+                                            }
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "      \n         ",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "element",
+                            "userUpdatedElementLabel": true
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "slds-card ",
+                "container": {
+                    "class": "slds-card"
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                ],
+                "padding": [
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12 ",
+                "style": "      \n         ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "TaskOnAccountPlan",
+    "xmlJson": [
+        {
+            "@attributes": {
+                "targets": "lightning__AppPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightning__RecordPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "default": "",
+                        "label": "recordId",
+                        "name": "cfRecordId",
+                        "type": "String"
+                    }
+                }
+            ],
+            "supportedFormFactors": {
+                "supportedFormFactor": [
+                    {
+                        "@attributes": {
+                            "type": "Small"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "type": "Large"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "xmlObject": {
+        "apiVersion": 56,
+        "id": "0Rb720000009MPVCA2",
+        "isExplicitImport": false,
+        "isExposed": true,
+        "masterLabel": "TaskOnAccountPlan",
+        "targetConfigs": "PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICA8cHJvcGVydHkgbmFtZT0iZGVidWciIHR5cGU9IkJvb2xlYW4iPjwvcHJvcGVydHk+CiAgIDxwcm9wZXJ0eSBuYW1lPSJyZWNvcmRJZCIgdHlwZT0iU3RyaW5nIj48L3Byb3BlcnR5Pgo8L3RhcmdldENvbmZpZz4KPHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX1JlY29yZFBhZ2UiPgogICA8c3VwcG9ydGVkRm9ybUZhY3RvcnM+CiAgICAgICA8c3VwcG9ydGVkRm9ybUZhY3RvciB0eXBlPSJTbWFsbCI+PC9zdXBwb3J0ZWRGb3JtRmFjdG9yPgogICAgICAgPHN1cHBvcnRlZEZvcm1GYWN0b3IgdHlwZT0iTGFyZ2UiPjwvc3VwcG9ydGVkRm9ybUZhY3Rvcj4KICAgPC9zdXBwb3J0ZWRGb3JtRmFjdG9ycz4KICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIj48L3Byb3BlcnR5PgogICA8cHJvcGVydHkgbmFtZT0iY2ZSZWNvcmRJZCIgdHlwZT0iU3RyaW5nIiBsYWJlbD0icmVjb3JkSWQiIGRlZmF1bHQ9IiI+PC9wcm9wZXJ0eT4KPC90YXJnZXRDb25maWc+",
+        "targets": {
+            "target": [
+                "lightning__RecordPage",
+                "lightning__AppPage",
+                "lightning__HomePage"
+            ]
+        }
+    }
+}

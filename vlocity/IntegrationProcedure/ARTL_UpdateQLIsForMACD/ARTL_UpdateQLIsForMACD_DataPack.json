@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_UpdateQLIsForMACD_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL UpdateQLIsForMACD",
+    "OmniProcessElement": [
+        "ARTL_UpdateQLIsForMACD_Element_TransformRateRevisonDetails.json",
+        "ARTL_UpdateQLIsForMACD_Element_UpdateRateRevisionDetails.json"
+    ],
+    "OmniProcessKey": "ARTL_UpdateQLIsForMACD",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_UpdateQLIsForMACD_PropertySetConfig.json",
+    "SubType": "UpdateQLIsForMACD",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/UpdateQLIsForMACD/Procedure"
+}

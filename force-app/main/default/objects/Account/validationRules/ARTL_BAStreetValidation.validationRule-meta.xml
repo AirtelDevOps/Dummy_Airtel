@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_BAStreetValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+NOT($Profile.Name == &apos;System Administrator&apos;),
+RecordType.DeveloperName == &apos;Business&apos;,
+NOT(ISBLANK(BillingStreet)),
+NOT(REGEX(BillingStreet,&quot;[a-zA-Z0-9 &amp;./&apos;,_()-]*&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>BillingStreet</errorDisplayField>
+    <errorMessage>Billing Street should not contain any Special Characters except &amp;./&apos;,_()-</errorMessage>
+</ValidationRule>

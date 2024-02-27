@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_BANameValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND 
+(
+ RecordType.DeveloperName == &apos;Business&apos;,
+ NOT(REGEX( Name ,&quot;[a-zA-Z0-9 &amp;./&apos;,_()-]*&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Business Account Name should not contain any Special Characters except &amp;./&apos;,_()-</errorMessage>
+</ValidationRule>

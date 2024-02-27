@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "ARTL_CreateNBA",
+    "OmniProcessElement": [
+        "ARTL_CreateNBA_English_Element_SetValues.json",
+        "ARTL_CreateNBA_English_Element_DRE_getBAName.json",
+        "ARTL_CreateNBA_English_Element_CheckPartyContacts.json",
+        "ARTL_CreateNBA_English_Element_TextBlock1.json",
+        "ARTL_CreateNBA_English_Element_Step_BADetails.json",
+        "ARTL_CreateNBA_English_Element_TXT_BAName.json",
+        "ARTL_CreateNBA_English_Element_Number_ShortCode.json",
+        "ARTL_CreateNBA_English_Element_CheckIfValid.json",
+        "ARTL_CreateNBA_English_Element_RAc_CreateNBA.json",
+        "ARTL_CreateNBA_English_Element_ValidityError.json",
+        "ARTL_CreateNBA_English_Element_DRP_CreateNBA.json",
+        "ARTL_CreateNBA_English_Element_NavigateAction.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "ARTL_CreateNBA_English_PropertySetConfig.json",
+    "SubType": "CreateNBA",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateNBA/English"
+}

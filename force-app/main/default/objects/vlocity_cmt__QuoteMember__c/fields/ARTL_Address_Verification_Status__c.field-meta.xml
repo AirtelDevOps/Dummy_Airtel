@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Address_Verification_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ARTL_Feasibility_Error_Margin__c  &lt; 26, IMAGE($Label.AddressVerificationGreenImage &amp; &quot;?&quot;, &quot;Green&quot;, 20, 12),
+IF ( ARTL_Feasibility_Error_Margin__c &lt; 50, IMAGE($Label.AddressVerificationAmberImage &amp; &quot;?&quot;, &quot;Yellow&quot;, 20, 12),
+IMAGE($Label.AddressVerificationRedImage &amp; &quot;?&quot;, &quot;Red&quot;, 20, 12)
+))</formula>
+    <label>Address Verification Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

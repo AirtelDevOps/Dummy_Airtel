@@ -1,0 +1,51 @@
+<template>
+    <lightning-card title="Book Schedule">
+        <div class="header-container slds-var-m-horizontal_x-large">
+            <span class="date-range">
+                <!-- Displaying the date range -->
+                {startDateString} - {endDateString}
+            </span>
+            <div class="button-container">
+                <lightning-button-icon icon-name="utility:chevronleft" alternative-text="Previous Week"
+                    variant="border-filled" onclick={handlePreviousWeek} disabled={disabledPrevious}></lightning-button-icon>
+                <lightning-button-icon icon-name="utility:chevronright" alternative-text="Next Week"
+                    variant="border-filled" onclick={handleNextWeek}></lightning-button-icon>
+                
+            </div>
+        </div>
+
+        <div class="slds-m-around_medium">
+            <table class="slds-table slds-table--col-bordered">
+                <!-- Table header section -->
+                <thead>
+                    <!-- Column header row -->
+                    <tr class="slds-line-height_reset slds-table--bordered">
+                        <template for:each={columns} for:item="column">
+                            <th key={column.label} class="headerCls" scope="col">
+                                <div class="slds-truncate" title={column.label}>{column.label}</div>
+                            </th>
+                        </template>
+                    </tr>
+                </thead>
+
+                <!-- Table body section -->
+                <tbody>
+                    <template for:each={inputData} for:item="row">
+                        <tr key={row.id} class="slds-hint-parent">
+                            <template for:each={row.cells} for:item="cell">
+                                <td key={cell.label} data-label={cell.label} class="rowCls">
+                                    <template lwc:if={cell.value}>
+                                        <lightning-button variant="brand" label={cell.value} title={cell.value}
+                                            data-row-id={cell.rowId} onclick={handleTimeClick}
+                                            class="slds-m-left_x-small slds-chat-message__meta"></lightning-button>
+                                    </template>
+                                    <template lwc:else>--</template>
+                                </td>
+                            </template>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>

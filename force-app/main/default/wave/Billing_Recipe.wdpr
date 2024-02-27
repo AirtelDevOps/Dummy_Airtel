@@ -1,0 +1,310 @@
+{
+  "version" : "59.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Debit_GL_code", "Account_Type", "Trans_Submitter", "Product", "CSIN", "LOB_AES_ISTM", "Account_Manager", "Cheque_Date", "NBA2_External_Id", "Payment_Date", "System_Arbor_IS", "Parent_Account_Category", "Credit_GL_code", "Orig_Tracking_id", "Receipt_Number", "Circle", "External_Inv_Ref_No", "Collection_Entry_Date", "Payment_Description", "Supplier_State_Name_Bharti", "Company_Trial_Code", "Chq_No", "Customer_TAN", "Business_Unit", "AccountName", "Payment_Id", "Orig_Tracking_id_Serv", "Customer_PAN", "Invoice_Date", "Trans_Date", "Particulars", "Post_Date", "FX_External_Account_No", "Orig_Bill_Ref", "Currency_Desc", "Due_Date", "External_Invoice_Number", "Payment_Mode_No", "Invoice_Number", "Action_Code", "Region_Name", "Vertical_Name", "Bank_Name", "RegionId", "Business_Entity", "Invoice_Exchange_Rate", "Currency_code", "Inv_Ref_No", "Collected_Amount_in_INR", "TDS_Payment", "Collected_Amount", "Credited_Amount", "Account_Id", "Paid_Amount", "Payment_Mode", "FX_Internal_Account_No", "Collected_Amount_POS", "Invoice_Amount", "Payment_Exchange_Rate" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Collection Report",
+          "name" : "Collection_Report"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "BA_External_Id", "Account_Type", "Product", "Account_Manager", "PARTY_INTERNAL_ID", "Invoice_No", "Parent_Account_Category", "LineItem_Type", "SubProduct", "Bill_Company", "City", "Party_City", "Ship_to_state", "Supplier_State_Name_Bharti", "Company_Trial_Code", "External_Invoice_No", "Licencing_Company", "Party_Region", "Invoice_Date", "FX_External_Account_No", "PARTY_EXTERNAL_ID", "Currency_Desc", "Account_Name", "Due_Date", "Parent_id", "FX_Internal_Account_No", "Region_Name", "Billing_From", "Vertical_Name", "Billing_To", "Party_Service_Segment", "Tax_Amount", "Amount_Due_in_Neg", "Exchange_Rate", "Days_61_90", "Days_121_150", "Collected_Amount", "Days_31_60", "Credited_Amount", "Days_365_Above", "Days_181_365", "Days_151_180", "Not_Due", "Amount_Due", "Amount", "Days_0_30", "Days_91_120", "Exchange_Rate_In_USD", "Invoice_Amount" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Outstanding Bills",
+          "name" : "Outstanding_Bills"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET2" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "BA_External_Id", "Billing_Frequency", "From_Date", "GAM1_Name", "Token_No", "Product", "Location_To", "GAM2_Name", "Parent_Account_Category", "Currency", "GAM1_Value", "System_Order_No", "UQC", "Product_Name", "Party_City", "SUPPLY_TYPE_CODE", "Ship_to_state", "GAM4_Value", "Collection_Manager", "Type_of_Credit_Debit_note_Adj_Reason", "Customer_PO_Date", "Account_Type_Name", "IRN", "Location_Code", "Customer_original_Invoice_Date", "Vertical_Head", "Invoice_Date", "FX_External_Account_No", "HSN_SAC_CODE", "PARTY_EXTERNAL_ID", "Standard_Reason", "Account_Name", "Token_NoCreatedDt", "LOC_Number", "MetaSolv_Order_No", "Account_Category", "GAM3_Name", "Parent_id", "GAM6_Name", "QR_CODE", "FX_Internal_Account_No", "Annotation", "GAM3_Value", "SI_Id", "DC_No", "Location_From", "Line_Item_Type_Id", "External_Orig_Invoice_Number", "Tax_Inc_OR_Exc", "Account_Type", "CRM_Order_Approved_Date", "GAM2_Value", "GAM7_Name", "Line_Item_Number", "CSIN", "Exempt_Reason", "Account_Manager", "Company_code", "Sub_Product", "Link_TrackingId", "Remarks", "GAM5_Value", "CUST_GST_STATE", "US_Tax", "GSTIN_UIN_of_customer", "To_Date", "Logical_Ckt_Id", "KAM_VALUE", "Region_Id", "City", "Supplier_State_Name_Bharti", "Licensing_Company", "Company_Name", "ORIG_CSIN", "Party_Region", "GAM7_Value", "Tracking_Id", "Product_id", "GAM4_Name", "Reason", "First_Name", "Engineering_Ckt_Id", "GAM5_Name", "Invoice_Type", "PAN_No", "US_Tax_Rate", "Link_TrackingId_Serv", "Due_Date", "External_Invoice_Number", "TIN_No", "Inv_Exchange_Rate_CN", "Title", "Invoice_Number", "Line_Item_Description", "PK_Charge_ID", "Line_Item_Name", "Old_Logical_Ckt", "Region_Name", "Party_Service_Segment", "Last_Name", "Billing_Address", "GAM6_Value", "Orig_Invoice_Number", "Customer_PO_No", "PARTY_INTERNAL_ID", "IGST_Rate", "Consumption_Tax_JAPAN", "Kerala_Flood_Cess_Invoice_currency", "Distance", "Higher_Education_Cess_1", "CST_Tax", "Consumption_Tax_JAPAN1", "EXCHANGE_RATE_IN_USD", "VAT_UK1", "Kerala_Flood_Cess_Rate", "Service_Tax1", "Sales_Tax1", "CGST_INR", "Amount", "SGST_UTGST_INR", "Kerala_Flood_Cess_INR", "Swachh_Bharat_Cess", "TVA_FRANCE1", "Billing_Pin", "CGST_Rate", "Addl_Tax", "Cess_2", "SGST_UTGST_Rate", "TVA_FRANCE", "Exchange_Rate", "Rate_Per_Annum", "Krishi_Kalyan_Cess_0_5", "Service_Tax", "Additional_Tax", "Krishi_Kalyan_Cess", "Charge_Item_Frequency_Amount", "Total_Amount", "Sales_Tax", "SGST_UTGST_Invoice_currency", "Account_Codes", "Contract_Period", "Edu_Cess", "IGST_Invoice_currency", "CGST_Invoice_currency", "Swachh_Bharat_Cess_0_5", "High_Edu_Cess", "CST", "Quantity", "VAT_UK", "IGST_INR", "Tracking_Id_Serv" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Billing Report",
+          "name" : "Billing_Report"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN0" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET2", "FORMULA3" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "MULTI_VALUE_LOOKUP",
+        "leftKeys" : [ "Invoice_Number" ],
+        "rightQualifier" : "Collection",
+        "rightKeys" : [ "Invoice_Number" ]
+      }
+    },
+    "JOIN1" : {
+      "action" : "join",
+      "sources" : [ "JOIN0", "LOAD_DATASET1" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "MULTI_VALUE_LOOKUP",
+        "leftKeys" : [ "Invoice_Number" ],
+        "rightQualifier" : "Outstandin",
+        "rightKeys" : [ "Invoice_No" ]
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "FORMULA2" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "BillingDataset",
+          "name" : "BillingDataset",
+          "folderName" : "Billing_App"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "FORMULA0" : {
+      "action" : "formula",
+      "sources" : [ "LOAD_DATASET0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "Paid_In",
+          "label" : "Paid In",
+          "formulaExpression" : "datediff(Payment_Date, Due_Date)",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "TO_DIMENSION0" : {
+      "action" : "typeCast",
+      "sources" : [ "FORMULA0" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Paid_In",
+          "newProperties" : {
+            "label" : "Paid In (Text)",
+            "name" : "Paid_In_to_dimension",
+            "typeProperties" : {
+              "type" : "TEXT",
+              "length" : 255
+            }
+          }
+        } ]
+      }
+    },
+    "FORMULA3" : {
+      "action" : "formula",
+      "sources" : [ "TO_DIMENSION0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "Paid_Before_Due",
+          "label" : "Paid Before Due",
+          "formulaExpression" : "CASE\n    when Paid_In=0 then 1\n\twhen Paid_In<0 then abs(Paid_In)\n\telse\n\t0\nend",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA1" : {
+      "action" : "formula",
+      "sources" : [ "JOIN1" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Invoice_MonthYear",
+          "label" : "Invoice Month/Year",
+          "formulaExpression" : "CASE\n    when MONTH(Invoice_Date)=1 then concat('Jan','-',year(Invoice_Date))\n    when MONTH(Invoice_Date)=2 then concat('Feb','-',year(Invoice_Date))\n    when MONTH(Invoice_Date)=3 then concat('Mar','-',year(Invoice_Date)) \n    when MONTH(Invoice_Date)=4 then concat('Apr','-',year(Invoice_Date)) \n    when MONTH(Invoice_Date)=5 then concat('May','-',year(Invoice_Date)) \n    when MONTH(Invoice_Date)=6 then concat('Jun','-',year(Invoice_Date)) \n    when MONTH(Invoice_Date)=7 then concat('Jul','-',year(Invoice_Date)) \n    when MONTH(Invoice_Date)=8 then concat('Aug','-',year(Invoice_Date))\n    when MONTH(Invoice_Date)=9 then concat('Sep','-',year(Invoice_Date)) \n    when MONTH(Invoice_Date)=10 then concat('Oct','-',year(Invoice_Date)) \n    when MONTH(Invoice_Date)=11 then concat('Nov','-',year(Invoice_Date)) \n    when MONTH(Invoice_Date)=12 then concat('Dec','-',year(Invoice_Date)) \n    else ''\n    end",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA2" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA1" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "BadDebtG90",
+          "label" : "Bad Debt > 90",
+          "formulaExpression" : "\"Outstandin.Days_91_120\"+\"Outstandin.Days_121_150\"+\"Outstandin.Days_151_180\"+\"Outstandin.Days_181_365\"+\"Outstandin.Days_365_Above\"",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : ""
+        } ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "Collection Report",
+        "type" : "LOAD_DATASET",
+        "top" : 251.7,
+        "left" : 252,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1" : {
+        "label" : "Outstanding Bills",
+        "type" : "LOAD_DATASET",
+        "top" : 392.2,
+        "left" : 252.3,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET2" : {
+        "label" : "Billing Report",
+        "type" : "LOAD_DATASET",
+        "top" : 111.9,
+        "left" : 251.7,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN0" : {
+        "label" : "Join 0",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 392
+      },
+      "JOIN1" : {
+        "label" : "Join 1",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 532
+      },
+      "OUTPUT0" : {
+        "label" : "Output 0",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 812
+      },
+      "TRANSFORM0" : {
+        "label" : "Transform 0",
+        "type" : "TRANSFORM",
+        "top" : 252,
+        "left" : 392,
+        "graph" : {
+          "FORMULA0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "TO_DIMENSION0" : {
+            "label" : "To Text"
+          },
+          "FORMULA3" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA0",
+          "target" : "TO_DIMENSION0"
+        }, {
+          "source" : "TO_DIMENSION0",
+          "target" : "FORMULA3"
+        } ]
+      },
+      "TRANSFORM1" : {
+        "label" : "Transform 1",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 672,
+        "graph" : {
+          "FORMULA1" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA2" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA1",
+          "target" : "FORMULA2"
+        } ]
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET2",
+      "target" : "JOIN0"
+    }, {
+      "source" : "TRANSFORM0",
+      "target" : "JOIN0"
+    }, {
+      "source" : "JOIN0",
+      "target" : "JOIN1"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "JOIN1"
+    }, {
+      "source" : "TRANSFORM1",
+      "target" : "OUTPUT0"
+    }, {
+      "source" : "LOAD_DATASET0",
+      "target" : "TRANSFORM0"
+    }, {
+      "source" : "JOIN1",
+      "target" : "TRANSFORM1"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

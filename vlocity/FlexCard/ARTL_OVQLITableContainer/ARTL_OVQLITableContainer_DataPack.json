@@ -1,0 +1,47 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 15,
+                    "name": "recordId",
+                    "val": "0Q0720000005FxhCAE"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "ARTL_OVQLITableContainer": "true",
+                    "quoteId": "{recordId}"
+                },
+                "ipMethod": "ARTL_OVQLITable",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_OVQLITableContainer",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_OVQLITableContainer/BhartiAirtelLimited/10.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_OVQLITableContainer.json",
+    "SampleDataSourceResponse": "[{\"Id\":\"0QL720000005o2bGAA\",\"OfferName\":\"SD-WAN\",\"RootItemId\":\"cdce09f9-9358-60dd-e7de-824b5bbf9cb6\"},{\"Id\":\"0QL720000005o5pGAA\",\"OfferName\":\"Internet\",\"RootItemId\":\"34d69abb-d227-1adf-4d27-7543c1289810\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 10,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_OVQLITableContainer"
+}

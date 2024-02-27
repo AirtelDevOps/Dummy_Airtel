@@ -1,0 +1,168 @@
+{
+    "dataArea": {
+        "createBillingAccount": {
+            "customer": {
+                "customerLanguage": "ENG",
+                "customerType": "B2B"
+            },
+            "customerAccount": {
+                "accountCategory": 102,
+                "accountSegment": 1,
+                "accountType": 1,
+                "activationDate": "2023-06-05T14:15:06",
+                "billingAddress": {
+                    "addressLine1": "Airtel Center Udhyog Vihar",
+                    "addressLine2": "",
+                    "addressLine3": "",
+                    "city": "Gurgaon",
+                    "country": 356,
+                    "pincode": 122015,
+                    "state": "Haryana"
+                },
+                "billingProfile": {
+                    "customerBillingCycle": {
+                        "billCycle": "VAN",
+                        "billType": 101,
+                        "externalIdentification": [
+                            {
+                                "code": 1,
+                                "name": "LanguageCode"
+                            },
+                            {
+                                "code": 0,
+                                "name": "SdAgencyId"
+                            },
+                            {
+                                "code": 102,
+                                "name": "OwningCostCtr"
+                            },
+                            {
+                                "code": 1,
+                                "name": "RevRcvCostCtr"
+                            },
+                            {
+                                "code": 432,
+                                "name": "MktCode"
+                            },
+                            {
+                                "code": 0,
+                                "name": "VipCode"
+                            },
+                            {
+                                "code": 1,
+                                "name": "CurrencyCode"
+                            },
+                            {
+                                "code": 6,
+                                "name": "ServerCategory"
+                            }
+                        ],
+                        "method": 0
+                    }
+                },
+                "createdBy": "0-1",
+                "creditLimit": 0,
+                "customerAddress": {
+                    "addressLine1": "Airtel Center Udhyog Vihar",
+                    "addressLine2": "",
+                    "addressLine3": "",
+                    "city": "Gurgaon",
+                    "country": 356,
+                    "pincode": 122015,
+                    "state": "Haryana"
+                },
+                "customerName": {
+                    "individualName": {
+                        "familyNames": "",
+                        "givenName": "",
+                        "middleName": ""
+                    },
+                    "organization": {
+                        "identification": {
+                            "name": "Airtel"
+                        }
+                    }
+                },
+                "customerOrder": {
+                    "identification": [
+                        {
+                            "id": 1234,
+                            "type": "TaskId"
+                        },
+                        {
+                            "id": "1-3BBQWM0",
+                            "type": "OrderId"
+                        }
+                    ]
+                },
+                "emailContact": {
+                    "eMailAddress": ""
+                },
+                "ext": {
+                    "attribute": [
+                        {
+                            "name": "CustFranchiseTaxCode",
+                            "value": 1
+                        },
+                        {
+                            "name": "BillFranchiseTaxCode",
+                            "value": 1
+                        }
+                    ]
+                },
+                "externalIdentification": [
+                    {
+                        "name": "Collection_Manager_Email",
+                        "value": "dummy_cm@airtel.com"
+                    },
+                    {
+                        "name": "Collection_Manager",
+                        "value": ". DUMMY_CM DUMMY_CM"
+                    },
+                    {
+                        "name": "Collection_Manager_Phone",
+                        "value": ""
+                    },
+                    {
+                        "name": "Account_Manager_Phone",
+                        "value": ""
+                    },
+                    {
+                        "name": "Account_Manager_Email",
+                        "value": "test@gmail.com"
+                    },
+                    {
+                        "name": "Account_Manager_Name",
+                        "value": ". DUMMYPM DUMMYPM"
+                    },
+                    {
+                        "name": "ORG_TYPE",
+                        "value": 3
+                    }
+                ],
+                "identification": [
+                    {
+                        "id": "11-33004322",
+                        "type": "ParentAccountNumber"
+                    },
+                    {
+                        "id": "21-BSCLSC1000030641",
+                        "type": ""
+                    }
+                ],
+                "rateClass": 1,
+                "telephone": {
+                    "contactNumber": 9988507280,
+                    "type": "Contact1Phone"
+                }
+            }
+        }
+    },
+    "ebmHeader": {
+        "consumerName": "Siebel",
+        "consumerTransactionId": "1-3BBQWM0",
+        "domain": "B2B",
+        "lob": "AES",
+        "programmeName": "Leo"
+    }
+}

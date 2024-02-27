@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CancelHansenOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_CancelHansenOrder",
+    "OmniProcessElement": [
+        "ARTL_CancelHansenOrder_Element_GetSOMOrderId.json",
+        "ARTL_CancelHansenOrder_Element_GetToken.json",
+        "ARTL_CancelHansenOrder_Element_UpdateOrchStatus.json",
+        "ARTL_CancelHansenOrder_Element_TokenGenFailed.json",
+        "ARTL_CancelHansenOrder_Element_DeserializeToken.json",
+        "ARTL_CancelHansenOrder_Element_ReadToken.json",
+        "ARTL_CancelHansenOrder_Element_HansenCallout.json",
+        "ARTL_CancelHansenOrder_Element_ParseHansenResponse.json",
+        "ARTL_CancelHansenOrder_Element_SetStatus.json",
+        "ARTL_CancelHansenOrder_Element_UpdateOrchesWithStatus.json",
+        "ARTL_CancelHansenOrder_Element_SendResponse.json"
+    ],
+    "OmniProcessKey": "ARTL_CancelHansenOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CancelHansenOrder_PropertySetConfig.json",
+    "SubType": "CancelHansenOrder",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CancelHansenOrder/Procedure"
+}

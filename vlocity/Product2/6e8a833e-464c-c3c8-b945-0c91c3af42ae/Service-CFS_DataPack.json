@@ -1,0 +1,539 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Service-CFS_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_CUSTOMER_LINK_TYPE": null,
+        "ATT_IP_REQUIRED": null,
+        "ATT_MTU_SIZE": null,
+        "ATT_PRIMARY_KEY": null,
+        "ATT_TECH_PREFIX_LIMIT": null,
+        "ATT_UP_TIME_SLA_CFS": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_ENTERPRISE_DETAILS",
+                "Name": "Details",
+                "displaySequence": 300,
+                "id": "a0Z72000000xoooEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEZwAAM",
+                            "cloneable": true,
+                            "code": "ATT_MTU_SIZE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 51,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "MTU Size",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEPAAY",
+                            "cloneable": true,
+                            "code": "ATT_IP_REQUIRED",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 90,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "IP Required",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "04fa9600-2d1b-10ba-62dc-60eb80f6372b",
+                                    "label": "Dual Stack",
+                                    "name": "04fa9600-2d1b-10ba-62dc-60eb80f6372b",
+                                    "readonly": false,
+                                    "value": "Dual Stack"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "77148b6d-74f6-b642-54ab-818ae833b9fd",
+                                    "label": "IPv4",
+                                    "name": "77148b6d-74f6-b642-54ab-818ae833b9fd",
+                                    "readonly": false,
+                                    "value": "IPv4"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "f7efee6d-dc4e-4aa0-264a-ccd3a791f99f",
+                                    "label": "IPv6",
+                                    "name": "f7efee6d-dc4e-4aa0-264a-ccd3a791f99f",
+                                    "readonly": false,
+                                    "value": "IPv6"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            },
+            {
+                "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
+                "Name": "Technical Attributes",
+                "displaySequence": 1090,
+                "id": "a0Z72000000zL7ZEAU",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEZdAAM",
+                            "cloneable": true,
+                            "code": "ATT_CUSTOMER_LINK_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 401,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Customer Link Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "2b4d0359-0938-abea-f575-7e62de6fef87",
+                                    "label": "Customer Link",
+                                    "name": "2b4d0359-0938-abea-f575-7e62de6fef87",
+                                    "readonly": false,
+                                    "value": "Customer Link"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "2bb8d1ca-791a-4028-05f2-98daec5faae3",
+                                    "label": "Infra Link",
+                                    "name": "2bb8d1ca-791a-4028-05f2-98daec5faae3",
+                                    "readonly": false,
+                                    "value": "Infra Link"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aZjzAAE",
+                            "cloneable": true,
+                            "code": "ATT_UP_TIME_SLA_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2012,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Up Time SLA",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "10cce102-c2c6-42f8-e09b-eca325adee1d",
+                                    "label": "99.8%",
+                                    "name": "10cce102-c2c6-42f8-e09b-eca325adee1d",
+                                    "readonly": false,
+                                    "value": "99.8%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "31fe50ba-cc79-f685-867b-2c8f8e6585f9",
+                                    "label": "99.7%",
+                                    "name": "31fe50ba-cc79-f685-867b-2c8f8e6585f9",
+                                    "readonly": false,
+                                    "value": "99.7%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "5d58a055-dbd6-de94-a1d2-d8c4a4f91b00",
+                                    "label": "98.5%",
+                                    "name": "5d58a055-dbd6-de94-a1d2-d8c4a4f91b00",
+                                    "readonly": false,
+                                    "value": "98.5%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "62b5852c-fd73-684e-815a-949629757f8e",
+                                    "label": "99.0%",
+                                    "name": "62b5852c-fd73-684e-815a-949629757f8e",
+                                    "readonly": false,
+                                    "value": "99.0%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "681a6648-de53-fc2f-356e-76011cc2639e",
+                                    "label": "98.0%",
+                                    "name": "681a6648-de53-fc2f-356e-76011cc2639e",
+                                    "readonly": false,
+                                    "value": "98.0%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "72ee1dbe-5c33-6dc4-988f-fb7b178e31f5",
+                                    "label": "99.9%",
+                                    "name": "72ee1dbe-5c33-6dc4-988f-fb7b178e31f5",
+                                    "readonly": false,
+                                    "value": "99.9%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 120,
+                                    "id": "89c19505-b248-05c2-f0bb-39b4be76a670",
+                                    "label": "100%",
+                                    "name": "89c19505-b248-05c2-f0bb-39b4be76a670",
+                                    "readonly": false,
+                                    "value": "100%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "c033c4b4-6fac-e96b-ca43-56ac50f58ac3",
+                                    "label": "99.999%",
+                                    "name": "c033c4b4-6fac-e96b-ca43-56ac50f58ac3",
+                                    "readonly": false,
+                                    "value": "99.999%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "c57cb172-273a-2dec-242d-a1277b94c28a",
+                                    "label": "99.99%",
+                                    "name": "c57cb172-273a-2dec-242d-a1277b94c28a",
+                                    "readonly": false,
+                                    "value": "99.99%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "d7db5a02-a299-6bd3-2aad-3ca55b02a758",
+                                    "label": "99.6%",
+                                    "name": "d7db5a02-a299-6bd3-2aad-3ca55b02a758",
+                                    "readonly": false,
+                                    "value": "99.6%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "ea07d4dd-98a7-7e2f-dfb4-f963ae001df5",
+                                    "label": "99.5%",
+                                    "name": "ea07d4dd-98a7-7e2f-dfb4-f963ae001df5",
+                                    "readonly": false,
+                                    "value": "99.5%"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "fbc9713c-8716-6574-aab6-27c31edf88ee",
+                                    "label": "99.998%",
+                                    "name": "fbc9713c-8716-6574-aab6-27c31edf88ee",
+                                    "readonly": false,
+                                    "value": "99.998%"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006f1MYAAY",
+                            "cloneable": true,
+                            "code": "ATT_TECH_PREFIX_LIMIT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 6006,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Prefix Limit",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "2ce58fd2-f26b-0958-0719-4e8cafa629bb",
+                                    "label": "4000",
+                                    "name": "2ce58fd2-f26b-0958-0719-4e8cafa629bb",
+                                    "readonly": false,
+                                    "value": "4000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "2fd407e5-726e-096e-85bd-4c01ae36f7be",
+                                    "label": "1000",
+                                    "name": "2fd407e5-726e-096e-85bd-4c01ae36f7be",
+                                    "readonly": false,
+                                    "value": "1000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "31a431ea-41a4-d956-d126-3afebec7f72c",
+                                    "label": "20000",
+                                    "name": "31a431ea-41a4-d956-d126-3afebec7f72c",
+                                    "readonly": false,
+                                    "value": "20000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "4da9ceca-6f10-21a9-1308-214a52c738dc",
+                                    "label": "Not Applicable",
+                                    "name": "4da9ceca-6f10-21a9-1308-214a52c738dc",
+                                    "readonly": false,
+                                    "value": "Not Applicable"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "63af72ba-93d8-2dad-25bb-217cd8a5d9c0",
+                                    "label": "2000",
+                                    "name": "63af72ba-93d8-2dad-25bb-217cd8a5d9c0",
+                                    "readonly": false,
+                                    "value": "2000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "72c700e5-b454-1bba-fa7a-a441acfb9556",
+                                    "label": "10000",
+                                    "name": "72c700e5-b454-1bba-fa7a-a441acfb9556",
+                                    "readonly": false,
+                                    "value": "10000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "a5d48b44-6750-72a3-90d3-88e56ff68dfd",
+                                    "label": "5000",
+                                    "name": "a5d48b44-6750-72a3-90d3-88e56ff68dfd",
+                                    "readonly": false,
+                                    "value": "5000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "b478c0cc-1e9c-8150-0eaf-03085208c3d9",
+                                    "label": "15000",
+                                    "name": "b478c0cc-1e9c-8150-0eaf-03085208c3d9",
+                                    "readonly": false,
+                                    "value": "15000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "d1a0cd82-cd64-b4d4-d4ed-66b8d8130b80",
+                                    "label": "3000",
+                                    "name": "d1a0cd82-cd64-b4d4-d4ed-66b8d8130b80",
+                                    "readonly": false,
+                                    "value": "3000"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006lchgAAA",
+                            "cloneable": true,
+                            "code": "ATT_PRIMARY_KEY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 7030,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Primary Key",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 4
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-10-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "5b93f22f-092e-fd5e-dc29-06c2e1e4b841",
+    "%vlocity_namespace%__GlobalKey__c": "6e8a833e-464c-c3c8-b945-0c91c3af42ae",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Service-CFS_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "ILL Service Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "Service-CFS_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Resource",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_Hansen_Primary_Key__c": "18ff7101-8189-4dcf-b0e4-a96fd323a960",
+    "ARTL_LSIRequiredForHansen__c": false,
+    "ARTL_LSIRequired__c": false,
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Service CFS",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "ProductCode": "VEPC_SERVICE_CFS",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/6e8a833e-464c-c3c8-b945-0c91c3af42ae"
+}

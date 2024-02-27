@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_SelfServiceCreateGroups_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_SelfServiceCreateGroups",
+    "OmniProcessElement": [
+        "ESM_SelfServiceCreateGroups_Element_CreateGroups.json",
+        "ESM_SelfServiceCreateGroups_Element_CreateGroupsResponse.json"
+    ],
+    "OmniProcessKey": "ESM_SelfServiceCreateGroups",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_SelfServiceCreateGroups_PropertySetConfig.json",
+    "SubType": "SelfServiceCreateGroups",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/SelfServiceCreateGroups/Procedure"
+}

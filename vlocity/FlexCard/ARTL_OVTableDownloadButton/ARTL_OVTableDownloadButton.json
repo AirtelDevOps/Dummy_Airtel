@@ -1,0 +1,215 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "id": 6,
+                "name": "Parent.QuoteId",
+                "val": "0Q0720000005FxhCAE"
+            },
+            {
+                "id": 15,
+                "name": "Parent.ProductCode",
+                "val": "6c24fdd7-4f71-4806-b7eb-62837fe6571e"
+            }
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "dsDelay": "",
+            "inputMap": {
+                "productCode": "{Parent.ProductCode}",
+                "quoteId": "{Parent.QuoteId}"
+            },
+            "ipMethod": "ARTL_OVTableDownloadData",
+            "jsonMap": "{\"Parent.QuoteId\":\"{Parent.QuoteId}\",\"Parent.ProductCode\":\"{Parent.ProductCode}\"}",
+            "resultVar": "[\"attributeWithRecords\"]",
+            "vlocityAsync": false
+        }
+    },
+    "enableLwc": true,
+    "events": [
+        {
+            "actionList": [
+                {
+                    "actionIndex": 0,
+                    "card": "{card}",
+                    "draggable": false,
+                    "isOpen": true,
+                    "key": "1704130250227-2f6ase2vu",
+                    "label": "Action",
+                    "stateAction": {
+                        "displayName": "Action",
+                        "elementId": "SelectedCases",
+                        "extraParams": {
+                            "Id": "{action.result.Id}",
+                            "selectrow": "{action.result.selectrow}"
+                        },
+                        "hasExtraParams": true,
+                        "id": "flex-action-1704130399613",
+                        "openUrlIn": "Current Window",
+                        "type": "updateOmniScript",
+                        "vlocityIcon": "standard-default"
+                    }
+                }
+            ],
+            "channelname": "ARTL_OVQLITable",
+            "displayLabel": "selectrow",
+            "element": "action",
+            "eventLabel": "custom event",
+            "eventname": "selectrow",
+            "eventtype": "event",
+            "key": "event-0",
+            "recordIndex": "0",
+            "showSpinner": "false"
+        }
+    ],
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfARTL_OVTableDownloadButton_3_BhartiAirtelLimited",
+        "Id": "0Rb72000000A3JBCA0",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfARTL_OVTableDownloadButton_3_BhartiAirtelLimited",
+        "NamespacePrefix": "c"
+    },
+    "selectableMode": "Multi",
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "customLwc",
+                            "elementLabel": "Custom LWC-0",
+                            "name": "Custom LWC",
+                            "property": {
+                                "currentQuoteLineItemsData": "{records}",
+                                "customlwcname": "artlDownloadQLIDetails"
+                            },
+                            "size": {
+                                "default": "3",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "size": {
+                                    "default": "3",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_3-of-12 "
+                            },
+                            "type": "element"
+                        },
+                        {
+                            "children": [
+                            ],
+                            "class": "slds-col ",
+                            "element": "block",
+                            "elementLabel": "Block-1",
+                            "name": "Block",
+                            "property": {
+                                "card": "{card}",
+                                "collapsedByDefault": false,
+                                "collapsible": false,
+                                "label": "Block",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "9",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "class": "slds-p-around_x-small",
+                                "padding": [
+                                    {
+                                        "size": "x-small",
+                                        "type": "around"
+                                    }
+                                ],
+                                "size": {
+                                    "default": "9",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_9-of-12 "
+                            },
+                            "type": "block"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "slds-card slds-m-around_none ",
+                "container": {
+                    "class": "slds-card"
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                    {
+                        "label": "around:none",
+                        "size": "none",
+                        "type": "around"
+                    }
+                ],
+                "padding": [
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12 ",
+                "style": "      \n         ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "ARTL_OVTableDownloadButton"
+}

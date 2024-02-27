@@ -1,0 +1,47 @@
+{
+    "AuthorName": "ARTL",
+    "ClonedFromOmniUiCardKey": "OpportunityOnAccountPlan/ARTL/1.0",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "recordId",
+                    "val": "a7O720000000AiXEAU"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "flexcard_accountPlanId": "{recordId}"
+                },
+                "ipMethod": "ARTL_OpportunityOnAccountPlan",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "[\"BUC\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "BUCOnAccountPlan",
+    "Namespace": "",
+    "OmniUiCardKey": "BUCOnAccountPlan/ARTL/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "BUCOnAccountPlan.json",
+    "SampleDataSourceResponse": "{\"BUC\":{\"Account_Name__c\":\"IBM\",\"Total_Competitor_Spends__c\":12421,\"Spends_with_Airtel__c\":12322,\"Product_Category__c\":\"Internet\",\"Key_Competitor_and_Comments__c\":\"test\",\"Fiscal_Year__c\":\"2024\",\"Account_Plan__c\":\"AP-0000005\",\"Name\":\"BUC-0009088\"},\"WinLoss\":[{\"categorizationOfLoss\":\"\",\"reasonOfWinLoss\":\"\",\"timeline\":\"2023-09-19\",\"amount\":0,\"finalStatus\":\"Closed Won\",\"name\":\"Test Opp D2\",\"id\":\"00672000009UdQBAA0\"},{\"categorizationOfLoss\":\"\",\"reasonOfWinLoss\":\"\",\"timeline\":\"2023-10-18\",\"amount\":650,\"finalStatus\":\"Closed Won\",\"name\":\"Test SFDC95 Opp\",\"id\":\"0067200000A5vHeAAJ\"}],\"Contact\":{\"stakeholderScore\":\"5.0\",\"designation\":\"TC\",\"interactionLevel\":\"Board Level\",\"name\":\"Prakash Sahu\"},\"Opportunity\":[{\"closeDate\":\"2023-11-30\",\"id\":\"0060T000005kDe5QAE\",\"sizing\":\"INR1,602.00\",\"keyTimeline\":\"Q4\",\"name\":\"Green Field Telco Opportunity 1\"},{\"closeDate\":\"2023-09-13\",\"keyStakeholder\":\"Sujay Dey\",\"id\":\"0060T000005kDgxQAE\",\"sizing\":\"INR1.00\",\"keyTimeline\":\"Q3\",\"immediateSteps\":\"Setup meeting with product team\",\"keyCompetitors\":\"TCL\",\"comments\":\"Receiving requirement for upgrade and sharing feasibility on priority.\",\"description\":\"Axis has planned to upgrade 70% of \\ntheir links this year, while most upgrades are done by incumbent vendor, poses \\nboth opportunity and risk when the \\ncurrent vendor isn’t able to support the required bandwidth\",\"name\":\"Green Field Telco Opportunity\"},{\"closeDate\":\"2023-09-28\",\"keyStakeholder\":\"Sujay Dey\",\"id\":\"00672000009O45JAAS\",\"sizing\":\"INR89,00,000.00\",\"keyTimeline\":\"Q3\",\"name\":\"Forecast Test 1\"},{\"closeDate\":\"2023-09-30\",\"id\":\"00672000009P6eXAAS\",\"sizing\":\"INR2,320.00\",\"keyTimeline\":\"Q3\",\"name\":\"Test Opp\"},{\"closeDate\":\"2023-09-30\",\"id\":\"00672000009QNv3AAG\",\"sizing\":\"INR3.00\",\"keyTimeline\":\"Q3\",\"name\":\"Test Opp Sagar\"},{\"closeDate\":\"2023-09-30\",\"id\":\"00672000009TZTRAA4\",\"sizing\":\"INR1.00\",\"keyTimeline\":\"Q3\",\"name\":\"Test Opp D\"},{\"closeDate\":\"2023-09-19\",\"id\":\"00672000009UdQBAA0\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q3\",\"name\":\"Test Opp D2\"},{\"closeDate\":\"2023-09-28\",\"id\":\"00672000009ZPXrAAO\",\"keyTimeline\":\"Q3\",\"name\":\"Test Opp D45\"},{\"closeDate\":\"2023-09-29\",\"id\":\"00672000009b5y2AAA\",\"keyTimeline\":\"Q3\",\"name\":\"Test Opp Delete Test\"},{\"closeDate\":\"2023-11-01\",\"id\":\"00672000009lVuPAAU\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test opportunity v2\"},{\"closeDate\":\"2023-11-01\",\"id\":\"00672000009lcpTAAQ\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test opportunity\"},{\"closeDate\":\"2023-10-07\",\"id\":\"00672000009oQBrAAM\",\"sizing\":\"INR1,000.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test opportunity v4\"},{\"closeDate\":\"2023-10-31\",\"id\":\"00672000009rYxgAAE\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q4\",\"name\":\"Demo Opportunity\"},{\"closeDate\":\"2023-10-28\",\"id\":\"00672000009ra6fAAA\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test Proposal\"},{\"closeDate\":\"2023-10-28\",\"id\":\"00672000009roO8AAI\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test Proposal v3\"},{\"closeDate\":\"2023-10-28\",\"id\":\"00672000009rsl4AAA\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test Proposal\"},{\"closeDate\":\"2023-10-28\",\"id\":\"00672000009vyrtAAA\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test Proposal 9Oct\"},{\"closeDate\":\"2023-10-31\",\"id\":\"00672000009wueFAAQ\",\"sizing\":\"INR0.00\",\"keyTimeline\":\"Q4\",\"name\":\"FAOppty\"},{\"closeDate\":\"2023-10-11\",\"id\":\"00672000009yIePAAU\",\"keyTimeline\":\"Q4\",\"name\":\"test\"},{\"closeDate\":\"2023-10-28\",\"id\":\"0067200000A56VJAAZ\",\"sizing\":\"INR100.00\",\"keyTimeline\":\"Q4\",\"name\":\"POC Opportunity\"},{\"closeDate\":\"2023-10-18\",\"id\":\"0067200000A5vHeAAJ\",\"sizing\":\"INR650.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test SFDC95 Opp\"},{\"closeDate\":\"2024-10-19\",\"id\":\"0067200000A6uPxAAJ\",\"sizing\":\"INR1,40,000.00\",\"keyTimeline\":\"Q4\",\"name\":\"Test SFDC95 Opp\"}],\"Weakness\":\"test\",\"Strengths\":\"test\",\"RTB_KeyInitiatives\":\"<p>test</p>\",\"NetIncome\":0,\"Revenue\":0,\"RTB_KeyMetrics\":\"<p>test</p>\",\"KAMName\":\"sujay dey\",\"AccountName\":\"Green Field Telco Ltd\"}",
+    "StylingConfiguration": "{\"styleObjects\":{\"Text wrap\":{\"sizeClass\":\"slds-size_12-of-12 \",\"padding\":[],\"margin\":[],\"background\":{\"color\":\"\",\"image\":\"\",\"size\":\"\",\"repeat\":\"\",\"position\":\"\"},\"size\":{\"isResponsive\":false,\"default\":\"12\"},\"container\":{\"class\":\"\"},\"border\":{\"type\":\"\",\"width\":\"\",\"color\":\"\",\"radius\":\"\",\"style\":\"\"},\"elementStyleProperties\":{\"styles\":{\"cellMargin\":[],\"cellPadding\":[]}},\"text\":{\"align\":\"\",\"color\":\"\"},\"inlineStyle\":\"\",\"class\":\"WrappedHeaderTable\",\"style\":\"      \\n         \",\"customClass\":\"WrappedHeaderTable\",\"selectedStyles\":\"Text wrap\",\"element\":\"flexDatatable\"}},\"customStyles\":\"\"}",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/BUCOnAccountPlan",
+    "sourceOrgUrl": "/0ko72000000071VAAQ"
+}

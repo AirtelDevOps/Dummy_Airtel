@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>商談が検証されている場合は [合格] または [失敗] の状況が表示され、検証がまだ実行されていない場合は [未実行] が表示されます。</help>
+    <label></label>
+    <name>vlocity_cmt__ValidationStatus__c</name>
+    <picklistValues>
+        <masterLabel>Failed</masterLabel>
+        <translation>失敗</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not yet run</masterLabel>
+        <translation>未実行</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passed</masterLabel>
+        <translation>合格</translation>
+    </picklistValues>
+</CustomFieldTranslation>

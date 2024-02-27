@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTLOM_ModifyOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ModifyOrderIP",
+    "OmniProcessElement": [
+        "ARTLOM_ModifyOrder_Element_DRGetRootItemAssetReferenceId.json",
+        "ARTLOM_ModifyOrder_Element_DRGetRootItemId.json",
+        "ARTLOM_ModifyOrder_Element_DRCreateAssetToOrderPayLoad.json",
+        "ARTLOM_ModifyOrder_Element_RA_AssetToOrder.json",
+        "ARTLOM_ModifyOrder_Element_DR_updateOrder.json",
+        "ARTLOM_ModifyOrder_Element_RA_UpdateOrderItemAttr.json",
+        "ARTLOM_ModifyOrder_Element_RA_CartValidation.json",
+        "ARTLOM_ModifyOrder_Element_RA_CartDecompose.json",
+        "ARTLOM_ModifyOrder_Element_IP_SubmitOrder.json",
+        "ARTLOM_ModifyOrder_Element_ResponseAction_ReturnCartId.json"
+    ],
+    "OmniProcessKey": "ARTLOM_ModifyOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTLOM_ModifyOrder_PropertySetConfig.json",
+    "SubType": "ModifyOrder",
+    "Type": "ARTLOM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTLOM/ModifyOrder/Procedure"
+}

@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_FetchBillingContacts_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_FetchBillingContacts",
+    "OmniProcessElement": [
+        "ARTL_FetchBillingContacts_Element_DRFetchBillingContacts.json",
+        "ARTL_FetchBillingContacts_Element_ResponseAction.json",
+        "ARTL_FetchBillingContacts_Element_ErrorResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_FetchBillingContacts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FetchBillingContacts_PropertySetConfig.json",
+    "SubType": "FetchBillingContacts",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FetchBillingContacts/Procedure"
+}

@@ -1,0 +1,270 @@
+<template>
+  <div class="slds-p-horizontal_small slds-is-relative b2b-cart-summary">
+      <div class="slds-grid slds-wrap slds-grid_pull-padded-small slds-grid_vertical-align-center">
+          <div
+              class="slds-p-around_small b2b-quote-details-wrapper slds-grid slds-size_12-of-12 slds-large-size_12-of-12">
+              <div class="slds-grid slds-size_4-of-12 slds-p-bottom_x-small">
+                  <div class="slds-m-right_small slds-m-top_xx-small" if:true={objTypeIsQuote}>
+                      <vlocity_cmt-icon theme="slds" icon-name="standard:quotes" size="medium"
+                          bg-color="rgb(59,167,85)" variant="inverse" extraclass="slds-icon_container">
+                      </vlocity_cmt-icon>
+                  </div>
+                  <div class="slds-m-right_small slds-m-top_xx-small" if:false={objTypeIsQuote}>
+                      <vlocity_cmt-icon theme="slds" icon-name="standard:orders" size="medium"
+                          bg-color="rgb(60,138,231)" variant="inverse" extraclass="slds-icon_container">
+                      </vlocity_cmt-icon>
+                  </div>
+                  <div class="slds-grid slds-grid_vertical">
+                      <h1 class="slds-text-color_weak slds-text-heading_small" if:true={objTypeIsQuote}>
+                          {labels.CMEXEnterpriseQuote}</h1>
+                      <h1 class="slds-text-color_weak slds-text-heading_small" if:false={objTypeIsQuote}>
+                          {labels.CMEXEnterpriseOrder}</h1>
+                      <div class="b2b-cart-summary-title">{selectedRecord.label}</div>
+                  </div>
+              </div>
+              <div class="slds-grid slds-size_8-of-12 slds-align-middle">
+                  <slot name="action">
+                      <div class="slds-size_12-of-12 slds-grid flex-align-right">
+                          <div >
+                            <vlocity_cmt-b2b-button
+                            class="slds-m-left_x-small btn-margin-bottom"
+                            theme="slds"
+                            variant="neutral"
+                            label="Quote Details"
+                            icon-size="x-small"
+                            onclick={quoteDetails}
+                            if:true={showQuoteDetails}
+                            data-additional-data={selectedRecord.label}
+                          > </vlocity_cmt-b2b-button>
+                            <lightning-button onclick={handleBulkQLIDownload} label="Bulk Download" title="Bulk Download" icon-name="utility:download" class="slds-m-left_x-small icon-btn"></lightning-button>
+                            <lightning-button onclick={handleBulkQLIUpload} label="Bulk Upload" title="Bulk Upload" icon-name="utility:upload" class="slds-m-left_x-small icon-btn"></lightning-button>
+                            <vlocity_cmt-b2b-button
+                              class="slds-m-left_x-small btn-margin-bottom"
+                              theme="slds"
+                              variant="neutral"
+                              label="Submit for Price Approval"
+                              icon-size="x-small"
+                              onclick={submitForPriceApproval}
+                              if:true={showSubmitForPriceApproval}
+                              data-additional-data={selectedRecord.label}
+                            >
+                            </vlocity_cmt-b2b-button>
+                            <vlocity_cmt-b2b-button
+                              class="slds-m-left_x-small  btn-margin-bottom"
+                              theme="slds"
+                              variant="neutral"
+                              label="Submit for OV Approval"
+                              icon-size="x-small"
+                              onclick={submitForOVApproval}
+                              if:true={showSubmitForOVApproval}
+                              data-additional-data={selectedRecord.label}
+                            >
+                            </vlocity_cmt-b2b-button>
+                           
+                            <vlocity_cmt-b2b-button
+                              class="slds-m-left_x-small btn-margin-bottom"
+                              theme="slds"
+                              variant="neutral"
+                              label="Lat-Long Validation"
+                              icon-size="x-small"
+                              onclick={verifyAddress}
+                              if:true={showVerifyAddress}
+                              data-additional-data={selectedRecord.label}
+                            >
+                            </vlocity_cmt-b2b-button>
+                            <vlocity_cmt-b2b-button
+                                class="slds-m-left_x-small btn-margin-bottom"
+                                theme="slds"
+                                variant="neutral"
+                                label="Address Correction"
+                                icon-size="x-small"
+                                onclick={addressCorrection}
+                                if:true={showAddressCorrection}
+                                data-additional-data={selectedRecord.label}
+                              >
+                              </vlocity_cmt-b2b-button>
+                              <vlocity_cmt-b2b-button
+                                class="slds-m-left_x-small btn-margin-bottom"
+                                theme="slds"
+                                variant="neutral"
+                                label="Check Feasibility"
+                                icon-size="x-small"
+                                onclick={checkFeasibility}
+                                if:true={showCheckFeasibility}
+                                data-additional-data={selectedRecord.label}
+                              >
+                              </vlocity_cmt-b2b-button>
+                              <vlocity_cmt-b2b-button
+                                class="slds-m-left_x-small btn-margin-bottom"
+                                theme="slds"
+                                variant="neutral"
+                                label={fetchItemCodeText}
+                                icon-size="x-small"
+                                onclick={getAttDetails}
+                                data-additional-data={selectedRecord.label}
+                                >
+                              </vlocity_cmt-b2b-button>
+                              <vlocity_cmt-b2b-button 
+                                if:true={showAddProductBtn}
+                                theme="slds" 
+                                variant="neutral" 
+                                label={labels.CMEXAddProducts}
+                                icon-name="utility:add" 
+                                icon-size="x-small" 
+                                onclick={addProduct} 
+                                class="icon-btn slds-m-left_x-small">
+                              </vlocity_cmt-b2b-button>
+                              <vlocity_cmt-b2b-button 
+                                if:false={showAddProductBtn}
+                                theme="slds" 
+                                variant="neutral" 
+                                label={labels.CMEXAddProducts}
+                                icon-name="utility:add" 
+                                icon-size="x-small" 
+                                onclick={addProduct} 
+                                disabled
+                                class="icon-btn slds-m-left_x-small disable">
+                              </vlocity_cmt-b2b-button>
+                          </div> 
+                          <div class="slds-m-left_none">
+                            <div class="b2b-cart-summary-icon-cell_wrapper">
+                                <vlocity_cmt-menu theme="slds" icon-name="utility:down" position="right"
+                                    class="slds-m-left_x-small" label="Show more actions" icon-only=true>
+
+                                    <template for:each={actionList} for:item="item">
+                                        <vlocity_cmt-menu-item theme="slds" name={item.label} key={item.label}
+                                            record={item} data-method={item.method}
+                                            onclick={executeAction}></vlocity_cmt-menu-item>
+                                    </template>
+                                </vlocity_cmt-menu>
+                            </div>
+                        </div>
+                      </div>
+                  </slot>
+              </div>
+          </div>
+          <div
+              class="slds-p-horizontal_small slds-size_12-of-12 slds-large-size_12-of-12 b2b-cart-summary-information">
+              <div class="slds-grid slds-p-vertical_small slds-m-left_x-small" if:true={cartData}>
+                  <div class="slds-size_1-of-12 slds-p-horizontal_small">
+                      <div class="slds-text-color_weak">{labels.CMEXOneTimeTotal}</div>
+                      <div class="b2b-cart-price-text slds-p-top--xx-small">{oneTimeTotalEsm}</div>
+                  </div>
+                  <div class="slds-size_1-of-12 slds-p-horizontal_small">
+                      <div class="slds-text-color_weak">{label.ArcTotal}</div>
+                      <div class="b2b-cart-price-text slds-p-top--xx-small">{annualRecurringTotal}</div>
+                  </div>
+                  <div class="slds-size_1-of-12 slds-p-horizontal_small">
+                      <div class="slds-text-color_weak">{labels.CMEXMonthlyTotal}</div>
+                      <div class="b2b-cart-price-text slds-p-top--xx-small">{monthlyTotalEsm}</div>
+                  </div>
+                  <div class="slds-size_1-of-12 slds-p-horizontal_small">
+                      <div class="slds-text-color_weak">{cartData.ObjectType} {labels.CMEXTotal}</div>
+                      <div class="b2b-cart-price-text slds-p-top--xx-small">{effectiveQuoteTotal}</div>
+                  </div>
+                  <slot name="b2bHeaderPricingSection"></slot>
+              </div>
+              <div class="slds-spinner_container slds-is-relative" if:false={cartData}>
+                  <lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand">
+                  </lightning-spinner>
+              </div>
+          </div>
+          <div class="slds-p-around_x-small slds-show_large slds-large-size_2-of-12"></div>
+      </div>
+  </div>
+  <div class="b2b-cart-summary-tabs slds-size_12-of-12">
+      <slot name="tabs">
+          <vlocity_cmt-tabset id="quoteTab" if:true={tabRender} theme="slds" active-tab-value={activeTab}
+              class="b2b-tabs_default" ontabchange={handleTabChange}>
+              <vlocity_cmt-tab tab-id="Product" label={sumLabel}></vlocity_cmt-tab>
+              <template if:true={showAddProductBtn}>
+                <vlocity_cmt-tab 
+                tab-id="Location"  
+                label={locLabel}>
+                </vlocity_cmt-tab>
+              </template>
+              <vlocity_cmt-tab tab-id="Subscriber" label={subLabel}></vlocity_cmt-tab>
+          </vlocity_cmt-tabset>
+      </slot>
+  </div>
+  <div class="slds-spinner_container" if:true={loading}>
+      <lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+  </div>
+  <vlocity_cmt-b2b-apply-discount-modal cart-id={cartId}
+      onapplieddiscount={handleDiscount}></vlocity_cmt-b2b-apply-discount-modal>
+  <vlocity_cmt-b2b-clone-quote-modal class="via-nds"></vlocity_cmt-b2b-clone-quote-modal>
+  <template if:true={modalopen}>
+      <!-- Modal/Popup Box LWC starts here -->
+      <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+          aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+          <div class="slds-modal__container">
+              <!-- Modal/Popup Box LWC header here -->
+              <header class="slds-modal__header">
+                  <vlocity_cmt-button label="Close" onclick={closeModal}
+                      extraclass="slds-p-horizontal_x-large slds-p-vertical_xxx-small" variant="neutral"
+                      class="slds-float_right"></vlocity_cmt-button>
+
+                  <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                      {labels.CMEXServiceabilityCheck}</h2>
+              </header>
+              <!-- Modal/Popup Box LWC body starts here -->
+              <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                  <!-- <c-call-serviceability prefill={_prefill} ></c-call-serviceability> -->
+              </div>
+              <!-- Modal/Popup Box LWC footer starts here -->
+          </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+  <!-- <vlocity_cmt-b2b-cart-summary name-list={nList}>
+      <div slot="action">
+          <div class="nds-grid nds-grid_vertical-align-center nds-grid_align-end">
+              <div class="nds-large-order_1 nds-grid nds-grid_align-center nds-wrap">
+                  <div class="nds-m-left_medium">
+                      <vlocity_cmt-b2b-button theme="nds" variant="neutral" label={labels.CMEXAddProducts}
+                          icon-name="utility:add" icon-size="x-small" onclick={addProduct}>
+                      </vlocity_cmt-b2b-button>
+                  </div>
+                  <div class="nds-m-left_medium">
+                      <vlocity_cmt-b2b-button theme="nds" variant="neutral" label={labels.CMEXCreateOrders}
+                          icon-size="x-small" onclick={createOrder}>
+                      </vlocity_cmt-b2b-button>
+                  </div>
+              </div>
+              <div class="nds-large-order_2 nds-b2b-m-left_medium">
+                  <vlocity_cmt-menu theme="nds" icon-name="utility:threedots_vertical" position="right">
+                      <template for:each={actionList} for:item="item">
+                          <vlocity_cmt-menu-item theme="nds" name={item.label} key={item.label} record={item}
+                              data-method={item.method} onclick={executeAction}></vlocity_cmt-menu-item>
+                      </template>
+                  </vlocity_cmt-menu>
+              </div>
+          </div>
+      </div>
+  </vlocity_cmt-b2b-cart-summary> -->
+
+
+  <template if:true={isGstTagging}>
+      <c-gst-tagging-modal onclosemodalpopup={closemodal} record-id={recordId}></c-gst-tagging-modal>
+  </template>
+  <template if:true={isBaSaCreation}>
+      <c-ba-sa-creation onclosemodalpopup={closemodal} record-id={recordId}></c-ba-sa-creation>
+  </template>
+  <template if:true={isAddressCorrection}>
+      <c-artl-address-correction-cmp onclosemodalpopup={closemodal}
+          record-id={recordId}></c-artl-address-correction-cmp>
+  </template>
+  <template if:true={iscreateBCPDCP}>
+      <c-artl_-create-d-c-p-container record-id={recordId} is-modal-open=true onresetvar={closemodal}></c-artl_-create-d-c-p-container>
+  </template>
+  <template if:false={isDocUpload}>
+    <!--commented by sagar to deploy this to QA/POC-->
+     <c-artl_-bulk-data-upload-comp is-modal-open={modalValue}   onclosemodal={closedUploadModal}></c-artl_-bulk-data-upload-comp>  
+     <!--<c-artl_-bulk-data-upload-comp></c-artl_-bulk-data-upload-comp>-->
+  </template>
+  <!-- <c-a-r-t-l_-invoke-submit-for-price-approval record-id={recordId}></c-a-r-t-l_-invoke-submit-for-price-approval>
+
+  <template if:true={isInvokeSubmitForPriceApproval}>
+      <c-artl_-submit-for-approval record-id={recordId}></c-artl_-submit-for-approval>
+  </template> -->
+</template>

@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_StatusSync_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_StatusSync",
+    "OmniProcessElement": [
+        "ARTL_StatusSync_Element_RAFetchSObjectDetails.json",
+        "ARTL_StatusSync_Element_DataRaptorPostAction3.json",
+        "ARTL_StatusSync_Element_DataRaptorPostAction2.json",
+        "ARTL_StatusSync_Element_RAErrorLog.json",
+        "ARTL_StatusSync_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_StatusSync",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_StatusSync_PropertySetConfig.json",
+    "SubType": "StatusSync",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/StatusSync/Procedure"
+}

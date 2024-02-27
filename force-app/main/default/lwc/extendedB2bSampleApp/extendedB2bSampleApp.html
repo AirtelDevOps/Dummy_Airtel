@@ -1,0 +1,50 @@
+<template>
+  <div class="via-nds-none nds-is-relative-none" if:true={initApp}>
+
+    <div if:true={msgInfoArr.length} class="b2b-toast-message-wrapper">
+      <template for:each={msgInfoArr} for:item="msg">
+        <vlocity_cmt-toast data-id={msg.id} key={msg.id} title={msg.title} theme="slds" styletype={msg.type}
+          message={msg.message} duration={msg.duration}></vlocity_cmt-toast>
+      </template>
+    </div>
+    <!-- <c-b2b-extended-sdk></c-b2b-extended-sdk> -->
+    <c-extended-b2b-cart-summary name-list={nList}></c-extended-b2b-cart-summary>
+    <template if:true={route.memberUpload.active}>
+      <c-cb2b-data-table-wrapper></c-cb2b-data-table-wrapper>
+      <!--<vlocity_cmt-b2b-data-table-wrapper>
+        <div slot="quoteSummarySlot">
+          <p></p>
+          <c-cb2b-quote-summary quote-id={_masterQuote1}></c-cb2b-quote-summary>
+        </div>
+      </vlocity_cmt-b2b-data-table-wrapper>-->
+    </template>
+    <template if:true={route.selectOffer.active}>
+      <c-cb2b-offer-selection></c-cb2b-offer-selection>
+    </template>
+    <!--Suresh-->
+    <template if:true={route.configureOffer.active}>
+      <c-extended-b2b-offer-config></c-extended-b2b-offer-config> 
+      <!-- <vlocity_cmt-b2b-offer-config></vlocity_cmt-b2b-offer-config> -->
+    </template>
+    <!--<template if:true={route.configureOffer.active}>
+      <c-cb2b-offer-config></c-cb2b-offer-config>
+    </template>-->
+    <template if:true={route.quoteSummary.active}>
+     
+      <vlocity_cmt-b2b-quote-summary></vlocity_cmt-b2b-quote-summary>
+    </template>
+    <div class="slds-spinner_container nds-spinner-main-page" if:true={showLoader}>
+      <lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+      <div class="nds-spinner-large-brand-text" if:true={bulkDeleteMembersInProgress}>
+        <div>{labels.CMEXBulkDeleteMembersInProgress}</div>
+        <div>{labels.CMEXAsyncJobNotifyLaterForBulkDeleteMembers}</div>
+      </div>
+      <div class="nds-spinner-large-brand-text" if:true={quoteCloningInProgress}>
+        <div>{labels.CMEXQuoteCloningInProgress}</div>
+        <div>{labels.CMEXAsyncJobNotifyLaterForQuoteCloning}</div>
+      </div>
+    </div>
+  </div>
+
+  <slot name="customView"></slot>
+</template>

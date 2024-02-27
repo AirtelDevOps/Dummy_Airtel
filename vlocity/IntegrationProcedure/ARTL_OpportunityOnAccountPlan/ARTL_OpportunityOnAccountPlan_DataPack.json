@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_OpportunityOnAccountPlan_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "OpportunityOnAccountPlan",
+    "OmniProcessElement": [
+        "ARTL_OpportunityOnAccountPlan_Element_ARTL_DRE_OpportunityOnAccountPlan.json",
+        "ARTL_OpportunityOnAccountPlan_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_OpportunityOnAccountPlan",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_OpportunityOnAccountPlan_PropertySetConfig.json",
+    "SubType": "OpportunityOnAccountPlan",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/OpportunityOnAccountPlan/Procedure"
+}

@@ -1,0 +1,56 @@
+<template>
+    <lightning-layout multiple-rows="true">
+        <lightning-layout-item size="12" class="slds-p-horizontal_xx-small">
+            <div class="slds-text-heading_medium">Address Details</div>
+            <div class="line-separator slds-border_top slds-m-bottom_small slds-m-top_x-small">
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-p-horizontal_xx-small">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <lightning-input label="Pincode - City" type="search" onchange={search} value={selectedValue}
+                        required>
+                    </lightning-input>
+                    <template if:true={showPicklistOptions}>
+                        <div if:true={searchResults} class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+                            role="listbox">
+                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                <template for:each={searchResults} for:item="searchResult">
+                                    <li key={searchResult.value} data-value={searchResult.value} role="presentation"
+                                        onclick={selectSearchResult} class="slds-listbox__item">
+                                        <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small "
+                                            role="option">
+                                            <span class="slds-media__body">
+                                                <span class="slds-truncate" title={searchResult.label}>
+                                                    {searchResult.label}
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-p-horizontal_xx-small">
+            <lightning-input type="text" name="street" label="Street" value={streetValue} onchange={handleChange}
+                required></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-p-horizontal_xx-small">
+            <lightning-input type="text" name="city" label="City" value={cityValue} disabled></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-p-horizontal_xx-small">
+            <lightning-input type="text" name="state" label="State" value={stateValue} disabled></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-p-horizontal_xx-small">
+            <lightning-input type="text" name="country" label="Country" value={countryValue} disabled></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-p-horizontal_xx-small">
+            <lightning-input type="text" name="pincode" label="Pincode" value={pincodeValue} disabled></lightning-input>
+        </lightning-layout-item>
+    </lightning-layout>
+
+</template>

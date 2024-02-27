@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Customer As Number</label>
+    <protected>false</protected>
+    <values>
+        <field>AttributeCode__c</field>
+        <value xsi:type="xsd:string">ATT_CUSTOMER_AS_NUMBER_BGPHYD</value>
+    </values>
+    <values>
+        <field>Attribute_JSON__c</field>
+        <value xsi:type="xsd:string">{&quot;isRequired&quot;:true,&quot;regex&quot;:&quot;&quot;,&quot;isDependentValue&quot;:true,&quot;dependentAttribtue&quot;:&quot;ATT_ROUTING_TYPE&quot;,&quot;value&quot;:{&quot;Static with Private BGP&quot;:{&quot;type&quot;:&quot;number&quot;,&quot;operator&quot;:&quot;Range&quot;,&quot;value&quot;:[&quot;64512-65535&quot;],&quot;error&quot;:&quot;Value should be between 64512-65535&quot;},&quot;Private BGP&quot;:{&quot;type&quot;:&quot;number&quot;,&quot;operator&quot;:&quot;Range&quot;,&quot;value&quot;:[&quot;64512-65535&quot;],&quot;error&quot;:&quot;Value should be between 64512-65535&quot;},&quot;Public BGP&quot;:{&quot;type&quot;:&quot;number&quot;,&quot;operator&quot;:&quot;Range&quot;,&quot;value&quot;:[&quot;1-64511&quot;],&quot;error&quot;:&quot;Value should be between 1-64511&quot;},&quot;Static with Public BGP&quot;:{&quot;type&quot;:&quot;number&quot;,&quot;operator&quot;:&quot;Range&quot;,&quot;value&quot;:[&quot;1-64511&quot;],&quot;error&quot;:&quot;Value should be between 1-64511&quot;}}}</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem</value>
+    </values>
+</CustomMetadata>

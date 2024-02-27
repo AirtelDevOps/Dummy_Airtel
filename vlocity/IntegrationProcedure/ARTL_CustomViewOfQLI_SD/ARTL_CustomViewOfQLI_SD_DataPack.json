@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CustomViewOfQLI_SD_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CustomViewOfQLI_SD",
+    "OmniProcessElement": [
+        "ARTL_CustomViewOfQLI_SD_Element_SDQLI.json",
+        "ARTL_CustomViewOfQLI_SD_Element_SDQLISV.json",
+        "ARTL_CustomViewOfQLI_SD_Element_ResponseQLIByQuoteMember.json"
+    ],
+    "OmniProcessKey": "ARTL_CustomViewOfQLI_SD",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CustomViewOfQLI_SD_PropertySetConfig.json",
+    "SubType": "CustomViewOfQLI_SD",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CustomViewOfQLI_SD/Procedure",
+    "WebComponentKey": "4f3d5204-0c05-24f1-091b-228f3c9dba24",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001XpxEAE"
+}

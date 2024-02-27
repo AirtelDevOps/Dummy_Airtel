@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_DesignationValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(REGEX( ARTL_Designation__c ,&quot;[a-zA-Z0-9 \\-.&amp;/,()&apos;]*&quot;))</errorConditionFormula>
+    <errorDisplayField>ARTL_Designation__c</errorDisplayField>
+    <errorMessage>Designation should not contain any Special Characters except ./&apos;</errorMessage>
+</ValidationRule>

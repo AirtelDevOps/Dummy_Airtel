@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_Email_in_Additional_Attendees</fullName>
+    <active>true</active>
+    <description>This is to verify that valid email ID is mentioned in the External Contacts field</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(External_Contacts__c)),(AND( NOT(REGEX( External_Contacts__c , &quot;^(([A-Za-z0-9._-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}),)*([A-Za-z0-9._-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,})$&quot;)), OR( ISBLANK( External_Contacts__c ), NOT(REGEX( External_Contacts__c , &quot;^(([A-Za-z0-9._-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}),)*([A-Za-z0-9._-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,})$&quot;)) ) )))</errorConditionFormula>
+    <errorDisplayField>External_Contacts__c</errorDisplayField>
+    <errorMessage>Enter Valid Email IDs. Also, ensure one comma between every two valid Email Ids</errorMessage>
+</ValidationRule>

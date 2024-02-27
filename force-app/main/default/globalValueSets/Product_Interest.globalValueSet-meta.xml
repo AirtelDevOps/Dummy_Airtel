@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>95th Percentile Internet</fullName>
+        <default>false</default>
+        <label>95th Percentile Internet</label>
+    </customValue>
+    <customValue>
+        <fullName>95th Percentile MPLS</fullName>
+        <default>false</default>
+        <label>95th Percentile MPLS</label>
+    </customValue>
+    <customValue>
+        <fullName>Fixed Line (FL) - PRI/Centrex</fullName>
+        <default>false</default>
+        <label>Fixed Line (FL) - PRI/Centrex</label>
+    </customValue>
+    <customValue>
+        <fullName>AirtelIQ</fullName>
+        <default>false</default>
+        <label>AirtelIQ</label>
+    </customValue>
+    <customValue>
+        <fullName>Airtel Payment Bank</fullName>
+        <default>false</default>
+        <label>Airtel Payment Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Always on MPLS</fullName>
+        <default>false</default>
+        <label>Always on MPLS</label>
+    </customValue>
+    <customValue>
+        <fullName>AOI-Platinum</fullName>
+        <default>false</default>
+        <label>AOI-Platinum</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Security (WAF)</fullName>
+        <default>false</default>
+        <label>Application Security (WAF)</label>
+    </customValue>
+    <customValue>
+        <fullName>Audio Conference Service</fullName>
+        <default>false</default>
+        <label>Audio Conference Service</label>
+    </customValue>
+    <customValue>
+        <fullName>AWS DIRECT CONNECT</fullName>
+        <default>false</default>
+        <label>AWS DIRECT CONNECT</label>
+    </customValue>
+    <customValue>
+        <fullName>Fixed Line (FL) - Toll Free</fullName>
+        <default>false</default>
+        <label>Fixed Line (FL) - Toll Free</label>
+    </customValue>
+    <customValue>
+        <fullName>Fixed Line (FL) - DSL</fullName>
+        <default>false</default>
+        <label>Fixed Line (FL) - DSL</label>
+    </customValue>
+    <customValue>
+        <fullName>CDS</fullName>
+        <default>false</default>
+        <label>CDS</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - Airtel Private Cloud</fullName>
+        <default>false</default>
+        <label>Cloud - Airtel Private Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - Airtel Public Cloud</fullName>
+        <default>false</default>
+        <label>Cloud - Airtel Public Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - AWS</fullName>
+        <default>false</default>
+        <label>Cloud - AWS</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - Azure</fullName>
+        <default>false</default>
+        <label>Cloud - Azure</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - CDN</fullName>
+        <default>false</default>
+        <label>Cloud - CDN</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - Connect</fullName>
+        <default>false</default>
+        <label>Cloud - Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - DCMS</fullName>
+        <default>false</default>
+        <label>Cloud - DCMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - Edge</fullName>
+        <default>false</default>
+        <label>Cloud - Edge</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - GCP</fullName>
+        <default>false</default>
+        <label>Cloud - GCP</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - OEM</fullName>
+        <default>false</default>
+        <label>Cloud - OEM</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - Oracle</fullName>
+        <default>false</default>
+        <label>Cloud - Oracle</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - Sovereign cloud</fullName>
+        <default>false</default>
+        <label>Cloud - Sovereign cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud - Vultr</fullName>
+        <default>false</default>
+        <label>Cloud - Vultr</label>
+    </customValue>
+    <customValue>
+        <fullName>Colocation - DCMS</fullName>
+        <default>false</default>
+        <label>Colocation - DCMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Internet</fullName>
+        <default>false</default>
+        <label>Corporate Internet</label>
+    </customValue>
+    <customValue>
+        <fullName>Cyber Security</fullName>
+        <default>false</default>
+        <label>Cyber Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Cyber Security - Appliance</fullName>
+        <default>false</default>
+        <label>Cyber Security - Appliance</label>
+    </customValue>
+    <customValue>
+        <fullName>Cyber Security - License</fullName>
+        <default>false</default>
+        <label>Cyber Security - License</label>
+    </customValue>
+    <customValue>
+        <fullName>Cyber Security - On Field Support</fullName>
+        <default>false</default>
+        <label>Cyber Security - On Field Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Cyber Security- SOC</fullName>
+        <default>false</default>
+        <label>Cyber Security- SOC</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile COIP</fullName>
+        <default>false</default>
+        <label>Mobile COIP</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Centre</fullName>
+        <default>false</default>
+        <label>Data Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>Dedicated Internet</fullName>
+        <default>false</default>
+        <label>Dedicated Internet</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Ads</fullName>
+        <default>false</default>
+        <label>Digital Ads</label>
+    </customValue>
+    <customValue>
+        <fullName>DSL</fullName>
+        <default>false</default>
+        <label>DSL</label>
+    </customValue>
+    <customValue>
+        <fullName>DTFS Service</fullName>
+        <default>false</default>
+        <label>DTFS Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile COCP</fullName>
+        <default>false</default>
+        <label>Mobile COCP</label>
+    </customValue>
+    <customValue>
+        <fullName>FL - VAS</fullName>
+        <default>false</default>
+        <label>FL - VAS</label>
+    </customValue>
+    <customValue>
+        <fullName>HCC</fullName>
+        <default>false</default>
+        <label>HCC</label>
+    </customValue>
+    <customValue>
+        <fullName>Hubbing</fullName>
+        <default>false</default>
+        <label>Hubbing</label>
+    </customValue>
+    <customValue>
+        <fullName>iMPLS</fullName>
+        <default>false</default>
+        <label>iMPLS</label>
+    </customValue>
+    <customValue>
+        <fullName>Internet</fullName>
+        <default>false</default>
+        <label>Internet</label>
+    </customValue>
+    <customValue>
+        <fullName>Internet-BOD</fullName>
+        <default>false</default>
+        <label>Internet-BOD</label>
+    </customValue>
+    <customValue>
+        <fullName>IPLC</fullName>
+        <default>false</default>
+        <label>IPLC</label>
+    </customValue>
+    <customValue>
+        <fullName>IPLC-BOD</fullName>
+        <default>false</default>
+        <label>IPLC-BOD</label>
+    </customValue>
+    <customValue>
+        <fullName>IP Transit</fullName>
+        <default>false</default>
+        <label>IP Transit</label>
+    </customValue>
+    <customValue>
+        <fullName>ISDN BRI</fullName>
+        <default>false</default>
+        <label>ISDN BRI</label>
+    </customValue>
+    <customValue>
+        <fullName>ISDN PRI</fullName>
+        <default>false</default>
+        <label>ISDN PRI</label>
+    </customValue>
+    <customValue>
+        <fullName>LocalLoop</fullName>
+        <default>false</default>
+        <label>LocalLoop</label>
+    </customValue>
+    <customValue>
+        <fullName>Local Loop-BOD</fullName>
+        <default>false</default>
+        <label>Local Loop-BOD</label>
+    </customValue>
+    <customValue>
+        <fullName>Managed Fiber</fullName>
+        <default>false</default>
+        <label>Managed Fiber</label>
+    </customValue>
+    <customValue>
+        <fullName>Managed services - DCMS</fullName>
+        <default>false</default>
+        <label>Managed services - DCMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Managed WAN</fullName>
+        <default>false</default>
+        <label>Managed WAN</label>
+    </customValue>
+    <customValue>
+        <fullName>Managed Wifi</fullName>
+        <default>false</default>
+        <label>Managed Wifi</label>
+    </customValue>
+    <customValue>
+        <fullName>Message Hub</fullName>
+        <default>false</default>
+        <label>Message Hub</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility Voice</fullName>
+        <default>false</default>
+        <label>Mobility Voice</label>
+    </customValue>
+    <customValue>
+        <fullName>MO-VAS</fullName>
+        <default>false</default>
+        <label>MO-VAS</label>
+    </customValue>
+    <customValue>
+        <fullName>MOVAS - Digi MATE</fullName>
+        <default>false</default>
+        <label>MOVAS - Digi MATE</label>
+    </customValue>
+    <customValue>
+        <fullName>MOVAS - IOT</fullName>
+        <default>false</default>
+        <label>MOVAS - IOT</label>
+    </customValue>
+    <customValue>
+        <fullName>MOVAS - M2M</fullName>
+        <default>false</default>
+        <label>MOVAS - M2M</label>
+    </customValue>
+    <customValue>
+        <fullName>MOVAS - Managed Mobility</fullName>
+        <default>false</default>
+        <label>MOVAS - Managed Mobility</label>
+    </customValue>
+    <customValue>
+        <fullName>MOVAS - Message MATE</fullName>
+        <default>false</default>
+        <label>MOVAS - Message MATE</label>
+    </customValue>
+    <customValue>
+        <fullName>MOVAS - Trace MATE</fullName>
+        <default>false</default>
+        <label>MOVAS - Trace MATE</label>
+    </customValue>
+    <customValue>
+        <fullName>MPLS</fullName>
+        <default>false</default>
+        <label>MPLS</label>
+    </customValue>
+    <customValue>
+        <fullName>MPLS-BOD</fullName>
+        <default>false</default>
+        <label>MPLS-BOD</label>
+    </customValue>
+    <customValue>
+        <fullName>MPLS-NMS</fullName>
+        <default>false</default>
+        <label>MPLS-NMS</label>
+    </customValue>
+    <customValue>
+        <fullName>MPLS Over 4G</fullName>
+        <default>false</default>
+        <label>MPLS Over 4G</label>
+    </customValue>
+    <customValue>
+        <fullName>MS Teams OC - Fixedline</fullName>
+        <default>false</default>
+        <label>MS Teams OC - Fixedline</label>
+    </customValue>
+    <customValue>
+        <fullName>MS Teams OC - Mobile</fullName>
+        <default>false</default>
+        <label>MS Teams OC - Mobile</label>
+    </customValue>
+    <customValue>
+        <fullName>NIPS</fullName>
+        <default>false</default>
+        <label>NIPS</label>
+    </customValue>
+    <customValue>
+        <fullName>NLD</fullName>
+        <default>false</default>
+        <label>NLD</label>
+    </customValue>
+    <customValue>
+        <fullName>NLD-BOD</fullName>
+        <default>false</default>
+        <label>NLD-BOD</label>
+    </customValue>
+    <customValue>
+        <fullName>OBD</fullName>
+        <default>false</default>
+        <label>OBD</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Networks 4G/5G</fullName>
+        <default>false</default>
+        <label>Private Networks 4G/5G</label>
+    </customValue>
+    <customValue>
+        <fullName>SaaS</fullName>
+        <default>false</default>
+        <label>SaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>Satellite IPLC</fullName>
+        <default>false</default>
+        <label>Satellite IPLC</label>
+    </customValue>
+    <customValue>
+        <fullName>SD-WAN</fullName>
+        <default>false</default>
+        <label>SD-WAN</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Access</fullName>
+        <default>false</default>
+        <label>Secure Access</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Devices</fullName>
+        <default>false</default>
+        <label>Secure Devices</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure eMail</fullName>
+        <default>false</default>
+        <label>Secure eMail</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Information</fullName>
+        <default>false</default>
+        <label>Secure Information</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Intelligence Centre</fullName>
+        <default>false</default>
+        <label>Secure Intelligence Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Internet</fullName>
+        <default>false</default>
+        <label>Secure Internet</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Internet-DDoS Advance</fullName>
+        <default>false</default>
+        <label>Secure Internet-DDoS Advance</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Internet-DDoS Premium</fullName>
+        <default>false</default>
+        <label>Secure Internet-DDoS Premium</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Internet Premium</fullName>
+        <default>false</default>
+        <label>Secure Internet Premium</label>
+    </customValue>
+    <customValue>
+        <fullName>SIP</fullName>
+        <default>false</default>
+        <label>SIP</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>SMS</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS Hub</fullName>
+        <default>false</default>
+        <label>SMS Hub</label>
+    </customValue>
+    <customValue>
+        <fullName>Teleport</fullName>
+        <default>false</default>
+        <label>Teleport</label>
+    </customValue>
+    <customValue>
+        <fullName>UTMaaS</fullName>
+        <default>false</default>
+        <label>UTMaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>UTM as a service Advance</fullName>
+        <default>false</default>
+        <label>UTM as a service Advance</label>
+    </customValue>
+    <customValue>
+        <fullName>UTM as a service Premium</fullName>
+        <default>false</default>
+        <label>UTM as a service Premium</label>
+    </customValue>
+    <customValue>
+        <fullName>VAPT</fullName>
+        <default>false</default>
+        <label>VAPT</label>
+    </customValue>
+    <customValue>
+        <fullName>VeriSign Identity Protection</fullName>
+        <default>false</default>
+        <label>VeriSign Identity Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Compute Services</fullName>
+        <default>false</default>
+        <label>Virtual Compute Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Voice</fullName>
+        <default>false</default>
+        <label>Voice</label>
+    </customValue>
+    <customValue>
+        <fullName>VSAT</fullName>
+        <default>false</default>
+        <label>VSAT</label>
+    </customValue>
+    <customValue>
+        <fullName>WFH - Airtel Collaboration Services</fullName>
+        <default>false</default>
+        <label>WFH - Airtel Collaboration Services</label>
+    </customValue>
+    <customValue>
+        <fullName>WFH - Airtel Corporate Broadband</fullName>
+        <default>false</default>
+        <label>WFH - Airtel Corporate Broadband</label>
+    </customValue>
+    <customValue>
+        <fullName>WFH - Corporate Mi-Fi</fullName>
+        <default>false</default>
+        <label>WFH - Corporate Mi-Fi</label>
+    </customValue>
+    <customValue>
+        <fullName>WFH - MPLS over 4G</fullName>
+        <default>false</default>
+        <label>WFH - MPLS over 4G</label>
+    </customValue>
+    <customValue>
+        <fullName>WFH - Provider Provisioned VPN</fullName>
+        <default>false</default>
+        <label>WFH - Provider Provisioned VPN</label>
+    </customValue>
+    <customValue>
+        <fullName>Wholesale ITFS</fullName>
+        <default>false</default>
+        <label>Wholesale ITFS</label>
+    </customValue>
+    <customValue>
+        <fullName>Wholesale Voice</fullName>
+        <default>false</default>
+        <label>Wholesale Voice</label>
+    </customValue>
+    <customValue>
+        <fullName>ILD</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ILD</label>
+    </customValue>
+    <customValue>
+        <fullName>E-ILL/ILL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>E-ILL/ILL</label>
+    </customValue>
+    <customValue>
+        <fullName>EMPLS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EMPLS</label>
+    </customValue>
+    <masterLabel>Product Interest</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

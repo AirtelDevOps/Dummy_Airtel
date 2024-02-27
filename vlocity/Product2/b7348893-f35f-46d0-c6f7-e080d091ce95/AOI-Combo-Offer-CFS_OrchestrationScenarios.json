@@ -1,0 +1,52 @@
+[
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "f6d3d1d3-0889-0d37-1680-971f9df38fc2",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "HUMBRD Provisioning",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/HUMBRD Provisioning",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b7348893-f35f-46d0-c6f7-e080d091ce95",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/b7348893-f35f-46d0-c6f7-e080d091ce95",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "b7348893-f35f-46d0-c6f7-e080d091ce95",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "HUMBRD Provisioning",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/HUMBRD Provisioning/f6d3d1d3-0889-0d37-1680-971f9df38fc2/Product2/b7348893-f35f-46d0-c6f7-e080d091ce95"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify",
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "119c6064-1df6-5a9f-501e-512ee2a4e4d3",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "E2E Plan",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/E2E Plan",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b7348893-f35f-46d0-c6f7-e080d091ce95",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/b7348893-f35f-46d0-c6f7-e080d091ce95",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "b7348893-f35f-46d0-c6f7-e080d091ce95",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "AOI Combo Offer CFS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/AOI Combo Offer CFS/119c6064-1df6-5a9f-501e-512ee2a4e4d3/Product2/b7348893-f35f-46d0-c6f7-e080d091ce95"
+    }
+]

@@ -1,0 +1,381 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumberCustom1685",
+        "InputFieldName": "%vlocity_namespace%__BillingAccountId__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'$Vlocity.Null'",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumberCustom6358",
+        "InputFieldName": "ARTL_LSI__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "SearchKey",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber9315573350251252",
+        "InputFieldName": "ARTL_Purchase_Order__r.ARTL_PO_Number__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Asset:ARTL_Purchase_Order__c",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber1524990897984999",
+        "InputFieldName": "Id",
+        "InputObjectName": "ARTL_Purchase_Order__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PO",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber46464158812363854",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "searchQLIList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumberCustom1260",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber570044237139681",
+        "InputFieldName": "Asset:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber2503106041778771",
+        "InputFieldName": "Asset:ARTL_LSI__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:LSI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber691839173990904",
+        "InputFieldName": "PO:Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:POAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber9798361939250799",
+        "InputFieldName": "PO:Start_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:POExpiryDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber008081477631032508",
+        "InputFieldName": "PO:PO_Group__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:POId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber6718864091757424",
+        "InputFieldName": "PO:ARTL_PO_Number__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:PONumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber9178793751260375",
+        "InputFieldName": "PO:Start_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:POStartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber5198791990337412",
+        "InputFieldName": "PO:Tenure__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:POTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumberCustom7321",
+        "InputFieldName": "Asset:%vlocity_namespace%__ParentItemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:ParentItemId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber10579880582218926",
+        "InputFieldName": "Asset:Product2.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:Product",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumber7644289542389595",
+        "InputFieldName": "Asset:Product2Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:ProductId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_SearchAssetsForRenewalProcessForPONumberCustom3086",
+        "InputFieldName": "Asset:%vlocity_namespace%__RootItemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_SearchAssetsForRenewalProcessForPONumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "searchQLIList:RootItemId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

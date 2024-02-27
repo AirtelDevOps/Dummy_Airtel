@@ -1,0 +1,66 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Create_Task",
+    "OmniProcessId": {
+        "Name": "InboundHansenIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundHansenIntegration/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateTask",
+        "OmniProcessId": {
+            "Name": "InboundHansenIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundHansenIntegration/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundHansenIntegration/Procedure/CreateTask",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateTask",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+            "ExecutionLogId": "=%GetPayLoad:Execution_Log__c_1:Id%"
+        },
+        "additionalInput": {
+            "AltKey": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:AltKey%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:AltKey%)",
+            "B2BOutcome": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:B2BOutcome%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:B2BOutcome%)",
+            "OMTaskId": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:OMTaskId%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:OMTaskId%)",
+            "OrderId": "=%GetOrderDetails:OrderId%",
+            "PM": "=%GetOrderDetails:PM%",
+            "RecordTypeId": "=IF(%body:Message:B2B Action PM Workbench Thin BC:OMTaskId%=='T001' || %body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:OMTaskId%=='T001',%GetOrderDetails:RecordTypeId%,'')",
+            "TaskName": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:Task Name%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:Task Name%)",
+            "TaskType": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:TaskType%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:TaskType%)"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DR_LoadTask",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundHansenIntegration/Procedure/Create_Task"
+}

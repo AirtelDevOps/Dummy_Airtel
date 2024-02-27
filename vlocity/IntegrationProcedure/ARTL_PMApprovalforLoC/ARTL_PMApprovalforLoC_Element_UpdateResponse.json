@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateResponse",
+    "OmniProcessId": {
+        "Name": "PMApprovalforLoC",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/PMApprovalforLoC/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Req": "%DRFetchTaskPayloadForPMApprovalForLoc%",
+            "Resp": "%HTTPActionStatus%",
+            "taskId": "%Id%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTLUpdateRequest",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%HTTPActionStatus% == true || %HTTPActionStatus% == false",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/PMApprovalforLoC/Procedure/UpdateResponse"
+}

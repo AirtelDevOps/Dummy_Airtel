@@ -1,0 +1,33 @@
+<template>
+        <div class="slds-grid slds-align-items_center">
+                <span class="slds-text_bold">Show</span>
+
+                <lightning-combobox class="custom-combobox-style slds-size_x-small slds-slide-up-saving slds-m-horizontal_small"
+                        name="pageSize" value={comboBoxVal} options={pageSizeOptions} onchange={handlePageSizeChange}
+                        >
+                </lightning-combobox>
+
+                <span class="slds-text_muted slds-m-left_x-small">Entries</span>
+        </div>
+
+        <div class="slds-grid slds-align-items_center slds-avatar-group_large">
+                <lightning-button-icon icon-name="utility:chevronleft" alternative-text="Previous"
+                        onclick={handlePrevious} disabled={isPreviousDisabled}
+                        class="slds-button_icon slds-button_icon-small">
+                </lightning-button-icon>
+
+                <!-- <lightning-input class="slds-size_x-small" value={currentPage}
+            onchange={handlePageNumberChange} style="width: 30px;">{currentPage}</lightning-input>
+          <lightning-input class="slds-size_x-small" value={totalPageNumber} disabled style="width: 30px;"></lightning-input> -->
+
+                <lightning-button-icon icon-name="utility:chevronright" alternative-text="Next" onclick={handleNext}
+                        class="slds-button_icon slds-button_icon-small" disabled={isNextDisabled}>
+                </lightning-button-icon>
+        </div>
+
+        <div>
+                <lightning-datatable key-field="Id" data-id="qlitable" data={pagedData} columns={columns}
+                        max-row-selection="1" selected-rows={selectedRows} onrowselection={handleRowSelection}>
+                </lightning-datatable>
+        </div>
+</template>

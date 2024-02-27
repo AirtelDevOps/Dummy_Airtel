@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ATT_QOS_PnRT_MBPS_CFS</label>
+    <protected>false</protected>
+    <values>
+        <field>AttributeCode__c</field>
+        <value xsi:type="xsd:string">ATT_QOS_PnRT_MBPS_CFS</value>
+    </values>
+    <values>
+        <field>Attribute_JSON__c</field>
+        <value xsi:type="xsd:string">{&quot;isRequired&quot;:true,&quot;regex&quot;:&quot;&quot;,&quot;isDependentValue&quot;:true,&quot;dependentAttribtue&quot;:&quot;ATT_QOS_TYPE_CFS&quot;,&quot;value&quot;:{&quot;Single&quot;:{&quot;type&quot;:&quot;&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;0&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Value of QOS PnRT should be 0 when QOS Type is Single&quot;}}}</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem</value>
+    </values>
+</CustomMetadata>

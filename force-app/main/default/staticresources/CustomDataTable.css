@@ -1,0 +1,62 @@
+.picklist-container,
+.lookup-container{
+    width : 90%;
+    margin: -14px auto 4px;
+}
+
+.picklist-container .slds-dropdown,
+.lookup-container .slds-dropdown{
+    position: relative !important;
+    z-index: 99 !important;
+    max-height: 120px;
+    overflow: scroll;
+}
+
+[lightning-combobox_combobox-host]{
+    margin-bottom: 17px;
+}
+
+th.slds-has-focus, td.slds-has-focus{
+    box-shadow: none !important;
+}
+
+.slds-scope .slds-cell-fixed {
+    background-color: rgb(255, 242, 204);
+    border-top: solid 1px #ccc;
+}
+.slds-scope .slds-table th, .slds-scope .slds-table td  {
+    padding: 0 !important;
+}
+/* .slds-table_edit thead th:first-child{
+    width: 60px;
+} */
+.slds-table_header-fixed_container {
+    border: solid 1px #ccc;
+}
+
+.slds-scope .slds-truncate{
+    padding: 0 10px !important;
+}
+
+.page-size-label-align {
+    margin-top: 8px;
+}
+.pagination-container .slds-select,
+.pagination-container .slds-button_neutral {
+    border-color: #ccc;
+}
+.slds-rich-text-editor__output span{
+    display: inline-block;
+}
+.slds-listbox__item[data-value="Approved - No action required"] {
+    background-color: #62b876;
+    color: #000;
+
+}
+.slds-scope .slds-table_header-fixed tbody tr td {
+    height: 40px;
+}
+
+.slds-scope .slds-input-has-icon_right .slds-input {
+    width: 400px;
+}

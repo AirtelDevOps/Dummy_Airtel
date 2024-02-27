@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Document Download" class="slds-p-around_small card">
+        <template if:true={isLoading}>
+            <div class="slds-spinner_container slds-is-relative">
+                <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+            </div>
+        </template>
+        <lightning-layout>
+            <template if:true={hasDoc}>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Type</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={docList} for:item="doc">
+                            <tr key={doc.Id}>
+                                <td class="slds-cell-wrap">{doc.Document_Name__c}</td>
+                                <td class="slds-cell-wrap">{doc.Category__c}</td>
+                                <td class="slds-cell-wrap">{doc.Type__c}</td>
+                                <td>
+                                    <lightning-button data-id={doc.Id} variant="brand" label="Download"
+                                        onclick={handleDownload} disabled={isDisabled}>
+                                    </lightning-button>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </template>
+        </lightning-layout>
+    </lightning-card>
+</template>

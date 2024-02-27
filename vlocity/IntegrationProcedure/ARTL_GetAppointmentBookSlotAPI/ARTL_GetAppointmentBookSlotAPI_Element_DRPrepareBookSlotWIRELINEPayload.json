@@ -1,0 +1,92 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRPrepareBookSlotWIRELINEPayload",
+    "OmniProcessId": {
+        "Name": "GetAppointmentBookSlotAPI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/GetAppointmentBookSlotAPI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_PrepareBookSlotWireLinePayload",
+        "chainOnStep": false,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "orgProcessPath",
+                "inputParam": "orgProcessPath"
+            },
+            {
+                "element": "taskType",
+                "inputParam": "taskType"
+            },
+            {
+                "element": "customerSegment",
+                "inputParam": "customerSegment"
+            },
+            {
+                "element": "locationLat",
+                "inputParam": "locationLat"
+            },
+            {
+                "element": "locationLong",
+                "inputParam": "locationLong"
+            },
+            {
+                "element": "operatingBoundaryLabel",
+                "inputParam": "operatingBoundaryLabel"
+            },
+            {
+                "element": "circle",
+                "inputParam": "circle"
+            },
+            {
+                "element": "pincode",
+                "inputParam": "pincode"
+            },
+            {
+                "element": "startDate",
+                "inputParam": "startDate"
+            },
+            {
+                "element": "endDate",
+                "inputParam": "endDate"
+            },
+            {
+                "element": "media",
+                "inputParam": "media"
+            },
+            {
+                "element": "operatingBoundaryValue",
+                "inputParam": "operatingBoundaryValue"
+            }
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "taskType == \"WIRING\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "ignoreCache": false,
+        "label": "DataRaptorExtractAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Extract Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/GetAppointmentBookSlotAPI/Procedure/DRPrepareBookSlotWIRELINEPayload"
+}

@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_FetchMRR_SampleInput.json",
+    "Description": "Input to this IP:  %poRecordId% - consumerTransactionId %ouName% - operatingUnit %poNumber% - PONumber %orderId% - MasterOrderId",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FetchMRR",
+    "OmniProcessElement": [
+        "ARTL_FetchMRR_Element_RADebugLogger.json",
+        "ARTL_FetchMRR_Element_HTTPFetchMRR.json",
+        "ARTL_FetchMRR_Element_IPCreateIncident.json",
+        "ARTL_FetchMRR_Element_RAResponseLogger.json",
+        "ARTL_FetchMRR_Element_SVMockResponseSuccess.json",
+        "ARTL_FetchMRR_Element_SVSetSuccess.json",
+        "ARTL_FetchMRR_Element_DataRaptorPostAction2.json",
+        "ARTL_FetchMRR_Element_LoopBlock1.json",
+        "ARTL_FetchMRR_Element_DRUpdateMRRDetails.json",
+        "ARTL_FetchMRR_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_FetchMRR",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FetchMRR_PropertySetConfig.json",
+    "SubType": "FetchMRR",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FetchMRR/Procedure"
+}

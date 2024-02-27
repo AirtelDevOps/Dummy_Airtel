@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>BUC</label>
+    <protected>false</protected>
+    <values>
+        <field>CSVHeader__c</field>
+        <value xsi:type="xsd:string">{&quot;Account Name&quot;:&quot;Account Name&quot;,&quot;Fiscal_Year__c&quot;:&quot;Fiscal Year&quot;,&quot;Product Category&quot;:&quot;Product Category&quot;,&quot;Total_Competitor_Spends__c&quot;:&quot;Total Competitor Spend&quot;,&quot;Spends_with_Airtel__c&quot;:&quot;Spends with Airtel&quot;,&quot;Key_Competitor_and_Comments__c&quot;:&quot;Key Competitor&quot;,&quot;Account Plan&quot;:&quot;Account Plan&quot;,&quot;UpsertError&quot;:&quot;Error&quot;}</value>
+    </values>
+    <values>
+        <field>Field_Value__c</field>
+        <value xsi:type="xsd:string">Account Name:text,Fiscal_Year__c:text,Product Category:text,Total_Competitor_Spends__c:text,Spends_with_Airtel__c:text,Key_Competitor_and_Comments__c:text,Account Plan:text,UpsertError:text</value>
+    </values>
+    <values>
+        <field>Header_Value__c</field>
+        <value xsi:type="xsd:string">Account Name, Fiscal Year, Product Category, Total Competitor Spend, Spends with Airtel, Key Competitor,Account Plan, Error</value>
+    </values>
+    <values>
+        <field>Template_URL__c</field>
+        <value xsi:type="xsd:string">/resource/ARTL_BUC</value>
+    </values>
+</CustomMetadata>

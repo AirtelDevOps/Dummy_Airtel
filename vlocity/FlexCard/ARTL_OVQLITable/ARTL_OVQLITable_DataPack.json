@@ -1,0 +1,54 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 6,
+                    "name": "Parent.QuoteId",
+                    "val": "0Q0720000005FxhCAE"
+                },
+                {
+                    "id": 15,
+                    "name": "Parent.ProductCode",
+                    "val": "6c24fdd7-4f71-4806-b7eb-62837fe6571e"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "ARTL_OVQLITable": "true",
+                    "productCode": "{Parent.ProductCode}",
+                    "quoteId": "{Parent.QuoteId}"
+                },
+                "ipMethod": "ARTL_OVQLITable",
+                "jsonMap": "{\"Parent.QuoteId\":\"{Parent.QuoteId}\",\"Parent.ProductCode\":\"{Parent.ProductCode}\"}",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_OVQLITable",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_OVQLITable/BhartiAirtelLimited/30.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_OVQLITable.json",
+    "SampleDataSourceResponse": "[{\"POAmount\":\"\",\"POTenure\":\"\",\"POStartDate\":\"\",\"PONumber\":\"\",\"Site\":\"Mariner Square Loop Alameda\",\"Bandwidth\":\"1 Mbps\",\"LSI\":800030122339336,\"Id\":\"0QL720000005pt8GAA\",\"ProductName\":\"Primary MPLS Link\",\"OVRejectionReason\":\"Approve epcn / Finance approval mail missing\",\"OVStatus\":\"OVApproved\",\"PostalCode\":\"94501\",\"Country\":\"US\",\"City\":\"Alameda\",\"StreetAddress\":\"Mariner Square Loop\",\"LineNumber\":\"0003.0001\",\"OTC\":10000,\"ARC\":62200,\"Media\":\"Fiber Off-Net\",\"ServiceType\":\"Fully Managed\"},{\"POAmount\":\"\",\"OVRejectionReason\":\"\",\"POTenure\":\"\",\"POStartDate\":\"\",\"PONumber\":\"\",\"Site\":\"Mariner Square Loop Alameda\",\"Bandwidth\":\"1 Mbps\",\"LSI\":800030122332955,\"Id\":\"0QL720000005ptEGAQ\",\"ProductName\":\"Primary MPLS Link\",\"OVStatus\":\"OVApproved\",\"PostalCode\":\"94704\",\"Country\":\"US\",\"City\":\"Berkeley\",\"StreetAddress\":\"Durant Avenue\",\"LineNumber\":\"0004.0001\",\"OTC\":10000,\"ARC\":62200,\"Media\":\"Fiber Off-Net\",\"ServiceType\":\"Fully Managed\"},{\"POAmount\":\"\",\"OVRejectionReason\":\"\",\"POTenure\":\"\",\"POStartDate\":\"\",\"PONumber\":\"\",\"Site\":\"Mariner Square Loop Alameda\",\"Bandwidth\":\"1 Mbps\",\"LSI\":800030122387221,\"Id\":\"0QL720000005ptKGAQ\",\"ProductName\":\"Primary MPLS Link\",\"OVStatus\":\"OVApproved\",\"PostalCode\":\"94925\",\"Country\":\"US\",\"City\":\"Corte Madera\",\"StreetAddress\":\"Redwood Highway\",\"LineNumber\":\"0005.0001\",\"OTC\":10000,\"ARC\":62200,\"Media\":\"Fiber Off-Net\",\"ServiceType\":\"Fully Managed\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 30,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_OVQLITable",
+    "sourceOrgUrl": "/0ko720000000Gb3AAE"
+}

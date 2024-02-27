@@ -1,0 +1,77 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "HTTPAction1",
+    "OmniProcessId": {
+        "Name": "MailThroughDIRS",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/MailThroughDIRS/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "accountNo": "%accountNo%",
+            "additionalInput": "%additionalInput%",
+            "ccList": "%ccList%",
+            "custNo": "%custNo%",
+            "emailId": "%emailId%",
+            "filePath": "%filePath%",
+            "invoiceNo": "%invoiceNo%",
+            "message": "%message%",
+            "nbaId": "%nbaId%",
+            "partyId": "%partyId%",
+            "processedBy": "Salesforce",
+            "productName": "%productName%",
+            "requestFrom": "Salesforce",
+            "subject": "%subject%",
+            "toList": "%toList%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "": ""
+        },
+        "label": "HTTPAction1",
+        "namedCredential": "",
+        "postActionLogging": "",
+        "preActionLogging": "",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "restMethod": "POST",
+        "restOptions": {
+            "clientCertificateName": "",
+            "headers": {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+                "api-key": "%GetAPIDetails:key%"
+            },
+            "isCompressed": false,
+            "params": {
+            },
+            "sendBody": true,
+            "timeout": 0,
+            "xmlEscapeResponse": false
+        },
+        "restPath": "%GetAPIDetails:endpoint%",
+        "retryCount": 0,
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "VlocityNoRootNode",
+        "sendJSONPath": "null",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "type": "Integration",
+        "useFormulas": true
+    },
+    "Type": "Rest Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/MailThroughDIRS/Procedure/HTTPAction1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Lead_Sub_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Sub Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WhatsApp</fullName>
+                <default>false</default>
+                <label>WhatsApp</label>
+            </value>
+            <value>
+                <fullName>MAILCHIMP</fullName>
+                <default>false</default>
+                <label>MAILCHIMP</label>
+            </value>
+            <value>
+                <fullName>LINKEDIN</fullName>
+                <default>false</default>
+                <label>LINKEDIN</label>
+            </value>
+            <value>
+                <fullName>LEADFEEDER</fullName>
+                <default>false</default>
+                <label>LEADFEEDER</label>
+            </value>
+            <value>
+                <fullName>CLICKSTREAM</fullName>
+                <default>false</default>
+                <label>CLICKSTREAM</label>
+            </value>
+            <value>
+                <fullName>B2_OFFLINE</fullName>
+                <default>false</default>
+                <label>B2_OFFLINE</label>
+            </value>
+            <value>
+                <fullName>ILMS</fullName>
+                <default>false</default>
+                <label>ILMS</label>
+            </value>
+            <value>
+                <fullName>B2 Potential Opportunity</fullName>
+                <default>false</default>
+                <label>B2 Potential Opportunity</label>
+            </value>
+            <value>
+                <fullName>Digital Outbound</fullName>
+                <default>false</default>
+                <label>Digital Outbound</label>
+            </value>
+            <value>
+                <fullName>On-Site</fullName>
+                <default>false</default>
+                <label>On-Site</label>
+            </value>
+            <value>
+                <fullName>Adroit</fullName>
+                <default>false</default>
+                <label>Adroit</label>
+            </value>
+            <value>
+                <fullName>DSR Owned</fullName>
+                <default>false</default>
+                <label>DSR Owned</label>
+            </value>
+            <value>
+                <fullName>Digital Inbound</fullName>
+                <default>false</default>
+                <label>Digital Inbound</label>
+            </value>
+            <value>
+                <fullName>Agency Calling</fullName>
+                <default>false</default>
+                <label>Agency Calling</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

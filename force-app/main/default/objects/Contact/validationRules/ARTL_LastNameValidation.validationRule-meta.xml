@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_LastNameValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(REGEX( LastName ,&quot;[a-zA-Z0-9 ./()&amp;.-]*&quot;))</errorConditionFormula>
+    <errorDisplayField>LastName</errorDisplayField>
+    <errorMessage>Last Name should not contain any Special Characters except ./()&amp;.-.</errorMessage>
+</ValidationRule>

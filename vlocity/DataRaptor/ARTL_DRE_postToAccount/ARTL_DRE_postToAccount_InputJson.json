@@ -1,0 +1,9 @@
+{
+    "soaFault": {
+        "faultDescription": "Error received from backend. Please check fault trace.",
+        "faultTrace": "com.fasterxml.jackson.databind.JsonMappingException: N/A (through reference chain: com.comverse.udt.udtrequest.CustomerUdtRequest[\"Requests\"]->com.csgsystems.bp.data.AccountXIDObjectData[\"ExtendedData\"])",
+        "soaFaultCode": "createBillingAccount-3599-E",
+        "soaFaultOriginator": "FX",
+        "soaTransactionID": "40145c40-ca0f-40d6-85d8-9be7a2952cba"
+    }
+}

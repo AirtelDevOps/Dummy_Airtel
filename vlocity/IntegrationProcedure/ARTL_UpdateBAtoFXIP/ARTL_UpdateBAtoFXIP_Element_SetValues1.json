@@ -1,0 +1,106 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues1",
+    "OmniProcessId": {
+        "Name": "UpdateBAtoFXIP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/UpdateBAtoFXIP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "body": {
+                "dataArea": {
+                    "updateCustomerAccountBillingRequest": {
+                        "accountBilling": {
+                            "customerAccount": {
+                                "externalIdentification": [
+                                    {
+                                        "name": "Cust_GST_Code",
+                                        "value": "%DataRaptorExtractAction1:gst%"
+                                    },
+                                    {
+                                        "name": "Exempt Reason",
+                                        "value": "%DataRaptorExtractAction1:standardReason%"
+                                    }
+                                ],
+                                "identification": {
+                                    "id": "%DataRaptorExtractAction1:BillingAccountNumber%"
+                                }
+                            },
+                            "customerOrder": {
+                                "createdBy": "SFDC",
+                                "customerOrderItem": [
+                                ],
+                                "identification": [
+                                ]
+                            },
+                            "email": {
+                                "eMailAddress": "%DataRaptorExtractAction1:email%"
+                            },
+                            "individualName": {
+                                "familyNames": "Patil",
+                                "givenName": "Tukaram"
+                            },
+                            "organization": {
+                                "organizationName": {
+                                    "tradingName": "%DataRaptorExtractAction1:name%"
+                                }
+                            },
+                            "postalDeliveryAddress": [
+                                {
+                                    "addressLine1": "%DataRaptorExtractAction1:address1%",
+                                    "addressLine2": "t – 400604",
+                                    "addressType": "CustomerAddress",
+                                    "city": "%DataRaptorExtractAction1:city%",
+                                    "country": "%DataRaptorExtractAction1:CountryCode%",
+                                    "pincode": "%DataRaptorExtractAction1:pincode%",
+                                    "state": "%DataRaptorExtractAction1:state%"
+                                },
+                                {
+                                    "addressLine1": "%DataRaptorExtractAction1:address1%",
+                                    "addressLine2": "t – 400604",
+                                    "addressType": "BillingAddress",
+                                    "city": "%DataRaptorExtractAction1:city%",
+                                    "country": "%DataRaptorExtractAction1:CountryCode%",
+                                    "pincode": "%DataRaptorExtractAction1:pincode%",
+                                    "state": "%DataRaptorExtractAction1:state%"
+                                }
+                            ],
+                            "telephone": [
+                                {
+                                    "number": "%DataRaptorExtractAction1:number%",
+                                    "type": "PrimaryContactNumber"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "ebmHeader": {
+                    "consumerName": "SIGMA-OM",
+                    "consumerTransactionId": "4396263",
+                    "customerMigrated": "true",
+                    "domain": "B2B",
+                    "lob": "AES",
+                    "programmeName": "Leo"
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/UpdateBAtoFXIP/Procedure/SetValues1"
+}

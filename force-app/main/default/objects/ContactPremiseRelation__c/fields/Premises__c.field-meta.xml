@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Premises__c</fullName>
+    <externalId>false</externalId>
+    <label>Premises</label>
+    <referenceTo>vlocity_cmt__Premises__c</referenceTo>
+    <relationshipLabel>Contact Premise Relation</relationshipLabel>
+    <relationshipName>Contact_Premise_Relation</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

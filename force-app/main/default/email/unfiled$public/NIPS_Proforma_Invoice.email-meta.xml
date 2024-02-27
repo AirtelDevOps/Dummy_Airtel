@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Welcome_Letterhead</letterhead>
+    <name>NIPS Proforma Invoice</name>
+    <style>freeForm</style>
+    <subject>Proforma Invoice : Bharti Airtel Service - Order Reference : {!Order.OrderNumber}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

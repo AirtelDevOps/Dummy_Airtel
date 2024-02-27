@@ -1,0 +1,43 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction1",
+    "OmniProcessId": {
+        "Name": "ARTL_IPFetchQLIDetailsForMACD",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/IPFetchQLIDetailsForMACD/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "BusinessAccountName": "%ARTL_DR_FetchQLIDetailsForMACD:BusinessAccountName%",
+            "BusinessAccountPAN": "%ARTL_DR_FetchQLIDetailsForMACD:BusinessAccountPAN%",
+            "NBAAccountId": "%ARTL_DR_FetchQLIDetailsForMACD:QLIs|1:NBAAcNumber%",
+            "QLIs": "%ARTL_DR_FetchQLIDetailsForMACD:QLIs%",
+            "QLIsCount": "%ARTL_DR_FetchQLIDetailsForMACD:QLIsCount%",
+            "QuoteType": "%ARTL_DR_FetchQLIDetailsForMACD:Type%",
+            "businessAccountId": "%ARTL_DR_FetchQLIDetailsForMACD:businessAccountId%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/IPFetchQLIDetailsForMACD/Procedure/ResponseAction1"
+}

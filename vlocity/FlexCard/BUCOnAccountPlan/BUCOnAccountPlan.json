@@ -1,0 +1,474 @@
+{
+    "customStyleSheet": "WrappedHeaderTable",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "recordId",
+                "val": "a7O720000000AiXEAU"
+            }
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "dsDelay": "",
+            "inputMap": {
+                "flexcard_accountPlanId": "{recordId}"
+            },
+            "ipMethod": "ARTL_OpportunityOnAccountPlan",
+            "jsonMap": "{\"recordId\":\"{recordId}\"}",
+            "resultVar": "[\"BUC\"]",
+            "vlocityAsync": false
+        }
+    },
+    "enableLwc": true,
+    "globalCSS": true,
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfBUCOnAccountPlan_2_ARTL",
+        "Id": "0Rb72000000ACzBCAW",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfBUCOnAccountPlan_2_ARTL",
+        "NamespacePrefix": "c"
+    },
+    "selectableMode": "Multi",
+    "sessionVars": [
+        {
+            "isApi": true,
+            "name": "RecordId",
+            "val": ""
+        }
+    ],
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "flexDatatable",
+                            "elementLabel": "Datatable-1",
+                            "name": "Datatable",
+                            "property": {
+                                "card": "{card}",
+                                "columns": [
+                                ],
+                                "issearchavailable": "false",
+                                "issortavailable": "true",
+                                "record": "{record}",
+                                "records": "{records}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "slds-size_12-of-12"
+                            },
+                            "type": "element"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "flexDatatable",
+                            "elementLabel": "BUCDatatable",
+                            "name": "Datatable",
+                            "property": {
+                                "card": "{card}",
+                                "cellLevelEdit": true,
+                                "columns": [
+                                    {
+                                        "fieldName": "Account_Name__c",
+                                        "label": "Account Name",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Name",
+                                        "label": "Bottom Up Name",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Fiscal_Year__c",
+                                        "format": "DD/MM/YYYY",
+                                        "label": "Fiscal Year",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Key_Competitor_and_Comments__c",
+                                        "label": "Key Competitor and Comments",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Product_Category__c",
+                                        "label": "Product Category",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Product_Solution__c",
+                                        "label": "Product Solution",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Spends_with_Airtel__c",
+                                        "label": "Spends with Airtel",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "currency"
+                                    },
+                                    {
+                                        "fieldName": "Total_Competitor_Spends__c",
+                                        "label": "Total Competitor Spends",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "currency"
+                                    },
+                                    {
+                                        "fieldName": "RMS",
+                                        "label": "RMS",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "percent"
+                                    },
+                                    {
+                                        "fieldName": "TotalSpends",
+                                        "label": "Total Spend (INR- Mn) -KAM",
+                                        "searchable": true,
+                                        "sortable": true,
+                                        "type": "currency"
+                                    }
+                                ],
+                                "draggable": false,
+                                "groupOrder": "asc",
+                                "issearchavailable": false,
+                                "issortavailable": false,
+                                "pagelimit": 3,
+                                "record": "{record}",
+                                "records": "{records}",
+                                "rowLevelEdit": false,
+                                "specialcharactersort": false,
+                                "styles": {
+                                    "cellBorderColor": "#DDDDDD",
+                                    "cellBorderType": [
+                                        "border_right",
+                                        "border_top"
+                                    ],
+                                    "cellBorderWidth": "0.5",
+                                    "cellMargin": [
+                                    ],
+                                    "cellPadding": [
+                                    ],
+                                    "headBgColor": "#DDDDDD",
+                                    "headFontWeight": "bold",
+                                    "tableBorderColor": "#D7D7D7",
+                                    "tableBorderType": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "tableBorderWidth": "0.7"
+                                },
+                                "userSelectableColumn": false,
+                                "userSelectableRow": false
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#000000",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": [
+                                    ],
+                                    "width": ""
+                                },
+                                "class": " ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "customClass": "",
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "cellBorderColor": "#DDDDDD",
+                                        "cellBorderType": [
+                                            "border_right",
+                                            "border_top"
+                                        ],
+                                        "cellBorderWidth": "0.5",
+                                        "cellMargin": [
+                                        ],
+                                        "cellPadding": [
+                                        ],
+                                        "headBgColor": "#DDDDDD",
+                                        "headFontWeight": "bold",
+                                        "tableBorderColor": "#D7D7D7",
+                                        "tableBorderType": [
+                                            "border_top",
+                                            "border_right",
+                                            "border_bottom",
+                                            "border_left"
+                                        ],
+                                        "tableBorderWidth": "0.7"
+                                    }
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "      \n         ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#000000",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": [
+                                            ],
+                                            "width": ""
+                                        },
+                                        "class": " ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "customClass": "",
+                                        "elementStyleProperties": {
+                                            "styles": {
+                                                "cellBorderColor": "#DDDDDD",
+                                                "cellBorderType": [
+                                                    "border_right",
+                                                    "border_top"
+                                                ],
+                                                "cellBorderWidth": "0.5",
+                                                "cellMargin": [
+                                                ],
+                                                "cellPadding": [
+                                                ],
+                                                "headBgColor": "#DDDDDD",
+                                                "headFontWeight": "bold",
+                                                "tableBorderColor": "#D7D7D7",
+                                                "tableBorderType": [
+                                                    "border_top",
+                                                    "border_right",
+                                                    "border_bottom",
+                                                    "border_left"
+                                                ],
+                                                "tableBorderWidth": "0.7"
+                                            }
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "      \n         ",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "element",
+                            "userUpdatedElementLabel": true
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "slds-card slds-m-bottom_x-small ",
+                "container": {
+                    "class": "slds-card"
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                    {
+                        "label": "bottom:x-small",
+                        "size": "x-small",
+                        "type": "bottom"
+                    }
+                ],
+                "padding": [
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12 ",
+                "style": "      \n         ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "BUCOnAccountPlan",
+    "xmlJson": [
+        {
+            "@attributes": {
+                "targets": "lightning__AppPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightning__RecordPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "default": "",
+                        "label": "recordId",
+                        "name": "cfRecordId",
+                        "type": "String"
+                    }
+                }
+            ],
+            "supportedFormFactors": {
+                "supportedFormFactor": [
+                    {
+                        "@attributes": {
+                            "type": "Small"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "type": "Large"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "xmlObject": {
+        "apiVersion": 56,
+        "id": "0Rb720000009M1JCAU",
+        "isExplicitImport": false,
+        "isExposed": true,
+        "masterLabel": "BUCOnAccountPlan",
+        "targetConfigs": "PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPjxwcm9wZXJ0eSBuYW1lPSJkZWJ1ZyIgdHlwZT0iQm9vbGVhbiI+PC9wcm9wZXJ0eT48cHJvcGVydHkgbmFtZT0icmVjb3JkSWQiIHR5cGU9IlN0cmluZyI+PC9wcm9wZXJ0eT48L3RhcmdldENvbmZpZz4KCiAgICAgIDx0YXJnZXRDb25maWcgdGFyZ2V0cz0ibGlnaHRuaW5nX19SZWNvcmRQYWdlIj4KICAgICAgICA8c3VwcG9ydGVkRm9ybUZhY3RvcnM+CiAgICAgICA8c3VwcG9ydGVkRm9ybUZhY3RvciB0eXBlPSJTbWFsbCI+PC9zdXBwb3J0ZWRGb3JtRmFjdG9yPgogICAgICAgPHN1cHBvcnRlZEZvcm1GYWN0b3IgdHlwZT0iTGFyZ2UiPjwvc3VwcG9ydGVkRm9ybUZhY3Rvcj4KICAgICAgIDwvc3VwcG9ydGVkRm9ybUZhY3RvcnM+CiAgICAgICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIj48L3Byb3BlcnR5Pjxwcm9wZXJ0eSBuYW1lPSJjZlJlY29yZElkIiB0eXBlPSJTdHJpbmciIGxhYmVsPSJyZWNvcmRJZCIgZGVmYXVsdD0iIj48L3Byb3BlcnR5PjwvdGFyZ2V0Q29uZmlnPg==",
+        "targets": {
+            "target": [
+                "lightning__RecordPage",
+                "lightning__AppPage",
+                "lightning__HomePage"
+            ]
+        }
+    }
+}

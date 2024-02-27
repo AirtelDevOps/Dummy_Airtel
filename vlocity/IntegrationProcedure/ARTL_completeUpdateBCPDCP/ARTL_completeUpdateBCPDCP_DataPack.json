@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_completeUpdateBCPDCP_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "completeUpdateBCPDCP",
+    "OmniProcessElement": [
+        "ARTL_completeUpdateBCPDCP_Element_getRelatedRecordIds.json",
+        "ARTL_completeUpdateBCPDCP_Element_updateBCPDCP.json",
+        "ARTL_completeUpdateBCPDCP_Element_updateDCPSAGST.json",
+        "ARTL_completeUpdateBCPDCP_Element_fxBillingAccounts.json",
+        "ARTL_completeUpdateBCPDCP_Element_callFxIntegration.json",
+        "ARTL_completeUpdateBCPDCP_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_completeUpdateBCPDCP",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_completeUpdateBCPDCP_PropertySetConfig.json",
+    "SubType": "completeUpdateBCPDCP",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/completeUpdateBCPDCP/Procedure"
+}

@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_MailThroughDIRS_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "MailThroughDIRS",
+    "OmniProcessElement": [
+        "ARTL_MailThroughDIRS_Element_SetValues1.json",
+        "ARTL_MailThroughDIRS_Element_GetAPIDetails.json",
+        "ARTL_MailThroughDIRS_Element_HTTPAction1.json",
+        "ARTL_MailThroughDIRS_Element_IPCreateIncident.json",
+        "ARTL_MailThroughDIRS_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_MailThroughDIRS",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_MailThroughDIRS_PropertySetConfig.json",
+    "SubType": "MailThroughDIRS",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/MailThroughDIRS/Procedure",
+    "WebComponentKey": "5f4a9960-dcfd-b45f-56f2-36d524d15988",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000000sDJEAY"
+}

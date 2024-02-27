@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CreateNetwork_ChangeOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_CreateNetworkChangeOrder",
+    "OmniProcessElement": [
+        "ARTL_CreateNetwork_ChangeOrder_Element_getCaseData.json",
+        "ARTL_CreateNetwork_ChangeOrder_Element_DRGetSamUser.json",
+        "ARTL_CreateNetwork_ChangeOrder_Element_RAassetToOrder.json",
+        "ARTL_CreateNetwork_ChangeOrder_Element_RACallVishalClass.json",
+        "ARTL_CreateNetwork_ChangeOrder_Element_DRGetOrderNumber.json",
+        "ARTL_CreateNetwork_ChangeOrder_Element_IPValidateAndSubmitOrder.json",
+        "ARTL_CreateNetwork_ChangeOrder_Element_IPUpdateSiebel.json",
+        "ARTL_CreateNetwork_ChangeOrder_Element_UpdateCaseStatus.json"
+    ],
+    "OmniProcessKey": "ARTL_CreateNetwork_ChangeOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CreateNetwork_ChangeOrder_PropertySetConfig.json",
+    "SubType": "ChangeOrder",
+    "Type": "ARTL_CreateNetwork",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL_CreateNetwork/ChangeOrder/Procedure",
+    "WebComponentKey": "07027af5-477d-38a7-b856-ebceffc25eb8",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001YcLEAU"
+}

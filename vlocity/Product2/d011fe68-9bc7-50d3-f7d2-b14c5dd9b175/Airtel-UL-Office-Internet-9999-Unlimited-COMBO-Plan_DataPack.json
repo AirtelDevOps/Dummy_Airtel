@@ -1,0 +1,570 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Airtel-UL-Office-Internet-9999-Unlimited-COMBO-Plan_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_DISCOUNT_PERCENTAGE": null,
+        "ATT_DURATION": null,
+        "ATT_DURATION_UOM": null,
+        "ATT_PLAN_SPEED": "1048576",
+        "ATT_POST_THROTTLE_SPEED": "4096",
+        "ATT_TYPE_OF_DSL_PLAN": "Unlimited"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_ENTERPRISE_DETAILS",
+                "Name": "Details",
+                "displaySequence": 300,
+                "id": "a0Z72000000v9Y2EAI",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005bkdsAAA",
+                            "cloneable": true,
+                            "code": "ATT_DURATION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Duration",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "1791f913-d26d-ff32-9e2b-5c04b096a86f",
+                                    "label": "5",
+                                    "name": "1791f913-d26d-ff32-9e2b-5c04b096a86f",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "18794715-d71e-0fab-94e9-fbde19ecdd0a",
+                                    "label": "7",
+                                    "name": "18794715-d71e-0fab-94e9-fbde19ecdd0a",
+                                    "readonly": false,
+                                    "value": "7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "368071ae-cdf2-435a-a3b4-bd1f144c5b0a",
+                                    "label": "2",
+                                    "name": "368071ae-cdf2-435a-a3b4-bd1f144c5b0a",
+                                    "readonly": false,
+                                    "value": "2"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "3dac6c70-991f-4615-d273-929fb0b4dc08",
+                                    "label": "3",
+                                    "name": "3dac6c70-991f-4615-d273-929fb0b4dc08",
+                                    "readonly": false,
+                                    "value": "3"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "4da54c3b-5f6d-1d89-52c8-bfa3b0070918",
+                                    "label": "1",
+                                    "name": "4da54c3b-5f6d-1d89-52c8-bfa3b0070918",
+                                    "readonly": false,
+                                    "value": "1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "576f5413-a89b-20c7-5f6a-078e8e0928e6",
+                                    "label": "10",
+                                    "name": "576f5413-a89b-20c7-5f6a-078e8e0928e6",
+                                    "readonly": false,
+                                    "value": "10"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "68b8b7d7-9bd8-47c3-e732-54acd5045ce5",
+                                    "label": "9",
+                                    "name": "68b8b7d7-9bd8-47c3-e732-54acd5045ce5",
+                                    "readonly": false,
+                                    "value": "9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "c361634f-ebc8-c46f-e367-2f4cfaae2072",
+                                    "label": "6",
+                                    "name": "c361634f-ebc8-c46f-e367-2f4cfaae2072",
+                                    "readonly": false,
+                                    "value": "6"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "cebe3781-f3e8-ca95-535f-430c88f1b59e",
+                                    "label": "4",
+                                    "name": "cebe3781-f3e8-ca95-535f-430c88f1b59e",
+                                    "readonly": false,
+                                    "value": "4"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "ee8143e0-e4f5-3a1e-1eef-45a1ee790ed7",
+                                    "label": "12",
+                                    "name": "ee8143e0-e4f5-3a1e-1eef-45a1ee790ed7",
+                                    "readonly": false,
+                                    "value": "12"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "f010c38e-b41b-8af3-fc6d-dc2b18957f45",
+                                    "label": "8",
+                                    "name": "f010c38e-b41b-8af3-fc6d-dc2b18957f45",
+                                    "readonly": false,
+                                    "value": "8"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005bkdtAAA",
+                            "cloneable": true,
+                            "code": "ATT_DURATION_UOM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Duration UOM",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "43388c73-5749-f15f-ba56-926b1a75892f",
+                                    "label": "Months",
+                                    "name": "43388c73-5749-f15f-ba56-926b1a75892f",
+                                    "readonly": false,
+                                    "value": "Months"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "a8d03e65-567a-39de-aa69-749b65f3f661",
+                                    "label": "Years",
+                                    "name": "a8d03e65-567a-39de-aa69-749b65f3f661",
+                                    "readonly": false,
+                                    "value": "Years"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "e03e05bb-dd47-4378-fd04-d187b9cf683f",
+                                    "label": "Days",
+                                    "name": "e03e05bb-dd47-4378-fd04-d187b9cf683f",
+                                    "readonly": false,
+                                    "value": "Days"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005bkdmAAA",
+                            "cloneable": true,
+                            "code": "ATT_PLAN_SPEED",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 420,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Plan Speed",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 3,
+                                    "id": "28c7b765-1913-076f-c880-09bc4cd570e4",
+                                    "label": "204800",
+                                    "name": "28c7b765-1913-076f-c880-09bc4cd570e4",
+                                    "readonly": true,
+                                    "value": "204800"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 5,
+                                    "id": "42e8e684-a4fe-46e7-4c3c-4bdb011cbc8e",
+                                    "label": "1048576",
+                                    "name": "42e8e684-a4fe-46e7-4c3c-4bdb011cbc8e",
+                                    "readonly": true,
+                                    "value": "1048576"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "4fc1bd6b-7356-c2d2-f950-a744850e5f78",
+                                    "label": "40960",
+                                    "name": "4fc1bd6b-7356-c2d2-f950-a744850e5f78",
+                                    "readonly": true,
+                                    "value": "40960"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 4,
+                                    "id": "8cf2975f-d88e-0eeb-b117-c9ec18470fed",
+                                    "label": "307200",
+                                    "name": "8cf2975f-d88e-0eeb-b117-c9ec18470fed",
+                                    "readonly": true,
+                                    "value": "307200"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "d9843db3-e526-bc72-79d7-ef47ea3a3c62",
+                                    "label": "102400",
+                                    "name": "d9843db3-e526-bc72-79d7-ef47ea3a3c62",
+                                    "readonly": true,
+                                    "value": "102400"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005bkdnAAA",
+                            "cloneable": true,
+                            "code": "ATT_POST_THROTTLE_SPEED",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 430,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Post Throttle Speed",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "23e7bbf7-bfca-295d-90c9-7a148fc852f9",
+                                    "label": "1024",
+                                    "name": "23e7bbf7-bfca-295d-90c9-7a148fc852f9",
+                                    "readonly": true,
+                                    "value": "1024"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "9241795e-d7dc-dfa2-c062-92c50eb69dc5",
+                                    "label": "4096",
+                                    "name": "9241795e-d7dc-dfa2-c062-92c50eb69dc5",
+                                    "readonly": true,
+                                    "value": "4096"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005bkdoAAA",
+                            "cloneable": true,
+                            "code": "ATT_TYPE_OF_DSL_PLAN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 440,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Type of DSL Plan",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "a1440d07-2675-666c-698e-d2e6ab3c46ff",
+                                    "label": "Unlimited",
+                                    "name": "a1440d07-2675-666c-698e-d2e6ab3c46ff",
+                                    "readonly": true,
+                                    "value": "Unlimited"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005bkdpAAA",
+                            "cloneable": true,
+                            "code": "ATT_DISCOUNT_PERCENTAGE",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 970,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Discount Percentage",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 6
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": [
+        {
+            "actions": {
+            },
+            "childCategories": [
+                {
+                    "actions": {
+                    },
+                    "childCategories": [
+                    ],
+                    "displaySequence": -1,
+                    "fields": {
+                    },
+                    "id": "a177200000hwPDdAAM",
+                    "messages": [
+                    ],
+                    "name": "Airtel Digital Services",
+                    "nameResult": {
+                    },
+                    "uiStates": {
+                    }
+                }
+            ],
+            "displaySequence": -1,
+            "fields": {
+            },
+            "id": "a177200000hw7oGAAQ",
+            "messages": [
+            ],
+            "name": "Enterprise Sales Catalog",
+            "nameResult": {
+            },
+            "uiStates": {
+            }
+        }
+    ],
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CompiledAttributeOverride__c": "Airtel-UL-Office-Internet-9999-Unlimited-COMBO-Plan_CompiledAttributeOverrides.json",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-12-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-11-30T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "491fe883-9444-ed37-77a8-8ada65f42392",
+    "%vlocity_namespace%__GlobalKey__c": "d011fe68-9bc7-50d3-f7d2-b14c5dd9b175",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "e9f6520a-cc97-7405-4a86-8b997d353d51",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/e9f6520a-cc97-7405-4a86-8b997d353d51",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "AOI Combo Offer Object Type",
+    "%vlocity_namespace%__OverrideDefinition__c": "Airtel-UL-Office-Internet-9999-Unlimited-COMBO-Plan_OverrideDefinitions.json",
+    "%vlocity_namespace%__ParentClassCode__c": "ARTL-AOI-Combo-Class",
+    "%vlocity_namespace%__ParentClassId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "a058ba91-150a-404d-ef4a-2eabc5341102",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "Product2/a058ba91-150a-404d-ef4a-2eabc5341102",
+        "VlocityRecordSObjectType": "Product2"
+    },
+    "%vlocity_namespace%__PriceListEntry__c": "Airtel-UL-Office-Internet-9999-Unlimited-COMBO-Plan_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "Airtel-UL-Office-Internet-9999-Unlimited-COMBO-Plan_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-11-30T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Bundle",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_AnnualRecurringCharge__c": "",
+    "ARTL_Component_Id__c": "",
+    "ARTL_CustomerNeedByDate__c": "",
+    "ARTL_Demo_Duration__c": "",
+    "ARTL_FeasibilityID__c": "",
+    "ARTL_FeasibilityIdCrossConnect__c": "",
+    "ARTL_FeasibilityStatus__c": "",
+    "ARTL_FeasibiltyRemarks__c": "",
+    "ARTL_Hansen_Primary_Key__c": "",
+    "ARTL_LSIRequiredForHansen__c": false,
+    "ARTL_LSIRequired__c": false,
+    "ARTL_ManageBy__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_OFT_Product_Name__c": "",
+    "ARTL_OneTimeCharge__c": "",
+    "ARTL_OperatingUnit__c": "",
+    "ARTL_Parent_Products__c": "",
+    "ARTL_Quantity__c": "",
+    "ARTL_RouterMake__c": "",
+    "ARTL_RouterModel__c": "",
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SiteReadinessStatus__c": "",
+    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_TechnicalProduct__c": "",
+    "ARTL_Terms_and_Conditions__c": "",
+    "ARTL_ThirdPartyName__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Broadband",
+    "IsActive": false,
+    "IsArchived": false,
+    "Name": "Airtel-UL-Office Internet 9999 Unlimited COMBO Plan",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "ProductCode": "S1-O5ILX5",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": "",
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": false,
+            "IsArchived": false,
+            "Name": "Airtel-UL-Office Internet 9999 Unlimited COMBO Plan",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "d011fe68-9bc7-50d3-f7d2-b14c5dd9b175",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "d011fe68-9bc7-50d3-f7d2-b14c5dd9b175",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/d011fe68-9bc7-50d3-f7d2-b14c5dd9b175",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "S1-O5ILX5",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/d011fe68-9bc7-50d3-f7d2-b14c5dd9b175"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/d011fe68-9bc7-50d3-f7d2-b14c5dd9b175"
+}

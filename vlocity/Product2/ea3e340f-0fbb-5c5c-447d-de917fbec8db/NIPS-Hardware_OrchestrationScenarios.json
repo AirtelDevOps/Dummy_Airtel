@@ -1,0 +1,102 @@
+[
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
+        "%vlocity_namespace%__GlobalKey__c": "39c70020-f5ee-c70e-98d1-91e567cb42b6",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "E2E Plan",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/E2E Plan",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NIPS Hardware",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/NIPS Hardware/39c70020-f5ee-c70e-98d1-91e567cb42b6/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
+        "%vlocity_namespace%__GlobalKey__c": "a9aa7e98-506d-541d-718a-c1cef13a572c",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "ARTL ERP NIPS Hardware",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/ARTL ERP NIPS Hardware",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "ARTL NIPS Hardware",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/ARTL NIPS Hardware/a9aa7e98-506d-541d-718a-c1cef13a572c/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
+        "%vlocity_namespace%__GlobalKey__c": "acf1d72b-d151-1a23-33fc-4b2c2f2ce47b",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "ARTL NIPS Hardware Provisioning",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/ARTL NIPS Hardware Provisioning",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "ARTL NIPS HW Prov Sceanrio",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/ARTL NIPS HW Prov Sceanrio/acf1d72b-d151-1a23-33fc-4b2c2f2ce47b/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"PO Renewal\"}",
+        "%vlocity_namespace%__GlobalKey__c": "779e5482-800b-2aa7-6f8e-b6c6cbf7e104",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "ARTL PO Renewal Orchestration Plan",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/ARTL PO Renewal Orchestration Plan",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "ARTL PO Renewal For NIPS Hardware",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/ARTL PO Renewal For NIPS Hardware/779e5482-800b-2aa7-6f8e-b6c6cbf7e104/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    }
+]

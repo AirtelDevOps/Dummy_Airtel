@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fetch_PR__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot; &amp; &quot;lightning/cmp/vlocity_cmt__vlocityLWCOmniWrapper?c__target=c:aRTLInvokeERPEnglish&amp;c__layout=lightning&amp;c__tabIcon=custom:custom18&amp;c__consumerTransactionId=&quot;+ Id + &quot;&amp;c__ouName=&quot; + Quote_Line_Item__r.ARTL_OUName__c + &quot;&amp;c__consumerName=&quot; + Master_Order__r.Account.Name + &quot;&amp;c__activityAction=&quot; + &quot;NIPS_PR_Details&quot; + &quot;&amp;c__requisitionNumber=&quot; +  Requisition_Number__c  + &quot;&amp;c__orderId=&quot; +  Master_Order__c  , &quot;Fetch PR&quot;,&quot;_self&quot;  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fetch PR</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

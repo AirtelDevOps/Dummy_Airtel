@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_IPFetchQLIDetailsForMACD_SampleInput.json",
+    "Description": "IP created for fetching QLI,BS,QM details for MACD flows",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_IPFetchQLIDetailsForMACD",
+    "OmniProcessElement": [
+        "ARTL_IPFetchQLIDetailsForMACD_Element_ARTL_DR_FetchQLIDetailsForMACD.json",
+        "ARTL_IPFetchQLIDetailsForMACD_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_IPFetchQLIDetailsForMACD",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_IPFetchQLIDetailsForMACD_PropertySetConfig.json",
+    "SubType": "IPFetchQLIDetailsForMACD",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/IPFetchQLIDetailsForMACD/Procedure"
+}

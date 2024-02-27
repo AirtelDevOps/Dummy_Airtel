@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FixMemberLocation",
+    "OmniProcessElement": [
+        "ESM_FixMemberLocation_Element_GetQuoteMemberAddress.json",
+        "ESM_FixMemberLocation_Element_PayloadForAddressFix.json",
+        "ESM_FixMemberLocation_Element_TMFAPICall.json",
+        "ESM_FixMemberLocation_Element_QuotememberResponseMappings.json",
+        "ESM_FixMemberLocation_Element_APIResponse.json"
+    ],
+    "OmniProcessKey": "ESM_FixMemberLocation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_FixMemberLocation_PropertySetConfig.json",
+    "SubType": "FixMemberLocation",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/FixMemberLocation/Procedure"
+}

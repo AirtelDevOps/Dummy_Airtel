@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PM_Hierarchy_Role_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS( UserRole.Name,&apos;CCE&apos;),&apos;CCE&apos;, IF(CONTAINS( UserRole.Name,&apos;CPH&apos;),&apos;CPH&apos;, IF(CONTAINS( UserRole.Name,&apos;PM-TL&apos;),&apos;PM-TL&apos;,  IF(CONTAINS( UserRole.Name,&apos;PM&apos;),&apos;PM&apos;,&apos;&apos;) ) ))</formula>
+    <label>PM Hierarchy Role Type</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

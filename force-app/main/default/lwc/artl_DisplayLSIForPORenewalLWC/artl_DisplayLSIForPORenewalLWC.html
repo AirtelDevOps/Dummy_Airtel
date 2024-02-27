@@ -1,0 +1,53 @@
+<template>
+	<div class="slds-grid slds-gutters slds-p-left_large">
+		<lightning-input type="text" label="Billing Account Number" value={recordnumber} readonly>
+		</lightning-input>
+		<lightning-input type="text" label="Billing Account Name" value={recordname} readonly>
+		</lightning-input>
+	</div>
+
+	<lightning-layout multiple-rows="true" vertical-align="end">
+		<lightning-layout-item class="slds-size--x-small" padding="around-small">
+			<div class="slds-form-element">
+				<div class="slds-form-element__control">
+					<lightning-select name="SearchBy" label="Search By" value={selectValue} options={selectoptions}
+						onchange={handleSelectChange}></lightning-select>
+				</div>
+			</div>
+		</lightning-layout-item>
+
+		<lightning-layout-item class="slds-size--medium" padding="around-small">
+			<div class="slds-form-element">
+				<div class="slds-form-element__control">
+					<lightning-input type="text" label="Search Value" onchange={handleKey}></lightning-input>
+				</div>
+			</div>
+		</lightning-layout-item>
+
+		<lightning-layout-item padding="around-small">
+			<div class="slds-form-element">
+				<div class="slds-form-element__control">
+					<lightning-button label="Search LSI" variant="brand" onclick={handleSearch}>
+					</lightning-button>
+				</div>
+			</div>
+		</lightning-layout-item>
+	</lightning-layout>
+
+	<div lwc:if={searchData}>
+		<p class="slds-p-bottom_xx-large slds-p-top_large slds-text-heading--label"> Search Results</p>
+		<lightning-datatable data={searchData} columns={columns} key-field="id" data-id="qlitable"
+			onrowselection={handleRowSelection}>
+		</lightning-datatable>
+		<div lwc:if={showDatabaseError}>
+			<p class="slds-text-color--error"> Please select atleast one LSI.</p>
+		</div>
+	</div>
+	<div lwc:if={showError}>
+		<p class="slds-text-heading--label slds-text-color--error"> Results Not Found!</p>
+	</div>
+	<div class="slds-float--right slds-p-top_xx-large">
+		<lightning-button variant="brand" label="Create Quote" title="Create Quote" onclick={handleNext}
+			class="slds-m-left_x-small"></lightning-button>
+	</div>
+</template>

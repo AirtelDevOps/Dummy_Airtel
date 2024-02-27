@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_B2BFetchOrderProfile_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_B2BFetchOrderProfile",
+    "OmniProcessElement": [
+        "ARTL_B2BFetchOrderProfile_Element_ARTL_QueryPartyIP.json",
+        "ARTL_B2BFetchOrderProfile_Element_ARTL_QueryBCPDCPIP.json",
+        "ARTL_B2BFetchOrderProfile_Element_QueryLSI.json",
+        "ARTL_B2BFetchOrderProfile_Element_QueryFetchPMApproval.json"
+    ],
+    "OmniProcessKey": "ARTL_B2BFetchOrderProfile",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_B2BFetchOrderProfile_PropertySetConfig.json",
+    "SubType": "B2BFetchOrderProfile",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/B2BFetchOrderProfile/Procedure"
+}

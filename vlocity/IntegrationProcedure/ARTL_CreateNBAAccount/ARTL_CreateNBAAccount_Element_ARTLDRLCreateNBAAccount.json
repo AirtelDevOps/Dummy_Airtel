@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ARTLDRLCreateNBAAccount",
+    "OmniProcessId": {
+        "Name": "ARTL_CreateNBAAccount",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateNBAAccount/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "BusinessAccountName": "%BusinessAccountName%",
+            "Id": "=%GSTDetailsStep:NonBillingAggregator-Block:NBAId%",
+            "ShortCode": "=%GSTDetailsStep:NonBillingAggregator-Block:ShortCode%",
+            "businessAccountId": "%businessAccountId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTLDRLCreateNBAAccount",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "GSTDetailsStep:NonBillingAggregator-Block:NBAId",
+        "responseJSONPath": "Account_1|1:Id",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateNBAAccount/Procedure/ARTLDRLCreateNBAAccount"
+}

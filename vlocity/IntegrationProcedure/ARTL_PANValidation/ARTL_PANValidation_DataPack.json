@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_PANValidation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PANValidation",
+    "OmniProcessElement": [
+        "ARTL_PANValidation_Element_SV3.json",
+        "ARTL_PANValidation_Element_DRFetchPANPayload.json",
+        "ARTL_PANValidation_Element_SVPan.json",
+        "ARTL_PANValidation_Element_RADebugLogger.json",
+        "ARTL_PANValidation_Element_HTTPPANValidation.json",
+        "ARTL_PANValidation_Element_IPCreateIncident.json",
+        "ARTL_PANValidation_Element_RAResponseLogger.json",
+        "ARTL_PANValidation_Element_DRLPANDetailsOnAccount.json",
+        "ARTL_PANValidation_Element_ResponseAction2.json"
+    ],
+    "OmniProcessKey": "ARTL_PANValidation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_PANValidation_PropertySetConfig.json",
+    "SubType": "PANValidation",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/PANValidation/Procedure",
+    "WebComponentKey": "e8137374-359c-1976-8c74-43f2352c922e",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001KKrEAM"
+}

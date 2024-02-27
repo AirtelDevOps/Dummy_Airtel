@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTLUpdateRAApproved",
+    "OmniProcessElement": [
+        "ARTL_UpdateRAApproved_Element_GetRelatedOLIDR.json",
+        "ARTL_UpdateRAApproved_Element_UpdateRAApproved.json",
+        "ARTL_UpdateRAApproved_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_UpdateRAApproved",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_UpdateRAApproved_PropertySetConfig.json",
+    "SubType": "UpdateRAApproved",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/UpdateRAApproved/Procedure"
+}

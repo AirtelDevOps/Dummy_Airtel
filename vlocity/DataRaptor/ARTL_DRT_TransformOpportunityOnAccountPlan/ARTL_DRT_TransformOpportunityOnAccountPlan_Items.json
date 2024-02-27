@@ -1,0 +1,1704 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF (MONTH ( %Opportunity:closeDate% )  <= 3 ,'Q4' ,IF (MONTH ( %Opportunity:closeDate% )  >3 && MONTH ( %Opportunity:closeDate% )  <= 6 ,'Q1' ,IF (MONTH ( %Opportunity:closeDate% )  >6 && MONTH ( %Opportunity:closeDate% )  <= 9 ,'Q2' ,IF (MONTH ( %Opportunity:closeDate% )  > 9 && MONTH ( %Opportunity:closeDate% )  <= 12 ,'Q3' ,'0'))))",
+        "FormulaResultPath": "Opportunity:keyTimelineFormula",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom540",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5229",
+        "InputFieldName": "AccountName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1723",
+        "InputFieldName": "BUC:Account_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:AccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom3755",
+        "InputFieldName": "BUC:Spends_with_Airtel__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:AirtelSpends",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom2996",
+        "InputFieldName": "BUC:Fiscal_Year__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:FiscalYear",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom7062",
+        "InputFieldName": "BUC:Key_Competitor_and_Comments__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:KeyCompetitorComments",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8105",
+        "InputFieldName": "BUC:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom548",
+        "InputFieldName": "BUC:Product_Category__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:ProductCategory",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5121",
+        "InputFieldName": "BUC:Product_Solution__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:ProductSolution",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom7240",
+        "InputFieldName": "BUC:RMS",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:RMS",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom7367",
+        "InputFieldName": "BUC:Total_Competitor_Spends__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:TotalCompetitorSpends",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5616",
+        "InputFieldName": "BUC:TotalSpends",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUC:TotalSpends",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom9006",
+        "InputFieldName": "BUCTotalAirtelSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUCTotalAirtelSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom3641",
+        "InputFieldName": "BUCTotalSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BUCTotalSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1454",
+        "InputFieldName": "CBHName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CBHName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom6464",
+        "InputFieldName": "CEHeadName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CEHeadName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom9465",
+        "InputFieldName": "Contact:designation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:designation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom266",
+        "InputFieldName": "Contact:eventAccountTeam",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:eventAccountTeam",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8986",
+        "InputFieldName": "Contact:eventId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:eventId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1645",
+        "InputFieldName": "Contact:eventMeetingStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:eventMeetingStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4630",
+        "InputFieldName": "Contact:eventNextSteps",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:eventNextSteps",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5805",
+        "InputFieldName": "Contact:eventObjective",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:eventObjective",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4822",
+        "InputFieldName": "Contact:eventStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:eventStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom3465",
+        "InputFieldName": "Contact:hierarchyLevelScore",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:hierarchyLevelScore",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5461",
+        "InputFieldName": "Contact:interactionLevel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:interactionLevel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1103",
+        "InputFieldName": "Contact:name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom6986",
+        "InputFieldName": "Contact:stakeholderScore",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contact:stakeholderScore",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1092",
+        "InputFieldName": "HistBUC:Prev1YrAirtelSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HistBUC:Prev1YrAirtelSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8446",
+        "InputFieldName": "HistBUC:Prev1YrTotalSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HistBUC:Prev1YrTotalSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4738",
+        "InputFieldName": "HistBUC:Prev2YrAirtelSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HistBUC:Prev2YrAirtelSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4005",
+        "InputFieldName": "HistBUC:Prev2YrTotalSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HistBUC:Prev2YrTotalSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom3376",
+        "InputFieldName": "HistBUC:currentYrAirtelSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HistBUC:currentYrAirtelSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom9717",
+        "InputFieldName": "HistBUC:currentYrTotalSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HistBUC:currentYrTotalSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom837",
+        "InputFieldName": "HistBUC:productCategory",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HistBUC:productCategory",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8588",
+        "InputFieldName": "HistBUC:productSoln",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HistBUC:productSoln",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom935",
+        "InputFieldName": "KAMName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KAMName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1558",
+        "InputFieldName": "Market",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Market",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom7017",
+        "InputFieldName": "NetIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NetIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom2001",
+        "InputFieldName": "Opportunity:closeDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity:closeDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom851",
+        "InputFieldName": "Opportunity:keyStakeholder",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity:keyStakeholder",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom2743",
+        "InputFieldName": "Opportunity:keyTimelineFormula",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity:keyTimeline",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8254",
+        "InputFieldName": "Opportunity:name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity:name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom2081",
+        "InputFieldName": "Opportunity:sizing",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity:sizing",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5265",
+        "InputFieldName": "Product",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Product",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1436",
+        "InputFieldName": "RTB_KeyCompetitorSummary",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RTB_KeyCompetitorSummary",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom587",
+        "InputFieldName": "RTB_KeyInitiatives",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RTB_KeyInitiatives",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom3365",
+        "InputFieldName": "RTB_KeyMetrics",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RTB_KeyMetrics",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4997",
+        "InputFieldName": "Revenue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Revenue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1298",
+        "InputFieldName": "SAMName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SAMName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5763",
+        "InputFieldName": "SAMTLName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SAMTLName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom9649",
+        "InputFieldName": "Strengths",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Strengths",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom6643",
+        "InputFieldName": "TLName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TLName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom6595",
+        "InputFieldName": "Task:Comments",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:Comments",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5081",
+        "InputFieldName": "Task:Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom5962",
+        "InputFieldName": "Task:ImmediateStepsEngagementPlans",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:ImmediateStepsEngagementPlans",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom9775",
+        "InputFieldName": "Task:KeyCompetitors",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:KeyCompetitors",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom993",
+        "InputFieldName": "Task:KeyStakeHolder",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:KeyStakeHolder",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom2128",
+        "InputFieldName": "Task:KeyTimelines",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:KeyTimelines",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom2373",
+        "InputFieldName": "Task:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1455",
+        "InputFieldName": "Task:Sizing",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:Sizing",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom6318",
+        "InputFieldName": "Task:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Task:Status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom6441",
+        "InputFieldName": "TopCompetitors",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TopCompetitors",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4281",
+        "InputFieldName": "VoiceRMName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VoiceRMName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8244",
+        "InputFieldName": "VoiceRMTLName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VoiceRMTLName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4238",
+        "InputFieldName": "Weakness",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Weakness",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom258",
+        "InputFieldName": "WinLoss:isFeasTimelineLostReason",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:IF_isFeasTimelineLostReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom478",
+        "InputFieldName": "WinLoss:isMiscLostReason",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:IF_isMiscLostReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom501",
+        "InputFieldName": "WinLoss:isPricingLostReason",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:IF_isPricingLostReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom2811",
+        "InputFieldName": "WinLoss:isProdOfferingLostReason",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:IF_isProdOfferingLostReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4830",
+        "InputFieldName": "WinLoss:isSalesTeamLostReason",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:IF_isSalesTeamLostReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom858",
+        "InputFieldName": "WinLoss:amount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom445",
+        "InputFieldName": "WinLoss:categorizationOfLoss",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:categorizationOfLoss",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom6622",
+        "InputFieldName": "WinLoss:finalStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:finalStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom453",
+        "InputFieldName": "WinLoss:name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8023",
+        "InputFieldName": "WinLoss:reasonOfWinLoss",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:reasonOfWinLoss",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom2778",
+        "InputFieldName": "WinLoss:timeline",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WinLoss:timeline",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8744",
+        "InputFieldName": "currentYear",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "currentYear",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom3675",
+        "InputFieldName": "currentYrTotalAirtelSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "currentYrTotalAirtelSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom9018",
+        "InputFieldName": "currentYrTotalTotalSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "currentYrTotalTotalSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom6793",
+        "InputFieldName": "prev1Year",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "prev1Year",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom8972",
+        "InputFieldName": "prev1YrTotalAirtelSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "prev1YrTotalAirtelSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom1851",
+        "InputFieldName": "prev1YrTotalTotalSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "prev1YrTotalTotalSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom9124",
+        "InputFieldName": "prev2Year",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "prev2Year",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom4662",
+        "InputFieldName": "prev2YrTotalAirtelSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "prev2YrTotalAirtelSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRT_TransformOpportunityOnAccountPlanCustom3382",
+        "InputFieldName": "prev2YrTotalTotalSpend",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRT_TransformOpportunityOnAccountPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "prev2YrTotalTotalSpend",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

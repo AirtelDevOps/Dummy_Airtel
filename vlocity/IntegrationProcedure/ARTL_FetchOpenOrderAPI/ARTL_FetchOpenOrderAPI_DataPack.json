@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_FetchOpenOrderAPI_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FetchOpenOrderAPI",
+    "OmniProcessElement": [
+        "ARTL_FetchOpenOrderAPI_Element_DREfetchopenorderAPI.json",
+        "ARTL_FetchOpenOrderAPI_Element_SetSuccess.json",
+        "ARTL_FetchOpenOrderAPI_Element_ConditionalCheckSuccess.json",
+        "ARTL_FetchOpenOrderAPI_Element_ResponseAction2.json",
+        "ARTL_FetchOpenOrderAPI_Element_SetError.json",
+        "ARTL_FetchOpenOrderAPI_Element_ConditionalCheckError.json",
+        "ARTL_FetchOpenOrderAPI_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_FetchOpenOrderAPI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FetchOpenOrderAPI_PropertySetConfig.json",
+    "SubType": "FetchOpenOrderAPI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FetchOpenOrderAPI/Procedure"
+}

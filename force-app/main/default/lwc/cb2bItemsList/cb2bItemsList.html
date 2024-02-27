@@ -1,0 +1,34 @@
+<template>
+    <div class="via-nds">
+      <div if:false={loading}>
+        <div if:true={showPromotionOnly}>
+          <c-cb2b-items-grid if:true={promotionList.length}>
+            <span slot="title">{labels.CMEXPromotions}</span>
+            <div slot="items" class="b2b-enterprise-items-grid_container">
+              <vlocity_cmt-b2b-promo-item for:each={promotionList} for:item="promo" key={promo.Id} promotion={promo}
+              working-cart-id={workingCartId} from-select-offers=true>
+              </vlocity_cmt-b2b-promo-item>
+            </div>
+          </c-cb2b-items-grid>
+          <div if:false={promotionList.length}>{labels.CMEXNoPromotions}</div>
+        </div>
+          <div if:false={showPromotionOnly}>
+          <vlocity_cmt-b2b-items-grid if:true={offers.length}>
+            <span slot="title">{labels.CMEXProducts}</span>
+            <div slot="items" class="b2b-enterprise-items-grid_container">
+              <c-cb2b-product-item for:each={offers} for:item="product" key={product.id} product={product}
+                working-cart-id={workingCartId} from-select-offers=true show-attributes=false></c-cb2b-product-item>
+            </div>
+          </vlocity_cmt-b2b-items-grid>
+          <div if:true={isShowMoreButtonApplicable} class="nds-text-align_center">
+            <vlocity_cmt-b2b-button variant="neutral" label={labels.CMEXShowMore} onclick={showMoreProducts}  theme={theme}>
+            </vlocity_cmt-b2b-button>
+          </div>
+          <div if:false={offers.length}>{labels.CMEXProductsNotAvailable}</div>
+        </div>
+      </div>
+      <div class="nds-b2b-spinner slds-spinner_container" if:true={loading}>
+        <lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+      </div>
+    </div>
+  </template>

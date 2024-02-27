@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_RestrictOpportunityStatusChange</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT($Profile.Name = &quot;System Administrator&quot;),NOT(ISNEW()),ISCHANGED(StageName),OR(ISPICKVAL(PRIORVALUE(StageName),&quot;Dropped&quot;),ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Lost&quot;),ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Won&quot;)))</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>You don&apos;t have permissions to change the status once the Opportunity is Closed Won/Closed Lost/Dropped</errorMessage>
+</ValidationRule>

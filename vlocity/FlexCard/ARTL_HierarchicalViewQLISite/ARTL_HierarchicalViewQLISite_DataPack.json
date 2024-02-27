@@ -1,0 +1,36 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "[\n    {\n      \"SiteAddress\": \"Skyline Plaza, Daly City, California, US\",\n      \"Id\": \"a4i72000000Pf3EAAS\",\n      \"Name\": \"Skyline Plaza\"\n    },\n    {\n      \"SiteAddress\": \"Thornton Avenue, Newark, California, US\",\n      \"Id\": \"a4i72000000Pf3FAAS\",\n      \"Name\": \"Thornton Avenue\"\n    },\n    {\n      \"SiteAddress\": \"12th Street, California, US\",\n      \"Id\": \"a4i72000000Pf3GAAS\",\n      \"Name\": \"12th Street\"\n    }\n  ]\n",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_HierarchicalViewQLISite",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_HierarchicalViewQLISite/BhartiAirtelLimited/22.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_HierarchicalViewQLISite.json",
+    "SampleDataSourceResponse": "[{\"SiteAddress\":\"Skyline Plaza, Daly City, California, US\",\"Id\":\"a4i72000000Pf3EAAS\",\"Name\":\"Skyline Plaza\"},{\"SiteAddress\":\"Thornton Avenue, Newark, California, US\",\"Id\":\"a4i72000000Pf3FAAS\",\"Name\":\"Thornton Avenue\"},{\"SiteAddress\":\"12th Street, California, US\",\"Id\":\"a4i72000000Pf3GAAS\",\"Name\":\"12th Street\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 22,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_HierarchicalViewQLISite"
+}

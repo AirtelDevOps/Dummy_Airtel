@@ -1,0 +1,49 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "CustomLWC2",
+    "OmniProcessId": {
+        "Name": "Account Change Bcp Dcp Csv Download",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/accChangeBcpDcpCsvDownload/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ExportSelectedContacts",
+        "OmniProcessId": {
+            "Name": "Account Change Bcp Dcp Csv Download",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/accChangeBcpDcpCsvDownload/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/accChangeBcpDcpCsvDownload/English/ExportSelectedContacts",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ExportSelectedContacts",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "selected-contacts-json",
+                "source": "%selectedContacts%"
+            },
+            {
+                "name": "acc-id",
+                "source": "%ContextId%"
+            }
+        ],
+        "hide": false,
+        "label": "CustomLWC2",
+        "lwcName": "artlBcpDcpCsvDownload",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/accChangeBcpDcpCsvDownload/English/CustomLWC2"
+}

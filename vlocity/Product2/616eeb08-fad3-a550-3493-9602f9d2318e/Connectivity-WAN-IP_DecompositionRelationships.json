@@ -1,0 +1,130 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side-type\":\"attribute\",\"left-side\":\"ATT_ADDITIONAL_IP_BLOCK\",\"left-side-name\":\"Is Additional IP Block?\",\"left-side-category\":\"Details\",\"left-side-datatype\":\"Text\",\"op\":\"!=\",\"right-side\":\"true\"}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "bf66dc47-c2ed-6f4f-9a97-5ccf6fb8b921",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/bf66dc47-c2ed-6f4f-9a97-5ccf6fb8b921",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"WAN IPv4 CE Subnet Mask\",\"source_attr_code\":\"ATT_WAN_IPV4_CE_SUBNET_MASK\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"WAN IPv4 CE Subnet Mask\",\"destination_attr_code\":\"ATT_WAN_IPV4_CE_SUBNET_MASK\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"WAN IPv4 PE Subnet Mask\",\"source_attr_code\":\"ATT_WAN_IPV4_PE_SUBNET_MASK\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"WAN IPv4 PE Subnet Mask\",\"destination_attr_code\":\"ATT_WAN_IPV4_PE_SUBNET_MASK\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"WAN IPv4 CE\",\"source_attr_code\":\"ATT_WAN_IPV4_CE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"WAN IPv4 CE\",\"destination_attr_code\":\"ATT_WAN_IPV4_CE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"WAN IPv4 PE\",\"source_attr_code\":\"ATT_WAN_IPV4_PE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"WAN IPv4 PE\",\"destination_attr_code\":\"ATT_WAN_IPV4_PE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"WAN IPv6 CE\",\"source_attr_code\":\"ATT_WAN_IPV6_CE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"WAN IPv6 CE\",\"destination_attr_code\":\"ATT_WAN_IPV6_CE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"WAN IPv6 PE\",\"source_attr_code\":\"ATT_WAN_IPV6_PE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"WAN IPv6 PE\",\"destination_attr_code\":\"ATT_WAN_IPV6_PE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"WAN IPv6 PE Subnet Mask\",\"source_attr_code\":\"ATT_WAN_IPV6_PE_SUBNET_MASK\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"WAN IPv6 PE Subnet Mask\",\"destination_attr_code\":\"ATT_WAN_IPV6_PE_SUBNET_MASK\"},{\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"WAN IPv6 CE Subnet Mask\",\"destination_attr_code\":\"ATT_WAN_IPV6_CE_SUBNET_MASK\",\"source_attr_name\":\"WAN IPv6 CE Subnet Mask\",\"source_attr_code\":\"ATT_WAN_IPV6_CE_SUBNET_MASK\",\"source_type\":\"Attribute\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "616eeb08-fad3-a550-3493-9602f9d2318e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/616eeb08-fad3-a550-3493-9602f9d2318e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "616eeb08-fad3-a550-3493-9602f9d2318e",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iConnectivity WAN IP Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iConnectivity WAN IP Decomp/Product2/616eeb08-fad3-a550-3493-9602f9d2318e"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side-type\":\"attribute\",\"left-side\":\"ATT_ADDITIONAL_IP_BLOCK\",\"left-side-name\":\"Is Additional IP Block?\",\"left-side-category\":\"Details\",\"left-side-datatype\":\"Text\",\"op\":\"=\",\"right-side\":\"true\"}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0e8aa07a-2e54-1881-64f1-ca44be0b7047",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/0e8aa07a-2e54-1881-64f1-ca44be0b7047",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "f7dce7a0-0e83-a590-7473-1ed158e9a62f",
+        "%vlocity_namespace%__MappingsData__c": "",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "616eeb08-fad3-a550-3493-9602f9d2318e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/616eeb08-fad3-a550-3493-9602f9d2318e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "616eeb08-fad3-a550-3493-9602f9d2318e",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iConnectivity WAN to IP OTC CFS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iConnectivity WAN to IP OTC CFS/Product2/616eeb08-fad3-a550-3493-9602f9d2318e"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side-type\":\"attribute\",\"left-side\":\"ATT_ADDITIONAL_IP_BLOCK\",\"left-side-name\":\"Is Additional IP Block?\",\"left-side-category\":\"Details\",\"left-side-datatype\":\"Text\",\"op\":\"=\",\"right-side\":\"true\"}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3dfc429f-6179-82f6-ba10-df8abcfd70d7",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/3dfc429f-6179-82f6-ba10-df8abcfd70d7",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "dd9d4194-a3eb-50ea-bdba-66894f18adb9",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_ARCCharge__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"IP Charge ARC\",\"destination_attr_code\":\"ATT_IP_CHARGE_ARC\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_OTCCharge__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"IP Charge OTC\",\"destination_attr_code\":\"ATT_IP_Charge_OTC\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "616eeb08-fad3-a550-3493-9602f9d2318e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/616eeb08-fad3-a550-3493-9602f9d2318e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "616eeb08-fad3-a550-3493-9602f9d2318e",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iCoonectivity WAN to Additional IP Block CFS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iCoonectivity WAN to Additional IP Block CFS/Product2/616eeb08-fad3-a550-3493-9602f9d2318e"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side-type\":\"attribute\",\"left-side\":\"ATT_ADDITIONAL_IP_BLOCK\",\"left-side-name\":\"Is Additional IP Block?\",\"left-side-category\":\"Details\",\"left-side-datatype\":\"Text\",\"op\":\"=\",\"right-side\":\"true\"}",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "732981af-6424-abbc-7d79-e2b0eccf1321",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/732981af-6424-abbc-7d79-e2b0eccf1321",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "a60e024b-ffd5-1874-cfa1-4bc7bf0282a5",
+        "%vlocity_namespace%__MappingsData__c": "",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "616eeb08-fad3-a550-3493-9602f9d2318e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/616eeb08-fad3-a550-3493-9602f9d2318e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "616eeb08-fad3-a550-3493-9602f9d2318e",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "iConnectivity WAN to IP Charge ARC",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/iConnectivity WAN to IP Charge ARC/Product2/616eeb08-fad3-a550-3493-9602f9d2318e"
+    }
+]

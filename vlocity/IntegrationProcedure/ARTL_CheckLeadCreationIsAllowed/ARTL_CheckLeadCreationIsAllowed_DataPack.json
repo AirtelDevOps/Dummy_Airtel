@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CheckLeadCreationIsAllowed_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CheckLeadCreationIsAllowed",
+    "OmniProcessElement": [
+        "ARTL_CheckLeadCreationIsAllowed_Element_SetValues1.json",
+        "ARTL_CheckLeadCreationIsAllowed_Element_DRFetchAllowedUserForLeadCreation.json",
+        "ARTL_CheckLeadCreationIsAllowed_Element_SetValues2.json",
+        "ARTL_CheckLeadCreationIsAllowed_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_CheckLeadCreationIsAllowed",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CheckLeadCreationIsAllowed_PropertySetConfig.json",
+    "SubType": "CheckLeadCreationIsAllowed",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CheckLeadCreationIsAllowed/Procedure",
+    "WebComponentKey": "d2cdd17d-bfc8-c19f-e314-960606bb091c",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001QV7EAM"
+}

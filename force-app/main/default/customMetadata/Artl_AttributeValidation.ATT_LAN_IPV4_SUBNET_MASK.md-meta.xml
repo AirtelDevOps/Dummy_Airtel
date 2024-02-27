@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ATT_LAN_IPV4_SUBNET_MASK</label>
+    <protected>false</protected>
+    <values>
+        <field>AttributeCode__c</field>
+        <value xsi:type="xsd:string">ATT_LAN_IPV4_SUBNET_MASK</value>
+    </values>
+    <values>
+        <field>Attribute_JSON__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;isRequired&quot;: true,
+  &quot;regex&quot;: &quot;&quot;,
+  &quot;isDependentValue&quot;: false,
+  &quot;dependentAttribtue&quot;: &quot;&quot;,
+  &quot;value&quot;: &quot;&quot;
+}</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,39 @@
+<template>
+
+    <template if:true={showLoading}>
+        <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+    </template>
+    <template if:true={data}>
+        <div class="slds-box slds-m-bottom--medium">
+            <lightning-button icon-name="utility:download" stretch="true" class="slds-button_stretch"
+                label="Download CSV" title="Download CSV File" onclick={downloadReport} variant="brand"
+                slot="actions"></lightning-button>
+        </div>
+        <div class="slds-box">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input label="" name="file uploader" onchange={handleFilesChange} type="file" multiple>
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-m-top--medium slds-text-align--right">
+                    <lightning-button if:true={uploadData} icon-name="utility:upload" label="Upload CSV"
+                        title="Download CSV File" onclick={uploadRecords} variant="brand"
+                        slot="actions"></lightning-button>
+                    <lightning-button if:false={uploadData} icon-name="utility:upload" label="Upload CSV"
+                        title="Download CSV File" disabled onclick={uploadRecords} variant="brand"
+                        slot="actions"></lightning-button>
+                </div>
+            </div>
+            <div class="slds-m-around_medium">
+            </div>
+        </div>
+
+        <!-- <lightning-button if:true={uploadData} icon-name="utility:upload" label="VSP Test Upload"
+        title="Download CSV File" onclick={uploadRecords} variant="brand"
+        slot="actions"></lightning-button> -->
+    </template>
+
+    <!-- <lightning-datatable key-field="Id" hide-checkbox-column="true" columns={columns} data={editTableData}
+        onsave={handleSave} draft-values={saveDraftValues} show-row-number-column>
+    </lightning-datatable> -->
+</template>

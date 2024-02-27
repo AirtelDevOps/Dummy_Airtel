@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Demo_Order_Email_Alert_For_KAM_User</fullName>
+        <description>Demo Order Email Alert For KAM User</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Demo_Order_Expiration_Notification_Email_Template_For_KAM_User</template>
+    </alerts>
+</Workflow>

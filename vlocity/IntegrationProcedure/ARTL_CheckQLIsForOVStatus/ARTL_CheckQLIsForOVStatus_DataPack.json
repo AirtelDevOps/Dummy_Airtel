@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CheckQLIsForOVStatus_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CheckQLIsForOVStatus",
+    "OmniProcessElement": [
+        "ARTL_CheckQLIsForOVStatus_Element_GetQLIForOVStatus.json",
+        "ARTL_CheckQLIsForOVStatus_Element_Response.json"
+    ],
+    "OmniProcessKey": "ARTL_CheckQLIsForOVStatus",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CheckQLIsForOVStatus_PropertySetConfig.json",
+    "SubType": "CheckQLIsForOVStatus",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CheckQLIsForOVStatus/Procedure"
+}

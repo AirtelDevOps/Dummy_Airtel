@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "Add the regex values into this JSON. NB: Adding '\\' to the JSON would create a JSON error. Hence, special care should be given while editing the json. Make sure that '\\' is removed from the JSON",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "techEnrichmentValidations",
+    "OmniProcessElement": [
+        "ARTL_techEnrichmentValidations_Element_SetValues1.json",
+        "ARTL_techEnrichmentValidations_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_techEnrichmentValidations",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_techEnrichmentValidations_PropertySetConfig.json",
+    "SubType": "techEnrichmentValidations",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/techEnrichmentValidations/Procedure",
+    "WebComponentKey": "2587b211-6c1b-241c-5d87-29c4232dcdd2",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001HWfEAM"
+}

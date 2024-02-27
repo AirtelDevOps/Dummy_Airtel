@@ -1,0 +1,166 @@
+{
+    "dataArea": {
+        "createBillingAccount": {
+            "customer": {
+                "customerLanguage": "ENG",
+                "customerType": "B2B"
+            },
+            "customerAccount": {
+                "accountCategory": 102,
+                "accountSegment": 1,
+                "accountType": 0,
+                "activationDate": "2023-12-05T15:43:28",
+                "billingAddress": {
+                    "addressLine1": "B 9 Vibhuti khand gomti nagar lucknow",
+                    "addressLine2": "",
+                    "addressLine3": "",
+                    "addressLine4": "",
+                    "careOf": "",
+                    "city": "Lucknow",
+                    "country": 356,
+                    "pincode": 226010,
+                    "state": "Uttar Pradesh"
+                },
+                "billingProfile": {
+                    "customerBillingCycle": {
+                        "billCycle": "AAD",
+                        "billType": 101,
+                        "externalIdentification": [
+                            {
+                                "code": 1,
+                                "name": "LanguageCode"
+                            },
+                            {
+                                "code": 0,
+                                "name": "SdAgencyId"
+                            },
+                            {
+                                "code": 100,
+                                "name": "OwningCostCtr"
+                            },
+                            {
+                                "code": 1,
+                                "name": "RevRcvCostCtr"
+                            },
+                            {
+                                "code": 24,
+                                "name": "MktCode"
+                            },
+                            {
+                                "code": 0,
+                                "name": "VipCode"
+                            },
+                            {
+                                "code": 1,
+                                "name": "CurrencyCode"
+                            },
+                            {
+                                "code": 6,
+                                "name": "ServerCategory"
+                            }
+                        ],
+                        "method": 0
+                    }
+                },
+                "createdBy": "ABCD1",
+                "creditLimit": 0,
+                "customerAddress": {
+                    "addressLine1": "B 9 Vibhuti khand gomti nagar lucknow",
+                    "addressLine2": "",
+                    "addressLine3": "",
+                    "addressLine4": "",
+                    "careOf": "",
+                    "city": "Lucknow",
+                    "country": 356,
+                    "pincode": 226010,
+                    "state": "Uttar Pradesh"
+                },
+                "customerName": {
+                    "individualName": {
+                        "familyNames": "",
+                        "givenName": "M/S APCO INFRATECH PVT LTD.",
+                        "middleName": ""
+                    },
+                    "organization": {
+                        "identification": {
+                            "name": "Airtel"
+                        }
+                    }
+                },
+                "customerOrder": {
+                    "identification": [
+                        {
+                            "id": 1234,
+                            "type": "TaskId"
+                        },
+                        {
+                            "id": "1-14851516973",
+                            "type": "OrderId"
+                        }
+                    ]
+                },
+                "emailContact": {
+                    "eMailAddress": ""
+                },
+                "ext": {
+                    "attribute": [
+                        {
+                            "name": "CustFranchiseTaxCode",
+                            "value": 1
+                        },
+                        {
+                            "name": "BillFranchiseTaxCode",
+                            "value": 1
+                        }
+                    ]
+                },
+                "externalIdentification": [
+                    {
+                        "name": "Collection_Manager_Email",
+                        "value": "neeraj6.kumar@airtel.com"
+                    },
+                    {
+                        "name": "Collection_Manager",
+                        "value": ". Kumar NeerajNeerajKumar"
+                    },
+                    {
+                        "name": "Collection_Manager_Phone",
+                        "value": 9934049085
+                    },
+                    {
+                        "name": "Account_Manager_Phone",
+                        "value": 9831049175
+                    },
+                    {
+                        "name": "Account_Manager_Email",
+                        "value": "ajay5.singh@airtel.com"
+                    },
+                    {
+                        "name": "Account_Manager_Name",
+                        "value": ". Singh AjayKumar"
+                    },
+                    {
+                        "name": "ORG_TYPE",
+                        "value": 3
+                    }
+                ],
+                "identification": {
+                    "id": "11-30074330",
+                    "type": ""
+                },
+                "rateClass": 1,
+                "telephone": {
+                    "contactNumber": 9651996512,
+                    "type": "Contact1Phone"
+                }
+            }
+        }
+    },
+    "ebmHeader": {
+        "consumerName": "Siebel",
+        "consumerTransactionId": "1-14851516973",
+        "domain": "B2B",
+        "lob": "AES",
+        "programmeName": "Leo"
+    }
+}

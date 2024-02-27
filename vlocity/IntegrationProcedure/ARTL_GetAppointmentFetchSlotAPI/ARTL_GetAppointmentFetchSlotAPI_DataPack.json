@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_GetAppointmentFetchSlotAPI_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetAppointmentFetchSlotAPI",
+    "OmniProcessElement": [
+        "ARTL_GetAppointmentFetchSlotAPI_Element_DRPrepareIWANPayload.json",
+        "ARTL_GetAppointmentFetchSlotAPI_Element_DRPrepareWirelinePayload.json",
+        "ARTL_GetAppointmentFetchSlotAPI_Element_checkDataRaptor.json",
+        "ARTL_GetAppointmentFetchSlotAPI_Element_getCustomMetadataRecord.json",
+        "ARTL_GetAppointmentFetchSlotAPI_Element_RADebugLogger.json",
+        "ARTL_GetAppointmentFetchSlotAPI_Element_HTTPPOSTAction.json",
+        "ARTL_GetAppointmentFetchSlotAPI_Element_RAResponseLogger.json",
+        "ARTL_GetAppointmentFetchSlotAPI_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_GetAppointmentFetchSlotAPI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_GetAppointmentFetchSlotAPI_PropertySetConfig.json",
+    "SubType": "GetAppointmentFetchSlotAPI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/GetAppointmentFetchSlotAPI/Procedure"
+}

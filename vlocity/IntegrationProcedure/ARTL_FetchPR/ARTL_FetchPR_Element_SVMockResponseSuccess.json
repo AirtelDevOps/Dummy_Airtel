@@ -1,0 +1,74 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SVMockResponseSuccess",
+    "OmniProcessId": {
+        "Name": "FetchPR",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FetchPR/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "response": {
+                "getPurchaseRequestDetailsResMsg": {
+                    "dataArea": {
+                        "getPurchaseRequestDetailsResponse": {
+                            "prDetails": [
+                                {
+                                    "amount": "2644.27633",
+                                    "approvalDate": "2019-10-23T10:51:49.000+05:30",
+                                    "bookName": "BTVL IGAAP SET OF BOOKS",
+                                    "creationDate": "2019-10-23T10:51:04.000+05:30",
+                                    "itemCode": "CPE000370",
+                                    "prID": "3523570",
+                                    "quantity": "1",
+                                    "requisitionNumber": "1000985"
+                                },
+                                {
+                                    "amount": "3041.63516",
+                                    "approvalDate": "2019-10-23T10:51:49.000+05:30",
+                                    "bookName": "BTVL IGAAP SET OF BOOKS",
+                                    "creationDate": "2019-10-23T10:51:04.000+05:30",
+                                    "itemCode": "CPE000368",
+                                    "prID": "3523570",
+                                    "quantity": "1",
+                                    "requisitionNumber": "1000985"
+                                },
+                                {
+                                    "amount": "641.75784",
+                                    "approvalDate": "2019-10-23T10:51:49.000+05:30",
+                                    "bookName": "BTVL IGAAP SET OF BOOKS",
+                                    "creationDate": "2019-10-23T10:51:04.000+05:30",
+                                    "itemCode": "CPE000369",
+                                    "prID": "3523570",
+                                    "quantity": "3",
+                                    "requisitionNumber": "1000985"
+                                }
+                            ],
+                            "status": {
+                                "statusCode": "GetPurchaseRequestDetails-0000-S",
+                                "statusDescription": "Request Processed Successfully"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FetchPR/Procedure/SVMockResponseSuccess"
+}

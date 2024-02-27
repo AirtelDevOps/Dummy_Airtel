@@ -1,0 +1,41 @@
+{
+    "CurrencyIsoCode": "USD",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "APIResponseForFAILURE",
+    "OmniProcessId": {
+        "Name": "FetchItemCode",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FetchItemCode/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "itemDetail": {
+                "code": null,
+                "description": null,
+                "ext": {
+                    "name": null,
+                    "value": null
+                },
+                "name": null,
+                "status": "failed",
+                "type": null
+            }
+        },
+        "executionConditionalFormula": "ISBLANK(%HTTPFetchItemDetailsFromItemCode:dataArea%)",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FetchItemCode/Procedure/APIResponseForFAILURE"
+}

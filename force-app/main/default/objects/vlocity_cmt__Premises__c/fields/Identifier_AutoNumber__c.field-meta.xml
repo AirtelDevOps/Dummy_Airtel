@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Identifier_AutoNumber__c</fullName>
+    <description>Used in backend for unique values, to be populated in External Id if blank.</description>
+    <displayFormat>{0}</displayFormat>
+    <externalId>false</externalId>
+    <label>Identifier AutoNumber</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

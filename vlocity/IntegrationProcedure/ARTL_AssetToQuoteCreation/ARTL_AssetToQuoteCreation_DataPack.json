@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_AssetToQuoteCreation_SampleInput.json",
+    "Description": "Asset to quote creation for uplaod bulk Asset Modification",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_AssetToQuoteCreation",
+    "OmniProcessElement": [
+        "ARTL_AssetToQuoteCreation_Element_AssetToQuote.json",
+        "ARTL_AssetToQuoteCreation_Element_assetToQuoteAuthorization.json",
+        "ARTL_AssetToQuoteCreation_Element_ARTL_AssetTOQuoteAPI.json",
+        "ARTL_AssetToQuoteCreation_Element_createdQuoteId.json",
+        "ARTL_AssetToQuoteCreation_Element_DR_UpdateItrationForQuote.json",
+        "ARTL_AssetToQuoteCreation_Element_SendNotification.json",
+        "ARTL_AssetToQuoteCreation_Element_CpqCreateCartActionV2.json"
+    ],
+    "OmniProcessKey": "ARTL_AssetToQuoteCreation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_AssetToQuoteCreation_PropertySetConfig.json",
+    "SubType": "AssetToQuoteCreation",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/AssetToQuoteCreation/Procedure"
+}

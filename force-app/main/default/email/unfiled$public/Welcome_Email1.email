@@ -1,0 +1,139 @@
+<messaging:emailTemplate subject="Welcome Letter : Bharti Airtel - Order Reference :QuoteNumber" recipientType="User" relatedToType="Order">
+
+
+<messaging:htmlEmailBody >
+<html>
+<style>
+ 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+ 
+</style>
+<body>
+
+<table border="0" width="750" cellspacing="5" cellpadding="5" align="center">
+<tbody>
+<div>
+<img id="Logo" src="https://assets.airtel.in/static-assets/siebel/locubanner.png"  height="250"/>
+</div>
+<tr valign="top">
+<td style=" color: #000000; blabel: main; font-size: 12pt; font-family: arial;">
+<div style="color: #000000; font-family: arial; font-size: 12pt;">&nbsp;</div>
+<div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">Dear Customer,</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">Welcome&nbsp; aboard!&nbsp; Thank&nbsp; you&nbsp; for&nbsp; choosing&nbsp; Bharti&nbsp; Airtel,&nbsp; India's&nbsp; Best&nbsp; Enterprise Telecom Service Provider, for your communication and connectivity needs.</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;"><strong>Here are the important details related to your Airtel Order. Site-wise details are attached for your reference.</strong></span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">&nbsp;</div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">&nbsp;</div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">
+<table style="width: 483px;">
+<tbody>
+<tr>
+<td style="width: 218.586px;"><strong>Customer Name:</strong></td>
+<td style="width: 268.414px;">Quote.Customer_Name__c</td>
+</tr>
+<tr>
+<td style="width: 218.586px;"><strong>Order Details:</strong></td>
+<td style="width: 268.414px;">Quote.Name</td>
+</tr>
+<tr>
+<td style="width: 218.586px;"><strong>Order Type:</strong></td>
+<td style="width: 268.414px;">Quote.vlocity_cmt__Type__c</td>
+</tr>
+<tr>
+<td style="width: 218.586px;"><strong>Product:</strong></td>
+<td style="width: 268.414px;">Quote.Product_Family__c</td>
+</tr>
+<tr>
+<td style="width: 218.586px;"><strong>PO Date:</strong></td>
+<td style="width: 268.414px;">Quote.vlocity_cmt__PoDate__c</td>
+</tr>
+<tr>
+<td style="width: 218.586px;"><strong>PO Number:</strong></td>
+<td style="width: 268.414px;">Quote.vlocity_cmt__PoNumber__c</td>
+</tr>
+<tr>
+<td style="width: 218.586px;"><strong>PO Value:</strong></td>
+<td style="width: 268.414px;">Quote.PO_Value__c</td>
+</tr>
+<tr>
+<td style="width: 218.586px;"><strong>PO Term:</strong></td>
+<td style="width: 268.414px;">Quote.PO_Term__c</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="color: #000000; font-family: arial; font-size: 12pt;">You&nbsp; may&nbsp; reach&nbsp; out&nbsp; to&nbsp;&nbsp;</span><span style="font-family: 'Helvetica Neue'; font-size: 13px;"><strong>Quote.PM_Name__c</strong></span><span style="font-family: 'Helvetica Neue'; font-size: 13px;">,</span><span style="font-size: 12pt;">&nbsp; your&nbsp; dedicated&nbsp; Project&nbsp; Manager,&nbsp; for updates, action plans and other support services for quality and timely execution of our service.</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">The relevant contact details are shared below for ready reference:</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">&nbsp;</div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">
+<table style="height: 39px; width: 1005px; border: 1px solid black; border-collapse: collapse;">
+<tbody>
+<tr>
+<td style="width: 384.062px;"><strong>Designation</strong></td>
+<td style="width: 10px;"><strong>Name</strong></td>
+<td style="width: 121px;"><strong>Email ID</strong></td>
+<td style="width: 121px;"><strong>Contact Details</strong></td>
+</tr>
+<tr>
+<td style="width: 384.062px;"><strong>Project Manager</strong></td>
+<td style="width: 10px;">Quote.PM_Name__c</td>
+<td style="width: 121px;">Quote.PM_Email__c</td>
+<td style="width: 121px;">Quote.PM_Phone__c</td>
+</tr>
+<tr>
+<td style="width: 384.062px;"><strong>Project Team Lead</strong></td>
+<td style="width: 10px;">Quote.PM_Team_Lead__c</td>
+<td style="width: 121px;">Quote.PM_Team_Lead_Email__c</td>
+<td style="width: 121px;">Quote.PM_Team_Lead_Phone__c</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></div>
+<div style="font-family: arial; font-size: 12pt;"><span style="color: #000000; font-family: arial; font-size: 12pt;">&nbsp;</span><span style="color: #000000; font-family: arial; font-size: medium;">&nbsp;</span><span style="font-family: 'Helvetica Neue'; font-size: 13px;">&nbsp;</span><span style="font-family: 'Helvetica Neue'; font-size: 13px;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">Requesting readiness of below pre-requisites for deployment initiation.</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;"><strong>&nbsp;</strong></span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;"><strong>Request&nbsp; you&nbsp; to&nbsp; ensure&nbsp; readiness&nbsp; for&nbsp; link&nbsp; implementation&nbsp; at&nbsp; the installation site as per the below checklist (if applicable):</strong></span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">
+<ul>
+<li><span style="font-family: arial;">Dust-free environment</span></li>
+<li><span style="font-family: arial;">Site contact details (if any changes)</span></li>
+<li><span style="font-family: arial;">In-building permission for last mile</span></li>
+<li><span style="font-family: arial;">Rack space and power sockets (2*5/15 Amps)</span></li>
+<li><span style="font-family: arial;">Uninterrupted power supply</span></li>
+<li><span style="font-family: arial;">Equipment readiness (Unmanaged Services)</span></li>
+</ul>
+</div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">You may track the status of your order on our digital self-care portal <a href="https://www.airtel.in/business/enterprise-hub/login/">Airtel Thanks for Business.</a></span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">Thank you for choosing Bharti Airtel. We value your association with us and we are looking forward to serve you.</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">Regards,</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">Bharti Airtel Ltd.</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">&nbsp;</div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial; font-size: medium;">&nbsp;</span></div>
+<div style="background-color: #ff0000; color: #ffffff; font-family: arial; font-size: medium;"><p>This is an auto-generated e-mail. Please do not reply to it. In case of any query, please reach out to your dedicated Project Manager with your Circuit ID(LSI).</p><p>We, at Airtel do not ask our Customers to make any payment (recurring or non-recurring) for our services to any third party vendor&rsquo;s bank account. All payments must&nbsp; be&nbsp; paid&nbsp; to&nbsp; Airtel&nbsp; directly&nbsp; in&nbsp; the&nbsp; bank&nbsp; account&nbsp; mentioned&nbsp; in&nbsp; valid&nbsp; invoices raised by Airtel.</p></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp;</span></div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;"><span style="font-family: arial;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow&nbsp;</span><span style="font-family: arial;">us <a href="https://www.linkedin.com/company/airtel-business/">Linkedin</a>&nbsp;&nbsp;</span><span style="font-family: arial;"><a href="https://www.youtube.com/channel/UC62RQR1TkP_945zTN6Jwecg">Youtube</a></span> <span style="font-family: arial;">|</span> <span style="font-family: arial;">www.airtel.in/business&nbsp;</span><span style="font-family: arial;">&nbsp;</span></div>
+</div>
+<div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">&nbsp;</div>
+<div style="color: #000000; font-family: arial; font-size: 12pt;">&nbsp;</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+    </html>   
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

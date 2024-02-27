@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_FXNBACreation_SampleInput.json",
+    "Description": "Input to this IP - %accountId%  - [Salesforce Id of newly created NBA Account]",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FXNBACreation",
+    "OmniProcessElement": [
+        "ARTL_FXNBACreation_Element_DRExtractFXNBAAccount.json",
+        "ARTL_FXNBACreation_Element_getCustomMetadataRecord.json",
+        "ARTL_FXNBACreation_Element_RADebugLogger.json",
+        "ARTL_FXNBACreation_Element_HTTPSyncNBAAccount.json",
+        "ARTL_FXNBACreation_Element_updateBillingIdOnAccountOnSuccess.json",
+        "ARTL_FXNBACreation_Element_updateBillingIdOnAccountOnFailure.json",
+        "ARTL_FXNBACreation_Element_RAResponseLogger.json",
+        "ARTL_FXNBACreation_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_FXNBACreation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FXNBACreation_PropertySetConfig.json",
+    "SubType": "FXNBACreation",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FXNBACreation/Procedure",
+    "WebComponentKey": "398a973d-eef6-b040-a4df-c632488acda4",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001MuXEAU"
+}

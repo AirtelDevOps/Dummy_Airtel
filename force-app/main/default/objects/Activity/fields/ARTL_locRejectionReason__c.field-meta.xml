@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_locRejectionReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Rejection Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer End Hardware Pending-NSG</fullName>
+                <default>false</default>
+                <label>Customer End Hardware Pending-NSG</label>
+            </value>
+            <value>
+                <fullName>Customer Denied –Business Plan Changed-PM</fullName>
+                <default>false</default>
+                <label>Customer Denied –Business Plan Changed-PM</label>
+            </value>
+            <value>
+                <fullName>Customer Denied –Service Issue-NSG</fullName>
+                <default>false</default>
+                <label>Customer Denied –Service Issue-NSG</label>
+            </value>
+            <value>
+                <fullName>Customer Denied –Billing Concern-PM</fullName>
+                <default>false</default>
+                <label>Customer Denied –Billing Concern-PM</label>
+            </value>
+            <value>
+                <fullName>Customer Denied –Location Shifted-PM</fullName>
+                <default>false</default>
+                <label>Customer Denied –Location Shifted-PM</label>
+            </value>
+            <value>
+                <fullName>Customer Denied –Delay in Delivery-PM</fullName>
+                <default>false</default>
+                <label>Customer Denied –Delay in Delivery-PM</label>
+            </value>
+            <value>
+                <fullName>Customer End Testing Pending –NSG</fullName>
+                <default>false</default>
+                <label>Customer End Testing Pending –NSG</label>
+            </value>
+            <value>
+                <fullName>Customer Denied –B/W throughput issue-NSG</fullName>
+                <default>false</default>
+                <label>Customer Denied –B/W throughput issue-NSG</label>
+            </value>
+            <value>
+                <fullName>Customer Denied-Link Not Tested-NSG</fullName>
+                <default>false</default>
+                <label>Customer Denied-Link Not Tested-NSG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

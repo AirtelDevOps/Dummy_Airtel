@@ -1,0 +1,48 @@
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading..." size="small"></lightning-spinner>
+    </template>
+
+    <lightning-card  title="">
+            <lightning-layout multiple-rows=true>
+                    <template for:each={attributedata} for:item="attribute">                   
+                                    <lightning-layout-item size="4" padding="around-small" key={attribute.code}>
+                                        <div  key={attribute.code}> 
+                                            <template if:true={attribute.is_input}>
+                                                <lightning-input type="text" data-code={attribute.code} label={attribute.name} value={attribute.value} name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                            </template>
+                                            <template if:true={attribute.is_date}>
+                                                <lightning-input type="date" data-code={attribute.code} label={attribute.name} value={attribute.value} name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                            </template>
+                                            <template if:true={attribute.is_datetime}>
+                                                <lightning-input type="datetime" data-code={attribute.code} time-style="medium" label={attribute.name} value={attribute.value} name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                            </template>
+                                            <template if:true={attribute.is_number}>
+                                                <lightning-input label={attribute.name} data-code={attribute.code} value={attribute.value} type="number" name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                            </template>
+                                            <template if:true={attribute.is_currency}>
+                                                <lightning-input label={attribute.name} data-code={attribute.code} value={attribute.value} type="number" formatter="currency" name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                            </template>
+                                            <template if:true={attribute.is_percent}>
+                                                <lightning-input label={attribute.name} data-code={attribute.code} value={attribute.value} type="number" name="inputAttributeValue" onchange={handleAttribueValueChange}>sf</lightning-input>
+                                            </template>
+                                            <template if:true={attribute.is_checkbox}>
+                                                <lightning-input style="margin-top: 2rem" data-code={attribute.code}  label={attribute.name} checked={attribute.value} type="checkbox" name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                            </template>
+                                            <template if:true={attribute.is_picklist}>
+                                                <lightning-combobox label={attribute.name} data-code={attribute.code} value={attribute.value} options={attribute.options} name={attribute.code} onchange={handleAttribueValueChange}></lightning-combobox>
+                                            </template>
+                                        </div>
+                                        </lightning-layout-item>
+                    </template>
+        </lightning-layout>
+   
+        <p slot="footer">
+            <lightning-button variant="Neutral" label="Cancel" title="Successful action" onclick={handleCancel} disabled={disableButton}></lightning-button>
+            <lightning-button variant="brand" label="Save" title="Successful action" onclick={handleSave} disabled={disableButton} class="slds-m-left_x-small" ></lightning-button>
+            
+        </p>
+
+    </lightning-card>
+ 
+    </template>

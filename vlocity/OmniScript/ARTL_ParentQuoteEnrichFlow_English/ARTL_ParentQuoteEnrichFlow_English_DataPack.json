@@ -1,0 +1,23 @@
+{
+    "CurrencyIsoCode": "INR",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "ARTL/ParentQuoteEnrichFlow",
+    "OmniProcessElement": [
+        "ARTL_ParentQuoteEnrichFlow_English_Element_IntegrationProcedureAction1.json",
+        "ARTL_ParentQuoteEnrichFlow_English_Element_MACDEnrichFlow.json",
+        "ARTL_ParentQuoteEnrichFlow_English_Element_NewConnectEnrichFlow.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "ARTL_ParentQuoteEnrichFlow_English_PropertySetConfig.json",
+    "SubType": "ParentQuoteEnrichFlow",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/ParentQuoteEnrichFlow/English"
+}

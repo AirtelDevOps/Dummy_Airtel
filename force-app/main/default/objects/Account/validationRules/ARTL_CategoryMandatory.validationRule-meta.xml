@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_CategoryMandatory</fullName>
+    <active>true</active>
+    <description>Category is Mandatory</description>
+    <errorConditionFormula>IF(RecordType.DeveloperName = &apos;Business&apos;  &amp;&amp;  ISPICKVAL( ARTL_Category__c , &quot;&quot;) ,true,false)</errorConditionFormula>
+    <errorMessage>Category is Mandatory</errorMessage>
+</ValidationRule>

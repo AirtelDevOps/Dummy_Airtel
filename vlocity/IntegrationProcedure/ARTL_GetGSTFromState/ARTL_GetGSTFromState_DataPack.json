@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_GetGSTFromState_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_GetGSTFromState",
+    "OmniProcessElement": [
+        "ARTL_GetGSTFromState_Element_getStateCode.json",
+        "ARTL_GetGSTFromState_Element_ARTL_DRE_GetGSTDetails.json",
+        "ARTL_GetGSTFromState_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_GetGSTFromState",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_GetGSTFromState_PropertySetConfig.json",
+    "SubType": "GetGSTFromState",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/GetGSTFromState/Procedure"
+}

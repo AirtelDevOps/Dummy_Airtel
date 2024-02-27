@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PurchaseOrderDetails",
+    "OmniProcessElement": [
+        "ARTL_PurchaseOrderDetails_Element_ExtractPayload.json",
+        "ARTL_PurchaseOrderDetails_Element_SVPayload.json",
+        "ARTL_PurchaseOrderDetails_Element_HTTPAction.json",
+        "ARTL_PurchaseOrderDetails_Element_UpdatePODate.json",
+        "ARTL_PurchaseOrderDetails_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_PurchaseOrderDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_PurchaseOrderDetails_PropertySetConfig.json",
+    "SubType": "PurchaseOrderDetails",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/PurchaseOrderDetails/Procedure"
+}

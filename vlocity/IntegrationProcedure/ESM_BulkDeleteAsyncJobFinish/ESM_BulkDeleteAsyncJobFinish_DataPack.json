@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_BulkDeleteAsyncJobFinish_SampleInput.json",
+    "Description": "Contains Finish method for BulkDeleteAsyncJob",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "BulkDeleteAsyncJobFinish",
+    "OmniProcessElement": [
+        "ESM_BulkDeleteAsyncJobFinish_Element_BulkDeleteAsyncJobFinishMethod.json",
+        "ESM_BulkDeleteAsyncJobFinish_Element_sendNotificationSuccess.json",
+        "ESM_BulkDeleteAsyncJobFinish_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_BulkDeleteAsyncJobFinish",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_BulkDeleteAsyncJobFinish_PropertySetConfig.json",
+    "SubType": "BulkDeleteAsyncJobFinish",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/BulkDeleteAsyncJobFinish/Procedure"
+}

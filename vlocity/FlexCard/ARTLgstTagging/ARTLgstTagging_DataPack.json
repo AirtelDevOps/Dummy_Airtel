@@ -1,0 +1,46 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "recordId",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "ARTLGetQuoteMembers",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "recordId": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTLgstTagging",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTLgstTagging/BhartiAirtelLimited/3.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTLgstTagging.json",
+    "SampleDataSourceResponse": "[{\"InstallationGST\":\"Default\",\"LSI\":\"Default\",\"SiteId\":\"null\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 3,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTLgstTagging"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>vlocity_cmt__ListMember</name>
+    </fieldSets>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Segment Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Assign_To_KAM_N_Notification</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Click_To_Call</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Convert_Lead</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ARTL_LostReasonOtherRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ARTL_RestrictLeadConversionForRelatedAcc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ARTL_StatusChange</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>ARTL_New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ATT_ROUTER_MODEL</label>
+    <protected>false</protected>
+    <values>
+        <field>AttributeCode__c</field>
+        <value xsi:type="xsd:string">ATT_ROUTER_MODEL</value>
+    </values>
+    <values>
+        <field>Attribute_JSON__c</field>
+        <value xsi:type="xsd:string">{&quot;isRequired&quot;:true,&quot;regex&quot;:&quot;&quot;,&quot;isDependentValue&quot;:true,&quot;dependentAttribtue&quot;:&quot;ATT_ROUTER_MAKE&quot;,&quot;value&quot;:{&quot;Cisco&quot;:{&quot;type&quot;:&quot;picklist&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;CISCO1905/K9&quot;,&quot;CISCO1921/K9&quot;,&quot;CISCO1941/K9&quot;,&quot;C841M-8X/K9&quot;,&quot;C881-K9&quot;,&quot;C819H-K9&quot;,&quot;C892FSP-K9&quot;,&quot;C888-K9&quot;,&quot;CISCO1905-SEC/K9&quot;,&quot;CISCO1921-SEC/K9&quot;,&quot;ISR4221/K9&quot;,&quot;ISR4331-V/K9&quot;,&quot;C841M-4X/K9&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Is Invalid&quot;},&quot;Fortinet&quot;:{&quot;type&quot;:&quot;picklist&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;FG_40F&quot;,&quot;FGT_40F&quot;,&quot;FGT_60F&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Is Invalid&quot;},&quot;Fort iGATE&quot;:{&quot;type&quot;:&quot;picklist&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;Fortinet 40F&quot;,&quot;FG 60&quot;,&quot;FG-100F&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Is Invalid&quot;},&quot;H3C&quot;:{&quot;type&quot;:&quot;picklist&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;MSR 20-10&quot;,&quot;MSR 20-11&quot;,&quot;MSR 30-20&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Is Invalid&quot;},&quot;HP&quot;:{&quot;type&quot;:&quot;picklist&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;HP900&quot;,&quot;HP930&quot;,&quot;HP930-3G&quot;,&quot;HP2003&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Is Invalid&quot;},&quot;Huawei&quot;:{&quot;type&quot;:&quot;picklist&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;AR161FGW&quot;,&quot;AR200&quot;,&quot;SRU200&quot;,&quot;AR169&quot;,&quot;AR121&quot;,&quot;AR161W&quot;,&quot;AR2200-Model-AR0M0022BA00&quot;,&quot;AR2200-Model-AR0M0024BA00&quot;,&quot;AR2200&quot;,&quot;AR161G-L&quot;,&quot;AR6280&quot;,&quot;AR6300&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Is Invalid&quot;},&quot;Juniper&quot;:{&quot;type&quot;:&quot;picklist&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;srx300&quot;,&quot;SRX 300&quot;,&quot;SRX340&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Is Invalid&quot;},&quot;Maipu&quot;:{&quot;type&quot;:&quot;picklist&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:[&quot;MP1800X&quot;,&quot;MP1800X-50&quot;,&quot;MP1800X-50(V1)&quot;,&quot;18x50&quot;],&quot;attributesToHide&quot;:&quot;&quot;,&quot;error&quot;:&quot;Is Invalid&quot;}}}</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem</value>
+    </values>
+</CustomMetadata>

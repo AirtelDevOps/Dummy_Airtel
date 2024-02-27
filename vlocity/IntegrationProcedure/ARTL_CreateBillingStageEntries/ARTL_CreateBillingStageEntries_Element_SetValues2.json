@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues2",
+    "OmniProcessId": {
+        "Name": "ARTL_CreateBillingStageEntries",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntries/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "bCity": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPAddress-Block:City%,%PODetailsStep:BCPDetails:BCPCity%)",
+            "bCountry": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPAddress-Block:Country%,%PODetailsStep:BCPDetails:BCPCountry%)",
+            "bEmail": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:EmailEdit%,%PODetailsStep:BCPDetails:BCPEmail%)",
+            "bGST": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPGSTvalue%,%PODetailsStep:BCPDetails:BCPGST%)",
+            "bState": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPAddress-Block:State%,%PODetailsStep:BCPDetails:BCPState%)",
+            "bStdReason": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPStandardReasonEdit%,%PODetailsStep:BCPDetails:BCPStandardReason%)",
+            "bStreet": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPAddress-Block:Street%,%PODetailsStep:BCPDetails:BCPStreet%)",
+            "bcpId": "=IF(%PODetailsStep:BCPCreateFlag%,%ContactPremiseRelation__c_3|1:Id%,%PODetailsStep:BillingContactPerson-Block:BCPId%)",
+            "bfirstname": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:FirstNameEdit%,%PODetailsStep:BCPDetails:BCPFirstName%)",
+            "blastname": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:LastNameEdit%,%PODetailsStep:BCPDetails:BCPLastName%)",
+            "bmobile": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:MobileEdit%,%PODetailsStep:BCPDetails:BCPPhone%)",
+            "shipCity": "=IF(%PODetailsStep:InvoiceDetails%=='Same As BCP Address',%PODetailsStep:InvoiceReadBlock:InvoiceCityRead%,%PODetailsStep:InvoiceEditBlock:TApincode-Block:InvoiceCity%)",
+            "shipPincode": "=IF(%PODetailsStep:InvoiceDetails%=='Same As BCP Address',%PODetailsStep:InvoiceReadBlock:InvoicePinCodeRead%,%PODetailsStep:InvoiceEditBlock:TApincode-Block:TApincode%)",
+            "shipState": "=IF(%PODetailsStep:InvoiceDetails%=='Same As BCP Address',%PODetailsStep:InvoiceReadBlock:InvoiceStateRead%,%PODetailsStep:InvoiceEditBlock:TApincode-Block:InvoiceState%)",
+            "shipStreet": "=IF(%PODetailsStep:InvoiceDetails%=='Same As BCP Address',%PODetailsStep:InvoiceReadBlock:InvoiceStreetRead%,%PODetailsStep:InvoiceEditBlock:TApincode-Block:InvoiceStreet%)"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "BCPData",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntries/Procedure/SetValues2"
+}

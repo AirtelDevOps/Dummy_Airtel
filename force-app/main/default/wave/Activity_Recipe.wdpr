@@ -1,0 +1,813 @@
+{
+  "version" : "60.0",
+  "nodes" : {
+    "LOAD_DATASET14_copy0_copy0_copy0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Analytics_Admin__c", "Id", "Username", "LastName", "FirstName", "Name", "UserRoleId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET0_copy0_copy0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "RecordTypeId", "WhoId", "WhatId", "WhoCount", "WhatCount", "Subject", "ActivityDate", "Status", "Priority", "IsHighPriority", "OwnerId", "Description", "CurrencyIsoCode", "Type", "IsDeleted", "AccountId", "IsClosed", "CreatedDate", "CreatedById", "LastModifiedDate", "LastModifiedById", "SystemModstamp", "IsArchived", "CallDurationInSeconds", "CallType", "CallDisposition", "ReminderDateTime", "TaskSubtype", "CompletedDateTime", "ARTL_TaskType__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Task",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Task"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1_copy0_copy0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "RecordTypeId", "WhoId", "WhatId", "WhoCount", "WhatCount", "Subject", "Location", "IsAllDayEvent", "ActivityDateTime", "ActivityDate", "DurationInMinutes", "StartDateTime", "EndDateTime", "EndDate", "Description", "AccountId", "OwnerId", "CurrencyIsoCode", "Type", "ShowAs", "IsGroupEvent", "GroupEventType", "CreatedDate", "CreatedById", "LastModifiedDate", "LastModifiedById", "SystemModstamp", "ReminderDateTime", "IsReminderSet", "EventSubtype", "vlocity_cmt__EventStatus__c", "ARTL_TaskType__c", "Call_Status__c", "ARTL_Disposition__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Event",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Event"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN10_copy0" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET0_copy0_copy0", "LOAD_DATASET14_copy0_copy0_copy0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "OwnerId" ],
+        "rightQualifier" : "TaskOwner",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET16_copy0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Analytics_Admin__c", "Id", "Username", "LastName", "FirstName", "Name", "UserRoleId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN11_copy0" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET1_copy0_copy0", "LOAD_DATASET16_copy0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "OwnerId" ],
+        "rightQualifier" : "EventOwner",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET17_copy0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "ParentRoleId", "DeveloperName" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UserRole",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UserRole"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET18_copy0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "ParentRoleId", "DeveloperName" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UserRole",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UserRole"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN12_copy0" : {
+      "action" : "join",
+      "sources" : [ "JOIN10_copy0", "FLATTEN0_copy0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "TaskOwner.UserRoleId" ],
+        "rightQualifier" : "TaskUserRole",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN13_copy0" : {
+      "action" : "join",
+      "sources" : [ "JOIN11_copy0", "FLATTEN1_copy0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "EventOwner.UserRoleId" ],
+        "rightQualifier" : "EventOwnerRole",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FLATTEN0_copy0" : {
+      "action" : "flatten",
+      "sources" : [ "LOAD_DATASET17_copy0" ],
+      "parameters" : {
+        "selfField" : "Id",
+        "parentField" : "ParentRoleId",
+        "multiField" : {
+          "name" : "Id_flatten_multiField",
+          "label" : "RoleNodeTask",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "Id_flatten",
+          "label" : "RolePathTask",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    },
+    "FLATTEN1_copy0" : {
+      "action" : "flatten",
+      "sources" : [ "LOAD_DATASET18_copy0" ],
+      "parameters" : {
+        "selfField" : "Id",
+        "parentField" : "ParentRoleId",
+        "multiField" : {
+          "name" : "Id_flatten_multiField",
+          "label" : "EventNodeRole",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "Id_flatten",
+          "label" : "EventPathRole",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    },
+    "FORMULA10_copy0" : {
+      "action" : "formula",
+      "sources" : [ "JOIN16" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Map",
+          "label" : "Map",
+          "formulaExpression" : "string(1)",
+          "precision" : 255,
+          "defaultValue" : "1"
+        } ]
+      }
+    },
+    "LOAD_DATASET19_copy0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Analytics_Admin__c", "Id" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FORMULA11_copy0" : {
+      "action" : "formula",
+      "sources" : [ "FILTER0_copy0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Map",
+          "label" : "Map",
+          "formulaExpression" : "string(1)",
+          "precision" : 255,
+          "defaultValue" : "1"
+        } ]
+      }
+    },
+    "FILTER0_copy0" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET19_copy0" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Analytics_Admin__c",
+          "operator" : "EQUAL",
+          "operands" : [ "true" ]
+        } ]
+      }
+    },
+    "JOIN14_copy0" : {
+      "action" : "join",
+      "sources" : [ "FORMULA10_copy0", "FORMULA11_copy0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "MULTI_VALUE_LOOKUP",
+        "leftKeys" : [ "Map" ],
+        "rightQualifier" : "AnalyticsAdmin",
+        "rightKeys" : [ "Map" ]
+      }
+    },
+    "OUTPUT3_copy0" : {
+      "action" : "save",
+      "sources" : [ "JOIN14_copy0" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "TaskDataSet",
+          "name" : "TaskDataSet",
+          "rowLevelSecurityFilter" : "'TaskUserRole.Id_flatten' == \"$User.UserRoleId\" || 'TaskOwner.Id' == \"$User.Id\" || 'AnalyticsAdmin.Id' == \"$User.Id\"",
+          "folderName" : "SAM_Dashboards"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET19_copy0_copy0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Analytics_Admin__c", "Id" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FORMULA11_copy0_copy0" : {
+      "action" : "formula",
+      "sources" : [ "FILTER0_copy0_copy0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Map",
+          "label" : "Map",
+          "formulaExpression" : "string(1)",
+          "precision" : 255,
+          "defaultValue" : "1"
+        } ]
+      }
+    },
+    "FILTER0_copy0_copy0" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET19_copy0_copy0" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Analytics_Admin__c",
+          "operator" : "EQUAL",
+          "operands" : [ "true" ]
+        } ]
+      }
+    },
+    "FORMULA12_copy0" : {
+      "action" : "formula",
+      "sources" : [ "JOIN17" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Map",
+          "label" : "Map",
+          "formulaExpression" : "string(1)",
+          "precision" : 255,
+          "defaultValue" : "1"
+        } ]
+      }
+    },
+    "JOIN15_copy0" : {
+      "action" : "join",
+      "sources" : [ "FORMULA12_copy0", "FORMULA11_copy0_copy0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "MULTI_VALUE_LOOKUP",
+        "leftKeys" : [ "Map" ],
+        "rightQualifier" : "AnalyticsAdmin",
+        "rightKeys" : [ "Map" ]
+      }
+    },
+    "OUTPUT4_copy0" : {
+      "action" : "save",
+      "sources" : [ "JOIN15_copy0" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "EventsDataSet",
+          "name" : "EventsDataSet",
+          "rowLevelSecurityFilter" : "'EventOwnerRole.Id_flatten' == \"$User.UserRoleId\" || 'EventOwner.Id' == \"$User.Id\" || AnalyticsAdmin.Id' == \"$User.Id\"",
+          "folderName" : "SAM_Dashboards"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET20" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Name", "Id" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN16" : {
+      "action" : "join",
+      "sources" : [ "JOIN12_copy0", "LOAD_DATASET20" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "AccountId" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET21" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Name", "Id" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN"
+        }
+      }
+    },
+    "JOIN17" : {
+      "action" : "join",
+      "sources" : [ "JOIN13_copy0", "LOAD_DATASET21" ],
+      "schema" : {
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "AccountId" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET14_copy0_copy0_copy0" : {
+        "label" : "User",
+        "description" : "",
+        "type" : "LOAD_DATASET",
+        "top" : 252.5,
+        "left" : 252.10000000000002,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET0_copy0_copy0" : {
+        "label" : "Task",
+        "description" : "",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1_copy0_copy0" : {
+        "label" : "Event",
+        "description" : "",
+        "type" : "LOAD_DATASET",
+        "top" : 532,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN10_copy0" : {
+        "label" : "TaskOwner",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 252
+      },
+      "LOAD_DATASET16_copy0" : {
+        "label" : "User Copy",
+        "type" : "LOAD_DATASET",
+        "top" : 671.8,
+        "left" : 252,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN11_copy0" : {
+        "label" : "EventOwner",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 532.3,
+        "left" : 252.10000000000002
+      },
+      "LOAD_DATASET17_copy0" : {
+        "label" : "UserRole",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 392,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET18_copy0" : {
+        "label" : "UserRole Copy",
+        "type" : "LOAD_DATASET",
+        "top" : 952,
+        "left" : 392,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN12_copy0" : {
+        "label" : "TaskUserRole",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 392
+      },
+      "JOIN13_copy0" : {
+        "label" : "EventOwnerRole",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 532,
+        "left" : 392
+      },
+      "TRANSFORM5_copy0" : {
+        "label" : "Transform 5",
+        "type" : "TRANSFORM",
+        "top" : 252,
+        "left" : 392,
+        "graph" : {
+          "FLATTEN0_copy0" : {
+            "label" : "Flatten"
+          }
+        },
+        "connectors" : [ ]
+      },
+      "TRANSFORM6_copy0" : {
+        "label" : "Transform 6",
+        "type" : "TRANSFORM",
+        "top" : 672,
+        "left" : 392,
+        "graph" : {
+          "FLATTEN1_copy0" : {
+            "label" : "Flatten"
+          }
+        },
+        "connectors" : [ ]
+      },
+      "TRANSFORM7_copy0" : {
+        "label" : "Transform 7",
+        "type" : "TRANSFORM",
+        "top" : 392,
+        "left" : 532,
+        "graph" : {
+          "FORMULA10_copy0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ ]
+      },
+      "LOAD_DATASET19_copy0" : {
+        "label" : "User Copy1",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 812,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "TRANSFORM8_copy0" : {
+        "label" : "Transform 8",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 1092,
+        "graph" : {
+          "FORMULA11_copy0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ ]
+      },
+      "FILTER0_copy0" : {
+        "label" : "CRMAnalyticsAdminUser",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 112,
+        "left" : 952
+      },
+      "JOIN14_copy0" : {
+        "label" : "Join 14",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 1232
+      },
+      "OUTPUT3_copy0" : {
+        "label" : "Task Output",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 1372
+      },
+      "LOAD_DATASET19_copy0_copy0" : {
+        "label" : "User Copy2",
+        "description" : "",
+        "type" : "LOAD_DATASET",
+        "top" : 811.4000000000001,
+        "left" : 532.3,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "TRANSFORM8_copy0_copy0" : {
+        "label" : "Transform",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 812.3,
+        "left" : 812.3,
+        "graph" : {
+          "FORMULA11_copy0_copy0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ ]
+      },
+      "FILTER0_copy0_copy0" : {
+        "label" : "CRMAnalyticsAdminUser Copy",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 812.3,
+        "left" : 672.3
+      },
+      "TRANSFORM9_copy0" : {
+        "label" : "Transform 9",
+        "type" : "TRANSFORM",
+        "top" : 532,
+        "left" : 532,
+        "graph" : {
+          "FORMULA12_copy0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ ]
+      },
+      "JOIN15_copy0" : {
+        "label" : "Join 15",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 952
+      },
+      "OUTPUT4_copy0" : {
+        "label" : "Event Output",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 812,
+        "left" : 1092
+      },
+      "LOAD_DATASET20" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 531.9,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN16" : {
+        "label" : "Join 16",
+        "type" : "JOIN",
+        "top" : 111.9,
+        "left" : 672
+      },
+      "LOAD_DATASET21" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 672,
+        "left" : 532,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN17" : {
+        "label" : "Join 17",
+        "type" : "JOIN",
+        "top" : 672,
+        "left" : 672
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET0_copy0_copy0",
+      "target" : "JOIN10_copy0"
+    }, {
+      "source" : "LOAD_DATASET14_copy0_copy0_copy0",
+      "target" : "JOIN10_copy0"
+    }, {
+      "source" : "LOAD_DATASET1_copy0_copy0",
+      "target" : "JOIN11_copy0"
+    }, {
+      "source" : "LOAD_DATASET16_copy0",
+      "target" : "JOIN11_copy0"
+    }, {
+      "source" : "JOIN10_copy0",
+      "target" : "JOIN12_copy0"
+    }, {
+      "source" : "TRANSFORM5_copy0",
+      "target" : "JOIN12_copy0"
+    }, {
+      "source" : "JOIN11_copy0",
+      "target" : "JOIN13_copy0"
+    }, {
+      "source" : "TRANSFORM6_copy0",
+      "target" : "JOIN13_copy0"
+    }, {
+      "source" : "LOAD_DATASET17_copy0",
+      "target" : "TRANSFORM5_copy0"
+    }, {
+      "source" : "LOAD_DATASET18_copy0",
+      "target" : "TRANSFORM6_copy0"
+    }, {
+      "source" : "JOIN16",
+      "target" : "TRANSFORM7_copy0"
+    }, {
+      "source" : "FILTER0_copy0",
+      "target" : "TRANSFORM8_copy0"
+    }, {
+      "source" : "LOAD_DATASET19_copy0",
+      "target" : "FILTER0_copy0"
+    }, {
+      "source" : "TRANSFORM7_copy0",
+      "target" : "JOIN14_copy0"
+    }, {
+      "source" : "TRANSFORM8_copy0",
+      "target" : "JOIN14_copy0"
+    }, {
+      "source" : "JOIN14_copy0",
+      "target" : "OUTPUT3_copy0"
+    }, {
+      "source" : "FILTER0_copy0_copy0",
+      "target" : "TRANSFORM8_copy0_copy0"
+    }, {
+      "source" : "LOAD_DATASET19_copy0_copy0",
+      "target" : "FILTER0_copy0_copy0"
+    }, {
+      "source" : "JOIN17",
+      "target" : "TRANSFORM9_copy0"
+    }, {
+      "source" : "TRANSFORM9_copy0",
+      "target" : "JOIN15_copy0"
+    }, {
+      "source" : "TRANSFORM8_copy0_copy0",
+      "target" : "JOIN15_copy0"
+    }, {
+      "source" : "JOIN15_copy0",
+      "target" : "OUTPUT4_copy0"
+    }, {
+      "source" : "JOIN12_copy0",
+      "target" : "JOIN16"
+    }, {
+      "source" : "LOAD_DATASET20",
+      "target" : "JOIN16"
+    }, {
+      "source" : "JOIN13_copy0",
+      "target" : "JOIN17"
+    }, {
+      "source" : "LOAD_DATASET21",
+      "target" : "JOIN17"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

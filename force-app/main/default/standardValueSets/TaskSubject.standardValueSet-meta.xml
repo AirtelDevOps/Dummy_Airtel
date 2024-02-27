@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Letter</fullName>
+        <default>false</default>
+        <label>Send Letter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Quote</fullName>
+        <default>false</default>
+        <label>Send Quote</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Validate Hardware Delivery</fullName>
+        <default>false</default>
+        <label>Validate Hardware Delivery</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hold for RA Order</fullName>
+        <default>false</default>
+        <label>Hold for RA Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trigger Enable CPE Resources</fullName>
+        <default>false</default>
+        <label>Trigger Enable CPE Resources</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PM approval for LoC</fullName>
+        <default>false</default>
+        <label>PM approval for LoC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware Delivery Confirmation</fullName>
+        <default>false</default>
+        <label>Hardware Delivery Confirmation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PM consent for LoC</fullName>
+        <default>false</default>
+        <label>PM consent for LoC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hold UntilDeploy GA</fullName>
+        <default>false</default>
+        <label>Hold UntilDeploy GA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PM NW Jeopardy</fullName>
+        <default>false</default>
+        <label>PM NW Jeopardy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PM Workways</fullName>
+        <default>false</default>
+        <label>PM Workways</label>
+    </standardValue>
+</StandardValueSet>

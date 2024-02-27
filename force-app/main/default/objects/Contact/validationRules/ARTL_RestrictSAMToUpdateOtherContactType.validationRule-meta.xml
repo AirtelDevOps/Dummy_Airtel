@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_RestrictSAMToUpdateOtherContactType</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Permission.ARTL_SAM_General_User,
+NOT(ISPICKVAL(ARTL_Contact_Role__c, &quot;Service Contact&quot;)),
+NOT(ISNEW())
+)</errorConditionFormula>
+    <errorMessage>You can only access Service Contact</errorMessage>
+</ValidationRule>

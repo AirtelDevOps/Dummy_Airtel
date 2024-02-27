@@ -1,0 +1,32 @@
+{
+    "errorMessage": {
+        "soaFault": {
+            "faultDescription": "Error received from backend. Please check fault trace.",
+            "faultTrace": "com.fasterxml.jackson.databind.JsonMappingException: N/A (through reference chain: com.comverse.udt.udtrequest.CustomerUdtRequest[\"Requests\"]->com.csgsystems.bp.data.AccountXIDObjectData[\"ExtendedData\"])",
+            "soaFaultCode": "createBillingAccount-3599-E",
+            "soaFaultOriginator": "FX",
+            "soaTransactionID": "de7e3620-68e1-4b64-9bf3-9fc307714201"
+        }
+    },
+    "info": {
+        "content-length": "486",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Mon, 20 Nov 2023 07:40:34 GMT",
+        "server": "envoy",
+        "status": "Conflict",
+        "statusCode": 409,
+        "x-envoy-upstream-service-time": "190",
+        "x-oracle-dms-ecid": "5a8d3bf2-6d0a-4a61-8600-f794508f280b-00322881",
+        "x-oracle-dms-rid": "0"
+    },
+    "result": {
+        "soaFault": {
+            "faultDescription": "Error received from backend. Please check fault trace.",
+            "faultTrace": "com.fasterxml.jackson.databind.JsonMappingException: N/A (through reference chain: com.comverse.udt.udtrequest.CustomerUdtRequest[\"Requests\"]->com.csgsystems.bp.data.AccountXIDObjectData[\"ExtendedData\"])",
+            "soaFaultCode": "createBillingAccount-3599-E",
+            "soaFaultOriginator": "FX",
+            "soaTransactionID": "de7e3620-68e1-4b64-9bf3-9fc307714201"
+        }
+    },
+    "success": false
+}

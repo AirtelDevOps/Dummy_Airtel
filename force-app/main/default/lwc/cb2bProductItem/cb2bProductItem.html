@@ -1,0 +1,49 @@
+<template>
+    <div>
+      <div class={productClass} data-methodname="addChildProductToCart" if:false={hideProduct} onkeyup={handleKeyboardEvent} onclick={addChildProductToCart}>
+        <div role="button" aria-disabled={isItemDisabled} tabindex="0" class={productItemContainerClasses}>
+          <div class="b2b-enterprise-product-name">
+            <slot name="title">
+              {product.name}
+            </slot>
+          </div>
+          <slot name="description">
+            <div class="b2b-enterprise-product-description">{product.description}</div>
+          </slot>
+          <slot name="attributes">
+            <div if:true={displayAttributes} class="b2b-enterprise-attributes_info">
+              <span class="b2b-enterprise-each-attribute slds-wrap" for:each={attributes} for:item="attribute"
+                key={attribute.label}>
+                <span class="b2b-enterprise-attribute_label">{attribute.label}</span>
+                <span class="b2b-enterprise-attribute_value">{attribute.value}</span>
+              </span>
+            </div>
+          </slot>
+          <!--
+          <slot name="price-range">
+            <div class="b2b-enterprise-price_info">
+              <div class="b2b-enterprise-each-attribute">
+                <p class="b2b-enterprise-price-label slds-text-align_left">{labels.CMEXMonthly}</p>
+                <p class="slds-text-align_left">{recurringPrice}</p>
+              </div>
+              <div class="b2b-enterprise-each-attribute">
+                <p class="b2b-enterprise-price-label slds-text-align_left">{labels.CMEXOneTime}</p>
+                <p class="slds-text-align_left">{oneTimePrice}</p>
+              </div>
+            </div>
+          </slot>
+          -->
+          <slot name="message-section">
+            <template if:true={messages}>
+              <div class="b2b-enterprise-product-error-message" for:item="mes" for:each={messages} key={Id}>
+                {mes.message}
+              </div>
+            </template>
+          </slot>
+        </div>
+        <div class="slds-spinner_container" if:true={loading}>
+          <lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+        </div>
+      </div>
+    </div>
+  </template>

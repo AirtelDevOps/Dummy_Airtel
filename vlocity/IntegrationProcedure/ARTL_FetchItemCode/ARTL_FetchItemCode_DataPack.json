@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_FetchItemCode_SampleInput.json",
+    "Description": "Input to this IP -   %QLIId% - consumerTransactionId",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FetchItemCode",
+    "OmniProcessElement": [
+        "ARTL_FetchItemCode_Element_DRFetchItemCodeFromQLI.json",
+        "ARTL_FetchItemCode_Element_RADebugLogger.json",
+        "ARTL_FetchItemCode_Element_HTTPFetchItemDetailsFromItemCode.json",
+        "ARTL_FetchItemCode_Element_IPCreateIncident.json",
+        "ARTL_FetchItemCode_Element_RAResponseLogger.json",
+        "ARTL_FetchItemCode_Element_SVMockResponseSuccess.json",
+        "ARTL_FetchItemCode_Element_DataRaptorPostAction2.json",
+        "ARTL_FetchItemCode_Element_APIResponseForFAILURE.json",
+        "ARTL_FetchItemCode_Element_DRLoadItemCodeDetailsOnQLI.json",
+        "ARTL_FetchItemCode_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_FetchItemCode",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FetchItemCode_PropertySetConfig.json",
+    "SubType": "FetchItemCode",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FetchItemCode/Procedure"
+}

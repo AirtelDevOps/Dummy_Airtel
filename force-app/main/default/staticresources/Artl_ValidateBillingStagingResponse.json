@@ -1,0 +1,1661 @@
+{
+  "fields": [
+    {
+      "fieldName": "DCP_First_Name__c",
+      "required": true
+    },
+    {
+      "fieldName": "DCP_Last_Name__c",
+      "required": true
+    },
+    {
+      "fieldName": "DCP_Email__c",
+      "required": true
+    },
+    {
+      "fieldName": "DCP_Phone__c",
+      "required": true
+    },
+    {
+      "fieldName": "BCP_First_Name__c",
+      "required": true
+    },
+    {
+      "fieldName": "BCP_Last_Name__c",
+      "required": true
+    },
+    {
+      "fieldName": "BCP_Email__c",
+      "required": true
+    },
+    {
+      "fieldName": "BCP_Phone__c",
+      "required": true
+    }
+  ],
+  "Taxation": [
+    {
+      "Taxation": "No",
+      "installationStandardReason": "Airtel- Foreign Legal Entity",
+      "InstallationGSTapplicable": "No"
+    },
+    {
+      "Taxation": "Yes",
+      "installationStandardReason": "Applied For",
+      "InstallationGSTapplicable": "Yes"
+    },
+    {
+      "Taxation": "No",
+      "installationStandardReason": "Exempt Supply- Trust/Entities 12AA",
+      "InstallationGSTapplicable": "No"
+    },
+    {
+      "Taxation": "Yes",
+      "installationStandardReason": "Exempt",
+      "InstallationGSTapplicable": "Yes"
+    },
+    {
+      "Taxation": "No",
+      "installationStandardReason": "NA",
+      "InstallationGSTapplicable": "No"
+    },
+    {
+      "Taxation": "Yes",
+      "installationStandardReason": "Non-SEZ",
+      "InstallationGSTapplicable": "Yes"
+    },
+    {
+      "Taxation": "No",
+      "installationStandardReason": "Non Taxable as transactions within same Company",
+      "InstallationGSTapplicable": "No"
+    },
+    {
+      "Taxation": "No",
+      "installationStandardReason": "Others",
+      "InstallationGSTapplicable": "No"
+    },
+    {
+      "Taxation": "Yes",
+      "installationStandardReason": "SEZ",
+      "InstallationGSTapplicable": "Yes"
+    },
+    {
+      "Taxation": "Yes",
+      "installationStandardReason": "UIN",
+      "InstallationGSTapplicable": "Yes"
+    },
+    {
+      "Taxation": "No",
+      "installationStandardReason": "Zero Rated Supply- Export",
+      "InstallationGSTapplicable": "No"
+    },
+    {
+      "Taxation": "Yes",
+      "installationStandardReason": "Zero Rated Supply- SEZ",
+      "InstallationGSTapplicable": "Yes"
+    }
+  ],
+  "LicenseCompany": [
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "AOI"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "AOI"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "DSL"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "DSL"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "INAMA"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "INAMA"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "Internet"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "Internet"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "MPLS"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "MPLS"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "BHR",
+      "LicenseCompany": "ADL-Cloud-BIHAR",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "CG",
+      "LicenseCompany": "ADL-Cloud-Chhattisgarh",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "GUJ",
+      "LicenseCompany": "ADL-Cloud-Gujarat",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "HAR",
+      "LicenseCompany": "ADL-Cloud-Haryana",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "HP",
+      "LicenseCompany": "ADL-Cloud-Himachal",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "JH",
+      "LicenseCompany": "ADL-Cloud-Jharkhand",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "KK",
+      "LicenseCompany": "ADL-Cloud-Karnataka",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "KER",
+      "LicenseCompany": "ADL-Cloud-Kerala",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "MP",
+      "LicenseCompany": "ADL-Cloud-M.P.",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "MAH",
+      "LicenseCompany": "ADL-Cloud-Maharashtra",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "ORS",
+      "LicenseCompany": "ADL-Cloud-Orissa",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "PUN",
+      "LicenseCompany": "ADL-Cloud-Punjab",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "RAJ",
+      "LicenseCompany": "ADL-Cloud-Rajasthan",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "TG",
+      "LicenseCompany": "ADL-Cloud-Telangana",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "UP",
+      "LicenseCompany": "ADL-Cloud-U.P.",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "WB",
+      "LicenseCompany": "ADL-Cloud-West Bengal",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "BHR",
+      "LicenseCompany": "ADL-Security-BIHAR",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "CG",
+      "LicenseCompany": "ADL-Security-Chhattisgarh",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "GUJ",
+      "LicenseCompany": "ADL-Security-Gujarat",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "HAR",
+      "LicenseCompany": "ADL-Security-Haryana",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "HP",
+      "LicenseCompany": "ADL-Security-Himachal",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "JH",
+      "LicenseCompany": "ADL-Security-Jharkhand",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "KK",
+      "LicenseCompany": "ADL-Security-Karnataka",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "KER",
+      "LicenseCompany": "ADL-Security-Kerala",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "MP",
+      "LicenseCompany": "ADL-Security-M.P.",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "MAH",
+      "LicenseCompany": "ADL-Security-Maharashtra",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "ORS",
+      "LicenseCompany": "ADL-Security-Orissa",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "PUN",
+      "LicenseCompany": "ADL-Security-Punjab",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "RAJ",
+      "LicenseCompany": "ADL-Security-Rajasthan",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "TG",
+      "LicenseCompany": "ADL-Security-Telangana",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "UP",
+      "LicenseCompany": "ADL-Security-U.P.",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "WB",
+      "LicenseCompany": "ADL-Security-West Bengal",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "BHR",
+      "LicenseCompany": "BASL-BIHAR",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "BHR",
+      "LicenseCompany": "BASL-BIHAR_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "CG",
+      "LicenseCompany": "BASL-Chhattisgarh",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "CG",
+      "LicenseCompany": "BASL-Chhattisgarh_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "GUJ",
+      "LicenseCompany": "BASL-Gujarat",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "GUJ",
+      "LicenseCompany": "BASL-Gujarat_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "HAR",
+      "LicenseCompany": "BASL-Haryana",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "HAR",
+      "LicenseCompany": "BASL-Haryana_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "HP",
+      "LicenseCompany": "BASL-Himachal",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "HP",
+      "LicenseCompany": "BASL-Himachal_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "JH",
+      "LicenseCompany": "BASL-Jharkhand",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "JH",
+      "LicenseCompany": "BASL-Jharkhand_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "KK",
+      "LicenseCompany": "BASL-Karnataka",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "KK",
+      "LicenseCompany": "BASL-Karnataka_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "KER",
+      "LicenseCompany": "BASL-Kerala",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "KER",
+      "LicenseCompany": "BASL-Kerala_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "MP",
+      "LicenseCompany": "BASL-M.P.",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "MP",
+      "LicenseCompany": "BASL-M.P._GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "MAH",
+      "LicenseCompany": "BASL-Maharashtra",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "MAH",
+      "LicenseCompany": "BASL-Maharashtra_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "ORS",
+      "LicenseCompany": "BASL-Orissa",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "ORS",
+      "LicenseCompany": "BASL-Orissa_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "PUN",
+      "LicenseCompany": "BASL-Punjab",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "PUN",
+      "LicenseCompany": "BASL-Punjab_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "RAJ",
+      "LicenseCompany": "BASL-Rajasthan",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "RAJ",
+      "LicenseCompany": "BASL-Rajasthan_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "TG",
+      "LicenseCompany": "BASL-Telangana",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "TG",
+      "LicenseCompany": "BASL-Telangana_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "UP",
+      "LicenseCompany": "BASL-U.P.",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "UP",
+      "LicenseCompany": "BASL-U.P._GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "WB",
+      "LicenseCompany": "BASL-West Bengal",
+      "Segment": "AB",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "WB",
+      "LicenseCompany": "BASL-West Bengal_GB",
+      "Segment": "Global",
+      "Product": "NIPS Hardware"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "AP",
+      "LicenseCompany": "ADL-Cloud-AP",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "BHR",
+      "LicenseCompany": "ADL-Cloud-BIHAR",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "CG",
+      "LicenseCompany": "ADL-Cloud-Chhattisgarh",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "DEL",
+      "LicenseCompany": "ADL-Cloud-Delhi",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "GUJ",
+      "LicenseCompany": "ADL-Cloud-Gujarat",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "HAR",
+      "LicenseCompany": "ADL-Cloud-Haryana",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "HP",
+      "LicenseCompany": "ADL-Cloud-Himachal",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "JH",
+      "LicenseCompany": "ADL-Cloud-Jharkhand",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "KK",
+      "LicenseCompany": "ADL-Cloud-Karnataka",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "KER",
+      "LicenseCompany": "ADL-Cloud-Kerala",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "MP",
+      "LicenseCompany": "ADL-Cloud-M.P.",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "MAH",
+      "LicenseCompany": "ADL-Cloud-Maharashtra",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "ORS",
+      "LicenseCompany": "ADL-Cloud-Orissa",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "PDY",
+      "LicenseCompany": "ADL-Cloud-Pondicherry",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "PUN",
+      "LicenseCompany": "ADL-Cloud-Punjab",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "RAJ",
+      "LicenseCompany": "ADL-Cloud-Rajasthan",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "TG",
+      "LicenseCompany": "ADL-Cloud-Telangana",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "UP",
+      "LicenseCompany": "ADL-Cloud-U.P.",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "WB",
+      "LicenseCompany": "ADL-Cloud-West Bengal",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "AP",
+      "LicenseCompany": "ADL-Security-AP",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "BHR",
+      "LicenseCompany": "ADL-Security-BIHAR",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "CG",
+      "LicenseCompany": "ADL-Security-Chhattisgarh",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "DEL",
+      "LicenseCompany": "ADL-Security-Delhi",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "GUJ",
+      "LicenseCompany": "ADL-Security-Gujarat",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "HAR",
+      "LicenseCompany": "ADL-Security-Haryana",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "HP",
+      "LicenseCompany": "ADL-Security-Himachal",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "JH",
+      "LicenseCompany": "ADL-Security-Jharkhand",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "KK",
+      "LicenseCompany": "ADL-Security-Karnataka",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "KER",
+      "LicenseCompany": "ADL-Security-Kerala",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "MP",
+      "LicenseCompany": "ADL-Security-M.P.",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "MAH",
+      "LicenseCompany": "ADL-Security-Maharashtra",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "ORS",
+      "LicenseCompany": "ADL-Security-Orissa",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "PDY",
+      "LicenseCompany": "ADL-Security-Pondicherry",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "PUN",
+      "LicenseCompany": "ADL-Security-Punjab",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "RAJ",
+      "LicenseCompany": "ADL-Security-Rajasthan",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "TG",
+      "LicenseCompany": "ADL-Security-Telangana",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "UP",
+      "LicenseCompany": "ADL-Security-U.P.",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "ADL",
+      "Circle": "WB",
+      "LicenseCompany": "ADL-Security-West Bengal",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "AP",
+      "LicenseCompany": "BASL-AP",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "AP",
+      "LicenseCompany": "BASL-AP_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "BHR",
+      "LicenseCompany": "BASL-BIHAR",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "BHR",
+      "LicenseCompany": "BASL-BIHAR_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "CG",
+      "LicenseCompany": "BASL-Chhattisgarh",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "CG",
+      "LicenseCompany": "BASL-Chhattisgarh_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "DEL",
+      "LicenseCompany": "BASL-Delhi",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "DEL",
+      "LicenseCompany": "BASL-Delhi_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "GUJ",
+      "LicenseCompany": "BASL-Gujarat",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "GUJ",
+      "LicenseCompany": "BASL-Gujarat_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "HAR",
+      "LicenseCompany": "BASL-Haryana",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "HAR",
+      "LicenseCompany": "BASL-Haryana_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "HP",
+      "LicenseCompany": "BASL-Himachal",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "HP",
+      "LicenseCompany": "BASL-Himachal_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "JH",
+      "LicenseCompany": "BASL-Jharkhand",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "JH",
+      "LicenseCompany": "BASL-Jharkhand_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "KK",
+      "LicenseCompany": "BASL-Karnataka",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "KK",
+      "LicenseCompany": "BASL-Karnataka_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "KER",
+      "LicenseCompany": "BASL-Kerala",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "KER",
+      "LicenseCompany": "BASL-Kerala_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "MP",
+      "LicenseCompany": "BASL-M.P.",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "MP",
+      "LicenseCompany": "BASL-M.P._GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "MAH",
+      "LicenseCompany": "BASL-Maharashtra",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "MAH",
+      "LicenseCompany": "BASL-Maharashtra_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "ORS",
+      "LicenseCompany": "BASL-Orissa",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "ORS",
+      "LicenseCompany": "BASL-Orissa_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "PDY",
+      "LicenseCompany": "BASL-Pondicherry",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "PDY",
+      "LicenseCompany": "BASL-Pondicherry_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "PUN",
+      "LicenseCompany": "BASL-Punjab",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "PUN",
+      "LicenseCompany": "BASL-Punjab_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "RAJ",
+      "LicenseCompany": "BASL-Rajasthan",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "RAJ",
+      "LicenseCompany": "BASL-Rajasthan_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "TG",
+      "LicenseCompany": "BASL-Telangana",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "TG",
+      "LicenseCompany": "BASL-Telangana_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "UP",
+      "LicenseCompany": "BASL-U.P.",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "UP",
+      "LicenseCompany": "BASL-U.P._GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "WB",
+      "LicenseCompany": "BASL-West Bengal",
+      "Segment": "AB",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Circle": "WB",
+      "LicenseCompany": "BASL-West Bengal_GB",
+      "Segment": "Global",
+      "Product": "NIPS Service"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "PRI"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "PRI"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "SDWAN"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "SDWAN"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet",
+      "Segment": "AB",
+      "Product": "Security"
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Circle": "NA",
+      "LicenseCompany": "BAL Internet_GB",
+      "Segment": "Global",
+      "Product": "Security"
+    }
+  ],
+  "LegalEntity": [
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Product": "AOI",
+      "LegalEntityCode": 101
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Product": "DSL",
+      "LegalEntityCode": 101
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Product": "INAMA",
+      "LegalEntityCode": 101
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Product": "Internet",
+      "LegalEntityCode": 101
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Product": "MPLS",
+      "LegalEntityCode": 101
+    },
+    {
+      "LegalEntity": "Bharti Airtel Services Ltd",
+      "Product": "NIPS",
+      "LegalEntityCode": 102
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Product": "PRI",
+      "LegalEntityCode": 101
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Product": "SDWAN",
+      "LegalEntityCode": 101
+    },
+    {
+      "LegalEntity": "Bharti Airtel Ltd",
+      "Product": "Security",
+      "LegalEntityCode": 101
+    }
+  ],
+  "BillingStandardReason": [
+    {
+      "name": "SEZ",
+      "value": "SEZ",
+      "autoAdv": null
+    },
+    {
+      "name": "Zero Rated Supply- SEZ",
+      "value": "Zero Rated Supply- SEZ",
+      "autoAdv": null
+    },
+    {
+      "name": "Zero Rated Supply- Export",
+      "value": "Zero Rated Supply- Export",
+      "autoAdv": null
+    },
+    {
+      "name": "SEZ With Taxes",
+      "value": "SEZ With Taxes",
+      "autoAdv": null
+    }
+  ],
+  "DeliveryStandardReason": [
+    {
+      "name": "Airtel- Foreign Legal Entity",
+      "value": "Airtel- Foreign Legal Entity",
+      "autoAdv": null
+    },
+    {
+      "name": "Applied For",
+      "value": "Applied For",
+      "autoAdv": null
+    },
+    {
+      "name": "Exempt",
+      "value": "Exempt",
+      "autoAdv": null
+    },
+    {
+      "name": "Exempt Supply- Trust/Entities 12AA",
+      "value": "Exempt Supply- Trust/Entities 12AA",
+      "autoAdv": null
+    },
+    {
+      "name": "NA",
+      "value": "NA",
+      "autoAdv": null
+    },
+    {
+      "name": "Non Taxable as transactions within same Company",
+      "value": "Non Taxable as transactions within same Company",
+      "autoAdv": null
+    },
+    {
+      "name": "Non-SEZ",
+      "value": "Non-SEZ",
+      "autoAdv": null
+    },
+    {
+      "name": "Others",
+      "value": "Others",
+      "autoAdv": null
+    },
+    {
+      "name": "SEZ",
+      "value": "SEZ",
+      "autoAdv": null
+    },
+    {
+      "name": "UIN",
+      "value": "UIN",
+      "autoAdv": null
+    },
+    {
+      "name": "Zero Rated Supply- Export",
+      "value": "Zero Rated Supply- Export",
+      "autoAdv": null
+    },
+    {
+      "name": "Zero Rated Supply- SEZ",
+      "value": "Zero Rated Supply- SEZ",
+      "autoAdv": null
+    }
+  ],
+  "BillType": [
+    {
+      "name": "Advance",
+      "value": "Advance",
+      "autoAdv": null
+    },
+    {
+      "name": "Arrear",
+      "value": "Arrear",
+      "autoAdv": null
+    },
+    {
+      "name": "Auto",
+      "value": "Auto",
+      "autoAdv": null
+    },
+    {
+      "name": "Deemed",
+      "value": "Deemed",
+      "autoAdv": null
+    },
+    {
+      "name": "Manual",
+      "value": "Manual",
+      "autoAdv": null
+    }
+  ],
+  "CreditPeriod": [
+    {
+      "name": "0 days",
+      "value": "0 days",
+      "autoAdv": null
+    },
+    {
+      "name": "95 Percentile Carrier/BOD",
+      "value": "95 Percentile Carrier/BOD",
+      "autoAdv": null
+    },
+    {
+      "name": "ACS-INAMA Audio-Bridge",
+      "value": "ACS-INAMA Audio-Bridge",
+      "autoAdv": null
+    },
+    {
+      "name": "AES Advanced Billing Default",
+      "value": "AES Advanced Billing Default",
+      "autoAdv": null
+    },
+    {
+      "name": "AES Daily Billing",
+      "value": "AES Daily Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Account Arrear Billing",
+      "value": "Account Arrear Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Arrear Nxtra BW and Services",
+      "value": "Arrear Nxtra BW and Services",
+      "autoAdv": null
+    },
+    {
+      "name": "Arrear SAS Billing",
+      "value": "Arrear SAS Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "CLEP Bill period",
+      "value": "CLEP Bill period",
+      "autoAdv": null
+    },
+    {
+      "name": "Digimate Services",
+      "value": "Digimate Services",
+      "autoAdv": null
+    },
+    {
+      "name": "INAMA",
+      "value": "INAMA",
+      "autoAdv": null
+    },
+    {
+      "name": "ITFS",
+      "value": "ITFS",
+      "autoAdv": null
+    },
+    {
+      "name": "MBIC",
+      "value": "MBIC",
+      "autoAdv": null
+    },
+    {
+      "name": "NDL Advanced Billing",
+      "value": "NDL Advanced Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "NDL Daily Billing",
+      "value": "NDL Daily Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Premium ACS-INAMA Audio-Bridge",
+      "value": "Premium ACS-INAMA Audio-Bridge",
+      "autoAdv": null
+    },
+    {
+      "name": "TM Advanced Billing Default",
+      "value": "TM Advanced Billing Default",
+      "autoAdv": null
+    },
+    {
+      "name": "VCS",
+      "value": "VCS",
+      "autoAdv": null
+    },
+    {
+      "name": "60 days",
+      "value": "60 days",
+      "autoAdv": null
+    },
+    {
+      "name": "7 days",
+      "value": "7 days",
+      "autoAdv": null
+    },
+    {
+      "name": "14 days",
+      "value": "14 days",
+      "autoAdv": null
+    },
+    {
+      "name": "15 days",
+      "value": "15 days",
+      "autoAdv": null
+    },
+    {
+      "name": "30 days",
+      "value": "30 days",
+      "autoAdv": null
+    },
+    {
+      "name": "45 days",
+      "value": "45 days",
+      "autoAdv": null
+    },
+    {
+      "name": "90 days",
+      "value": "90 days",
+      "autoAdv": null
+    }
+  ],
+  "Store": [
+    {
+      "name": "AHM",
+      "value": "AHM",
+      "autoAdv": null
+    },
+    {
+      "name": "BGL",
+      "value": "BGL",
+      "autoAdv": null
+    },
+    {
+      "name": "COC",
+      "value": "COC",
+      "autoAdv": null
+    },
+    {
+      "name": "IND",
+      "value": "IND",
+      "autoAdv": null
+    },
+    {
+      "name": "BWD",
+      "value": "BWD",
+      "autoAdv": null
+    },
+    {
+      "name": "JAI",
+      "value": "JAI",
+      "autoAdv": null
+    },
+    {
+      "name": "CHN",
+      "value": "CHN",
+      "autoAdv": null
+    },
+    {
+      "name": "TEL",
+      "value": "TEL",
+      "autoAdv": null
+    },
+    {
+      "name": "RJP",
+      "value": "RJP",
+      "autoAdv": null
+    },
+    {
+      "name": "GGN",
+      "value": "GGN",
+      "autoAdv": null
+    },
+    {
+      "name": "LUC",
+      "value": "LUC",
+      "autoAdv": null
+    },
+    {
+      "name": "ASM",
+      "value": "ASM",
+      "autoAdv": null
+    },
+    {
+      "name": "SHI",
+      "value": "SHI",
+      "autoAdv": null
+    },
+    {
+      "name": "HOW",
+      "value": "HOW",
+      "autoAdv": null
+    },
+    {
+      "name": "RCH",
+      "value": "RCH",
+      "autoAdv": null
+    },
+    {
+      "name": "KHU",
+      "value": "KHU",
+      "autoAdv": null
+    },
+    {
+      "name": "PTN",
+      "value": "PTN",
+      "autoAdv": null
+    },
+    {
+      "name": "RAI",
+      "value": "RAI",
+      "autoAdv": null
+    }
+  ],
+  "BillingLevel": [
+    {
+      "name": "Account Level",
+      "value": "Account Level",
+      "autoAdv": null
+    },
+    {
+      "name": "PO Level",
+      "value": "PO Level",
+      "autoAdv": null
+    },
+    {
+      "name": "LSI Level",
+      "value": "LSI Level",
+      "autoAdv": null
+    }
+  ],
+  "BillingFrequency": [
+    {
+      "name": "Advanced Quarterly Billing",
+      "value": "Advanced Quarterly Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Arrear Quarterly Billing",
+      "value": "Arrear Quarterly Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Advanced Half-Yearly Billing",
+      "value": "Advanced Half-Yearly Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Arrear Monthly Billing",
+      "value": "Arrear Monthly Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Advanced Yearly Billing",
+      "value": "Advanced Yearly Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Advanced Monthly Billing",
+      "value": "Advanced Monthly Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Arrear Half-Yearly Billing",
+      "value": "Arrear Half-Yearly Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Arrear Half-Yearly Billing",
+      "value": "Arrear Half-Yearly Billing",
+      "autoAdv": null
+    },
+    {
+      "name": "Arrear Yearly Billing",
+      "value": "Arrear Yearly Billing",
+      "autoAdv": null
+    }
+  ]
+}

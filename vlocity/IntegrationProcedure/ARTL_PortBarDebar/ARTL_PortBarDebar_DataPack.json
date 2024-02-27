@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_PortBarDebar_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PortBarDebar",
+    "OmniProcessElement": [
+        "ARTL_PortBarDebar_Element_DataRaptorExtractAction1.json",
+        "ARTL_PortBarDebar_Element_DRFetchRequestPayloadList.json",
+        "ARTL_PortBarDebar_Element_RAFetchRequestAttributes.json",
+        "ARTL_PortBarDebar_Element_SetValues2.json",
+        "ARTL_PortBarDebar_Element_HTTPAction1.json",
+        "ARTL_PortBarDebar_Element_DataRaptorPostAction1.json",
+        "ARTL_PortBarDebar_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_PortBarDebar",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_PortBarDebar_PropertySetConfig.json",
+    "SubType": "PortBarDebar",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/PortBarDebar/Procedure"
+}

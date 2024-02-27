@@ -1,0 +1,42 @@
+<template>  
+
+     <div class="slds-p-horizontal_small hide-header datatable-container slds-table thead ">
+            <div if:true={tasks} >
+        <lightning-datatable
+         hide-table-header="true"
+                key-field="id"
+                data={tasks}
+                columns={columns}
+                hide-checkbox-column="true">
+        </lightning-datatable>
+
+            </div>
+        </div>
+
+     <!-- <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th class="slds-size_1-of-4" scope="col">
+                    <div class="slds-truncate" title="Task Name">Task Name</div>
+                </th>
+                <th class="slds-size_1-of-4" scope="col">
+                    <div class="slds-truncate" title="Status">Status</div>
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={tasks} for:item="task">
+                <tr key={task.Id} class="slds-hint-parent" >
+                    <td data-label="Task Name">
+                        <div class="slds-truncate" title={task.Subject}>{task.Subject}</div>
+                    </td>
+                    <td data-label="Status">
+                        <div class="slds-truncate" title={task.Status}>{task.Status}</div>
+                    </td>
+         
+                </tr>
+            </template>
+        </tbody>
+    </table>-->
+</template>

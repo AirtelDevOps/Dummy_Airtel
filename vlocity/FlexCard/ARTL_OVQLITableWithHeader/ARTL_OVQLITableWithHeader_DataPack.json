@@ -1,0 +1,48 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "ARTL_OVQLITableContainer/BhartiAirtelLimited/10.0",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 4,
+                    "name": "Parent.QuoteId",
+                    "val": "0Q0720000004dPNCAY"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "ARTL_OVQLITableContainer": "true",
+                    "quoteId": "{Parent.QuoteId}"
+                },
+                "ipMethod": "ARTL_OVQLITable",
+                "jsonMap": "{\"Parent.QuoteId\":\"{Parent.QuoteId}\"}",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_OVQLITableWithHeader",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_OVQLITableWithHeader/BhartiAirtelLimited/4.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_OVQLITableWithHeader.json",
+    "SampleDataSourceResponse": "[{\"RootItemId\":\"8a94c0cf-139c-55a8-562e-2fde31a511ab\",\"Type\":\"OTHERS\",\"ProductCode\":\"3c6df3ca-4424-4131-bde3-c3ea5d5b5925\",\"Id\":\"0QL72000000509AGAQ\",\"OfferName\":\"Internet\"},{\"RootItemId\":\"a63a5354-bdfe-85c9-1dcc-b83997373d1d\",\"Type\":\"SDWAN\",\"ProductCode\":\"VEPC_SD_WAN\",\"Id\":\"0QL720000008V3RGAU\",\"OfferName\":\"SD-WAN\"},{\"RootItemId\":\"001c2a9c-6d00-fa6f-c9a1-004c48d592c6\",\"Type\":\"NIPS\",\"ProductCode\":\"dac49a09-9b41-4999-b7c4-cf6319ad5b44\",\"Id\":\"0QL720000008WM5GAM\",\"OfferName\":\"NIPS Hardware\"},{\"RootItemId\":\"a4a38d87-cff5-125d-8537-42d9decdf821\",\"Type\":\"NIPS\",\"ProductCode\":\"c09a2e70-64af-4ad6-8427-06c8489234d7\",\"Id\":\"0QL720000008WFdGAM\",\"OfferName\":\"NIPS Service\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 4,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_OVQLITableWithHeader",
+    "sourceOrgUrl": "/0ko720000000IL7AAM"
+}

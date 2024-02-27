@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_OutboundHansenIntegration_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "OutboundHansenIntegration",
+    "OmniProcessElement": [
+        "ARTL_OutboundHansenIntegration_Element_Fetch_TaskDetails.json",
+        "ARTL_OutboundHansenIntegration_Element_FetchOrderDetails.json",
+        "ARTL_OutboundHansenIntegration_Element_SendDatatoHansen.json",
+        "ARTL_OutboundHansenIntegration_Element_RequestLogging.json",
+        "ARTL_OutboundHansenIntegration_Element_SendResponse.json"
+    ],
+    "OmniProcessKey": "ARTL_OutboundHansenIntegration",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_OutboundHansenIntegration_PropertySetConfig.json",
+    "SubType": "OutboundHansenIntegration",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/OutboundHansenIntegration/Procedure",
+    "WebComponentKey": "2aee47db-1a74-dfc3-43ec-24a180301ad8",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001YsTEAU"
+}

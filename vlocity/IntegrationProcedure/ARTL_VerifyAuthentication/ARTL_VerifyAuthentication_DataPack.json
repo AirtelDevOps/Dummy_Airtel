@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_VerifyAuthentication_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_VerifyAuthentication",
+    "OmniProcessElement": [
+        "ARTL_VerifyAuthentication_Element_ApexCall.json",
+        "ARTL_VerifyAuthentication_Element_SetValues.json",
+        "ARTL_VerifyAuthentication_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_VerifyAuthentication",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_VerifyAuthentication_PropertySetConfig.json",
+    "SubType": "VerifyAuthentication",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/VerifyAuthentication/Procedure"
+}

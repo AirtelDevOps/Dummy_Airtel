@@ -1,0 +1,61 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PostCartItems",
+    "OmniProcessId": {
+        "Name": "IPCreateOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTLOM/CreateOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "cartId": "%RACreateCart:records|1:Id%",
+            "items": [
+                {
+                    "fieldsToUpdate": {
+                        "%vlocity_namespace%__AttributeSelectedValues__c": "%SetParameters:attributes%",
+                        "%vlocity_namespace%__BillingAccountId__c": "%BillingAccountId%",
+                        "%vlocity_namespace%__ServiceAccountId__c": "%ServiceAccountId%",
+                        "CND__c": "%CustomerNeedByDate%",
+                        "RFS__c": "%RFSDate%"
+                    },
+                    "itemId": "%PricebookEntryId%"
+                }
+            ],
+            "price": false,
+            "validate": false
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction3",
+        "remoteClass": "CpqAppHandler",
+        "remoteMethod": "postCartsItems",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTLOM/CreateOrder/Procedure/PostCartItems"
+}

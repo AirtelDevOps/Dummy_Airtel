@@ -1,0 +1,81 @@
+<template>
+    <template if:true={isLoading}>
+        <div class="slds-spinner_container slds-is-relative">
+            <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+        </div>
+    </template>
+
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-3">
+            <lightning-button variant="brand" icon-name="utility:download" label="Download"
+                onclick={handleDownload} disabled={isDisabled}></lightning-button>
+        </div>
+        <div class="slds-col slds-size_2-of-3">
+            <lightning-input type="file" label="Please upload a UTF-8 encoded, comma separated .csv file" accept=".csv"
+                onchange={handleFileUpload} disabled={isDisabled}>
+            </lightning-input>
+            <p style="color:red;">Note: Street, City, State, Country & Pincode are Mandatory fields</p>
+        </div>
+    </div>
+
+    <template if:true={hasData}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Address Data</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <template if:true={isLoading}>
+                        <div class="slds-spinner_container slds-is-relative">
+                            <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+                        </div>
+                    </template>
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                        <thead>
+                            <tr>
+                                <th>AddressId</th>
+                                <th>Street</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Country</th>
+                                <th>Pincode</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Valid Address</th>
+                                <th>Validation Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={data} for:item="doc">
+                                <tr key={doc.AddressId}>
+                                    <td class="slds-cell-wrap">{doc.AddressId}</td>
+                                    <td class="slds-cell-wrap">{doc.Street}</td>
+                                    <td class="slds-cell-wrap">{doc.City}</td>
+                                    <td class="slds-cell-wrap">{doc.State}</td>
+                                    <td class="slds-cell-wrap">{doc.Country}</td>
+                                    <td class="slds-cell-wrap">{doc.Pincode}</td>
+                                    <td class="slds-cell-wrap">{doc.Latitude}</td>
+                                    <td class="slds-cell-wrap">{doc.Longitude}</td>
+                                    <td class="slds-cell-wrap"><lightning-input type="checkbox" label="Validation" variant="label-hidden" checked={doc.Validation} disabled></lightning-input></td>
+                                    <td class="slds-cell-wrap">{doc.ValidationMessage}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                    <div class="slds-p-around_medium slds-align_absolute-center slds-text-align_center">
+                        <lightning-button variant="brand" label="Save" onclick={handleSave} disabled={isDisabled}></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

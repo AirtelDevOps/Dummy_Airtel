@@ -1,0 +1,562 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "billingStagingFields",
+    "OmniProcessId": {
+        "Name": "validateBillingStagingFields",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/validateBillingStagingFields/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "BillType": [
+                {
+                    "autoAdv": null,
+                    "name": "Advance",
+                    "value": "Advance"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Arrear",
+                    "value": "Arrear"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Auto",
+                    "value": "Auto"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Deemed",
+                    "value": "Deemed"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Manual",
+                    "value": "Manual"
+                }
+            ],
+            "BillingFrequency": [
+                {
+                    "autoAdv": null,
+                    "name": "Weekly",
+                    "value": "Weekly"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Monthly",
+                    "value": "Monthly"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Quarterly",
+                    "value": "Quarterly"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Daily",
+                    "value": "Daily"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Fortnightly",
+                    "value": "Fortnightly"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Yearly",
+                    "value": "Yearly"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Half Yearly",
+                    "value": "Half Yearly"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Bi Monthly",
+                    "value": "Bi Monthly"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Bi Yearly",
+                    "value": "Bi Yearly"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Ten yearly",
+                    "value": "Ten yearly"
+                }
+            ],
+            "BillingLevel": [
+                {
+                    "autoAdv": null,
+                    "name": "Account Level",
+                    "value": "Account Level"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "PO Level",
+                    "value": "PO Level"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "LSI Level",
+                    "value": "LSI Level"
+                }
+            ],
+            "BillingStandardReason": [
+                {
+                    "autoAdv": null,
+                    "name": "SEZ",
+                    "value": "SEZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "UIN",
+                    "value": "UIN"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Exempt",
+                    "value": "Exempt"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Non-SEZ",
+                    "value": "Non-SEZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Applied For",
+                    "value": "Applied For"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "SEZ with taxes",
+                    "value": "SEZ with taxes"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Zero Rated Supply- FTWZ",
+                    "value": "Zero Rated Supply- FTWZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Zero Rated Supply- Export",
+                    "value": "Zero Rated Supply- Export"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Non Taxable as transactions within same Company",
+                    "value": "Non Taxable as transactions within same Company"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Airtel- Foreign Legal Entity",
+                    "value": "Airtel- Foreign Legal Entity"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Others",
+                    "value": "Others"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Non-SEZ",
+                    "value": "Non-SEZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Exempt-Trust/Entities 12AA",
+                    "value": "Exempt-Trust/Entities 12AA"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Zero Rated Supply- SEZ",
+                    "value": "Zero Rated Supply- SEZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "J&K delivery - Out of GST Preview",
+                    "value": "J&K delivery - Out of GST Preview"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Exempt Supply - Trust/Entities 12AA",
+                    "value": "Exempt Supply - Trust/Entities 12AA"
+                }
+            ],
+            "CreditPeriod": [
+                {
+                    "autoAdv": null,
+                    "name": "0 days",
+                    "value": "0 days"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "95 Percentile Carrier/BOD",
+                    "value": "95 Percentile Carrier/BOD"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "ACS-INAMA Audio-Bridge",
+                    "value": "ACS-INAMA Audio-Bridge"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "AES Advanced Billing Default",
+                    "value": "AES Advanced Billing Default"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "AES Daily Billing",
+                    "value": "AES Daily Billing"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Account Arrear Billing",
+                    "value": "Account Arrear Billing"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Arrear Nxtra BW and Services",
+                    "value": "Arrear Nxtra BW and Services"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Arrear SAS Billing",
+                    "value": "Arrear SAS Billing"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "CLEP Bill period",
+                    "value": "CLEP Bill period"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Digimate Services",
+                    "value": "Digimate Services"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "INAMA",
+                    "value": "INAMA"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "ITFS",
+                    "value": "ITFS"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "MBIC",
+                    "value": "MBIC"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "NDL Advanced Billing",
+                    "value": "NDL Advanced Billing"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "NDL Daily Billing",
+                    "value": "NDL Daily Billing"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Premium ACS-INAMA Audio-Bridge",
+                    "value": "Premium ACS-INAMA Audio-Bridge"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "TM Advanced Billing Default",
+                    "value": "TM Advanced Billing Default"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "VCS",
+                    "value": "VCS"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "60 days",
+                    "value": "60 days"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "7 days",
+                    "value": "7 days"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "14 days",
+                    "value": "14 days"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "15 days",
+                    "value": "15 days"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "30 days",
+                    "value": "30 days"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "45 days",
+                    "value": "45 days"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "90 days",
+                    "value": "90 days"
+                }
+            ],
+            "DeliveryStandardReason": [
+                {
+                    "autoAdv": null,
+                    "name": "SEZ",
+                    "value": "SEZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "UIN",
+                    "value": "UIN"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Exempt",
+                    "value": "Exempt"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Non-SEZ",
+                    "value": "Non-SEZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Applied For",
+                    "value": "Applied For"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "SEZ with taxes",
+                    "value": "SEZ with taxes"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Zero Rated Supply- FTWZ",
+                    "value": "Zero Rated Supply- FTWZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Zero Rated Supply- Export",
+                    "value": "Zero Rated Supply- Export"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Non Taxable as transactions within same Company",
+                    "value": "Non Taxable as transactions within same Company"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Airtel- Foreign Legal Entity",
+                    "value": "Airtel- Foreign Legal Entity"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Others",
+                    "value": "Others"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Non-SEZ",
+                    "value": "Non-SEZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Exempt-Trust/Entities 12AA",
+                    "value": "Exempt-Trust/Entities 12AA"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Zero Rated Supply- SEZ",
+                    "value": "Zero Rated Supply- SEZ"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "J&K delivery - Out of GST Preview",
+                    "value": "J&K delivery - Out of GST Preview"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "Exempt Supply - Trust/Entities 12AA",
+                    "value": "Exempt Supply - Trust/Entities 12AA"
+                }
+            ],
+            "LegalEntity": "%getMetadata:LegalEntity%",
+            "LicenseCompany": "%getMetadata:LicenseCompany%",
+            "Store": [
+                {
+                    "autoAdv": null,
+                    "name": "AHM",
+                    "value": "AHM"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "BGL",
+                    "value": "BGL"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "COC",
+                    "value": "COC"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "IND",
+                    "value": "IND"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "BWD",
+                    "value": "BWD"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "JAI",
+                    "value": "JAI"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "CHN",
+                    "value": "CHN"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "TEL",
+                    "value": "TEL"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "RJP",
+                    "value": "RJP"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "GGN",
+                    "value": "GGN"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "LUC",
+                    "value": "LUC"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "ASM",
+                    "value": "ASM"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "SHI",
+                    "value": "SHI"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "HOW",
+                    "value": "HOW"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "RCH",
+                    "value": "RCH"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "KHU",
+                    "value": "KHU"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "PTN",
+                    "value": "PTN"
+                },
+                {
+                    "autoAdv": null,
+                    "name": "RAI",
+                    "value": "RAI"
+                }
+            ],
+            "Taxation": "%getMetadata:Taxation%",
+            "fields": [
+                {
+                    "fieldName": "PO_Start_Date__c",
+                    "required": true
+                },
+                {
+                    "fieldName": "ARTL_PO_Id__c",
+                    "required": true
+                },
+                {
+                    "dependentOn": "Quote_Line_Item__r.%vlocity_namespace%__QuoteMemberId__r.DCP_Record__c",
+                    "fieldName": "DCP_First_Name__c",
+                    "required": true
+                },
+                {
+                    "dependentOn": "Quote_Line_Item__r.%vlocity_namespace%__QuoteMemberId__r.DCP_Record__c",
+                    "fieldName": "DCP_Last_Name__c",
+                    "required": true
+                },
+                {
+                    "dependentOn": "Quote_Line_Item__r.%vlocity_namespace%__QuoteMemberId__r.DCP_Record__c",
+                    "fieldName": "DCP_Email__c",
+                    "required": true
+                },
+                {
+                    "dependentOn": "DCP_Email__c,DCP_Last_Name__c,DCP_First_Name__c",
+                    "fieldName": "Quote_Line_Item__r.%vlocity_namespace%__QuoteMemberId__r.DCP_Record__c",
+                    "required": true
+                },
+                {
+                    "dependentOn": "BCP_Id__c",
+                    "fieldName": "BCP_First_Name__c",
+                    "required": true
+                },
+                {
+                    "dependentOn": "BCP_Id__c",
+                    "fieldName": "BCP_Last_Name__c",
+                    "required": true
+                },
+                {
+                    "dependentOn": "BCP_Id__c",
+                    "fieldName": "BCP_Email__c",
+                    "required": true
+                },
+                {
+                    "dependentOn": "BCP_First_Name__c,BCP_Last_Name__c,BCP_Email__c",
+                    "fieldName": "BCP_Id__c",
+                    "required": true
+                }
+            ]
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/validateBillingStagingFields/Procedure/billingStagingFields"
+}

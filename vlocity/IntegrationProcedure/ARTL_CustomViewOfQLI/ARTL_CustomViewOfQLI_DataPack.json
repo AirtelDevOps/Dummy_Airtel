@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CustomViewOfQLI_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CustomViewOfQLI",
+    "OmniProcessElement": [
+        "ARTL_CustomViewOfQLI_Element_offsetValue.json",
+        "ARTL_CustomViewOfQLI_Element_QuoteMemberByQLI.json",
+        "ARTL_CustomViewOfQLI_Element_LimitToFetch.json",
+        "ARTL_CustomViewOfQLI_Element_QLIByQuoteMember.json",
+        "ARTL_CustomViewOfQLI_Element_QLIByQuoteMemberSV.json",
+        "ARTL_CustomViewOfQLI_Element_ResponseQuoteMemberByQLI.json",
+        "ARTL_CustomViewOfQLI_Element_ResponseQLIByQuoteMember.json",
+        "ARTL_CustomViewOfQLI_Element_ResponseForLast.json"
+    ],
+    "OmniProcessKey": "ARTL_CustomViewOfQLI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CustomViewOfQLI_PropertySetConfig.json",
+    "SubType": "CustomViewOfQLI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CustomViewOfQLI/Procedure",
+    "WebComponentKey": "3f104feb-14a0-65ee-218e-5734beb3a22b",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001XunEAE"
+}

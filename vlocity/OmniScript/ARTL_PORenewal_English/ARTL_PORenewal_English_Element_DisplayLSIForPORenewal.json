@@ -1,0 +1,61 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DisplayLSIForPORenewal",
+    "OmniProcessId": {
+        "Name": "ARTL_PORenewal",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/PORenewal/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PORenewalProcessStep",
+        "OmniProcessId": {
+            "Name": "ARTL_PORenewal",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/PORenewal/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/PORenewal/English/PORenewalProcessStep",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PORenewalProcessStep",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "recordid",
+                "source": "%ContextId%"
+            },
+            {
+                "name": "selectoptions",
+                "source": "%selectOptions%"
+            },
+            {
+                "name": "columns",
+                "source": "%columns%"
+            },
+            {
+                "name": "recordname",
+                "source": "%ContextName%"
+            },
+            {
+                "name": "recordnumber",
+                "source": "%ContextNumber%"
+            }
+        ],
+        "hide": false,
+        "label": null,
+        "lwcName": "artl_DisplayLSIForPORenewalLWC",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/PORenewal/English/DisplayLSIForPORenewal"
+}

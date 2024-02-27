@@ -1,0 +1,27 @@
+<template>
+  <div>
+    <div class="via-nds">
+      <div class="nds-b2b-offer-selection">
+        <div class="nds-m-bottom_medium">
+          <vlocity_cmt-b2b-header category={headerData.category} description={headerData.description} title={headerData.title} show-search="true"></vlocity_cmt-b2b-header>
+        </div>
+        <div class="nds-b2b-items-container">
+          <div class="nds-b2b-container_categories-list">
+            <vlocity_cmt-b2b-categories-list></vlocity_cmt-b2b-categories-list>
+          </div>
+          <div class="b2b-enterprise-container_items-list">
+            <c-cb2b-items-list></c-cb2b-items-list>
+            <slot name="b2b-custom-section"></slot>
+          </div>
+        </div>
+      </div>
+    </div>
+    <slot name="totalBarSelectionSlot">
+      <vlocity_cmt-b2b-total-bar route-back="memberUpload" due-total={oneTimeTotal} recurring-total={recurringTotal}>
+        <span if:true={showBackButton} slot="totalbarBtn">
+          <button class="slds-button slds-button_brand" onclick={navigateToCart}>{labels.CMEXBackToCart}</button>
+        </span>
+      </vlocity_cmt-b2b-total-bar>
+    </slot>
+  </div>
+</template>

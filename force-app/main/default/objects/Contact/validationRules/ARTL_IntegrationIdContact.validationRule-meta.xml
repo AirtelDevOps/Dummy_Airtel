@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_IntegrationIdContact</fullName>
+    <active>true</active>
+    <description>If Channel = ATB or ECAF then add validation rule that Integration ID is mandatory.</description>
+    <errorConditionFormula>IF(ISPICKVAL(Channel__c, &apos;ATB&apos;) || ISPICKVAL(Channel__c, &apos;ECAF&apos;)&amp;&amp; (RecordType.DeveloperName = &apos;ARTL_BCP_DCP_Contact&apos; || RecordType.DeveloperName = &apos;ARTL_Party_Contact&apos;), ISBLANK(Integration_Id__c), false)</errorConditionFormula>
+    <errorMessage>If Channel = ATB or ECAF then Integration ID is mandatory.</errorMessage>
+</ValidationRule>

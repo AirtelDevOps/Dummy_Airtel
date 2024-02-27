@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Mandatory_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISNEW(),NOT( Is_Converted_From_Lead__c ),OR(  ISBLANK(TEXT(ARTL_Contact_Role__c)) , ISBLANK( ARTL_Designation__c ) ,ISBLANK( FirstName ), ISBLANK( Phone ),ISBLANK( Email  )))</errorConditionFormula>
+    <errorMessage>Please fill in all the mandatory fields on Contact[FirstName, Designation, Contact Role, Email, Phone].</errorMessage>
+</ValidationRule>

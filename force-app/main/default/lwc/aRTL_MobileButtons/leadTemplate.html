@@ -1,0 +1,60 @@
+<template>
+    
+    <lightning-layout multiple-rows="true">
+        <lightning-layout-item size="12" padding="horizontal-medium">
+            <lightning-button-group>
+                <lightning-button variant="neutral" label="Click To Call" title="clickToCall" name="clickToCall"
+                    onclick={handleLeadClick}></lightning-button>
+
+                <template if:true={showLeadMenu}>
+                    <lightning-button-menu menu-alignment="auto" alternative-text="Show menu" variant="border-filled">
+                        <template if:true={isLeadQualifiedAndOwnerNotEqual}>
+                        <lightning-menu-item label="Assign to KAM" title="assignToKAM" name="assignToKAM"
+                            onclick={handleLeadClick}></lightning-menu-item>
+                        </template>
+                        <template if:true={leadQualifiedAndKAMUser}>
+                            <lightning-menu-item variant="neutral" label="Convert Lead" title="convertLead" name="convertLead"
+                                onclick={handleLeadClick}></lightning-menu-item>
+                        </template>
+                    </lightning-button-menu>
+                </template>
+            </lightning-button-group>
+        </lightning-layout-item>
+    </lightning-layout>
+
+
+    <!-- <template if:true={showConvertLead}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Convert Lead"
+            class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <lightning-button-icon icon-name="utility:close" size="large" variant="bare-inverse" alternative-text="Close"
+                    title="Close" onclick={handleClose}
+                    class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"></lightning-button-icon>
+                <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless"
+                    id="modal-content-id-1">
+                    <c-a-r-t-l-lead-conversion-english prefill={prefill} layout="lightning">
+                    </c-a-r-t-l-lead-conversion-english>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template> -->
+
+    <template if:true={showAssignToKAM}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Assign to KAM"
+            class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <lightning-button-icon icon-name="utility:close" size="large" variant="bare-inverse" alternative-text="Close"
+                    title="Close" onclick={handleClose}
+                    class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"></lightning-button-icon>
+                <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless"
+                    id="modal-content-id-2">
+                    <lightning-flow if:true={showAssignToKAM} flow-api-name='ARTL_Lead_SetOwner_N_Notification'
+                        flow-input-variables={inputVariables} onstatuschange={handleFlowStatusChange}>
+                    </lightning-flow>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>

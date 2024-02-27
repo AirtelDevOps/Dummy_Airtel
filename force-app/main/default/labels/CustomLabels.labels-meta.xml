@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ARTL_ARC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARC</shortDescription>
+        <value>ARC</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact</shortDescription>
+        <value>Contact</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_BulkAllAtOnceCustom</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BulkAllAtOnceCustom</shortDescription>
+        <value>In Groups</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_SalesOps</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_SalesOps</shortDescription>
+        <value>BUC,Quota,BCPDCP_Contact,Party_Contact,Party_Contact_Update,BCPDCP_Contact_Update</value>
+    </labels>
+    <labels>
+        <fullName>ARTLDemoExpiryDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTLDemoExpiryDate</shortDescription>
+        <value>Demo Expiry Date</value>
+    </labels>
+    <labels>
+        <fullName>ARTLQuoteDemoDuration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTLQuoteDemoDuration</shortDescription>
+        <value>Demo Duration</value>
+    </labels>
+    <labels>
+        <fullName>ARTLQuoteType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTLQuoteType</shortDescription>
+        <value>Quote Type</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_EmailVerificationSiteUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_EmailVerificationSiteUrl</shortDescription>
+        <value>https://business-force-5632--artldevp2.sandbox.my.salesforce-sites.com</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_EncryptionKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_EncryptionKey</shortDescription>
+        <value>aAk!h@37WQ9bsAfk</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_FeedbackLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_FeedbackLink</shortDescription>
+        <value>https://business-force-5632--artldevp2.sandbox.lightning.force.com/</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_LSI</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LSI</shortDescription>
+        <value>LSI</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Send_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>generate Proposal Doc</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_SendProposal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_SendProposal</shortDescription>
+        <value>Send Proposal</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Stage_Close_Lost</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL Stage Close Lost</shortDescription>
+        <value>Closed Lost</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Closer_Status_Lost</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL Closer Status Lost</shortDescription>
+        <value>Lost</value>
+    </labels>
+    <labels>
+        <fullName>AddressVerificationAmberImage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddressVerificationYellowImage</shortDescription>
+        <value>/resource/1700210320000/Icon_Yellow</value>
+    </labels>
+    <labels>
+        <fullName>AddressVerificationGreenImage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddressVerificationGreenImage</shortDescription>
+        <value>/resource/1700210369000/Icon_Green</value>
+    </labels>
+    <labels>
+        <fullName>AddressVerificationRedImage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddressVerificationRedImage</shortDescription>
+        <value>/resource/1700555016000/Icon_Red</value>
+    </labels>
+    <labels>
+        <fullName>CMEXARCTotal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARCTotal</shortDescription>
+        <value>ARC Total</value>
+    </labels>
+    <labels>
+        <fullName>CMEXCustomerRatecard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Rate card</shortDescription>
+        <value>Customer Rate card</value>
+    </labels>
+    <labels>
+        <fullName>CMEXESMQuoteExpirationDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXESMQuoteExpirationDate</shortDescription>
+        <value>Quote Expiration Date</value>
+    </labels>
+    <labels>
+        <fullName>CMEXIPGetQuoteDetailsForDocGen</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXIPGetQuoteDetailsForDocGen</shortDescription>
+        <value>IP_GetQuoteDetailsForDocGen</value>
+    </labels>
+    <labels>
+        <fullName>CMEXIPgetTemplateDetailsForDocGen</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPgetTemplateDetailsForDocGen</shortDescription>
+        <value>IP_getTemplateDetailsForDocGen</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Quote_Status_Assigned_to_OV</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL Quote Status Assigned to OV</shortDescription>
+        <value>Assigned to OV</value>
+    </labels>
+    <labels>
+        <fullName>CMEXQuoteExpirationDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Expiration Date</shortDescription>
+        <value>Quote Expiration Date</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceCancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Cancel Button for ESM self service component</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceChangeToOrderHeading</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceChangeToOrderHeading</shortDescription>
+        <value>Create a change Order</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceChangeToOrderInfo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceChangeToOrderInfo</shortDescription>
+        <value>Create change order from the existing assets</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceChangeToOrderInfo2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceChangeToOrderInfo2</shortDescription>
+        <value>Create a new order over the existing assets which have been selected</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceChangeToOrderName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceChangeToOrderName</shortDescription>
+        <value>Order Name</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceChangeToOrderStartDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceChangeToOrderStartDate</shortDescription>
+        <value>Order Start Date</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceChangeToOrderTypeBulk</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceChangeToOrderTypeBulk</shortDescription>
+        <value>Bulk</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceChangeToOrderTypeOneTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceChangeToOrderTypeOneTime</shortDescription>
+        <value>One Time</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceCompanyName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceCompanyName</shortDescription>
+        <value>Quadstar</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceContinueToLogin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Continue to login Button for ESM self service component</shortDescription>
+        <value>Continue to Login</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceCreateOrderAssetsBtn</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceCreateOrderAssetsBtn</shortDescription>
+        <value>Go to Assets</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceCreateOrderExistingAssetsTab</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceCreateOrderExistingAssetsTab</shortDescription>
+        <value>Existing Asset</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceCreateOrderFromExistingAssets</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceCreateOrderFromExistingAssets</shortDescription>
+        <value>Create an Order from Existing Assets</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceCreateOrderFromExistingAssetsInfo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceCreateOrderFromExistingAssetsInfo</shortDescription>
+        <value>Add, remove, or modify asset characteristics.</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceEmailSent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Email Sent for ESM self service component</shortDescription>
+        <value>Email Sent</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceEmailSentInfo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Info to be displayed after email is sent for ESM self service component</shortDescription>
+        <value>Instructions to reset your password have been successfully sent to your registered email.</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceForgotPasswordInfo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Forgot password page information text for ESM self service</shortDescription>
+        <value>Please enter the email registered with us and we&apos;ll send you a link to reset your password.</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceForgotPasswordPageName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Forgot password Page name for ESM self service component</shortDescription>
+        <value>Forgot Password</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceLoginPageName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Login Page name for ESM self service component</shortDescription>
+        <value>Login</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceMissingRequiredField</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text to display when Required Field is missing</shortDescription>
+        <value>Required Field is missing</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceMissingUsernameError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text to display when user click recover password without giving username</shortDescription>
+        <value>Please enter username</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceNextButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceNextButton</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServicePasswordRecoveryFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServicePasswordRecoveryFailed</shortDescription>
+        <value>Password Recovery Failed</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServicePreviousButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServicePreviousButton</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceRecoverPassword</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Recover Password Button for ESM self service component</shortDescription>
+        <value>Recover Password</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceResetPasswordPageName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reset Password Page name for ESM self service component</shortDescription>
+        <value>Let’s get started</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceStepComponentInfo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceStepComponentInfo</shortDescription>
+        <value>Create an Order from Existing Assets</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceStepComponentStep1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceStepComponentStep1</shortDescription>
+        <value>Create Order</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceStepComponentStep2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceStepComponentStep2</shortDescription>
+        <value>View and Configure Asset Groups</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceStepComponentStep3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CMEXSelfServiceStepComponentStep3</shortDescription>
+        <value>View Summary</value>
+    </labels>
+    <labels>
+        <fullName>CMEXSelfServiceUsername</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Username for ESM self service component</shortDescription>
+        <value>Username</value>
+    </labels>
+    <labels>
+        <fullName>CmexButtonChangePassword</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ESMSelfService</shortDescription>
+        <value>Set my password</value>
+    </labels>
+    <labels>
+        <fullName>CmexConfirmPassword</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ESMSelfService</shortDescription>
+        <value>Confirm Password</value>
+    </labels>
+    <labels>
+        <fullName>CmexNewpassword</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ESMSelfService</shortDescription>
+        <value>New Password</value>
+    </labels>
+    <labels>
+        <fullName>CmexResetPasswordPageMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ESMSelfService</shortDescription>
+        <value>Let&apos;s get started</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceCommunityUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Self service community url link</shortDescription>
+        <value>https://Community_Base_URL/CommunityName/s/</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceOrderConfirmHeaderText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Summary Confirmation header Text</shortDescription>
+        <value>Summary items are reviewed and confirmed</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceOrderConfirmTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Summary Confirmation Title</shortDescription>
+        <value>Order Summary Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceOrderCreatedStatusName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Created status tag on order confirmation page</shortDescription>
+        <value>Order Created</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceOrderEmailText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email notification text on order confirmation page</shortDescription>
+        <value>You will receive an email confirmation shortly.</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceOrderNumberText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order number text</shortDescription>
+        <value>Your Order Number is :</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceViewOrderDetailButtonText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View order details button</shortDescription>
+        <value>View Order Details</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceWelcomeTag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CmexSelfServiceWelcomeTag</shortDescription>
+        <value>Welcome</value>
+    </labels>
+    <labels>
+        <fullName>CmexSelfServiceWelcomeText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CmexSelfServiceWelcomeText</shortDescription>
+        <value>Welcome to the Enterprise Self-Service Portal.</value>
+    </labels>
+    <labels>
+        <fullName>DRE_GetContactDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DRE_GetContactDetails</shortDescription>
+        <value>GetContactDetails</value>
+    </labels>
+    <labels>
+        <fullName>Expiration_Time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Expiration Time</shortDescription>
+        <value>15</value>
+    </labels>
+    <labels>
+        <fullName>Generate_Merge_Document</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generate_Merge_Document</shortDescription>
+        <value>Generate Merge Document</value>
+    </labels>
+    <labels>
+        <fullName>OmniLinkSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OmniLinkSuccess</shortDescription>
+        <value>Copied link to clipboard.</value>
+    </labels>
+    <labels>
+        <fullName>Valid_For</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Valid_For</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Bulk_Update_BCP_DCP_ReportId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL Bulk Update BCP/DCP ReportId</shortDescription>
+        <value>00O72000004XF2nEAG</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_KAM_General_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_KAM_General_User</shortDescription>
+        <value>BCPDCP_Contact,Party_Contact,BCPDCP_Contact_Update,Party_Contact_Update</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_Permission</shortDescription>
+        <value>ARTL_KAM_General_User,ARTL_SalesOps</value>
+    </labels>
+    <labels>
+        <fullName>QM_PinCityState_Validate_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QM PinCityState Validate Error</shortDescription>
+        <value>State is Invalid!</value>
+    </labels>
+    <labels>
+        <fullName>QM_PinCity_Validate_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QM PinCity Validate Error</shortDescription>
+        <value>City is Invalid!</value>
+    </labels>
+    <labels>
+        <fullName>NonBillingAggregator</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NonBillingAggregator</shortDescription>
+        <value>Non Billing Aggregator</value>
+    </labels>
+    <labels>
+        <fullName>QM_Pin_Validate_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QM Pin Validate Error</shortDescription>
+        <value>Pincode is Invalid!</value>
+    </labels>
+    <labels>
+        <fullName>AttributeUpdatedToast</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Attributes updated successfully</shortDescription>
+        <value>Attributes updated successfully</value>
+    </labels>
+    <labels>
+        <fullName>AttributeValidationFields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AttributeValidationFields</shortDescription>
+        <value>[ &apos;Attribute_JSON__c&apos;, &apos;AttributeCode__c&apos;, &apos;Object__c&apos;]</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Needed_By_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Needed By Date</shortDescription>
+        <value>Customer Needed By Date</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Segment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Segment</shortDescription>
+        <value>Customer Segment</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Field_Values_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Field Values Title</shortDescription>
+        <value>Invalid Field Values!!</value>
+    </labels>
+    <labels>
+        <fullName>Order_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Type</shortDescription>
+        <value>Order Type</value>
+    </labels>
+    <labels>
+        <fullName>Private_BGP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Private BGP</shortDescription>
+        <value>Private BGP</value>
+    </labels>
+    <labels>
+        <fullName>Private_N_Public_BGP_Attributes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Private N Public BGP Attributes</shortDescription>
+        <value>[&apos;_All&apos;, &apos;_BGP&apos;, &apos;_BGPHYD&apos;]</value>
+    </labels>
+    <labels>
+        <fullName>ProtocolSuffixes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Protocol Suffixes</shortDescription>
+        <value>[&apos;_BGP&apos;, &apos;_HYD&apos;, &apos;_BGPHYD&apos;, &apos;_STC&apos;, &apos;_All&apos;]</value>
+    </labels>
+    <labels>
+        <fullName>Public_BGP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Public BGP</shortDescription>
+        <value>Public BGP</value>
+    </labels>
+    <labels>
+        <fullName>RFS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFS</shortDescription>
+        <value>RFS</value>
+    </labels>
+    <labels>
+        <fullName>RFS_Query_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFS Query Fields</shortDescription>
+        <value>[&apos;Customer_Segment__c&apos;, &apos;Order_Type__c&apos;, &apos;Days__c&apos;, &apos;Service_Type__c&apos;, &apos;Media__c&apos;]</value>
+    </labels>
+    <labels>
+        <fullName>Static</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Static</shortDescription>
+        <value>Static</value>
+    </labels>
+    <labels>
+        <fullName>Static_Attributes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Static Attributes</shortDescription>
+        <value>[&apos;_All&apos;, &apos;_STC&apos;]</value>
+    </labels>
+    <labels>
+        <fullName>Static_N_BGP_Hybrid_Attributes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Static N BGP Hybrid Attributes</shortDescription>
+        <value>[&apos;_All&apos;, &apos;_HYD&apos;, &apos;_BGPHYD&apos;]</value>
+    </labels>
+    <labels>
+        <fullName>Static_with_Private_BGP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Static with Private BGP</shortDescription>
+        <value>Static with Private BGP</value>
+    </labels>
+    <labels>
+        <fullName>Static_with_Public_BGP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Static with Public BGP</shortDescription>
+        <value>Static with Public BGP</value>
+    </labels>
+    <labels>
+        <fullName>VerifyFieldValuesToast</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please verify the field values and try again</shortDescription>
+        <value>Please verify the field values and try again</value>
+    </labels>
+    <labels>
+        <fullName>Error_updating_attribute_Toast</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error updating attribute Toast</shortDescription>
+        <value>Error updating attribute</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Contract_Status_Signed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL Contract Status Signed</shortDescription>
+        <value>Activated</value>
+    </labels>
+    <labels>
+        <fullName>ARTL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_Contract_Generated</shortDescription>
+        <value>Contract Generated</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Customer_Rate_Card</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Rate Card</shortDescription>
+        <value>Customer Rate Card</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_OppProdMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTLOppProdMsg</shortDescription>
+        <value>&lt;h3&gt;&lt;strong&gt;&lt;span style=&quot;color: #e03e2d;&quot;&gt;Please add product(s) to Opportunity before starting Quotation journey!&lt;/span&gt;&lt;/strong&gt;&lt;/h3&gt;</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Opportunity_Amount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Amount</shortDescription>
+        <value>Opportunity Amount</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Opportunity_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Type</shortDescription>
+        <value>Opportunity Type</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Quote_Status_Contract_Generated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL Quote Status Contract Generated</shortDescription>
+        <value>Contract Generated</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Quote_Status_Customer_Signed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL Quote Status Customer Signed</shortDescription>
+        <value>Customer Signed</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Quote_Type</fullName>
+        <categories>Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ARTL_Quote_Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Transaction_Sub_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transaction Sub Type</shortDescription>
+        <value>Transaction Sub Type</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Transaction_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transaction Type</shortDescription>
+        <value>Transaction Type</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Downgrade</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Downgrade</shortDescription>
+        <value>Downgrade</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Hardware_Replacement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hardware Replacement</shortDescription>
+        <value>Hardware Replacement</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_L1_L3_Construct_Change</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>L1-L3 Construct Change</shortDescription>
+        <value>L1-L3 Construct Change</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_LSI_Transfer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LSI Transfer</shortDescription>
+        <value>LSI Transfer</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_PO_Renewal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PO Renewal</shortDescription>
+        <value>PO Renewal</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Rate_Revision</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rate Revision</shortDescription>
+        <value>Rate Revision</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Rebilling</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rebilling</shortDescription>
+        <value>Rebilling</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Shifting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Shifting</shortDescription>
+        <value>Shifting</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Upgrade</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upgrade</shortDescription>
+        <value>Upgrade</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_UploadBulkAssetModification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload Bulk Asset Modification</shortDescription>
+        <value>Upload Bulk Asset Modification</value>
+    </labels>
+    <labels>
+        <fullName>Upload_Bulk_Asset_Modification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload Bulk Asset Modification</shortDescription>
+        <value>Upload Bulk Asset Modification</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Quote_Status_Feasibility_Completed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feasibility Completed</shortDescription>
+        <value>Feasibility Completed</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Quote_Status_Feasibility_in_Progress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feasibility in Progress</shortDescription>
+        <value>Feasibility in Progress</value>
+    </labels>
+    <labels>
+        <fullName>ARTL_Quote_Status_Proposal_Sent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Proposal Sent</shortDescription>
+        <value>Proposal Sent</value>
+    </labels>
+    <labels>
+        <fullName>Error_validation_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error validation message</shortDescription>
+        <value>Validation Failed Due to this error:</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Enrich_Validation_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Enrich Validation Msg</shortDescription>
+        <value>Please enrich Line Items before Quote Validation:</value>
+    </labels>
+    <labels>
+        <fullName>Success_validation_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Success validation message</shortDescription>
+        <value>Validation In- Progress</value>
+    </labels>
+    <labels>
+        <fullName>Success_validation_title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Success validation title</shortDescription>
+        <value>In-Progress</value>
+    </labels>
+    <labels>
+        <fullName>Warning_validation_title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Warning validation title</shortDescription>
+        <value>Warning</value>
+    </labels>
+    <labels>
+        <fullName>artl_batchErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>artl_batchErrorMessage</shortDescription>
+        <value>Quote Validation has been failed because of following Quote Line Items : {0}. Please click {1} to view details information.</value>
+    </labels>
+    <labels>
+        <fullName>artl_batchErrorTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>artl_batchErrorTitle</shortDescription>
+        <value>Quote Validation Failed</value>
+    </labels>
+    <labels>
+        <fullName>artl_batchSuccessMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>artl_batchSuccessMessage</shortDescription>
+        <value>Your quote is successfully validated</value>
+    </labels>
+    <labels>
+        <fullName>artl_batchSuccessTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>artl_batchSuccessTitle</shortDescription>
+        <value>Validation Successful</value>
+    </labels>
+    <labels>
+        <fullName>Error_validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error validation title</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>FailureMessageForCustomNotificationInAttributeValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Failure message for custom notification in attribute validation</shortDescription>
+        <value>Please refer to the ReliesOn Validation Error field for error message, Date :</value>
+    </labels>
+    <labels>
+        <fullName>ProductCodesForValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProductCodesForValidation</shortDescription>
+        <value>Internet, Primary_Link, Enterprise_Connectivity_Routers, Secondary_Internet_Link</value>
+    </labels>
+    <labels>
+        <fullName>ProductNameForValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Name for Validation</shortDescription>
+        <value>Internet, Primary Link, Enterprise Connectivity Routers, Secondary Internet Link</value>
+    </labels>
+    <labels>
+        <fullName>SuccessMessageForCustomNotificaiton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Success Message For Custom Notification In Attribute Validation</shortDescription>
+        <value>Successfully validated the attributes. Date :</value>
+    </labels>
+</CustomLabels>

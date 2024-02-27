@@ -1,0 +1,29 @@
+<!--aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+  <aura:attribute name="inputValue" type="Boolean"/>
+    <c:artl_MarkAttendence recordId="{!v.recordId}" onvaluechange="{!c.getValueFromLwc}" />
+</aura:component-->
+
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="ARTL_UpdateOnsiteAttendance" >
+    <!--define attributes-->
+    <aura:attribute name="latitude" type="Decimal" />
+    <aura:attribute name="longitude" type="Decimal" />
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="loaded" type="Boolean" default="false" />
+    <!--call doInit-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:if isTrue="{!v.loaded }">
+        <div class="slds-p-around_small" style="height:5rem">
+            Are you sure you are at the customer location and ready to mark in the location on the customer address?
+            <br/><br/><br/> 
+            <div class="slds-align_absolute-center" style="height:5rem">
+                <lightning:button variant="brand" label="Yes" onclick="{!c.captureGeolocation}" />
+            </div>
+        </div>
+        <aura:set attribute="else">
+            <div class="spinnerHolder">
+                <lightning:spinner alternativeText="Loading" />
+            </div> 
+        </aura:set>
+    </aura:if>
+</aura:component>

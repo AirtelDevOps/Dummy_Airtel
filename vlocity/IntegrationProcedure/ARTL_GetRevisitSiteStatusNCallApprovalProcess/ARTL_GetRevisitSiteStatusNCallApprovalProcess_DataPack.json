@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_GetRevisitSiteStatusNCallApprovalProcess_SampleInput.json",
+    "Description": "OV Status Issue Fix by Prabanch",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetRevisitSiteStatus",
+    "OmniProcessElement": [
+        "ARTL_GetRevisitSiteStatusNCallApprovalProcess_Element_DRFetchApprovalProcess.json",
+        "ARTL_GetRevisitSiteStatusNCallApprovalProcess_Element_RACallApprovalProcess.json",
+        "ARTL_GetRevisitSiteStatusNCallApprovalProcess_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_GetRevisitSiteStatusNCallApprovalProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_GetRevisitSiteStatusNCallApprovalProcess_PropertySetConfig.json",
+    "SubType": "GetRevisitSiteStatusNCallApprovalProcess",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/GetRevisitSiteStatusNCallApprovalProcess/Procedure"
+}

@@ -1,0 +1,105 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "\"$Vlocity.NULL\"",
+        "FormulaResultPath": "NullSomValue",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTL_NullifySOMOrderIdAfterCancelCustom2637",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_NullifySOMOrderIdAfterCancelCustom3010",
+        "InputFieldName": "NullSomValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_SOMOrderId__c",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_NullifySOMOrderIdAfterCancelCustom7723",
+        "InputFieldName": "NullSomValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_SOMOrder_Status__c",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_NullifySOMOrderIdAfterCancelCustom2022",
+        "InputFieldName": "CreateSupplementalOrder:records|1:supplementalOrderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ARTL_NullifySOMOrderIdAfterCancelCustom9560",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_NullifySOMOrderIdAfterCancel",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,152 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Store",
+    "OmniProcessId": {
+        "Name": "ARTL/EnrishQuoteBASACreate",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "BillingDetailsBlock",
+        "OmniProcessId": {
+            "Name": "ARTL/EnrishQuoteBASACreate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/BillingDetailsBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "BillingDetailsBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 4,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Store",
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "AHM",
+                "value": "AHM"
+            },
+            {
+                "autoAdv": null,
+                "name": "BGL",
+                "value": "BGL"
+            },
+            {
+                "autoAdv": null,
+                "name": "COC",
+                "value": "COC"
+            },
+            {
+                "autoAdv": null,
+                "name": "IND",
+                "value": "IND"
+            },
+            {
+                "autoAdv": null,
+                "name": "BWD",
+                "value": "BWD"
+            },
+            {
+                "autoAdv": null,
+                "name": "JAI",
+                "value": "JAI"
+            },
+            {
+                "autoAdv": null,
+                "name": "CHN",
+                "value": "CHN"
+            },
+            {
+                "autoAdv": null,
+                "name": "TEL",
+                "value": "TEL"
+            },
+            {
+                "autoAdv": null,
+                "name": "RJP",
+                "value": "RJP"
+            },
+            {
+                "autoAdv": null,
+                "name": "GGN",
+                "value": "GGN"
+            },
+            {
+                "autoAdv": null,
+                "name": "LUC",
+                "value": "LUC"
+            },
+            {
+                "autoAdv": null,
+                "name": "ASM",
+                "value": "ASM"
+            },
+            {
+                "autoAdv": null,
+                "name": "SHI",
+                "value": "SHI"
+            },
+            {
+                "autoAdv": null,
+                "name": "HOW",
+                "value": "HOW"
+            },
+            {
+                "autoAdv": null,
+                "name": "RCH",
+                "value": "RCH"
+            },
+            {
+                "autoAdv": null,
+                "name": "KHU",
+                "value": "KHU"
+            },
+            {
+                "autoAdv": null,
+                "name": "PTN",
+                "value": "PTN"
+            },
+            {
+                "autoAdv": null,
+                "name": "RAI",
+                "value": "RAI"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/Store"
+}

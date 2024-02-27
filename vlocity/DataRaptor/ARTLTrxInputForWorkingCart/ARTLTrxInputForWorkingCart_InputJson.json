@@ -1,0 +1,102 @@
+{
+    "cartId": "0Q0720000002Tp7CAE",
+    "lineItems": [
+        {
+            "%vlocity_namespace%__Action__c": "Add",
+            "%vlocity_namespace%__AssetReferenceId__c": "112c8a54-d530-abaa-b404-ce2f5f509b85",
+            "%vlocity_namespace%__AttributeSelectedValues__c": null,
+            "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY",
+            "Id": "0QL7200000022ddGAA",
+            "ProductName": "Internet",
+            "linenumber": "0001",
+            "price": {
+                "%vlocity_namespace%__OneTimeCharge__c": 0,
+                "%vlocity_namespace%__OneTimeTotal__c": 50000,
+                "%vlocity_namespace%__RecurringCharge__c": 0,
+                "%vlocity_namespace%__RecurringCostTotal__c": null,
+                "Annual_Recurring_Charge__c": 0
+            }
+        },
+        {
+            "%vlocity_namespace%__Action__c": "Add",
+            "%vlocity_namespace%__AssetReferenceId__c": "261df48d-88cf-6b59-791e-67221a6793b6",
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"ATT_ACCESS_BANDWIDTH\":\"2 Gbps\",\"ATT_SERVICE_TYPE\":\"Unmanaged\",\"ATT_CONTRACT_TERM\":\"12\",\"ATT_CPE\":null,\"ATT_DEPENDENT_LINK_MEDIA\":null,\"ATT_ENTERPRISE_CONNECTIVITY_TYPE\":null,\"ATT_INTERFACE\":null,\"ATT_IP_REQUIRED\":null,\"ATT_LAST_MILE\":null,\"ATT_MEDIA\":null,\"ATT_PORT_BANDWIDTH\":null,\"ATT_POP\":null,\"ATT_REDUNDANCY\":false,\"ATT_UPTIME_SLA\":null}",
+            "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA",
+            "Id": "0QL7200000022deGAA",
+            "ProductName": "Primary Link",
+            "linenumber": "0001.0001",
+            "price": {
+                "%vlocity_namespace%__OneTimeCharge__c": 50000,
+                "%vlocity_namespace%__OneTimeTotal__c": 50000,
+                "%vlocity_namespace%__RecurringCharge__c": 0,
+                "%vlocity_namespace%__RecurringCostTotal__c": null,
+                "Annual_Recurring_Charge__c": 5759975
+            }
+        },
+        {
+            "%vlocity_namespace%__Action__c": "Add",
+            "%vlocity_namespace%__AssetReferenceId__c": "d045cd06-a992-565a-b56a-9d107a2d85da",
+            "%vlocity_namespace%__AttributeSelectedValues__c": null,
+            "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t7200000100fNAAQ",
+            "Id": "0QL7200000022dfGAA",
+            "ProductName": "Connectivity IP Block",
+            "linenumber": "0001.0001.0001",
+            "price": {
+                "%vlocity_namespace%__OneTimeCharge__c": 0,
+                "%vlocity_namespace%__OneTimeTotal__c": 0,
+                "%vlocity_namespace%__RecurringCharge__c": 0,
+                "%vlocity_namespace%__RecurringCostTotal__c": null,
+                "Annual_Recurring_Charge__c": 0
+            }
+        },
+        {
+            "%vlocity_namespace%__Action__c": "Add",
+            "%vlocity_namespace%__AssetReferenceId__c": "ea020c22-c7a3-dc67-92ce-2aab4e1b58e6",
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"ATT_ADDITIONAL_IP_BLOCK\":false,\"ATT_IPV6_REQUIRED\":false,\"ATT_LAN_IPV4_SUBNET_MASK\":null,\"ATT_LAN_IPV6_SUBNET_MASK\":null}",
+            "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t7200000100fNAAQ<01t7200000100kDAAQ",
+            "Id": "0QL7200000022dgGAA",
+            "ProductName": "Connectivity LAN IP",
+            "linenumber": "0001.0001.0001.0001",
+            "price": {
+                "%vlocity_namespace%__OneTimeCharge__c": 0,
+                "%vlocity_namespace%__OneTimeTotal__c": 0,
+                "%vlocity_namespace%__RecurringCharge__c": 0,
+                "%vlocity_namespace%__RecurringCostTotal__c": null,
+                "Annual_Recurring_Charge__c": 0
+            }
+        },
+        {
+            "%vlocity_namespace%__Action__c": "Add",
+            "%vlocity_namespace%__AssetReferenceId__c": "8293b3d9-b70f-8a4c-d4bb-ef356d4e7b50",
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"ATT_ROUTING_TYPE\":null}",
+            "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t720000010CbhAAE",
+            "Id": "0QL7200000022dhGAA",
+            "ProductName": "Connectivity Routing Type",
+            "linenumber": "0001.0001.0002",
+            "price": {
+                "%vlocity_namespace%__OneTimeCharge__c": 0,
+                "%vlocity_namespace%__OneTimeTotal__c": 0,
+                "%vlocity_namespace%__RecurringCharge__c": 0,
+                "%vlocity_namespace%__RecurringCostTotal__c": null,
+                "Annual_Recurring_Charge__c": 0
+            }
+        },
+        {
+            "%vlocity_namespace%__Action__c": "Add",
+            "%vlocity_namespace%__AssetReferenceId__c": "fad8df6b-b242-0272-5af3-f2d1c71e0172",
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"ATT_PORT_BANDWIDTH\":null,\"ATT_ACCESS_BANDWIDTH\":\"45 Mbps\",\"ATT_MEDIA\":null,\"ATT_INTERFACE\":null,\"ATT_LEGACY_ACCESS_BANDWIDTH\":null,\"ATT_LEGACY_PORT_BANDWIDTH\":null}",
+            "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t72000000zzzRAAQ",
+            "Id": "0QL7200000022diGAA",
+            "ProductName": "Access Last Mile Charge",
+            "linenumber": "0001.0001.0003",
+            "price": {
+                "%vlocity_namespace%__OneTimeCharge__c": 0,
+                "%vlocity_namespace%__OneTimeTotal__c": 0,
+                "%vlocity_namespace%__RecurringCharge__c": 0,
+                "%vlocity_namespace%__RecurringCostTotal__c": null,
+                "Annual_Recurring_Charge__c": 0
+            }
+        }
+    ],
+    "rootItemId": "112c8a54-d530-abaa-b404-ce2f5f509b85"
+}

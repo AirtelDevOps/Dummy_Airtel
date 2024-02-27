@@ -1,0 +1,50 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ARTL_TransformBASACreateData",
+    "OmniProcessId": {
+        "Name": "ARTL_CreateBillingStageEntriesBulk",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "BCPData": "%BCPData%",
+            "ContextId": "%ContextId%",
+            "PODetailsStep": "%PODataDetails%",
+            "POGroupId": "=IF(ISBLANK(%POExtractDR:PO_Group_Id%),%PostPurchaseOrder:PO_Group__c_1|1:Id%,%POExtractDR:PO_Group_Id%)",
+            "POId": "=IF(ISBLANK(%POExtractDR:PO_ID%),%PostPurchaseOrder:ARTL_Purchase_Order__c_2|1:Id%,%POExtractDR:PO_ID%)",
+            "PoIDtoBillingStage": "=IF(ISNOTBLANK(%POExtractDR%) , %POExtractDR:PO_ID% ,%PostPurchaseOrder:ARTL_Purchase_Order__c_2|1:Id% )",
+            "VANAccountNumberId": "%GetVANAccountNumber:VANAccountNumberId%",
+            "updatedItems": "%updatedItems%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_TransformBASACreateData",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "ignoreCache": false,
+        "label": "DataRaptorTransformAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Transform Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure/ARTL_TransformBASACreateData"
+}

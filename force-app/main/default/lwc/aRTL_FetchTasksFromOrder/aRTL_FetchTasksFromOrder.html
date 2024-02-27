@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Task List" icon-name="standard:task">
+        <div class="slds-m-around_medium">
+            <template if:true={taskList}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={taskList}
+                    columns={columns}
+                    
+                    onrowselection={handleRowAction}>
+                </lightning-datatable>
+                <div class="slds-grid slds-grid_align-end slds-p-around_small">
+                    <div class="slds-col"></div> <!-- Empty column for padding on the left -->
+                    <lightning-button label="Import" onclick={openModal} variant="brand" class="slds-button_brand slds-p-right_medium"></lightning-button>
+                    <lightning-button label="Export" onclick={handleUpdateTasks} variant="brand" class="slds-button_brand"></lightning-button>
+                    <template if:true={isModalOpen}>
+                        <c-artl-file-upload-modal onclosemodal={closeModal}></c-artl-file-upload-modal>
+                    </template>
+                </div>
+                <template if:true={showFileUploadModal}>
+                    <c-artl-file-upload-modal ></c-artl-file-upload-modal>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancelled_meeting</fullName>
+    <active>false</active>
+    <description>Cancelled meeting can not be marked scheduled or completed</description>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(vlocity_cmt__EventStatus__c),&quot;Cancelled&quot;)</errorConditionFormula>
+    <errorDisplayField>vlocity_cmt__EventStatus__c</errorDisplayField>
+    <errorMessage>Meeting status once cancelled, cannot be modified</errorMessage>
+</ValidationRule>

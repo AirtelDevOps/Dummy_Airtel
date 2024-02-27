@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_SegmentMendatory</fullName>
+    <active>true</active>
+    <description>Customer segment, Vertical segment, Service segment, Business Circle/ Region mandatory fields</description>
+    <errorConditionFormula>IF(OR(ISBLANK(BillingStreet),ISBLANK(BillingCity), ISBLANK(BillingPostalCode),ISBLANK(BillingState), ISBLANK( BillingCountry), ISPICKVAL(ARTL_Business_Circle_Region__c, &quot;&quot;))&amp;&amp; (RecordType.DeveloperName = &apos;Business&apos; || RecordType.DeveloperName = &apos;BillingAggregator&apos;),true,false)</errorConditionFormula>
+    <errorMessage>Customer Segment, Service Segment, Vertical Segment, Business Circle/ Region are Mandatory</errorMessage>
+</ValidationRule>

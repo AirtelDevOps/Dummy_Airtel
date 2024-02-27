@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "New version created by Prabanch on Dec 7 to incorporate demo feedbacks(make ov status non mandatory)",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "Launch OV Details Flow",
+    "OmniProcessElement": [
+        "ARTL_LaunchOVDetailsFlow_English_Element_IPUpdateStatusWhenLaunched.json",
+        "ARTL_LaunchOVDetailsFlow_English_Element_OVTable.json",
+        "ARTL_LaunchOVDetailsFlow_English_Element_DownloadDocuments.json",
+        "ARTL_LaunchOVDetailsFlow_English_Element_LineBreak1.json",
+        "ARTL_LaunchOVDetailsFlow_English_Element_LineBreak2.json",
+        "ARTL_LaunchOVDetailsFlow_English_Element_QC.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "ARTL_LaunchOVDetailsFlow_English_PropertySetConfig.json",
+    "SubType": "LaunchOVDetailsFlow",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/LaunchOVDetailsFlow/English",
+    "WebComponentKey": "7d38931d-7bc0-3c2a-0979-da2867ea9ea0",
+    "sourceOrgUrl": "/lightning/cmp/vlocity_cmt__OmniDesignerAuraWrapper?c__recordId=0jN720000001NvREAU"
+}

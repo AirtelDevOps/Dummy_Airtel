@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_NBASolaceQueue_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "NBASolaceQueue",
+    "OmniProcessElement": [
+        "ARTL_NBASolaceQueue_Element_DRFetchBillingAccount.json",
+        "ARTL_NBASolaceQueue_Element_HTTPSolaceQueue.json",
+        "ARTL_NBASolaceQueue_Element_DataRaptorPostAction1.json",
+        "ARTL_NBASolaceQueue_Element_DataRaptorPostAction2.json",
+        "ARTL_NBASolaceQueue_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_NBASolaceQueue",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_NBASolaceQueue_PropertySetConfig.json",
+    "SubType": "NBASolaceQueue",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/NBASolaceQueue/Procedure"
+}

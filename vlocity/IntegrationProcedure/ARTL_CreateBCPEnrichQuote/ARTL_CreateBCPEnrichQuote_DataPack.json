@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_CreateBCPEnrichQuote",
+    "OmniProcessElement": [
+        "ARTL_CreateBCPEnrichQuote_Element_GetRecordTypeId.json",
+        "ARTL_CreateBCPEnrichQuote_Element_ARTL_CreateBCPRecord.json",
+        "ARTL_CreateBCPEnrichQuote_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_CreateBCPEnrichQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CreateBCPEnrichQuote_PropertySetConfig.json",
+    "SubType": "CreateBCPEnrichQuote",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateBCPEnrichQuote/Procedure"
+}

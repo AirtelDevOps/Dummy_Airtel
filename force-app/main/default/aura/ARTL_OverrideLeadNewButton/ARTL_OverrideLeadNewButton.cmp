@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" access="global">
+	<c:aRTL_OverrideNewLeadButton recordId="{!v.recordId}"></c:aRTL_OverrideNewLeadButton>
+    <!--c:a-r-t-l_-override-new-lead-button recordId="{!v.recordId}"></c:a-r-t-l_-override-new-lead-button-->
+</aura:component>

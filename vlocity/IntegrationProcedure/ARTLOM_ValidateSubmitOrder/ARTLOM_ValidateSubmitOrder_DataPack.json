@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ValidateAndSubmitOrder",
+    "OmniProcessElement": [
+        "ARTLOM_ValidateSubmitOrder_Element_RAValidateCart.json",
+        "ARTLOM_ValidateSubmitOrder_Element_RASubmitOrder.json"
+    ],
+    "OmniProcessKey": "ARTLOM_ValidateSubmitOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTLOM_ValidateSubmitOrder_PropertySetConfig.json",
+    "SubType": "ValidateSubmitOrder",
+    "Type": "ARTLOM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTLOM/ValidateSubmitOrder/Procedure",
+    "WebComponentKey": "19898b34-8b44-faa5-c154-ced40f2cfd42",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001N2bEAE"
+}

@@ -1,0 +1,53 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SV_FailedResponse",
+    "OmniProcessId": {
+        "Name": "NBAResponseToSolace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/NBAResponseToSolace/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConditionalBlock2",
+        "OmniProcessId": {
+            "Name": "NBAResponseToSolace",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/NBAResponseToSolace/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/NBAResponseToSolace/Procedure/ConditionalBlock2",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConditionalBlock2",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "AccountNumber": "=%DRE_ForGettingForNBAResponseToSolace:data:AccountNumber%",
+            "Error": "=%DRE_ForGettingForNBAResponseToSolace:data:Error%",
+            "IntegrationId": "=%DRE_ForGettingForNBAResponseToSolace:data:IntegrationId%",
+            "OperationType": "=%DRE_ForGettingForNBAResponseToSolace:data:OperationType%",
+            "PartyId": "=%DRE_ForGettingForNBAResponseToSolace:data:PartyId%",
+            "SFDCId": "=%DRE_ForGettingForNBAResponseToSolace:data:SFDCId%",
+            "ShortCode": "=%DRE_ForGettingForNBAResponseToSolace:data:ShortCode%",
+            "Status Code": "=%DRE_ForGettingForNBAResponseToSolace:data:StatusCode%",
+            "Type": "=%DRE_ForGettingForNBAResponseToSolace:data:TYPE%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "label": "SetValues3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/NBAResponseToSolace/Procedure/SV_FailedResponse"
+}

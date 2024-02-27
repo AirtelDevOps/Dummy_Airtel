@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_UpdatePODate",
+    "OmniProcessElement": [
+        "ARTL_UpdatePODate_Element_ExtractPO.json",
+        "ARTL_UpdatePODate_Element_UpdateNew.json",
+        "ARTL_UpdatePODate_Element_UpdatePORenewal.json",
+        "ARTL_UpdatePODate_Element_UpdateMACD.json",
+        "ARTL_UpdatePODate_Element_UpdateRRandRB.json",
+        "ARTL_UpdatePODate_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_UpdatePODate",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_UpdatePODate_PropertySetConfig.json",
+    "SubType": "UpdatePODate",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/UpdatePODate/Procedure",
+    "WebComponentKey": "362d6b88-93f8-b8fc-22b5-385988ba40b9",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001WYvEAM"
+}

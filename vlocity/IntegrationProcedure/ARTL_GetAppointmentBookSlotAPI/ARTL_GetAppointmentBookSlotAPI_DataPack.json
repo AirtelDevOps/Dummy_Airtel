@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_GetAppointmentBookSlotAPI_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetAppointmentBookSlotAPI",
+    "OmniProcessElement": [
+        "ARTL_GetAppointmentBookSlotAPI_Element_DRPrepareBookSlotIWANPayload.json",
+        "ARTL_GetAppointmentBookSlotAPI_Element_DRPrepareBookSlotWIRELINEPayload.json",
+        "ARTL_GetAppointmentBookSlotAPI_Element_checkDataRaptor.json",
+        "ARTL_GetAppointmentBookSlotAPI_Element_getCustomMetadataRecord.json",
+        "ARTL_GetAppointmentBookSlotAPI_Element_RADebugLogger.json",
+        "ARTL_GetAppointmentBookSlotAPI_Element_HTTPPOSTAction.json",
+        "ARTL_GetAppointmentBookSlotAPI_Element_RAResponseLogger.json",
+        "ARTL_GetAppointmentBookSlotAPI_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_GetAppointmentBookSlotAPI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_GetAppointmentBookSlotAPI_PropertySetConfig.json",
+    "SubType": "GetAppointmentBookSlotAPI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/GetAppointmentBookSlotAPI/Procedure"
+}

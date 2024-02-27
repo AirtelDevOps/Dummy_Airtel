@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_getRelatedProducts_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "getRuleRelatedProducts",
+    "OmniProcessElement": [
+        "ESM_getRelatedProducts_Element_getRelatedRelationalProducts.json",
+        "ESM_getRelatedProducts_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_getRelatedProducts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_getRelatedProducts_PropertySetConfig.json",
+    "SubType": "getRelatedProducts",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/getRelatedProducts/Procedure"
+}

@@ -1,0 +1,37 @@
+<template>
+    <!-- Button to open role updater modal -->
+    <lightning-button label="Update User Role" variant="brand" onclick={openRoleUpdater} class="slds-align_absolute-center"></lightning-button>
+
+    <!-- Modal to update user role -->
+    <template if:true={isRoleUpdaterOpen}>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <div role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium">Update User Role</h2>
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeRoleUpdater}>
+                        <lightning-icon icon-name="utility:close" alternative-text="Close"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                </header>
+
+                <div class="slds-modal__content slds-p-around_medium">
+                    <p class="slds-text-heading_small">Current Role: {currentUserRole}</p>
+                    <lightning-combobox label="Select New Role" value={selectedRole} options={roles}
+                        onchange={handleRoleChange}>
+                    </lightning-combobox>
+                </div>
+
+                <footer class="slds-modal__footer">
+                    <lightning-button class="slds-m-right_x-small" variant="neutral" label="Cancel"
+                        onclick={closeRoleUpdater}>
+                    </lightning-button>
+                    <lightning-button variant="brand" label="Update" onclick={updateUserRole} class="slds-align_absolute-center">
+                    </lightning-button>
+                </footer>
+            </div>
+        </div>
+    </template>
+</template>

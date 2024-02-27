@@ -1,0 +1,242 @@
+<template>
+  <div class={cardHeaderClass}>
+    <div class="b2b-enterprise-card_container b2b-enterprise-is-relative">
+      <div class="slds-spinner_container b2b-enterprise-z_1" if:true={loading}>
+        <lightning-spinner alternative-text={labels.CMEXLoading} size="medium" variant="brand">
+        </lightning-spinner>
+      </div>
+      <div class="b2b-enterprise-card_tabs">
+        <div class="b2b-enterprise-card_subtabs">
+          <template if:true={expand}>
+            <vlocity_cmt-icon  role="button" data-id={title} aria-label={title} data-setvalue="false" aria-expanded={expand} extraclass="b2b-enterprise-expansion-icon"
+            tabindex="0" onkeyup={handleKeyboardEvent} theme="slds" style="width:1rem;" onclick={handleIconToggle}
+            icon-name="utility:chevrondown" size="small">
+            </vlocity_cmt-icon>
+            <div class="b2b-enterprise-card_line"></div>
+          </template>
+          <template if:false={expand}>
+            <vlocity_cmt-icon role="button" data-id={title} aria-label={title} data-setvalue="true" aria-expanded={expand} extraclass="b2b-enterprise-expansion-icon"
+            tabindex="0" onkeyup={handleKeyboardEvent} theme="slds" style="width:1rem;" onclick={handleIconToggle}
+            icon-name="utility:chevronright" size="small">
+            </vlocity_cmt-icon>
+          </template>
+        </div>
+
+        <div class="b2b-enterprise-card_tab">
+          <div class="b2b-enterprise-bottom-separator">
+            <input type="checkbox" id={title} data-id={title} class="b2b-enterprise-card_checkbox" onchange={handleToggle} checked={expand} />
+            <label class={configCardLabelClass} for={title}>
+              <div class="slds-grid b2b-enterprise-label-container">
+                <span class="b2b-enterprise-card_title">
+                  <span if:true={messages.length}>
+                    <section if:true={isShowError} aria-describedby="dialog-body-id-110" aria-labelledby="dialog-heading-id-2" 
+                              class="slds-popover slds-popover_warning slds-nubbin_top-left b2b-enterprise-error-popover"
+                              role="dialog">
+                      
+                      <button class="slds-button slds-button_icon slds-button_icon-small slds-float_right slds-popover__close" onclick={hideBundleError} title="Close dialog">
+                        <vlocity_cmt-icon icon-name="utility:close" size="x-small" color="#FFFFFF"
+                                extraclass="slds-icon slds-icon_x-small slds-icon-text-default">
+                        </vlocity_cmt-icon>
+                        <span class="slds-assistive-text">x</span>
+                      </button>
+                      <header class="slds-popover__header">
+                        <div class="slds-media slds-media_center slds-has-flexi-truncate ">
+                          <div class="slds-media__figure">
+                              <span class="slds-icon_container slds-icon-utility-warning">
+                                <vlocity_cmt-icon icon-name="utility:warning" size="x-small" color="#000000"
+                                        extraclass="slds-icon slds-icon_x-small slds-icon-text-default">
+                                </vlocity_cmt-icon>
+                              </span>
+                          </div>
+                          <div class="slds-media__body">
+                            <h2 class="slds-truncate slds-text-heading_medium b2b-enterprise-card-warning-header" id="dialog-heading-id-2" title="Review">
+                              {labels.CMEXReviewWarnings}
+                            </h2>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="slds-popover__body slds-popover_warning__body" style="padding-left:0.5rem;" id="dialog-body-id-110">
+                        <ul>
+                          <li for:each={messages} for:item="message" key={message.messageId}>
+                            <div class="b2b-enterprise-card-popuperror-message">
+                              <span if:true={message.hasError} class="b2b-enterprise-text-color-red">*&nbsp;</span>{message.message}
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+                    <vlocity_cmt-icon icon-name="utility:warning" size="x-small" color="#FE9339" extraclass="slds-icon-text-default"
+                      class="slds-m-right_xx-small" onclick={showBundleError}></vlocity_cmt-icon>
+                  </span>
+                  <span class="b2b-enterprise-each-card_title">{title}
+                    <span class="slds-m-left_xx-small b2b-enterprise-bundle-title" if:true={isRootBundle}> [{labels.CMEXBundle}]
+                    </span>
+                  </span>
+                  <div if:true={attributes.length} class="b2b-enterprise-attributes_info slds-wrap">
+                    <span class="b2b-enterprise-each-attribute" for:each={attributes} for:item="attribute" key={attribute.label}>
+                      <span class="b2b-enterprise-attribute_label">{attribute.label}</span>
+                      <span class="b2b-enterprise-attribute_value">{attribute.value}</span>
+                    </span>
+                  </div>
+                </span>
+                <div if:true={offer.productRelationshipRules.length} class="b2b-enterprise-prod-ren-link">
+                  <vlocity_cmt-menu theme="slds" icon-name="utility:link">
+                    <vlocity_cmt-b2b-product-relationship-dialogue offer={offer}></vlocity_cmt-b2b-product-relationship-dialogue>           
+                  </vlocity_cmt-menu>
+                </div> 
+              
+                <div class="slds-grid b2b-enterprise-label-details">
+                  <div class="b2b-enterprise-product-card-action">
+                    <span class={actionClass}>{offer.action}</span>
+                  </div>
+                  <div class="b2b-enterprise-each-attribute b2b-enterprise-quantity slds-grid slds-grid_vertical slds-p-horizontal_x-small">
+                    <template if:true={offer.quantity}>
+                        <p class="b2b-enterprise-attribute_label slds-text-align_left">{labels.CMEXQuantity}</p>
+                        <div class="slds-text-align_left">
+                          <input 
+                          if:true={enableFields}
+                          class="b2b-enterprise-quantity_value b2b-enterprise-column-input" 
+                          type="number" value={offer.quantity}
+                          onchange={updateQuantity} 
+                          min={offer.minQuantity} 
+                          max={offer.maxQuantity}
+                          disabled={canDisableQuantity} />
+                          <input 
+                          if:false={enableFields}
+                          class="b2b-enterprise-quantity_value b2b-enterprise-column-input disabled-field" 
+                          type="number" value={offer.quantity}
+                          onchange={updateQuantity} 
+                          min={offer.minQuantity} 
+                          max={offer.maxQuantity}
+                          disabled={canDisableQuantity} />
+                        </div>
+                    </template>
+                  </div>
+                  
+                  <div class="b2b-enterprise-price_info">
+                    <div class="b2b-enterprise-each-attribute" for:each={offer.columns} for:item="column" key={column.valueMap}>
+                      <p class="b2b-enterprise-attribute_label slds-text-align_left">{column.label}</p>
+                      <p if:false={column.value.actions.applyadjustment}
+                        class="b2b-enterprise-attribute_value slds-text-align_left b2b-enterprise-no-border">{column.value.value}</p>
+                      <template if:true={column.value.actions.applyadjustment}>
+                        <div class="slds-text-align_left">
+                          <input 
+                          if:true={enablePriceFields}
+                          class="b2b-enterprise-column-input" 
+                          data-type={column.valueMap} 
+                          onchange={adjustPrices} 
+                          value={column.value.value} />
+                          <input 
+                          if:false={enablePriceFields}
+                          class="b2b-enterprise-column-input" 
+                          data-type={column.valueMap} 
+                          onchange={adjustPrices} 
+                          disabled
+                          value={column.value.value} />
+                        </div>
+                      </template>
+                      <p if:true={column.value.originalValue}
+                        class="b2b-enterprise-attribute_value b2b-enterprise-adjustment-price slds-text-align_left">
+                        <strike>{column.value.originalValue}</strike>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slds-grid">
+                    <div class="b2b-enterprise-delete-item-icon-container">
+                      <template if:true={enableFields}>
+                        <vlocity_cmt-icon if:true={canRemoveOffer} data-methodname="deleteLineItem" tabindex="0" aria-label={labels.CMEXDelete} role="button" icon-name="utility:delete"
+                          size="x-small" extraclass="slds-icon-text-default" class="slds-m-left_small" color="#939393"
+                          onkeyup={handleKeyboardEvent} onclick={deleteLineItem}>
+                        </vlocity_cmt-icon>
+                      </template>
+                    </div>
+                  </div>
+                  <div class="slds-grid">
+                    <div class="b2b-enterprise-menu-container">
+                      <div class="b2b-enterprise-menu slds-m-left_xx-small" >
+                        <vlocity_cmt-menu disabled={isCardMenuDisabled} theme="slds" icon-name="utility:down" icon-color="#939393" position="right"
+                         class="b2b-enterprise-extra-menu" tabindex="0" aria-label={title} role="menu">
+                          <template for:each={modifiedMenuList} for:item="item">
+                            <vlocity_cmt-menu-item theme="slds" name={item.label} key={item.id} aria-label={item.label} record={item} onclick={handleMenu}
+                              class="b2b-enterprise-extra-menu-details"></vlocity_cmt-menu-item>
+                          </template>
+                          <template for:each={extraActions} for:item="item">
+                            <vlocity_cmt-menu-item theme="slds" name={item.label} key={item.id} aria-label={item.label} record={item} onclick={handleExtraActions}
+                              class="b2b-enterprise-extra-menu-details"></vlocity_cmt-menu-item>
+                          </template>
+                        </vlocity_cmt-menu>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <div class={cardContentClass}>
+              <slot name="content">
+                <template if:true={shouldRenderAttributes}>
+                  <div class={getParentAttributeClass}>
+                    <template if:false={isProductDisconnected}>
+                         <c-extended-b2b-attribute-config-offer offer={offer} onupdateattribute={updateAttributeHandler}></c-extended-b2b-attribute-config-offer>
+                    
+                      <!-- <vlocity_cmt-b2b-attribute-config-offer offer={offer} onupdateattribute={updateAttributeHandler}></vlocity_cmt-b2b-attribute-config-offer> -->
+                    </template>
+                  </div>
+                </template>
+                <template if:true={expand}>
+                  <template if:true={offer.productRelationshipRules}>
+                    <div if:true={enableFields}>
+                      <vlocity_cmt-b2b-product-relationship offer={offer}></vlocity_cmt-b2b-product-relationship>
+                    </div>
+                    <!-- <c-extended-b2b-product-relationship offer={offer}></c-extended-b2b-product-relationship> -->
+                  </template>
+                </template>
+                <template if:true={shouldRenderAddOn}>
+                  <c-extended-b2b-offer-addons extra-actions={extraActions} offer={offer} child-addons={children} expand={expand} macd={macd}>
+                  </c-extended-b2b-offer-addons>
+                </template>
+              </slot>
+            </div>
+            <template if:true={renderAdjustModal}>
+              <template if:true={offer.quantity}>
+                <vlocity_cmt-b2b-adjust-price-modal offer={offer}></vlocity_cmt-b2b-adjust-price-modal>
+              </template>
+            </template>
+            <template if:true={renderDeleteOfferModal}>
+              <vlocity_cmt-modal size="small" theme="slds" class="b2b-enterprise-delete-offer" data-delete-modal-id={offer.id}>
+                <div slot="header">
+                  <h1 class="b2b-modal-header slds-text-heading_medium">{getDeleteModalHeaderLabel}</h1>
+                </div>
+                <div slot="content" class="slds-is-relative">
+                  <div class="slds-p-around_x-large nds-text-align_center">
+                    <h3>{getDeleteModalBodyLabel}</h3>
+                  </div>
+                </div>
+                <div slot="footer">
+                  <vlocity_cmt-button class="b2b-enterprise-modal-cancel" variant="neutral" theme="slds" onclick={cancelDeleteOfferModal}
+                    label={labels.CMEXCancel} extraclass="b2b-enterprise-modal-button"></vlocity_cmt-button>
+                  <vlocity_cmt-button variant="brand" extraclass="slds-m-left_x-small b2b-enterprise-modal-button b2b-enterprise-primary"
+                    theme="slds" onclick={proceedDeleteOffer} label={getDeleteModalSaveLabel}></vlocity_cmt-button>
+                </div>
+              </vlocity_cmt-modal>
+            </template>
+          </div>
+        </div>
+      </div>
+    </div>
+    <template if:true={eligibilityErrorMessage}>
+      <div class="b2b-enterprise-fixmember-container">
+        <div class="b2b-enterprise-fixmember-error-message">
+              {eligibilityErrorMessage}&nbsp;
+            <a onclick={autoFixMembers} class="b2b-enterprise-fixnow-link">{labels.CMEXFixNow}</a>
+        </div>
+      </div>
+    </template>
+    <template if:true={eligibilityNoneFixableError}>
+      <div class="b2b-enterprise-fixmember-container">
+        <div class="b2b-enterprise-fixmember-error-message">
+          {labels.CMEXNoMemberEligibilityErrorMessage}
+        </div>
+      </div>
+    </template>
+  </div>
+</template>

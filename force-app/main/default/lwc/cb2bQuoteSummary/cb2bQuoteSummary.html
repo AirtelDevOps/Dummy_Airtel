@@ -1,0 +1,25 @@
+<template>
+	<slot name="memberTableQuoteSlot">
+		<c-cb2b-data-table if:true={showTable} onmemberdelete={handleLineItemDelete} member-type={memberType} quote-id={quoteId} read-mode="true" 
+		total-number-of-pages={totalNumberOfPages} total-records-count={totalRecordsCount} pagelimit="3" pagesize={pageSize} group-by={gpy}
+		columns={tableColumns} records={tableData} oncpqlineitemupdate={handleItemUpdate}
+		onemptytable={handleEmptyTable} summary-data-to-cell={responseSummary}
+		ontabupdatefromtbl={handleTabUpdatefromTbl} ongetpagedata={getRootItems} oncpqtableupdated={handleTableUpdate}>
+		</c-cb2b-data-table>
+		
+		<!--
+		<vlocity_cmt-b2b-data-table if:true={showTable} onmemberdelete={handleLineItemDelete} member-type={memberType} quote-id={quoteId} read-mode="true" 
+		total-number-of-pages={totalNumberOfPages} total-records-count={totalRecordsCount} pagelimit="3" pagesize={pageSize} group-by={gpy}
+		columns={tableColumns} records={tableData} oncpqlineitemupdate={handleItemUpdate}
+		onemptytable={handleEmptyTable} summary-data-to-cell={responseSummary}
+		ontabupdatefromtbl={handleTabUpdatefromTbl} ongetpagedata={getRootItems} oncpqtableupdated={handleTableUpdate}>
+		</vlocity_cmt-b2b-data-table>
+		-->
+	</slot>
+	<div if:false={tableData} class="slds-align_absolute-center">
+		{labels.CMEXNoItemsCart}
+	</div>
+	<div class="slds-spinner_container" if:true={loading}>
+		<lightning-spinner alternative-text={labels.CMEXLoading} size="large" variant="brand"></lightning-spinner>
+	</div>
+</template>

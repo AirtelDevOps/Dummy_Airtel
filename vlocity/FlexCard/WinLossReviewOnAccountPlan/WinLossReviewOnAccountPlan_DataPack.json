@@ -1,0 +1,47 @@
+{
+    "AuthorName": "ARTL",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "recordId",
+                    "val": "a7O720000000Ak9EAE"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "flexcard_accountPlanId": "{recordId}"
+                },
+                "ipMethod": "ARTL_OpportunityOnAccountPlan",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "[\"WinLoss\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "WinLossReviewOnAccountPlan",
+    "Namespace": "",
+    "OmniUiCardKey": "WinLossReviewOnAccountPlan/ARTL/2.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "WinLossReviewOnAccountPlan.json",
+    "SampleDataSourceResponse": "{\"Contact\":[{\"hierarchyLevelScore\":0.75,\"stakeholderScore\":\"1.0\",\"designation\":\"d\",\"interactionLevel\":\"Board Level\",\"name\":\"Cloudy 2\"},{\"hierarchyLevelScore\":0.75,\"stakeholderScore\":\"0.5\",\"designation\":\"Test\",\"interactionLevel\":\"Board Level\",\"name\":\"Cloudy\"},{\"eventNextSteps\":\"Sample Immediate steps and engagement plans\",\"eventObjective\":\"Vsat location migration on Mpls\",\"eventMeetingStatus\":\"[Not Started] - 2023-10-31 00:00:00\",\"eventAccountTeam\":\"Rishab Kalra\",\"eventId\":\"00U72000001IHt3EAG\",\"hierarchyLevelScore\":2,\"stakeholderScore\":\"2.0\",\"designation\":\"Test\",\"interactionLevel\":\"Decision Makers/ CXOs\",\"name\":\"Kalra\"}],\"HistBUC\":[{\"Prev2YrAirtelSpend\":0,\"Prev2YrTotalSpend\":0,\"Prev1YrTotalSpend\":455,\"currentYrTotalSpend\":1221,\"currentYrAirtelSpend\":0,\"productCategory\":\"SD-WAN\",\"productSoln\":\"Internet\",\"Prev1YrAirtelSpend\":333},{\"Prev2YrAirtelSpend\":0,\"Prev2YrTotalSpend\":0,\"Prev1YrTotalSpend\":0,\"currentYrTotalSpend\":11309,\"currentYrAirtelSpend\":3544,\"productCategory\":\"Network\",\"productSoln\":\"Networking\",\"Prev1YrAirtelSpend\":0}],\"Opportunity\":{\"closeDate\":\"2024-01-18\",\"keyStakeholder\":\"Test Cloudy3\",\"id\":\"0067200000AD6bKAAT\",\"sizing\":1231324,\"keyTimeline\":\"Q1\",\"comments\":\"Sample Comment\",\"description\":\"Sample description\",\"name\":\"Cloudy Consulting - Test lead\"},\"Task\":[{\"Status\":\"Closed\",\"Name\":\"Jack Jones\",\"Sizing\":123,\"ImmediateStepsEngagementPlans\":\"Test\",\"KeyTimelines\":\"Q1\",\"KeyStakeHolder\":\"Test\",\"KeyCompetitors\":\"CntrlS\",\"Description\":\"Test\",\"Comments\":\"Test\"},{\"Status\":\"Closed\",\"Name\":\"George Brown\",\"Sizing\":121,\"ImmediateStepsEngagementPlans\":\"Test\",\"KeyTimelines\":\"Q2\",\"KeyStakeHolder\":\"Test\",\"KeyCompetitors\":\"NTT\",\"Description\":\"Test\",\"Comments\":\"Test\"}],\"BUC\":[{\"RMS\":30.93,\"TotalSpends\":11064,\"Total_Competitor_Spends__c\":7642,\"Spends_with_Airtel__c\":3422,\"Product_Category__c\":\"SD-WAN\",\"Product_Solution__c\":\"Internet\",\"Key_Competitor_and_Comments__c\":\"test2\",\"Fiscal_Year__c\":\"2024\",\"Account_Name__c\":\"Mike & Associates\",\"Name\":\"BUC-0009103\"},{\"RMS\":45.45,\"TotalSpends\":2200,\"Total_Competitor_Spends__c\":1200,\"Spends_with_Airtel__c\":1000,\"Product_Category__c\":\"SD-WAN\",\"Product_Solution__c\":\"Internet\",\"Key_Competitor_and_Comments__c\":\"Testing\",\"Fiscal_Year__c\":\"2024\",\"Account_Name__c\":\"Cloudy Consulting\",\"Name\":\"BUC-0009105\"}],\"WinLoss\":[{\"reasonOfWinLoss\":\"\",\"amount\":\"\",\"isSalesTeamLostReason\":true,\"isProdOfferingLostReason\":true,\"isMiscLostReason\":false,\"isFeasTimelineLostReason\":false,\"isPricingLostReason\":true,\"categorizationOfLoss\":\"Pricing;Product Offering;Sales Team\",\"timeline\":\"Q4\",\"finalStatus\":\"Closed Won\",\"name\":\"Closed Won\",\"id\":\"0067200000AJ1VjAAL\"},{\"categorizationOfLoss\":\"\",\"reasonOfWinLoss\":\"\",\"amount\":\"\",\"isSalesTeamLostReason\":false,\"isProdOfferingLostReason\":false,\"isMiscLostReason\":false,\"isFeasTimelineLostReason\":false,\"isPricingLostReason\":false,\"timeline\":\"Q4\",\"finalStatus\":\"Closed Lost\",\"name\":\"Closed Lost\",\"id\":\"0067200000AJ28RAAT\"}],\"BUCTotalAirtelSpend\":4422,\"BUCTotalSpend\":13264,\"prev2Year\":2021,\"prev1Year\":2022,\"currentYear\":2023,\"prev2YrTotalTotalSpend\":0,\"prev2YrTotalAirtelSpend\":0,\"prev1YrTotalTotalSpend\":455,\"prev1YrTotalAirtelSpend\":333,\"currentYrTotalTotalSpend\":12530,\"currentYrTotalAirtelSpend\":3544,\"TaskRecordTypeId\":\"01272000000NDNxAAO\",\"Weakness\":\"test\",\"Strengths\":\"test\",\"RTB_KeyInitiatives\":\"<p>test</p>\",\"NetIncome\":0,\"Revenue\":0,\"RTB_KeyMetrics\":\"<p>test</p>\",\"SAMTLName\":\"Sheriff Singla\",\"TLName\":\"sujay dey\",\"SAMName\":\"Ishita Khare\",\"KAMName\":\"Rishab Kalra\",\"AccountName\":\"Cloudy Consulting\",\"RTB_KeyCompetitorSummary\":\"<p>Test Summary:</p><ol><li>test1</li><li>test2</li></ol>\"}",
+    "StylingConfiguration": "{\"customStyles\":\"\"}",
+    "UniqueName": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/WinLossReviewOnAccountPlan",
+    "sourceOrgUrl": "/0ko720000000HQfAAM"
+}

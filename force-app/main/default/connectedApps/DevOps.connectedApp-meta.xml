@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sgupta3@salesforce.com</contactEmail>
+    <label>DevOps</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIDUTCCAjkCFEYj17J1xb67ApszJMWRg3CxOt4wMA0GCSqGSIb3DQEBCwUAMGUxCzAJBgNVBAYTAklOMRAwDgYDVQQIDAdIYXJ5YW5hMREwDwYDVQQHDAhHdXJ1Z3JhbTEPMA0GA1UECgwGQWlydGVsMQ8wDQYDVQQLDAZEZXZPcHMxDzANBgNVBAMMBkRldk9wczAeFw0yMzExMDcxNDM1NDBaFw0yNDExMDYxNDM1NDBaMGUxCzAJBgNVBAYTAklOMRAwDgYDVQQIDAdIYXJ5YW5hMREwDwYDVQQHDAhHdXJ1Z3JhbTEPMA0GA1UECgwGQWlydGVsMQ8wDQYDVQQLDAZEZXZPcHMxDzANBgNVBAMMBkRldk9wczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL9YN5zxHAXVMAYi7yVifucdu2vEusEg4TI57dw7LtQDZcb3iYZ8PXukh52rLeAS6jdx3hbjytpAjP/R+pkwjpcGY4DtevGI3RTcAWo/Ilo3NZvhzwA3h8TLHTHqBNIHmTKIpLYNOlXTt54vZAO6W2Kf6kvT97b7JLlbfslQUtQjq2RtzDtLqGO0Kaky3iG5hMcdPss4Zpl1eCI/Kgal9dIpHQcH2eps3gylN4Qqt+2BBcPv1rmlzITpekIb0EUES3CQDMx5EwTO0Tp43Irtw+wvNyRGEOmt0cNnW+d8l4zU8NECUoW47jvdpcPcoyOdnqgpvfReG/7NpuRK1vUOx1cCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAec96UWJh1NAkE611ZmOynMHWv8S4+vt+BT/Ny9YZNDyaecmzb0Uqqi9t/fpAp9FfouRoZ9cYYMN3G7OMkoaxXOK2I859+OAZzfdsuKaoyTCXVd5q7uevE3pMsk5vSsn06QXE/HWGhbeEijQTHKL09H9SuQVOciviVg2NVjsxfdXg3HxbgtQCLfuRgiQvFjtMxWKQBPtz4cwXvz0YS1gvgkxYucLAPDvNnWgjtHWMDac94nsAXvRqJMyb5iw39AZxYwCLoiuI/JFsRDKLal2SJqWRoZpzRjVwje5d8G6jhM6UuymMU6QnJNi5o/NiqYWf9ZEjsVvQ3k3idygyC88i/A==</certificate>
+        <consumerKey>3MVG9qT0j3YAi4Et2xMRUgxr2Alyt6lkv0aDe4a8K9.Nt4C6.mwrb5SH9DHaZbB7N99.Hy9pspe6ts2gcXyfV</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>specific_lifetime:90:DAYS</refreshTokenPolicy>
+    </oauthPolicy>
+    <sessionPolicy>
+        <sessionTimeout>15</sessionTimeout>
+    </sessionPolicy>
+</ConnectedApp>

@@ -1,0 +1,20 @@
+<template>
+        <div>
+            <lightning-button icon-name="utility:download" 
+            label="Download as CSV" 
+            title="Download CSV File"
+            onclick={downloadAccountData} variant="brand"></lightning-button>
+        </div> 
+        <div>
+            <br></br>
+        </div>   
+        <div style="height: 250px;">
+            <lightning-datatable
+                class="wrapped-header-datatable"
+                key-field="AccountId"
+                data={bucData}
+                columns={DataTableResponseWrappper}
+                min-column-width="100">
+            </lightning-datatable>
+        </div>
+</template>

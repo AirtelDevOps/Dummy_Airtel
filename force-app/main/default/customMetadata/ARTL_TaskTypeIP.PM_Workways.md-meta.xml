@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PM Workways</label>
+    <protected>false</protected>
+    <values>
+        <field>ARTL_Request_Payload_Map__c</field>
+        <value xsi:type="xsd:string">{&quot;accessNetworkLocationCode&quot;:&quot;Access POP Network Location Code&quot;,&quot;ispMplsNetworkLocationCode&quot;:&quot;ISP/MPLS POP Network Location Code&quot;,&quot;rsuNetworkLocationCode&quot;:&quot;RSU Network Location Code&quot;,&quot;customerNetworkLocationCode&quot;:&quot;null&quot;,&quot;btsNetworkLocationCode&quot;:&quot;null&quot;,&quot;epcnRevisedCapexRequired&quot;:&quot;null&quot;}</value>
+    </values>
+    <values>
+        <field>ARTL_Technical_Attribute_Map__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>IP__c</field>
+        <value xsi:type="xsd:string">ARTL_PMWorkways</value>
+    </values>
+    <values>
+        <field>Task_Type__c</field>
+        <value xsi:type="xsd:string">PM Workways</value>
+    </values>
+</CustomMetadata>

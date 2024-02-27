@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseForLast",
+    "OmniProcessId": {
+        "Name": "CustomViewOfQLI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CustomViewOfQLI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "QM": [
+                {
+                    "Id": "DONOTFETCH",
+                    "Name": "-"
+                }
+            ],
+            "QMExist": false,
+            "action": "%LimitToFetch:action%",
+            "offsetValueSV": "%offsetValue%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%HierarchicalViewQLIContainer% == true && ISBLANK(%QuoteMemberByQLI%)",
+        "label": "ResponseAction5",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CustomViewOfQLI/Procedure/ResponseForLast"
+}

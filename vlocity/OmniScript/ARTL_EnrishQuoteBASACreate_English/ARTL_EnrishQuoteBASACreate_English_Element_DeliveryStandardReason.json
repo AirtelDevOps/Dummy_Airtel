@@ -1,0 +1,122 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DeliveryStandardReason",
+    "OmniProcessId": {
+        "Name": "ARTL/EnrishQuoteBASACreate",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "NBADetailsStep",
+        "OmniProcessId": {
+            "Name": "ARTL/EnrishQuoteBASACreate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/NBADetailsStep",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "NBADetailsStep",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 4,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Delivery Standard Reason",
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "Airtel- Foreign Legal Entity",
+                "value": "Airtel- Foreign Legal Entity"
+            },
+            {
+                "autoAdv": null,
+                "name": "Applied For",
+                "value": "Applied For"
+            },
+            {
+                "autoAdv": null,
+                "name": "Exempt",
+                "value": "Exempt"
+            },
+            {
+                "autoAdv": null,
+                "name": "Exempt Supply- Trust/Entities 12AA",
+                "value": "Exempt Supply- Trust/Entities 12AA"
+            },
+            {
+                "autoAdv": null,
+                "name": "NA",
+                "value": "NA"
+            },
+            {
+                "autoAdv": null,
+                "name": "Non Taxable as transactions within same Company",
+                "value": "Non Taxable as transactions within same Company"
+            },
+            {
+                "autoAdv": null,
+                "name": "Non-SEZ",
+                "value": "Non-SEZ"
+            },
+            {
+                "autoAdv": null,
+                "name": "Others",
+                "value": "Others"
+            },
+            {
+                "autoAdv": null,
+                "name": "SEZ",
+                "value": "SEZ"
+            },
+            {
+                "autoAdv": null,
+                "name": "UIN",
+                "value": "UIN"
+            },
+            {
+                "autoAdv": null,
+                "name": "Zero Rated Supply- Export",
+                "value": "Zero Rated Supply- Export"
+            },
+            {
+                "autoAdv": null,
+                "name": "Zero Rated Supply- SEZ",
+                "value": "Zero Rated Supply- SEZ"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": false,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/DeliveryStandardReason"
+}

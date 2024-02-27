@@ -1,0 +1,2295 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Internet-Product-Specification-CFS_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_BILLING_ADDRESS_ID": null,
+        "ATT_BILLING_PACKAGE_ID": null,
+        "ATT_BUSINESS_UNIT": null,
+        "ATT_CAF": null,
+        "ATT_CAF_NUMBER": null,
+        "ATT_CHANGE_ORDER_EFFECTIVE_DATE": null,
+        "ATT_CUSTOMER_NEED_BY_DATE": null,
+        "ATT_DDOS_Mitigation_Bandwidth_CFS": null,
+        "ATT_DDOS_TYPE": "No",
+        "ATT_DEMO_DURATION": null,
+        "ATT_DEPENDENT_LINK_LSI": null,
+        "ATT_Dependent Link Media_CFS": null,
+        "ATT_HANDOVER_TYPE": null,
+        "ATT_INSTALLATION_LOCATION_ID": null,
+        "ATT_INVOICE_SHIPMENT_ID": null,
+        "ATT_ISDEMO_CFS": null,
+        "ATT_LSI": null,
+        "ATT_MTU_SIZE": null,
+        "ATT_NBA_ID_CFS": null,
+        "ATT_NRC_REBILLING_CFS": null,
+        "ATT_ORDER_TYPE_CFS": null,
+        "ATT_POP": null,
+        "ATT_PO_ID": null,
+        "ATT_PRIMARY_KEY": null,
+        "ATT_PRODUCT_NAME_CFS": null,
+        "ATT_PROFILE_UPDATE": null,
+        "ATT_RATIO": "1:1",
+        "ATT_REDUNDANCY": null,
+        "ATT_RELOGED_ORDER": null,
+        "ATT_RELOG_REASON": null,
+        "ATT_RFS_Date": null,
+        "ATT_RTBH": null,
+        "ATT_Rate_Revision": null,
+        "ATT_Rebilling_Reason": null,
+        "ATT_SUB_ORDER_TYPE_CFS": null,
+        "ATT_SUB_PRODUCT_NAME_CFS": null,
+        "ATT_TECH_CONTRACT_TERM": null,
+        "ATT_TECH_CPE": null,
+        "ATT_TECH_LAST_MILE": null,
+        "ATT_TECH_SERVICE_TYPE": null,
+        "ATT_UP_TIME_SLA_CFS": null,
+        "OTC_CHANGE_ORDER_CFS": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_ENTERPRISE_DETAILS",
+                "Name": "Details",
+                "displaySequence": 300,
+                "id": "a0Z72000000xoooEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abEWAAY",
+                            "cloneable": true,
+                            "code": "ATT_POP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 31,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "POP",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "1fc2b6f7-80b7-2491-5eff-488ea6f332e7",
+                                    "label": "Dual POP",
+                                    "name": "1fc2b6f7-80b7-2491-5eff-488ea6f332e7",
+                                    "readonly": false,
+                                    "value": "Dual POP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "50e668da-b319-7e7c-f31d-93e3bf1b935d",
+                                    "label": "Single POP",
+                                    "name": "50e668da-b319-7e7c-f31d-93e3bf1b935d",
+                                    "readonly": false,
+                                    "value": "Single POP"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEaAAAU",
+                            "cloneable": true,
+                            "code": "ATT_RTBH",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 37,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "RTBH",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "5f748e87-10f2-16a7-5a7c-a146b3056b46",
+                                    "label": "Domestic International",
+                                    "name": "5f748e87-10f2-16a7-5a7c-a146b3056b46",
+                                    "readonly": false,
+                                    "value": "Domestic International"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "e2828900-2390-b424-7806-a15ece39f682",
+                                    "label": "No",
+                                    "name": "e2828900-2390-b424-7806-a15ece39f682",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZwAAM",
+                            "cloneable": true,
+                            "code": "ATT_MTU_SIZE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 51,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "MTU Size",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEYAAY",
+                            "cloneable": true,
+                            "code": "ATT_REDUNDANCY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 830,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Redundancy",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "label": "Yes",
+                                    "name": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "label": "No",
+                                    "name": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abF0AAI",
+                            "cloneable": true,
+                            "code": "ATT_DDOS_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 980,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "DDOS Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "99af8f01-43d4-dafa-30ff-8089edb906df",
+                                    "label": "Arbor",
+                                    "name": "99af8f01-43d4-dafa-30ff-8089edb906df",
+                                    "readonly": false,
+                                    "value": "Arbor"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "c4a63178-9531-e04a-e94a-8d442d13d8dd",
+                                    "label": "No",
+                                    "name": "c4a63178-9531-e04a-e94a-8d442d13d8dd",
+                                    "readonly": false,
+                                    "value": "No"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "f45bc53a-a8a9-22bd-224c-2040fb56987b",
+                                    "label": "Radware",
+                                    "name": "f45bc53a-a8a9-22bd-224c-2040fb56987b",
+                                    "readonly": false,
+                                    "value": "Radware"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 5
+                }
+            },
+            {
+                "Code__c": "30b11d92-38c1-9ed8-3d7c-9bb6bcc4b278",
+                "Name": "SFDC Attributes",
+                "displaySequence": 777,
+                "id": "a0Z72000000xmLZEAY",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEZfAAM",
+                            "cloneable": true,
+                            "code": "ATT_CUSTOMER_NEED_BY_DATE",
+                            "dataType": "date",
+                            "disabled": false,
+                            "displaySequence": 23,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "date",
+                            "isNotTranslatable": false,
+                            "label": "Customer Need By Date",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZiAAM",
+                            "cloneable": true,
+                            "code": "ATT_DEPENDENT_LINK_LSI",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 54,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Dependent Link LSI",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZqAAM",
+                            "cloneable": true,
+                            "code": "ATT_INSTALLATION_LOCATION_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 247,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Installation location ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                }
+            },
+            {
+                "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
+                "Name": "Technical Attributes",
+                "displaySequence": 1090,
+                "id": "a0Z72000000zL7ZEAU",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000006aaEQAAY",
+                            "cloneable": true,
+                            "code": "ATT_CAF",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "CAF",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aaERAAY",
+                            "cloneable": true,
+                            "code": "ATT_CHANGE_ORDER_EFFECTIVE_DATE",
+                            "dataType": "date",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "date",
+                            "isNotTranslatable": false,
+                            "label": "Change Order Effective Date",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aaETAAY",
+                            "cloneable": true,
+                            "code": "ATT_DDOS_Mitigation_Bandwidth_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "DDOS Mitigation Bandwidth",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "00ae3722-186c-f78d-75ea-6289e1a59584",
+                                    "label": "15 Mbps",
+                                    "name": "00ae3722-186c-f78d-75ea-6289e1a59584",
+                                    "readonly": false,
+                                    "value": "15 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 230,
+                                    "id": "01ab4da4-a588-893a-f651-e17662225ac0",
+                                    "label": "900 Mbps",
+                                    "name": "01ab4da4-a588-893a-f651-e17662225ac0",
+                                    "readonly": false,
+                                    "value": "900 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 220,
+                                    "id": "049827fd-e743-7b09-04c3-e37e0e782a88",
+                                    "label": "25 Mbps",
+                                    "name": "049827fd-e743-7b09-04c3-e37e0e782a88",
+                                    "readonly": false,
+                                    "value": "25 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 265,
+                                    "id": "0d611c94-b4a8-ceff-7494-8e2dad819936",
+                                    "label": "350 Mbps",
+                                    "name": "0d611c94-b4a8-ceff-7494-8e2dad819936",
+                                    "readonly": false,
+                                    "value": "350 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 190,
+                                    "id": "1394d001-040f-e71f-01c5-d9286ab6fc0c",
+                                    "label": "400 Mbps",
+                                    "name": "1394d001-040f-e71f-01c5-d9286ab6fc0c",
+                                    "readonly": false,
+                                    "value": "400 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 180,
+                                    "id": "1b413e95-c757-bf8b-e306-ed5c4aa8218d",
+                                    "label": "2 Mbps",
+                                    "name": "1b413e95-c757-bf8b-e306-ed5c4aa8218d",
+                                    "readonly": false,
+                                    "value": "2 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 215,
+                                    "id": "1b5379dd-9a1c-97b6-4d21-18fc29969571",
+                                    "label": "500 Mbps",
+                                    "name": "1b5379dd-9a1c-97b6-4d21-18fc29969571",
+                                    "readonly": false,
+                                    "value": "500 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "1be59072-63c2-0244-4c63-4f0f3096d4ba",
+                                    "label": "70 Gbps",
+                                    "name": "1be59072-63c2-0244-4c63-4f0f3096d4ba",
+                                    "readonly": false,
+                                    "value": "70 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 65,
+                                    "id": "1c3a55d6-6cc9-2ebf-a141-5daf418dc46d",
+                                    "label": "8 Mbps",
+                                    "name": "1c3a55d6-6cc9-2ebf-a141-5daf418dc46d",
+                                    "readonly": false,
+                                    "value": "8 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "21b03f6e-faab-935e-3831-bb2290664ba7",
+                                    "label": "45 Gbps",
+                                    "name": "21b03f6e-faab-935e-3831-bb2290664ba7",
+                                    "readonly": false,
+                                    "value": "45 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 205,
+                                    "id": "25370c81-8e3f-2acd-3a4c-fcccd6981a75",
+                                    "label": "20 Gbps",
+                                    "name": "25370c81-8e3f-2acd-3a4c-fcccd6981a75",
+                                    "readonly": false,
+                                    "value": "20 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 170,
+                                    "id": "2a8f9ed9-546d-2f31-ae94-54773f164115",
+                                    "label": "800 Mbps",
+                                    "name": "2a8f9ed9-546d-2f31-ae94-54773f164115",
+                                    "readonly": false,
+                                    "value": "800 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 235,
+                                    "id": "2bf1fdb9-2b18-9e7f-c969-f6e3acc8ad9c",
+                                    "label": "5Mbps",
+                                    "name": "2bf1fdb9-2b18-9e7f-c969-f6e3acc8ad9c",
+                                    "readonly": false,
+                                    "value": "5 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 115,
+                                    "id": "36017cf3-f938-0af7-8377-282c8f852995",
+                                    "label": "80 Mbps",
+                                    "name": "36017cf3-f938-0af7-8377-282c8f852995",
+                                    "readonly": false,
+                                    "value": "80 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 15,
+                                    "id": "3b7bdb77-4fae-3221-917a-2b28a6b6905a",
+                                    "label": "15 Gbps",
+                                    "name": "3b7bdb77-4fae-3221-917a-2b28a6b6905a",
+                                    "readonly": false,
+                                    "value": "15 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 260,
+                                    "id": "3cde1df0-3dab-8830-9abc-5e51ae38be52",
+                                    "label": "35 Mbps",
+                                    "name": "3cde1df0-3dab-8830-9abc-5e51ae38be52",
+                                    "readonly": false,
+                                    "value": "35 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "41379448-fe5c-dbf3-1586-b31ead431537",
+                                    "label": "100 Mbps",
+                                    "name": "41379448-fe5c-dbf3-1586-b31ead431537",
+                                    "readonly": false,
+                                    "value": "100 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 45,
+                                    "id": "44133528-334c-3179-0e63-2a61ef94302c",
+                                    "label": "6 Mbps",
+                                    "name": "44133528-334c-3179-0e63-2a61ef94302c",
+                                    "readonly": false,
+                                    "value": "6 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 85,
+                                    "id": "4ddcc0cd-f5a4-4b18-609e-e9c66b98c929",
+                                    "label": "100 Gbps",
+                                    "name": "4ddcc0cd-f5a4-4b18-609e-e9c66b98c929",
+                                    "readonly": false,
+                                    "value": "100 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 195,
+                                    "id": "57f098c5-eb5f-22fa-6d30-1503e2abf7f9",
+                                    "label": "90 Gbps",
+                                    "name": "57f098c5-eb5f-22fa-6d30-1503e2abf7f9",
+                                    "readonly": false,
+                                    "value": "90 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 125,
+                                    "id": "5bd2b6bf-8108-3c43-e3e4-9594005d2bba",
+                                    "label": "90 Mbps",
+                                    "name": "5bd2b6bf-8108-3c43-e3e4-9594005d2bba",
+                                    "readonly": false,
+                                    "value": "90 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 135,
+                                    "id": "5e7f0ac6-a6fa-64d6-b479-a8de802810e3",
+                                    "label": "250 Mbps",
+                                    "name": "5e7f0ac6-a6fa-64d6-b479-a8de802810e3",
+                                    "readonly": false,
+                                    "value": "250 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 130,
+                                    "id": "676be764-ee68-441d-ce44-6b361aed1c1e",
+                                    "label": "155 Mbps",
+                                    "name": "676be764-ee68-441d-ce44-6b361aed1c1e",
+                                    "readonly": false,
+                                    "value": "155 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 25,
+                                    "id": "6882a34f-ea7d-32da-93db-5e24ab3efa7e",
+                                    "label": "35 Gbps",
+                                    "name": "6882a34f-ea7d-32da-93db-5e24ab3efa7e",
+                                    "readonly": false,
+                                    "value": "35 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "6fe32a99-7933-4096-87c8-5aafa8a0c297",
+                                    "label": "3 Gbps",
+                                    "name": "6fe32a99-7933-4096-87c8-5aafa8a0c297",
+                                    "readonly": false,
+                                    "value": "3 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "77d43e06-7fb5-ab6d-4494-7efae9c9eb65",
+                                    "label": "1 Gbps",
+                                    "name": "77d43e06-7fb5-ab6d-4494-7efae9c9eb65",
+                                    "readonly": false,
+                                    "value": "1 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "77e0638c-cf87-4c90-9700-0fa8658414c4",
+                                    "label": "45 Mbps",
+                                    "name": "77e0638c-cf87-4c90-9700-0fa8658414c4",
+                                    "readonly": false,
+                                    "value": "45 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 200,
+                                    "id": "7df3e969-e3ef-ae0a-5da7-9f82941cfd30",
+                                    "label": "10 Mbps",
+                                    "name": "7df3e969-e3ef-ae0a-5da7-9f82941cfd30",
+                                    "readonly": false,
+                                    "value": "10 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 35,
+                                    "id": "828acac1-2663-042a-d3fe-6a75748f121d",
+                                    "label": "600 Mbps",
+                                    "name": "828acac1-2663-042a-d3fe-6a75748f121d",
+                                    "readonly": false,
+                                    "value": "600 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 225,
+                                    "id": "8a8c2a5f-984c-4dec-34d8-2229bb6ed113",
+                                    "label": "30 Mbps",
+                                    "name": "8a8c2a5f-984c-4dec-34d8-2229bb6ed113",
+                                    "readonly": false,
+                                    "value": "30 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 145,
+                                    "id": "902ab443-e8c1-9226-e3d4-6367293fbcff",
+                                    "label": "450 Mbps",
+                                    "name": "902ab443-e8c1-9226-e3d4-6367293fbcff",
+                                    "readonly": false,
+                                    "value": "450 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "954151f2-6d31-80fa-cfde-cd11df0c53a6",
+                                    "label": "5 Gbps",
+                                    "name": "954151f2-6d31-80fa-cfde-cd11df0c53a6",
+                                    "readonly": false,
+                                    "value": "5 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 160,
+                                    "id": "9dd7c275-508f-771d-4b8c-dd4b188a6ddb",
+                                    "label": "60 Mbps",
+                                    "name": "9dd7c275-508f-771d-4b8c-dd4b188a6ddb",
+                                    "readonly": false,
+                                    "value": "60 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 240,
+                                    "id": "a1cfca8a-4430-7584-bb9c-9588b3a186df",
+                                    "label": "300 Mbps",
+                                    "name": "a1cfca8a-4430-7584-bb9c-9588b3a186df",
+                                    "readonly": false,
+                                    "value": "300 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 270,
+                                    "id": "a4c81641-e8d2-b436-af73-32e927d40047",
+                                    "label": "700 Mbps",
+                                    "name": "a4c81641-e8d2-b436-af73-32e927d40047",
+                                    "readonly": false,
+                                    "value": "700 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "ab698269-3352-0c7e-e66d-9c78095d8fa0",
+                                    "label": "50 Mbps",
+                                    "name": "ab698269-3352-0c7e-e66d-9c78095d8fa0",
+                                    "readonly": false,
+                                    "value": "50 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 185,
+                                    "id": "accb5e87-790a-a880-4452-b2b6983ab80f",
+                                    "label": "12 Mbps",
+                                    "name": "accb5e87-790a-a880-4452-b2b6983ab80f",
+                                    "readonly": false,
+                                    "value": "12 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 140,
+                                    "id": "b1212437-5221-0562-a236-ec057f2ef986",
+                                    "label": "200 Mbps",
+                                    "name": "b1212437-5221-0562-a236-ec057f2ef986",
+                                    "readonly": false,
+                                    "value": "200 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 150,
+                                    "id": "b3be7fc6-f2d8-418e-131e-c5cc9cb57a6d",
+                                    "label": "150 Mbps",
+                                    "name": "b3be7fc6-f2d8-418e-131e-c5cc9cb57a6d",
+                                    "readonly": false,
+                                    "value": "150 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 120,
+                                    "id": "b5eac399-b546-b1d4-0502-3ad297a0cc7d",
+                                    "label": "475 Mbps",
+                                    "name": "b5eac399-b546-b1d4-0502-3ad297a0cc7d",
+                                    "readonly": false,
+                                    "value": "475 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 75,
+                                    "id": "bd7d15dd-55f2-2092-d55b-25e8167bf83f",
+                                    "label": "70 Mbps",
+                                    "name": "bd7d15dd-55f2-2092-d55b-25e8167bf83f",
+                                    "readonly": false,
+                                    "value": "70 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "be41457e-fa29-1cc7-c060-f1d74b9cb52c",
+                                    "label": "50 Gbps",
+                                    "name": "be41457e-fa29-1cc7-c060-f1d74b9cb52c",
+                                    "readonly": false,
+                                    "value": "50 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 55,
+                                    "id": "cb7cac67-4cf6-e08c-d7a8-b70ed4198a17",
+                                    "label": "4 Mbps",
+                                    "name": "cb7cac67-4cf6-e08c-d7a8-b70ed4198a17",
+                                    "readonly": false,
+                                    "value": "4 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 250,
+                                    "id": "cc5f0baf-fb90-55ea-8bd9-16f861656590",
+                                    "label": "80 Gbps",
+                                    "name": "cc5f0baf-fb90-55ea-8bd9-16f861656590",
+                                    "readonly": false,
+                                    "value": "80 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 210,
+                                    "id": "cea88143-61cb-023a-4476-0266c2e41d37",
+                                    "label": "20 Mbps",
+                                    "name": "cea88143-61cb-023a-4476-0266c2e41d37",
+                                    "readonly": false,
+                                    "value": "20 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 245,
+                                    "id": "d416f863-2689-d552-5cbe-cd9ec5762879",
+                                    "label": "40 Gbps",
+                                    "name": "d416f863-2689-d552-5cbe-cd9ec5762879",
+                                    "readonly": false,
+                                    "value": "40 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 175,
+                                    "id": "e0b13643-6fbc-9e28-ae2f-4a07b41dce75",
+                                    "label": "60 Gbps",
+                                    "name": "e0b13643-6fbc-9e28-ae2f-4a07b41dce75",
+                                    "readonly": false,
+                                    "value": "60 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 165,
+                                    "id": "e8085010-0b4c-d16c-bdd8-0dbf1c45edc4",
+                                    "label": "30 Gbps",
+                                    "name": "e8085010-0b4c-d16c-bdd8-0dbf1c45edc4",
+                                    "readonly": false,
+                                    "value": "30 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 255,
+                                    "id": "e84ce3a0-9d2d-7632-1934-1efc9357a184",
+                                    "label": "10 Gbps",
+                                    "name": "e84ce3a0-9d2d-7632-1934-1efc9357a184",
+                                    "readonly": false,
+                                    "value": "10 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 105,
+                                    "id": "eb709641-4adf-9253-b9f5-696545dfb4a7",
+                                    "label": "1 Mbps",
+                                    "name": "eb709641-4adf-9253-b9f5-696545dfb4a7",
+                                    "readonly": false,
+                                    "value": "1 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 95,
+                                    "id": "f0ced491-a257-4d36-609c-15c5b2006c1b",
+                                    "label": "40 Mbps",
+                                    "name": "f0ced491-a257-4d36-609c-15c5b2006c1b",
+                                    "readonly": false,
+                                    "value": "40 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 155,
+                                    "id": "f1b7dac8-30c0-3e7f-488d-62aa99248895",
+                                    "label": "25 Gbps",
+                                    "name": "f1b7dac8-30c0-3e7f-488d-62aa99248895",
+                                    "readonly": false,
+                                    "value": "25 Gbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "f9fbcb09-1415-8e43-3691-d1fe7012753b",
+                                    "label": "2 Gbps",
+                                    "name": "f9fbcb09-1415-8e43-3691-d1fe7012753b",
+                                    "readonly": false,
+                                    "value": "2 Gbps"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aaEUAAY",
+                            "cloneable": true,
+                            "code": "ATT_DEMO_DURATION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Demo Duration",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "0f36d9a1-986e-7e79-24ae-8a8c58276354",
+                                    "label": "7",
+                                    "name": "0f36d9a1-986e-7e79-24ae-8a8c58276354",
+                                    "readonly": false,
+                                    "value": "7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "55b28d20-969d-f212-405d-e033e71f2734",
+                                    "label": "90",
+                                    "name": "55b28d20-969d-f212-405d-e033e71f2734",
+                                    "readonly": false,
+                                    "value": "90"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "7cd82358-d492-76ad-2d52-1ebac26b6a21",
+                                    "label": "60",
+                                    "name": "7cd82358-d492-76ad-2d52-1ebac26b6a21",
+                                    "readonly": false,
+                                    "value": "60"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "9c35ccaa-13e0-da75-094e-810ffee28bfa",
+                                    "label": "30",
+                                    "name": "9c35ccaa-13e0-da75-094e-810ffee28bfa",
+                                    "readonly": false,
+                                    "value": "30"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "e1b4a7eb-d1d4-084f-d77a-fbe3db621ff6",
+                                    "label": "15",
+                                    "name": "e1b4a7eb-d1d4-084f-d77a-fbe3db621ff6",
+                                    "readonly": false,
+                                    "value": "15"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aaEVAAY",
+                            "cloneable": true,
+                            "code": "ATT_Dependent Link Media_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Dependent Link Media",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "0c62e901-0964-f38d-dcda-5e99f26dcf8a",
+                                    "label": "Copper",
+                                    "name": "0c62e901-0964-f38d-dcda-5e99f26dcf8a",
+                                    "readonly": false,
+                                    "value": "Copper"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "2c65ce5b-f6b2-ead8-ee28-b1ea64e6cd64",
+                                    "label": "Fiber Off-net",
+                                    "name": "2c65ce5b-f6b2-ead8-ee28-b1ea64e6cd64",
+                                    "readonly": false,
+                                    "value": "Fiber Off-net"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "33680dc0-4a4e-17bd-ee40-52a56a264112",
+                                    "label": "RF P2MP",
+                                    "name": "33680dc0-4a4e-17bd-ee40-52a56a264112",
+                                    "readonly": false,
+                                    "value": "RF P2MP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "3a018f2d-58dc-2315-5aad-3af099b68e8a",
+                                    "label": "FTTH",
+                                    "name": "3a018f2d-58dc-2315-5aad-3af099b68e8a",
+                                    "readonly": false,
+                                    "value": "FTTH"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "47051c45-3dd4-89c2-a5c1-a2e0ea6ff795",
+                                    "label": "Fiber On-net",
+                                    "name": "47051c45-3dd4-89c2-a5c1-a2e0ea6ff795",
+                                    "readonly": false,
+                                    "value": "Fiber On-net"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "8825e2cb-998f-f8d6-b9ec-548d625d610b",
+                                    "label": "Third Party",
+                                    "name": "8825e2cb-998f-f8d6-b9ec-548d625d610b",
+                                    "readonly": false,
+                                    "value": "Third Party"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "95558b19-6e26-b068-693f-5ea04b0bf010",
+                                    "label": "RF P2P",
+                                    "name": "95558b19-6e26-b068-693f-5ea04b0bf010",
+                                    "readonly": false,
+                                    "value": "RF P2P"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "c1245dc9-3f28-5898-e742-d92652bba079",
+                                    "label": "4G",
+                                    "name": "c1245dc9-3f28-5898-e742-d92652bba079",
+                                    "readonly": false,
+                                    "value": "4G"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aaG1AAI",
+                            "cloneable": true,
+                            "code": "ATT_ISDEMO_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "isDemo",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "0a385aa0-66b9-177d-b7d1-5ade9a22593a",
+                                    "label": "Yes",
+                                    "name": "0a385aa0-66b9-177d-b7d1-5ade9a22593a",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "cec98075-a863-8556-ffee-0b86b9e60579",
+                                    "label": "Regularised",
+                                    "name": "cec98075-a863-8556-ffee-0b86b9e60579",
+                                    "readonly": false,
+                                    "value": "Regularised"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "dd731c0a-1978-9c7a-ced7-363f216f45e1",
+                                    "label": "No",
+                                    "name": "dd731c0a-1978-9c7a-ced7-363f216f45e1",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aaG5AAI",
+                            "cloneable": true,
+                            "code": "ATT_NRC_REBILLING_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "NRC REBILLING",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "810892a3-919d-6123-fced-0bd4d582d28f",
+                                    "label": "Yes",
+                                    "name": "810892a3-919d-6123-fced-0bd4d582d28f",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "f5cc1b32-6387-ead6-3d31-8b76ad6bd806",
+                                    "label": "No",
+                                    "name": "f5cc1b32-6387-ead6-3d31-8b76ad6bd806",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aaG6AAI",
+                            "cloneable": true,
+                            "code": "ATT_PROFILE_UPDATE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Profile Update",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "label": "Yes",
+                                    "name": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "label": "No",
+                                    "name": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aZjsAAE",
+                            "cloneable": true,
+                            "code": "ATT_Rebilling_Reason",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Rebilling Reason",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aaG8AAI",
+                            "cloneable": true,
+                            "code": "ATT_RELOG_REASON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Relog Reason",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "8b403424-f5cd-4dcf-c899-3c5937509d37",
+                                    "label": "VPN Name Change",
+                                    "name": "8b403424-f5cd-4dcf-c899-3c5937509d37",
+                                    "readonly": false,
+                                    "value": "VPN Name Change"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "a9723f44-127d-3339-762c-0eb388219483",
+                                    "label": "Mismatch in Line Item",
+                                    "name": "a9723f44-127d-3339-762c-0eb388219483",
+                                    "readonly": false,
+                                    "value": "Mismatch in Line Item"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "cfd6aa2c-9959-b3bb-6f8f-87c9efd4a0ae",
+                                    "label": "Solution Changed",
+                                    "name": "cfd6aa2c-9959-b3bb-6f8f-87c9efd4a0ae",
+                                    "readonly": false,
+                                    "value": "Solution Changed"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "cff3155f-c025-86db-218a-011809ab70fd",
+                                    "label": "Topology Changed",
+                                    "name": "cff3155f-c025-86db-218a-011809ab70fd",
+                                    "readonly": false,
+                                    "value": "Topology Changed"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "dbc079d9-7bb2-0d6c-415b-22c4e0ed3cc8",
+                                    "label": "Incorrect Delivery Address",
+                                    "name": "dbc079d9-7bb2-0d6c-415b-22c4e0ed3cc8",
+                                    "readonly": false,
+                                    "value": "Incorrect Delivery Address"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "e867cbdf-cfe0-77b2-f326-c048dc1fe852",
+                                    "label": "Relog on TP - Airtel non-feasible",
+                                    "name": "e867cbdf-cfe0-77b2-f326-c048dc1fe852",
+                                    "readonly": false,
+                                    "value": "Relog on TP - Airtel non-feasible"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "f258239e-0bee-79e2-267d-16d8e1ea36ba",
+                                    "label": "Revised Capex",
+                                    "name": "f258239e-0bee-79e2-267d-16d8e1ea36ba",
+                                    "readonly": false,
+                                    "value": "Revised Capex"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhjAAE",
+                            "cloneable": true,
+                            "code": "ATT_RFS_Date",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "RFS Date",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aZk0AAE",
+                            "cloneable": true,
+                            "code": "OTC_CHANGE_ORDER_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "OTC Change Order",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "label": "Yes",
+                                    "name": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "label": "No",
+                                    "name": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kn1aAAA",
+                            "cloneable": true,
+                            "code": "ATT_SUB_PRODUCT_NAME_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Sub Product Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005PoZrAAK",
+                            "cloneable": true,
+                            "code": "ATT_HANDOVER_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 9,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Handover Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "69420120-125d-c013-ddec-976d8fda4642",
+                                    "label": "NNI",
+                                    "name": "69420120-125d-c013-ddec-976d8fda4642",
+                                    "readonly": false,
+                                    "value": "NNI"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "750c7986-d448-a304-0ae4-699ea427db40",
+                                    "label": "NON NNI",
+                                    "name": "750c7986-d448-a304-0ae4-699ea427db40",
+                                    "readonly": false,
+                                    "value": "NON NNI"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "85aaac81-a3c8-09fb-3ed9-181d6b7c64ae",
+                                    "label": "Optical",
+                                    "name": "85aaac81-a3c8-09fb-3ed9-181d6b7c64ae",
+                                    "readonly": false,
+                                    "value": "Optical"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "b5e57ee8-3cce-c458-1da8-90a904613a38",
+                                    "label": "Electrical",
+                                    "name": "b5e57ee8-3cce-c458-1da8-90a904613a38",
+                                    "readonly": false,
+                                    "value": "Electrical"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005PoZvAAK",
+                            "cloneable": true,
+                            "code": "ATT_RATIO",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 11,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Ratio",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "1:1",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhkAAE",
+                            "cloneable": true,
+                            "code": "ATT_Rate_Revision",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Rate Revision",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kn1WAAQ",
+                            "cloneable": true,
+                            "code": "ATT_ORDER_TYPE_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2000,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Order Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kn1XAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PRODUCT_NAME_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2001,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Product Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kn1VAAQ",
+                            "cloneable": true,
+                            "code": "ATT_NBA_ID_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2002,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "NBA ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kn1ZAAQ",
+                            "cloneable": true,
+                            "code": "ATT_SUB_ORDER_TYPE_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2003,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Sub Order Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhVAAU",
+                            "cloneable": true,
+                            "code": "ATT_RELOGED_ORDER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2006,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Reloged Order",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "label": "Yes",
+                                    "name": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "label": "No",
+                                    "name": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh8AAE",
+                            "cloneable": true,
+                            "code": "ATT_CAF_NUMBER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2007,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "CAF Number",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhEAAU",
+                            "cloneable": true,
+                            "code": "ATT_INVOICE_SHIPMENT_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2008,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Invoice Shipment ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh1AAE",
+                            "cloneable": true,
+                            "code": "ATT_BILLING_ADDRESS_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2009,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Billing Address ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhSAAU",
+                            "cloneable": true,
+                            "code": "ATT_PO_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2009,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "PO ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh4AAE",
+                            "cloneable": true,
+                            "code": "ATT_BILLING_PACKAGE_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2011,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Billing Package ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aZjzAAE",
+                            "cloneable": true,
+                            "code": "ATT_UP_TIME_SLA_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2012,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Up Time SLA",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh7AAE",
+                            "cloneable": true,
+                            "code": "ATT_BUSINESS_UNIT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2013,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Business_Unit",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "549a2fc5-4a90-dd20-be15-632434b9c477",
+                                    "label": "SMB",
+                                    "name": "549a2fc5-4a90-dd20-be15-632434b9c477",
+                                    "readonly": false,
+                                    "value": "SMB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "a8c1e175-06ac-695e-0113-6d8ffa5945cd",
+                                    "label": "EGB",
+                                    "name": "a8c1e175-06ac-695e-0113-6d8ffa5945cd",
+                                    "readonly": false,
+                                    "value": "EGB"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhMAAU",
+                            "cloneable": true,
+                            "code": "ATT_LSI",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2014,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "LSI",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tivJAAQ",
+                            "cloneable": true,
+                            "code": "ATT_TECH_SERVICE_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2033,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Service_Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aZjwAAE",
+                            "cloneable": true,
+                            "code": "ATT_TECH_LAST_MILE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5555,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Last_Mile",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "6bc8d452-6cca-5816-76d4-7a637ef4ad42",
+                                    "label": "Dual Last Mile",
+                                    "name": "6bc8d452-6cca-5816-76d4-7a637ef4ad42",
+                                    "readonly": false,
+                                    "value": "Dual Last Mile"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "7382a27b-6840-cd5f-0d17-ee38d6902700",
+                                    "label": "Single Last Mile",
+                                    "name": "7382a27b-6840-cd5f-0d17-ee38d6902700",
+                                    "readonly": false,
+                                    "value": "Single Last Mile"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006dG33AAE",
+                            "cloneable": true,
+                            "code": "ATT_TECH_CPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 6004,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "CPE",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006lchgAAA",
+                            "cloneable": true,
+                            "code": "ATT_PRIMARY_KEY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 7030,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Primary Key",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006aZjuAAE",
+                            "cloneable": true,
+                            "code": "ATT_TECH_CONTRACT_TERM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 9999,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Contract_Term",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "1564dc1c-770f-5432-5fcd-ddfe3b06043d",
+                                    "label": "No Term",
+                                    "name": "1564dc1c-770f-5432-5fcd-ddfe3b06043d",
+                                    "readonly": false,
+                                    "value": "No Term"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "52533583-58b5-be33-72df-8260d3808b1a",
+                                    "label": "24 Months",
+                                    "name": "52533583-58b5-be33-72df-8260d3808b1a",
+                                    "readonly": false,
+                                    "value": "24 Months"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "9e9aa1a5-439c-a4b1-3c92-8bd9a2970ea9",
+                                    "label": "6 Months",
+                                    "name": "9e9aa1a5-439c-a4b1-3c92-8bd9a2970ea9",
+                                    "readonly": false,
+                                    "value": "6 Months"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "a7ac19a5-bb6b-ccbf-a08d-720481465288",
+                                    "label": "Month-to-Month",
+                                    "name": "a7ac19a5-bb6b-ccbf-a08d-720481465288",
+                                    "readonly": false,
+                                    "value": "Month-to-Month"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "b8e6084a-667c-f11d-a49c-5195154a861d",
+                                    "label": "3 Months",
+                                    "name": "b8e6084a-667c-f11d-a49c-5195154a861d",
+                                    "readonly": false,
+                                    "value": "3 Months"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "dbfd7589-9af1-9953-4162-f03fb41e3fa1",
+                                    "label": "12 Months",
+                                    "name": "dbfd7589-9af1-9953-4162-f03fb41e3fa1",
+                                    "readonly": false,
+                                    "value": "12 Months"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "fb98440e-b163-2948-4dd4-0d52cbfca709",
+                                    "label": "36 Months",
+                                    "name": "fb98440e-b163-2948-4dd4-0d52cbfca709",
+                                    "readonly": false,
+                                    "value": "36 Months"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 34
+                }
+            }
+        ],
+        "totalSize": 3
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-10-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "f808cf7a-ecfe-a22e-8610-edce9e8c1aa1",
+    "%vlocity_namespace%__GlobalKey__c": "93911c0d-8ee1-09cb-9f37-57f0c85d1ed3",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Internet-Product-Specification-CFS_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "ILL Service Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "Internet-Product-Specification-CFS_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Resource",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Draft",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_Hansen_Primary_Key__c": "3c6df3ca-4424-4131-bde3-c3ea5d5b5925",
+    "ARTL_LSIRequiredForHansen__c": true,
+    "ARTL_LSIRequired__c": false,
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Internet Product Specification CFS",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "ProductCode": "VEPC_E_IIL_CFS",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/93911c0d-8ee1-09cb-9f37-57f0c85d1ed3"
+}

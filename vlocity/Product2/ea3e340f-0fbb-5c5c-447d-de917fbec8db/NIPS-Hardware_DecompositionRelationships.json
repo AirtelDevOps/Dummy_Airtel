@@ -1,0 +1,194 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "741f1366-19bf-9973-e19e-1d518fa27e1f",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/741f1366-19bf-9973-e19e-1d518fa27e1f",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "e1bc8fe4-c75f-0fe4-69dd-49c3d3c7c5db",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_ARCFloorRate_OSSJ__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Floor_Rate\",\"destination_attr_code\":\"ATT_TECH_FLOOR_RATE\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NIPS Hardware To ARC CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/NIPS Hardware To ARC CFS Decomp/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7fbdf261-908f-fffb-79ef-b11cad0ef37c",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/7fbdf261-908f-fffb-79ef-b11cad0ef37c",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "2d8a4d2c-5037-1c9a-004a-703ca2461eb8",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Field\",\"source_field_name\":\"Order.POId__r.SupplierName__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Supplier Name\",\"destination_attr_code\":\"ATT_SUPPLIER_NAME\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Hardware Type\",\"source_attr_code\":\"ATT_HARDWARE_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Hardware Type\",\"destination_attr_code\":\"ATT_HARDWARE_TYPE\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.POId__r.SupplierSite__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Supplier Address\",\"destination_attr_code\":\"ATT_SUPPLIER_ADDRESS\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.POId__r.SupplierSite__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Warehouse Location\",\"destination_attr_code\":\"ATT_WAREHOUSE_LOCATION\"},{\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Manage By\",\"destination_attr_code\":\"ATT_MANAGE_BY\",\"source_field_name\":\"Product2.ARTL_ManageBy__c\",\"source_type\":\"Field\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NIPS Hardware To Hardware CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/NIPS Hardware To Hardware CFS Decomp/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8b139d85-c623-b36c-2c32-2ad3cc87e03d",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/8b139d85-c623-b36c-2c32-2ad3cc87e03d",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "945c5f2c-8ad4-d0c1-b272-a04085397cfb",
+        "%vlocity_namespace%__MappingsData__c": "",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NIPS Hardware to NIPS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/NIPS Hardware to NIPS/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c262a950-c409-c626-69ed-cba862066fc5",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/c262a950-c409-c626-69ed-cba862066fc5",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "09def07d-daee-c69b-d4fb-336d6efcbd27",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_NRCFloorRate_OSSJ__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Floor_Rate\",\"destination_attr_code\":\"ATT_TECH_FLOOR_RATE\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NIPS Hardware To OTC CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/NIPS Hardware To OTC CFS Decomp/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c33d29ff-e2b4-2296-4f17-9e29d6d55272",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/c33d29ff-e2b4-2296-4f17-9e29d6d55272",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "c32db137-4663-94c1-b982-bdfc4f09df1f",
+        "%vlocity_namespace%__MappingsData__c": "[{\"transform_mappings\":[{\"source_value\":\"true\",\"destination_value\":\"Yes\"},{\"source_value\":\"false\",\"destination_value\":\"No\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_GST_Applicable__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"SEZ Taxable\",\"destination_attr_code\":\"ARTL_SEZ_Taxable\"},{\"transform_mappings\":[{\"source_value\":\"No Dispatch\",\"destination_value\":\"No Dispatch\"},{\"source_value\":\"E-mail\",\"destination_value\":\"E-mail\"},{\"source_value\":\"Paper Circle E-mail\",\"destination_value\":\"Paper-Circle + E-mail\"},{\"source_value\":\"Paper Center E-mail\",\"destination_value\":\"Paper-Center + E-mail\"},{\"source_value\":\"CD\",\"destination_value\":\"E-mail\"},{\"source_value\":\"Paper Circle\",\"destination_value\":\"Paper-Circle + E-mail\"},{\"source_value\":\"eMail\",\"destination_value\":\"E-mail\"},{\"source_value\":\"Paper Center\",\"destination_value\":\"Paper-Center + E-mail\"},{\"source_value\":\"Paper Billing\",\"destination_value\":\"E-mail\"},{\"source_value\":\"Electronic Statements Online\",\"destination_value\":\"E-mail\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.%vlocity_namespace%__BillDeliveryMethod__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"Bill_Dispatch_Method\",\"destination_attr_code\":\"ATT_BILL_DISPATCH\"},{\"value\":\"11\",\"mapping_type\":\"static\",\"destination_attr_name\":\"PO Term (In Months)\",\"destination_attr_code\":\"ATT_PO_TERM_NIPS_DDOS\"},{\"value\":\"Indian Rupees\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Currency\",\"destination_attr_code\":\"ATT_CURRENCY\"},{\"transform_mappings\":[{\"source_value\":\"Yearly\",\"destination_value\":\"Yearly Billing\"},{\"source_value\":\"Half Yearly\",\"destination_value\":\"Half-Yearly Billing\"},{\"source_value\":\"Bi Yearly\",\"destination_value\":\"Quarterly Billing\"},{\"source_value\":\"Ten Yearly\",\"destination_value\":\"Monthly 365\"},{\"source_value\":\"Monthly\",\"destination_value\":\"Monthly Billing\"},{\"source_value\":\"Bi Monthly\",\"destination_value\":\"Third Month of Odd Quarter\"},{\"source_value\":\"Daily\",\"destination_value\":\"Half-Yearly Billing\"},{\"source_value\":\"Weekly\",\"destination_value\":\"Half-Yearly Billing\"},{\"source_value\":\"Quaterly\",\"destination_value\":\"Quarterly 365\"},{\"source_value\":\"Fortnightly\",\"destination_value\":\"Second Month of Odd Quarter\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.%vlocity_namespace%__BillFrequency__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"Bill Frequency\",\"destination_attr_code\":\"ATT_BILL_FREQUENCY\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_License_Company__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"License Company\",\"destination_attr_code\":\"ATT_LICENSE_COMPANY\"},{\"transform_mappings\":[{\"source_value\":\"Detail\",\"destination_value\":\"Detailed\"},{\"source_value\":\"Summary\",\"destination_value\":\"AES - Services\"},{\"source_value\":\"AES - HW Rent\",\"destination_value\":\"AES - HW Rent\"},{\"source_value\":\"AES - HW Sale\",\"destination_value\":\"AES - HW Sale\"},{\"source_value\":\"AES - Services\",\"destination_value\":\"AES - Services\"},{\"source_value\":\"AES - Services + HW Rent\",\"destination_value\":\"AES - Services + HW Rent\"},{\"source_value\":\"AES 5 USAGE PRODUCTS\",\"destination_value\":\"AES 5 USAGE PRODUCTS\"},{\"source_value\":\"DMX-Cinema-Detail\",\"destination_value\":\"AES - Services\"},{\"source_value\":\"DMX-Detail\",\"destination_value\":\"AES - Services\"},{\"source_value\":\"DMX-ME-Detail\",\"destination_value\":\"AES - Services\"},{\"source_value\":\"DMX-Summary\",\"destination_value\":\"AES - Services\"},{\"source_value\":\"SAAS Invoice Format\",\"destination_value\":\"SAAS Invoice\"},{\"source_value\":\"Standard\",\"destination_value\":\"AES - Services\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.%vlocity_namespace%__BillFormat__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"Billing_Format\",\"destination_attr_code\":\"ATT_BILLING_FORMAT\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Billing_Level__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Billing_level\",\"destination_attr_code\":\"ATT_BILLING_LEVEL_NIPS_DDOS\"},{\"value\":\"Manual\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Billing_Type\",\"destination_attr_code\":\"ATT_BILLING_TYPE_NIPS_DDOS\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_Legal_Entity__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Legal_Entity\",\"destination_attr_code\":\"ATT_LEGAL_ENTITY_NIPS_DDOS\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.ARTL_Purchase_Order__r.ARTL_PO_Number__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"PO Number\",\"destination_attr_code\":\"ATT_PO_NUMBER\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.ARTL_Purchase_Order__r.ARTL_PO_Date__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"PO Date\",\"destination_attr_code\":\"ATT_PO_DATE\"},{\"value\":\"Advanced\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Bill_Account_Type\",\"destination_attr_code\":\"ATT_BILL_ACCOUNT_TYPE\"},{\"value\":\"IGST\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Taxation Type\",\"destination_attr_code\":\"ATT_TAXATION_TYPE\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.ARTL_Purchase_Order__r.Amount__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"PO Amount\",\"destination_attr_code\":\"ATT_PO_AMOUNT\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.ARTL_Purchase_Order__r.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"PO ID\",\"destination_attr_code\":\"ATT_PO_ID\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NIPS Hardware To Billing CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/NIPS Hardware To Billing CFS Decomp/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d25a201e-37ef-0f08-776f-c7d7c890b649",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/d25a201e-37ef-0f08-776f-c7d7c890b649",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "f138898a-f78c-7fe9-60e8-2f2819b5721d",
+        "%vlocity_namespace%__MappingsData__c": "[{\"value\":\"Monthly Billing\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Charge frequency\",\"destination_attr_code\":\"ATT_CHARGE_FREQUENCY\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.ARTL_Hansen_Order_Type__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Order Type\",\"destination_attr_code\":\"ATT_ORDER_TYPE_CFS\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Item Description\",\"source_attr_code\":\"ATT_ITEM_DESCRIPTION\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Item Description\",\"destination_attr_code\":\"ATT_ITEM_DESCRIPTION\"},{\"value\":\"Hardware\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Service Type\",\"destination_attr_code\":\"ATT_TECH_SERVICE_TYPE\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Parent.Parent.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"NBA ID\",\"destination_attr_code\":\"ATT_NBA_ID_CFS\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"HSN Code\",\"source_attr_code\":\"ATT_HSN_CODE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"HSN Code\",\"destination_attr_code\":\"ATT_HSN_CODE\"},{\"value\":\"1\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Quantity\",\"destination_attr_code\":\"ATT_QUANTITY\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_GST_IN__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"GST Number\",\"destination_attr_code\":\"ATT_GST_NUMBER\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_LSI__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"LSI\",\"destination_attr_code\":\"ATT_LSI\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"ARC Description\",\"source_attr_code\":\"ATT_ARC_DESCRIPTION\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"ARC Description\",\"destination_attr_code\":\"ATT_ARC_DESCRIPTION\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.PRID__r.PR_ID__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Vendor PR Number\",\"destination_attr_code\":\"ATT_VENDOR_PR_NUMBER\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.POId__r.SupplierName__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Vendor Name\",\"destination_attr_code\":\"ATT_VENDOR_NAME\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.POId__r.PONumber__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Vendor PO Number\",\"destination_attr_code\":\"ATT_VENDOR_PO_NUMBER\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_OTCCharge__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"One Time Charge\",\"destination_attr_code\":\"ATT_ONE_TIME_CHARGE\"},{\"source_type\":\"Field\",\"source_field_name\":\"CND_Date__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Customer Need By Date\",\"destination_attr_code\":\"ATT_CUSTOMER_NEED_BY_DATE\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Billing Address ID\",\"destination_attr_code\":\"ATT_BILLING_ADDRESS_ID\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_ARCCharge__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Annual Recurring Charge\",\"destination_attr_code\":\"ATT_ANNUAL_REC_CHARGE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Item Code\",\"source_attr_code\":\"ATT_ITEM_CODE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Item Code\",\"destination_attr_code\":\"ATT_ITEM_CODE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"OTC Description\",\"source_attr_code\":\"ATT_OTC_Description\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"OTC Description\",\"destination_attr_code\":\"ATT_OTC_Description\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Invoice Shipment ID\",\"destination_attr_code\":\"ATT_INVOICE_SHIPMENT_ID\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.%vlocity_namespace%__QuoteMemberId__r.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Installation location ID\",\"destination_attr_code\":\"ATT_INSTALLATION_LOCATION_ID\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_LSI__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Service ID\",\"destination_attr_code\":\"ATT_SERVICE_ID\"},{\"value\":\"2911\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Billing Package ID\",\"destination_attr_code\":\"ATT_BILLING_PACKAGE_ID\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Hardware Type\",\"source_attr_code\":\"ATT_HARDWARE_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Sub_Product\",\"destination_attr_code\":\"ATT_SUB_PROD\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Contract Term\",\"source_attr_code\":\"ATT_CONTRACT_TERM\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Contract Term (In Months)\",\"destination_attr_code\":\"ATT_CONTRACT_TERM_MONTHS\"},{\"value\":\"No\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Proforma Required\",\"destination_attr_code\":\"ATT_PROFORMA_REQUIRED\"},{\"value\":\"SEZ\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Order Delivery Type\",\"destination_attr_code\":\"ATT_ORDER_DELIVERY_TYPE\"},{\"value\":\"10\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Tax%\",\"destination_attr_code\":\"ATT_TAX_PERCENT\"},{\"value\":\"Both\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Charge Creation\",\"destination_attr_code\":\"ATT_CHARGE_CREATION\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "ea3e340f-0fbb-5c5c-447d-de917fbec8db",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NIPS Hardware Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/NIPS Hardware Decomp/Product2/ea3e340f-0fbb-5c5c-447d-de917fbec8db"
+    }
+]

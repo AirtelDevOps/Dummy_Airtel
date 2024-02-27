@@ -1,0 +1,73 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <vlocity_cmt-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </vlocity_cmt-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col    slds-size_12-of-12  " data-rindex={rindex} style="      
+         " >
+    <vlocity_cmt-block data-style-id="state0element0_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col  allign-cells slds-size_12-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"group":[{"field":"Id","hasMergeField":false,"id":"state-new-condition-0","operator":"!=","type":"custom","value":"undefined"}],"id":"state-condition-object","isParent":true}' ><vlocity_cmt-flex-datatable data-style-id="state0element0block_element0_child"   record={record}  card={card}  cell-level-edit="true"  columns='\[{"fieldName":"ProductName","label":"Link Type","searchable":true,"sortable":true},{"fieldName":"OfferName","label":"Offer Name","searchable":true,"sortable":true},{"fieldName":"ControllerType","label":"ControllerType","searchable":true,"sortable":true},{"fieldName":"ARCTotal","label":"ARC Total","searchable":true,"sortable":true},{"fieldName":"OTCTotal","label":"OTC Total","searchable":true,"sortable":true}]'  data-conditions='\{"group":[{"field":"Id","hasMergeField":false,"id":"state-new-condition-0","operator":"!=","type":"custom","value":"undefined"}],"id":"state-condition-object","isParent":true}'  extraclass="allign-cells"  group-order="asc"  issearchavailable="false"  issortavailable="true"  pagelimit="3"  records={records}  styles='\{"cellMargin":[],"cellPadding":[{"label":"vertical:xx-small","size":"xx-small","type":"vertical"}],"headBgColor":"#f3f3f3","headFontWeight":"600"}'  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div data-style-id="state0element1" class="slds-col   slds-border_right slds-border_left slds-p-around_x-small  slds-size_12-of-12  " data-rindex={rindex} style="     border-right: #FFFFFF 0px solid;border-left: #FFFFFF 0px solid; 
+         " >
+    <vlocity_cmt-block data-style-id="state0element1_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds"  ><div class="slds-grid slds-wrap">
+          
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+                <template if:false={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col    slds-size_12-of-12  " data-rindex={rindex} style="      
+         " >
+    <vlocity_cmt-block data-style-id="state0element0_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col  allign-cells slds-size_12-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"group":[{"field":"Id","hasMergeField":false,"id":"state-new-condition-0","operator":"!=","type":"custom","value":"undefined"}],"id":"state-condition-object","isParent":true}' ><vlocity_cmt-flex-datatable data-style-id="state0element0block_element0_child"   record={record}  card={card}  cell-level-edit="true"  columns='\[{"fieldName":"ProductName","label":"Link Type","searchable":true,"sortable":true},{"fieldName":"OfferName","label":"Offer Name","searchable":true,"sortable":true},{"fieldName":"ControllerType","label":"ControllerType","searchable":true,"sortable":true},{"fieldName":"ARCTotal","label":"ARC Total","searchable":true,"sortable":true},{"fieldName":"OTCTotal","label":"OTC Total","searchable":true,"sortable":true}]'  data-conditions='\{"group":[{"field":"Id","hasMergeField":false,"id":"state-new-condition-0","operator":"!=","type":"custom","value":"undefined"}],"id":"state-condition-object","isParent":true}'  extraclass="allign-cells"  group-order="asc"  issearchavailable="false"  issortavailable="true"  pagelimit="3"  records={records}  styles='\{"cellMargin":[],"cellPadding":[{"label":"vertical:xx-small","size":"xx-small","type":"vertical"}],"headBgColor":"#f3f3f3","headFontWeight":"600"}'  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div>
+        </div></vlocity_cmt-block>
+    </div><div data-style-id="state0element1" class="slds-col   slds-border_right slds-border_left slds-p-around_x-small  slds-size_12-of-12  " data-rindex={rindex} style="     border-right: #FFFFFF 0px solid;border-left: #FFFFFF 0px solid; 
+         " >
+    <vlocity_cmt-block data-style-id="state0element1_child"  record={record}  card={card}  collapsed-by-default="false"  collapsible="false"  label="Block"  theme="slds"  ><div class="slds-grid slds-wrap">
+          
+        </div></vlocity_cmt-block>
+    </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

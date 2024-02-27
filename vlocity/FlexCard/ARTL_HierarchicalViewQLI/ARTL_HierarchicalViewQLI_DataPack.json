@@ -1,0 +1,54 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 6,
+                    "name": "Parent.quoteId",
+                    "val": "0Q0720000004dPNCAY"
+                },
+                {
+                    "id": 7,
+                    "name": "Parent.quoteMemberId",
+                    "val": "a4i72000000OtebAAC"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "HierarchicalViewQLI": "true",
+                    "quoteId": "{Parent.quoteId}",
+                    "quoteMemberId": "{Parent.quoteMemberId}"
+                },
+                "ipMethod": "ARTL_CustomViewOfQLI",
+                "jsonMap": "{\"Parent.quoteId\":\"{Parent.quoteId}\",\"Parent.quoteMemberId\":\"{Parent.quoteMemberId}\"}",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_HierarchicalViewQLI",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_HierarchicalViewQLI/BhartiAirtelLimited/14.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_HierarchicalViewQLI.json",
+    "SampleDataSourceResponse": "{\"QLIExist\":false}",
+    "StylingConfiguration": "{\"customStyles\":\".allign-cells .slds-data-table[%vlocity_namespace%-dataTable_dataTable_slds] .slds-data-table-row-cell[%vlocity_namespace%-dataTable_dataTable_slds]  { width: 180px;}\\n.allign-cells .slds-data-table[%vlocity_namespace%-dataTable_dataTable_slds] .slds-data-table-head-cell[%vlocity_namespace%-dataTable_dataTable_slds] { width: 180px;}\\n\\n\\n\\n\\n\\n\"}",
+    "UniqueName": "",
+    "VersionNumber": 14,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_HierarchicalViewQLI",
+    "sourceOrgUrl": "/0ko720000000I8DAAU"
+}

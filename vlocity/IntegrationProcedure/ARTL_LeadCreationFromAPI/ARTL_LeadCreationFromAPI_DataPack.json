@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_LeadCreationFromAPI_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "LeadCreationFromAPI",
+    "OmniProcessElement": [
+        "ARTL_LeadCreationFromAPI_Element_DRExtractDetails.json",
+        "ARTL_LeadCreationFromAPI_Element_DRCreateAndUpdateLead.json",
+        "ARTL_LeadCreationFromAPI_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_LeadCreationFromAPI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_LeadCreationFromAPI_PropertySetConfig.json",
+    "SubType": "LeadCreationFromAPI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/LeadCreationFromAPI/Procedure",
+    "WebComponentKey": "6d41e6c3-e12c-dc30-deb1-f2050aa3d4f8",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001XGTEA2"
+}

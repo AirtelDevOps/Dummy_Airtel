@@ -1,0 +1,187 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreditPeriod",
+    "OmniProcessId": {
+        "Name": "ARTL/EnrichQuoteForMACD",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteForMACD/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "BillingDetailsBlock",
+        "OmniProcessId": {
+            "Name": "ARTL/EnrichQuoteForMACD",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteForMACD/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/BillingDetailsBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "BillingDetailsBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 4,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Credit Period",
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "0 days",
+                "value": "0 days"
+            },
+            {
+                "autoAdv": null,
+                "name": "95 Percentile Carrier/BOD",
+                "value": "95 Percentile Carrier/BOD"
+            },
+            {
+                "autoAdv": null,
+                "name": "ACS-INAMA Audio-Bridge",
+                "value": "ACS-INAMA Audio-Bridge"
+            },
+            {
+                "autoAdv": null,
+                "name": "AES Advanced Billing Default",
+                "value": "AES Advanced Billing Default"
+            },
+            {
+                "autoAdv": null,
+                "name": "AES Daily Billing",
+                "value": "AES Daily Billing"
+            },
+            {
+                "autoAdv": null,
+                "name": "Account Arrear Billing",
+                "value": "Account Arrear Billing"
+            },
+            {
+                "autoAdv": null,
+                "name": "Arrear Nxtra BW and Services",
+                "value": "Arrear Nxtra BW and Services"
+            },
+            {
+                "autoAdv": null,
+                "name": "Arrear SAS Billing",
+                "value": "Arrear SAS Billing"
+            },
+            {
+                "autoAdv": null,
+                "name": "CLEP Bill period",
+                "value": "CLEP Bill period"
+            },
+            {
+                "autoAdv": null,
+                "name": "Digimate Services",
+                "value": "Digimate Services"
+            },
+            {
+                "autoAdv": null,
+                "name": "INAMA",
+                "value": "INAMA"
+            },
+            {
+                "autoAdv": null,
+                "name": "ITFS",
+                "value": "ITFS"
+            },
+            {
+                "autoAdv": null,
+                "name": "MBIC",
+                "value": "MBIC"
+            },
+            {
+                "autoAdv": null,
+                "name": "NDL Advanced Billing",
+                "value": "NDL Advanced Billing"
+            },
+            {
+                "autoAdv": null,
+                "name": "NDL Daily Billing",
+                "value": "NDL Daily Billing"
+            },
+            {
+                "autoAdv": null,
+                "name": "Premium ACS-INAMA Audio-Bridge",
+                "value": "Premium ACS-INAMA Audio-Bridge"
+            },
+            {
+                "autoAdv": null,
+                "name": "TM Advanced Billing Default",
+                "value": "TM Advanced Billing Default"
+            },
+            {
+                "autoAdv": null,
+                "name": "VCS",
+                "value": "VCS"
+            },
+            {
+                "autoAdv": null,
+                "name": "60 days",
+                "value": "60 days"
+            },
+            {
+                "autoAdv": null,
+                "name": "7 days",
+                "value": "7 days"
+            },
+            {
+                "autoAdv": null,
+                "name": "14 days",
+                "value": "14 days"
+            },
+            {
+                "autoAdv": null,
+                "name": "15 days",
+                "value": "15 days"
+            },
+            {
+                "autoAdv": null,
+                "name": "30 days",
+                "value": "30 days"
+            },
+            {
+                "autoAdv": null,
+                "name": "45 days",
+                "value": "45 days"
+            },
+            {
+                "autoAdv": null,
+                "name": "90 days",
+                "value": "90 days"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/CreditPeriod"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_StandardReason_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISCHANGED( ARTL_Standard_Reason__c ),
+OR(
+    AND( 
+        ISPICKVAL( PRIORVALUE(ARTL_Standard_Reason__c), &apos;Non-SEZ&apos;), 
+        ISPICKVAL(ARTL_Standard_Reason__c, &apos;SEZ&apos;)
+        ),
+    AND (
+        ISPICKVAL( PRIORVALUE(ARTL_Standard_Reason__c), &apos;SEZ&apos;), 
+        ISPICKVAL(ARTL_Standard_Reason__c, &apos;Non-SEZ&apos;)
+        ),
+    AND( 
+        ISPICKVAL( PRIORVALUE(ARTL_Standard_Reason__c), &apos;Non-SEZ&apos;), 
+        ISPICKVAL(ARTL_Standard_Reason__c, &apos;UIN&apos;)
+        ),
+    AND (
+        ISPICKVAL( PRIORVALUE(ARTL_Standard_Reason__c), &apos;UIN&apos;), 
+        ISPICKVAL(ARTL_Standard_Reason__c, &apos;Non-SEZ&apos;)
+        ),
+    AND( 
+        ISPICKVAL( PRIORVALUE(ARTL_Standard_Reason__c), &apos;SEZ&apos;), 
+        ISPICKVAL(ARTL_Standard_Reason__c, &apos;UIN&apos;)
+        ),
+    AND (
+        ISPICKVAL( PRIORVALUE(ARTL_Standard_Reason__c), &apos;UIN&apos;),  
+        ISPICKVAL(ARTL_Standard_Reason__c, &apos;SEZ&apos;)
+        )
+ )
+)</errorConditionFormula>
+    <errorMessage>Standard Reason can not be changed from a) Non-SEZ to SEZ b) SEZ to Non-SEZ c) Non-SEZ to UIN d) UIN to Non-SEZ e)SEZ to UIN f) UIN to SEZ.</errorMessage>
+</ValidationRule>

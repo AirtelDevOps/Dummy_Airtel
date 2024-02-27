@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://login.microsoftonline.com/62b68197-d09d-449c-8371-cb98bba2b401/oauth2/v2.0/authorize</authorizeUrl>
+    <consumerKey>c732d291-4003-408b-be56-6cbf475bfc52</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <defaultScopes>offline_access</defaultScopes>
+    <friendlyName>Teams Integration</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <isPkceEnabled>true</isPkceEnabled>
+    <providerType>OpenIdConnect</providerType>
+    <requireMfa>false</requireMfa>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>true</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://login.microsoftonline.com/62b68197-d09d-449c-8371-cb98bba2b401/oauth2/v2.0/token</tokenUrl>
+</AuthProvider>

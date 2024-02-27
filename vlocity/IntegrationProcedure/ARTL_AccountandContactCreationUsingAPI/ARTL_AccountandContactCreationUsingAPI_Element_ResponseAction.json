@@ -1,0 +1,42 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction",
+    "OmniProcessId": {
+        "Name": "AccountandContactCreationUsingAPI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/AccountandContactCreationUsingAPI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "Account Number": "=%DR_GetAccountNumber:account:AccountNumber%",
+            "IntegrationId": "%Payload:Accounts:Integration Id%",
+            "Message": "=IF(%DRCreateAccountandContact:Account_1:UpsertSuccess% == true && %DRCreateAccountandContact:Contact_2:UpsertSuccess% == true, \"Account & Contact has been Created Successfully\",\"Account & Contact has not been Created Successfully\")",
+            "SFDCId": "=%DRCreateAccountandContact:Account_1:Id%",
+            "Status Code": 8000,
+            "Type": "Party"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "(%DRCreateAccountandContact:Account_1:UpsertSuccess% == true && %DRCreateAccountandContact:Contact_2:UpsertSuccess% == true)",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/AccountandContactCreationUsingAPI/Procedure/ResponseAction"
+}

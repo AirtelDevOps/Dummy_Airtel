@@ -1,0 +1,102 @@
+[
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
+        "%vlocity_namespace%__GlobalKey__c": "9aaea1ba-c43b-711e-ce27-1a90b50fc134",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "ARTL NIPS Services Provisioning",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/ARTL NIPS Services Provisioning",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "ARTL NIPS Serv",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/ARTL NIPS Serv/9aaea1ba-c43b-711e-ce27-1a90b50fc134/Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
+        "%vlocity_namespace%__GlobalKey__c": "abf2ab18-655d-cc39-5abf-e3382acdb52f",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "ARTL NIPS Services ERP",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/ARTL NIPS Services ERP",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "ARTL NIPS Service",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/ARTL NIPS Service/abf2ab18-655d-cc39-5abf-e3382acdb52f/Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
+        "%vlocity_namespace%__GlobalKey__c": "dad64637-b83c-e7b1-37a9-23e85df0ff5f",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "E2E Plan",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/E2E Plan",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NIPS Services",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/NIPS Services/dad64637-b83c-e7b1-37a9-23e85df0ff5f/Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"right-side\":\"PO Renewal\",\"op\":\"=\"}",
+        "%vlocity_namespace%__GlobalKey__c": "8519c9e8-d485-c94a-634f-0d6ddfdd98d8",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "ARTL PO Renewal Orchestration Plan",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/ARTL PO Renewal Orchestration Plan",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+        "%vlocity_namespace%__SubAction__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "ARTL PO Renewal For NIPS Service",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/ARTL PO Renewal For NIPS Service/8519c9e8-d485-c94a-634f-0d6ddfdd98d8/Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05"
+    }
+]

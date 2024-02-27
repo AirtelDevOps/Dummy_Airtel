@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "We dont have error response payload. This set values to check for success can be modified once we have the error response available.",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues2",
+    "OmniProcessId": {
+        "Name": "FetchPR",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FetchPR/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "success": "={\n    \"getPurchaseRequestDetailsResMsg\": {\n        \"dataArea\": {\n            \"getPurchaseRequestDetailsResponse\": {\n                \"status\": {\n                    \"statusCode\": \"GetPurchaseRequestDetails-0000-S\",\n                    \"statusDescription\": \"Request Processed Successfully\"\n                },\n                \"prDetails\": [\n                    {\n                        \"creationDate\": \"2019-10-23T10:51:04.000+05:30\",\n                        \"bookName\": \"BTVL IGAAP SET OF BOOKS\",\n                        \"itemCode\": \"CPE000370\",\n                        \"requisitionNumber\": \"1000985\",\n                        \"quantity\": \"1\",\n                        \"approvalDate\": \"2019-10-23T10:51:49.000+05:30\",\n                        \"amount\": \"2644.27633\",\n                        \"prID\": \"3523570\"\n                    },\n                    {\n                        \"creationDate\": \"2019-10-23T10:51:04.000+05:30\",\n                        \"bookName\": \"BTVL IGAAP SET OF BOOKS\",\n                        \"itemCode\": \"CPE000368\",\n                        \"requisitionNumber\": \"1000985\",\n                        \"quantity\": \"1\",\n                        \"approvalDate\": \"2019-10-23T10:51:49.000+05:30\",\n                        \"amount\": \"3041.63516\",\n                        \"prID\": \"3523570\"\n                    },\n                    {\n                        \"creationDate\": \"2019-10-23T10:51:04.000+05:30\",\n                        \"bookName\": \"BTVL IGAAP SET OF BOOKS\",\n                        \"itemCode\": \"CPE000369\",\n                        \"requisitionNumber\": \"1000985\",\n                        \"quantity\": \"3\",\n                        \"approvalDate\": \"2019-10-23T10:51:49.000+05:30\",\n                        \"amount\": \"641.75784\",\n                        \"prID\": \"3523570\"\n                    }\n                ]\n            }\n        }\n    }\n}"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FetchPR/Procedure/SetValues2"
+}

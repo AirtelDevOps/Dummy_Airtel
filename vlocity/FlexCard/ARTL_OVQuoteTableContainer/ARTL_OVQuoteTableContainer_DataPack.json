@@ -1,0 +1,46 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 0,
+                    "name": "recordId",
+                    "val": "0Q0720000005FxhCAE"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "quoteId": "{recordId}"
+                },
+                "ipMethod": "ARTL_CheckQLIsForOVStatus",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_OVQuoteTableContainer",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_OVQuoteTableContainer/BhartiAirtelLimited/5.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_OVQuoteTableContainer.json",
+    "SampleDataSourceResponse": "{\"quoteId\":\"0Q0720000005FxhCAE\",\"QLI\":[{\"Name\":\"SD-WAN Controller\",\"OVStatus\":\"OVApproved\",\"Id\":\"0QL720000005o2cGAA\"},{\"Name\":\"Primary Link\",\"OVStatus\":\"OVApproved\",\"Id\":\"0QL720000005o5qGAA\"},{\"Name\":\"Primary MPLS Link\",\"OVStatus\":\"OVRejected\",\"Id\":\"0QL720000005pt8GAA\"},{\"Name\":\"Primary MPLS Link\",\"OVStatus\":\"OVApproved\",\"Id\":\"0QL720000005ptEGAQ\"},{\"Name\":\"Primary MPLS Link\",\"Id\":\"0QL720000005ptKGAQ\"}],\"OVRejectedQLICount\":1,\"OVApprovedQLICount\":3,\"QuoteRejectStatus\":1,\"QuoteApproveStatus\":0}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 5,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_OVQuoteTableContainer"
+}

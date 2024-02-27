@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_OpportunitySolaceQueue_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "OpportunitySolaceQueue",
+    "OmniProcessElement": [
+        "ARTL_OpportunitySolaceQueue_Element_DRFetchOptyDetails.json",
+        "ARTL_OpportunitySolaceQueue_Element_HTTPCalloutSolaceQueue.json",
+        "ARTL_OpportunitySolaceQueue_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_OpportunitySolaceQueue",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_OpportunitySolaceQueue_PropertySetConfig.json",
+    "SubType": "OpportunitySolaceQueue",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/OpportunitySolaceQueue/Procedure"
+}

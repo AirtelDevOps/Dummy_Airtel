@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Restrict_Rejection_Reason</fullName>
+    <active>true</active>
+    <description>When PM update the &quot;Rejection Category&quot; as &quot;Valid&quot;, &quot;Rejection Reason&quot; is mandatory</description>
+    <errorConditionFormula>AND (TEXT(ARTL_Rejection_Category__c)  = &apos;Valid&apos; ,   ISBLANK(TEXT(ARTL_locRejectionReason__c)))</errorConditionFormula>
+    <errorDisplayField>ARTL_locRejectionReason__c</errorDisplayField>
+    <errorMessage>Please provide the Rejection Reason.</errorMessage>
+</ValidationRule>

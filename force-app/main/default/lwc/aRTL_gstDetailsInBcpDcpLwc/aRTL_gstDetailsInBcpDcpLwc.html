@@ -1,0 +1,27 @@
+<template>
+    <lightning-layout multiple-rows="true">
+        <lightning-layout-item size="12" style="padding-bottom: 1em !important;">
+            <strong style="font-size: 1.40em">GST Details</strong>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-p-right_x-small">
+            <lightning-combobox name="gstApplicable" label="GST Applicable" value={gstApplicableValue}
+                options={gstApplicableOptions} onchange={handleGstApplicableChange} required readonly={gstApplicableReadonly}></lightning-combobox>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="6" class="slds-p-left_x-small">
+            <lightning-combobox name="standardReason" label="Standard Reason" value={standardReasonValue}
+                options={standardReasonOptions} onchange={standardReasonHandleChange} required></lightning-combobox>
+        </lightning-layout-item>
+        <!-- <lightning-layout-item size="4" padding="around-small"></lightning-layout-item> -->
+        <lightning-layout-item size="12" style="text-align: -webkit-center;" padding="around-small">
+            <lightning-button variant="brand" label="Get GST Details" title="Get GST Details"
+                onclick={handleGetGstDetail}></lightning-button>
+        </lightning-layout-item>
+        <!-- <lightning-layout-item size="4" padding="around-small"></lightning-layout-item> -->
+        <lightning-layout-item size="6">
+            <lightning-combobox name="gstNumber" label="GST Number" value={gstSelectedValue} options={gstOptions}
+                onchange={handleSelectedGst} required={gstNumberRequired}></lightning-combobox>
+        </lightning-layout-item>
+
+    </lightning-layout>
+</template>

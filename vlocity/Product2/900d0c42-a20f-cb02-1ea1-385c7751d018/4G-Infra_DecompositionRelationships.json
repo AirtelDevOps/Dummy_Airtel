@@ -1,0 +1,130 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0ec3590b-9921-cca7-1e96-1828e432d8f3",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/0ec3590b-9921-cca7-1e96-1828e432d8f3",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "aedde7a9-b83b-f297-b44b-11747fde905e",
+        "%vlocity_namespace%__MappingsData__c": "[{\"transform_mappings\":[{\"source_value\":\"No Dispatch\",\"destination_value\":\"No Dispatch\"},{\"source_value\":\"CD\",\"destination_value\":\"CD\"},{\"source_value\":\"Paper Center E-mail\",\"destination_value\":\"Paper-Center + E-mail\"},{\"source_value\":\"E-mail\",\"destination_value\":\"E-mail\"},{\"source_value\":\"eMail\",\"destination_value\":\"E-mail\"},{\"source_value\":\"Paper Circle E-mail\",\"destination_value\":\"Paper-Circle + E-mail\"},{\"source_value\":\"Paper Circle\",\"destination_value\":\"Paper-Circle\"},{\"source_value\":\"Paper Center\",\"destination_value\":\"Paper-Center\"},{\"source_value\":\"Paper Billing\",\"destination_value\":\"Paper-Center\"},{\"source_value\":\"Electronic Statements Online\",\"destination_value\":\"E-mail\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.%vlocity_namespace%__BillDeliveryMethod__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"Bill Dispatch Method\",\"destination_attr_code\":\"ATT_BILL_DISPATCH_METHOD\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_Legal_Entity__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Legal Entity\",\"destination_attr_code\":\"ATT_LEGAL_ENTITY\"},{\"transform_mappings\":[{\"source_value\":\"AES - HW Rent\",\"destination_value\":\"AES - HW Rent\"},{\"source_value\":\"Detail\",\"destination_value\":\"Detailed\"},{\"source_value\":\"Summary\",\"destination_value\":\"Summary\"},{\"source_value\":\"AES 5 USAGE PRODUCTS\",\"destination_value\":\"AES 5 USAGE PRODUCTS\"},{\"source_value\":\"AES - Services + HW Rent\",\"destination_value\":\"AES - Services + HW Rent\"},{\"source_value\":\"SAAS Invoice Format\",\"destination_value\":\"SAAS Invoice Format\"},{\"source_value\":\"AES - HW Sale\",\"destination_value\":\"AES - HW Sale\"},{\"source_value\":\"AES - Services\",\"destination_value\":\"AES - Services\"},{\"source_value\":\"DMX-Cinema-Detail\",\"destination_value\":\"Detailed\"},{\"source_value\":\"DMX-Detail\",\"destination_value\":\"Detailed\"},{\"source_value\":\"DMX-ME-Detail\",\"destination_value\":\"Detailed\"},{\"source_value\":\"DMX-Summary\",\"destination_value\":\"Detailed\"},{\"source_value\":\"Standard\",\"destination_value\":\"Detailed\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.%vlocity_namespace%__BillFormat__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"Bill Format\",\"destination_attr_code\":\"ATT_BILL_FORMAT\"},{\"value\":\"3 Months\",\"mapping_type\":\"static\",\"destination_attr_name\":\"PO Term\",\"destination_attr_code\":\"ATT_PO_TERM\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_License_Company__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"License Company\",\"destination_attr_code\":\"ATT_LICENSE_COMPANY\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Billing_Level__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Billing Level\",\"destination_attr_code\":\"ATT_BILLING_LEVEL\"},{\"value\":\"Manual\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Billing Mode\",\"destination_attr_code\":\"ATT_BILLING_MODE\"},{\"transform_mappings\":[{\"source_value\":\"Yearly\",\"destination_value\":\"Advanced Half-Yearly 365\"},{\"source_value\":\"Half Yearly\",\"destination_value\":\"Advanced Half-Yearly 365\"},{\"source_value\":\"Bi Yearly\",\"destination_value\":\"Advanced Half-Yearly 365\"},{\"source_value\":\"Ten Yearly\",\"destination_value\":\"Advanced Half-Yearly 365\"},{\"source_value\":\"Monthly\",\"destination_value\":\"Advanced Monthly 365\"},{\"source_value\":\"Bi Monthly\",\"destination_value\":\"Advanced Monthly 365\"},{\"source_value\":\"Daily\",\"destination_value\":\"Advanced Quarterly Billing\"},{\"source_value\":\"Weekly\",\"destination_value\":\"Advanced Quarterly Billing\"},{\"source_value\":\"Quaterly\",\"destination_value\":\"Advanced Quarterly Billing\"},{\"source_value\":\"Fortnightly\",\"destination_value\":\"Advanced Quarterly Billing\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.%vlocity_namespace%__BillFrequency__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"Bill Frequency\",\"destination_attr_code\":\"ATT_BILL_FREQUENCY\"},{\"transform_mappings\":[{\"source_value\":\"true\",\"destination_value\":\"Yes\"},{\"source_value\":\"false\",\"destination_value\":\"No\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_GST_Applicable__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"Taxable\",\"destination_attr_code\":\"ARTL_Taxable\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.ARTL_Purchase_Order__r.ARTL_PO_Number__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"PO Number\",\"destination_attr_code\":\"ATT_PO_NUMBER\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.ARTL_Purchase_Order__r.ARTL_PO_Date__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"PO Date\",\"destination_attr_code\":\"ATT_PO_DATE\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_GST_IN__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"GST Number\",\"destination_attr_code\":\"ATT_GST_NUMBER\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.ARTL_Purchase_Order__r.Amount__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"PO Amount\",\"destination_attr_code\":\"ATT_PO_AMOUNT\"},{\"transform_mappings\":[{\"source_value\":\"false\",\"destination_value\":\"No\"},{\"source_value\":\"true\",\"destination_value\":\"Yes\"}],\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.ARTL_Usage_Flag__c\",\"mapping_type\":\"list\",\"destination_attr_name\":\"Usages Base\",\"destination_attr_code\":\"ATT_USAGES_BASE\"},{\"value\":\"NA\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Standard Reason\",\"destination_attr_code\":\"ATT_STANDARD_REASON\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.ARTL_Currency_ISO_Code__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Currency\",\"destination_attr_code\":\"ATT_CURRENCY\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "900d0c42-a20f-cb02-1ea1-385c7751d018",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/900d0c42-a20f-cb02-1ea1-385c7751d018",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "900d0c42-a20f-cb02-1ea1-385c7751d018",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "4G Infra to Connectivity Billing",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/4G Infra to Connectivity Billing/Product2/900d0c42-a20f-cb02-1ea1-385c7751d018"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "1b6c20c3-8b71-36d0-f0e9-dc4cfb2c3940",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/1b6c20c3-8b71-36d0-f0e9-dc4cfb2c3940",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "1c74ebf7-1035-472e-e15f-b2f0107e228d",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"VPN Type\",\"source_attr_code\":\"ATT_VPN_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"VPN Type\",\"destination_attr_code\":\"ATT_VPN_TYPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"VPN Name\",\"source_attr_code\":\"ATT_VPN_NAME\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"VPN Name\",\"destination_attr_code\":\"ATT_VPN_NAME\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Number of Licenses\",\"source_attr_code\":\"ATT_NUMBER_OF_LICENCES\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Number of Licenses\",\"destination_attr_code\":\"B2CCmex_ATTR_NUMBER_OF_SECURITY_SOFTWARE_LICENSES\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Media\",\"source_attr_code\":\"ATT_MEDIA\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Media\",\"destination_attr_code\":\"ATT_MEDIA\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Bill Plan\",\"source_attr_code\":\"ATT_BILL_PLAN\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Bill Plan\",\"destination_attr_code\":\"ATT_BILL_PLAN\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Port Bandwidth\",\"source_attr_code\":\"ATT_PORT_BANDWIDTH\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Port_Bandwidth\",\"destination_attr_code\":\"ATT_TECH_PORT_BANDWIDTH\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Routing Type\",\"source_attr_code\":\"ATT_ROUTING_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Routing Type\",\"destination_attr_code\":\"ATT_ROUTING_TYPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Service Type\",\"source_attr_code\":\"ATT_SERVICE_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Service_Type\",\"destination_attr_code\":\"ATT_TECH_SERVICE_TYPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"VPN Topology\",\"source_attr_code\":\"ATT_VPN_TOPOLOGY\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"VPN Topology\",\"destination_attr_code\":\"ATT_VPN_TOPOLOGY\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.Account.Name\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Party Name\",\"destination_attr_code\":\"ATT_PARTY_NAME\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.Account.Account_Number__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Party Account Number\",\"destination_attr_code\":\"ATT_PARTY_ACCOUNT_NUMBER\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_LSI__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Service ID\",\"destination_attr_code\":\"ATT_SERVICE_ID\"},{\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"LSI\",\"destination_attr_code\":\"ATT_LSI\",\"source_field_name\":\"ARTL_LSI__c\",\"source_type\":\"Field\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "900d0c42-a20f-cb02-1ea1-385c7751d018",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/900d0c42-a20f-cb02-1ea1-385c7751d018",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "900d0c42-a20f-cb02-1ea1-385c7751d018",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "4G Infra to 4G Infra CFS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/4G Infra to 4G Infra CFS/Product2/900d0c42-a20f-cb02-1ea1-385c7751d018"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8542fa17-8b05-d475-0279-4fe5aaa26e3d",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/8542fa17-8b05-d475-0279-4fe5aaa26e3d",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d2bf1250-4352-e8ee-f260-0ea8307b3373",
+        "%vlocity_namespace%__MappingsData__c": "",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "900d0c42-a20f-cb02-1ea1-385c7751d018",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/900d0c42-a20f-cb02-1ea1-385c7751d018",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "900d0c42-a20f-cb02-1ea1-385c7751d018",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "4GInfra to EMPLS CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/4GInfra to EMPLS CFS Decomp/Product2/900d0c42-a20f-cb02-1ea1-385c7751d018"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ab6b4ac3-50db-9ca8-d2df-d4bb984ec781",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/ab6b4ac3-50db-9ca8-d2df-d4bb984ec781",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "8ccc2126-afd6-ab92-078d-6254dac04d4f",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Field\",\"source_field_name\":\"Order.ARTL_Hansen_Order_Type__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Order Type\",\"destination_attr_code\":\"ATT_ORDER_TYPE_CFS\"},{\"value\":\"Enterprise MPLS\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Sub Product Name\",\"destination_attr_code\":\"ATT_SUB_PRODUCT_NAME_CFS\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Service Type\",\"source_attr_code\":\"ATT_SERVICE_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Service_Type\",\"destination_attr_code\":\"ATT_TECH_SERVICE_TYPE\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.Account.ARTL_Business_Unit__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Business_Unit\",\"destination_attr_code\":\"ATT_BUSINESS_UNIT\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"MPLS Product Type\",\"source_attr_code\":\"ATT_MPLS_ProductType_CME\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"MPLS Product Type\",\"destination_attr_code\":\"ATT_MPLS_PRODUCTt_TYPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Contract Term\",\"source_attr_code\":\"ATT_CONTRACT_TERM\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Contract_Term\",\"destination_attr_code\":\"ATT_TECH_CONTRACT_TERM\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Last Mile\",\"source_attr_code\":\"ATT_LAST_MILE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Last_Mile\",\"destination_attr_code\":\"ATT_TECH_LAST_MILE\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Parent.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"NBA ID\",\"destination_attr_code\":\"ATT_NBA_ID_CFS\"},{\"source_type\":\"Field\",\"source_field_name\":\"RFS_Date__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"RFS Date\",\"destination_attr_code\":\"ATT_RFS_Date\"},{\"source_type\":\"Field\",\"source_field_name\":\"CND_Date__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Customer Need By Date\",\"destination_attr_code\":\"ATT_CUSTOMER_NEED_BY_DATE\"},{\"value\":\"2904\",\"mapping_type\":\"static\",\"destination_attr_name\":\"Billing Package ID\",\"destination_attr_code\":\"ATT_BILLING_PACKAGE_ID\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Billing Address ID\",\"destination_attr_code\":\"ATT_BILLING_ADDRESS_ID\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Invoice Shipment ID\",\"destination_attr_code\":\"ATT_INVOICE_SHIPMENT_ID\"},{\"source_attr_name\":\"Installation Location ID\",\"source_attr_code\":\"ATT_INSTALLATION_LOCATION_ID\",\"source_type\":\"Attribute\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Installation Location ID\",\"destination_attr_code\":\"ATT_INSTALLATION_LOCATION_ID\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "900d0c42-a20f-cb02-1ea1-385c7751d018",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/900d0c42-a20f-cb02-1ea1-385c7751d018",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "900d0c42-a20f-cb02-1ea1-385c7751d018",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "4GInfra to MPLS Internet",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/4GInfra to MPLS Internet/Product2/900d0c42-a20f-cb02-1ea1-385c7751d018"
+    }
+]

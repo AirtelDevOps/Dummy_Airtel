@@ -1,0 +1,54 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SVMockResponseSuccess",
+    "OmniProcessId": {
+        "Name": "FetchMRR",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FetchMRR/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "response": {
+                "getMetaDataResMsg": {
+                    "dataArea": {
+                        "getMetaDataResponse": {
+                            "metaDataDetails": {
+                                "PONumber": "10000225",
+                                "itemDetail": {
+                                    "code": "B2B004994"
+                                },
+                                "locator": null,
+                                "mrrNumber": "1000478",
+                                "quantity": "2"
+                            },
+                            "status": {
+                                "statusCode": "getMetaData-0000-S",
+                                "statusDescription": "Request Processed Successfully"
+                            }
+                        }
+                    },
+                    "ebmHeader": {
+                        "consumerTransactionId": "23456"
+                    }
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FetchMRR/Procedure/SVMockResponseSuccess"
+}

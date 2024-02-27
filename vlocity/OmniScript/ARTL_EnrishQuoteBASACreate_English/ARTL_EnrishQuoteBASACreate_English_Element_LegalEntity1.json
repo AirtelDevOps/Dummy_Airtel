@@ -1,0 +1,172 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "LegalEntity1",
+    "OmniProcessId": {
+        "Name": "ARTL/EnrishQuoteBASACreate",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "BillingDetailsBlock",
+        "OmniProcessId": {
+            "Name": "ARTL/EnrishQuoteBASACreate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/BillingDetailsBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "BillingDetailsBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 4,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Legal Entity",
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "AES-Carrier",
+                "value": "AES-Carrier"
+            },
+            {
+                "autoAdv": null,
+                "name": "Not Applicable",
+                "value": "Not Applicable"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel Ltd",
+                "value": "Bharti Airtel Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel Ltd",
+                "value": "Bharti Airtel Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel Services Ltd",
+                "value": "Bharti Airtel Services Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Acquanet Ltd",
+                "value": "Bharti Acquanet Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Satcom Broadband Eqp Ltd",
+                "value": "Satcom Broadband Eqp Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel Singapore Ltd",
+                "value": "Bharti Airtel Singapore Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel Hongkong Ltd",
+                "value": "Bharti Airtel Hongkong Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel (UK) Limited",
+                "value": "Bharti Airtel (UK) Limited"
+            },
+            {
+                "autoAdv": null,
+                "name": "Indo Teleports Limited",
+                "value": "Indo Teleports Limited"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel (Japan) Kabushik",
+                "value": "Bharti Airtel (Japan) Kabushik"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel (France) SAS",
+                "value": "Bharti Airtel (France) SAS"
+            },
+            {
+                "autoAdv": null,
+                "name": "Network i2i",
+                "value": "Network i2i"
+            },
+            {
+                "autoAdv": null,
+                "name": "NXTRA DATA LIMITED",
+                "value": "NXTRA DATA LIMITED"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel USA Ltd",
+                "value": "Bharti Airtel USA Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Airtel Digital Limited",
+                "value": "Airtel Digital Limited"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Hexacom Limited",
+                "value": "Bharti Hexacom Limited"
+            },
+            {
+                "autoAdv": null,
+                "name": "Nxtra Data Limited",
+                "value": "Nxtra Data Limited"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti International Singapore Pte Ltd",
+                "value": "Bharti International Singapore Pte Ltd"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel (Hongkong) Limited",
+                "value": "Bharti Airtel (Hongkong) Limited"
+            },
+            {
+                "autoAdv": null,
+                "name": "Bharti Airtel (Japan) Kabushiki Kaisha",
+                "value": "Bharti Airtel (Japan) Kabushiki Kaisha"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/LegalEntity1"
+}

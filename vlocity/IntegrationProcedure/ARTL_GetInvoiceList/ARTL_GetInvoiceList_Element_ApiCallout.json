@@ -1,0 +1,72 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ApiCallout",
+    "OmniProcessId": {
+        "Name": "GetInvoiceList",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/GetInvoiceList/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "errorMessage": "%ApiCallout:soaFault:faultDescription%",
+            "errorMessage2": "%ApiCallout:soaFault:faultTrace%"
+        },
+        "label": "HTTPAction1",
+        "namedCredential": "",
+        "postActionLogging": "",
+        "preActionLogging": "%endpoint%",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "restMethod": "GET",
+        "restOptions": {
+            "clientCertificateName": "",
+            "headers": {
+                "accept": "application/json",
+                "api-key": "%GetAPIDetails:key%"
+            },
+            "isCompressed": false,
+            "params": {
+                "accountId": "%GetAccountNumber:accountNumber%",
+                "consumerName": "SFDC",
+                "consumerTransactionId": "%RandomNumberGenerator:result%",
+                "customerMigrated": true,
+                "domain": "B2B",
+                "endDate": "%endDate%",
+                "invoiceType": "fetchSummary",
+                "lob": "AES",
+                "programmeName": "fetchInvoice",
+                "startDate": "%startDate%"
+            },
+            "sendBody": true,
+            "timeout": 0,
+            "xmlEscapeResponse": false
+        },
+        "restPath": "%GetAPIDetails:endpoint%",
+        "retryCount": 0,
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "type": "Integration",
+        "useFormulas": true
+    },
+    "Type": "Rest Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/GetInvoiceList/Procedure/ApiCallout"
+}

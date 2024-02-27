@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Subject_MandatoryForActionPlan</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(Subject) &amp;&amp; RecordType.DeveloperName = &quot;ARTL_Action_Plan&quot;</errorConditionFormula>
+    <errorDisplayField>Subject</errorDisplayField>
+    <errorMessage>Please enter a Subject.</errorMessage>
+</ValidationRule>

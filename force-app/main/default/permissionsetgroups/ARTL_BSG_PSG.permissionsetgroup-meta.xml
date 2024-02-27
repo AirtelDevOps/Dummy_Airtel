@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set group is for BSG user.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ARTL_BSG_PSG</label>
+    <permissionSets>ARTL_BSG</permissionSets>
+    <permissionSets>ARTL_EditTask_Additional_PS</permissionSets>
+    <permissionSets>OmniStudioAdmin</permissionSets>
+    <permissionSets>OmniStudio_KAM_User_Extras</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

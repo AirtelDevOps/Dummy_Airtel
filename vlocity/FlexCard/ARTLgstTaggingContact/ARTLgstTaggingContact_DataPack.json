@@ -1,0 +1,60 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "{\"SiteId\":\"a4i72000000MQiHAAW\",\"InstallationGST\":\"\"}",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        },
+        "event-0_0": {
+            "contextVariables": [
+                {
+                    "id": 1,
+                    "name": "action.contacts",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "gstcontacts": "{action.contacts}"
+                },
+                "ipMethod": "ARTL_CPQ",
+                "jsonMap": "{\"action.contacts\":\"{action.contacts}\"}",
+                "resultVar": "[\"result\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTLgstTaggingContact",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTLgstTaggingContact/BhartiAirtelLimited/4.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTLgstTaggingContact.json",
+    "SampleDataSourceResponse": "{\"SiteId\":\"a4i72000000MQiHAAW\",\"InstallationGST\":\"\"}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 4,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTLgstTaggingContact"
+}

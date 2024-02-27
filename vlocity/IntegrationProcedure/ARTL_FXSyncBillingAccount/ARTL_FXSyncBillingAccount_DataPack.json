@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_FXSyncBillingAccount_SampleInput.json",
+    "Description": "Input to this IP - %accountId% and %quoteId% - [Salesforce Id of newly created billing Account and its associated Quote Id]",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FXSyncBillingAccount",
+    "OmniProcessElement": [
+        "ARTL_FXSyncBillingAccount_Element_DRExtractFXBillingAccount.json",
+        "ARTL_FXSyncBillingAccount_Element_getCustomMetadataRecord.json",
+        "ARTL_FXSyncBillingAccount_Element_RADebugLogger.json",
+        "ARTL_FXSyncBillingAccount_Element_HTTPSyncBillingAccount.json",
+        "ARTL_FXSyncBillingAccount_Element_updateBillingIdOnAccountOnSuccess.json",
+        "ARTL_FXSyncBillingAccount_Element_updateBillingIdOnAccountOnFailure.json",
+        "ARTL_FXSyncBillingAccount_Element_RAResponseLogger.json",
+        "ARTL_FXSyncBillingAccount_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_FXSyncBillingAccount",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FXSyncBillingAccount_PropertySetConfig.json",
+    "SubType": "FXSyncBillingAccount",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FXSyncBillingAccount/Procedure"
+}

@@ -1,0 +1,52 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "ARTL_OVQLITable/BhartiAirtelLimited/18.0",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 6,
+                    "name": "Parent.QuoteId",
+                    "val": "0Q0720000005FxhCAE"
+                },
+                {
+                    "id": 15,
+                    "name": "Parent.ProductCode",
+                    "val": "6c24fdd7-4f71-4806-b7eb-62837fe6571e"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "productCode": "{Parent.ProductCode}",
+                    "quoteId": "{Parent.QuoteId}"
+                },
+                "ipMethod": "ARTL_OVTableDownloadData",
+                "jsonMap": "{\"Parent.QuoteId\":\"{Parent.QuoteId}\",\"Parent.ProductCode\":\"{Parent.ProductCode}\"}",
+                "resultVar": "[\"attributeWithRecords\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_OVTableDownloadButton",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_OVTableDownloadButton/BhartiAirtelLimited/3.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_OVTableDownloadButton.json",
+    "SampleDataSourceResponse": "{\"attributeWithRecords\":[{\"attributes\":{\"type\":\"ARTL_Billing_Staging__c\",\"url\":\"/services/data/v59.0/sobjects/ARTL_Billing_Staging__c/a7U720000000hRbEAI\"},\"Id\":\"a7U720000000hRbEAI\",\"Product_Name__c\":\"Internet\",\"DCP_First_Name__c\":\"Dharmendra\",\"DCP_Last_Name__c\":\"Singh\",\"DCP_Email__c\":\"testdcp@gmail.com\",\"Quote_Line_Item__c\":\"0QL720000005pt8GAA\",\"ATT_ACCESS_BANDWIDTH\":\"1 Mbps\",\"ATT_SERVICE_TYPE\":\"Fully Managed\",\"ATT_MEDIA\":\"Fiber Off-Net\",\"ATT_DDOS_REQUIRED\":\"No\",\"ATT_LAST_MILE\":null,\"ATT_PORT_BANDWIDTH\":\"30 Mbps\",\"ATT_IP_REQUIRED\":\"IPv4\",\"ATT_ENTERPRISE_CONNECTIVITY_TYPE\":\"Primary\",\"ATT_INTERFACE\":\"1 Gig(Electrical)\",\"ATT_CROSS_CONNECT_REQD\":\"No\",\"ATT_LEGACY_ACCESS_BANDWIDTH\":null,\"ATT_LEGACY_PORT_BANDWIDTH\":null,\"ATT_POP\":null,\"ATT_UPTIME_SLA\":\"98%\",\"ATT_MTU_SIZE\":null,\"ATT_REDUNDANCY\":\"No\",\"ATT_CPE\":\"Single CPE\"},{\"attributes\":{\"type\":\"ARTL_Billing_Staging__c\",\"url\":\"/services/data/v59.0/sobjects/ARTL_Billing_Staging__c/a7U720000000hRZEAY\"},\"Id\":\"a7U720000000hRZEAY\",\"Product_Name__c\":\"Internet\",\"DCP_First_Name__c\":\"Dharmendra\",\"DCP_Last_Name__c\":\"Singh\",\"DCP_Email__c\":\"testdcp@gmail.com\",\"Quote_Line_Item__c\":\"0QL720000005ptEGAQ\",\"ATT_ACCESS_BANDWIDTH\":\"1 Mbps\",\"ATT_SERVICE_TYPE\":\"Fully Managed\",\"ATT_MEDIA\":\"Fiber Off-Net\",\"ATT_DDOS_REQUIRED\":\"No\",\"ATT_LAST_MILE\":null,\"ATT_PORT_BANDWIDTH\":\"30 Mbps\",\"ATT_IP_REQUIRED\":\"IPv4\",\"ATT_ENTERPRISE_CONNECTIVITY_TYPE\":\"Primary\",\"ATT_INTERFACE\":\"1 Gig(Electrical)\",\"ATT_CROSS_CONNECT_REQD\":\"No\",\"ATT_LEGACY_ACCESS_BANDWIDTH\":null,\"ATT_LEGACY_PORT_BANDWIDTH\":null,\"ATT_POP\":null,\"ATT_UPTIME_SLA\":\"98%\",\"ATT_MTU_SIZE\":null,\"ATT_REDUNDANCY\":\"No\",\"ATT_CPE\":\"Single CPE\"},{\"attributes\":{\"type\":\"ARTL_Billing_Staging__c\",\"url\":\"/services/data/v59.0/sobjects/ARTL_Billing_Staging__c/a7U720000000hRdEAI\"},\"Id\":\"a7U720000000hRdEAI\",\"Product_Name__c\":\"Internet\",\"DCP_First_Name__c\":\"Dharmendra\",\"DCP_Last_Name__c\":\"Singh\",\"DCP_Email__c\":\"testdcp@gmail.com\",\"Quote_Line_Item__c\":\"0QL720000005ptKGAQ\",\"ATT_ACCESS_BANDWIDTH\":\"1 Mbps\",\"ATT_SERVICE_TYPE\":\"Fully Managed\",\"ATT_MEDIA\":\"Fiber Off-Net\",\"ATT_DDOS_REQUIRED\":\"No\",\"ATT_LAST_MILE\":null,\"ATT_PORT_BANDWIDTH\":\"30 Mbps\",\"ATT_IP_REQUIRED\":\"IPv4\",\"ATT_ENTERPRISE_CONNECTIVITY_TYPE\":\"Primary\",\"ATT_INTERFACE\":\"1 Gig(Electrical)\",\"ATT_CROSS_CONNECT_REQD\":\"No\",\"ATT_LEGACY_ACCESS_BANDWIDTH\":null,\"ATT_LEGACY_PORT_BANDWIDTH\":null,\"ATT_POP\":null,\"ATT_UPTIME_SLA\":\"98%\",\"ATT_MTU_SIZE\":null,\"ATT_REDUNDANCY\":\"No\",\"ATT_CPE\":\"Single CPE\"}]}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 3,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_OVTableDownloadButton"
+}

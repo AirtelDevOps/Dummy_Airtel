@@ -1,0 +1,218 @@
+<apex:component controller="Artel_getFieldAndAttrNonDeemed" access="global">
+  
+     <style>
+     
+     .button {
+         
+        width: 115px;
+        height: 25px;
+        background: green;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+    }
+    
+    .buttonReject{
+        
+        width: 115px;
+        height: 25px;
+        background: red;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+    }
+    
+    .myDiv {
+      border: 1px outset red;
+      background-color: red;    
+      text-align: center;
+    }
+
+     </style>
+
+     <apex:attribute name="orderId" type="Id" description="Id of the Order" assignTo="{!ordId}"/>
+         
+     <apex:outputPanel rendered="{!OrderRelDetails}">
+     
+     <apex:outputText value="We are pleased to inform you that your service with reference to Order No. {!OrderNumber} and Circuit ID(LSI) {!ciruitId} has now been commissioned as per the purchase order received. The Billing Start Date of the service is {!billingStartDate}" ></apex:outputText>
+          <br/><br/><br/>
+     <apex:outputText value="Please click Accept, between {!commisionDate} and {!billingStartDate}, to acknowledge your approval of the delivered services."></apex:outputText> 
+          <br/><br/><br/>
+
+     <apex:outputText value="Please note that by clicking Accept you are authorizing Airtel Business to commence the billing of the respective sites."></apex:outputText>
+         <br/><br/><br/>
+     <apex:outputText value="In case the services delivered are not as per your requirement, please notify Airtel Business by clicking the Reject button."></apex:outputText>    
+      <br/><br/><br/>
+     <p style="text-align: center;"><a href="{!approveTask}" class="button">Accept</a>  <a href="{!rejectTask}" class="buttonReject">Reject</a>  <br/><br/><br/>  
+      </p>      
+     <apex:outputText value="Below are the important details of your order for future reference. More details are attached for your reference:"></apex:outputText>
+          <br/><br/>
+      <table>
+            <tbody>
+                <tr>
+                    <td>Customer Name:</td>
+                    <td>{!AccountName}</td>
+                </tr>
+                <tr>
+                    <td>Order No.:</td>
+                    <td>{!OrderNumber}</td>
+                </tr>
+                <tr>
+                    <td>Order Type</td>
+                    <td>New</td>
+                     
+                </tr>
+                <tr>
+                    <td>Customer PO Date</td>
+                    <td>&nbsp;</td>
+                </tr>
+                 <tr>
+                    <td>PO Value</td>
+                    <td></td>
+                 </tr>
+                 
+                  <tr>
+                    <td>PO Term</td>
+                    <td></td>
+                 </tr>
+                  
+                <tr>
+                    <td>&nbsp;</td>
+                 </tr>
+                <tr>
+                    <td>CAF Number:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Customer's Address</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Customer Delivery Contact Name:</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Customer Delivery Contact E-mail:</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Product:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Bandwidth:</td>
+                    <td>{!bandWidth}</td>
+                </tr>
+                <tr>
+                    <td>New Media:</td>
+                    <td>{!media}</td>
+                </tr>
+                <tr>
+                    <td>Link Type</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Circuit ID (LSI): </td>
+                    <td>{!ciruitId}</td>
+                </tr>
+                <tr>
+                    <td>Hardware Made:</td>
+                    <td>{!routerMake}</td>
+                </tr>
+                <tr>
+                    <td>Hardware Model:</td>
+                    <td>{!routerModel}</td>
+                </tr>
+                
+                <tr>
+                    <td>Billing Start Date:</td>
+                    <td></td>
+                </tr>
+                
+                <tr> 
+                    <td rowspan="3">Details (Utilization Report):</td> 
+                    <td>URL: <a href="http://90902:0000">http://90902:0000</a></td> 
+                </tr>
+                <tr>
+                     <td>Username: admin@CNC1</td> 
+                </tr>
+                <tr>
+                    <td>Password:CNC1#3431  </td> 
+                </tr> 
+            </tbody>
+    </table>
+    
+    <br/><br/><br/>
+    
+    <table border="1 px;">
+        <tr>
+            <td>Designation</td>
+             <td>Name</td>
+              <td>Email ID</td>
+               <td>Contact Details</td>
+        </tr>
+         <tr>
+            <td>Project manager</td>
+             <td>{!projectmanager}</td>
+              <td>{!projectManagerPhone}</td>
+               <td>{!projectManagerEmail}</td>
+        </tr>
+         <tr>
+            <td>Level 1</td>
+             <td></td>
+              <td></td>
+               <td></td>
+        </tr>
+         <tr>
+            <td>Level 2</td>
+             <td></td>
+              <td></td>
+               <td></td>
+        </tr>
+        
+    </table>
+    </apex:outputPanel>
+    
+    <br/><br/><br/>
+    
+    <apex:outputText value="You may reach out to , your dedicated project manager for any queries, </br> 
+                        The relevant contact details are shared below for ready reference:">
+                        
+    </apex:outputText>
+    
+    <br/><br/><br/>
+
+    
+    
+     <apex:outputText value="You may track the status of your order on our digital self-care portal  Airtel Thanks for Business."></apex:outputText>
+   
+       <br/><br/><br/>
+    <apex:outputText value="Thank you for choosing Bharti Airtel. We value your association with us and we are looking forward to serve you."></apex:outputText>
+   
+    <br/><br/><br/>
+    
+    <p> Regards,<br/>
+    Bharti Airtel Ltd.
+    </p>
+    <br/><br/>
+    <div class="myDiv">
+    <p>This is an auto-generated email. Please do not reply to it. In case of any query or discrepancy in the details above, please reach out to your dedicated Project Manager with your Circuit ID(LSI). </p> 
+    </div>
+    <br/><br/><br/>
+    <div style="text-align:center;">
+    Follow Us | www.airtel.in/business
+    </div>
+    
+  
+</apex:component>

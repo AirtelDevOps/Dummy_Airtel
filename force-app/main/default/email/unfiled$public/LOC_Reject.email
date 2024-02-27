@@ -1,0 +1,20 @@
+<messaging:emailTemplate subject="LOC Reject Acknowledgment: Bharti Airtel - Order Reference  " recipientType="User" relatedToType="Order">
+
+<messaging:htmlEmailBody >
+        <html>
+        <body style="font-size:15px;">
+            <apex:image url="{!$Resource.LOCRejectionAcknowledgement}" width="1000" height="500"/><br/><br/>
+            <p>Dear Customer, </p> <br/><br/>
+            
+            Greetings from Airtel Business. <br/><br/>
+            
+            
+           <c:LOCRejectionAcknowledgementVF orderId="{!relatedTo.Id}"></c:LOCRejectionAcknowledgementVF>
+           
+           
+           
+           
+        </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_UpdateOVTableStatus_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateOVTableStatus",
+    "OmniProcessElement": [
+        "ARTL_UpdateOVTableStatus_Element_MergeOVStatusList.json",
+        "ARTL_UpdateOVTableStatus_Element_PostOVTableQLIStatus.json",
+        "ARTL_UpdateOVTableStatus_Element_Response.json"
+    ],
+    "OmniProcessKey": "ARTL_UpdateOVTableStatus",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_UpdateOVTableStatus_PropertySetConfig.json",
+    "SubType": "UpdateOVTableStatus",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/UpdateOVTableStatus/Procedure"
+}

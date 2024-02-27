@@ -1,0 +1,270 @@
+<messaging:emailTemplate subject="Letter of Commissioning : Bharti Airtel - Order Reference :OrderNumber" recipientType="User" relatedToType="OrderItem">
+
+<messaging:htmlEmailBody >
+        
+        <html>
+        <style>
+ 
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .buttonAccept {
+          background-color: #04AA6D; 
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          width:6rem;
+          height:2rem;
+          border-radius: 8px;
+        }
+        .buttonReject {
+          background-color: red; 
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          width:6rem;
+          height:2rem;
+          border-radius: 8px;
+        }
+ 
+</style>
+        <body >
+        <img id="Logo" src="https://assets.airtel.in/static-assets/siebel/locubanner.png" /><br/><br/>   
+            <p>Dear Customer, </p> 
+            
+            Greetings from Airtel Business. 
+            
+            
+            <p>In reference with you order no. <Strong>OrderNumber</Strong> we are pleased to inform you that your service has now been commissioned.</p><br/>
+            
+          <p> Please click "Accept", between <Strong>CommissioningDate</Strong> and <Strong>GracePeriodDate</Strong>, to authorize Bharti Airtel to commence the billing of the respective site.</p>
+          
+         <p>If there is no acknowledgement within the duration, the service will be deemed accepted by you from the billing start date of the site.</p>
+          
+
+         <p>In case the service delivered is not as per your requirement, please notify us by clicking the Reject button.</p>
+         
+         
+         <div style="text-align: center"><a href="https://urldefense.com/v3/__https:/www.airtel.in/business/thanksforbusiness/login/?redirectUrl=https:**Awww.airtel.in*business*thanksforbusiness*selfcare*data*track-orders*confirmed**A7borderId*7d*details&scrollTo=sites&sitesFilter=locReady__;Ly8vLy8vLy8vJSUv!!L7AK7Ig!MdnRuGAbOp0oz2Uw3QXM0On1jm804ov2eJlkfeRuPB6t2bpC5UeAeds0TSpn1We7eWme5RCRjMksnWfuPVSMcmZ2IxIa$"><button class="buttonAccept">Accept</button></a> <a href="https://urldefense.com/v3/__https:/www.airtel.in/business/thanksforbusiness/login/?redirectUrl=https:**Awww.airtel.in*business*thanksforbusiness*selfcare*data*track-orders*confirmed**A7borderId*7d*details&scrollTo=sites&sitesFilter=locReady__;Ly8vLy8vLy8vJSUv!!L7AK7Ig!MdnRuGAbOp0oz2Uw3QXM0On1jm804ov2eJlkfeRuPB6t2bpC5UeAeds0TSpn1We7eWme5RCRjMksnWfuPVSMcmZ2IxIa$"> <button class="buttonReject">Reject</button></a></div>
+      
+         <p>Here are the important details related to your Airtel Order. The site-wise details have been attached herewith for your reference.</p>
+          
+      <table >
+            <tbody>
+                <tr>
+                    <td colspn="2" style="text-align:center">Primary Link Details</td>
+                </tr>
+                <tr>
+                    <td><Strong>Customer Name:</Strong></td>
+                    <td>AccountName</td>
+                </tr>
+                <tr>
+                    <td><Strong>Master Order No.:</Strong></td>
+                    <td>ParentOrderNumber</td>
+                </tr>
+                <tr>
+                    <td><Strong>LOC Shared for:</Strong></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><Strong>Primary Link Details</Strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><Strong>Address:</Strong></td>
+                    <td>ShippingAddress</td>
+                </tr>
+                <tr>
+                    <td><Strong>Circuit ID:</Strong></td>
+                    <td>Circuitid</td>
+                </tr>
+                <tr>
+                    <td><Strong>Hardware Make:</Strong></td>
+                    <td>RouterMake</td>
+                </tr>
+                <tr>
+                    <td><Strong>Hardware Model:</Strong></td>
+                    <td>RouterModel</td>
+                </tr>
+                <tr>
+                    <td><Strong>Customer Delivery Contact Name:</Strong></td>
+                    <td>DeliveryContactName</td>
+                </tr>
+                <tr>
+                    <td><Strong>Customer Delivery Contact E-mail:</Strong></td>
+                    <td>DeliveryEmail</td>
+                </tr>
+                <tr>
+                    <td><Strong>PO Date:</Strong></td>
+                    <td>PoDate</td>
+                </tr>
+                <tr>
+                    <td><Strong>PO number:</Strong></td>
+                    <td>PoNumber</td>
+                </tr>
+                <tr>
+                    <td><Strong>PO value:</Strong></td>
+                    <td>PoValue</td>
+                </tr>
+                <tr>
+                    <td><Strong>PO Term:</Strong></td>
+                    <td>PoTerm</td>
+                </tr>
+                <tr>
+                    <td><Strong>Product:</Strong></td>
+                    <td>Product2</td>
+                </tr>
+                <tr>
+                    <td><Strong>Bandwidth:</Strong></td>
+                    <td>Bandwidth2</td>
+                </tr>
+                <tr>
+                    <td><Strong>New Media:</Strong></td>
+                    <td>Media2</td>
+                </tr>
+                <tr>
+                    <td><Strong>Service Type:</Strong></td>
+                    <td>ServiceType</td>
+                </tr>
+                <tr>
+                    <td><Strong>Billing Start Date:</Strong></td>
+                    <td>BillingStartDate</td>
+                </tr>
+            </tbody>
+    </table>
+    
+    <br/>
+    
+    <table >
+            <tbody>
+                 
+                <tr>
+                    <td colspn="2" style="text-align:center">Secondary Link Details</td>
+                </tr>
+               <tr>
+                    <td><Strong>Address:</Strong></td>
+                    <td>BillingAddress</td>
+                </tr>
+                <tr>
+                    <td><Strong>Circuit ID:</Strong></td>
+                    <td>Circuitid</td>
+                </tr>
+                <tr>
+                    <td><Strong>Hardware Made:</Strong></td>
+                    <td>RouterMake</td>
+                </tr>
+                <tr>
+                    <td><Strong>Hardware Model:</Strong></td>
+                    <td>RouterModel</td>
+                </tr>
+                <tr>
+                    <td><Strong>Customer Delivery Contact Name:</Strong></td>
+                    <td>DeliveryContactName</td>
+                </tr>
+                <tr>
+                    <td><Strong>Customer Delivery Contact E-mail:</Strong></td>
+                    <td>DeliveryEmail</td>
+                </tr>
+                <tr>
+                    <td><Strong>PO Date:</Strong></td>
+                    <td>PoDate</td>
+                </tr>
+                <tr>
+                    <td><Strong>PO number:</Strong></td>
+                    <td>PoNumber</td>
+                </tr>
+                <tr>
+                    <td><Strong>PO value:</Strong></td>
+                    <td>PoValue</td>
+                </tr>
+                <tr>
+                    <td><Strong>PO Term:</Strong></td>
+                    <td>PoTerm</td>
+                </tr>
+                <tr>
+                    <td><Strong>Product:</Strong></td>
+                    <td>Product2</td>
+                </tr>
+                <tr>
+                    <td><Strong>Bandwidth:</Strong></td>
+                    <td>Bandwidth2</td>
+                </tr>
+                <tr>
+                    <td><Strong>New Media:</Strong></td>
+                    <td>Media2</td>
+                </tr>
+                <tr>
+                    <td><Strong>Service Type:</Strong></td>
+                    <td>ServiceType</td>
+                </tr>
+                <tr>
+                    <td><Strong>Billing Start Date:</Strong></td>
+                    <td>BillingStartDate</td>
+                </tr>
+            </tbody>
+    </table>
+    
+    
+    <p><Strong>You may reach out to ProjectManager</Strong>, your dedicated project manager for any queries</p> 
+    <p>The relevant contact details are shared below for ready reference:</p>
+    
+    
+    <table >
+        <tr>
+            <td><Strong>Designation</Strong></td>
+            <td><Strong>Name</Strong></td>
+            <td><Strong>Email ID</Strong></td>
+            <td><Strong>Contact Details</Strong></td>
+        </tr>
+         <tr>
+            <td><Strong>Project manager</Strong></td>
+            <td>ProjectManager</td>
+            <td>ManagerPhone</td>
+            <td>ManagerEmail</td>
+        </tr>
+        <tr>
+            <td><Strong>Level1</Strong></td>
+            <td>ManagerProjectLead</td>
+            <td>ProjectLeadPhone</td>
+            <td>ProjectLeadEmail</td>
+        </tr>
+        <tr>
+            <td><Strong>Level2</Strong></td>
+            <td>ManagerProjectLead</td>
+            <td>ProjectLeadPhone</td>
+            <td>ProjectLeadEmail</td>
+        </tr>
+        
+    </table>
+    
+    
+    <p>Thank you for choosing Bharti Airtel. We value your association with us and we are looking forward to serve you.</p>
+   
+    
+    <p> Regards,<br/>
+    Bharti Airtel Ltd.
+    </p>
+    <br/><br/>
+    <div class="myDiv">
+    <p style="background-color: #ff0000; color: #ffffff; font-family: arial; font-size: medium;">This is an auto-generated email. Please do not reply to it. In case of any query or discrepancy in the details above, please reach out to your dedicated Project Manager with your Circuit ID(LSI). </p> 
+    </div>
+    <br/><br/><br/>
+    <div style="text-align:center;">
+    Follow Us | www.airtel.in/business
+    </div>
+           
+    </body>
+    </html>  
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

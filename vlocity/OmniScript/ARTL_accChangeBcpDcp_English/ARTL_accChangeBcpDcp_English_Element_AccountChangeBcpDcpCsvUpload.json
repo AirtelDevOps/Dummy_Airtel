@@ -1,0 +1,34 @@
+{
+    "CurrencyIsoCode": "INR",
+    "EmbeddedOmniScriptKey": "ARTL|accChangeBcpDcpCsvUpload|English",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AccountChangeBcpDcpCsvUpload",
+    "OmniProcessId": {
+        "Name": "Account Change Bcp Dcp",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/accChangeBcpDcp/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "English",
+        "Sub Type": "accChangeBcpDcpCsvUpload",
+        "Type": "ARTL",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Upload",
+                        "field": "SelectOperation:UploadOrDonwload"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/accChangeBcpDcp/English/AccountChangeBcpDcpCsvUpload"
+}

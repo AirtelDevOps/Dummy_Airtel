@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimelineObjectDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Lead</baseObject>
+    <definition>{&quot;timeline&quot;:{&quot;anchorObject&quot;:{&quot;object&quot;:{&quot;entity&quot;:&quot;Lead&quot;,&quot;label&quot;:&quot;Lead&quot;,&quot;source&quot;:&quot;&quot;,&quot;icon&quot;:&quot;&quot;}},&quot;age&quot;:{&quot;field&quot;:&quot;LastActivityDate&quot;,&quot;label&quot;:&quot;Last Activity&quot;,&quot;type&quot;:&quot;DateOnly&quot;},&quot;events&quot;:[]}}</definition>
+    <isActive>true</isActive>
+    <masterLabel>Lead Interaction</masterLabel>
+</TimelineObjectDefinition>

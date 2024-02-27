@@ -1,0 +1,3 @@
+let styleDefinition =
+      {"state0element0block_element0":[{"conditions":"default","styleObject":{"class":"slds-col  condition-element allign-cells slds-size_12-of-12  ","style":"      \n         ","styleProperties":{"styles":{"cellMargin":[],"cellPadding":[{"label":"vertical:xx-small","size":"xx-small","type":"vertical"}],"headBgColor":"#f3f3f3","headFontWeight":"600"}}}}]};
+  export default styleDefinition

@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CheckOrderProductIsNips_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_CheckOrderProductIsNips",
+    "OmniProcessElement": [
+        "ARTL_CheckOrderProductIsNips_Element_ExtractQuoteLineItems.json",
+        "ARTL_CheckOrderProductIsNips_Element_CheckProductName.json",
+        "ARTL_CheckOrderProductIsNips_Element_CreateTaskForNips.json",
+        "ARTL_CheckOrderProductIsNips_Element_ResponseAction.json",
+        "ARTL_CheckOrderProductIsNips_Element_ResponseAction2.json"
+    ],
+    "OmniProcessKey": "ARTL_CheckOrderProductIsNips",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CheckOrderProductIsNips_PropertySetConfig.json",
+    "SubType": "CheckOrderProductIsNips",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CheckOrderProductIsNips/Procedure"
+}

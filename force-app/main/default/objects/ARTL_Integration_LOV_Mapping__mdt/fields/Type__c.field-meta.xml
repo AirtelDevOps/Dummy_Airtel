@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Owning Cost Center</fullName>
+                <default>true</default>
+                <label>Owning Cost Center</label>
+            </value>
+            <value>
+                <fullName>Revenue Receiving Cost Center</fullName>
+                <default>false</default>
+                <label>Revenue Receiving Cost Center</label>
+            </value>
+            <value>
+                <fullName>Franchise Code</fullName>
+                <default>false</default>
+                <label>Franchise Code</label>
+            </value>
+            <value>
+                <fullName>Currency Code</fullName>
+                <default>false</default>
+                <label>Currency Code</label>
+            </value>
+            <value>
+                <fullName>Country Code</fullName>
+                <default>false</default>
+                <label>Country Code</label>
+            </value>
+            <value>
+                <fullName>Bill Dispatch Method</fullName>
+                <default>false</default>
+                <label>Bill Dispatch Method</label>
+            </value>
+            <value>
+                <fullName>Bill Frequency</fullName>
+                <default>false</default>
+                <label>Bill Frequency</label>
+            </value>
+            <value>
+                <fullName>Account Segment</fullName>
+                <default>false</default>
+                <label>Account Segment</label>
+            </value>
+            <value>
+                <fullName>Market Code - Business Account.Circle</fullName>
+                <default>false</default>
+                <label>Market Code - Business Account.Circle</label>
+            </value>
+            <value>
+                <fullName>Bill Type</fullName>
+                <default>false</default>
+                <label>Bill Type</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

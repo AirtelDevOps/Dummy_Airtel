@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_UpdateQuoteMemberGeoLocation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Update Quote Member Record",
+    "OmniProcessElement": [
+        "ARTL_UpdateQuoteMemberGeoLocation_Element_DRPostQMRecords.json",
+        "ARTL_UpdateQuoteMemberGeoLocation_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_UpdateQuoteMemberGeoLocation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_UpdateQuoteMemberGeoLocation_PropertySetConfig.json",
+    "SubType": "UpdateQuoteMemberGeoLocation",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/UpdateQuoteMemberGeoLocation/Procedure"
+}

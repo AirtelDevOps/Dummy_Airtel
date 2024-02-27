@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_Step4InvokeSolace_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Step4InvokeSolace",
+    "OmniProcessElement": [
+        "ARTL_Step4InvokeSolace_Element_DRExtractContactDetails.json",
+        "ARTL_Step4InvokeSolace_Element_getCustomMetadataRecord.json",
+        "ARTL_Step4InvokeSolace_Element_RADebugLogger.json",
+        "ARTL_Step4InvokeSolace_Element_HTTPCalloutSolace.json",
+        "ARTL_Step4InvokeSolace_Element_updateStatusOnSuccessDR.json",
+        "ARTL_Step4InvokeSolace_Element_updateStatusOnFailureDR.json",
+        "ARTL_Step4InvokeSolace_Element_RAResponseLogger.json",
+        "ARTL_Step4InvokeSolace_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_Step4InvokeSolace",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_Step4InvokeSolace_PropertySetConfig.json",
+    "SubType": "Step4InvokeSolace",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/Step4InvokeSolace/Procedure",
+    "WebComponentKey": "add8fc8b-f037-a194-e67d-358ff671f7b0",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001P1BEAU"
+}

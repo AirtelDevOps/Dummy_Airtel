@@ -1,0 +1,11 @@
+projectPath: vlocity
+autoRetryErrors: true
+#gitCheck: true
+npmAuthKey: QTFELVVBT0g6bXRyS29VTzBjeC1INnpuT2hEVWo4Yi13QTJSZW5FakJpZE03QWVXelBicEo=
+useSfdxCli: true
+postStepApex:
+    Deploy:
+        DocumentTemplate: ../ActivateDocumentTemplate.apex
+        ContentVersion: ../PublishContentVersion.apex
+maxDepth: 0
+manifest:

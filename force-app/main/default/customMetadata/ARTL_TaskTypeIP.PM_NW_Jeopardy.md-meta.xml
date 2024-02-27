@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PM NW Jeopardy</label>
+    <protected>false</protected>
+    <values>
+        <field>ARTL_Request_Payload_Map__c</field>
+        <value xsi:type="xsd:string">{&quot;accessNetworkLocationCode&quot;:&quot;Access POP Network Location Code&quot;,&quot;ispMplsNetworkLocationCode&quot;:&quot;ISP/MPLS POP Network Location Code&quot;,&quot;rsuNetworkLocationCode&quot;:&quot;RSU Network Location Code&quot;,&quot;customerNetworkLocationCode&quot;:&quot;null&quot;,&quot;btsNetworkLocationCode&quot;:&quot;null&quot;,&quot;epcnRevisedCapexRequired&quot;:&quot;null&quot;}</value>
+    </values>
+    <values>
+        <field>ARTL_Technical_Attribute_Map__c</field>
+        <value xsi:type="xsd:string">{&quot;ipType&quot;: &quot;ATT_IP_TYPE&quot;,
+    &quot;lanIPv4Subnet&quot;: &quot;ATT_LAN_IPV4_SUBNET_MASK&quot;,
+    &quot;wanIPv4PESubnet&quot;: &quot;ATT_WAN_IPV4_PE_SUBNET_MASK&quot;,
+    &quot;wanIPv4CESubnet&quot;: &quot;ATT_WAN_IPV4_CE_SUBNET_MASK&quot;,
+    &quot;lanIPv6Subnet&quot;: &quot;ATT_LAN_IPV6_SUBNET_MASK&quot;,
+    &quot;wanIPv6PESubnet&quot;: &quot;ATT_WAN_IPV6_PE_SUBNET_MASK&quot;,
+    &quot;wanIPv6CESubnet&quot;: &quot;ATT_WAN_IPV6_CE_SUBNET_MASK&quot;,
+    &quot;routingType&quot;: &quot;ATT_ROUTING_TYPE&quot;,
+    &quot;routingProtocol&quot;: &quot;ATT_ROUTING_PROTOCOL&quot;,
+    &quot;asSet&quot;: &quot;ATT_AS_SET&quot;,
+    &quot;eBGPMultihop&quot;: &quot;ATT_EBGP_MULTIHOP&quot;,
+    &quot;peeringType&quot;: &quot;ATT_PEERING_TYPE&quot;,
+    &quot;bGPInputType&quot;: &quot;ATT_BGP_INPUT_TYPE&quot;,
+    &quot;customerLANIP&quot;: &quot;ATT_CUSTOMER_LAN_IP&quot;,
+    &quot;routingTable&quot;: &quot;ATT_ROUTING_TABLE&quot;,
+    &quot;bfd&quot;: &quot;ATT_BFD&quot;,
+    &quot;fastDetect&quot;: &quot;ATT_FAST_DETECT&quot;,
+    &quot;multiplier&quot;: &quot;ATT_MULTIPLIER&quot;,
+    &quot;minimumInterval&quot;: &quot;ATT_MINIMUM_INTERVAL&quot;,
+    &quot;bGPPassword&quot;: &quot;ATT_BGP_PASSWORD&quot;,
+    &quot;bGPDampening&quot;: &quot;ATT_BGP_DAMPENING&quot;,
+    &quot;bGPLog&quot;: &quot;ATT_BGP_LOG&quot;,
+    &quot;bGPKeepalive&quot;: &quot;ATT_KEEPALIVE&quot;,
+    &quot;bGPReplaceAS&quot;: &quot;ATT_BGP-REPLACE_AS&quot;,
+    &quot;bgpSoo&quot;: &quot;ATT_SOO&quot;,
+    &quot;bGPPrefixLimit&quot;: &quot;ATT_BGP_PREFIX_LIMIT&quot;,
+    &quot;removePrivateAs&quot;: &quot;ATT_REMOVE_PRIVATE_AS&quot;,
+    &quot;defaultOriginate&quot;: &quot;ATT_DEFAULT_ORIGINATE&quot;,
+    &quot;customerASNumber&quot;: &quot;ATT_CUSTOMER_AS_NUMBER&quot;,
+    &quot;bGPTimers&quot;: &quot;ATT_BGP_TIMERS&quot;,
+    &quot;sendCommunityEBGP&quot;: &quot;ATT_SEND_COMMUNITY_EBGP&quot;,
+    &quot;asOveride&quot;: &quot;ATT_AS_OVERRIDE&quot;,
+    &quot;bGPHoldtime&quot;: &quot;ATT_HOLDTIME&quot;,
+    &quot;bGPSessionPerLink&quot;: &quot;ATT_BGP_SESSION_PER_LINK&quot;,
+    &quot;restart&quot;: &quot;ATT_BGP_SESSION_PER_LINK&quot;,
+    &quot;remoteLoopbackIP&quot;: &quot;ATT_REMOTE_LOOPBACK_IP&quot;,
+    &quot;localLoopbackIP&quot;: &quot;ATT_LOCAL_LOOPBACK_IP&quot;,
+    &quot;customerL2PoiDetails&quot;: &quot;ATT_CUSTOMER_L2_POI_DETAILS&quot;,
+    &quot;customerInputs&quot;: &quot;ATT_CUSTOMER_INPUTS&quot;,
+    &quot;customerNeedByDate&quot;: &quot;ATT_CUSTOMER_NEED_BY_DATE&quot;,
+    &quot;lanIPv4&quot;: &quot;ATT_LAN_IPV4&quot;,
+    &quot;lanIPv6&quot;: &quot;ATT_LAN_IPV6&quot;,
+    &quot;loopbackIPv4&quot;: &quot;ATT_LOOPBACK_IPV4&quot;,
+    &quot;LoopbackIPv6&quot;: &quot;ATT_LOOPBACK_IPV6&quot;,
+    &quot;referenceLsiForL2PoiDetails&quot;: &quot;ATT_REFERENCE_LSI_FOR_L2_POI_DETAILS&quot;,
+    &quot;wanIPv4CESubnetMask&quot;: &quot;ATT_WAN_IPV4_CE_SUBNET_MASK&quot;,
+    &quot;wanIPv4CE&quot;: &quot;ATT_WAN_IPV4_CE&quot;,
+    &quot;wanIPv4PE&quot;: &quot;ATT_WAN_IPV4_PE&quot;,
+    &quot;wanIPv6CE&quot;: &quot;ATT_WAN_IPV6_CE&quot;,
+    &quot;wanIPv6PE&quot;: &quot;ATT_WAN_IPV6_PE&quot;,
+    &quot;wanIPv6CESubnetMask&quot;: &quot;ATT_WAN_IPV6_CE_SUBNET_MASK&quot;,
+    &quot;wanIPv6PESubnetMask&quot;: &quot;ATT_WAN_IPV6_CE_SUBNET_MASK&quot;
+}</value>
+    </values>
+    <values>
+        <field>IP__c</field>
+        <value xsi:type="xsd:string">ARTL_PMNWJeopardy</value>
+    </values>
+    <values>
+        <field>Task_Type__c</field>
+        <value xsi:type="xsd:string">PM NW Jeopardy</value>
+    </values>
+</CustomMetadata>

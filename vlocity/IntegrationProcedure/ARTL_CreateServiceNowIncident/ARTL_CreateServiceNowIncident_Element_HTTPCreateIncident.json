@@ -1,0 +1,71 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "HTTPCreateIncident",
+    "OmniProcessId": {
+        "Name": "CreateServiceNowIncident",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateServiceNowIncident/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "application": "Service Now",
+            "assignment_group": "IN_ServiceNow_Support",
+            "caller_id": "%DRExtractUserOIMDetail:OIMId%",
+            "category": "MIS Reports",
+            "circle": "Airtel",
+            "contact_type": "Email",
+            "description": "%incidentDescription%",
+            "lob": "DC",
+            "opened_by": "%DRExtractUserOIMDetail:OIMId%",
+            "short_description": "%incidentDescription%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "HTTPAction1",
+        "namedCredential": "",
+        "postActionLogging": "",
+        "preActionLogging": "%endpoint%",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "restMethod": "POST",
+        "restOptions": {
+            "clientCertificateName": "",
+            "headers": {
+                "Authorization": "Basic U0ZEQ0ludGVncmF0aW9uOkluZGlhQDEyMw==",
+                "Content-Type": "application/json",
+                "Cookie": "BIGipServerpool_airteluat=56e618734a84cb7443813b7226c5e770; JSESSIONID=B60216D5637F3FD8E79EB5193E0B352A; glide_session_store=AC1EFD45875B7D90DA7CC8080CBB359A; glide_user_route=glide.51ae21624b86089b6978591dac151b45"
+            },
+            "isCompressed": false,
+            "params": {
+            },
+            "sendBody": true,
+            "timeout": 120000,
+            "xmlEscapeResponse": false
+        },
+        "restPath": "https://airteluat.service-now.com/api/bhai/incident_details/create_incident",
+        "retryCount": 0,
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "type": "Integration",
+        "useFormulas": true
+    },
+    "Type": "Rest Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateServiceNowIncident/Procedure/HTTPCreateIncident"
+}

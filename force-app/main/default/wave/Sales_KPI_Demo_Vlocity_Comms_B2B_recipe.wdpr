@@ -1,0 +1,1064 @@
+{
+  "version" : "59.0",
+  "nodes" : {
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Username", "LastName", "FirstName", "Name", "CompanyName", "Division", "Department", "Title", "Street", "City", "State", "PostalCode", "Country", "Email", "Phone", "MobilePhone", "Alias", "CommunityNickname", "IsActive", "TimeZoneSidKey", "UserRoleId", "ReceivesInfoEmails", "UserType", "FullPhotoUrl", "MediumPhotoUrl" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET2" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "ProductCode", "Description", "QuantityScheduleType", "QuantityInstallmentPeriod", "NumberOfQuantityInstallments", "RevenueScheduleType", "RevenueInstallmentPeriod", "NumberOfRevenueInstallments", "IsActive", "CreatedDate", "LastModifiedDate", "Family", "RecordTypeId", "ExternalDataSourceId", "ExternalId", "DisplayUrl", "QuantityUnitOfMeasure", "StockKeepingUnit" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Product2",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Product2"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET3" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "IsDeleted", "AccountId", "RecordTypeId", "Name", "Description", "StageName", "Amount", "Probability", "CloseDate", "Type", "NextStep", "LeadSource", "IsClosed", "IsWon", "ForecastCategory", "ForecastCategoryName", "CampaignId", "HasOpportunityLineItem", "Pricebook2Id", "OwnerId", "CreatedDate", "LastModifiedDate", "LastActivityDate", "FiscalQuarter", "FiscalYear", "Fiscal", "ContactId", "SyncedQuoteId", "HasOpenActivity", "HasOverdueTask" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Opportunity",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Opportunity"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET6" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "BillingState", "ShippingState", "vlocity_cmt__Status__c", "Id", "MasterRecordId", "Name", "Type", "RecordTypeId", "ParentId", "BillingStreet", "BillingCity", "BillingPostalCode", "BillingCountry", "ShippingStreet", "ShippingCity", "ShippingPostalCode", "ShippingCountry", "Phone", "PhotoUrl", "Industry", "AnnualRevenue", "NumberOfEmployees", "Description", "OwnerId", "CreatedDate", "LastModifiedDate", "LastActivityDate", "LastViewedDate", "Jigsaw", "JigsawCompanyId", "AccountSource", "vlocity_cmt__BillCycle__c", "vlocity_cmt__BillFrequency__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET10" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "ParentRoleId", "ForecastUserId", "DeveloperName", "PortalAccountId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UserRole",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UserRole"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FLATTEN0" : {
+      "action" : "flatten",
+      "sources" : [ "LOAD_DATASET10" ],
+      "parameters" : {
+        "selfField" : "Id",
+        "parentField" : "ParentRoleId",
+        "multiField" : {
+          "name" : "Id_flatten_multiField",
+          "label" : "Roles",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "Id_flatten",
+          "label" : "RolePath",
+          "isSystemField" : false
+        },
+        "includeSelfId" : false
+      }
+    },
+    "FLATTEN1" : {
+      "action" : "flatten",
+      "sources" : [ "JOIN35" ],
+      "parameters" : {
+        "selfField" : "DeveloperName",
+        "parentField" : "ParentRole.DeveloperName",
+        "multiField" : {
+          "name" : "DeveloperName_flatten_multiField",
+          "label" : "RoleNames",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "DeveloperName_flatten",
+          "label" : "RoleNamesPath",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    },
+    "FLATTEN2" : {
+      "action" : "flatten",
+      "sources" : [ "FLATTEN1" ],
+      "parameters" : {
+        "selfField" : "DeveloperName",
+        "parentField" : "ParentRole.DeveloperName",
+        "multiField" : {
+          "name" : "DeveloperName_flatten1_multiField",
+          "label" : "Hierarchy_RoleNames",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "DeveloperName_flatten1",
+          "label" : "Hierarchy_RoleNamesPath",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    },
+    "FORMULA0" : {
+      "action" : "computeRelative",
+      "sources" : [ "FILTER43" ],
+      "parameters" : {
+        "partitionBy" : [ "Name" ],
+        "orderBy" : [ {
+          "fieldName" : "Id",
+          "direction" : "ASC"
+        } ],
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Id_formula",
+          "label" : "isDuplicate",
+          "formulaExpression" : "lead(Id)",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA1" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Id_formula1",
+          "label" : "UniqueUserName",
+          "formulaExpression" : "case \n\twhen Id_formula is null\n\tthen Name\n\telse\n\tconcat(Name,' (',Username,')')\nend",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "JOIN2" : {
+      "action" : "join",
+      "sources" : [ "FORMULA1", "FLATTEN2" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Role.Id", "Role.DeveloperName_flatten1" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UserRoleId" ],
+        "rightQualifier" : "Role",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER0" : {
+      "action" : "filter",
+      "sources" : [ "JOIN2" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "FILTER9" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Opportunity",
+          "name" : "Opportunity1",
+          "folderName" : "Sales_KPI_Demo",
+          "rowLevelSharingSource" : "Opportunity"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET13" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "OpportunityId", "SortOrder", "PricebookEntryId", "Product2Id", "ProductCode", "Name", "Quantity", "TotalPrice", "UnitPrice", "ListPrice", "ServiceDate", "HasQuantitySchedule", "Description", "HasSchedule", "CreatedDate", "LastModifiedDate" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "OpportunityLineItem",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "OpportunityLineItem"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN5" : {
+      "action" : "join",
+      "sources" : [ "JOIN10", "FILTER0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Owner.CompanyName", "Owner.Division", "Owner.Department", "Owner.Title", "Owner.Street", "Owner.City", "Owner.State", "Owner.PostalCode", "Owner.Country", "Owner.Phone", "Owner.MobilePhone", "Owner.Alias", "Owner.CommunityNickname", "Owner.IsActive", "Owner.TimeZoneSidKey", "Owner.ReceivesInfoEmails", "Owner.UserType" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "OwnerId" ],
+        "rightQualifier" : "Owner",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER4" : {
+      "action" : "filter",
+      "sources" : [ "JOIN5" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "JOIN6" : {
+      "action" : "join",
+      "sources" : [ "JOIN11", "FILTER4" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Opportunity.Id", "Opportunity.Description" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "OpportunityId" ],
+        "rightQualifier" : "Opportunity",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "OUTPUT3" : {
+      "action" : "save",
+      "sources" : [ "JOIN6" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Oppty Products",
+          "name" : "OpportunityProduct1",
+          "folderName" : "Sales_KPI_Demo"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "FILTER6" : {
+      "action" : "filter",
+      "sources" : [ "JOIN2" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "JOIN8" : {
+      "action" : "join",
+      "sources" : [ "JOIN27", "FILTER6" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Owner.Id", "Owner.CompanyName", "Owner.Division", "Owner.Department", "Owner.Title", "Owner.Street", "Owner.City", "Owner.State", "Owner.PostalCode", "Owner.Country", "Owner.Phone", "Owner.MobilePhone", "Owner.Alias", "Owner.CommunityNickname", "Owner.IsActive", "Owner.TimeZoneSidKey", "Owner.ReceivesInfoEmails", "Owner.UserType" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "OwnerId" ],
+        "rightQualifier" : "Owner",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET14" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "MasterLabel", "ApiName", "IsActive", "SortOrder", "IsClosed", "IsWon", "ForecastCategory", "ForecastCategoryName", "DefaultProbability", "Description", "CreatedDate" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "OpportunityStage",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "OpportunityStage"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN9" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET3", "LOAD_DATASET14" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "OpportunityStage.Id", "OpportunityStage.MasterLabel", "OpportunityStage.ApiName", "OpportunityStage.IsActive", "OpportunityStage.ForecastCategory", "OpportunityStage.ForecastCategoryName", "OpportunityStage.Description", "OpportunityStage.CreatedDate" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "StageName" ],
+        "rightQualifier" : "OpportunityStage",
+        "rightKeys" : [ "MasterLabel" ]
+      }
+    },
+    "FILTER7" : {
+      "action" : "filter",
+      "sources" : [ "JOIN8" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "JOIN10" : {
+      "action" : "join",
+      "sources" : [ "JOIN9", "FILTER7" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Account.Id" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "AccountId" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER9" : {
+      "action" : "filter",
+      "sources" : [ "JOIN5" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "FILTER10" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET2" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "JOIN11" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET13", "FILTER10" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Product.Id", "Product.ProductCode", "Product.Description", "Product.QuantityScheduleType", "Product.QuantityInstallmentPeriod", "Product.NumberOfQuantityInstallments", "Product.RevenueScheduleType", "Product.RevenueInstallmentPeriod", "Product.NumberOfRevenueInstallments", "Product.IsActive", "Product.CreatedDate", "Product.LastModifiedDate", "Product.RecordTypeId", "Product.ExternalDataSourceId", "Product.ExternalId", "Product.DisplayUrl", "Product.QuantityUnitOfMeasure", "Product.StockKeepingUnit" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "Product2Id" ],
+        "rightQualifier" : "Product",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER13" : {
+      "action" : "filter",
+      "sources" : [ "JOIN8" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "FILTER14" : {
+      "action" : "filter",
+      "sources" : [ "JOIN5" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "JOIN14" : {
+      "action" : "join",
+      "sources" : [ "FILTER13", "FILTER14" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Opportunity.IsDeleted", "Opportunity.AccountId", "Opportunity.RecordTypeId", "Opportunity.Description", "Opportunity.StageName", "Opportunity.Amount", "Opportunity.Probability", "Opportunity.CloseDate", "Opportunity.Type", "Opportunity.NextStep", "Opportunity.LeadSource", "Opportunity.IsClosed", "Opportunity.IsWon", "Opportunity.ForecastCategory", "Opportunity.ForecastCategoryName", "Opportunity.CampaignId", "Opportunity.HasOpportunityLineItem", "Opportunity.Pricebook2Id", "Opportunity.OwnerId", "Opportunity.CreatedDate", "Opportunity.LastModifiedDate", "Opportunity.LastActivityDate", "Opportunity.FiscalQuarter", "Opportunity.FiscalYear", "Opportunity.Fiscal", "Opportunity.ContactId", "Opportunity.SyncedQuoteId", "Opportunity.HasOpenActivity", "Opportunity.HasOverdueTask", "Opportunity.OpportunityStage.SortOrder", "Opportunity.OpportunityStage.IsClosed", "Opportunity.OpportunityStage.IsWon", "Opportunity.OpportunityStage.DefaultProbability", "Opportunity.Account.MasterRecordId", "Opportunity.Account.Name", "Opportunity.Account.Type", "Opportunity.Account.RecordTypeId", "Opportunity.Account.ParentId", "Opportunity.Account.BillingCity", "Opportunity.Account.BillingState", "Opportunity.Account.BillingPostalCode", "Opportunity.Account.BillingCountry", "Opportunity.Account.ShippingCity", "Opportunity.Account.ShippingState", "Opportunity.Account.ShippingPostalCode", "Opportunity.Account.ShippingCountry", "Opportunity.Account.Phone", "Opportunity.Account.PhotoUrl", "Opportunity.Account.Industry", "Opportunity.Account.AnnualRevenue", "Opportunity.Account.Description", "Opportunity.Account.OwnerId", "Opportunity.Account.CreatedDate", "Opportunity.Account.LastModifiedDate", "Opportunity.Account.LastActivityDate", "Opportunity.Account.LastViewedDate", "Opportunity.Account.AccountSource", "Opportunity.Account.Owner.Username", "Opportunity.Account.Owner.LastName", "Opportunity.Account.Owner.FirstName", "Opportunity.Account.Owner.Name", "Opportunity.Account.Owner.Email", "Opportunity.Account.Owner.UserRoleId", "Opportunity.Account.Owner.FullPhotoUrl", "Opportunity.Account.Owner.MediumPhotoUrl", "Opportunity.Account.Owner.Id_formula1", "Opportunity.Account.Owner.Role.Name", "Opportunity.Account.Owner.Role.ParentRoleId", "Opportunity.Account.Owner.Role.DeveloperName", "Opportunity.Account.Owner.Role.Id_flatten", "Opportunity.Account.Owner.Role.Id_flatten_multiField", "Opportunity.Account.Owner.Role.ParentRole.Name", "Opportunity.Account.Owner.Role.ParentRole.ParentRoleId", "Opportunity.Account.Owner.Role.ParentRole.DeveloperName", "Opportunity.Account.Owner.Role.DeveloperName_flatten", "Opportunity.Account.Owner.Role.DeveloperName_flatten_multiField", "Opportunity.Account.Owner.Role.DeveloperName_flatten1_multiField", "Opportunity.Owner.Id", "Opportunity.Owner.Username", "Opportunity.Owner.LastName", "Opportunity.Owner.FirstName", "Opportunity.Owner.Email", "Opportunity.Owner.UserRoleId", "Opportunity.Owner.FullPhotoUrl", "Opportunity.Owner.MediumPhotoUrl", "Opportunity.Owner.Id_formula1", "Opportunity.Owner.Role.Name", "Opportunity.Owner.Role.ParentRoleId", "Opportunity.Owner.Role.DeveloperName", "Opportunity.Owner.Role.Id_flatten", "Opportunity.Owner.Role.Id_flatten_multiField", "Opportunity.Owner.Role.ParentRole.Name", "Opportunity.Owner.Role.ParentRole.ParentRoleId", "Opportunity.Owner.Role.ParentRole.DeveloperName", "Opportunity.Owner.Role.DeveloperName_flatten", "Opportunity.Owner.Role.DeveloperName_flatten_multiField", "Opportunity.Owner.Role.DeveloperName_flatten1_multiField" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "MULTI_VALUE_LOOKUP",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "Opportunity",
+        "rightKeys" : [ "AccountId" ]
+      }
+    },
+    "FORMULA3" : {
+      "action" : "formula",
+      "sources" : [ "JOIN14" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Id_formula",
+          "label" : "hasOpportunity",
+          "formulaExpression" : "case \n\twhen 'Name' is not null \n\tthen 'true'\n\telse 'false'\nend",
+          "precision" : 255,
+          "defaultValue" : "false"
+        } ]
+      }
+    },
+    "DROP_FIELDS0" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA3" ],
+      "parameters" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Opportunity.Name", "Opportunity.Owner.Name" ]
+        }
+      }
+    },
+    "OUTPUT9" : {
+      "action" : "save",
+      "sources" : [ "DROP_FIELDS0" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Account",
+          "name" : "Account1",
+          "folderName" : "Sales_KPI_Demo"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "FILTER19" : {
+      "action" : "filter",
+      "sources" : [ "JOIN2" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "OUTPUT12" : {
+      "action" : "save",
+      "sources" : [ "FILTER19" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "User",
+          "name" : "User1",
+          "folderName" : "Sales_KPI_Demo"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET20" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "DeveloperName", "SobjectType", "IsActive" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "RecordType",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "RecordType"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN27" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET6", "LOAD_DATASET20" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "RecordType.Id", "RecordType.DeveloperName", "RecordType.SobjectType", "RecordType.IsActive" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "RecordTypeId" ],
+        "rightQualifier" : "RecordType",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER42" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET10" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Id",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "JOIN35" : {
+      "action" : "join",
+      "sources" : [ "FLATTEN0", "FILTER42" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "ParentRoleId" ],
+        "rightQualifier" : "ParentRole",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER43" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET1" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "IsActive",
+          "operator" : "EQUAL",
+          "operands" : [ "true" ]
+        } ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET1" : {
+        "label" : "User",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET2" : {
+        "label" : "Product2",
+        "type" : "LOAD_DATASET",
+        "top" : 672,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET3" : {
+        "label" : "Opportunity",
+        "type" : "LOAD_DATASET",
+        "top" : 952,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET6" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 812,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET10" : {
+        "label" : "UserRole",
+        "type" : "LOAD_DATASET",
+        "top" : 532,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "TRANSFORM0" : {
+        "label" : "Flatten_UserRole",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 252,
+        "left" : 392,
+        "graph" : {
+          "FLATTEN0" : null
+        },
+        "connectors" : [ ]
+      },
+      "TRANSFORM1" : {
+        "label" : "Flatten_ParentName_and_Hierarchy_Grouping",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 392,
+        "left" : 532,
+        "graph" : {
+          "FLATTEN1" : null,
+          "FLATTEN2" : null
+        },
+        "connectors" : [ {
+          "source" : "FLATTEN1",
+          "target" : "FLATTEN2"
+        } ]
+      },
+      "TRANSFORM2" : {
+        "label" : "Compute_UniqueUserName",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 392,
+        "graph" : {
+          "FORMULA0" : null,
+          "FORMULA1" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            }
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA0",
+          "target" : "FORMULA1"
+        } ]
+      },
+      "JOIN2" : {
+        "label" : "Augment_Roles_onto_User",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 252,
+        "left" : 672
+      },
+      "FILTER0" : {
+        "label" : "User",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 532,
+        "left" : 952
+      },
+      "OUTPUT0" : {
+        "label" : "Save Opportunity",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 952,
+        "left" : 1932
+      },
+      "LOAD_DATASET13" : {
+        "label" : "OpportunityLineItem",
+        "type" : "LOAD_DATASET",
+        "top" : 1232,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN5" : {
+        "label" : "Augment_Owner_onto_Opportunity",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 952,
+        "left" : 672
+      },
+      "FILTER4" : {
+        "label" : "Opportunity",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 952,
+        "left" : 952
+      },
+      "JOIN6" : {
+        "label" : "Augment_Opportunity_onto_OppLineItem",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1232,
+        "left" : 1232
+      },
+      "OUTPUT3" : {
+        "label" : "Save Oppty Products",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 1232,
+        "left" : 1932
+      },
+      "FILTER6" : {
+        "label" : "User",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 392,
+        "left" : 672
+      },
+      "JOIN8" : {
+        "label" : "Augment_Owner_onto_Account",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 532,
+        "left" : 672
+      },
+      "LOAD_DATASET14" : {
+        "label" : "OpportunityStage",
+        "type" : "LOAD_DATASET",
+        "top" : 1092,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN9" : {
+        "label" : "Augment_OppStage_onto_Opportunity",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 952,
+        "left" : 532
+      },
+      "FILTER7" : {
+        "label" : "Account",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 812,
+        "left" : 952
+      },
+      "JOIN10" : {
+        "label" : "Augment_Account_onto_Opportunity",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 952,
+        "left" : 1232
+      },
+      "FILTER9" : {
+        "label" : "Opportunity",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 952,
+        "left" : 1092
+      },
+      "FILTER10" : {
+        "label" : "Product",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 672,
+        "left" : 391.9
+      },
+      "JOIN11" : {
+        "label" : "Augment_Product_onto_OppLineItem",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1232,
+        "left" : 952
+      },
+      "FILTER13" : {
+        "label" : "Account",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 812,
+        "left" : 1092
+      },
+      "FILTER14" : {
+        "label" : "Opportunity",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 952,
+        "left" : 812
+      },
+      "JOIN14" : {
+        "label" : "Augment_Opportunity_onto_Account",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 1512
+      },
+      "TRANSFORM4" : {
+        "label" : "Compute hasOpportunity",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 812,
+        "left" : 1652,
+        "graph" : {
+          "FORMULA3" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            }
+          },
+          "DROP_FIELDS0" : null
+        },
+        "connectors" : [ {
+          "source" : "FORMULA3",
+          "target" : "DROP_FIELDS0"
+        } ]
+      },
+      "OUTPUT9" : {
+        "label" : "Save Account",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 812,
+        "left" : 1932
+      },
+      "FILTER19" : {
+        "label" : "User",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 392,
+        "left" : 952
+      },
+      "OUTPUT12" : {
+        "label" : "Save User",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 392,
+        "left" : 1931.1
+      },
+      "LOAD_DATASET20" : {
+        "label" : "RecordType",
+        "type" : "LOAD_DATASET",
+        "top" : 812,
+        "left" : 252,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN27" : {
+        "label" : "Augment_RecordType_onto_Account",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 532
+      },
+      "FILTER42" : {
+        "label" : "UserRole",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 392,
+        "left" : 252
+      },
+      "JOIN35" : {
+        "label" : "Augment_ParentName_onto_UserRole",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 392
+      },
+      "FILTER43" : {
+        "label" : "Active Users Only",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 252,
+        "left" : 252
+      }
+    },
+    "connectors" : [ {
+      "source" : "TRANSFORM0",
+      "target" : "JOIN35"
+    }, {
+      "source" : "LOAD_DATASET10",
+      "target" : "TRANSFORM0"
+    }, {
+      "source" : "JOIN35",
+      "target" : "TRANSFORM1"
+    }, {
+      "source" : "FILTER43",
+      "target" : "TRANSFORM2"
+    }, {
+      "source" : "TRANSFORM2",
+      "target" : "JOIN2"
+    }, {
+      "source" : "TRANSFORM1",
+      "target" : "JOIN2"
+    }, {
+      "source" : "JOIN2",
+      "target" : "FILTER0"
+    }, {
+      "source" : "JOIN10",
+      "target" : "JOIN5"
+    }, {
+      "source" : "FILTER0",
+      "target" : "JOIN5"
+    }, {
+      "source" : "JOIN5",
+      "target" : "FILTER4"
+    }, {
+      "source" : "JOIN11",
+      "target" : "JOIN6"
+    }, {
+      "source" : "FILTER4",
+      "target" : "JOIN6"
+    }, {
+      "source" : "JOIN6",
+      "target" : "OUTPUT3"
+    }, {
+      "source" : "JOIN2",
+      "target" : "FILTER6"
+    }, {
+      "source" : "JOIN27",
+      "target" : "JOIN8"
+    }, {
+      "source" : "FILTER6",
+      "target" : "JOIN8"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "JOIN9"
+    }, {
+      "source" : "LOAD_DATASET14",
+      "target" : "JOIN9"
+    }, {
+      "source" : "JOIN8",
+      "target" : "FILTER7"
+    }, {
+      "source" : "JOIN9",
+      "target" : "JOIN10"
+    }, {
+      "source" : "FILTER7",
+      "target" : "JOIN10"
+    }, {
+      "source" : "JOIN5",
+      "target" : "FILTER9"
+    }, {
+      "source" : "LOAD_DATASET13",
+      "target" : "JOIN11"
+    }, {
+      "source" : "FILTER10",
+      "target" : "JOIN11"
+    }, {
+      "source" : "JOIN8",
+      "target" : "FILTER13"
+    }, {
+      "source" : "JOIN5",
+      "target" : "FILTER14"
+    }, {
+      "source" : "FILTER13",
+      "target" : "JOIN14"
+    }, {
+      "source" : "FILTER14",
+      "target" : "JOIN14"
+    }, {
+      "source" : "JOIN14",
+      "target" : "TRANSFORM4"
+    }, {
+      "source" : "TRANSFORM4",
+      "target" : "OUTPUT9"
+    }, {
+      "source" : "JOIN2",
+      "target" : "FILTER19"
+    }, {
+      "source" : "FILTER19",
+      "target" : "OUTPUT12"
+    }, {
+      "source" : "LOAD_DATASET6",
+      "target" : "JOIN27"
+    }, {
+      "source" : "LOAD_DATASET20",
+      "target" : "JOIN27"
+    }, {
+      "source" : "LOAD_DATASET10",
+      "target" : "FILTER42"
+    }, {
+      "source" : "FILTER42",
+      "target" : "JOIN35"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "FILTER43"
+    }, {
+      "source" : "LOAD_DATASET2",
+      "target" : "FILTER10"
+    }, {
+      "source" : "FILTER9",
+      "target" : "OUTPUT0"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

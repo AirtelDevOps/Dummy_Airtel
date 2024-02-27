@@ -1,0 +1,33 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": 0,
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "CurrencyIsoCode": "INR",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Secure DSL Activation",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "38b9b3a9-9f74-4d2c-6a3a-7a311ec6d679",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "38b9b3a9-9f74-4d2c-6a3a-7a311ec6d679",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/38b9b3a9-9f74-4d2c-6a3a-7a311ec6d679",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "S1-NZZMUB",
+        "UnitPrice": 0,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/38b9b3a9-9f74-4d2c-6a3a-7a311ec6d679"
+    }
+]

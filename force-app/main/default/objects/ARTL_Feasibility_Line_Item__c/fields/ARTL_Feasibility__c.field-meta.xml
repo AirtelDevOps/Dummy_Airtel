@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Feasibility__c</fullName>
+    <externalId>false</externalId>
+    <label>Feasibility</label>
+    <referenceTo>ARTL_Feasibility__c</referenceTo>
+    <relationshipLabel>Feasibility Line Items</relationshipLabel>
+    <relationshipName>Feasibility_Line_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

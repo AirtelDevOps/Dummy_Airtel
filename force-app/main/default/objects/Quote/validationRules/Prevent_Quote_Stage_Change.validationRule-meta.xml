@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Quote_Stage_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISPICKVAL(vlocity_cmt__ValidationStatus__c, &apos;Passed&apos;)),
+    OR(
+        ISPICKVAL(PRIORVALUE(Status), &apos;Proposal Sent&apos;),
+        AND(
+            ISPICKVAL(PRIORVALUE(Status), &apos;Proposal Accepted&apos;),
+            NOT(ISPICKVAL(vlocity_cmt__ValidationStatus__c, &apos;Passed&apos;))
+        )
+    ),
+    NOT(AND(
+        ISPICKVAL(Status, &apos;Proposal Sent&apos;),
+        NOT(ISPICKVAL(vlocity_cmt__ValidationStatus__c, &apos;Passed&apos;))
+    )),
+    NOT(AND(
+        NOT(ISPICKVAL(vlocity_cmt__ValidationStatus__c, &apos;Passed&apos;)),
+        ISPICKVAL(PRIORVALUE(Status), &apos;Proposal Sent&apos;),
+        ISPICKVAL(Status, &apos;Proposal Accepted&apos;)
+    ))
+)</errorConditionFormula>
+    <errorMessage>You cannot change the status until the validation status is pass</errorMessage>
+</ValidationRule>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Reason_for_Change__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Change</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rate Renewal Complete-Invoice Reversal</fullName>
+                <default>false</default>
+                <label>Rate Renewal Complete-Invoice Reversal</label>
+            </value>
+            <value>
+                <fullName>Charge closure</fullName>
+                <default>false</default>
+                <label>Charge closure</label>
+            </value>
+            <value>
+                <fullName>Rebilling - Additional Billing</fullName>
+                <default>false</default>
+                <label>Rebilling - Additional Billing</label>
+            </value>
+            <value>
+                <fullName>Rebilling-As per customer request - Billing Type change</fullName>
+                <default>false</default>
+                <label>Rebilling-As per customer request - Billing Type change</label>
+            </value>
+            <value>
+                <fullName>Rebilling - Entity change</fullName>
+                <default>false</default>
+                <label>Rebilling - Entity change</label>
+            </value>
+            <value>
+                <fullName>Rebilling - HSN / SAC code updation</fullName>
+                <default>false</default>
+                <label>Rebilling - HSN / SAC code updation</label>
+            </value>
+            <value>
+                <fullName>Rebilling-As per customer request - Billing Frequency change</fullName>
+                <default>false</default>
+                <label>Rebilling-As per customer request - Billing Frequency change</label>
+            </value>
+            <value>
+                <fullName>Rebilling-GST State Correction</fullName>
+                <default>false</default>
+                <label>Rebilling-GST State Correction</label>
+            </value>
+            <value>
+                <fullName>Rebilling-As per customer request - Account name change</fullName>
+                <default>false</default>
+                <label>Rebilling-As per customer request - Account name change</label>
+            </value>
+            <value>
+                <fullName>Rebilling-Billing address / Invoice address updation</fullName>
+                <default>false</default>
+                <label>Rebilling-Billing address / Invoice address updation</label>
+            </value>
+            <value>
+                <fullName>Rebilling - Tax Change</fullName>
+                <default>false</default>
+                <label>Rebilling - Tax Change</label>
+            </value>
+            <value>
+                <fullName>Backdated customer request for State / PO / Account / LSI -level consolidation</fullName>
+                <default>false</default>
+                <label>Backdated customer request for State / PO / Account / LSI -level consolidation</label>
+            </value>
+            <value>
+                <fullName>Rebilling-As per customer request - Contact details change</fullName>
+                <default>false</default>
+                <label>Rebilling-As per customer request - Contact details change</label>
+            </value>
+            <value>
+                <fullName>Backdated consolidation to separate RC &amp; OTC billing</fullName>
+                <default>false</default>
+                <label>Backdated consolidation to separate RC &amp; OTC billing</label>
+            </value>
+            <value>
+                <fullName>Rebilling-PO No updation</fullName>
+                <default>false</default>
+                <label>Rebilling-PO No updation</label>
+            </value>
+            <value>
+                <fullName>Rate Renewal Complete-Differential CN</fullName>
+                <default>false</default>
+                <label>Rate Renewal Complete-Differential CN</label>
+            </value>
+            <value>
+                <fullName>Backdated consolidation post completion of reconciliation</fullName>
+                <default>false</default>
+                <label>Backdated consolidation post completion of reconciliation</label>
+            </value>
+            <value>
+                <fullName>Backdated consolidation - for compliance with the SLA terms as per RFP</fullName>
+                <default>false</default>
+                <label>Backdated consolidation - for compliance with the SLA terms as per RFP</label>
+            </value>
+            <value>
+                <fullName>Backdated consolidation required as multiple invoices generated due to change orders</fullName>
+                <default>false</default>
+                <label>Backdated consolidation required as multiple invoices generated due to change orders</label>
+            </value>
+            <value>
+                <fullName>AMC Order</fullName>
+                <default>false</default>
+                <label>AMC Order</label>
+            </value>
+            <value>
+                <fullName>Rebilling-GSTN Correction</fullName>
+                <default>false</default>
+                <label>Rebilling-GSTN Correction</label>
+            </value>
+            <value>
+                <fullName>Rebilling-Backdated Order Entry Correction</fullName>
+                <default>false</default>
+                <label>Rebilling-Backdated Order Entry Correction</label>
+            </value>
+            <value>
+                <fullName>Backdated consolidation - multiple invoices generated</fullName>
+                <default>false</default>
+                <label>Backdated consolidation - multiple invoices generated</label>
+            </value>
+            <value>
+                <fullName>Backdated request for State/PO/Acc/LSI level consolidation</fullName>
+                <default>false</default>
+                <label>Backdated request for State/PO/Acc/LSI level consolidation</label>
+            </value>
+            <value>
+                <fullName>Backdated consolidation for compliance with SLA terms</fullName>
+                <default>false</default>
+                <label>Backdated consolidation for compliance with SLA terms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

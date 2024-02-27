@@ -1,0 +1,54 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RemoteActionForIterationUpdation",
+    "OmniProcessId": {
+        "Name": "ARTL_EventHandlerWrapperVIP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EventHandlerWrapperVIP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "DRReturnResponse": "%ARTL_UpdateLineItems:ReturnResponse%",
+            "DR_LineItemUpdation": "%ARTL_UpdateLineItems:DR_LineItemUpdation%",
+            "DR_Response": "=IF(%ARTL_UpdateLineItems:ReturnResponse% == \"fail\" , LIST(%ARTL_UpdateLineItems:DR_LineItemUpdation%) , null)",
+            "ESMReturnResponse": "%ESMCloneSalesQToWCWithDiscount:ReturnResponse%",
+            "ESM_Response": "=IF(%ESMCloneSalesQToWCWithDiscount:ReturnResponse% == \"fail\" , %ESMCloneSalesQToWCWithDiscount:EsmCloneResponse% , null)",
+            "EsmCloneResponse": "%ESMCloneSalesQToWCWithDiscount:EsmCloneResponse%",
+            "bulkIterationLogList": "=%bulkIterationLogList%",
+            "iterationId": "=%iterationId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%ARTL_UpdateLineItems:ReturnResponse% == \"fail\" || %ESMCloneSalesQToWCWithDiscount:ReturnResponse% == \"fail\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction7",
+        "remoteClass": "ARTL_BulkCartPlatformEvtTriggerHandler",
+        "remoteMethod": "errorLogCheck",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EventHandlerWrapperVIP/Procedure/RemoteActionForIterationUpdation"
+}

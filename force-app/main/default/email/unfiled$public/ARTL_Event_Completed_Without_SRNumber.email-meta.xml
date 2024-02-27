@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Airtel_Letterhead</letterhead>
+    <name>ARTL Event Completed Without SRNumber</name>
+    <style>freeForm</style>
+    <subject>Feedback Mail on Event Completed</subject>
+    <textOnly>Dear Customer,
+
+Thank you for your time. Please find the details of your Meeting with your Service Manager $OwnerFirstName$ $OwnerLastName$ below:
+
+$MeetingNotes$
+
+We request you to share the feedback regarding the interactions Click here.
+
+Sincerely,
+
+Team Airtel Business</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

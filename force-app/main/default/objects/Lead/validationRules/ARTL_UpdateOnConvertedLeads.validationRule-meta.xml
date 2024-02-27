@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_UpdateOnConvertedLeads</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    AND
+       (
+        NOT($Profile.Name = &quot;System Administrator&quot;),
+        NOT(ISNEW()),NOT(ISCHANGED(Status)),
+        ISPICKVAL(Status,&quot;Closed Lost&quot;),
+            OR(
+                AND(
+                    ISPICKVAL( ARTL_Closed_Lost_Or_Dropped__c ,&quot;Better Solution of Competition&quot;)
+                ),
+                AND(
+                    ISPICKVAL( ARTL_Closed_Lost_Or_Dropped__c ,&quot;Solution not Feasible&quot;)
+                ),
+               AND(
+                      ISPICKVAL( ARTL_Closed_Lost_Or_Dropped__c ,&quot;Better Pricing of Competitor&quot;),
+                      NOT(ISNULL(PRIORVALUE(ARTL_Competitor_Pricing__c))), 
+                      NOT(ISNULL(PRIORVALUE(ARTL_Order_Lost_to_Whom__c)))
+                   )
+                   ,
+                AND(
+                      ISPICKVAL(ARTL_Closed_Lost_Or_Dropped__c ,&quot;Others&quot;),
+                      NOT(ISNULL(PRIORVALUE( Lost_Reason_Other__c )))  
+                )   
+            )       
+        )
+               ,
+    AND(
+        NOT($Profile.Name = &quot;System Administrator&quot;),
+        NOT(ISNEW()),
+            OR(
+                    ISPICKVAL(Status,&quot;Closed Dropped&quot;),
+                    ISPICKVAL(Status,&quot;Converted&quot;)
+            ),
+            NOT(ISCHANGED(Status))
+       )
+)</errorConditionFormula>
+    <errorMessage>You don&apos;t have permissions to update the record after the Lead is Converted/Closed Dropped/Closed Lost</errorMessage>
+</ValidationRule>

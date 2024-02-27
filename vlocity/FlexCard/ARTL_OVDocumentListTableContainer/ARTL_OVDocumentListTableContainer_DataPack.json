@@ -1,0 +1,46 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "ARTL_OVDocumentListTable/BhartiAirtelLimited/3.0",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 13,
+                    "name": "recordId",
+                    "val": "0Q0720000004vPVCAY"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "quoteId": "{recordId}"
+                },
+                "ipMethod": "ARTL_getRelatedDocuments",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "[\"Docs\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_OVDocumentListTableContainer",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_OVDocumentListTableContainer/BhartiAirtelLimited/16.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_OVDocumentListTableContainer.json",
+    "SampleDataSourceResponse": "{\"Docs\":[{\"Document_Name__c\":\"PO\",\"Category__c\":\"email\",\"Name\":\"a7L7200000MoyWN\",\"Id\":\"a7L7200000MoyWNEAZ\"},{\"Document_Name__c\":\"AutSigDoc\",\"Category__c\":\"email\",\"Name\":\"a7L7200000Mp0Km\",\"Id\":\"a7L7200000Mp0KmEAJ\"},{\"Document_Name__c\":\"TnC\",\"Category__c\":\"order\",\"Name\":\"a7L7200000Mp1KD\",\"Id\":\"a7L7200000Mp1KDEAZ\"},{\"Document_Name__c\":\"TnC\",\"Category__c\":\"email\",\"Name\":\"a7L7200000Mp1rt\",\"Id\":\"a7L7200000Mp1rtEAB\"},{\"Document_Name__c\":\"Caf\",\"Category__c\":\"email\",\"Name\":\"a7L7200000Mp2Rp\",\"Id\":\"a7L7200000Mp2RpEAJ\"},{\"Document_Name__c\":\"GST certificate\",\"Category__c\":\"organizationDocument\",\"Name\":\"a7L7200000Mp59s\",\"Id\":\"a7L7200000Mp59sEAB\"},{\"Document_Name__c\":\"PO\",\"Category__c\":\"email\",\"Name\":\"a7L7200000Mp5CM\",\"Id\":\"a7L7200000Mp5CMEAZ\"},{\"Document_Name__c\":\"PO\",\"Category__c\":\"email\",\"Name\":\"a7L7200000MpBOj\",\"Id\":\"a7L7200000MpBOjEAN\"},{\"Document_Name__c\":\"Caf\",\"Category__c\":\"email\",\"Name\":\"a7L7200000MpIES\",\"Id\":\"a7L7200000MpIESEA3\"},{\"Document_Name__c\":\"AutSigDoc\",\"Category__c\":\"email\",\"Name\":\"a7L7200000MpIXn\",\"Id\":\"a7L7200000MpIXnEAN\"},{\"Document_Name__c\":\"PO\",\"Category__c\":\"serviceHandover\",\"Name\":\"a7L7200000MpJ8n\",\"Id\":\"a7L7200000MpJ8nEAF\"},{\"Document_Name__c\":\"Caf\",\"Category__c\":\"serviceHandover\",\"Name\":\"a7L7200000MpJnB\",\"Id\":\"a7L7200000MpJnBEAV\"},{\"Document_Name__c\":\"Caf\",\"Category__c\":\"email\",\"Name\":\"a7L7200000MpKEX\",\"Id\":\"a7L7200000MpKEXEA3\"},{\"Document_Name__c\":\"GST certificate\",\"Category__c\":\"organizationDocument\",\"Name\":\"a7L7200000Mp59s\",\"Id\":\"a7L7200000MrwSgEAJ\"},{\"s3_Document_URL__c\":\"http://s3n5.india.airtel.itm/b2b_data/contact_update_bb2f43b3-c277-447a-a732-b8eca527460d_POI.jpg\",\"Document_Name__c\":\"POI\",\"Category__c\":\"authorizedSignatory\",\"Name\":\"bb2f43b3-c277-447a-a732-b8eca527460d\",\"Id\":\"a7L7200000Ms1c9EAB\"}]}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 16,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_OVDocumentListTableContainer"
+}

@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Hansen Order Status">
+        <div class="slds-box">
+            <div class="slds-m-top_medium">
+                <p class="slds-m-bottom_x-small"><b>SOMOrderId:</b> {somOrderId}</p>
+                <p class="slds-m-bottom_x-small"><b>SOMOrder Status:</b> {somOrderStatus}</p>
+                <lightning-accordion allow-multiple-sections-open onsectiontoggle={handleSectionToggle}>
+                    <lightning-accordion-section name="Previous Status" label="Check previous status">
+                        <template for:each={statusMap} for:item="status">
+                            <div class="demo-only demo-only--sizing slds-grid slds-wrap" key={status.index}
+                                style="padding: 0.7rem;">
+                                <div class="slds-size_1-of-8">
+                                    <lightning-icon icon-name='action:check' alternative-text='check' size='xx-small'
+                                        title='check' style="padding:0.1rem;"></lightning-icon>
+                                </div>
+                                <div class="slds-size_7-of-8">
+                                    <p key={status.index}>{status.value}</p>
+                                </div>
+                            </div>
+                        </template>
+                    </lightning-accordion-section>
+                </lightning-accordion>
+            </div>
+        </div>
+    </lightning-card>
+
+</template>

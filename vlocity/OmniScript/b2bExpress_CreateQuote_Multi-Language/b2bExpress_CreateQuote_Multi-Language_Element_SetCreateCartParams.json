@@ -1,0 +1,85 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetCreateCartParams",
+    "OmniProcessId": {
+        "Name": "B2BBrandNewQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/CreateQuote/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "createCartParams": {
+                "fields": "Id,Name",
+                "inputFields": [
+                    {
+                        "opportunityid": "%OpportunityRecordId%"
+                    },
+                    {
+                        "Name": "%Step1:Block1:Block2:quoteName%"
+                    },
+                    {
+                        "RecordTypeId": "%RecordTypeId%"
+                    },
+                    {
+                        "pricelistName": "%B2BPriceListId%"
+                    },
+                    {
+                        "%vlocity_namespace%__Type__c": "New"
+                    },
+                    {
+                        "Status": "Draft"
+                    },
+                    {
+                        "%vlocity_namespace%__DefaultBillingAccountId__c": "%ContextId%"
+                    },
+                    {
+                        "%vlocity_namespace%__DefaultServiceAccountId__c": "%ContextId%"
+                    },
+                    {
+                        "%vlocity_namespace%__FrameContractId__c": "%Step1:Block1:Block2:CustomerRatecard%"
+                    },
+                    {
+                        "ExpirationDate": "%Step1:Block1:Block2:QuoteExpirationDate%"
+                    },
+                    {
+                        "ARTL_NBA_Account__c": "%Step1:Block1:Block2:NonBillingAggregator%"
+                    }
+                ],
+                "methodName": "createCart",
+                "objectType": "Quote",
+                "subaction": "createQuote"
+            }
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "Demo",
+                        "field": "QuoteTypeValue"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/CreateQuote/Multi-Language/SetCreateCartParams"
+}

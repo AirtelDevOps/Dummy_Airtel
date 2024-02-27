@@ -1,0 +1,42 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ErrorResponseAction",
+    "OmniProcessId": {
+        "Name": "AccountandContactCreationUsingAPI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/AccountandContactCreationUsingAPI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "Account Number": "=%DRCreateAccountandContact:Account_1:AccountNumber%",
+            "IntegrationId": "%Payload:Accounts:Integration Id%",
+            "Message": "Business Account and Contact creation error. %DRCreateAccountandContact:Account_1:UpsertError%",
+            "SFDCId": "",
+            "Status Code": 8001,
+            "Type": "Party"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "(%DRCreateAccountandContact:Account_1:UpsertSuccess% == false || %DRCreateAccountandContact:Contact_2:UpsertSuccess% == false)",
+        "label": "ResponseAction2",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/AccountandContactCreationUsingAPI/Procedure/ErrorResponseAction"
+}

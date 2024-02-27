@@ -1,0 +1,77 @@
+{
+    "BCPData": {
+        "bCity": null,
+        "bCountry": null,
+        "bEmail": null,
+        "bGST": null,
+        "bState": null,
+        "bStdReason": null,
+        "bStreet": null,
+        "bcpId": null,
+        "bfirstname": null,
+        "blastname": null,
+        "bmobile": null,
+        "shipCity": null,
+        "shipPincode": null,
+        "shipState": null,
+        "shipStreet": null
+    },
+    "ContextId": "0Q0720000005X8DCAU",
+    "PODetailsStep": {
+        "BCPCreateFlag": true,
+        "BCPDetails": null,
+        "BCPDetailsEdit": null,
+        "BillingContactPersonBlock": {
+            "BillingContactPerson-Block": null
+        },
+        "BillingDetailsBlock": null,
+        "GSTApplicableForBillingC": null,
+        "GSTApplicableForBillingNC": "Delivery GST",
+        "InvoiceDetails": "Same As BCP Address",
+        "InvoiceEditBlock": null,
+        "InvoiceReadBlock": {
+            "InvoiceCityRead": null,
+            "InvoiceCountryRead": null,
+            "InvoiceGSTRead": null,
+            "InvoicePinCodeRead": null,
+            "InvoiceSRRead": null,
+            "InvoiceStateRead": null,
+            "InvoiceStreetRead": null
+        },
+        "NonBillingAggregator-Block": {
+            "NBADisplayName": "-",
+            "NonBillingAggregator": "-"
+        },
+        "PODetailsBlock": {
+            "CreateNewPO": null,
+            "POAmount": 12500,
+            "POGroup-Block": {
+                "Id": "a7W720000000VmzEAE",
+                "Name": "71-80000446",
+                "POGroup": "71-80000446"
+            },
+            "PONumber": 1232338343345,
+            "POStartDate": "2024-02-01",
+            "POTerms": "4"
+        },
+        "UpdateBillingContactPersonChkbox": false,
+        "UpdateBillingDetailsCheckbox": false,
+        "UpdatePODetailsCheckbox": true
+    },
+    "POGroupId": "",
+    "POId": "",
+    "PoIDtoBillingStage": "a7V720000000HIbEAM",
+    "VANAccountNumberId": "",
+    "updatedItems": [
+        {
+            "BillStagingId": "a7U720000001DG9EAM",
+            "Id": "0QL720000006BX4GAM",
+            "quotelineItemId": "0QL720000006BX4GAM"
+        },
+        {
+            "BillStagingId": "a7U720000001DEXEA2",
+            "Id": "0QL720000006GJqGAM",
+            "quotelineItemId": "0QL720000006GJqGAM"
+        }
+    ]
+}

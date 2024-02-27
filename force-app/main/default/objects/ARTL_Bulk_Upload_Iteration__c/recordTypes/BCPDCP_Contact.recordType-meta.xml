@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCPDCP_Contact</fullName>
+    <active>true</active>
+    <label>BCPDCP Contact</label>
+    <picklistValues>
+        <picklist>Journey_Type__c</picklist>
+        <values>
+            <fullName>Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSI Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shifting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

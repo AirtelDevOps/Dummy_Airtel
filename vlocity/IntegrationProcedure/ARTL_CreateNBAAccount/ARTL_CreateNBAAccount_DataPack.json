@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CreateNBAAccount_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_CreateNBAAccount",
+    "OmniProcessElement": [
+        "ARTL_CreateNBAAccount_Element_ARTLDRLCreateNBAAccount.json",
+        "ARTL_CreateNBAAccount_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_CreateNBAAccount",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CreateNBAAccount_PropertySetConfig.json",
+    "SubType": "CreateNBAAccount",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateNBAAccount/Procedure"
+}

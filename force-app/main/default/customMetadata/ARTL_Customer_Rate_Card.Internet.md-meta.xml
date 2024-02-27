@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Internet</label>
+    <protected>false</protected>
+    <values>
+        <field>ARTL_Attribute_JSON__c</field>
+        <value xsi:type="xsd:string">{&quot;ATT_ACCESS_BANDWIDTH&quot; :&quot;Access Bandwidth&quot; , &quot;ATT_CONTRACT_TERM&quot; : &quot;Contract Term&quot;}</value>
+    </values>
+    <values>
+        <field>ARTL_Product_Code__c</field>
+        <value xsi:type="xsd:string">VEPC_E_IIL</value>
+    </values>
+    <values>
+        <field>ARTL_Product_Name__c</field>
+        <value xsi:type="xsd:string">Internet</value>
+    </values>
+</CustomMetadata>

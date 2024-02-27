@@ -1,0 +1,127 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "InvoiceSR",
+    "OmniProcessId": {
+        "Name": "ARTL/EnrishQuoteBASACreate",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "InvoiceEditBlock",
+        "OmniProcessId": {
+            "Name": "ARTL/EnrishQuoteBASACreate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/InvoiceEditBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "InvoiceEditBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 6,
+        "controllingField": {
+            "element": "InvoiceGSTapplicable",
+            "source": "ContactPremiseRelation__c.ARTL_GST_Applicable__c",
+            "type": "SObject"
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Standard Reason",
+        "optionSource": {
+            "source": "ContactPremiseRelation__c.ARTL_Standard_Reason__c",
+            "type": "SObject"
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "Airtel- Foreign Legal Entity",
+                "value": "Airtel- Foreign Legal Entity"
+            },
+            {
+                "autoAdv": null,
+                "name": "Applied For",
+                "value": "Applied For"
+            },
+            {
+                "autoAdv": null,
+                "name": "Exempt",
+                "value": "Exempt"
+            },
+            {
+                "autoAdv": null,
+                "name": "Exempt Supply- Trust/Entities 12AA",
+                "value": "Exempt Supply- Trust/Entities 12AA"
+            },
+            {
+                "autoAdv": null,
+                "name": "NA",
+                "value": "NA"
+            },
+            {
+                "autoAdv": null,
+                "name": "Non Taxable as transactions within same Company",
+                "value": "Non Taxable as transactions within same Company"
+            },
+            {
+                "autoAdv": null,
+                "name": "Non-SEZ",
+                "value": "Non-SEZ"
+            },
+            {
+                "autoAdv": null,
+                "name": "Others",
+                "value": "Others"
+            },
+            {
+                "autoAdv": null,
+                "name": "SEZ",
+                "value": "SEZ"
+            },
+            {
+                "autoAdv": null,
+                "name": "UIN",
+                "value": "UIN"
+            },
+            {
+                "autoAdv": null,
+                "name": "Zero Rated Supply- Export",
+                "value": "Zero Rated Supply- Export"
+            },
+            {
+                "autoAdv": null,
+                "name": "Zero Rated Supply- SEZ",
+                "value": "Zero Rated Supply- SEZ"
+            },
+            {
+                "autoAdv": null,
+                "name": "SEZ With Taxes",
+                "value": "SEZ With Taxes"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/InvoiceSR"
+}

@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRUpdateStepStatusOnCaseTracking",
+    "OmniProcessId": {
+        "Name": "ARTL_ContactStatusSync",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/ContactStatusSync/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "description": "=IF(%RAFetchSObjectDetails:Error% == false, 'Solace Inbound call Successful', 'Solace Inbound call error %RAFetchSObjectDetails:Exception%')",
+            "recordId": "%DRGetCaseTrackingDetails:Id%",
+            "status": "=IF(%RAFetchSObjectDetails:Error% == false, 'Success','Error')"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DR_UpdateCaseTrackingStepStatus",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%RAFetchSObjectDetails:Error% == false",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/ContactStatusSync/Procedure/DRUpdateStepStatusOnCaseTracking"
+}

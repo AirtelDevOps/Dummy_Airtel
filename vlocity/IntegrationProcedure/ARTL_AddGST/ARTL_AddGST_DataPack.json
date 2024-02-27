@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_AddGST_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "AddGST",
+    "OmniProcessElement": [
+        "ARTL_AddGST_Element_SetValues1.json",
+        "ARTL_AddGST_Element_GetExistingGstDetails.json",
+        "ARTL_AddGST_Element_ResponseIfGstExists.json",
+        "ARTL_AddGST_Element_GetApiDetails.json",
+        "ARTL_AddGST_Element_HTTPAction1.json",
+        "ARTL_AddGST_Element_UpdateGstDetails.json",
+        "ARTL_AddGST_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_AddGST",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_AddGST_PropertySetConfig.json",
+    "SubType": "AddGST",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/AddGST/Procedure"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Quota</label>
+    <protected>false</protected>
+    <values>
+        <field>CSVHeader__c</field>
+        <value xsi:type="xsd:string">{&quot;ForecastName&quot;:&quot;Forecast Name&quot;,&quot;StartDate&quot;:&quot;Start Date&quot;,&quot;QuotaAmount&quot;:&quot;Quota Amount&quot;,&quot;UpsertError&quot;:&quot;Upsert Error&quot;
+}</value>
+    </values>
+    <values>
+        <field>Field_Value__c</field>
+        <value xsi:type="xsd:string">ForecastName:text,StartDate:text,QuotaAmount:text,UpsertError:text,</value>
+    </values>
+    <values>
+        <field>Header_Value__c</field>
+        <value xsi:type="xsd:string">Forecast Name,Start Date,Quota Amount,Upsert Error</value>
+    </values>
+    <values>
+        <field>Template_URL__c</field>
+        <value xsi:type="xsd:string">/resource/ARTL_Quota</value>
+    </values>
+</CustomMetadata>

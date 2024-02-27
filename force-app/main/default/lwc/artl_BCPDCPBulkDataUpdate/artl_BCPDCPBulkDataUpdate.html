@@ -1,0 +1,65 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-09-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <template if:true={isLoading}>
+        <div class="slds-spinner_container slds-is-relative">
+            <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+        </div>
+    </template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_2-of-3">
+            <lightning-input type="file" label="Please upload a UTF-8 encoded, comma separated .csv file" accept=".csv"
+                onchange={handleFileUpload} disabled={isDisabled}>
+            </lightning-input>
+        </div>
+    </div>
+    <br> <br>
+    <template if:true={contactList}>
+        <lightning-datatable
+            data-id="datatable"
+            key-field="ID"
+            data={contactList}
+            columns={columns}
+            show-row-number-column
+            row-number-offset={rowOffset}
+            column-widths-mode = "auto"
+            min-column-width = "80px"
+            hide-checkbox-column
+            >
+        </lightning-datatable>
+
+        <div class="slds-align_absolute-center slds-m-top_small">
+            <lightning-button 
+                label="Previous Page" 
+                icon-name="utility:chevronleft"
+                onclick={previousPageHandler}
+                class="slds-m-right_large"
+                disabled={disablePreviousPage} 
+            ></lightning-button>
+    
+    
+            <p class="slds-text-align_center">
+            Page  
+            <lightning-badge label={currentPage} class="pending-badge slds-m-right_small slds-m-left_x-small"></lightning-badge>
+            of 
+            <lightning-badge label={totalPage} class="pending-badge slds-m-left_x-small"></lightning-badge> </p>
+            
+            <lightning-button 
+                label="Next Page" 
+                icon-name="utility:chevronright" icon-position="right"
+                onclick={nextPageHandler}
+                disabled={disableNextPage}
+                class="slds-m-left_large"
+            ></lightning-button>
+        </div>
+        <br>
+        <div class="slds-p-around_medium slds-align_absolute-center slds-text-align_center">
+            <lightning-button variant="brand" label="Save" onclick={handleSave} disabled={isDisabled}></lightning-button>
+        </div>
+    </template>
+</template>

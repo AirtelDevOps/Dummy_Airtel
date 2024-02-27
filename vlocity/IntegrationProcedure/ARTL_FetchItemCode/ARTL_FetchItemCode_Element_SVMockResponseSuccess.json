@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SVMockResponseSuccess",
+    "OmniProcessId": {
+        "Name": "FetchItemCode",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/FetchItemCode/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "response": {
+                "dataArea": {
+                    "getMetaDataResponse": {
+                        "metaDataDetails": [
+                            {
+                                "itemDetail": {
+                                    "code": "85176290",
+                                    "description": "FG-40F 5 x GE RJ45 ports (including 4 x Internal Ports, 1 x WAN Ports) , Max managed FortiAPs (Total / Tunnel) 10 / 5",
+                                    "ext": {
+                                        "name": "Reporting_Code_Tax",
+                                        "value": "18"
+                                    },
+                                    "name": "B2B009670",
+                                    "type": "HSN"
+                                }
+                            }
+                        ],
+                        "status": {
+                            "statusCode": "getMetaData-0000-S",
+                            "statusDescription": "Request Processed Successfully"
+                        }
+                    }
+                },
+                "ebmHeader": {
+                    "consumerTransactionId": "12345"
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/FetchItemCode/Procedure/SVMockResponseSuccess"
+}

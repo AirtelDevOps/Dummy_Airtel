@@ -1,0 +1,54 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateBSToQLI",
+    "OmniProcessId": {
+        "Name": "ARTL_CreateBillingStageEntries",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntries/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "BillingContactDetailSection": "=PODetailsStep:BCPDetailsEdit",
+            "BillingDetailSection": "=%PODetailsStep:BillingDetailsBlock%",
+            "POObjId": "=IF(ISNOTBLANK(%POExtractDR%) , %POExtractDR:PO_ID% ,%PostPurchaseOrder:ARTL_Purchase_Order__c_2|1:Id% )",
+            "PoDetailStepData": "=%PODetailsStep%",
+            "UpdateBillingContactPersonChkbox": "%PODetailsStep:UpdateBillingContactPersonChkbox%",
+            "selectedQLIS": "=%QuoteLineItemId%",
+            "updateBillingDetailChkbx": "%PODetailsStep:UpdateBillingDetailsCheckbox%"
+        },
+        "additionalOutput": {
+            "": ""
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "ARTL_EnrishQuoteBASACreateHandler",
+        "remoteMethod": "checkBillingStageToUpdate",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntries/Procedure/UpdateBSToQLI"
+}

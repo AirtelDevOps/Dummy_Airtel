@@ -1,0 +1,65 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OrderMilestoneTask",
+    "OmniProcessId": {
+        "Name": "InboundHansenIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundHansenIntegration/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateOrderMilestoneTask",
+        "OmniProcessId": {
+            "Name": "InboundHansenIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundHansenIntegration/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundHansenIntegration/Procedure/CreateOrderMilestoneTask",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateOrderMilestoneTask",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+            "ExecutionLogId": "=%GetPayLoad:Execution_Log__c_1:Id%"
+        },
+        "additionalInput": {
+            "AltKey": "=%SiebelMessage:ListOfCreateTaskDetails:CreateTask:ALTkey%",
+            "B2BOutcome": "=%SiebelMessage:ListOfCreateTaskDetails:CreateTask:TaskStatus%",
+            "OMTaskId": "=%SiebelMessage:ListOfCreateTaskDetails:CreateTask:TaskId%",
+            "OrderId": "=%GetOrderDetails:OrderId%",
+            "PM": "=%SiebelMessage:ListOfCreateTaskDetails:CreateTask:Assignee%",
+            "TaskName": "=%SiebelMessage:ListOfCreateTaskDetails:CreateTask:TaskName%",
+            "TaskType": "=%SiebelMessage:ListOfCreateTaskDetails:CreateTask:TaskType%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DR_LoadMilestoneTask",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundHansenIntegration/Procedure/OrderMilestoneTask"
+}

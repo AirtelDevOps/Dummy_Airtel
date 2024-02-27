@@ -1,0 +1,2237 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Enterprise-Connectivity-Routers_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_ADDITIONAL_ITEM_CODE_1": null,
+        "ATT_ADDITIONAL_ITEM_CODE_2": null,
+        "ATT_ADDITIONAL_ITEM_CODE_3": null,
+        "ATT_ADDITIONAL_ITEM_CODE_4": null,
+        "ATT_ADDITIONAL_ITEM_CODE_5": null,
+        "ATT_ADDITIONAL_ITEM_CODE_6": null,
+        "ATT_ADDITIONAL_ITEM_CODE_7": null,
+        "ATT_HardwareRedundancyRequired_UTM": null,
+        "ATT_ITEM_CODE": null,
+        "ATT_Is_UTM": "No",
+        "ATT_OPERATING_UNIT": null,
+        "ATT_ROUSTER_HOST_NAME": null,
+        "ATT_ROUTER_LEASE_TYPE": null,
+        "ATT_ROUTER_MAKE": "Fortinet",
+        "ATT_ROUTER_MODEL": null,
+        "ATT_ROUTER_OWNERSHIP": null,
+        "ATT_ROUTER_PASSWORD": null,
+        "ATT_ROUTER_SERIAL_NUMBER": null,
+        "ATT_ROUTER_TYPE": null,
+        "ATT_ROUTER_USERNAME": null,
+        "ATT_Sale_Type": null,
+        "ATT_Secondary_CPE_ItemCode_UTM": null,
+        "ATT_Secondary_CPE_Make_UTM": null,
+        "ATT_Secondary_CPE_Model_UTM": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_ENTERPRISE_DETAILS",
+                "Name": "Details",
+                "displaySequence": 300,
+                "id": "a0Z72000000xoooEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abEnAAI",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_OWNERSHIP",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 10,
+                            "filterable": false,
+                            "hasRules": true,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Router Ownership",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "216c2669-83c0-dbaf-0fe2-4cd7e55d15c8",
+                                    "label": "Airtel",
+                                    "name": "216c2669-83c0-dbaf-0fe2-4cd7e55d15c8",
+                                    "readonly": true,
+                                    "value": "Airtel"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "49442970-2226-f804-4d58-e92cc10a2976",
+                                    "label": "Customer",
+                                    "name": "49442970-2226-f804-4d58-e92cc10a2976",
+                                    "readonly": true,
+                                    "value": "Customer"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEmAAI",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_LEASE_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 12,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Router Lease Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "0af3152b-9715-b0d3-807c-07c44bf28bfa",
+                                    "label": "Financial Lease",
+                                    "name": "0af3152b-9715-b0d3-807c-07c44bf28bfa",
+                                    "readonly": false,
+                                    "value": "Financial Lease"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "1818f982-4d2e-5462-0490-2bee93397183",
+                                    "label": "Operation Lease",
+                                    "name": "1818f982-4d2e-5462-0490-2bee93397183",
+                                    "readonly": false,
+                                    "value": "Operation Lease"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEoAAI",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 15,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Router Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "9b9ff81b-69bc-c80e-1d76-b1c1cfdcc146",
+                                    "label": "Standard",
+                                    "name": "9b9ff81b-69bc-c80e-1d76-b1c1cfdcc146",
+                                    "readonly": false,
+                                    "value": "Standard"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "b6cdadda-0c29-3c0a-e13a-381bd4a6b99b",
+                                    "label": "Non-Standard",
+                                    "name": "b6cdadda-0c29-3c0a-e13a-381bd4a6b99b",
+                                    "readonly": false,
+                                    "value": "Non-Standard"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006yMomAAE",
+                            "cloneable": true,
+                            "code": "ATT_Sale_Type",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 17,
+                            "filterable": false,
+                            "hasRules": true,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Sale Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "572fcf1b-7d50-4572-8f67-e7f05271238b",
+                                    "label": "OPEX",
+                                    "name": "572fcf1b-7d50-4572-8f67-e7f05271238b",
+                                    "readonly": false,
+                                    "value": "OPEX"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "58389495-47b2-b6b7-3194-26ed9fb217c0",
+                                    "label": "Outright Sale",
+                                    "name": "58389495-47b2-b6b7-3194-26ed9fb217c0",
+                                    "readonly": false,
+                                    "value": "Outright Sale"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "6a30a02d-6a7b-0ee2-f10f-9ad74fec8b2f",
+                                    "label": "NA",
+                                    "name": "6a30a02d-6a7b-0ee2-f10f-9ad74fec8b2f",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "a9b92590-8c96-c962-8cd6-ba33c579394d",
+                                    "label": "Financial Lease",
+                                    "name": "a9b92590-8c96-c962-8cd6-ba33c579394d",
+                                    "readonly": false,
+                                    "value": "Financial Lease"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "b6a4f411-dc32-e205-d83e-16107d1c0bef",
+                                    "label": "Operating Lease",
+                                    "name": "b6a4f411-dc32-e205-d83e-16107d1c0bef",
+                                    "readonly": false,
+                                    "value": "Operating Lease"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abElAAI",
+                            "cloneable": true,
+                            "code": "ATT_ITEM_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 18,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000006lcg3AAA",
+                            "cloneable": true,
+                            "code": "ATT_Is_UTM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 19,
+                            "filterable": false,
+                            "hasRules": true,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Is UTM",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "label": "Yes",
+                                    "name": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "label": "No",
+                                    "name": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhWAAU",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_MAKE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Router Make",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "0b80c202-08a7-14d0-f058-5e106e6cab7a",
+                                    "label": "H3C",
+                                    "name": "0b80c202-08a7-14d0-f058-5e106e6cab7a",
+                                    "readonly": false,
+                                    "value": "H3C"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "4d9e2e44-f6c2-3b5b-4ac4-80ebc443fdeb",
+                                    "label": "Maipu",
+                                    "name": "4d9e2e44-f6c2-3b5b-4ac4-80ebc443fdeb",
+                                    "readonly": false,
+                                    "value": "Maipu"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "4dfbd320-6c1a-c9e7-ab51-7ce80995dcf9",
+                                    "label": "Fortinet",
+                                    "name": "4dfbd320-6c1a-c9e7-ab51-7ce80995dcf9",
+                                    "readonly": false,
+                                    "value": "Fortinet"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "792e725e-c1cf-2ac4-2f2d-18baaa11094f",
+                                    "label": "HP",
+                                    "name": "792e725e-c1cf-2ac4-2f2d-18baaa11094f",
+                                    "readonly": false,
+                                    "value": "HP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "856b944f-a682-3a31-7277-8174bab43c14",
+                                    "label": "Juniper",
+                                    "name": "856b944f-a682-3a31-7277-8174bab43c14",
+                                    "readonly": false,
+                                    "value": "Juniper"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "a65e39ef-cd88-2572-01ee-7ac755541e4a",
+                                    "label": "Huawei",
+                                    "name": "a65e39ef-cd88-2572-01ee-7ac755541e4a",
+                                    "readonly": false,
+                                    "value": "Huawei"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "bd0272cb-d9d9-436a-44fe-bde309bec070",
+                                    "label": "Fort iGate",
+                                    "name": "bd0272cb-d9d9-436a-44fe-bde309bec070",
+                                    "readonly": false,
+                                    "value": "Fort iGate"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "f45573d3-e139-8259-5c4e-a5844c1486fb",
+                                    "label": "Cisco",
+                                    "name": "f45573d3-e139-8259-5c4e-a5844c1486fb",
+                                    "readonly": false,
+                                    "value": "Cisco"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhXAAU",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_MODEL",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 21,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Router Model",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 300,
+                                    "id": "00ad8adf-d82f-950e-6767-7c58c0732425",
+                                    "label": "AR169",
+                                    "name": "00ad8adf-d82f-950e-6767-7c58c0732425",
+                                    "readonly": false,
+                                    "value": "AR169"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 220,
+                                    "id": "02195e02-9533-8e2c-7108-4ff172e66498",
+                                    "label": "CISCO1905/K9",
+                                    "name": "02195e02-9533-8e2c-7108-4ff172e66498",
+                                    "readonly": false,
+                                    "value": "CISCO1905/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 615,
+                                    "id": "03680f35-2dcb-a80d-3f92-439116822ab5",
+                                    "label": "AR2220",
+                                    "name": "03680f35-2dcb-a80d-3f92-439116822ab5",
+                                    "readonly": false,
+                                    "value": "AR2220"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 585,
+                                    "id": "03fe173f-24f4-775b-c889-e380b776ede6",
+                                    "label": "AR151",
+                                    "name": "03fe173f-24f4-775b-c889-e380b776ede6",
+                                    "readonly": false,
+                                    "value": "AR151"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 715,
+                                    "id": "09702440-aaa6-fcaf-ee20-9660f6e44357",
+                                    "label": "CISCO 7206",
+                                    "name": "09702440-aaa6-fcaf-ee20-9660f6e44357",
+                                    "readonly": false,
+                                    "value": "CISCO 7206"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 370,
+                                    "id": "0ada038e-706a-771e-395e-2ad9b7937083",
+                                    "label": "C841M-8X/K9",
+                                    "name": "0ada038e-706a-771e-395e-2ad9b7937083",
+                                    "readonly": false,
+                                    "value": "C841M-8X/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 680,
+                                    "id": "0afc39d1-d92b-be4d-7ac2-d305d3dbd3b4",
+                                    "label": "C1921",
+                                    "name": "0afc39d1-d92b-be4d-7ac2-d305d3dbd3b4",
+                                    "readonly": false,
+                                    "value": "C1921"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 495,
+                                    "id": "0ea8be9a-a44f-976b-4c7c-6e841d98e1be",
+                                    "label": "18x50",
+                                    "name": "0ea8be9a-a44f-976b-4c7c-6e841d98e1be",
+                                    "readonly": false,
+                                    "value": "18x50"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 450,
+                                    "id": "0eb61c58-ed5a-b23f-3b07-020d0a6d62d2",
+                                    "label": "ISR4451-X/K9",
+                                    "name": "0eb61c58-ed5a-b23f-3b07-020d0a6d62d2",
+                                    "readonly": false,
+                                    "value": "ISR4451-X/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "10c29fa9-8521-bf36-8825-485938ab5df7",
+                                    "label": "srx300",
+                                    "name": "10c29fa9-8521-bf36-8825-485938ab5df7",
+                                    "readonly": false,
+                                    "value": "srx300"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 690,
+                                    "id": "1bac9ff1-b9aa-0c0a-ef4b-f6ab7033aef5",
+                                    "label": "C2911",
+                                    "name": "1bac9ff1-b9aa-0c0a-ef4b-f6ab7033aef5",
+                                    "readonly": false,
+                                    "value": "C2911"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 405,
+                                    "id": "1d3a83f7-0e15-f3cc-bbab-8f926a0815dd",
+                                    "label": "C888-K9",
+                                    "name": "1d3a83f7-0e15-f3cc-bbab-8f926a0815dd",
+                                    "readonly": false,
+                                    "value": "C888-K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 190,
+                                    "id": "1f68cfce-1a01-e4d1-c281-602e421bbcf6",
+                                    "label": "SRX 300",
+                                    "name": "1f68cfce-1a01-e4d1-c281-602e421bbcf6",
+                                    "readonly": false,
+                                    "value": "SRX 300"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 765,
+                                    "id": "231c4451-14c1-7a84-ad4c-d1482c4d7fbc",
+                                    "label": "cisco871",
+                                    "name": "231c4451-14c1-7a84-ad4c-d1482c4d7fbc",
+                                    "readonly": false,
+                                    "value": "cisco871"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 120,
+                                    "id": "27979010-4d70-2e87-e2d3-76bdfc4807e1",
+                                    "label": "MSR 1002-4",
+                                    "name": "27979010-4d70-2e87-e2d3-76bdfc4807e1",
+                                    "readonly": false,
+                                    "value": "MSR 1002-4"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 480,
+                                    "id": "2cde3929-b169-1b0f-4c77-e718fb3b7437",
+                                    "label": "FG 60",
+                                    "name": "2cde3929-b169-1b0f-4c77-e718fb3b7437",
+                                    "readonly": false,
+                                    "value": "FG 60"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 455,
+                                    "id": "2d17d61d-776e-49ec-6097-d6bd762726a3",
+                                    "label": "AR2200-Model-AR0M0022BA00",
+                                    "name": "2d17d61d-776e-49ec-6097-d6bd762726a3",
+                                    "readonly": false,
+                                    "value": "AR2200-Model-AR0M0022BA00"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 470,
+                                    "id": "2da2275a-dabf-192d-ec35-de9780f7967f",
+                                    "label": "AR2220E",
+                                    "name": "2da2275a-dabf-192d-ec35-de9780f7967f",
+                                    "readonly": false,
+                                    "value": "AR2220E"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "2e917ba9-8cf3-dddf-d139-570a5cfc2c4c",
+                                    "label": "FG_40F",
+                                    "name": "2e917ba9-8cf3-dddf-d139-570a5cfc2c4c",
+                                    "readonly": false,
+                                    "value": "FG_40F"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "2f03d48c-a842-b34a-1053-e3ed8c9e1fe5",
+                                    "label": "ciscoISR4451",
+                                    "name": "2f03d48c-a842-b34a-1053-e3ed8c9e1fe5",
+                                    "readonly": false,
+                                    "value": "ciscoISR4451"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 650,
+                                    "id": "30e9a4c9-d2a1-d9c0-27bb-6d66cdd98bd5",
+                                    "label": "AR6300",
+                                    "name": "30e9a4c9-d2a1-d9c0-27bb-6d66cdd98bd5",
+                                    "readonly": false,
+                                    "value": "AR6300"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 150,
+                                    "id": "3358a378-aa1e-a520-1ff2-2faea9fdcc1a",
+                                    "label": "MSR954",
+                                    "name": "3358a378-aa1e-a520-1ff2-2faea9fdcc1a",
+                                    "readonly": false,
+                                    "value": "MSR954"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 605,
+                                    "id": "33723a93-9bd6-b85e-da8d-7ce05f53c916",
+                                    "label": "AR2204",
+                                    "name": "33723a93-9bd6-b85e-da8d-7ce05f53c916",
+                                    "readonly": false,
+                                    "value": "AR2204"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "33ef4ee6-c83f-02f6-757e-e7dd0807e0b2",
+                                    "label": "MP1800X",
+                                    "name": "33ef4ee6-c83f-02f6-757e-e7dd0807e0b2",
+                                    "readonly": false,
+                                    "value": "MP1800X"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 755,
+                                    "id": "369eeefd-fcf9-3af4-c0ef-8b058b66614a",
+                                    "label": "cisco841Mx4XK9",
+                                    "name": "369eeefd-fcf9-3af4-c0ef-8b058b66614a",
+                                    "readonly": false,
+                                    "value": "cisco841Mx4XK9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "3c7c19c6-3c0f-d260-a9ad-4071996ab4b3",
+                                    "label": "FG 40",
+                                    "name": "3c7c19c6-3c0f-d260-a9ad-4071996ab4b3",
+                                    "readonly": false,
+                                    "value": "FG 40"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 210,
+                                    "id": "3da4ae44-6e82-b03f-1799-83fa1f17d050",
+                                    "label": "FG-100F",
+                                    "name": "3da4ae44-6e82-b03f-1799-83fa1f17d050",
+                                    "readonly": false,
+                                    "value": "FG-100F"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "3f1cb0ea-2327-8c44-0ae3-065f18f99bdf",
+                                    "label": "FGT_60F",
+                                    "name": "3f1cb0ea-2327-8c44-0ae3-065f18f99bdf",
+                                    "readonly": false,
+                                    "value": "FGT_60F"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 505,
+                                    "id": "41a4fdfe-0c30-dac2-25e7-ed5687555584",
+                                    "label": "A-MSR-900",
+                                    "name": "41a4fdfe-0c30-dac2-25e7-ed5687555584",
+                                    "readonly": false,
+                                    "value": "A-MSR-900"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 500,
+                                    "id": "4295e96b-fb0e-618b-bf2b-832ea7c3da9d",
+                                    "label": "800M 841",
+                                    "name": "4295e96b-fb0e-618b-bf2b-832ea7c3da9d",
+                                    "readonly": false,
+                                    "value": "800M 841"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 595,
+                                    "id": "4355cf45-d56a-3c17-1302-f178366501ca",
+                                    "label": "AR160",
+                                    "name": "4355cf45-d56a-3c17-1302-f178366501ca",
+                                    "readonly": false,
+                                    "value": "AR160"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 415,
+                                    "id": "44055c6d-95f8-aab2-7a05-f1f5488a2080",
+                                    "label": "CISCO1905-SEC/K9",
+                                    "name": "44055c6d-95f8-aab2-7a05-f1f5488a2080",
+                                    "readonly": false,
+                                    "value": "CISCO1905-SEC/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 625,
+                                    "id": "4485fe25-11f4-bed0-1095-6b8bf7dc3ca4",
+                                    "label": "AR6120A",
+                                    "name": "4485fe25-11f4-bed0-1095-6b8bf7dc3ca4",
+                                    "readonly": false,
+                                    "value": "AR6120A"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 350,
+                                    "id": "454d0999-20b0-5c7b-8b1f-f0bf6181e7a7",
+                                    "label": "HP930-3G",
+                                    "name": "454d0999-20b0-5c7b-8b1f-f0bf6181e7a7",
+                                    "readonly": false,
+                                    "value": "HP930-3G"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 130,
+                                    "id": "45781349-b36a-867b-28e3-142595b53362",
+                                    "label": "MSR930",
+                                    "name": "45781349-b36a-867b-28e3-142595b53362",
+                                    "readonly": false,
+                                    "value": "MSR930"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 740,
+                                    "id": "4958ff69-a4c2-b787-a67a-3c1658d62653",
+                                    "label": "cisco1941",
+                                    "name": "4958ff69-a4c2-b787-a67a-3c1658d62653",
+                                    "readonly": false,
+                                    "value": "cisco1941"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 710,
+                                    "id": "4cd74421-2f34-c4f1-9bac-0257c435ffac",
+                                    "label": "catalyst3560G24TS",
+                                    "name": "4cd74421-2f34-c4f1-9bac-0257c435ffac",
+                                    "readonly": false,
+                                    "value": "catalyst3560G24TS"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 280,
+                                    "id": "5002e5a9-0d72-5feb-c8e0-92a12daca7dd",
+                                    "label": "AR200",
+                                    "name": "5002e5a9-0d72-5feb-c8e0-92a12daca7dd",
+                                    "readonly": false,
+                                    "value": "AR200"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 700,
+                                    "id": "52736cfa-34e6-91d1-77c9-5a0a8cc75a93",
+                                    "label": "C841M-4X",
+                                    "name": "52736cfa-34e6-91d1-77c9-5a0a8cc75a93",
+                                    "readonly": false,
+                                    "value": "C841M-4X"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 380,
+                                    "id": "52a68670-9d10-5cc2-fd31-89c3b35c9c1e",
+                                    "label": "C881-K9",
+                                    "name": "52a68670-9d10-5cc2-fd31-89c3b35c9c1e",
+                                    "readonly": false,
+                                    "value": "C881-K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "55e1e977-8102-0afe-21eb-34c13c2e5225",
+                                    "label": "ciscoISR4331/K9",
+                                    "name": "55e1e977-8102-0afe-21eb-34c13c2e5225",
+                                    "readonly": false,
+                                    "value": "ciscoISR4331/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 490,
+                                    "id": "5822ba52-55c5-3edd-8010-ed43ec79aca6",
+                                    "label": "881",
+                                    "name": "5822ba52-55c5-3edd-8010-ed43ec79aca6",
+                                    "readonly": false,
+                                    "value": "881"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 475,
+                                    "id": "5830928a-4436-6dd9-07b5-42351889b6c0",
+                                    "label": "C841M-4X/K9",
+                                    "name": "5830928a-4436-6dd9-07b5-42351889b6c0",
+                                    "readonly": false,
+                                    "value": "C841M-4X/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 545,
+                                    "id": "586305d0-dba7-3ab3-3754-5dabb0950715",
+                                    "label": "AR 151",
+                                    "name": "586305d0-dba7-3ab3-3754-5dabb0950715",
+                                    "readonly": false,
+                                    "value": "AR 151"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 340,
+                                    "id": "5f5c0c11-ca27-8c8e-d8f4-14177577bf65",
+                                    "label": "HP930",
+                                    "name": "5f5c0c11-ca27-8c8e-d8f4-14177577bf65",
+                                    "readonly": false,
+                                    "value": "HP930"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 645,
+                                    "id": "69cb0e36-6049-3fa4-9d96-394b5aa1ec83",
+                                    "label": "AR6280",
+                                    "name": "69cb0e36-6049-3fa4-9d96-394b5aa1ec83",
+                                    "readonly": false,
+                                    "value": "AR6280"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 630,
+                                    "id": "69e28f03-69c8-42cd-14af-ef5cf24d80f3",
+                                    "label": "AR6140",
+                                    "name": "69e28f03-69c8-42cd-14af-ef5cf24d80f3",
+                                    "readonly": false,
+                                    "value": "AR6140"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 260,
+                                    "id": "6cb3bd94-c8a8-c24d-03bc-adac71f17297",
+                                    "label": "AR2240",
+                                    "name": "6cb3bd94-c8a8-c24d-03bc-adac71f17297",
+                                    "readonly": false,
+                                    "value": "AR2240"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 770,
+                                    "id": "6d4bf828-6460-b1b5-f3f8-47df1e7cfc04",
+                                    "label": "cisco881",
+                                    "name": "6d4bf828-6460-b1b5-f3f8-47df1e7cfc04",
+                                    "readonly": false,
+                                    "value": "cisco881"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "6e1dce60-f3f4-d62c-7a7c-d06eacf41be0",
+                                    "label": "FGT_40F",
+                                    "name": "6e1dce60-f3f4-d62c-7a7c-d06eacf41be0",
+                                    "readonly": false,
+                                    "value": "FGT_40F"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 795,
+                                    "id": "73c22d24-6a51-1071-f29c-0cfad65b2fb0",
+                                    "label": "ciscoISR4331",
+                                    "name": "73c22d24-6a51-1071-f29c-0cfad65b2fb0",
+                                    "readonly": false,
+                                    "value": "ciscoISR4331"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 390,
+                                    "id": "743532b9-7605-fb03-77da-7a1a66954c99",
+                                    "label": "C819H-K9",
+                                    "name": "743532b9-7605-fb03-77da-7a1a66954c99",
+                                    "readonly": false,
+                                    "value": "C819H-K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 550,
+                                    "id": "74b64ffa-da66-c435-c68a-21cdf360d105",
+                                    "label": "AR 161",
+                                    "name": "74b64ffa-da66-c435-c68a-21cdf360d105",
+                                    "readonly": false,
+                                    "value": "AR 161"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 460,
+                                    "id": "74be9b91-de4c-86fb-a1ce-dd6f651c408d",
+                                    "label": "AR2200-Model-AR0M0024BA00",
+                                    "name": "74be9b91-de4c-86fb-a1ce-dd6f651c408d",
+                                    "readonly": false,
+                                    "value": "AR2200-Model-AR0M0024BA00"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 410,
+                                    "id": "76b14284-15d9-c548-0721-32f80aa404cb",
+                                    "label": "C888EA-K9",
+                                    "name": "76b14284-15d9-c548-0721-32f80aa404cb",
+                                    "readonly": false,
+                                    "value": "C888EA-K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 310,
+                                    "id": "76cff2c4-141a-5f75-e315-ca4bd526a723",
+                                    "label": "AR121",
+                                    "name": "76cff2c4-141a-5f75-e315-ca4bd526a723",
+                                    "readonly": false,
+                                    "value": "AR121"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 250,
+                                    "id": "7cd2264d-5900-6728-7a3e-d548534afdfa",
+                                    "label": "AR1200",
+                                    "name": "7cd2264d-5900-6728-7a3e-d548534afdfa",
+                                    "readonly": false,
+                                    "value": "AR1200"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 140,
+                                    "id": "7f15271a-c66e-4c77-c52e-902ef9450a44",
+                                    "label": "MSR94",
+                                    "name": "7f15271a-c66e-4c77-c52e-902ef9450a44",
+                                    "readonly": false,
+                                    "value": "MSR94"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 745,
+                                    "id": "8320d1a1-ed08-d026-9bee-93cb9428b0e0",
+                                    "label": "cisco2921",
+                                    "name": "8320d1a1-ed08-d026-9bee-93cb9428b0e0",
+                                    "readonly": false,
+                                    "value": "cisco2921"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 635,
+                                    "id": "87efbf4f-b940-a3de-8c7c-ccf770eae288",
+                                    "label": "AR6140-9G-2AC",
+                                    "name": "87efbf4f-b940-a3de-8c7c-ccf770eae288",
+                                    "readonly": false,
+                                    "value": "AR6140-9G-2AC"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 360,
+                                    "id": "8d7ac693-cb39-bf97-697b-6e039f0528d2",
+                                    "label": "HP2003",
+                                    "name": "8d7ac693-cb39-bf97-697b-6e039f0528d2",
+                                    "readonly": false,
+                                    "value": "HP2003"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 465,
+                                    "id": "93d29596-faff-e058-105b-bfde624d982e",
+                                    "label": "AR1220C",
+                                    "name": "93d29596-faff-e058-105b-bfde624d982e",
+                                    "readonly": false,
+                                    "value": "AR1220C"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 530,
+                                    "id": "93ddce61-dc37-280f-0f27-ee5f4f3e9ef1",
+                                    "label": "A-MSR20-11",
+                                    "name": "93ddce61-dc37-280f-0f27-ee5f4f3e9ef1",
+                                    "readonly": false,
+                                    "value": "A-MSR20-11"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 725,
+                                    "id": "963aac38-4e4b-ca5d-3b30-0b174c6e8487",
+                                    "label": "cisco1760",
+                                    "name": "963aac38-4e4b-ca5d-3b30-0b174c6e8487",
+                                    "readonly": false,
+                                    "value": "cisco1760"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 450,
+                                    "id": "9945256c-a3e5-535f-019e-b8fc5fc6e821",
+                                    "label": "ISR4351/K9",
+                                    "name": "9945256c-a3e5-535f-019e-b8fc5fc6e821",
+                                    "readonly": false,
+                                    "value": "ISR4351/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 270,
+                                    "id": "99a6acf1-3540-0794-beff-e5aa414e0b5c",
+                                    "label": "AR161FGW",
+                                    "name": "99a6acf1-3540-0794-beff-e5aa414e0b5c",
+                                    "readonly": false,
+                                    "value": "AR161FGW"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 180,
+                                    "id": "9aed6f0c-160a-53bc-c6b2-9264fa7922d3",
+                                    "label": "MSR 30-20",
+                                    "name": "9aed6f0c-160a-53bc-c6b2-9264fa7922d3",
+                                    "readonly": false,
+                                    "value": "MSR 30-20"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 440,
+                                    "id": "9d0e4e2b-639a-51af-58fe-7e0c6077a969",
+                                    "label": "ISR4331-SEC/K9",
+                                    "name": "9d0e4e2b-639a-51af-58fe-7e0c6077a969",
+                                    "readonly": false,
+                                    "value": "ISR4331-SEC/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 535,
+                                    "id": "9eb5e931-1282-5023-bf90-b9364e9b18c2",
+                                    "label": "A-MSR30-20",
+                                    "name": "9eb5e931-1282-5023-bf90-b9364e9b18c2",
+                                    "readonly": false,
+                                    "value": "A-MSR30-20"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 785,
+                                    "id": "9fb76d69-75ba-62db-b0db-184b13079255",
+                                    "label": "ciscoISR4221",
+                                    "name": "9fb76d69-75ba-62db-b0db-184b13079255",
+                                    "readonly": false,
+                                    "value": "ciscoISR4221"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 695,
+                                    "id": "9fcf6822-e806-fa62-50e7-99c175be0f5e",
+                                    "label": "C819G4G",
+                                    "name": "9fcf6822-e806-fa62-50e7-99c175be0f5e",
+                                    "readonly": false,
+                                    "value": "C819G4G"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 160,
+                                    "id": "a000990a-1d87-06c0-43c8-efeac04101f0",
+                                    "label": "MSR 20-10",
+                                    "name": "a000990a-1d87-06c0-43c8-efeac04101f0",
+                                    "readonly": false,
+                                    "value": "MSR 20-10"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 170,
+                                    "id": "a111415b-3bd0-e3bf-34a6-53e7f2779771",
+                                    "label": "MSR 20-11",
+                                    "name": "a111415b-3bd0-e3bf-34a6-53e7f2779771",
+                                    "readonly": false,
+                                    "value": "MSR 20-11"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 570,
+                                    "id": "a1b771c6-8a02-6215-895e-23823549af99",
+                                    "label": "AR 6120",
+                                    "name": "a1b771c6-8a02-6215-895e-23823549af99",
+                                    "readonly": false,
+                                    "value": "AR 6120"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 600,
+                                    "id": "a2b65c51-7327-8e8a-0ed7-69d166f703fc",
+                                    "label": "AR201",
+                                    "name": "a2b65c51-7327-8e8a-0ed7-69d166f703fc",
+                                    "readonly": false,
+                                    "value": "AR201"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 400,
+                                    "id": "a72c9841-9c1d-b129-f38b-7c87aaa6a91a",
+                                    "label": "C892FSP-K9",
+                                    "name": "a72c9841-9c1d-b129-f38b-7c87aaa6a91a",
+                                    "readonly": false,
+                                    "value": "C892FSP-K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 445,
+                                    "id": "a7985419-2a60-cd55-c4cf-7f30d05176b1",
+                                    "label": "ISR4431/K9",
+                                    "name": "a7985419-2a60-cd55-c4cf-7f30d05176b1",
+                                    "readonly": false,
+                                    "value": "ISR4431/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 670,
+                                    "id": "a870b986-15f4-943e-02fa-9063cf1295e0",
+                                    "label": "C1841",
+                                    "name": "a870b986-15f4-943e-02fa-9063cf1295e0",
+                                    "readonly": false,
+                                    "value": "C1841"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 590,
+                                    "id": "a8904e58-9a26-fa44-b1af-442c576d23db",
+                                    "label": "AR151G-HSPA+7",
+                                    "name": "a8904e58-9a26-fa44-b1af-442c576d23db",
+                                    "readonly": false,
+                                    "value": "AR151G-HSPA+7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 240,
+                                    "id": "aaac3935-96a0-6120-66ab-08dd5a7dd24e",
+                                    "label": "CISCO1941/K9",
+                                    "name": "aaac3935-96a0-6120-66ab-08dd5a7dd24e",
+                                    "readonly": false,
+                                    "value": "CISCO1941/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 435,
+                                    "id": "ac83d8f9-edde-bf47-4c02-326af30c4ad7",
+                                    "label": "ISR4331/K9",
+                                    "name": "ac83d8f9-edde-bf47-4c02-326af30c4ad7",
+                                    "readonly": false,
+                                    "value": "ISR4331/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 320,
+                                    "id": "ad5b1832-9e26-3e7d-a109-2063c30e72c0",
+                                    "label": "AR161W",
+                                    "name": "ad5b1832-9e26-3e7d-a109-2063c30e72c0",
+                                    "readonly": false,
+                                    "value": "AR161W"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 565,
+                                    "id": "af496dbb-c043-d34e-4929-8f37e3639159",
+                                    "label": "AR 3260",
+                                    "name": "af496dbb-c043-d34e-4929-8f37e3639159",
+                                    "readonly": false,
+                                    "value": "AR 3260"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 445,
+                                    "id": "b1b61352-c3a0-5049-bcea-20b7c9bf3565",
+                                    "label": "ISR4331-V/K9",
+                                    "name": "b1b61352-c3a0-5049-bcea-20b7c9bf3565",
+                                    "readonly": false,
+                                    "value": "ISR4331-V/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 750,
+                                    "id": "b1d79e2d-a801-10d3-e1e4-e258806dd49c",
+                                    "label": "cisco3845",
+                                    "name": "b1d79e2d-a801-10d3-e1e4-e258806dd49c",
+                                    "readonly": false,
+                                    "value": "cisco3845"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 525,
+                                    "id": "b2cc954c-bc86-3834-8a64-831fe3b1b1e4",
+                                    "label": "AR161",
+                                    "name": "b2cc954c-bc86-3834-8a64-831fe3b1b1e4",
+                                    "readonly": false,
+                                    "value": "AR161"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 420,
+                                    "id": "b4f5a28e-bd3d-2b84-43f6-ebf1649443d8",
+                                    "label": "CISCO1921-SEC/K9",
+                                    "name": "b4f5a28e-bd3d-2b84-43f6-ebf1649443d8",
+                                    "readonly": false,
+                                    "value": "CISCO1921-SEC/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 675,
+                                    "id": "b6e7d6bd-7a72-4205-5959-463416cfe294",
+                                    "label": "C1841VE",
+                                    "name": "b6e7d6bd-7a72-4205-5959-463416cfe294",
+                                    "readonly": false,
+                                    "value": "C1841VE"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 515,
+                                    "id": "ba941180-df28-0114-4928-40f763bc6b40",
+                                    "label": "A-MSR20-10",
+                                    "name": "ba941180-df28-0114-4928-40f763bc6b40",
+                                    "readonly": false,
+                                    "value": "A-MSR20-10"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 230,
+                                    "id": "bd7345f6-0aff-e0bb-f424-9d090a7ae0a1",
+                                    "label": "CISCO1921/K9",
+                                    "name": "bd7345f6-0aff-e0bb-f424-9d090a7ae0a1",
+                                    "readonly": false,
+                                    "value": "CISCO1921/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 540,
+                                    "id": "c1f17247-7264-95c2-163a-41df8ceb4688",
+                                    "label": "AR3260",
+                                    "name": "c1f17247-7264-95c2-163a-41df8ceb4688",
+                                    "readonly": false,
+                                    "value": "AR3260"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 330,
+                                    "id": "c20a1855-0000-8de9-4e28-07535f452cd3",
+                                    "label": "HP900",
+                                    "name": "c20a1855-0000-8de9-4e28-07535f452cd3",
+                                    "readonly": false,
+                                    "value": "HP900"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 665,
+                                    "id": "c28da045-6de2-e980-08b3-17844cfe3d1b",
+                                    "label": "C1121-8P",
+                                    "name": "c28da045-6de2-e980-08b3-17844cfe3d1b",
+                                    "readonly": false,
+                                    "value": "C1121-8P"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 520,
+                                    "id": "c39e71f0-e34c-cf03-39fc-a9675fccabcc",
+                                    "label": "AR161G-L",
+                                    "name": "c39e71f0-e34c-cf03-39fc-a9675fccabcc",
+                                    "readonly": false,
+                                    "value": "AR161G-L"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 780,
+                                    "id": "c43ea98f-b2b7-acaa-24a0-ea39471e1154",
+                                    "label": "ciscoC881K9",
+                                    "name": "c43ea98f-b2b7-acaa-24a0-ea39471e1154",
+                                    "readonly": false,
+                                    "value": "ciscoC881K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 485,
+                                    "id": "c69acdd9-81a0-36f8-941c-97a8f78be434",
+                                    "label": "841",
+                                    "name": "c69acdd9-81a0-36f8-941c-97a8f78be434",
+                                    "readonly": false,
+                                    "value": "841"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 660,
+                                    "id": "cac8bba0-fcbd-3c51-452c-f119052971e4",
+                                    "label": "C1111-4P",
+                                    "name": "cac8bba0-fcbd-3c51-452c-f119052971e4",
+                                    "readonly": false,
+                                    "value": "C1111-4P"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 580,
+                                    "id": "ce800616-db8f-5adb-7ead-5ca9ea2fd32f",
+                                    "label": "AR1220E",
+                                    "name": "ce800616-db8f-5adb-7ead-5ca9ea2fd32f",
+                                    "readonly": false,
+                                    "value": "AR1220E"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "d06d446f-9a92-f190-884b-61a60e60c1f8",
+                                    "label": "Fortinet 40F",
+                                    "name": "d06d446f-9a92-f190-884b-61a60e60c1f8",
+                                    "readonly": false,
+                                    "value": "Fortinet 40F"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "d0c78e17-4cba-fab4-fcbc-12a0d8e3bf3f",
+                                    "label": "MP1800X-50(V1)",
+                                    "name": "d0c78e17-4cba-fab4-fcbc-12a0d8e3bf3f",
+                                    "readonly": false,
+                                    "value": "MP1800X-50(V1)"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 290,
+                                    "id": "d2b410fd-8e67-f84f-ddda-b2d81d485c2c",
+                                    "label": "SRU200",
+                                    "name": "d2b410fd-8e67-f84f-ddda-b2d81d485c2c",
+                                    "readonly": false,
+                                    "value": "SRU200"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 730,
+                                    "id": "d399dd72-82b1-722d-d985-40a36b7cf229",
+                                    "label": "cisco1841",
+                                    "name": "d399dd72-82b1-722d-d985-40a36b7cf229",
+                                    "readonly": false,
+                                    "value": "cisco1841"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 760,
+                                    "id": "d4a3a17d-e1f3-56ea-155e-68a5820e213e",
+                                    "label": "cisco867VAEK9",
+                                    "name": "d4a3a17d-e1f3-56ea-155e-68a5820e213e",
+                                    "readonly": false,
+                                    "value": "cisco867VAEK9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 640,
+                                    "id": "dca30542-b2b8-c6c6-ef35-17c2de7c5259",
+                                    "label": "AR61409G2AC",
+                                    "name": "dca30542-b2b8-c6c6-ef35-17c2de7c5259",
+                                    "readonly": false,
+                                    "value": "AR61409G2AC"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 720,
+                                    "id": "de0ca2e7-ff33-570f-8410-9f29a850fd54",
+                                    "label": "Cisco 800M",
+                                    "name": "de0ca2e7-ff33-570f-8410-9f29a850fd54",
+                                    "readonly": false,
+                                    "value": "Cisco 800M"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 735,
+                                    "id": "de186656-86c4-74ec-349d-9064c63c77b1",
+                                    "label": "cisco1905k9",
+                                    "name": "de186656-86c4-74ec-349d-9064c63c77b1",
+                                    "readonly": false,
+                                    "value": "cisco1905k9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 425,
+                                    "id": "e2dabbac-ce4a-f9f1-a22c-62eac0b2e1ce",
+                                    "label": "ISR4221/K9",
+                                    "name": "e2dabbac-ce4a-f9f1-a22c-62eac0b2e1ce",
+                                    "readonly": false,
+                                    "value": "ISR4221/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 430,
+                                    "id": "e3ada124-0e12-5c15-cf58-3ada01db94e6",
+                                    "label": "ISR4321/K9",
+                                    "name": "e3ada124-0e12-5c15-cf58-3ada01db94e6",
+                                    "readonly": false,
+                                    "value": "ISR4321/K9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 685,
+                                    "id": "e3d53d83-ef0b-0a0f-486e-80aa72383164",
+                                    "label": "C1941",
+                                    "name": "e3d53d83-ef0b-0a0f-486e-80aa72383164",
+                                    "readonly": false,
+                                    "value": "C1941"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 620,
+                                    "id": "e55b90c2-f87e-f9cc-ab51-c2adb7a682d4",
+                                    "label": "AR6120",
+                                    "name": "e55b90c2-f87e-f9cc-ab51-c2adb7a682d4",
+                                    "readonly": false,
+                                    "value": "AR6120"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 510,
+                                    "id": "e64cb0ee-24df-72ae-de80-d21ac1f803e0",
+                                    "label": "AR2200",
+                                    "name": "e64cb0ee-24df-72ae-de80-d21ac1f803e0",
+                                    "readonly": false,
+                                    "value": "AR2200"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 200,
+                                    "id": "e65ed83b-4602-5c47-5e09-ffa3bdd031e9",
+                                    "label": "SRX340",
+                                    "name": "e65ed83b-4602-5c47-5e09-ffa3bdd031e9",
+                                    "readonly": false,
+                                    "value": "SRX340"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 790,
+                                    "id": "ea467870-e4bb-a5f4-8fdb-914869bb9d57",
+                                    "label": "ciscoISR4321",
+                                    "name": "ea467870-e4bb-a5f4-8fdb-914869bb9d57",
+                                    "readonly": false,
+                                    "value": "ciscoISR4321"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 555,
+                                    "id": "f0a72e5b-c09e-d505-129c-2481ce3191b3",
+                                    "label": "AR 201",
+                                    "name": "f0a72e5b-c09e-d505-129c-2481ce3191b3",
+                                    "readonly": false,
+                                    "value": "AR 201"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 655,
+                                    "id": "f589dd99-c869-525d-9ffd-2487d183bad4",
+                                    "label": "AR651",
+                                    "name": "f589dd99-c869-525d-9ffd-2487d183bad4",
+                                    "readonly": false,
+                                    "value": "AR651"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 575,
+                                    "id": "f5cebbfc-b078-4fa5-a538-8486c2e2a22c",
+                                    "label": "AR1220",
+                                    "name": "f5cebbfc-b078-4fa5-a538-8486c2e2a22c",
+                                    "readonly": false,
+                                    "value": "AR1220"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 610,
+                                    "id": "fa5538a3-56ac-b9ce-cbcc-f2d4235726f7",
+                                    "label": "AR2204E",
+                                    "name": "fa5538a3-56ac-b9ce-cbcc-f2d4235726f7",
+                                    "readonly": false,
+                                    "value": "AR2204E"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "fc82b017-9043-4d70-592e-4c33a2083f4a",
+                                    "label": "MP1800X-50",
+                                    "name": "fc82b017-9043-4d70-592e-4c33a2083f4a",
+                                    "readonly": false,
+                                    "value": "MP1800X-50"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 560,
+                                    "id": "fd832c9e-0ec0-1f33-20ce-61124925b8d7",
+                                    "label": "AR 2240",
+                                    "name": "fd832c9e-0ec0-1f33-20ce-61124925b8d7",
+                                    "readonly": false,
+                                    "value": "AR 2240"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 705,
+                                    "id": "fdaddefa-ab47-a32a-b731-08b0fbcdc4d3",
+                                    "label": "C881",
+                                    "name": "fdaddefa-ab47-a32a-b731-08b0fbcdc4d3",
+                                    "readonly": false,
+                                    "value": "C881"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 775,
+                                    "id": "fe0ab7bf-3cfc-afdb-096e-c0fecd565045",
+                                    "label": "ciscoC11114P",
+                                    "name": "fe0ab7bf-3cfc-afdb-096e-c0fecd565045",
+                                    "readonly": false,
+                                    "value": "ciscoC11114P"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000007DntJAAS",
+                            "cloneable": true,
+                            "code": "ATT_HardwareRedundancyRequired_UTM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 22,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Hardware Redundancy Required",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "label": "Yes",
+                                    "name": "1d71db5b-9351-6b63-87e6-19c5af85a2b7",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "label": "No",
+                                    "name": "22d47b5d-4785-c112-863b-2bbbdad6b616",
+                                    "readonly": false,
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000007DlWZAA0",
+                            "cloneable": true,
+                            "code": "ATT_Secondary_CPE_Make_UTM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 23,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Secondary CPE Make",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000007DlWaAAK",
+                            "cloneable": true,
+                            "code": "ATT_Secondary_CPE_Model_UTM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 24,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Secondary CPE Model",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000007DlWYAA0",
+                            "cloneable": true,
+                            "code": "ATT_Secondary_CPE_ItemCode_UTM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 25,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Secondary CPE Item Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 12
+                }
+            },
+            {
+                "Code__c": "30b11d92-38c1-9ed8-3d7c-9bb6bcc4b278",
+                "Name": "SFDC Attributes",
+                "displaySequence": 777,
+                "id": "a0Z72000000xmLZEAY",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEa4AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUSTER_HOST_NAME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 40,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Host Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            },
+            {
+                "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
+                "Name": "Technical Attributes",
+                "displaySequence": 1090,
+                "id": "a0Z72000000zL7ZEAU",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005sQhOAAU",
+                            "cloneable": true,
+                            "code": "ATT_OPERATING_UNIT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 16,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Operating Unit",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa6AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_SERIAL_NUMBER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 41,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Serial Number",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa7AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_USERNAME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 42,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Username",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa5AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_PASSWORD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 44,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Password",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEeAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_1",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 51,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 1",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEfAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_2",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 52,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 2",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEgAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_3",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 53,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 3",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEhAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_4",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 54,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 4",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEiAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_5",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 55,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 5",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEjAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_6",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 56,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 6",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEkAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_7",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 57,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 7",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 11
+                }
+            }
+        ],
+        "totalSize": 3
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DecompositionRelationship__c": "Enterprise-Connectivity-Routers_DecompositionRelationships.json",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-09-18",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-18T07:48:37.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "564bba27-9939-6dac-843d-9374b611c657",
+    "%vlocity_namespace%__GlobalKey__c": "1d5888a7-b7f7-7f30-4d18-22cd0fcbc5e2",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Enterprise-Connectivity-Routers_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "6551dfc9-acf4-278b-e4c4-d918708fab31",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/6551dfc9-acf4-278b-e4c4-d918708fab31",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "ILL iConnectivity Router Product Object Type",
+    "%vlocity_namespace%__OrchestrationScenario__c": "Enterprise-Connectivity-Routers_OrchestrationScenarios.json",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "Enterprise-Connectivity-Routers_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "Enterprise-Connectivity-Routers_ProductChildItems.json",
+    "%vlocity_namespace%__ProductRelationship__c": "Enterprise-Connectivity-Routers_ProductRelationships.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-18T07:48:35.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Product",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_Hansen_Primary_Key__c": "",
+    "ARTL_LSIRequiredForHansen__c": false,
+    "ARTL_LSIRequired__c": false,
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_TechnicalProduct__c": "VEPC_ROUTERS_CFS,VEPC_Installation_OTC_CFS,VEPC_CPE_CFS,VEPC_SERVICE_CFS,VEPC_Hardware_Replacement_OTC_CFS,VEPC_Lease_Rental_ARC_CFS",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Enterprise Connectivity Routers",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Enterprise-Connectivity-Routers_PricebookEntries.json",
+    "ProductCode": "2808c41f-a83c-492d-bba9-9bf09e3d8247",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": "",
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Enterprise Connectivity Routers",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "1d5888a7-b7f7-7f30-4d18-22cd0fcbc5e2",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "1d5888a7-b7f7-7f30-4d18-22cd0fcbc5e2",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/1d5888a7-b7f7-7f30-4d18-22cd0fcbc5e2",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "2808c41f-a83c-492d-bba9-9bf09e3d8247",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/1d5888a7-b7f7-7f30-4d18-22cd0fcbc5e2"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/1d5888a7-b7f7-7f30-4d18-22cd0fcbc5e2"
+}

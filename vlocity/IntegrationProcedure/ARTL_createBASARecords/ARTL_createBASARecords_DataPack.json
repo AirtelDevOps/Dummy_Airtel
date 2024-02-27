@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_createBASARecords_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "createBASARecords",
+    "OmniProcessElement": [
+        "ARTL_createBASARecords_Element_GetQLIRecords.json",
+        "ARTL_createBASARecords_Element_DataRaptorTransformAction1.json",
+        "ARTL_createBASARecords_Element_CreateBillingStagingRecords.json",
+        "ARTL_createBASARecords_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_createBASARecords",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_createBASARecords_PropertySetConfig.json",
+    "SubType": "createBASARecords",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/createBASARecords/Procedure"
+}

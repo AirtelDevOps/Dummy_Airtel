@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_OVTableDownloadData_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "OVTableDownloadData",
+    "OmniProcessElement": [
+        "ARTL_OVTableDownloadData_Element_BillingStagingData.json",
+        "ARTL_OVTableDownloadData_Element_attributeWithRecords.json",
+        "ARTL_OVTableDownloadData_Element_Response.json"
+    ],
+    "OmniProcessKey": "ARTL_OVTableDownloadData",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_OVTableDownloadData_PropertySetConfig.json",
+    "SubType": "OVTableDownloadData",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/OVTableDownloadData/Procedure"
+}

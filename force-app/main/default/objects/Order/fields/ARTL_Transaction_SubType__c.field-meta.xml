@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Transaction_SubType__c</fullName>
+    <externalId>false</externalId>
+    <label>Transaction SubType</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clean Shifting</fullName>
+                <default>false</default>
+                <label>Clean Shifting</label>
+            </value>
+            <value>
+                <fullName>Shifting</fullName>
+                <default>false</default>
+                <label>Shifting</label>
+            </value>
+            <value>
+                <fullName>Manageability Change</fullName>
+                <default>false</default>
+                <label>Manageability Change</label>
+            </value>
+            <value>
+                <fullName>Bandwidth Change</fullName>
+                <default>false</default>
+                <label>Bandwidth Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

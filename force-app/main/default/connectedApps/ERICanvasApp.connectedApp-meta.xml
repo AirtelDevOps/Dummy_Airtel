@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Post</accessMethod>
+        <canvasUrl>https://engine.sfdc-yfeipo.diffeo.force.com/smart-tags/</canvasUrl>
+        <locations>Aura</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>tempemailid@salesforce.com</contactEmail>
+    <description>Explore people and company connections on a web page to uncover key relationship networks.</description>
+    <label>Einstein Relationship Insights Canvas App</label>
+    <oauthConfig>
+        <callbackUrl>https://engine.sfdc-yfeipo.diffeo.force.com/smart-tags/</callbackUrl>
+        <consumerKey>3MVG9qT0j3YAi4Et2xMRUgxr2As__T3KA9eWQ5a00eMm_Cvmav1NWsyadYGvYqn6Ts.O6N4z179tcyxolaiwe</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+    <profileName>Sales</profileName>
+    <profileName>OV</profileName>
+    <profileName>Project Manager</profileName>
+    <sessionPolicy>
+        <sessionTimeout>1440</sessionTimeout>
+    </sessionPolicy>
+</ConnectedApp>

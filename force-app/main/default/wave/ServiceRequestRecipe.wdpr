@@ -1,0 +1,93 @@
+{
+  "version" : "59.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "OU_NUM_1", "OU_NUM", "SR_STAT_ID", "SR_TITLE", "SR_CREATED_DT", "CST_OU_ID", "SR_SEV_CD", "LOT_NUM", "OU_NUM_11", "PAR_ROW_ID", "ACTL_RESOLVED_TS", "NAME", "SRV_FEE_CURCY_CD", "UPTIME", "SLA_STATUS", "SR_NUM", "SR_CAT_TYPE_CD", "SR_TYPE_CD" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "SiebelNewDataset",
+          "name" : "SiebelNewDataset"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FORMULA0" : {
+      "action" : "formula",
+      "sources" : [ "LOAD_DATASET0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Creation_Month",
+          "label" : "Creation Month",
+          "formulaExpression" : "CASE\n    when MONTH(SR_CREATED_DT)=1 then concat('Ja','-',year(SR_CREATED_DT))\n    when MONTH(SR_CREATED_DT)=2 then concat('Feb','-',year(SR_CREATED_DT))\n    when MONTH(SR_CREATED_DT)=3 then concat('Mar','-',year(SR_CREATED_DT)) \n    when MONTH(SR_CREATED_DT)=4 then concat('Apr','-',year(SR_CREATED_DT)) \n    when MONTH(SR_CREATED_DT)=5 then concat('May','-',year(SR_CREATED_DT)) \n    when MONTH(SR_CREATED_DT)=6 then concat('Jun','-',year(SR_CREATED_DT)) \n    when MONTH(SR_CREATED_DT)=7 then concat('Jul','-',year(SR_CREATED_DT)) \n    when MONTH(SR_CREATED_DT)=8 then concat('Aug','-',year(SR_CREATED_DT))\n    when MONTH(SR_CREATED_DT)=9 then concat('Sep','-',year(SR_CREATED_DT)) \n    when MONTH(SR_CREATED_DT)=10 then concat('Oct','-',year(SR_CREATED_DT)) \n    when MONTH(SR_CREATED_DT)=11 then concat('Nov','-',year(SR_CREATED_DT)) \n    when MONTH(SR_CREATED_DT)=12 then concat('Dec','-',year(SR_CREATED_DT)) \n    else ''\n    end",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "FORMULA0" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "SiebelDashboardDataset",
+          "name" : "SiebelDashboardDataset",
+          "folderName" : "Billing_App"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "SiebelNewDataset",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "TRANSFORM0" : {
+        "label" : "Transform 0",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 252,
+        "graph" : {
+          "FORMULA0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ ]
+      },
+      "OUTPUT0" : {
+        "label" : "Output 0",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 392
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET0",
+      "target" : "TRANSFORM0"
+    }, {
+      "source" : "TRANSFORM0",
+      "target" : "OUTPUT0"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

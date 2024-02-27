@@ -1,0 +1,1000 @@
+<template>
+    <div class="b2b-common-menu">
+        <ul class="b2b-dropdown_open b2b-dropdown b2b-dropdown_right slds-m-top_xx-small">
+            <template for:each={commonActionList} for:item="action"
+                for:index="actionIndex">
+                <li key={action.label} class="b2b-dropdown_item"
+                    data-method={action.method} 
+                    data-operation={action.operation} onclick={executeAction}>
+                    {action.label}
+                </li>
+            </template>
+        </ul>
+    </div>
+    <div class="b2b-lineitem-attr-tooltip slds-popover slds-nubbin_top-left b2b-tooltip_cont" tabindex="-1" onfocusout={hideAttributes}>
+        <lightning-button-icon class="slds-float_right slds-popover__close slds-button_icon-inverse" variant="bare"
+            icon-name="utility:close" alternative-text="Close Dialog" title="Close" size="medium" onkeydown={hideAttributesButton} onclick={hideAttributes} tabindex="0" role="button"></lightning-button-icon>
+        <div class="slds-popover__body">
+            <div if:true={lineItemAttributes} class="">
+                <div class="slds-grid slds-m-bottom_xx-small" for:each={lineItemAttributes}
+                    for:item="attribute" for:index="attrIndex" key={attribute.label}>
+                    <template if:false={attribute.hidden}>
+                        <span class="slds-size_2-of-4 b2b-desvlocity_cmt-item_label slds-truncate">{attribute.label}</span>
+                        <span class="slds-size_2-of-4 slds-item-desvlocity_cmt-item_detail slds-truncate" data-attr-list-index={attrIndex}>{attribute.value}</span>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class={dtWrapperClass}>
+        <div>
+            <div if:true={showWaitG}>
+                <vlocity_cmt-spinner variant="brand" size="medium" extraouterclass="slds-is-fixed"></vlocity_cmt-spinner>
+            </div>
+            <div if:false={hideHeader}
+                class="slds-grid slds-color__background_gray-3 slds-wrap slds-grid_vertical-align-center b2b-table-filter-header">
+                <div
+                    class={displayingSectionClass}>
+                    <div if:true ={showSummaryComboBox} class="slds-grid slds-max-medium-size_6-of-12 slds-grid_vertical-align-center slds-m-right_medium">
+                        <label class="slds-m-right_small">{labels.CMEXViewBy}</label>
+                        <vlocity_cmt-combobox class="b2b-input" theme="slds" value={groupVal} options={groupList}
+                            onchange={handleGroupChange}>
+                        </vlocity_cmt-combobox>
+                    </div>
+
+                    <div class="slds-grid slds-max-medium-size_6-of-12 slds-grid_vertical-align-center">
+                        <label class="slds-m-right_small">{labels.CMEXDisplaying}</label>
+                        <vlocity_cmt-combobox class="b2b-input" theme="slds" value={displayValue}
+                            options={displayFieldGroups} onchange={changeFieldGroup}>
+                        </vlocity_cmt-combobox>
+                    </div>
+                </div>
+                <div class={rightHandSubGridClass}>
+                    <template if:true={issearchavailable}>
+                        <div class="slds-grid">
+                            <lightning-input variant="label-hidden" type="search" placeholder={labels.CMEXSearchThisList}
+                                value={searchInput} name="MemberSearch" title="search" onchange={searchKeyChangeHandler}>
+                            </lightning-input>
+                        </div>
+                        <lightning-button-icon if:false={readMode} icon-name="utility:delete" alternative-text="Delete" class="slds-grid slds-m-left_small slds-grid_align-end" 
+                            title={deleteMembersLabel} disabled={isDeleteDisabled} onclick={deleteMemberPopup} data-role="openMemberDeleteModal">
+                        </lightning-button-icon>
+                        <lightning-button-group if:false={readMode}  class="slds-grid slds-button-group slds-m-left_small">
+                            <template if:true={allowAddingNewLocationAndSubscriberFn}>
+                                <button class="slds-button slds-button_neutral" onclick={showUploadScreenbtn}>
+                                    {labels.CMEXUploadFileSingular}
+                                    <span class="slds-assistive-text">{labels.CMEXUploadFileSingular}</span>
+                                </button>
+                            </template>
+                            <button class="slds-button slds-button_neutral slds-is-relative" data-tooltip="showGroupTooltip"
+                                onmouseover={displayTooltip} onmouseleave={hideTooltip} onclick={showCGModal}>{labels.CMEXGroup}
+                                <div if:true={tooltipMap.showGroupTooltip} aria-describedby="dialog-body-id-110"
+                                aria-labelledby="dialog-heading-id-4"
+                                class="slds-popover slds-popover_tooltip slds-nubbin_bottom-right b2b-group-btn-popover" role="tooltip">
+                                    <div class="slds-popover__body b2b-bulk-popover-body">
+                                        <div class="slds-media__body slds-text-align_left">
+                                            <h2 class="slds-text-heading_small slds-m-top_x-small slds-p-bottom_x-small">
+                                                {labels.CMEXGrouping}
+                                            </h2>
+                                            <p>{labels.CMEXGroupHelpText}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </lightning-button-group>
+                    </template>
+                    <template if:true={readMode}>
+                        <lightning-button-group class="slds-grid slds-p-left_small slds-p-right_small slds-grid_align-center slds-button-group">
+                            <button aria-describedby="help" class="slds-button slds-button_icon slds-button_icon-border" variant="neutral" disabled={isDeleteDisabled} onclick={handleQliDeleteModal} data-role="openModal">
+                                <vlocity_cmt-icon extraclass="slds-button__icon" theme="slds" icon-name="utility:delete" size="x-small" data-role="openModal"></vlocity_cmt-icon>
+                                <span class="slds-assistive-text">{labels.CMEXBulkDeleteSelectedQLIs}</span>
+                            </button>
+                            <button aria-describedby="help" class="slds-button slds-button_icon slds-button_icon-border" variant="neutral" disabled={isBulkDisconnectDisabled} onmouseover={handleHelpTextVisibility}
+                                onmouseout={handleHelpTextVisibility} onfocus={handleHelpTextVisibility} onblur={handleHelpTextVisibility} onclick={handleBulkDisconnect} title="Bulk Disconnect">
+                                <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom slds-hide b2b-bulkdisconnect-btn-popover"
+                                    role="tooltip">
+                                    <div class="slds-popover__body b2b-bulk-popover-body">{labels.CMEXBulkDisconnectButtonHelp}
+                                </div>
+                            </div>
+                                <vlocity_cmt-icon extraclass="slds-button__icon" theme="slds" icon-name="utility:offline" size="x-small"></vlocity_cmt-icon>
+                                <span class="slds-assistive-text">{labels.CMEXBulkDisconnectButtonHelp}</span>
+                            </button>
+                            <button aria-describedby="help" class="slds-button slds-button_icon slds-button_icon-border" variant="neutral" disabled={isBulkEditDisabled} onmouseover={handleBulkeditBtnPopover}
+                                onmouseout={handleBulkeditBtnPopover} onfocus={handleBulkeditBtnPopover} onblur={handleBulkeditBtnPopover} onclick={openBulkConfigModal} title="Bulk Edit">
+                                <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom slds-hide b2b-bulkedit-btn-popover"
+                                    role="tooltip">
+                                    <div class="slds-popover__body b2b-bulk-popover-body">{labels.CMEXBulkEditBtnPopover}</div>
+                                </div>
+                                <vlocity_cmt-icon extraclass="slds-button__icon" theme="slds" icon-name="utility:edit" size="x-small"></vlocity_cmt-icon>
+                                <span class="slds-assistive-text">{labels.CMEXBulkEditBtnPopover}</span>
+                            </button>
+                        </lightning-button-group>
+
+                        <div class="b2b-validate-button">
+                            <vlocity_cmt-button disabled={validateDisabled} variant="neutral" label={labels.CMEXValidate}
+                                onclick={validateQlis} theme="slds">
+                            </vlocity_cmt-button>
+                        </div>
+                        <div class="b2b-enrich-order-button">
+                            <template if:true={objTypeIsQuote}>
+                                <vlocity_cmt-b2b-button  disabled={validateDisabled} theme="slds"
+                                variant="neutral" label={labels.CMEXEnrichQuote} onclick={communicateToAura}>
+                                </vlocity_cmt-b2b-button>
+                            </template>
+                            <template if:false={objTypeIsQuote}>
+                                <vlocity_cmt-b2b-button  disabled={validateDisabled} theme="slds"
+                                variant="neutral" label={labels.CMEXEnrichOrder} onclick={communicateToAura}>
+                            </vlocity_cmt-b2b-button>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            
+            <div class="slds-grid slds-color__background_gray-3 slds-border_bottom">
+                <div class="slds-col_bump-right slds-p-top_x-small slds-p-left_x-small">{getShowingDetails}</div>
+                
+                <div class="slds-p-right_small slds-p-bottom_xx-small">
+                    <div if:true={selectedGroupsId.length} class="slds-grid slds-grid_vertical-align-end slds-grid_align-end">
+                        <button aria-label={labels.CMEXRemoveGroup} class="slds-button slds-is-relative b2b-selected-member" onclick={removeGroup} 
+                         onmouseover={displayTooltip} onmouseleave={hideTooltip} data-tooltip="showRemoveGroupTooltip">
+                            {labels.CMEXRemoveGroup}
+                            <div if:true={tooltipMap.showRemoveGroupTooltip} aria-describedby="dialog-body-id-110"
+                            aria-labelledby="dialog-heading-id-4"
+                            class="slds-popover slds-popover_tooltip slds-nubbin_bottom b2b-remove-group-pop-over-button" role="tooltip">
+                                <div class="slds-popover__body b2b-bulk-popover-body">
+                                    <div class="slds-media__body slds-text-align_left">
+                                        <p>{labels.CMEXRemoveGroupHelpText}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="slds-p-right_small slds-p-bottom_xx-small">
+                    <div if:true={hasCustomGroup} class="slds-grid slds-grid_vertical-align-end slds-grid_align-end">
+                        <button aria-label={getRemoveMembersFromGroupLabel} class="slds-button slds-is-relative b2b-selected-member" onclick={removeFromGroup}
+                         onmouseover={displayTooltip} onmouseleave={hideTooltip} data-tooltip="showRemoveMembersFromGroupTooltip">
+                            {getRemoveMembersFromGroupLabel}
+                            <div if:true={tooltipMap.showRemoveMembersFromGroupTooltip} aria-describedby="dialog-body-id-110"
+                            aria-labelledby="dialog-heading-id-4"
+                            class="slds-popover slds-popover_tooltip slds-nubbin_bottom b2b-remove-members-from-group-pop-over-button" role="tooltip">
+                                <div class="slds-popover__body b2b-bulk-popover-body">
+                                    <div class="slds-media__body slds-text-align_left">
+                                        <p>{labels.CMEXRemoveMembersFromGroupHelpText}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="slds-p-right_small slds-p-bottom_xx-small">
+                    <div class="slds-grid slds-grid_vertical-align-end slds-grid_align-end">
+                        <lightning-button aria-label={getSelectedLabelForMembers} disabled={isRecordSelected} variant="base" label={getSelectedLabelForMembers} onclick={handleShowSelected} class="b2b-selected-member"></lightning-button>
+                    </div>
+                </div>
+                
+                <div if:false={showUpload} class="slds-p-right_x-small b2b-show-map-toggle">
+                    <template if:true={tableData}>
+                        <template if:true={tableData.length}>
+                            <!-- map toggle -->
+                            <template if:true={showMap}>
+                                <label class="slds-checkbox_toggle slds-grid">
+                                    <span
+                                        class="slds-form-element__label">{labels.CMEXShowMap}</span>
+                                    <input type="checkbox" onchange={handleMapToggle} name="checkbox"
+                                        aria-describedby="toggle-desc" value="on">
+                                    <span id="toggle-desc" class="slds-checkbox_faux_container"
+                                        aria-live="assertive">
+                                        <span class="slds-checkbox_faux"></span>
+                                    </span>
+                                </label>
+                            </template>
+                            <!-- end map -->
+                        </template>
+                    </template>  
+                </div>
+            </div>
+            
+            <div class="slds-table_edit_container slds-m-top_small slds-table_header-fixed_container slds-scrollable_x slds-m-top_none b2b-data-table_height400">
+                <div class="slds-scrollable_y">
+                <table class={getTableWrapper} style="border-collapse:collapse" aria-label={memberType} aria-live="assertive">
+                    <thead if:false={hideTableHeader} class="b2b-table_head slds-color__background_gray-3">
+                        <tr class="slds-line-height_reset b2b-table_row b2b-table_head-row">
+                            <th class={checkboxHeaderClass}>
+                                <div if:false={isGroupByOfferAssignedForQG} class="b2b-table_cell-box slds-form-element slds-cell-fixed">
+                                    <div class="slds-form-element__control b2b-table_checkbox">
+                                        <label class="slds-checkbox slds-p-top_none slds-p-left_x-small">
+                                            <input type="checkbox" data-check="checkall" onchange={handleRowSelect}
+                                                value="All" checked={checkAllValue}>
+                                            <span class="slds-checkbox_faux"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </th>
+                            <template if:true={isLocationOrSubscriberTab}>
+                                <th style={widthStyling} if:false={isGrouped} class="b2b-table_cell slds-is-resizable">
+                                    <div class="b2b-table_cell-box slds-cell-fixed">{labels.CMEXOfferAssignedColumn}</div>
+                                </th>
+                            </template>
+                            <th if:true={isGrouped} class="b2b-table_cell slds-size_x-small" style={widthStyling}>
+                                <div class="b2b-table_cell-box slds-cell-fixed" style={widthStyling}>{groupBy.groupFieldName}</div>
+                            </th>
+                            <template if:false={isGroupByOfferAssignedForQG} for:each={dataColumns} for:item="item" for:index="index">
+                                <th data-colid={item.id} aria-sort={item.ariaSort} if:true={item.visible} key={item.id} class={item.class} style={item.widthStyling} data-label={item.label}>
+                                    <div class="slds-cell-fixed slds-p-left_small" style={item.widthStyling}>
+                                        <div class="b2b-table_cell-box">
+                                            <a if:true={issortavailable}
+                                                class="slds-text-link_reset b2b-table_sort slds-grid" data-reverse="false"
+                                                data-field={item.fieldName} data-sortable={item.sortable} data-sortby={item.sortBy}
+                                                data-datatype={item.columnDataType} onclick={sortByField} onkeypress={sortByField} role="button"
+                                                tabindex="0">
+                                                <span class="slds-truncate" title={item.label}>{item.label}</span>
+                                                
+                                                <div class="slds-icon_container">
+                                                    <span aria-hidden="true">
+                                                        <vlocity_cmt-icon class="sorted-icon sort-direction"
+                                                            if:true={item.sortingEnabled} icon-name={sortingObj.icon}
+                                                            size="x-small" theme="slds">
+                                                        </vlocity_cmt-icon>
+                                                        <vlocity_cmt-icon if:false={item.sortingEnabled}
+                                                            class="b2b-hover-icon slds-transition-hide"
+                                                            icon-name="utility:arrowdown" size="x-small" theme="slds">
+                                                        </vlocity_cmt-icon>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <a if:false={issortavailable} class="slds-th__action slds-text-link_reset">
+                                                <span class="slds-truncate" title={item.label}>{item.label}</span>
+                                            </a>
+                                        </div>
+                                        <vlocity_cmt-b2b-resize-handler onresizecol={handleColumnResizing} element-index={item.id}
+                                            value={item.totalWidth} min-width="10" max-width="1000" label={item.label}
+                                            class="slds-resizable" data-navigation="enable" step="10">
+                                        </vlocity_cmt-b2b-resize-handler>
+                                    </div>
+                                </th>
+                            </template>
+                            <th if:true={isGroupByOfferAssignedForQG}>
+                                <div class="b2b-table_cell-box slds-cell-fixed">{labels.CMEXGroupNameColumn}</div>
+                            </th>
+                            <template if:false={isGroupByOfferAssignedForQG}>
+                                <th if:true={headerActionList.length} class="b2b-table_cell b2b-icon_cell b2b-action_cell">
+                                    <span class="b2b-dropdown_trigger slds-cell-fixed" tabindex="-1" data-actiontype="headerAction" onclick={toggleList}>
+                                        <div class="b2b-icon-cell_wrapper b2b-icon_cell">
+                                            <vlocity_cmt-icon theme="slds" icon-name="utility:down" size="xx-small">
+                                            </vlocity_cmt-icon>
+                                        </div>
+                                    </span>
+                                </th>
+                            </template>
+                            <th class="slds-cell_action-mode b2b-guided-table-icon_cell"><div class="slds-cell-fixed"></div></th>
+                        </tr>
+                    </thead>
+                    <tbody class="b2b-table_body">
+                        <!--No Group-->
+                        <tr if:true={showAddInlineLocationAndSubscriber} class="b2b-table_row">
+                            <td></td>
+                            <td></td>
+                            <template if:false={isGroupByOfferAssignedForQG} for:each={dataColumns} for:item="item" for:index="index">
+                                <td class="b2b-table_cell b2b-summary-cell" if:true={item.visible} key={item.id}>
+                                    <template if:true={item.headerLookupConfig}>
+                                        <div if:false={item.headerLookupConfig.showElement}>
+                                            <vlocity_cmt-button extraclass="slds-truncate" theme="slds" icon-name={item.headerLookupConfig.leadingIcon}
+                                                icon-size="x-small" label={item.headerLookupConfig.label}
+                                                data-columnid={item.id} data-calledfrom="button" data-fieldname={item.fieldName}
+                                                onclick={toggleTypeAheadElement}>
+                                            </vlocity_cmt-button>
+                                        </div>
+                                        <template if:true={item.headerLookupConfig.showElement}>
+                                            <vlocity_cmt-b2b-typeahead type="text"
+                                                field-level-help={item.headerLookupConfig.fieldLevelHelp}
+                                                field-level-help-position={item.headerLookupConfig.fieldLevelHelpPosition}
+                                                label={item.headerLookupConfig.fieldLabel} oninput={handletypeaheadInput}
+                                                single-select={item.headerLookupConfig.singleSelect}
+                                                onfocus={handletypeaheadFocus}
+                                                onblur={handletypeaheadBlur} onselect={handletypeaheadSelect}
+                                                onclear={handletypeaheadClear} options={typeaheadOptions}
+                                                placeholder={item.headerLookupConfig.placeholder}
+                                                required={item.headerLookupConfig.required}
+                                                min-length={item.headerLookupConfig.minLength}
+                                                max-length={item.headerLookupConfig.maxLength}
+                                                required-label={item.headerLookupConfig.requiredLabel}
+                                                no-results-found-message={labels.CMEXNoResults}
+                                                message-when-value-missing={item.headerLookupConfig.valueMissingMessage}
+                                                message-when-too-short={item.headerLookupConfig.valueShortMessage}
+                                                message-when-too-long={item.headerLookupConfig.valueLongMessage} theme="slds"
+                                                value={elementValue} remote-source=true
+                                                disable-filter={item.headerLookupConfig.disableFilter}
+                                                json-data={item.headerLookupConfig} icon-name-right="utility:search"
+                                                data-omni-input data-columnid={item.id} data-fieldname={item.fieldName}
+                                                data-index={index} data-placeslookup={item.headerLookupConfig.placesLookup}>
+                                                <div if:true={item.headerLookupConfig.customAction} slot="lastItem">
+                                                    <div class="slds-border_top slds-p-around_small slds-text-align_center">
+                                                        <vlocity_cmt-button theme="slds" icon-name={item.headerLookupConfig.customActionIcon} icon-size="x-small"
+                                                        label={item.headerLookupConfig.customActionLabel} data-calledfrom="button" data-fieldname={item.fieldName} onclick={handleTypeaheadActions}>
+                                                        </vlocity_cmt-button>
+                                                    </div>
+                                                </div>
+                                            </vlocity_cmt-b2b-typeahead>
+                                        </template>
+                                    </template>
+                                </td>
+                            </template>
+                        </tr>
+                        <template if:true={newRecords.length} for:each={newRecords} for:item="row" for:index="rowIndex">
+                            <tr key={row.rowId} class="b2b-table_row" data-index={row.originalItemIndex}>
+                                <td class="b2b-table_cell b2b-icon_cell">
+                                </td>
+                                <td class="b2b-table_cell b2b-table_cell-readonly b2b-table_transition-hide">
+                                </td>
+                                <template if:true={baseVersion} for:each={row.columns} for:item="cell"
+                                    for:index="colIndex">
+                                    <td key={cell.cellId} class={cell.class}>
+                                        <div class="b2b-table_cell-box">
+                                            <label class="b2b-table_cell-label">{cell.fieldLabel}</label>
+                                            <vlocity_cmt-b2b-data-table-cell data-field-name={cell.fieldName}
+                                                data-index={row.originalItemIndex} column-data={cell}
+                                                cell-data={cell.data} onedit={handleFieldEdit}
+                                                onclick={handleFieldClick} theme="slds">
+                                            </vlocity_cmt-b2b-data-table-cell>
+                                            <div if:true={rowDetail}>
+                                                <div if:true={cell.isFirst}>
+                                                    <vlocity_cmt-b2b-data-row-detail></vlocity_cmt-b2b-data-row-detail>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </template>
+                                <template if:true={row.isNewRecord}>
+                                    <td
+                                        class="slds-p-horizontal_none slds-p-vertical_small b2b-icon_cell b2b-action_cell">
+                                        <span data-calledfrom="button" data-index={row.originalItemIndex}
+                                            class="slds-m-right_x-small" onclick={saveNewRecord}>
+                                            <vlocity_cmt-icon extraclass="slds-p-around_xxx-small slds-avatar_circle" theme="slds"
+                                                bg-color="green" variant="inverse" icon-name="utility:check"
+                                                size="x-small">
+                                            </vlocity_cmt-icon>
+                                        </span>
+                                        <span data-calledfrom="button" data-index={row.originalItemIndex}
+                                            onclick={removeNewRecord}>
+                                            <vlocity_cmt-icon extraclass="slds-p-around_xxx-small slds-avatar_circle" theme="slds"
+                                                bg-color="red" variant="inverse" icon-name="utility:close"
+                                                size="x-small">
+                                            </vlocity_cmt-icon>
+                                        </span>
+                                    </td>
+                                </template>
+                            </tr>
+                        </template>
+                        
+                        <template if:true={tablePageData.length} if:false={isGrouped} for:each={tablePageData}
+                            for:item="row" for:index="rowIndex">
+                        
+                            <tr key={row.rowId} class={row.class} data-index={row.originalItemIndex}>
+                                <td class="b2b-table_cell b2b-icon_cell">
+                                    <div if:false={row.isNewRecord} class="b2b-table_cell-box slds-form-element">
+                                        <div class="slds-form-element__control b2b-table_checkbox">
+                                            <label class="slds-checkbox slds-p-top_none">
+                                                <input type="checkbox" name="options" onchange={handleRowSelect}
+                                                    checked={row.isItemSelected} value={row.originalItemIndex}>
+                                                <span
+                                                    class="slds-checkbox_faux"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td if:true={isLocationOrSubscriberTab} class="b2b-table_cell">
+                                    <template if:true={row.isQLIPresentForQM}>
+                                        <vlocity_cmt-icon icon-name="utility:check" size="xx-small" color="green"
+                                            extraclass="slds-icon-text-default">
+                                        </vlocity_cmt-icon>
+                                    </template>
+                                    <template if:false={row.isQLIPresentForQM}>
+                                        <div>---</div>
+                                    </template>
+                                </td>
+                                <template if:true={baseVersion} for:each={row.columns} for:item="cell"
+                                    for:index="colIndex">
+                                   
+                                    <td key={cell.cellId} class={cell.class}>
+                                        <div class="b2b-table_cell-box">
+                                            <label class="b2b-table_cell-label">{cell.fieldLabel}</label>
+                                            <vlocity_cmt-b2b-data-table-cell if:false={readMode} data-field-name={cell.fieldName}
+                                                data-index={row.originalItemIndex} column-data={cell}
+                                                cell-data={cell.data} onedit={handleFieldEdit}
+                                                onclick={handleFieldClick} theme="slds">
+                                            </vlocity_cmt-b2b-data-table-cell>
+                                           
+                                            <template if:false={cell.config.isCustomPicklistField}>
+                                                <vlocity_cmt-b2b-data-table-cell-list if:true={readMode} list-items={cell.data.value}
+                                                is-first={cell.isFirst} group-type={row.group.type} cell-data={cell}
+                                                summary-data-info={summaryDataToCell} oncpqitemcollapsed={collapseItems}
+                                                ontabupdate={handleTabUpdate} onfieldclick={handleFieldClick}
+                                                onfieldedit={handleSummaryEdit}></vlocity_cmt-b2b-data-table-cell-list>
+                                                <!-- 
+                                                <c-extended-b2b-data-table-cell-list if:true={readMode} list-items={cell.data.value}
+                                                is-first={cell.isFirst} group-type={row.group.type} cell-data={cell}
+                                                summary-data-info={summaryDataToCell} oncpqitemcollapsed={collapseItems}
+                                                ontabupdate={handleTabUpdate} onfieldclick={handleFieldClick}
+                                                onfieldedit={handleSummaryEdit}></c-extended-b2b-data-table-cell-list>
+                                                -->
+                                            </template>
+
+                                            <!-- Media and Bandwith are handled here -->
+                                            <template if:true={cell.config.isCustomPicklistField}>
+                                                <c-cb2b-extended-data-table-cell if:true={readMode} data-field-name={cell.fieldName}
+                                                data-index={row.originalItemIndex} column-data={cell}
+                                                cell-data={cell.data} onedit={handleFieldEditCustom}
+                                                onclick={handleFieldClick} theme="slds">
+                                            </c-cb2b-extended-data-table-cell>
+                                            </template>
+                                            <div if:true={rowDetail}>
+                                                <div if:true={cell.isFirst}>
+                                                    <vlocity_cmt-b2b-data-row-detail></vlocity_cmt-b2b-data-row-detail>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </template>
+                                <td if:true={hasActions}
+                                    class="b2b-table_cell b2b-icon_cell b2b-action_cell">
+                                    <span data-adjustmenu="true" data-index={row.originalItemIndex} class="b2b-dropdown_trigger" tabindex="-1" onclick={toggleList}>
+                                        <div class="b2b-icon-cell_wrapper b2b-icon_cell">
+                                            <vlocity_cmt-icon theme="slds" icon-name="utility:down" size="xx-small">
+                                            </vlocity_cmt-icon>
+                                        </div>
+                                    </span>
+                                </td>
+                            </tr>
+                        </template>
+                        <!--Group-->
+                        <template if:true={isGrouped} for:each={tablePageGroupData} for:item="group"
+                            for:index="groupIndex">
+                            <!--Group Header Row-->
+                            <tr key={group.groupRowId} class="slds-theme_shade b2b-table_row">
+                                <td class="b2b-table_cell b2b-icon_cell">
+                                    <div if:false={isGroupByOfferAssignedForQG} class="b2b-table_cell-box slds-form-element">
+                                        <div class="slds-form-element__control b2b-table_checkbox">
+                                            <label class="slds-checkbox slds-p-top_none">
+                                                <input type="checkbox" name="options" onchange={handleRowSelect}
+                                                    checked={group.isGroupSelected} value={group.groupRowId}>
+                                                <span
+                                                    class="slds-checkbox_faux"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td if:true={group.isReadOnly}
+                                    class="b2b-table_cell b2b-table_cell-readonly b2b-table_cell-full b2b-group-cell">
+                                    <div class="b2b-table_cell-box">
+                                        <a data-index={groupIndex} onclick={toggleGroupedRow}
+                                            class="slds-text-link_reset slds-grid">
+                                            <vlocity_cmt-icon theme="slds" data-index={groupIndex} baseurl={iconUrl}
+                                                icon-name="utility:chevrondown" extraclass="slds-m-right_x-small"
+                                                size="x-small"></vlocity_cmt-icon>
+                                                <span if:true={group.groupTotalCount}>{group.groupName} ({group.groupTotalCount})</span>
+                                                <span if:false={group.groupTotalCount}>{group.groupName} ({group.groupRecords.length})</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td if:false={group.isReadOnly} class="b2b-table_cell b2b-table_cell-full b2b-group-cell">
+                                    <div class="b2b-table_cell-box slds-grid slds-grid_vertical-align-center">
+                                        <a if:true={group.groupItems.length} data-index={groupIndex} onclick={toggleGroupedRow}
+                                            class="slds-size_1-of-12 slds-text-link_reset slds-m-right_small">
+                                            <vlocity_cmt-icon theme="slds" data-index={groupIndex} baseurl={iconUrl} icon-name="utility:chevrondown" size="x-small">
+                                            </vlocity_cmt-icon>
+                                        </a>
+                                        <div if:false={group.groupItems.length} class="slds-size_1-of-12">
+                                        </div>
+                                        <div if:false={group.editMode} data-expectedmember={group.expectedMemberCount} data-group={group.groupName} class="slds-grid slds-grid_align-spread slds-size_11-of-12"
+                                            onclick={editGroupName}>
+                                            <div title={group.groupName} class="slds-truncate">{group.groupName}</div>
+                                            <div class="slds-m-left_xx-small">
+                                                <span if:true={group.groupTotalCount}>({group.groupTotalCount})</span>
+                                                <span if:false={group.groupTotalCount}>({totalRecordsCount})</span>
+                                            </div>
+                                            <div class="slds-size_4-of-12 b2b-count-wrapper" if:true={group.expectedMemberCount}>
+                                                <span class="slds-p-around_xx-small b2b-expected-icon">
+                                                    <vlocity_cmt-icon color="#0070d2"
+                                                    icon-name="utility:forward" size="xx-small" theme="slds">
+                                                    </vlocity_cmt-icon>
+                                                </span>
+                                                <span class="b2b-expected-count">({group.expectedMemberCount})</span>
+                                            </div>
+                                            <div class="slds-col_bump-left slds-m-right_x-small">
+                                                <vlocity_cmt-icon if:false={canEditGroup} class="b2b-hover-icon slds-transition-hide"
+                                                icon-name="utility:edit" size="x-small" theme="slds">
+                                                </vlocity_cmt-icon>
+                                            </div>
+                                        </div>
+                                        <div class="slds-grid b2b-group-cell-edit" if:true={group.editMode}>
+                                            <vlocity_cmt-input theme="slds" data-editfield="groupName" data-group={group.groupName} type="text" class="slds-size_1-of-1 slds-medium-size_7-of-12 b2b-input b2b-field_edit slds-m-right_x-small" 
+                                                onchange={handleGroupEdit} value={group.groupName}></vlocity_cmt-input>
+                                            <vlocity_cmt-input theme="slds" data-editfield="expectedMemberCount" data-group={group.groupName} data-expectedmember={group.expectedMemberCount} type="number" 
+                                                class="slds-size_1-of-1 slds-medium-size_3-of-12 b2b-input b2b-field_edit slds-m-right_x-small"
+                                                onchange={handleGroupEdit} value={group.expectedMemberCount}></vlocity_cmt-input>
+                                            <div class="slds-align-middle slds-grid slds-size_1-of-1 slds-medium-size_2-of-12">
+                                                <span data-group={group.groupName} data-expectedmember={group.expectedMemberCount} class="slds-m-right_x-small" onclick={updateGroupName}>
+                                                    <vlocity_cmt-icon extraclass="slds-p-around_xxx-small slds-avatar_circle" theme="slds"
+                                                        bg-color="green" variant="inverse" icon-name="utility:check"
+                                                        size="x-small">
+                                                    </vlocity_cmt-icon>
+                                                </span>
+                                                <span data-group={group.groupName} onclick={cancelGroupEdit}>
+                                                    <vlocity_cmt-icon extraclass="slds-p-around_xxx-small slds-avatar_circle" theme="slds"
+                                                        bg-color="red" variant="inverse" icon-name="utility:close"
+                                                        size="x-small">
+                                                    </vlocity_cmt-icon>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!--Show empty cols if group fields are missing and column array is empty-->
+                                <template if:false={group.columns.length} for:each={dataColumns} for:item="col">
+                                    <td class="b2b-table_cell b2b-table_cell-readonly b2b-table_transition-hide"
+                                        key={col.cellId} if:true={col.visible}>
+                                        <div class="b2b-table_cell-box"></div>
+                                    </td>
+                                </template>
+                                <template if:true={group.columns.length} for:each={group.columns} for:item="col">
+                                    <td class={col.class} key={col.cellId}>
+                                        <div class="b2b-table_cell-box">
+                                            <label class="b2b-table_cell-label">{col.fieldLabel}</label>
+                                            <div>{col.data.value}</div>
+                                        </div>
+                                    </td>
+                                </template>
+                                <td if:true={groupActionList.length}
+                                    class="b2b-table_cell b2b-icon_cell b2b-action_cell">
+                                    <span class="b2b-dropdown_trigger" tabindex="-1" onclick={toggleList} data-actiontype="groupAction" data-index={groupIndex}>
+                                        <div class="b2b-icon-cell_wrapper b2b-icon_cell">
+                                            <vlocity_cmt-icon theme="slds" icon-name="utility:down" size="xx-small">
+                                            </vlocity_cmt-icon>
+                                        </div>
+                                    </span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <template if:false={isGroupByOfferAssignedForQG}>
+                                <tr for:each={group.groupItems} for:item="row" key={row.rowId} class={row.class}
+                                    data-index={row.originalItemIndex}>
+                                    <td class="b2b-table_cell b2b-icon_cell">
+                                        <div class="b2b-table_cell-box slds-form-element">
+                                            <div class="slds-form-element__control b2b-table_checkbox">
+                                                <label class="slds-checkbox">
+                                                    <input type="checkbox" name="options" onchange={handleRowSelect}
+                                                        checked={row.isItemSelected} value={row.originalItemIndex}>
+                                                    <span
+                                                        class="slds-checkbox_faux"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td key={row.rowId}
+                                        class="b2b-table_cell b2b-table_cell-readonly b2b-table_transition-hide">
+                                        <div class="b2b-table_cell-box">&nbsp;</div>
+                                    </td>
+                                    <template for:each={row.columns} for:item="cell" for:index="colIndex">
+                                        <td key={cell.cellId} class={cell.class}>
+                                            <div class="b2b-table_cell-box">
+                                                <label class="b2b-table_cell-label">{cell.fieldLabel}</label>
+                                                <vlocity_cmt-b2b-data-table-cell if:false={readMode} data-field-name={cell.fieldName}
+                                                    data-index={row.originalItemIndex} column-data={cell}
+                                                    cell-data={cell.data} onedit={handleFieldEdit}
+                                                    onclick={handleFieldClick} theme="slds">
+                                                </vlocity_cmt-b2b-data-table-cell>
+                                                <vlocity_cmt-b2b-data-table-cell-list if:true={readMode} list-items={cell.data.value}
+                                                    group-type={row.group.type} cell-data={cell} is-first={cell.isFirst}
+                                                    oncpqitemcollapsed={collapseItems} onfieldclick={handleFieldClick}
+                                                    onfieldedit={handleSummaryEdit}></vlocity_cmt-b2b-data-table-cell-list>
+                                                <div if:true={rowDetail}>
+                                                    <div if:true={cell.isFirst}>
+                                                        <vlocity_cmt-b2b-data-row-detail></vlocity_cmt-b2b-data-row-detail>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </template>
+                                    <td if:true={hasActions}
+                                        class="b2b-table_cell b2b-icon_cell b2b-action_cell">
+                                        <span data-adjustmenu="true" data-index={row.originalItemIndex} data-groupindex={groupIndex} class="b2b-dropdown_trigger" tabindex="-1" onclick={toggleList}>
+                                            <div class="b2b-icon-cell_wrapper b2b-icon_cell">
+                                                <vlocity_cmt-icon theme="slds" icon-name="utility:down" size="xx-small">
+                                                </vlocity_cmt-icon>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </template>
+                            <template if:true={isGroupByOfferAssignedForQG}>
+                                <tr for:each={group.groupItems} for:item="row" key={row.rowId} class={row.class}>
+                                    <td></td>
+                                    <td key={row.rowId}
+                                        class="b2b-table_cell b2b-table_cell-readonly b2b-table_transition-hide">
+                                        <div class="b2b-table_cell-box">&nbsp;</div>
+                                    </td>
+                                    <td>
+                                        <div class="b2b-table_cell-box">
+                                            <span>{row.customGroupName}</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </template>
+                        <template if:true={isGrouped}>
+                            <tr if:false={tablePageGroupData.length}>
+                                <template if:true={checkIfEmptyGroup}>
+                                    <td class="b2b-table_cell" colspan="2"></td>
+                                    <td class="b2b-table_cell" colspan={dataColumns.length}>{groupBy.groupFieldName}
+                                        {labels.CMEXNoRecordsInGroup}
+                                        <template if:true={groupBy.isCustom}>
+                                            <a class="slds-m-right_xx-small" onclick={removeEmptyGroup} data-id={groupBy.groupId}>{labels.CMEXClick}</a>
+                                            {labels.CMEXToRemoveGroup}
+                                        </template>
+                                    </td>
+                                    <td class="b2b-table_cell"></td>
+                                </template>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div if:true={totalNumberOfPages} class={paginationClass}>
+                <vlocity_cmt-button aria-label={labels.CMEXPrevious} if:true={showPaginationOption} theme="slds" icon-name="utility:chevronleft" icon-size="small"
+                    disabled={prevDisabled} data-index="prev" onclick={goToPage}>
+                </vlocity_cmt-button>
+                <template if:true={showPaginationOption} for:each={range} for:item="page">
+                    <button key={page.counter} class={page.status} data-index={page.counter} onclick={goToPage}>
+                        {page.counter}
+                    </button>
+                </template>
+                <vlocity_cmt-button aria-label={labels.CMEXNext} if:true={showPaginationOption} theme="slds" icon-name="utility:chevronright"
+                    icon-size="small" disabled={nextDisabled} data-index="next" onclick={goToPage}>
+                </vlocity_cmt-button>
+            </div>
+        </div>
+        <vlocity_cmt-b2b-status-bar>
+            <div class="b2b-btn-container">
+                <vlocity_cmt-b2b-button theme="slds" variant="brand" if:true={showAddProductBtn} label={labels.CMEXAddProducts} onclick={addProducts}></vlocity_cmt-b2b-button>
+                <vlocity_cmt-b2b-button theme="slds" variant="brand" if:false={showAddProductBtn} label={labels.CMEXAddProducts} onclick={addProducts} disabled></vlocity_cmt-b2b-button>
+            </div>
+        </vlocity_cmt-b2b-status-bar>
+        <vlocity_cmt-modal class="b2b-file-mapper" theme="slds" size="medium">
+            <h2 slot="header" class="b2b-title">{getGroupModalLabel}</h2>
+            <div slot="content" class="slds-p-vertical_medium" style="min-height: 200px;">
+                <div if:true={recordsSelected.length} class="slds-grid slds-wrap">
+                    <div class="slds-size_1-of-1 slds-medium-size_5-of-12">
+                        <h1 class="slds-m-bottom_small b2b-group-modal-headers">{getGroupModalSelectLabel}</h1>
+                        <vlocity_cmt-combobox label={labels.CMEXExistingGroup} class="b2b-input" theme="slds" value={selectGroup.value}
+                            options={customGroupList} onchange={setGroup}>
+                        </vlocity_cmt-combobox>
+                    </div>
+                    <div
+                        class="slds-size_1-of-1 slds-medium-size_2-of-12 slds-p_horizontal-small slds-p-top_large slds-text-align_center">
+                        {labels.CMEXOr}</div>
+                    <div class="slds-size_1-of-1 slds-medium-size_5-of-12">
+                        <div>
+                            <h1 class="slds-m-bottom_small b2b-group-modal-headers">{getGroupModalNewGroupLabel}</h1>
+                            <div>
+                                <vlocity_cmt-input placeholder={labels.CMEXEnterGroupName} label={labels.CMEXGroupNameColumn} data-catg="nGrp" value={nGrpName} theme="slds"
+                                    onchange={createNewGroup}></vlocity_cmt-input>
+                            </div>
+                            <div class="slds-p-top_large"> 
+                                <vlocity_cmt-input placeholder={labels.CMEXEnterGroupMemberLimit} label={labels.CMEXQuoteMemberLimit} type="number" value={expectedMemberCount} theme="slds"
+                                    onchange={expectedMemberChange}></vlocity_cmt-input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-grid slds-wrap" if:false={recordsSelected.length}>
+                    <h1 class="slds-size_2-of-2 slds-p-horizontal_large slds-m-bottom_large  b2b-group-modal-headers">{labels.CMEXGroupModalInfo}</h1>
+                    <div class="slds-size_1-of-2 slds-p-horizontal_large">
+                        <vlocity_cmt-input placeholder={labels.CMEXEnterGroupName} label={labels.CMEXGroupNameColumn} data-catg="nGrp" value={nGrpName} theme="slds"
+                            onchange={createNewGroup}></vlocity_cmt-input>
+                    </div>
+                    <div class="slds-size_1-of-2 slds-p-horizontal_large">
+                        <vlocity_cmt-input placeholder={labels.CMEXEnterGroupMemberLimit} label={labels.CMEXQuoteMemberLimit} type="number" value={expectedMemberCount} theme="slds"
+                            onchange={expectedMemberChange}></vlocity_cmt-input>
+                    </div>
+                </div>
+            </div>
+            <div slot="footer" class="slds-is-relative">
+                <div if:true={showWait}>
+                    <vlocity_cmt-spinner variant="brand" size="medium"></vlocity_cmt-spinner>
+                </div>
+                <vlocity_cmt-button variant="neutral" label={labels.CMEXCancel} onclick={cancelGrpName} theme="slds"
+                    class="slds-p-right_x-small slds-p-right_x-small">
+                </vlocity_cmt-button>
+                <vlocity_cmt-button variant="brand" label={labels.CMEXSave} onclick={updateGroup} theme="slds">
+                </vlocity_cmt-button>
+            </div>
+        </vlocity_cmt-modal>
+        <div if:true={showBulkConfigModal}>
+            <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+                class="slds-modal slds-fade-in-open slds-modal_large b2b-bulkedit-main-modal">
+                <div class="slds-modal__container">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse modal-close-btn" style="margin-left: auto;" onclick={openBulkConfigModal}>
+                        <div class="b2b-bulk-quote-chevclose">
+                            <vlocity_cmt-icon theme="slds" icon-name="utility:close" size="medium"
+                                color="#fff"></vlocity_cmt-icon>
+                        </div>
+                        <span class="slds-assistive-text">Cancel and close</span>
+                      </button>
+                    <div class="slds-modal__header">
+                        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">{labels.CMEXBulkEditPopupHeading}</h1>
+                    </div>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <vlocity_cmt-b2b-bulk-quote-product-configuration cartid={currentCartId} productid={selectedProductId} productname={selectedProductName} rootitemidlist={rootItemIdList} accountid={route.Quote.accountId}></vlocity_cmt-b2b-bulk-quote-product-configuration>
+                    </div>
+                    <div class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" aria-label="Cancel and close"
+                            onclick={openBulkConfigModal}>{labels.CMEXBulkEditPopupCancel}</button>
+                        <button class="slds-button slds-button_brand b2b-bulk-edit-save-btn" onclick={handlebulkeditsave} disabled="">{labels.CMEXBulkEditPopupSaveBtnLabel}</button>
+                    </div>
+                </div>
+            </section>
+            <span class="last-focusable-element" tabindex="0" onfocus={trapFocus}></span>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </div>
+        <div class="slds-spinner_container" if:true={loading}>
+            <lightning-spinner alternative-text={labels.CMEXLoading} size="small" variant="brand">
+            </lightning-spinner>
+        </div>
+        <vlocity_cmt-modal size="medium" theme="slds"  class="b2b-addressvalidation-modal">
+            <div slot="header">
+                <h1 class="b2b-modal-header">{labels.CMEXFixAddress}</h1>    
+            </div>
+            <div slot="content" class="slds-is-relative slds-grid">
+                <div class="slds-size_6-of-12">
+                    <div>
+                         <h1>{labels.CMEXOldAddress}</h1>   
+                    </div>
+                    <div if:true={invalidMember}>
+                        <del>{invalidMember.Name}</del>
+                    </div>
+                </div>                 
+                <div if:true={addressValidationModal} class="b2b-adjustment-type-combobox slds-size_6-of-12">
+                    <vlocity_cmt-combobox theme="slds" options={addressMemberComboList} value=""
+                      placeholder={labels.CMEXSelect} class="b2b-input" onchange={onChangeAddresSelected}>
+                    </vlocity_cmt-combobox>
+                </div>
+            </div>
+            <div slot="footer">
+                    <vlocity_cmt-button
+                        label={labels.CMEXCancel}
+                        onclick={closeModal}
+                        extraclass="slds-p-horizontal_x-large slds-p-vertical_xxx-small"
+                        variant="neutral"
+                        class="slds-float_right">
+                    </vlocity_cmt-button>
+                    <vlocity_cmt-button disabled = {disableSaveMember}
+                        label={labels.CMEXSave}
+                        onclick={saveMember}
+                        extraclass="slds-p-horizontal_x-large slds-p-vertical_xxx-small"
+                        variant="brand"
+                        class="slds-float_right slds-p-right_small">
+                    </vlocity_cmt-button>
+            </div>           
+        </vlocity_cmt-modal>
+        <vlocity_cmt-modal size="xx-small" theme="slds"  class="b2b-deleteQliConfirmation-modal">
+            <div slot="header">
+                <template if:true={objTypeIsQuote}>
+                    <h1 class="b2b-modal-header slds-text-heading_medium">{labels.CMEXBulkQLIDeleteConfirmModalHeader}</h1>
+                </template>  
+                <template if:false={objTypeIsQuote}>
+                    <h1 class="b2b-modal-header slds-text-heading_medium">{labels.CMEXBulkOIDeleteConfirmModalHeader}</h1>
+                </template>   
+            </div>
+            <div slot="content" class="slds-is-relative">
+                <div class="slds-p-around_x-large">
+                    <div if:true={objTypeIsQuote}>
+                         <h3> {labels.CMEXBulkQLIDeleteConfirmModalTextLine1Part1} {recordsCount} {labels.CMEXBulkQLIDeleteConfirmModalTextLine1Part2}</h3>
+                    </div>
+                    <div if:false={objTypeIsQuote}>
+                        <h3> {labels.CMEXBulkOLIDeleteConfirmModalTextLine1Part1} {recordsCount} {labels.CMEXBulkOLIDeleteConfirmModalTextLine1Part2}</h3>
+                   </div>
+                </div>
+            </div>
+            <div slot="footer">
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    variant="neutral"
+                    label={labels.CMEXCancel}
+                    onclick={handleQliDeleteModal}
+                    class="slds-m-right_small"
+                    data-role="cancel">
+                </vlocity_cmt-b2b-button>
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    label={labels.CMEXDelete}
+                    onclick={handleQliDeleteModal}
+                    variant="brand"
+                    class="slds-m-right_small"
+                    data-role="continue">
+                </vlocity_cmt-b2b-button>
+            </div>     
+        </vlocity_cmt-modal>
+        <vlocity_cmt-modal size="xx-small" theme="slds"  class="b2b-disconnectQliConfirmation-modal">
+            <div slot="header">
+                <h1 class="b2b-modal-header slds-text-heading_medium">{labels.CMEXDisconnectQLIConfirmModalHeader}</h1>
+            </div>
+            <div slot="content" class="slds-is-relative">
+                <div class="slds-p-around_x-large">
+                    <h3>{labels.CMEXDisconnectQLIConfirmModalMessage}</h3>
+                </div>
+                <div if:true={enableLinearRelationshipWarningOnDisconnectLineItem} class="slds-m-left_x-large slds-m-right_x-large">
+                    <h3>{labels.CMEXQLIDisconnectWarningMessageLine1}</h3>
+                    <h3>{labels.CMEXQLIDisconnectWarningMessageLine2}</h3>
+                </div>
+            </div>
+            <div slot="footer">
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    variant="neutral"
+                    label={labels.CMEXCancel}
+                    onclick={handleQliDisconnectModal}
+                    class="slds-m-right_small"
+                    data-role="cancel">
+                </vlocity_cmt-b2b-button>
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    label={labels.CMEXDisconnect}
+                    onclick={handleQliDisconnectModal}
+                    variant="brand"
+                    class="slds-m-right_small"
+                    data-role="save">
+                </vlocity_cmt-b2b-button>
+            </div>     
+        </vlocity_cmt-modal>
+        <vlocity_cmt-modal size="xx-small" theme="slds"  class="b2b-bulkDisconnectQliConfirmation-modal">
+            <div slot="header">
+                <h1 class="b2b-modal-header slds-text-heading_medium">{labels.CMEXDisconnectOLIConfirmModalHeader}</h1>
+            </div>
+            <div slot="content" class="slds-is-relative">
+                <div class="slds-p-around_x-large">
+                    <h3>{labels.CMEXDisconnectOLIConfirmModalMessage}</h3>
+                </div>
+                <div if:true={enableLinearRelationshipWarningOnDisconnectLineItem} class="slds-m-left_x-large slds-m-right_x-large">
+                    <h3>{labels.CMEXQLIDisconnectWarningMessageLine1}</h3>
+                    <h3>{labels.CMEXQLIDisconnectWarningMessageLine2}</h3>
+                </div>
+            </div>
+            <div slot="footer">
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    variant="neutral"
+                    label={labels.CMEXCancel}
+                    onclick={handleBulkQliDisconnectModal}
+                    class="slds-m-right_small"
+                    data-role="cancel">
+                </vlocity_cmt-b2b-button>
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    label={labels.CMEXDisconnect}
+                    onclick={handleBulkQliDisconnectModal}
+                    variant="brand"
+                    class="slds-m-right_small"
+                    data-role="save">
+                </vlocity_cmt-b2b-button>
+            </div>
+        </vlocity_cmt-modal>
+        <vlocity_cmt-modal size="xx-small" theme="slds"  class="b2b-deleteMembersConfirmation-modal">
+            <div slot="header">
+                <template if:true={isLocationOrSubscriberTab}>
+                    <h1 class="b2b-modal-header slds-text-heading_medium">{labels.CMEXBulkEditBulkDelete} <span if:true={isSubscriberTab}>{labels.CMEXSubscribers}</span> <span if:true={isLocationTab}>{labels.CMEXLocations}</span>{labels.CMEXQuestionSymbol}</h1>
+                </template>
+            </div>
+            <div slot="content" class="slds-is-relative">
+                <div class="slds-p-around_x-large">
+                    <h3 class="slds-m-bottom_large">{labels.CMEXBulkDeletePopupMsg1} {recordsCount} <span if:true={isSubscriberTab}>{labels.CMEXSubscribers}</span> <span if:true={isLocationTab}>{labels.CMEXLocations}</span>. {labels.CMEXBulkDeletePopupMsg2}</h3>
+                    <input class="b2b-bulk-delete-member-conditional-checkbox slds-m-right_x-small" type="checkbox">
+                    <span class="slds-checkbox_faux">{labels.CMEXDeleteAssignedOffers}</span>
+                </div>
+            </div>
+            <div slot="footer">
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    variant="neutral"
+                    label={labels.CMEXCancel}
+                    onclick={deleteMemberPopup}
+                    class="slds-m-right_small"
+                    data-role="cancel">
+                </vlocity_cmt-b2b-button>
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    label={labels.CMEXDelete}
+                    onclick={deleteMemberPopup}
+                    variant="brand"
+                    class="slds-m-right_small"
+                    data-role="save">
+                </vlocity_cmt-b2b-button>
+            </div>     
+        </vlocity_cmt-modal>
+        <vlocity_cmt-modal size="xx-small" theme="slds"  class="b2b-deleteSingleMemberConfirmation-modal">
+            <div slot="header">
+                <template if:true={isLocationOrSubscriberTab}>
+                    <h1 class="b2b-modal-header slds-text-heading_medium">{labels.CMEXDelete} {memberType}{labels.CMEXQuestionSymbol}</h1>
+                </template>
+            </div>
+            <div slot="content" class="slds-is-relative">
+                <div class="slds-p-around_x-large">
+                    <h3 class="slds-m-bottom_large">{labels.CMEXSingleDeleteConfirmModalTextLine1Part1} <span>{memberType}</span>. {labels.CMEXSingleDeletePopupMsg2}</h3>
+                    <input class="b2b-single-delete-member-conditional-checkbox slds-m-right_x-small" type="checkbox">
+                    <span class="slds-checkbox_faux">{labels.CMEXDeleteAssignedOffers}</span>
+                </div>
+            </div>
+            <div slot="footer">
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    variant="neutral"
+                    label={labels.CMEXCancel}
+                    onclick={handleSingleDeleteMemberPopup}
+                    class="slds-m-right_small"
+                    data-role="cancel">
+                </vlocity_cmt-b2b-button>
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    label={labels.CMEXDelete}
+                    onclick={handleSingleDeleteMemberPopup}
+                    variant="brand"
+                    class="slds-m-right_small"
+                    data-role="save">
+                </vlocity_cmt-b2b-button>
+            </div>     
+        </vlocity_cmt-modal>
+        <!-- custom modal introduced for b2b-techenrichment -->
+        <vlocity_cmt-modal size="medium" theme="slds"  class="b2b-techenrichment-modal">
+            <div slot="header">
+                <h1 class="b2b-modal-header slds-text-heading_medium">Technical Attribute</h1>
+            </div>
+            <div slot="content" class="slds-is-relative">
+                <div>
+                    <c-technical-attribute-enrichment record-id={_selectedRecordId} onattributechange={handleAttributeChange} onsave={handleCloseTechEnrichmentPopup}></c-technical-attribute-enrichment>
+                </div>
+            </div>
+            <div slot="footer">
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    variant="neutral"
+                    label={labels.CMEXCancel}
+                    onclick={handleCloseTechEnrichmentPopup}
+                    class="slds-m-right_small"
+                    data-role="cancel">
+                </vlocity_cmt-b2b-button>
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    variant="neutral"
+                    label={labels.CMEXSave}
+                    onclick={handleSaveTechEnrichmentPopup}
+                    class="slds-m-right_small"
+                    data-role="save">
+                </vlocity_cmt-b2b-button>
+            </div>     
+        </vlocity_cmt-modal>
+
+         <!-- custom modal introduced for asset-comparison -->
+         <vlocity_cmt-modal size="medium" theme="slds"  class="b2b-assetPriceComparison-modal">
+            <div slot="header">
+                <h1 class="b2b-modal-header slds-text-heading_medium">Asset Comparison</h1>
+            </div>
+            <div slot="content" class="slds-is-relative">
+                <div>
+                    <c-extended-asset-price-comparison if:true={_renderFlexCard} root-line-item-attribute-selected-values={_parentAttributeFlexCard.rootLineItemAttributes}  asset-reference-id={_selectedAssetReferenceId}></c-extended-asset-price-comparison>
+                </div>
+            </div>
+            <div slot="footer">
+                <vlocity_cmt-b2b-button
+                    theme="slds"
+                    variant="neutral"
+                    label={labels.CMEXCancel}
+                    onclick={handleCloseAssetPriceComparisonPopup}
+                    class="slds-m-right_small"
+                    data-role="cancel">
+                </vlocity_cmt-b2b-button>
+            </div>     
+</vlocity_cmt-modal>
+    </div>
+</template>

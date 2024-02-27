@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_PartyCreationFromSolaceQueue_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PartyCreationFromSolaceQueue",
+    "OmniProcessElement": [
+        "ARTL_PartyCreationFromSolaceQueue_Element_DRFetchPartyDetails.json",
+        "ARTL_PartyCreationFromSolaceQueue_Element_ApexJSONResponse.json",
+        "ARTL_PartyCreationFromSolaceQueue_Element_MergeResponse.json",
+        "ARTL_PartyCreationFromSolaceQueue_Element_HTTPSolaceQueue.json",
+        "ARTL_PartyCreationFromSolaceQueue_Element_DRUpdateStepStatusOnAccount.json",
+        "ARTL_PartyCreationFromSolaceQueue_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_PartyCreationFromSolaceQueue",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_PartyCreationFromSolaceQueue_PropertySetConfig.json",
+    "SubType": "PartyCreationFromSolaceQueue",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/PartyCreationFromSolaceQueue/Procedure",
+    "WebComponentKey": "818efa66-1d0a-0b3a-2cdf-0ba4aa463274",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001OmgEAE"
+}

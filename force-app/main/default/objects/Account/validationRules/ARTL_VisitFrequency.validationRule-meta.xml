@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_VisitFrequency</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+      NOT(ISBLANK(ARTL_SAM_Account_Visit_Frequency__c)),
+      OR(
+         ARTL_SAM_Account_Visit_Frequency__c &lt; 1,
+         ARTL_SAM_Account_Visit_Frequency__c &gt; 30
+      )
+    )</errorConditionFormula>
+    <errorDisplayField>ARTL_SAM_Account_Visit_Frequency__c</errorDisplayField>
+    <errorMessage>SAM Visit frequency should be between 1 - 30.</errorMessage>
+</ValidationRule>

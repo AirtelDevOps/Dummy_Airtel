@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>ARTL_Sales_Ops_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sales Ops Access</label>
+        <sharedTo>
+            <role>Sales_Ops</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>AB_CEO</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

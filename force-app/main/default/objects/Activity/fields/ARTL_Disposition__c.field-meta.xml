@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Disposition__c</fullName>
+    <externalId>false</externalId>
+    <label>Disposition</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Opportunity Created</fullName>
+                <default>false</default>
+                <label>Opportunity Created</label>
+            </value>
+            <value>
+                <fullName>Opportunity Not Created</fullName>
+                <default>false</default>
+                <label>Opportunity Not Created</label>
+            </value>
+            <value>
+                <fullName>PTP</fullName>
+                <default>false</default>
+                <label>PTP</label>
+            </value>
+            <value>
+                <fullName>Churn Threat</fullName>
+                <default>false</default>
+                <label>Churn Threat</label>
+            </value>
+            <value>
+                <fullName>SR Raised</fullName>
+                <default>false</default>
+                <label>SR Raised</label>
+            </value>
+            <value>
+                <fullName>MBR</fullName>
+                <default>false</default>
+                <label>MBR</label>
+            </value>
+            <value>
+                <fullName>QBR</fullName>
+                <default>false</default>
+                <label>QBR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

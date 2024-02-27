@@ -1,0 +1,29 @@
+<template>
+    <!-- create card -->
+    <lightning-card variant="Narrow" class="cardSpinner">
+        <!-- loader -->
+        <div if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading..." variant="brand">
+            </lightning-spinner>
+        </div>
+        <!-----/loader-------->
+        <!--
+        <div class="slds-var-p-around_small">
+            <template if:true={data}>
+                <c-l-w-c-custom-datatable-type key-field="Id" data={data} columns={columns}
+                    onpicklistchanged={multpicklistChanged} onvalueselect={handleSelection} draft-values={draftValues}
+                    oncellchange={handleCellChange} onsave={handleSave} oncancel={handleCancel} hide-checkbox-column="true">
+                </c-l-w-c-custom-datatable-type>
+            </template>
+        </div>
+        -->
+        <div class="slds-var-p-around_small">
+            <template if:true={lastSavedData}>
+                <c-l-w-c-custom-datatable-type key-field="Id" data={lastSavedData} columns={columns}
+                    onpicklistchanged={multpicklistChanged} onvalueselect={handleSelection} draft-values={draftValues}
+                    oncellchange={handleCellChange} hide-checkbox-column="true" suppress-bottom-bar="true">
+                </c-l-w-c-custom-datatable-type>
+            </template>
+        </div>
+    </lightning-card>
+</template>

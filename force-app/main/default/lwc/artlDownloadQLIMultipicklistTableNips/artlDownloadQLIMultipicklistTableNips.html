@@ -1,0 +1,49 @@
+<template>
+    <template if:true={data}>
+        <c-l-w-c-custom-datatable-type 
+            column-widths-mode= "auto"
+            min-column-width="100"
+            key-field="Id" 
+            data={recordsToDisplay}
+            columns={columns} 
+            onpicklistchanged={multpicklistChanged}
+            onvalueselect={handleSelection} 
+            draft-values={draftValues} 
+            oncellchange={handleCellChange} 
+            onsave={handleSave}
+            oncancel={handleCancel}
+            hide-checkbox-column>
+        </c-l-w-c-custom-datatable-type>
+        <div class="slds-grid slds-grid_align-spread pagination-container" style="padding-top: 0.75em;">
+             <!--TOTAL RECORDS-->
+             <div class="slds-clearfix">
+                <div class="slds-float_right">
+                    <span class="slds-badge"> Total Records: {totalRecords}</span>
+                </div>
+            </div>
+            <!--RECORDS PER PAGE-->
+            <div class="slds-col">
+                <div class="slds-list_inline slds-p-bottom_xx-small">
+                    <label class="slds-text-color_weak slds-p-horizontal_x-small page-size-label-align" for="recordsPerPage">Page Size:</label>
+                    <div class="slds-select_container">
+                        <select class="slds-select" id="recordsPerPage" onchange={handleRecordsPerPage}>
+                            <template for:each={pageSizeOptions} for:item="option">
+                                <option key={option} value={option}>{option}</option>
+                            </template>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!--PAGE NAVIGATION-->
+            <div style="height:5rem">
+                <lightning-button disabled={bDisableFirst} icon-name="utility:jump_to_left" label="" class="slds-p-horizontal_x-small" alternative-text="first page" onclick={firstPage}></lightning-button>
+                <lightning-button disabled={bDisableFirst} icon-name="utility:chevronleft" label="" alternative-text="Previous" onclick={previousPage}></lightning-button>
+                &nbsp;
+                <span class="slds-badge">Showing {pageNumber} &nbsp;of&nbsp; {totalPages} &nbsp;&nbsp;Page(s)</span>
+                &nbsp;
+                <lightning-button disabled={bDisableLast} icon-name="utility:chevronright" label="" alternative-text="Next" onclick={nextPage} class="slds-p-horizontal_x-small" icon-position="right"></lightning-button>
+                <lightning-button disabled={bDisableLast} icon-name="utility:jump_to_right" label="" alternative-text="last page" onclick={lastPage} icon-position="right"></lightning-button>
+            </div>
+        </div>
+    </template>
+</template>

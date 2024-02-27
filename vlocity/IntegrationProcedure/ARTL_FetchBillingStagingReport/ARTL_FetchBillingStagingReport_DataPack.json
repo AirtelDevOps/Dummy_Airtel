@@ -1,0 +1,24 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FetchBillingStagingReport",
+    "OmniProcessElement": [
+        "ARTL_FetchBillingStagingReport_Element_DRGetBillingStagingRep.json",
+        "ARTL_FetchBillingStagingReport_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_FetchBillingStagingReport",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_FetchBillingStagingReport_PropertySetConfig.json",
+    "SubType": "FetchBillingStagingReport",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/FetchBillingStagingReport/Procedure"
+}

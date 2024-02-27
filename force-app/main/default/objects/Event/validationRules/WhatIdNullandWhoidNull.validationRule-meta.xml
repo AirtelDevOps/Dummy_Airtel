@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WhatIdNullandWhoidNull</fullName>
+    <active>true</active>
+    <description>Either Name or Related To should be filled for event with record type Action Plan</description>
+    <errorConditionFormula>ISBLANK(WhoId) &amp;&amp; ISBLANK(WhatId)</errorConditionFormula>
+    <errorMessage>Event must be related to either an Account/Related entity and contact or only a lead</errorMessage>
+</ValidationRule>

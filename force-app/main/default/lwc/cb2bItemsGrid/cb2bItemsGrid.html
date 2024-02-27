@@ -1,0 +1,12 @@
+<template>
+    <div>
+      <div class="b2b-enterprise-items-grid">
+        <div class="b2b-enterprise-items-grid_title slds-m-bottom_small" if:false={hideTitle}>
+          <slot name="title"></slot>
+        </div>
+        <div class="b2b-enterprise-items-grid_container" aria-live="assertive">
+          <slot name="items"></slot>
+        </div>
+      </div>
+    </div>
+  </template>

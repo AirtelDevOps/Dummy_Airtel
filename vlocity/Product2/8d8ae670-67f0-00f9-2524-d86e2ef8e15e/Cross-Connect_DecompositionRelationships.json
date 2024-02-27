@@ -1,0 +1,34 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "98ffa3c8-6624-fc4f-153b-32e6c0f1ba8e",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/98ffa3c8-6624-fc4f-153b-32e6c0f1ba8e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"Cross Connect Mode-Customer\",\"source_attr_code\":\"ATT_CROSS_CONNECT_MODE-CUSTOMER\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect Mode-Customer\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_MODE-CUSTOMER\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Cross Connect Offering\",\"source_attr_code\":\"ATT_CROSS_CONNECT_OFFERING\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect Offering\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_OFFERING\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Cross Connect Bandwidth\",\"source_attr_code\":\"ATT_CROSS_CONNECT_BANDWIDTH\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect Bandwidth\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_BANDWIDTH\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Cross Connect Type\",\"source_attr_code\":\"ATT_CROSS_CONNECT_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect Type\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_TYPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Type of Connector-Customer\",\"source_attr_code\":\"ATT_TYPE_OF_CONNECTOR_CUSTOMER\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Type of Connector-Customer\",\"destination_attr_code\":\"ATT_TYPE_OF_CONNECTOR_CUSTOMER\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Cross Connect Location B\",\"source_attr_code\":\"ATT_CROSS_CONNECT_LOCATION_B\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect Location B\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_LOCATION_B\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Cross Connect Provider Name\",\"source_attr_code\":\"ATT_CROSS_CONNECT_PROVIDER_NAME\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect Provider Name\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_PROVIDER_NAME\"},{\"source_type\":\"Field\",\"source_field_name\":\"QuoteLineItem.ARTL_FeasibilityIdCrossConnect__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Feasibility id-Cross Connect\",\"destination_attr_code\":\"ATT_FEASIBILITY_ID_CROSS_CONNECT\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_ARCCharge__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect ARC\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_ARC\"},{\"source_type\":\"Field\",\"source_field_name\":\"ARTL_OTCCharge__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect OTC\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_OTC\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Third Party -Contract Term\",\"source_attr_code\":\"ATT_THIRD_PARTY_CONTRACT_TERM\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Third Party -Contract Term\",\"destination_attr_code\":\"ATT_THIRD_PARTY_CONTRACT_TERM\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Cross Connect Location A\",\"source_attr_code\":\"ATT_CROSS_CONNECT_LOCATION_A\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Cross Connect Location A\",\"destination_attr_code\":\"ATT_CROSS_CONNECT_LOCATION_A\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8d8ae670-67f0-00f9-2524-d86e2ef8e15e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/8d8ae670-67f0-00f9-2524-d86e2ef8e15e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "8d8ae670-67f0-00f9-2524-d86e2ef8e15e",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Cross Connect CFS Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Cross Connect CFS Decomp/Product2/8d8ae670-67f0-00f9-2524-d86e2ef8e15e"
+    }
+]

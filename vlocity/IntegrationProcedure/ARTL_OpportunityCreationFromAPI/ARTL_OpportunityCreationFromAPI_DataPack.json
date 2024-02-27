@@ -1,0 +1,25 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_OpportunityCreationFromAPI_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "OpportunityCreationFromAPI",
+    "OmniProcessElement": [
+        "ARTL_OpportunityCreationFromAPI_Element_DRExtractAccountDetails.json",
+        "ARTL_OpportunityCreationFromAPI_Element_DRCreateAndUpdateOpportunity.json",
+        "ARTL_OpportunityCreationFromAPI_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_OpportunityCreationFromAPI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_OpportunityCreationFromAPI_PropertySetConfig.json",
+    "SubType": "OpportunityCreationFromAPI",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/OpportunityCreationFromAPI/Procedure"
+}

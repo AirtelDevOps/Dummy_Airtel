@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title="Upload your File" >
+        <div class="slds-form-element">
+            <lightning-input type="file"
+                            label="Choose File"
+                            accept={acceptedFormats}
+                            onchange={importcsv} >
+            </lightning-input>
+        </div>  
+        
+        <div class="slds-form-element slds-text-body_small slds-text-color_error">{filename}</div>
+        <br/>
+
+        <div class="slds-form-element">
+            <lightning-button label="Import" title="Import" variant="brand-outline" 
+                                                disabled={disableImportButton} icon-name="utility:upload" 
+                                                onclick={readFiles} class="slds-m-left_x-small">
+            </lightning-button>
+        </div>
+        
+        <div style="margin-left:4%" class="slds-form-element">
+            <template if:true={showLoadingSpinner}>
+                    <lightning-spinner alternative-text="Uploading......" size="medium"></lightning-spinner>
+            </template>
+        </div>
+        
+        <br/>
+        <div if:true={error}>
+            {error}
+        </div>
+        <br/>
+
+        <div if:true={csvData} class="li-datatable-container">
+            <lightning-datatable
+                    data={csvData}
+                    key-field="id"
+                    columns={csvHeaders}
+                    show-row-number-column
+                    hide-checkbox-column
+            >
+            </lightning-datatable>
+        </div>
+
+    </lightning-card> 
+</template>

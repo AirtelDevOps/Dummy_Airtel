@@ -1,0 +1,77 @@
+<template>
+     <!-- QuoteApproveStatus == 0 && QuoteRejectStatus == 0 -->
+    <template if:false={isApproved}>
+        <template if:false={isRejected}>
+        <div class="slds-m-top_medium slds-p-around_medium slds-m-bottom_x-large">
+            <p class="slds-box slds-theme_shade">
+                <lightning-icon icon-name="utility:warning" size="small" class="slds-p-right_medium"></lightning-icon>
+                Your cannot submit the Quote, because no OV status has been selected for any of the QLIs.
+            </p>
+        </div>
+        </template>
+    </template>
+
+    <!-- QuoteApproveStatus == 1 -->
+    <template if:true={isApproved}>
+        <div class="slds-m-top_medium slds-p-around_medium slds-m-bottom_x-large">
+            <p class="slds-p-top_medium slds-box slds-theme_shade">
+                <lightning-icon icon-name="utility:warning" size="small" class="slds-p-right_medium"></lightning-icon>
+                You cannot Reject the Quote, because there are OV approved QLI
+            </p>
+            <lightning-input class="slds-p-top_medium slds-size_1-of-2" type="text" label="OV Remark" onchange={handleInputChange}></lightning-input>
+            <p class="slds-p-top_medium">
+                <lightning-button 
+                    if:true={isApproved}
+                    variant="success" 
+                    label="Approve" 
+                    title="Successful action"  
+                    onclick={handleSubmit} 
+                    class="slds-p-top_medium">
+                </lightning-button>
+            </p>
+        </div>
+    </template>
+
+    <!-- QuoteRejectStatus == 1 -->
+    <template if:true={isRejected}>
+        <div class="slds-m-top_medium slds-p-around_medium slds-m-bottom_x-large">
+            <p class="slds-p-top_medium slds-box slds-theme_shade">
+                <lightning-icon icon-name="utility:warning" size="small" class="slds-p-right_medium"></lightning-icon>
+                You cannot Approve the Quote, because there are OV Rejected QLI.
+            </p>
+            <lightning-checkbox-group
+                class="slds-p-top_medium"
+                name="Rejection Reason"
+                label="Rejection Reason"
+                options={rejectedReasonOptions}
+                value={rejecteReasonValue}
+                onchange={handleReasonSelection}
+                required>
+            </lightning-checkbox-group>
+            <lightning-input type="text" class="slds-p-top_medium slds-size_1-of-2"  label="OV Remark" onchange={handleInputChange}></lightning-input>
+            <p class="slds-p-top_medium">
+                <template if:true={isSelectedReason}>
+                    <lightning-button 
+                        if:true={isRejected}
+                        variant="destructive"
+                        label="Reject" 
+                        title="Destructive action" 
+                        onclick={handleSubmit} 
+                        class="slds-p-top_medium">
+                    </lightning-button>
+                </template>
+                <template if:false={isSelectedReason}>
+                    <lightning-button 
+                        if:true={isRejected}
+                        variant="destructive"
+                        label="Reject" 
+                        title="Destructive action" 
+                        onclick={handleSubmit} 
+                        disabled=""
+                        class="slds-p-top_medium">
+                    </lightning-button>
+                </template>
+            </p>
+        </div>
+    </template>
+</template>

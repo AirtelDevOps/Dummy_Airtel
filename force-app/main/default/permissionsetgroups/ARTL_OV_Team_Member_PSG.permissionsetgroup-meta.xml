@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Permission Set Group is for OV Team Member User.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ARTL_OV_Team_Member_PSG</label>
+    <permissionSets>ARTL_EditTask_Additional_PS</permissionSets>
+    <permissionSets>ARTL_OV_Team_Member</permissionSets>
+    <permissionSets>OmniStudioAdmin</permissionSets>
+    <permissionSets>OmniStudio_KAM_User_Extras</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

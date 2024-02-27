@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateDDOS",
+    "OmniProcessId": {
+        "Name": "ARTL_EventHandlerWrapperVIP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EventHandlerWrapperVIP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AdditionalChildProductBANDWIDTH": "%AdditionalChildProductBANDWIDTH%",
+            "AdditionalChildProductRequiredAtt": "%AdditionalChildProductRequiredAtt%",
+            "ItemId": "=%Extract:ItemId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_UpdatingItemAttributeBulkUpdoad",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%SobjectType% == 'Quote' && %AdditionalChildProduct% == 'DDOS' && %AdditionalChildProductAction% == 'Add'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EventHandlerWrapperVIP/Procedure/UpdateDDOS"
+}

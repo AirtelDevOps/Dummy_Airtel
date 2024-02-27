@@ -1,0 +1,86 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "BCPMergeList",
+    "OmniProcessId": {
+        "Name": "ARTL_GetBCP_DCP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/GetBCP_DCP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "BCPMergeListConditional",
+        "OmniProcessId": {
+            "Name": "ARTL_GetBCP_DCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/GetBCP_DCP/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/GetBCP_DCP/Procedure/BCPMergeListConditional",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "BCPMergeListConditional",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "advancedMerge": true,
+        "advancedMergeMap": [
+            {
+                "listKey": "ContactListSet:ContactList",
+                "matchingPath": "Id",
+                "normalizeKey": "1"
+            },
+            {
+                "listKey": "ContactListSet:ContactPremiseRelationList",
+                "matchingPath": "ContactId",
+                "normalizeKey": "1"
+            }
+        ],
+        "allowMergeNulls": true,
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "dynamicOutputFields": "",
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "filterListFormula": "=Role == 'BCP'",
+        "hasPrimary": false,
+        "label": "ListAction1",
+        "mergeFields": [
+        ],
+        "mergeListsOrder": [
+            "ContactListSet:ContactList",
+            "ContactListSet:ContactPremiseRelationList"
+        ],
+        "primaryListKey": "",
+        "responseJSONNode": "MergeList",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "sortBy": [
+        ],
+        "sortInDescendingOrder": true,
+        "updateFieldValue": {
+            "pythonNode": "=%BCP_DCP_Number%+':'+%First Name%+' '+%Last Name%+':'+%Mobile%+' '+%Email%+':'+%Address1%+':'+%City%+':'+%State%+':'+%Country%+':'+%Pincode%+':'+%GSTApplicable%+':'+%GSTNumber%+':'+%StandardReason%"
+        },
+        "useFormulas": true
+    },
+    "Type": "List Merge Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/GetBCP_DCP/Procedure/BCPMergeList"
+}

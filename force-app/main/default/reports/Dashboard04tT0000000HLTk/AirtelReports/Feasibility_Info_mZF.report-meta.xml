@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ARTL_Feasibility__c$ARTL_QLI__c.Quote.QuoteNumber</field>
+    </columns>
+    <columns>
+        <field>ARTL_Feasibility__c$ARTL_QLI__c</field>
+    </columns>
+    <columns>
+        <field>ARTL_Feasibility__c$ARTL_QLI__c.vlocity_cmt__QuoteMemberId__c.vlocity_cmt__StreetAddress__c</field>
+    </columns>
+    <columns>
+        <field>ARTL_Feasibility__c$ARTL_QLI__c.Product2</field>
+    </columns>
+    <columns>
+        <field>ARTL_Feasibility__c$ARTL_Feasibility_ID__c</field>
+    </columns>
+    <columns>
+        <field>ARTL_Feasibility__c$ARTL_Feasibility_Status__c</field>
+    </columns>
+    <columns>
+        <field>ARTL_Feasibility__c.Feasibility_Line_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>ARTL_Feasibility__c.Feasibility_Line_Items__r.Feasibility_Attributes__r$Name</field>
+    </columns>
+    <columns>
+        <field>ARTL_Feasibility__c.Feasibility_Line_Items__r.Feasibility_Attributes__r$Value__c</field>
+    </columns>
+    <currency>INR</currency>
+    <description>This report is used to show feasibility attributes</description>
+    <filter>
+        <criteriaItems>
+            <column>ARTL_Feasibility__c$ARTL_QLI__c.Quote.Id</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Feasibility Info</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Feasibilities_with_Feasibility_Line_Items_with_Feasibility_Attributes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ARTL_Feasibility__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

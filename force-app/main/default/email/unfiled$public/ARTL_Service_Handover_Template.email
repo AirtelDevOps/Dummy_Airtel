@@ -1,0 +1,152 @@
+<messaging:emailTemplate subject="Service Handover : Bharti Airtel - Order Reference : OrderNumber Circuit ID: Circuitid" recipientType="User" relatedToType="Order">
+<messaging:htmlEmailBody >
+<html>
+<style>
+ 
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+ 
+</style>
+<body style="font-size:15px; ">
+           
+<img id="Logo" src="https://assets.airtel.in/static-assets/siebel/locubanner.png"/><br/>
+<p> Date: </p>
+<p>Dear Customer,</p>
+
+ <p>Greetings from Airtel Business.</p>
+      
+ <p>Your link is up and running now. Please find the details of the same below:</p>
+  <table>
+        <tbody>
+            <tr>
+                <td><Strong>Circuit ID (LSI).:</Strong></td>
+                <td>Circuitid</td>
+            </tr>
+            <tr>
+                <td><Strong>Customer Name:</Strong></td>
+                <td>AccountName</td>
+            </tr>
+            <tr>
+                <td><Strong>Order No.:</Strong></td>
+                <td>OrderNumber</td>
+            </tr>
+            <tr>
+                <td><Strong>PO Date:</Strong></td>
+                <td>PoDate</td>
+            </tr>
+            <tr>
+                <td><Strong>PO Number:</Strong></td>
+                <td>PoNumber</td>
+            </tr>
+            <tr>
+                <td><Strong>Billing Start Date:</Strong></td>
+                <td>BillingStartDate</td>
+            </tr>
+            <tr>
+                <td><Strong>Product:</Strong></td>
+                <td>Product2</td>
+            </tr>
+            <tr>
+                <td><Strong>Bandwidth:</Strong></td>
+                <td>Bandwidth2</td>
+            </tr>
+            <tr>
+                <td><Strong>Media:</Strong></td>
+                <td>Media2</td>
+            </tr>
+             <tr>
+                <td><Strong>Manageability:</Strong></td>
+                <td>Manageability</td>
+            </tr>
+            <tr>
+                <td><Strong>Installation Address:</Strong></td>
+                <td>CustomerAddress</td>
+            </tr>
+            <tr>
+                <td><Strong>One-time charge (OTC):</Strong></td>
+                <td>Onetimecharge</td>
+            </tr>
+            <tr>
+                <td><Strong>Annual Recurring Charge (ARC):</Strong></td>
+                <td>AnnualRecurringCharge</td>
+            </tr>
+            
+        </tbody>
+</table>
+
+  
+<p>In case you face any issues in the future, you may visit our digital self-care portal – <a href="https://www.airtel.in/business/enterprise-hub/login/">Airtel Thanks for Business.</a></p>
+
+<p>Alternatively, you may use the below contact matrix for any support required.Kindly mention your Circuit ID (LSI) while communicating with us via mail for an expedited resolution.</p>
+
+<br/>
+<div style="text-align:center;">
+<b><apex:outputText value="Customer Services Support Matrix: "></apex:outputText>
+</b></div>
+<br/>
+<div class="myDiv">
+<pstyle="background-color: #ff0000; color: #ffffff; font-family: arial; font-size: medium;">Global Services Management Centre (GSMC) || WEB: www.airtel.in/business || <br/>
+1800102001 Toll Free || +91 124 4609696 (Toll no) || E-mail: datasupport@airtel.com</p> 
+</div>
+ 
+ <table border="1 px;">
+    <tr>
+        <td><Strong>Service Assurance Escalation Matrix</Strong></td>
+         <td><Strong>Service (Unmanaged Data Services)</Strong></td>
+          <td><Strong>Service (Managed Data Services)</Strong></td>
+    </tr>
+     <tr>
+        <td><Strong>Level 0 (24 x 7)(1 Hrs.)</Strong></td>
+         <td>WEB: www.airtel.in/businessToll-free no: 1800102001Toll-free no: +91 124 4609696</td>
+          <td>GSOC Shift ManagerTel: +91 124-4282480/4282481sm.gsoc@airtel.com</td>
+           
+    </tr>
+     <tr>
+        <td><Strong>Level 1 (24 x 7)(2 Hrs.)</Strong></td>
+         <td>B2B SOC Shift Manager, Tel-0124-4844721/4844722, shift.manager@airtel.com  </td>
+          
+    </tr>
+    <tr>
+        <td><Strong>Level 2 (3 Hrs.)</Strong></td>
+         <td>B2B SOC Operation Head, Mobile- +91 8527812323 , Operation.Head@airtel.com </td>
+          
+    </tr>
+    <tr>
+        <td><Strong>Level 3 (6 Hrs.)</Strong></td>
+         <td>Head Channel Business, Mob: 8448519145 , Davender.Kumar@airtel.com </td>
+          
+    </tr>
+    <tr>
+        <td><Strong>Level 4 (10 Hrs.)</Strong></td>
+         <td>B2B SOC Head, Mob: +91-7042000229 , b2bsoc.head@airtel.com </td>
+          
+    </tr>
+    
+</table>
+<br/>
+<p>We value your association with us and we are looking forward to serve you.</p>
+
+<br/>
+
+
+<p> Regards,<br/>
+Bharti Airtel Ltd.
+</p>
+<br/>
+<div class="myDiv" Style="height:3rem">
+<p style="background-color: #ff0000; color: #ffffff; font-family: arial; font-size: medium; text-align:center;">This is an auto-generated email. Please do not reply to it.</p> 
+</div>
+<br/>
+<div style="text-align:center;">
+Follow Us  <a href="https://www.linkedin.com/company/airtel-business/">
+<img src="{!$Resource.LinkedinLogo}" alt="icon" width="15" height="15"/>
+</a> <a href="https://www.youtube.com/channel/UC62RQR1TkP_945zTN6Jwecg">
+<img src="{!$Resource.YoutubeImage}" alt="icon" width="15" height="15"/>
+</a>| www.airtel.in/business
+</div>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

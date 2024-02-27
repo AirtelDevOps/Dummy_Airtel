@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_ValidateBusinessRecord</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+    AND(
+        RecordType.DeveloperName == &apos;Business&apos;,
+        OR(
+            ISPICKVAL(AccountSource, &apos;Airtel Thanks&apos;),
+            ISPICKVAL(AccountSource, &apos;Airtel Works&apos;)
+        ),
+        OR(
+			AND(
+				ISNEW(),
+				OR(
+					ISPICKVAL(ARTL_Identification_Type__c, &apos;&apos;),
+					ISPICKVAL(ARTL_Category__c, &apos;&apos;),
+					ISPICKVAL(ARTL_Business_Circle_Region__c, &apos;&apos;),
+					ISPICKVAL(ARTL_Customer_Segment__c,&apos;&apos;),
+					ISPICKVAL(ARTL_Service_Segment__c,&apos;&apos;),
+					ISPICKVAL(ARTL_Vertical_Segment__c,&apos;&apos;),
+					ISBLANK(BillingAddress),
+					ISBLANK(ARTL_Billing_Pincode__c),
+					ISBLANK(BillingCity),
+					ISBLANK(BillingState),
+					ISBLANK(BillingCountry)
+				)
+			),
+			AND(
+				NOT(ISNEW()),
+				OR(
+					ISPICKVAL(vlocity_cmt__Status__c, &apos;&apos;),
+					ISBLANK(ARTL_TL__c),
+					ISPICKVAL(ARTL_Identification_Type__c, &apos;&apos;),
+					ISPICKVAL(ARTL_Category__c, &apos;&apos;),
+					ISPICKVAL(ARTL_Business_Circle_Region__c, &apos;&apos;),
+					ISPICKVAL(ARTL_Customer_Segment__c,&apos;&apos;),
+					ISPICKVAL(ARTL_Service_Segment__c,&apos;&apos;),
+					ISPICKVAL(ARTL_Vertical_Segment__c,&apos;&apos;),
+					ISBLANK(BillingAddress),
+					ISBLANK(ARTL_Billing_Pincode__c),
+					ISBLANK(BillingCity),
+					ISBLANK(BillingState),
+					ISBLANK(BillingCountry)
+					)
+				)
+		)
+    )
+)</errorConditionFormula>
+    <errorMessage>Identification Type, Category, Business Circle, Customer Segment, Service Segment, Vertical Segment, Billing Address, Billing City, Billing State, Billing Pincode, Billing Country, Status, TL are the required fields.</errorMessage>
+</ValidationRule>

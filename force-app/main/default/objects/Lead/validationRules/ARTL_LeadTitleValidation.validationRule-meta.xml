@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_LeadTitleValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(REGEX(Title,&quot;[a-zA-Z0-9 \\-.&amp;/&apos;]*&quot;))</errorConditionFormula>
+    <errorDisplayField>Title</errorDisplayField>
+    <errorMessage>Title should not contain any Special Characters except ./&apos;</errorMessage>
+</ValidationRule>

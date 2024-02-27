@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CreateBCP_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateBCP",
+    "OmniProcessElement": [
+        "ARTL_CreateBCP_Element_ExtractNbaParentAccountId.json",
+        "ARTL_CreateBCP_Element_LoadBcp.json",
+        "ARTL_CreateBCP_Element_CreateRecords.json",
+        "ARTL_CreateBCP_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_CreateBCP",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CreateBCP_PropertySetConfig.json",
+    "SubType": "CreateBCP",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateBCP/Procedure"
+}

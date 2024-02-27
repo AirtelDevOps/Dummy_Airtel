@@ -1,0 +1,1023 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom2281",
+        "InputFieldName": "Stage:ARTL_Bill_Dispatch_Method__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Bill_Dispatch_Method__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom615",
+        "InputFieldName": "Stage:ARTL_Bill_Frequency__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Bill_Frequency__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom4062",
+        "InputFieldName": "Stage:ARTL_PO_Group_Id__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_PO_Group_Id__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom7779",
+        "InputFieldName": "Stage:ARTL_PO_Id__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_PO_Id__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom5899",
+        "InputFieldName": "Stage:BCP_Email__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BCP_Email__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom7694",
+        "InputFieldName": "Stage:BCP_First_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BCP_First_Name__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom660",
+        "InputFieldName": "Stage:BCP_Id__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BCP_Id__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom5162",
+        "InputFieldName": "Stage:BCP_Last_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BCP_Last_Name__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom1683",
+        "InputFieldName": "Stage:BCP_Phone__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BCP_Phone__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom1675",
+        "InputFieldName": "Stage:Bill_Type__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Bill_Type__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom9475",
+        "InputFieldName": "Stage:Billing_City__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Billing_City__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom6588",
+        "InputFieldName": "Stage:Billing_GST_Applicable_for_Billing__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Billing_GST_Applicable_for_Billing__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom1611",
+        "InputFieldName": "Stage:Billing_GST__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Billing_GST__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom9050",
+        "InputFieldName": "Stage:BillingLevel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Billing_Level__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom4697",
+        "InputFieldName": "Stage:Billing_Standard_Reason__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Billing_Standard_Reason__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom8687",
+        "InputFieldName": "Stage:Billing_State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Billing_State__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom5478",
+        "InputFieldName": "Stage:Billing_Street__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Billing_Street__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom7107",
+        "InputFieldName": "Stage:Credit_Period__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Credit_Period__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom6138",
+        "InputFieldName": "Stage:DCP_Email__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DCP_Email__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom2879",
+        "InputFieldName": "Stage:DCP_First_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DCP_First_Name__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom6250",
+        "InputFieldName": "Stage:DCP_Last_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DCP_Last_Name__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom7534",
+        "InputFieldName": "Stage:DCP_Phone__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DCP_Phone__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom4039",
+        "InputFieldName": "Stage:Delivery_GST__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Delivery_GST__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom1663",
+        "InputFieldName": "Stage:Delivery_Standard_Reason__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Delivery_Standard_Reason__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom7123",
+        "InputFieldName": "Stage:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom5892",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom7398",
+        "InputFieldName": "Stage:Installation_GST_Applicable__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Installation_GST_Applicable__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom4969",
+        "InputFieldName": "Stage:LSI__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LSI__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom8058",
+        "InputFieldName": "Stage:Legal_Entity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Legal_Entity__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom726",
+        "InputFieldName": "Stage:NBA_Account_Number__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NBA_Account_Number__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom9906",
+        "InputFieldName": "Stage:PO_Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Amount__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom6666",
+        "InputFieldName": "Stage:POGroupId",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Group__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom160",
+        "InputFieldName": "Stage:PO_Group__c",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Group__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom9503",
+        "InputFieldName": "Stage:PO_Group__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Group__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom9974",
+        "InputFieldName": "Stage:PO_Start_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Start_Date__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom2842",
+        "InputFieldName": "Stage:PO_Starte_Date__c",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Starte_Date__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom3812",
+        "InputFieldName": "Stage:PO_Starte_Date__c",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Starte_Date__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom1328",
+        "InputFieldName": "Stage:PO_Terms_Years__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Terms_Years__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom6518",
+        "InputFieldName": "Stage:PO__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom1736",
+        "InputFieldName": "Stage:QuoteLineId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote_Line_Item__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom9027",
+        "InputFieldName": "Stage:Quote_Line_Item__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote_Line_Item__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom4426",
+        "InputFieldName": "Stage:Quote_Member__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote_Member__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom9004",
+        "InputFieldName": "Stage:Quote__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom3098",
+        "InputFieldName": "Stage:Shipping_City__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Shipping_City__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom2613",
+        "InputFieldName": "Stage:Shipping_PinCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Shipping_PinCode__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom2089",
+        "InputFieldName": "Stage:Shipping_State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Shipping_State__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom1379",
+        "InputFieldName": "Stage:Shipping_Street__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Shipping_Street__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom7191",
+        "InputFieldName": "Stage:Site_GST_Applicable_for_Billing__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Site_GST_Applicable_for_Billing__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "Success",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom2642",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom2134",
+        "InputFieldName": "Stage:Store__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Store__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_CreateBillingStageRecordCustom9863",
+        "InputFieldName": "Stage:VAN_Account_Number__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_CreateBillingStageRecord",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_CreateBillingStageRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_CreateBillingStageRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VAN_Account_Number__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

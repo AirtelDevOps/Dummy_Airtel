@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ATT_Secondary_CPE_Make_UTM</label>
+    <protected>false</protected>
+    <values>
+        <field>AttributeCode__c</field>
+        <value xsi:type="xsd:string">ATT_Secondary_CPE_Make_UTM</value>
+    </values>
+    <values>
+        <field>Attribute_JSON__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;isRequired&quot;: false,
+  &quot;regex&quot;: &quot;&quot;,
+  &quot;isDependentValue&quot;: true,
+  &quot;dependentAttribtue&quot;: &quot;ATT_HardwareRedundancyRequired_UTM&quot;,
+  &quot;value&quot;: {
+    &quot;Yes&quot;: {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;isReadOnly&quot;:true,
+      &quot;copyAttributeFrom&quot;:&quot;ATT_ROUTER_MAKE&quot;,
+      &quot;operator&quot;: &quot;==&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;attributesToHide&quot;: &quot;&quot;,
+      &quot;error&quot;: &quot;&quot;
+    },
+    &quot;No&quot;:{
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;isReadOnly&quot;:false,
+      &quot;copyAttributeFrom&quot;:&quot;&quot;,
+      &quot;operator&quot;: &quot;&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;attributesToHide&quot;: &quot;&quot;,
+      &quot;error&quot;: &quot;&quot;
+    }
+  }
+}</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

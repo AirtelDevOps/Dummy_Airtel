@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CreateBCPDCP_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateBCPDCP",
+    "OmniProcessElement": [
+        "ARTL_CreateBCPDCP_Element_DRfetchBA.json",
+        "ARTL_CreateBCPDCP_Element_DRCreateBCPDCP.json",
+        "ARTL_CreateBCPDCP_Element_DRExtractContactNumber.json",
+        "ARTL_CreateBCPDCP_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_CreateBCPDCP",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CreateBCPDCP_PropertySetConfig.json",
+    "SubType": "CreateBCPDCP",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateBCPDCP/Procedure"
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GST__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>GST#</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2 AND 3) OR (3 AND 4 AND 5) OR (3 AND 6 AND 7) OR (3 AND 8 AND 2) OR (3 AND 9 AND 7) OR (10 AND 7)</booleanFilter>
+        <errorMessage>Invalid Mapping of Standard Reason and GST Type</errorMessage>
+        <filterItems>
+            <field>$Source.ARTL_Standard_Reason__c</field>
+            <operation>equals</operation>
+            <value>SEZ</value>
+        </filterItems>
+        <filterItems>
+            <field>GST__c.ARTL_GST_Type__c</field>
+            <operation>equals</operation>
+            <value>SEZ</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ARTL_GST_Applicable__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ARTL_Standard_Reason__c</field>
+            <operation>equals</operation>
+            <value>UIN</value>
+        </filterItems>
+        <filterItems>
+            <field>GST__c.ARTL_GST_Type__c</field>
+            <operation>equals</operation>
+            <value>UIN</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ARTL_Standard_Reason__c</field>
+            <operation>equals</operation>
+            <value>Non-SEZ</value>
+        </filterItems>
+        <filterItems>
+            <field>GST__c.ARTL_GST_Type__c</field>
+            <operation>equals</operation>
+            <value>Non-SEZ</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ARTL_Standard_Reason__c</field>
+            <operation>equals</operation>
+            <value>SEZ with taxes</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ARTL_Standard_Reason__c</field>
+            <operation>equals</operation>
+            <value>Zero Rated Supply- FTWZ</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.ARTL_Standard_Reason__c</field>
+            <operation>equals</operation>
+            <value>Non Taxable as transactions within same Company</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>GST__c</referenceTo>
+    <relationshipLabel>Contact Premise Relation</relationshipLabel>
+    <relationshipName>Contact_Premise_Relation</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

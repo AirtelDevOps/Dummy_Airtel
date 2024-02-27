@@ -1,0 +1,47 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "ARTL_HierarchicalViewQLI_SD/BhartiAirtelLimited/4.0",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 6,
+                    "name": "Parent.quoteId",
+                    "val": "0Q0720000004dPNCAY"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "quoteId": "{Parent.quoteId}"
+                },
+                "ipMethod": "ARTL_CustomViewOfQLI_NIPS",
+                "jsonMap": "{\"Parent.quoteId\":\"{Parent.quoteId}\"}",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTL_HierarchicalViewQLI_NIPS",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTL_HierarchicalViewQLI_NIPS/BhartiAirtelLimited/1.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTL_HierarchicalViewQLI_NIPS.json",
+    "SampleDataSourceResponse": "[{\"QLIExist\":true,\"QTY\":1,\"OTCTotal\":0,\"ARCTotal\":0,\"ProductName\":\"NIPS Hardware\",\"HardwareType\":\"EN_Routing & Switching\"},{\"QLIExist\":true,\"QTY\":20,\"OTCTotal\":0,\"ARCTotal\":0,\"ProductName\":\"NIPS Service\",\"ServiceType\":\"EN_Licenses\"},{\"QLIExist\":true,\"QTY\":15,\"OTCTotal\":0,\"ARCTotal\":0,\"ProductName\":\"NIPS Hardware\",\"TaxPerc\":\"12\",\"HardwareType\":\"EN_Structured Cabling\"}]",
+    "StylingConfiguration": "{\"customStyles\":\".allign-cells .slds-data-table[%vlocity_namespace%-dataTable_dataTable_slds] .slds-data-table-row-cell[%vlocity_namespace%-dataTable_dataTable_slds]  { width: 180px;}\\n.allign-cells .slds-data-table[%vlocity_namespace%-dataTable_dataTable_slds] .slds-data-table-head-cell[%vlocity_namespace%-dataTable_dataTable_slds] { width: 180px;}\\n\\n\\n\\n\\n\\n\"}",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTL_HierarchicalViewQLI_NIPS",
+    "sourceOrgUrl": "/0ko720000000IGHAA2"
+}

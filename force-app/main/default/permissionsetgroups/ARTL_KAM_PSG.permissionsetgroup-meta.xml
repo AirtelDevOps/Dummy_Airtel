@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set group is for KAM User.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ARTL_KAM_PSG</label>
+    <permissionSets>ARTL_EditTask_Additional_PS</permissionSets>
+    <permissionSets>ARTL_HighVelocitySalesUser</permissionSets>
+    <permissionSets>ARTL_KAM_Sales</permissionSets>
+    <permissionSets>ARTL_Sales_Engagement_Basic_User</permissionSets>
+    <permissionSets>ARTL_Sales_Engagement_Cadence_Creator</permissionSets>
+    <permissionSets>ARTL_Sales_Engagement_Conversation_Insights</permissionSets>
+    <permissionSets>ARTL_Sales_Engagement_Quick_Cadence_Creator</permissionSets>
+    <permissionSets>Analytics_User_PS</permissionSets>
+    <permissionSets>CPQ_Runtime_CPQCartUI</permissionSets>
+    <permissionSets>CPQ_Runtime_CartOperations</permissionSets>
+    <permissionSets>CPQ_Runtime_InvokeOdinNotification</permissionSets>
+    <permissionSets>CPQ_Runtime_ViewAndApplyDiscounts</permissionSets>
+    <permissionSets>ESM_Runtime</permissionSets>
+    <permissionSets>OmniStudioAdmin</permissionSets>
+    <permissionSets>OmniStudio_KAM_User_Extras</permissionSets>
+    <permissionSets>RevenueIntelligenceAnalytics</permissionSets>
+    <permissionSets>SFIOmniObjectsPermissions</permissionSets>
+    <permissionSets>force__IndustriesARCPsl</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <permissionSets>force__PipelineInspectionUser</permissionSets>
+    <permissionSets>force__RevenueIntelligenceCommsUser</permissionSets>
+    <permissionSets>force__StandardEinsteinActivityCapturePsl</permissionSets>
+    <permissionSets>force__TeamsIntegration</permissionSets>
+    <permissionSets>vlocity_cmt__CommunicationsCloudPlusRuntime</permissionSets>
+    <permissionSets>vlocity_cmt__CommunicationsCloudRuntime</permissionSets>
+    <permissionSets>vlocity_cmt__ContractMgmtIndCmeRuntime</permissionSets>
+    <permissionSets>vlocity_cmt__DocGenIndCmeRuntime</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

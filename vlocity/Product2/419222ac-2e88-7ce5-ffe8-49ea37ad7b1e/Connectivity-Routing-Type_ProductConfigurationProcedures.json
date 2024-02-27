@@ -1,0 +1,107 @@
+[
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_ROUTING_PROTOCOL\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Both\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8d622830-4bff-95a6-be17-b082aef83563",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/8d622830-4bff-95a6-be17-b082aef83563",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "58bae6f1-0d28-233a-6d27-18399e284111",
+        "%vlocity_namespace%__ProductGroupKey__c": "f53fa2d5-d1cf-e801-d04f-dd7429d4a371",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Routing Type As Both",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/58bae6f1-0d28-233a-6d27-18399e284111"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_ROUTING_PROTOCOL\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Dynamic\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "a9a880a9-1be5-e822-26da-fa94a51f5bab",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/a9a880a9-1be5-e822-26da-fa94a51f5bab",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "03e80636-e221-f05f-85d7-3ca3e72c0add",
+        "%vlocity_namespace%__ProductGroupKey__c": "f53fa2d5-d1cf-e801-d04f-dd7429d4a371",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Routing Type As BGP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/03e80636-e221-f05f-85d7-3ca3e72c0add"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_ROUTING_PROTOCOL\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"None\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9ff2fc12-37af-a7af-5b41-cd4cb0b94246",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/9ff2fc12-37af-a7af-5b41-cd4cb0b94246",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "2891fd2c-4ff8-8501-1d48-83c54ae2090c",
+        "%vlocity_namespace%__ProductGroupKey__c": "f53fa2d5-d1cf-e801-d04f-dd7429d4a371",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Routing Type As None",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/2891fd2c-4ff8-8501-1d48-83c54ae2090c"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_ROUTING_PROTOCOL\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Static\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "58394835-a107-b2f9-634c-4a11cc30e582",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/58394835-a107-b2f9-634c-4a11cc30e582",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "e5994b0f-dbb6-9826-ca62-2adb93fa7647",
+        "%vlocity_namespace%__ProductGroupKey__c": "f53fa2d5-d1cf-e801-d04f-dd7429d4a371",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL Routing Type As Static",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/e5994b0f-dbb6-9826-ca62-2adb93fa7647"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_ROUTING_TYPE\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"None\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "47b2fe37-c0d2-6fa0-6210-5fdb56d7499f",
+        "%vlocity_namespace%__ProductGroupKey__c": "f53fa2d5-d1cf-e801-d04f-dd7429d4a371",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/419222ac-2e88-7ce5-ffe8-49ea37ad7b1e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "Modify Configuration",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/47b2fe37-c0d2-6fa0-6210-5fdb56d7499f"
+    }
+]

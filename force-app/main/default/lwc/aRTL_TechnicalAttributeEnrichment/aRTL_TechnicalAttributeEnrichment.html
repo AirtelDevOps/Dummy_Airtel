@@ -1,0 +1,75 @@
+<template>
+    <lightning-card title={viewerCardTitle} icon-name="custom:custom108">
+        
+        <div class="slds-var-m-around_medium"> 
+           
+                <c-technical-attribute-enrichment record-id={recordId} onattributechange={handleAttrChange} onsave={handleSaveClick}>
+                </c-technical-attribute-enrichment>
+           
+            <!-- <template if:true={attributedata}>
+                <div slot="actions" >
+                    <lightning-button-group class="slds-var-m-bottom_medium ">
+                        <lightning-button label="Save" icon-name="utility:save" onclick={handleJSONAttributeSaveClick}></lightning-button>
+                        <lightning-button label="Refresh" icon-name="utility:refresh" onclick={handleJSONAttributeRefreshClick}></lightning-button>
+                        
+                        <lightning-button label="Copy JSON" icon-name="utility:copy" onclick={handleJSONAttributeCopyClick}></lightning-button>
+                       
+                    </lightning-button-group>
+                </div> -->
+                <!-- sldsValidatorIgnoreNextLine -->
+                <!-- lightning-datatable key-field="code" data={attributes} columns={columns} hide-checkbox-column 
+                    sorted-by={sortBy}
+                    sorted-direction={sortDirection}
+                    onsort={handleSortClick}
+                    onrowaction={handleAttributeRowAction} >
+                </lightning-datatable -->
+            <!-- </template> -->
+            <template if:false={attributedata}>
+                <div style="color: var(--lwc-brandTextLink,rgb(1, 118, 211));text-align: center;font-size: medium;font-weight: 600;">No Technical Attribute associated with the Product.</div>
+            </template>
+        </div>
+        <!-- <div class="c-container">
+            <lightning-layout multiple-rows=true>
+                    <lightning-accordion allow-multiple-sections-open class="slds-m-around_medium" active-section-name={activeSections}>
+                        <template for:each={attributedata} for:item="data">
+                            <lightning-accordion-section name={data.productdetails.productName} key={data.productdetails.productid} label={data.productdetails.productName}>
+                                <lightning-layout multiple-rows=true>
+                                    <template for:each={data.attributes} for:item="attribute">
+                                        <lightning-layout-item size="4" padding="around-small" key={attribute.code}>
+                                            <div class="slds-var-m-around_medium slds-grid slds-gutters" key={attribute.code}> 
+                                                <div class="slds-col" if:true={attribute.is_input} >
+                                                    <lightning-input type="text" data-xliid={data.productdetails.productid} data-code={attribute.code} label={attribute.name} value={attribute.value} name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                                </div>
+                                                <div class="slds-col" if:true={attribute.is_date}>
+                                                    <lightning-input type="date" data-xliid={data.productdetails.productid} data-code={attribute.code} label={attribute.name} value={attribute.value} name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                                </div>
+                                                <div class="slds-col" if:true={attribute.is_datetime}>
+                                                    <lightning-input type="datetime" data-xliid={data.productdetails.productid} data-code={attribute.code} time-style="medium" label={attribute.name} value={attribute.value} name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                                </div>
+                                                <div class="slds-col" if:true={attribute.is_number}>
+                                                    <lightning-input label={attribute.name} data-xliid={data.productdetails.productid} data-code={attribute.code} value={attribute.value} type="number" name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                                </div>
+                                                <div class="slds-col" if:true={attribute.is_currency}>
+                                                    <lightning-input label={attribute.name} data-xliid={data.productdetails.productid} data-code={attribute.code} value={attribute.value} type="number" formatter="currency" name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                                </div>
+                                                <div class="slds-col" if:true={attribute.is_percent}>
+                                                    <lightning-input label={attribute.name} data-xliid={data.productdetails.productid} data-code={attribute.code} value={attribute.value} type="number" name="inputAttributeValue" onchange={handleAttribueValueChange}>sf</lightning-input>
+                                                </div>
+                                                <div class="slds-col" if:true={attribute.is_checkbox}>
+                                                    <lightning-input style="margin-top: 2rem" data-xliid={data.productdetails.productid} data-code={attribute.code}  label={attribute.name} checked={attribute.value} type="checkbox" name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                                </div>
+                                                <div class="slds-col" if:true={attribute.is_picklist}>
+                                                    <lightning-combobox label={attribute.name} data-xliid={data.productdetails.productid} data-code={attribute.code} value={attribute.value} options={attribute.options} name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-combobox>
+                                                </div>
+                                            </div>
+                                            </lightning-layout-item>
+                                    </template>
+                                </lightning-layout>
+                            </lightning-accordion-section>
+                        </template>
+                    </lightning-accordion>
+                
+            </lightning-layout>
+        </div> -->
+    </lightning-card>
+</template>

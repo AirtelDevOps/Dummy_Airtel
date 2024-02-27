@@ -1,0 +1,68 @@
+[
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_Delete_LAN_IPv6\":{\"actionsList\":[{\"value\":false,\"action\":\"HIDE\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "88efa935-2df0-58f3-ad90-90cdc0269e20",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/88efa935-2df0-58f3-ad90-90cdc0269e20",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "0a1e40bd-b7ef-975e-5dfe-d2f86bc04579",
+        "%vlocity_namespace%__ProductGroupKey__c": "78e75aed-6af9-0649-05d2-cbd80ae4f4db",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "SuriTest",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/0a1e40bd-b7ef-975e-5dfe-d2f86bc04579"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_LAN_IPV4_SUBNET_MASK\":{\"actionsList\":[{\"action\":\"DISABLE\",\"value\":false}],\"index\":0},\"ATT_LAN_IPV6_SUBNET_MASK\":{\"actionsList\":[{\"action\":\"DISABLE\",\"value\":true},{\"action\":\"ASSIGN\",\"value\":\"Not Applicable\"}],\"index\":1}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "561bc316-303a-ab07-c602-15b0ab09fb6a",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/561bc316-303a-ab07-c602-15b0ab09fb6a",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "e76001cf-ba5d-4abe-bfab-149b0adbc0a0",
+        "%vlocity_namespace%__ProductGroupKey__c": "78e75aed-6af9-0649-05d2-cbd80ae4f4db",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL LAN IP Type As IPv4",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/e76001cf-ba5d-4abe-bfab-149b0adbc0a0"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT_LAN_IPV4_SUBNET_MASK\":{\"actionsList\":[{\"action\":\"DISABLE\",\"value\":true},{\"action\":\"ASSIGN\",\"value\":\"Not Applicable\"}],\"index\":0},\"ATT_LAN_IPV6_SUBNET_MASK\":{\"actionsList\":[{\"action\":\"DISABLE\",\"value\":false}],\"index\":1}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ddf45bd5-f473-bb40-fcdd-ff24719faa60",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/ddf45bd5-f473-bb40-fcdd-ff24719faa60",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "5f0102d9-4bd3-17bb-3d10-a02540061b61",
+        "%vlocity_namespace%__ProductGroupKey__c": "78e75aed-6af9-0649-05d2-cbd80ae4f4db",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/9375f81e-09c5-ca49-68a4-bd92344a9ae2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "CurrencyIsoCode": "INR",
+        "Name": "EILL LAN IP Type As IPv6",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/5f0102d9-4bd3-17bb-3d10-a02540061b61"
+    }
+]

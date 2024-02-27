@@ -1,0 +1,125 @@
+<messaging:emailTemplate subject="LOC Reject Acknowledgment : Bharti Airtel - Order Reference :OrderNumber Circuit ID:Circuitid" recipientType="User" relatedToType="Order">
+<messaging:htmlEmailBody >
+
+        <html>
+        <style>
+ 
+                table, th, td {
+                  border: 1px solid black;
+                  border-collapse: collapse;
+                }
+         
+        </style>
+        <body >
+        <img id="Logo" src="https://assets.airtel.in/static-assets/siebel/locubanner.png"/>
+            <br/><br/>
+            <p>Dear Customer, </p> 
+            
+            <p>Greetings from Airtel Business. </p>
+            
+            <p>This is in reference to your <Strong>Airtel Order No. ParentOrderNumber</Strong> on <Strong>LSI Circuitid, Sub-order No. OrderNumber</Strong></p>
+          <br/>
+             <p>We have received your <Strong>rejection</Strong> of the Letter of Commissioning. We will reach out to you shortly to understand your concerns and address them.</p>
+          <br/>
+
+     <apex:outputText value="Please  note,  that  your  new  billing  start  date  will  be  communicated  to  you  in  the revised Letter of Commissioning."></apex:outputText>
+         <br/><br/>
+         
+      <p><div style="text-align:center;font-weight:700">Below are the details of your site where LOC is rejected:</div></p> 
+      <table>
+            <tbody>
+                <tr>
+                    <td><Strong>Customer Name:</Strong></td>
+                    <td>AccountName</td>
+                </tr>
+                <tr>
+                    <td><Strong>Master Order No.:</Strong></td>
+                    <td>ParentOrderNumber</td>
+                </tr>
+                <tr>
+                    <td><Strong>Sub Order No.:</Strong></td>
+                    <td>OrderNumber</td>
+                </tr>
+                <tr>
+                    <td><Strong>Circuit ID (LSI).:</Strong></td>
+                    <td>Circuitid</td>
+                </tr>
+                <tr>
+                    <td><Strong>Product:</Strong></td>
+                    <td>Product2</td>
+                </tr>
+                <tr>
+                    <td><Strong>Bandwidth:</Strong></td>
+                    <td>Bandwidth2</td>
+                </tr>
+                <tr>
+                    <td><Strong>Media:</Strong></td>
+                    <td>Media2</td>
+                </tr>
+                 <tr>
+                    <td><Strong>Manageability:</Strong></td>
+                    <td>Manageability2</td>
+                </tr>
+                <tr>
+                    <td><Strong>Installation Address:</Strong></td>
+                    <td>InstallationAddress</td>
+                </tr>
+                
+            </tbody>
+    </table>
+    
+    <p>You may reach out to <Strong>ProjectManager</Strong>, your dedicated project manager for any queries, 
+    The relevant contact details are shared below for ready reference:</p>
+     
+
+    <table >
+        <tr>
+       <td><Strong>Designation</Strong></td>
+        <td><Strong>Name</Strong></td>
+         <td><Strong>Email ID</Strong></td>
+          <td><Strong>Contact Details</Strong></td>
+   </tr>
+    <tr>
+       <td><Strong>Project manager</Strong></td>
+        <td>ProjectManager</td>
+         <td>ManagerPhone</td>
+          <td>ManagerEmail</td>
+   </tr>
+    <tr>
+       <td><Strong>Project Lead</Strong></td>
+        <td>ManagerProjectLead</td>
+         <td>ProjectLeadPhone</td>
+          <td>ProjectLeadEmail</td>
+   </tr>
+        
+    </table>
+    
+    
+    
+    <apex:outputText value="Thanks for your patience and understanding."></apex:outputText>
+    
+    <br/><br/><br/>
+    
+    <apex:outputText value="We value your association with us and we are looking forward to serve you."></apex:outputText>
+   
+    
+    
+    <p> Regards,<br/>
+    Bharti Airtel Ltd.
+    </p>
+    
+    <div class="myDiv">
+    <p style="background-color: #ff0000; color: #ffffff; font-family: arial; font-size: medium;">This is an auto-generated email. Please do not reply to it. In case of any query, please  reach  out  to Customerservices.helpdesk@airtel.com  with  your  Order No. and LSI No.</p> 
+    </div>
+    
+    <div style="text-align:center;">
+    Follow Us <a href="https://www.linkedin.com/company/airtel-business/">
+    <img src="{!$Resource.LinkedinLogo}" alt="icon" width="15" height="15"/>
+</a> <a href="https://www.youtube.com/channel/UC62RQR1TkP_945zTN6Jwecg">
+    <img src="{!$Resource.YoutubeImage}" alt="icon" width="15" height="15"/>
+</a> | www.airtel.in/business
+    </div>
+    </body>
+    </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

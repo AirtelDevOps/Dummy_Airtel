@@ -1,0 +1,96 @@
+<template>
+
+    <lightning-layout multiple-rows="true">
+        <lightning-layout-item size="12" padding="horizontal-medium">
+            <lightning-button-group>
+                
+                <template if:true={editRecord}>
+                    <lightning-button variant="neutral" label="Edit" title="editRec" name="editRec"
+                        onclick={handleClick}></lightning-button>
+                </template>
+                
+                <template if:true={isAccountStatusActiveorApproved}>
+                    <lightning-button variant="neutral" label="Create and View SR" title="createAndViewSR" name="createAndViewSR"
+                        onclick={handleClick}></lightning-button>    
+                </template>
+
+                <template if:true={isActiveBillingAggregatorAccount}>
+                    <lightning-button variant="neutral" label="Create BCP/DCP" title="createBcpDcp" name="createBcpDcp"
+                        onclick={handleClick}></lightning-button>
+                </template>
+            <template if:true={showAccountMenu}>
+                <lightning-button-menu menu-alignment="auto" alternative-text="Show menu" variant="border-filled">
+
+                    <template if:true={submitForApproval}>
+                        <lightning-menu-item label="Submit for Approval" value="submitApproval"
+                        name="submitApproval" onclick={handleClick}></lightning-menu-item>
+                    </template>
+
+                    <template if:true={validatePan}>
+                        <lightning-menu-item label="Validate Pan" value="validatePAN"
+                        name="validatePAN" onclick={handleClick}></lightning-menu-item>
+                    </template>
+
+                    <template if:true={nbaVisibleForBusinessAccountAndUser}>
+                        <lightning-menu-item variant="neutral" label="Create NBA" title="createNba" name="createNba"
+                            onclick={handleClick}></lightning-menu-item>    
+                    </template>
+
+                    <template if:true={isAccountStatusActiveorApproved}>
+                        <lightning-menu-item label="Get Invoice Details" value="getInvoiceDetails"
+                        name="getInvoiceDetails" onclick={handleClick}></lightning-menu-item>
+                    </template>
+
+                    <template if:true={gstVisibleForBusinessAccountAndUser}>
+                        <lightning-menu-item variant="neutral" label="Add GST" title="addGst" name="addGst"
+                            onclick={handleClick}></lightning-menu-item>
+                    </template>
+                    
+                    
+                </lightning-button-menu>   
+            </template>
+            </lightning-button-group>
+        </lightning-layout-item>
+    </lightning-layout>
+
+<template if:true = {editRecordform}>
+    <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Add GST"
+            class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <lightning-button-icon icon-name="utility:close" size="large" variant="bare-inverse"
+                    alternative-text="Close" title="Close" onclick={handleClose}
+                    class="slds-button slds-button_icon slds-modal__close"></lightning-button-icon>
+                <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless"
+                    id="modal-content-id-4">
+    <lightning-record-form
+            record-id={recordId}
+            object-api-name={objectApiName}
+            layout-type="Full"
+            mode="edit"
+            oncancel={handleClose}>
+         </lightning-record-form>
+        </div>
+    </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+
+</template> 
+
+    <template if:true={launchFlow}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Submit for Approval"
+            class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <lightning-button-icon icon-name="utility:close" size="large" variant="bare-inverse"
+                    alternative-text="Close" title="Close" onclick={handleClose}
+                    class="slds-button slds-button_icon slds-modal__close"></lightning-button-icon>
+                <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless"
+                    id="modal-content-id-3">
+                    <lightning-flow flow-api-name='Submit_for_approval_via_mobile' flow-input-variables={inputVariables} onstatuschange={handleFlowStatusChange} >
+                    </lightning-flow>  
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+
+</template>

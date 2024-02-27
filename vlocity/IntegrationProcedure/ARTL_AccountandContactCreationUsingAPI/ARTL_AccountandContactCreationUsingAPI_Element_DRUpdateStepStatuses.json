@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRUpdateStepStatuses",
+    "OmniProcessId": {
+        "Name": "AccountandContactCreationUsingAPI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/AccountandContactCreationUsingAPI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "=%DRCreateAccountandContact:Account_1:Id%",
+            "StepOneDescription": "=IF(%DRCreateAccountandContact:Account_1:UpsertSuccess% == true && %DRCreateAccountandContact:Contact_2:UpsertSuccess% == true, \"Account & Contact has been Created Successfully\",\"Account & Contact has not been Created Successfully\")",
+            "StepOneStatus": "=IF(%DRCreateAccountandContact:Account_1:UpsertSuccess% == true && %DRCreateAccountandContact:Contact_2:UpsertSuccess% == true, \"Success\",\"Error\")"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL DR Update Step Statuses On Account",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/AccountandContactCreationUsingAPI/Procedure/DRUpdateStepStatuses"
+}

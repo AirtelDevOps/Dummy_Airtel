@@ -1,0 +1,55 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <vlocity_cmt-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </vlocity_cmt-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-m-bottom_x-small " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><vlocity_cmt-flex-datatable data-style-id="state0element0_child"   record={record}  card={card}  columns='\[]'  issearchavailable="false"  issortavailable="true"  records={records}  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div><div data-style-id="state0element1" class="slds-col    slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><vlocity_cmt-flex-datatable data-style-id="state0element1_child"   record={record}  card={card}  cell-level-edit="true"  columns='\[{"closeDate":"2023-11-30","fieldName":"name","id":"0060T000005kDe5QAE","keyTimeline":"Q4","label":"Name","name":"Green Field Telco Opportunity 1","sizing":"INR1,602.00","type":"text"},{"closeDate":"2023-09-13","comments":"Receiving requirement for upgrade and sharing feasibility on priority.","description":"Axis has planned to upgrade 70% of \ntheir links this year, while most upgrades are done by incumbent vendor, poses \nboth opportunity and risk when the \ncurrent vendor isn’t able to support the required bandwidth","fieldName":"description","id":"0060T000005kDgxQAE","immediateSteps":"Setup meeting with product team","keyCompetitors":"TCL","keyStakeholder":"Sujay Dey","keyTimeline":"Q3","label":"Description","name":"Green Field Telco Opportunity","sizing":"INR1.00","type":"textarea"},{"closeDate":"2023-09-28","fieldName":"comments","id":"00672000009O45JAAS","keyStakeholder":"Sujay Dey","keyTimeline":"Q3","label":"Comments","name":"Forecast Test 1","sizing":"INR89,00,000.00","type":"textarea"},{"closeDate":"2023-09-30","fieldName":"keyStakeholder","id":"00672000009P6eXAAS","keyTimeline":"Q3","label":"Key Stakeholder","name":"Test Opp","sizing":"INR2,320.00","type":"text"},{"closeDate":"2023-09-30","fieldName":"keyCompetitors","id":"00672000009QNv3AAG","keyTimeline":"Q3","label":"Key Competitor","name":"Test Opp Sagar","sizing":"INR3.00","type":"text"},{"closeDate":"2023-09-30","fieldName":"immediateSteps","id":"00672000009TZTRAA4","keyTimeline":"Q3","label":"Immediate Steps and Engagement Plans ","name":"Test Opp D","sizing":"INR1.00","type":"text"},{"closeDate":"2023-09-19","fieldName":"keyTimeline","id":"00672000009UdQBAA0","keyTimeline":"Q3","label":"Key Timelines","name":"Test Opp D2","sizing":"INR0.00","type":"text"},{"closeDate":"2023-09-28","fieldName":"sizing","id":"00672000009ZPXrAAO","keyTimeline":"Q3","label":"Sizing (in million Rs)","name":"Test Opp D45","type":"currency"}]'  draggable="false"  group-order="asc"  issearchavailable="false"  issortavailable="false"  pagelimit="3"  records={records}  row-level-edit="false"  specialcharactersort="false"  styles='\{"cellBorderColor":"#DDDDDD","cellBorderType":["border_right","border_top"],"cellBorderWidth":"0.5","cellMargin":[],"cellPadding":[],"headBgColor":"#DDDDDD","headFontWeight":"bold","tableBorderColor":"#D7D7D7","tableBorderType":["border_top","border_right","border_bottom","border_left"],"tableBorderWidth":"0.7"}'  user-selectable-column="false"  user-selectable-row="false"  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+                <template if:false={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-m-bottom_x-small " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><vlocity_cmt-flex-datatable data-style-id="state0element0_child"   record={record}  card={card}  columns='\[]'  issearchavailable="false"  issortavailable="true"  records={records}  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div><div data-style-id="state0element1" class="slds-col    slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><vlocity_cmt-flex-datatable data-style-id="state0element1_child"   record={record}  card={card}  cell-level-edit="true"  columns='\[{"closeDate":"2023-11-30","fieldName":"name","id":"0060T000005kDe5QAE","keyTimeline":"Q4","label":"Name","name":"Green Field Telco Opportunity 1","sizing":"INR1,602.00","type":"text"},{"closeDate":"2023-09-13","comments":"Receiving requirement for upgrade and sharing feasibility on priority.","description":"Axis has planned to upgrade 70% of \ntheir links this year, while most upgrades are done by incumbent vendor, poses \nboth opportunity and risk when the \ncurrent vendor isn’t able to support the required bandwidth","fieldName":"description","id":"0060T000005kDgxQAE","immediateSteps":"Setup meeting with product team","keyCompetitors":"TCL","keyStakeholder":"Sujay Dey","keyTimeline":"Q3","label":"Description","name":"Green Field Telco Opportunity","sizing":"INR1.00","type":"textarea"},{"closeDate":"2023-09-28","fieldName":"comments","id":"00672000009O45JAAS","keyStakeholder":"Sujay Dey","keyTimeline":"Q3","label":"Comments","name":"Forecast Test 1","sizing":"INR89,00,000.00","type":"textarea"},{"closeDate":"2023-09-30","fieldName":"keyStakeholder","id":"00672000009P6eXAAS","keyTimeline":"Q3","label":"Key Stakeholder","name":"Test Opp","sizing":"INR2,320.00","type":"text"},{"closeDate":"2023-09-30","fieldName":"keyCompetitors","id":"00672000009QNv3AAG","keyTimeline":"Q3","label":"Key Competitor","name":"Test Opp Sagar","sizing":"INR3.00","type":"text"},{"closeDate":"2023-09-30","fieldName":"immediateSteps","id":"00672000009TZTRAA4","keyTimeline":"Q3","label":"Immediate Steps and Engagement Plans ","name":"Test Opp D","sizing":"INR1.00","type":"text"},{"closeDate":"2023-09-19","fieldName":"keyTimeline","id":"00672000009UdQBAA0","keyTimeline":"Q3","label":"Key Timelines","name":"Test Opp D2","sizing":"INR0.00","type":"text"},{"closeDate":"2023-09-28","fieldName":"sizing","id":"00672000009ZPXrAAO","keyTimeline":"Q3","label":"Sizing (in million Rs)","name":"Test Opp D45","type":"currency"}]'  draggable="false"  group-order="asc"  issearchavailable="false"  issortavailable="false"  pagelimit="3"  records={records}  row-level-edit="false"  specialcharactersort="false"  styles='\{"cellBorderColor":"#DDDDDD","cellBorderType":["border_right","border_top"],"cellBorderWidth":"0.5","cellMargin":[],"cellPadding":[],"headBgColor":"#DDDDDD","headFontWeight":"bold","tableBorderColor":"#D7D7D7","tableBorderType":["border_top","border_right","border_bottom","border_left"],"tableBorderWidth":"0.7"}'  user-selectable-column="false"  user-selectable-row="false"  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

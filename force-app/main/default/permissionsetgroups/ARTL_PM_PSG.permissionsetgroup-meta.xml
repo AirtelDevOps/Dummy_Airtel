@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set os for PM User.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ARTL_PM_PSG</label>
+    <permissionSets>ARTL_EditTask_Additional_PS</permissionSets>
+    <permissionSets>ARTL_PM</permissionSets>
+    <permissionSets>AutoProcNamedCredential</permissionSets>
+    <permissionSets>OmniStudioAdmin</permissionSets>
+    <permissionSets>OmniStudio_KAM_User_Extras</permissionSets>
+    <permissionSets>RevenueIntelligenceAnalytics</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

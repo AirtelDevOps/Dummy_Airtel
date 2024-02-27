@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Task Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PM Approval Task</fullName>
+                <default>false</default>
+                <label>PM Approval Task</label>
+            </value>
+            <value>
+                <fullName>PM Approval for LOC</fullName>
+                <default>false</default>
+                <label>PM Approval for LOC</label>
+            </value>
+            <value>
+                <fullName>PM Upload LOC Task</fullName>
+                <default>false</default>
+                <label>PM Upload LOC Task</label>
+            </value>
+            <value>
+                <fullName>PMO LOC Validation Task</fullName>
+                <default>false</default>
+                <label>PMO LOC Validation Task</label>
+            </value>
+            <value>
+                <fullName>PM Manual Check for LOC</fullName>
+                <default>false</default>
+                <label>PM Manual Check for LOC</label>
+            </value>
+            <value>
+                <fullName>PM Workways</fullName>
+                <default>false</default>
+                <label>PM Workways</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
