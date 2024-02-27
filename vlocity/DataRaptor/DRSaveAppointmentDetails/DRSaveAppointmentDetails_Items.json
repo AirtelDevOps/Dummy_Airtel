@@ -1,6 +1,50 @@
 [
     {
         "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(%orderId% != NULL , %ContextId% , NULL)",
+        "FormulaResultPath": "Id",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRSaveAppointmentDetailsCustom6567",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRSaveAppointmentDetails",
+        "OmniDataTransformationId": {
+            "Name": "DRSaveAppointmentDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRSaveAppointmentDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(%orderId% != NULL , %orderId% , %ContextId%)",
+        "FormulaResultPath": "ordId",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRSaveAppointmentDetailsCustom6254",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRSaveAppointmentDetails",
+        "OmniDataTransformationId": {
+            "Name": "DRSaveAppointmentDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRSaveAppointmentDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
         "GlobalKey": "DRSaveAppointmentDetailsCustom7266",
         "InputFieldName": "SelectedSlot:endTime",
         "IsDisabled": false,
@@ -22,7 +66,7 @@
     {
         "CurrencyIsoCode": "INR",
         "GlobalKey": "DRSaveAppointmentDetailsCustom8757",
-        "InputFieldName": "ContextId",
+        "InputFieldName": "Id",
         "IsDisabled": false,
         "IsRequiredForUpsert": false,
         "IsUpsertKey": true,
@@ -63,7 +107,7 @@
     {
         "CurrencyIsoCode": "INR",
         "GlobalKey": "DRSaveAppointmentDetailsCustom9653",
-        "InputFieldName": "orderId",
+        "InputFieldName": "ordId",
         "IsDisabled": false,
         "IsRequiredForUpsert": false,
         "IsUpsertKey": false,

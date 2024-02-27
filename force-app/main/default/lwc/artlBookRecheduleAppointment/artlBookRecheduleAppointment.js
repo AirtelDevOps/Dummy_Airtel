@@ -107,6 +107,10 @@ export default class ArtlBookRecheduleAppointment extends OmniscriptBaseMixin(Li
         this.disabledPrevious = false;
         this.startIndex = this.startIndex + 7;
         this.endIndex = this.startIndex + 7;
+        if(this.endIndex > this.allHeaders.length){
+            this.endIndex = this.allHeaders.length;
+            this.disabledNext = true;
+        }
         this.columns = this.allHeaders.slice(this.startIndex, this.endIndex);
 
         this.inputData = this.inputDataUi.map(item => {
@@ -119,7 +123,7 @@ export default class ArtlBookRecheduleAppointment extends OmniscriptBaseMixin(Li
     }
 
     handlePreviousWeek(event) {
-
+        this.disabledNext = false;
         this.endIndex = this.startIndex;
         this.startIndex = this.endIndex - 7;
         if (this.startIndex === 0) {
@@ -138,7 +142,6 @@ export default class ArtlBookRecheduleAppointment extends OmniscriptBaseMixin(Li
 
     handleTimeClick(event) {
         const rowId = event.target.dataset.rowId;
-        console.log('rowId--->'+rowId);
         const times = rowId.split(" - ");
       
         // Extract date and time components
@@ -152,18 +155,10 @@ export default class ArtlBookRecheduleAppointment extends OmniscriptBaseMixin(Li
 
         const originalStartTime = times[0];
         const originalEndTime = startDate + "T" + times[1]; 
-
-        console.log('adjustedStartTime--->'+startTime);
-        console.log('adjustedEndTime---->'+endTime);
-        console.log('adjustedStartTime--->'+originalStartTime);
-        console.log('adjustedEndTime---->'+originalEndTime);
-      
       
         // Format the adjusted times as strings in the desired format
         const adjustedStartTime = startTime.toISOString().slice(0, 19);
         const adjustedEndTime = endTime.toISOString().slice(0, 19);
-        console.log('adjustedStartTime--->'+adjustedStartTime);
-        console.log('adjustedEndTime---->'+adjustedEndTime);
       
         // Create the return object with the adjusted times
         const retSlot = { startTimeIP: originalStartTime, endTimeIP:originalEndTime, startTime: adjustedStartTime, endTime: adjustedEndTime };
