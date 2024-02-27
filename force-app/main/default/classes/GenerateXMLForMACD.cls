@@ -38,7 +38,8 @@ global without sharing class GenerateXMLForMACD implements IProcess {
                 Order.EffectiveDate, Order.Hansen_Order_Status__c,
                 Order.Account.AccountNumber, vlocity_cmt__BillingAccountId__r.AccountNumber,
                 Order.vlocity_cmt__QuoteId__r.CreatedDate,
-                Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber
+                Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber,
+                Order.vlocity_cmt__QuoteId__r.ARTL_CreatedDate__c
                 from OrderItem WHERE Id =: orderItemId WITH SECURITY_ENFORCED LIMIT 1
             ];
         } catch (Exception e) {

@@ -39,6 +39,7 @@ global without sharing class GenerateXMLForHansen implements IProcess {
                 vlocity_cmt__BillingAccountId__r.Description,
                 vlocity_cmt__BillingAccountId__r.AccountNumber,
                 Order.vlocity_cmt__QuoteId__r.CreatedDate,
+                Order.vlocity_cmt__QuoteId__r.ARTL_CreatedDate__c,
                 Order.vlocity_cmt__QuoteId__r.ARTL_NBA_Account__r.AccountNumber
                 from OrderItem WHERE Id =: orderItemId WITH SECURITY_ENFORCED LIMIT 1
             ];

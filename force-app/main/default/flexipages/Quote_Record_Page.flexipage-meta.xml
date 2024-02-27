@@ -37,7 +37,7 @@
                         <valueListItems>
                             <value>CustomButton.Quote.Create_Proposal</value>
                             <visibilityRule>
-                                <booleanFilter>(1 AND 2 AND 3 ) OR (4 AND (5 OR 6))</booleanFilter>
+                                <booleanFilter>(1 AND 2 AND 3 ) OR 4</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.Status}</leftValue>
                                     <operator>EQUAL</operator>
@@ -57,16 +57,6 @@
                                     <leftValue>{!Record.Status}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>DOA Approved</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.ARTL_QNeedCapexApproval__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>true</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.ARTL_QNeedDOAApproval__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>true</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -233,9 +223,6 @@
                             <value>Delete</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>ChangeRecordType</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Quote.Validate_Quote</value>
                             <visibilityRule>
                                 <booleanFilter>1 AND (2 OR 3)</booleanFilter>
@@ -363,6 +350,12 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>artl_MACDLocationUpdate</componentName>
+                <identifier>c_artl_MACDLocationUpdate</identifier>
+            </componentInstance>
+        </itemInstances>
         <mode>Replace</mode>
         <name>subheader</name>
         <type>Region</type>
