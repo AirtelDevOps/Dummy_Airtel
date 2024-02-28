@@ -13,15 +13,15 @@
         "actionMessage": "",
         "additionalInput": {
             "BussinessAccid": "=%BusinessAccountExtract:businessAccountId%",
-            "Id": "%GetPoGroupDetails:PoGroupId%",
             "PODetailsStep": "=%PODataDetails%",
             "POGroup-Block": "%POGroup-Block:Id%",
+            "POGroupId": "=IF(ISBLANK(%GetPOGroupforPO:PoGroupId%),%CreatePOGroup:PO_Group__c_1|1:Id%,%GetPoGroupDetails:PoGroupId%)",
             "PONumber": "=%PODataDetails:PONumber%",
-            "QLIId": "=%Id%"
+            "QLIId": "=%GetESMQUoteLineItemId:LintItemId%"
         },
         "additionalOutput": {
         },
-        "bundle": "ARTL_DRPost_CreatePOGroupAndPO",
+        "bundle": "ARTL_DRPostPurchaseOrderBulk",
         "chainOnStep": false,
         "disOnTplt": false,
         "executionConditionalFormula": "ISBLANK(POExtractDR)",

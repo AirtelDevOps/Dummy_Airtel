@@ -15,8 +15,8 @@
             "BCPData": "%BCPData%",
             "ContextId": "%ContextId%",
             "PODetailsStep": "%PODataDetails%",
-            "POGroupId": "=IF(ISBLANK(%POExtractDR:PO_Group_Id%),%PostPurchaseOrder:PO_Group__c_1|1:Id%,%POExtractDR:PO_Group_Id%)",
-            "POId": "=IF(ISBLANK(%POExtractDR:PO_ID%),%PostPurchaseOrder:ARTL_Purchase_Order__c_2|1:Id%,%POExtractDR:PO_ID%)",
+            "POGroupId": "=IF(ISBLANK(%GetPoGroupDetails:PoGroupId%),%CreatePOGroup:PO_Group__c_1|1:Id%,%GetPoGroupDetails:PoGroupId%)",
+            "POId": "=IF(ISBLANK(%POExtractDR:PO_ID%),%PostPurchaseOrder:ARTL_Purchase_Order__c_1|1:Id%,%POExtractDR:PO_ID%)",
             "PoIDtoBillingStage": "=IF(ISNOTBLANK(%POExtractDR%) , %POExtractDR:PO_ID% ,%PostPurchaseOrder:ARTL_Purchase_Order__c_2|1:Id% )",
             "VANAccountNumberId": "%GetVANAccountNumber:VANAccountNumberId%",
             "updatedItems": "%updatedItems%"

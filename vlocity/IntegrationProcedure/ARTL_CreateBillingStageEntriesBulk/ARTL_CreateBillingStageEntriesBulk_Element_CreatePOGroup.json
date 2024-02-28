@@ -2,7 +2,7 @@
     "CurrencyIsoCode": "INR",
     "IsActive": true,
     "IsOmniScriptEmbeddable": false,
-    "Name": "ARTL_CreateBillingStageRecordBulk",
+    "Name": "CreatePOGroup",
     "OmniProcessId": {
         "Name": "ARTL_CreateBillingStageEntriesBulk",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
@@ -12,26 +12,25 @@
     "PropertySetConfig": {
         "actionMessage": "",
         "additionalInput": {
-            "BillId": "%ExtractBIllingStageData:Id%",
-            "QliId": "%GetESMQUoteLineItemId:LintItemId%"
+            "PONumber": "%PODataDetails:PONumber%"
         },
         "additionalOutput": {
         },
-        "bundle": "ARTL_CreateBillingStageRecordBulk",
+        "bundle": "ARTL_CreatePOGroupBulk",
         "chainOnStep": false,
         "disOnTplt": false,
-        "executionConditionalFormula": "",
+        "executionConditionalFormula": "ISBLANK(%GetBulkCartUpdateForPO%) && ISBLANK(%GetPoGroupDetails%)",
         "failOnStepError": true,
         "failureConditionalFormula": "",
         "failureResponse": {
         },
-        "label": "DataRaptorPostAction1",
+        "label": "DataRaptorPostAction5",
         "responseJSONNode": "",
         "responseJSONPath": "",
         "returnOnlyAdditionalOutput": false,
         "returnOnlyFailureResponse": false,
-        "sendJSONNode": "Stage",
-        "sendJSONPath": "ARTL_TransformBASACreateData:Stage",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
         "sendOnlyAdditionalInput": false,
         "show": null,
         "useFormulas": true
@@ -39,5 +38,5 @@
     "Type": "DataRaptor Post Action",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure/ARTL_CreateBillingStageRecordBulk"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure/CreatePOGroup"
 }

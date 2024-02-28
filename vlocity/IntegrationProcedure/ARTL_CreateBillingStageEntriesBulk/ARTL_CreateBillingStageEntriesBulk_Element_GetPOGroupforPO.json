@@ -2,7 +2,7 @@
     "CurrencyIsoCode": "INR",
     "IsActive": true,
     "IsOmniScriptEmbeddable": false,
-    "Name": "ARTL_CreateBillingStageRecordBulk",
+    "Name": "GetPOGroupforPO",
     "OmniProcessId": {
         "Name": "ARTL_CreateBillingStageEntriesBulk",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
@@ -12,32 +12,41 @@
     "PropertySetConfig": {
         "actionMessage": "",
         "additionalInput": {
-            "BillId": "%ExtractBIllingStageData:Id%",
-            "QliId": "%GetESMQUoteLineItemId:LintItemId%"
         },
         "additionalOutput": {
         },
-        "bundle": "ARTL_CreateBillingStageRecordBulk",
+        "bundle": "ARTL_GetPOGroupForPO",
         "chainOnStep": false,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "%PODataDetails:PONumber%",
+                "inputParam": "PONumber"
+            },
+            {
+                "element": "%PODataDetails:POGroup%",
+                "inputParam": "POId"
+            }
+        ],
         "disOnTplt": false,
         "executionConditionalFormula": "",
         "failOnStepError": true,
         "failureConditionalFormula": "",
         "failureResponse": {
         },
-        "label": "DataRaptorPostAction1",
+        "ignoreCache": false,
+        "label": "DataRaptorExtractAction9",
         "responseJSONNode": "",
         "responseJSONPath": "",
         "returnOnlyAdditionalOutput": false,
         "returnOnlyFailureResponse": false,
-        "sendJSONNode": "Stage",
-        "sendJSONPath": "ARTL_TransformBASACreateData:Stage",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
         "sendOnlyAdditionalInput": false,
         "show": null,
         "useFormulas": true
     },
-    "Type": "DataRaptor Post Action",
+    "Type": "DataRaptor Extract Action",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure/ARTL_CreateBillingStageRecordBulk"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure/GetPOGroupforPO"
 }

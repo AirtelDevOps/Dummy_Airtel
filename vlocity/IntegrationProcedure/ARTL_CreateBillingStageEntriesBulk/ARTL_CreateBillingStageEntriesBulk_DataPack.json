@@ -22,7 +22,13 @@
         "ARTL_CreateBillingStageEntriesBulk_Element_POGroupDetails.json",
         "ARTL_CreateBillingStageEntriesBulk_Element_BusinessAccountExtract.json",
         "ARTL_CreateBillingStageEntriesBulk_Element_GetPoGroupDetails.json",
+        "ARTL_CreateBillingStageEntriesBulk_Element_SetPOGroupIdForBulkCatUpdate.json",
+        "ARTL_CreateBillingStageEntriesBulk_Element_GetBulkCartUpdateForPO.json",
         "ARTL_CreateBillingStageEntriesBulk_Element_POExtractDR.json",
+        "ARTL_CreateBillingStageEntriesBulk_Element_GetESMQUoteLineItemId.json",
+        "ARTL_CreateBillingStageEntriesBulk_Element_CreatePOGroup.json",
+        "ARTL_CreateBillingStageEntriesBulk_Element_GetPOGroupforPO.json",
+        "ARTL_CreateBillingStageEntriesBulk_Element_PostPurchaseOrders.json",
         "ARTL_CreateBillingStageEntriesBulk_Element_PostPurchaseOrder.json",
         "ARTL_CreateBillingStageEntriesBulk_Element_GetVANAccountNumber.json",
         "ARTL_CreateBillingStageEntriesBulk_Element_SplitBcpData.json",
@@ -45,5 +51,7 @@
     "Type": "ARTL",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
-    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure"
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntriesBulk/Procedure",
+    "WebComponentKey": "82934b37-9cb0-bf36-82c1-23566d4c8434",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001itREAQ"
 }

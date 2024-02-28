@@ -1,0 +1,205 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(POGroup-Block:Id =='' || POGroup-Block:Id=null, Null,POGroup-Block:Id)",
+        "FormulaResultPath": "groupnum",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem8",
+        "InputFieldName": "BussinessAccid",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Account__c",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem12",
+        "InputFieldName": "PONumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_PO_Number__c",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem7",
+        "InputFieldName": "PODetailsStep:POStartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_PO_Recieved_Date__c",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem10",
+        "InputFieldName": "PODetailsStep:POAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Amount__c",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem6",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom1756",
+        "InputFieldName": "POGroupId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PO_Group__c",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem11",
+        "InputFieldName": "QLIId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote_Line_Item__c",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem4",
+        "InputFieldName": "PODetailsStep:POStartDate",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Start_Date__c",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRPostPurchaseOrderBulkCustom0jI720000000StxEAEItem5",
+        "InputFieldName": "PODetailsStep:POTerms",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRPostPurchaseOrderBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRPostPurchaseOrderBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRPostPurchaseOrderBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Tenure__c",
+        "OutputObjectName": "ARTL_Purchase_Order__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]
