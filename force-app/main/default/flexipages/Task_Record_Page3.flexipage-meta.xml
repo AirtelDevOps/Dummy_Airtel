@@ -51,7 +51,6 @@
                     <value>3</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
-                <identifier>force_highlightsPanel</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -62,7 +61,6 @@
         <itemInstances>
             <componentInstance>
                 <componentName>force:detailPanel</componentName>
-                <identifier>force_detailPanel</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -73,7 +71,6 @@
         <itemInstances>
             <componentInstance>
                 <componentName>runtime_sales_activities:activityRecordFieldHistory</componentName>
-                <identifier>runtimesalesactivities_activityRecordFieldHistory</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -91,11 +88,28 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListContainer</componentName>
-                <identifier>force_relatedListContainer</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
         <name>relatedTabContent</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>taskTechnicalAttributeEnrichment</componentName>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-ae07f63c-840d-4f1e-8a32-8fb7e25db2e6</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>taskHandsonEnrichment</componentName>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-buihbdhh6k</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -114,7 +128,6 @@
                     <value>Standard.Tab.detail</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>detailTab</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -128,7 +141,32 @@
                     <value>Standard.Tab.relatedLists</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>relatedListsTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-ae07f63c-840d-4f1e-8a32-8fb7e25db2e6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Technical Attribute</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-buihbdhh6k</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Handsen Attribute</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -143,7 +181,6 @@
                     <value>tabs</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

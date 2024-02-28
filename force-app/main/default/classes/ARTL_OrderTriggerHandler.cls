@@ -1,5 +1,9 @@
 public without sharing class ARTL_OrderTriggerHandler {
+    
     public static void afterInsert(List<Order> newOrderList){
+        ARTL_OrderTriggerHelper.shareAccountrecords(newOrderList);
+    }
+    /*public static void afterInsert(List<Order> newOrderList){
         List<Order> orderList = [select id,CreatedById, vlocity_cmt__QuoteId__r.PM__c,vlocity_cmt__QuoteId__c,vlocity_cmt__QuoteId__r.Name from Order where Id IN:newOrderList ]; 
         IF(Test.isRunningTest()){
             orderList = newOrderList;
@@ -24,5 +28,5 @@ public without sharing class ARTL_OrderTriggerHandler {
             }
         }
         
-    }
+    }*/
 }
