@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>ATT_Is_UTM</label>
+    <label>Customer PM Email</label>
     <protected>false</protected>
     <values>
         <field>ARTL_Object__c</field>
@@ -8,23 +8,16 @@
     </values>
     <values>
         <field>AttributeCode__c</field>
-        <value xsi:type="xsd:string">ATT_Is_UTM</value>
+        <value xsi:type="xsd:string">Customer PM Email</value>
     </values>
     <values>
         <field>Attribute_JSON__c</field>
         <value xsi:type="xsd:string">{
-  "isRequired": false,
+  "isRequired": true,
   "regex": "",
   "isDependentValue": false,
   "dependentAttribtue": "",
-  "value": {
-    "No":{
-      "type": "text",
-      "operator": "",
-      "value": "",
-      "attributesToHide":["ATT_Secondary_CPE_Model_UTM", "ATT_Secondary_CPE_Make_UTM", "ATT_Secondary_CPE_ItemCode_UTM"]
-    }
-  }
+  "value": ""
 }</value>
     </values>
     <values>

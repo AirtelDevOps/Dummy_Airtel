@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>ATT_Is_UTM</label>
+    <label>ATT_VPN_TOPOLOGY</label>
     <protected>false</protected>
     <values>
         <field>ARTL_Object__c</field>
@@ -8,21 +8,31 @@
     </values>
     <values>
         <field>AttributeCode__c</field>
-        <value xsi:type="xsd:string">ATT_Is_UTM</value>
+        <value xsi:type="xsd:string">ATT_VPN_TOPOLOGY</value>
     </values>
     <values>
         <field>Attribute_JSON__c</field>
         <value xsi:type="xsd:string">{
   "isRequired": false,
   "regex": "",
-  "isDependentValue": false,
-  "dependentAttribtue": "",
+  "isDependentValue": true,
+  "dependentAttribtue": "ATT_MEDIA",
   "value": {
-    "No":{
-      "type": "text",
-      "operator": "",
+    "4G": {
+      "type": "picklist",
+      "operator": "==",
       "value": "",
-      "attributesToHide":["ATT_Secondary_CPE_Model_UTM", "ATT_Secondary_CPE_Make_UTM", "ATT_Secondary_CPE_ItemCode_UTM"]
+      "attributesToHide": "",
+      "isRequired":true,
+      "error": ""
+    },
+    "5G": {
+      "type": "picklist",
+      "operator": "==",
+      "value": "",
+      "attributesToHide": "",
+      "error": "",
+      "isRequired":true
     }
   }
 }</value>

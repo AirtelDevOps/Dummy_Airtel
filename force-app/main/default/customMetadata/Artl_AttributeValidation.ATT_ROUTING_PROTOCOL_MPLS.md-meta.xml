@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ATT_ROUTING_PROTOCOL_MPLS</label>
+    <protected>false</protected>
+    <values>
+        <field>ARTL_Object__c</field>
+        <value xsi:type="xsd:string">Quote and Order</value>
+    </values>
+    <values>
+        <field>AttributeCode__c</field>
+        <value xsi:type="xsd:string">ATT_ROUTING_PROTOCOL_MPLS</value>
+    </values>
+    <values>
+        <field>Attribute_JSON__c</field>
+        <value xsi:type="xsd:string">{
+  "isRequired": false,
+  "regex": "",
+  "isDependentValue": true,
+  "dependentAttribtue": "ATT_ROUTING_TYPE_MPLS",
+  "value": {
+    "Static with Private BGP": {
+      "type": "",
+      "operator": "==",
+      "value": "",
+      "defaultValue":"Both",
+      "attributesToHide": "",
+      "error": "",
+      "isReadOnly":true
+    },
+    "Private BGP": {
+      "type": "",
+      "operator": "==",
+      "value": "",
+      "defaultValue":"Dynamic",
+      "attributesToHide": "",
+      "error": "",
+      "isReadOnly":true
+    },
+    "Static with Public BGP":
+    {
+      "type": "",
+      "operator": "==",
+      "value": "",
+      "defaultValue":"Both",
+      "attributesToHide": "",
+      "error": "",
+      "isReadOnly":true
+    },
+    "None":{
+      "type": "",
+      "operator": "==",
+      "value": "",
+      "defaultValue":"None",
+      "attributesToHide": "",
+      "error": "",
+      "isReadOnly":true
+    },
+    "Static":{
+      "type": "",
+      "operator": "==",
+      "value": "",
+      "defaultValue":"Static",
+      "attributesToHide": "",
+      "error": "",
+      "isReadOnly":true
+    },
+    "Public BGP":{
+      "type": "",
+      "operator": "==",
+      "value": "",
+      "defaultValue":"Dynamic",
+      "attributesToHide": "",
+      "error": "",
+      "isReadOnly":true
+    }
+  }
+}</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>
