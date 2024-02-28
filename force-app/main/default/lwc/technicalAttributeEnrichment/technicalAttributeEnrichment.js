@@ -69,7 +69,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
     @track attribute;
     @track attributeValue;
     @track allAttributes;
-    @track groupedAttributes = [];
 
     @track columns = columns;
     //routingTypeSuffixVals = ['_BGP', '_HYD', '_BGPHYD', '_STC', '_All'];
@@ -101,7 +100,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
     PrivateNPublicBGPAttributes = JSON.parse(JSON.stringify(this.label.PrivateNPublicBGPAttributes || []).replace(/'|\[|\]|,/g, '')).split(' ').filter(Boolean);
     StaticNBGPHybridAttributes = JSON.parse(JSON.stringify(this.label.StaticNBGPHybridAttributes || []).replace(/'|\[|\]|,/g, '')).split(' ').filter(Boolean);
 
-
+    
     @track isLoading = true;
     serviceType;
     mediaType;
@@ -116,9 +115,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
     routingTypeCodeEill = 'ATT_ROUTING_TYPE';
     routingTypeCodeMpls = 'ATT_ROUTING_TYPE_MPLS'
     clonedAllAttributes;
-    clonedUiAttributes
-    routerMatrix;
-    @track activeSections = [];
 
     renderedCallback() {
         this.isLoading = false;
@@ -169,6 +165,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
     wiredRecord({ data, error }) {
         if (data) {
             this.parentId = data.fields.vlocity_cmt__ParentItemId__c.value;
+            console.log('Record Name:', JSON.stringify(this.parentId));
         } else if (error) {
             // Handle errors
         }
@@ -178,6 +175,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
     oliRec({ data, error }) {
         if (data) {
             this.parentId = data.fields.vlocity_cmt__ParentItemId__c.value;
+            console.log('Record Name:', JSON.stringify(this.parentId));
         } else if (error) {
             // Handle errors
         }
@@ -206,13 +204,13 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
 
         } else {
             if (data) {
+                //console.log('initData---->'+JSON.stringify(data));
                 var metadata = data.metadata;
                 var values = data.values;
                 this.attributes = [];
                 this.allAttributes = [];
                 let isProtocolAttribute;
                 let suffixArrayToAdd = [];
-                //this.activeSections = 
 
                 await this.getAttrValidations();
 
@@ -229,7 +227,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                         text_color: 'slds-text-color_default',
                         valueType: myAttribute.valueType,
                         therecordId: myAttribute.theRecordId,
-                        productName: myAttribute.productName,
                         // this following properties are used to render UI input element
                         is_changed: false,
                         is_picklist: myAttribute.valueType == 'picklist',
@@ -251,8 +248,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                     };
 
 
-                    //attribute.readonly = false;
-
                     //Added by prabanch for technical enrichment CPQ 
                     // if (((this.recordId.substring(0, 3) === "0QL") && (myAttribute.categoryCode === 'ATC_ENTERPRISE_DETAILS' || myAttribute.categoryName === 'Technical Attributes')) || 
                     // ((this.recordId.substring(0, 3) === "802") && (myAttribute.categoryCode === 'ATC_ENTERPRISE_DETAILS' || myAttribute.categoryName === 'Technical Attributes'))) {
@@ -269,12 +264,9 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                         }
 
                         //Routing type should be edittable for QLI's
-                        if ((myAttribute.code === this.routingTypeCodeEill || myAttribute.code === this.routingTypeCodeMpls) && (this.recordId.substring(0, 3) === "0QL")) {
+                        if (myAttribute.code === this.routingTypeCode && this.recordId.substring(0, 3) === "0QL") {
                             attribute.readonly = false;
                             //console.log('routingTypeVal' + attribute.value);
-                        }
-                        if ((myAttribute.code === this.routingTypeCodeEill || myAttribute.code === this.routingTypeCodeMpls) && (this.recordId.substring(0, 3) === "802")) {
-                            attribute.readonly = true;
                         }
 
                         //For CND RFS field population
@@ -289,14 +281,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                             }
 
                         }
-                        
-                        
-                        //For Operation Unit and Requisition Id
-                        if (myAttribute.code === 'Operating Unit' || myAttribute.code === 'Requisition Number') {
-                            attribute.readonly = false;
-                            attribute.isFieldVal = true;
-                        }
-
                         if (myAttribute.code === this.label.RFS) {
                             attribute.readonly = true;
                             attribute.is_field = false;
@@ -323,6 +307,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                         }
                         if (myAttribute.code === this.label.CustomerSegment) {
                             this.customerSegement = myAttribute.fieldValue;
+                            console.log('customerSegement---->' + this.customerSegement);
                         }
                         //**** CND RFS population logic finishes here */
 
@@ -346,10 +331,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                         });
                     }
 
-                    // if (attribute.code === 'ATT_IP_Type') {
-                    //     attribute.name = attribute.name + '-' + attribute.productName;
-                    // }
-
                     attribute.display_value = this.formatAttributeValue(attribute.value, attribute.valueType, attribute.options);
                     // if ((this.recordId.substring(0, 3) === "0QL" || this.recordId.substring(0, 3) === "802") && (myAttribute.categoryCode === 'ATC_ENTERPRISE_DETAILS' || myAttribute.categoryName === 'Technical Attributes')){
                     if ((this.recordId.substring(0, 3) === "0QL" || this.recordId.substring(0, 3) === "802") && (myAttribute.categoryCode === this.enterpriseCatCode || myAttribute.categoryName === 'Technical Attributes')) {
@@ -357,6 +338,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                         //Protocol product attibutes will be shown only based on selection of Routing type attribute
                         //routingTypeSuffixVals = ['_BGP','_HYD','_BGPHYD','_STC','_All'];-->For reference
 
+                        console.log('this.routingtypePNNNon2-->' + typeof (this.routingTypeSuffixVals));
                         this.routingTypeSuffixVals.forEach(suffix => {
                             if (myAttribute.code.endsWith(suffix) || myAttribute.code === 'Id') {
                                 isProtocolAttribute = true;
@@ -385,59 +367,12 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                     this.allAttributes.push(attribute);
 
                 }
-                const prodObj = this.attributes.find(obj => obj.code === 'Product');
-                if (prodObj && !(prodObj.fieldValue === 'NIPS Hardware' || prodObj.fieldValue === 'NIPS Service')) {
-                    this.attributes = this.attributes.filter(obj => obj.code !== "Requisition Number" && obj.code !== "Operating Unit");
-                }
                 this.clonedAllAttributes = JSON.parse(JSON.stringify(this.allAttributes));
-
-                // this.clonedUiAttributes = JSON.parse(JSON.stringify(this.attributes));
-                // console.log('this.attributesClone--->' + JSON.stringify(this.clonedUiAttributes));
                 //To get RFS caluclation matrix
                 this.getRFSMetadata();
                 this.attributeValidation();
-                this.getRouterMatrix();
-                this.groupAttributes();
-
             }
         }
-    }
-
-
-    groupAttributes() {
-        // const groupedAttributesMap = new Map();
-
-        // this.attributes.forEach(attribute => {
-        //     const productName = attribute.productName || ' ';
-        //     if (!groupedAttributesMap.has(productName)) {
-        //         groupedAttributesMap.set(productName, []);
-        //     }
-        //     groupedAttributesMap.get(productName).push(attribute);
-        // });
-
-        // this.groupedAttributes = Array.from(groupedAttributesMap, ([productName, attributes]) => ({
-        //     productName,
-        //     attributes
-        // }));
-        // console.log('groupedAttributes---->'+JSON.stringify(this.groupedAttributes));
-        const groupedAttributes = {};
-
-        this.attributes.forEach(attribute => {
-            const productName = attribute.productName || '';
-
-            if (!groupedAttributes[productName]) {
-                groupedAttributes[productName] = {
-                    productName: productName,
-                    attributes: []
-                };
-            }
-
-            groupedAttributes[productName].attributes.push(attribute);
-        });
-
-        this.groupedAttributes = Object.values(groupedAttributes);
-        //console.log('groupedAttributes---->'+JSON.stringify(this.groupedAttributes));
-
     }
 
     /**
@@ -499,7 +434,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                 selectedAttributeVal = event.target.value;
             }
         }
-        console.log('handleAttribueValueChange.selectedAttributeVal' + event.target.dataset.code);
+        console.log('handleAttribueValueChange.selectedAttributeVal' + selectedAttributeVal);
         console.log('Record ID:----->' + event.target.dataset.recordId);
         let suffixArrayToAdd = [];
         if (this.recordId.substring(0, 3) === "0QL" || this.recordId.substring(0, 3) === "802") {
@@ -517,7 +452,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
 
             //****To restrict attribute values for routing type starts here
             if (selectedAttributeVal === this.label.StaticwithPrivateBGP || selectedAttributeVal === this.label.StaticwithPublicBGP) {
-                //this.attributes = this.clonedUiAttributes;
                 suffixArrayToAdd = this.StaticNBGPHybridAttributes;
                 this.addOrRemoveAttributeForRouting(suffixArrayToAdd);
             }
@@ -526,7 +460,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                 this.addOrRemoveAttributeForRouting(suffixArrayToAdd);
             }
             if (selectedAttributeVal === this.label.Static) {
-               // this.attributes = this.clonedUiAttributes;
                 suffixArrayToAdd = this.StaticAttributes;
                 this.addOrRemoveAttributeForRouting(suffixArrayToAdd);
             }
@@ -549,6 +482,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                 // Format the result as needed
                 rfsDate = selectedDate.toISOString().split('T')[0];
 
+                console.log('rfsDate ----> ' + rfsDate);
                 this.allAttributes.forEach(attr => {
                     if (attr.code === this.label.RFS) {
                         attr.value = rfsDate;
@@ -561,15 +495,8 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
 
         }
 
-
-
-
         //Perform attribute validation for each field
         this.attributeValidation();
-
-        if (event.target.dataset.code === 'ATT_ROUTER_MODEL') {
-            this.routerMatrixValidation(selectedAttributeVal);
-        }
         /******Once the attribute is changed, for QLI, the attributes has to be passed as event to the parent LWC- cb2bDataTable for saving*/
         if (this.recordId.substring(0, 3) === "0QL") {
             this.dispatchEvent(new CustomEvent('attributechange', {
@@ -578,9 +505,6 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                 }
             }));
         }
-
-
-        this.groupAttributes();
 
 
 
@@ -653,6 +577,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
 
             return result;
         }, {});
+        console.log('outputJsonPnn--->' + JSON.stringify(outputJson));
         if (hasError) {
             this.dispatchEvent(
                 new ShowToastEvent({
@@ -719,26 +644,49 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
 
         this.rfsMetada.forEach(rfsmdt => {
             if (
-                this.serviceType && rfsmdt.Service_Type__c.toLowerCase() === this.serviceType.toLowerCase() &&
-                this.mediaType && rfsmdt.Media__c.toLowerCase() === this.mediaType.toLowerCase() &&
-                this.orderType && rfsmdt.Order_Type__c.toLowerCase() === this.orderType.toLowerCase() &&
-                this.customerSegement && rfsmdt.Customer_Segment__c.toLowerCase() === this.customerSegement.toLowerCase()
+                rfsmdt.Service_Type__c.toLowerCase() === this.serviceType.toLowerCase() &&
+                rfsmdt.Media__c.toLowerCase() === this.mediaType.toLowerCase() &&
+                rfsmdt.Order_Type__c.toLowerCase() === this.orderType.toLowerCase() &&
+                rfsmdt.Customer_Segment__c.toLowerCase() === this.customerSegement.toLowerCase()
             ) {
                 rfsDays = rfsmdt.Days__c;
             }
 
         });
 
+        console.log('rfsDays---->' + rfsDays);
         return rfsDays;
     }
+
+
+    // getFieldValidationRegex() {
+    //     let requestData = {
+    //         "type": "integrationprocedure",
+    //         "value": {
+    //             "ipMethod": "ARTL_techEnrichmentValidations",
+    //             "inputMap": {},
+    //             "optionsMap": ''
+    //         }
+    //     }
+    //     let reportRes;
+    //     getDataHandler(JSON.stringify(requestData)).then(response => {
+    //         reportRes = JSON.parse(response);
+    //         this.regexVals = reportRes.IPResult;
+    //         console.log('getFieldValidationRegex---->' + JSON.stringify(this.regexVals));
+    //         this.regexReqAttrs = Object.keys(this.regexVals);
+    //         //console.log('getFieldValidationRegex---->' + JSON.stringify(this.regexReqAttrs));
+    //     });
+    // }
 
     /*** Apex method to retrieve attribute validations set in the custom metadata */
     async getAttrValidations() {
         try {
             const fieldsToQuery = this.attributeValidationFields;
+            console.log('pnnn=>>>>' + JSON.stringify(fieldsToQuery));
             //const result = await getAttributeValidations({});
             const result = await getMetadataRecords({ metadataName: 'Artl_AttributeValidation__mdt', fields: fieldsToQuery });
             this.attrValidations = JSON.parse(JSON.stringify(result));
+            console.log('attrValidations---->' + JSON.stringify(this.attrValidations));
         } catch (error) {
             console.log('error:', JSON.stringify(error));
         }
@@ -750,16 +698,63 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
         let customErrorMsg;
         this.attributes.forEach((uiAttribute) => {
             this.attrValidations.forEach((validation) => {
-                if (uiAttribute && (uiAttribute.code.toLowerCase() === validation.AttributeCode__c.toLowerCase())) {
+                if (uiAttribute.code.toLowerCase() === validation.AttributeCode__c.toLowerCase()) {
                     let attrJson = JSON.parse(validation.Attribute_JSON__c);
 
                     if (attrJson.isRequired && (uiAttribute.value !== undefined)) {
+                        console.log('uiAttribute.value--->2' + JSON.stringify(uiAttribute));
                         uiAttribute.hasCustomError = false;
                     }
+                    /**If attirbute validation is based on the value of another attribute*/
+                    // if (attrJson.isDependentValue) {
+                    //     const dependentObj = this.attributes.find(obj => obj.code === attrJson.dependentAttribtue);
+                    //     let customErrorMsg = this.getCustomErrorMsg(attrJson.value[dependentObj.value], uiAttribute.value);
+                    //     console.log('customErrorMsg--->' + customErrorMsg);
+                    //     if (customErrorMsg !== undefined) {
+                    //         uiAttribute.hasCustomError = true;
+                    //         uiAttribute.customErrorMsg = customErrorMsg;
+                    //     }
+                    //     if (customErrorMsg === undefined) {
+                    //         uiAttribute.hasCustomError = false;
+                    //     }
+                    // }
 
+                    // if (!attrJson.isDependentValue) {
+                    //     // let customErrorMsg = this.getCustomErrorMsg(attrJson.value, uiAttribute.value);
+                    //     // console.log('customErrorMsg2--->' + customErrorMsg);
+                    //     // if (customErrorMsg !== undefined) {
+                    //     //     uiAttribute.hasCustomError = true;
+                    //     //     uiAttribute.customErrorMsg = customErrorMsg;
+                    //     // }
+                    //     // if (customErrorMsg === undefined) {
+                    //     //     uiAttribute.hasCustomError = false;
+                    //     // }
+                    //     console.log('attrJSON---->' + JSON.stringify(attrJson.value));
+                    // }
+
+                    // /*** To perform regex validation */
+                    // if (attrJson.regex !== '') {
+                    //     var inpRegex = attrJson.regex;
+                    //     var stringWithBackslashes = inpRegex.replace(/\./g, '\\.');
+                    //     regexpVal = new RegExp(stringWithBackslashes);
+                    //     isMatch = regexpVal.test(uiAttribute.value);
+                    //     if (!isMatch) {
+                    //         uiAttribute.hasCustomError = true;
+                    //         uiAttribute.customErrorMsg = attrJson.value.error;
+                    //     }
+                    //     else {
+                    //         uiAttribute.hasCustomError = false;
+                    //     }
+                    // }
+
+                    // /** To remove validation message for blank field values */
+                    // if (uiAttribute.value === undefined) {
+                    //     uiAttribute.hasCustomError = false;
+                    // }
 
                     // /*** If there is no dependency on another attribute value */
                     if (!attrJson.isDependentValue && uiAttribute.value !== undefined) {
+                        console.log('attrJson.value--->' + JSON.stringify(attrJson.value));
                         const searchKey = uiAttribute.value.toLowerCase();
                         const foundKey = Object.keys(attrJson.value).find(key => key.toLowerCase() === searchKey);
 
@@ -767,14 +762,20 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                             const attributesToHide = attrJson.value[foundKey].attributesToHide;
                             this.attributes = this.attributes.filter(att => {
                                 if (attributesToHide.includes(att.code) && uiAttribute.theRecordId === att.theRecordId) {
+                                    console.log('Removing element from the array: ' + att.code);
                                     return false; // Filter out the element
                                 }
                                 return true; // Keep the element
                             });
                         }
 
+                        //let customErrorMsg = this.getCustomErrorMsg(attrJson.value, uiAttribute.value);
+                        //console.log('customErrorMsg2--->' + customErrorMsg);
+
                         if (attrJson.value.hasOwnProperty('type')) {
+
                             customErrorMsg = this.getCustomErrorMsg(attrJson.value, uiAttribute.value);
+                            console.log('customErrorMsg2--->' + customErrorMsg);
                             if (customErrorMsg !== undefined) {
                                 uiAttribute.hasCustomError = true;
                                 uiAttribute.customErrorMsg = customErrorMsg;
@@ -788,47 +789,21 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
 
 
                     /**If attirbute validation is based on the value of another attribute*/
-
-
                     if (attrJson.isDependentValue) {
                         const dependentObj = this.attributes.find(obj => obj.code === attrJson.dependentAttribtue);
-                        if(dependentObj.value){
-                            uiAttribute.hasCustomError = false;
-                        }
-                        if (dependentObj && dependentObj.value !== undefined && attrJson.value[dependentObj.value]) {
-                            //console.log('attrJson.value[dependentObj.value]'+JSON.stringify(attrJson.value[dependentObj.value]));
-                            if (attrJson.value[dependentObj.value].type !== 'picklist' && attrJson.value[dependentObj.value].type !== 'text') {
+                        console.log('testType--->'+JSON.stringify(attrJson.value[dependentObj.value]));
+
+                       // console.log('attrJson.value[dependentObj.value]--->' + JSON.stringify(attrJson.value[dependentObj.value].type));
+                        if (dependentObj.value !== undefined && attrJson.value[dependentObj.value]) {
+                            console.log('customErrorMsg--->' + JSON.stringify(dependentObj));
+                            if (attrJson.value[dependentObj.value].type !== 'picklist') {
                                 customErrorMsg = this.getCustomErrorMsg(attrJson.value[dependentObj.value], uiAttribute.value);
                             }
                             if (attrJson.value[dependentObj.value].type === 'picklist') {
                                 customErrorMsg = this.getCustomErrorMsg(attrJson.value[dependentObj.value], validation.AttributeCode__c + '___' + uiAttribute.therecordId);
                             }
-                            if (attrJson.value[dependentObj.value].type === 'text') {
-                                if (dependentObj.value && uiAttribute.previousDependentObjVal !== dependentObj.value) {
-                                    uiAttribute.value = '';
-                                    uiAttribute.previousDependentObjVal = dependentObj.value;
-                                }
-                                
 
 
-                                const validateObj = attrJson.value[dependentObj.value];
-                                if(validateObj && validateObj.copyAttributeFrom){
-                                    const foundItem = this.attributes.find(item => item.code === validateObj.copyAttributeFrom);
-                                    if(foundItem && foundItem.value){
-                                        uiAttribute.value = foundItem.value;
-                                    }
-                                }
-                                if(validateObj && validateObj.isReadOnly){
-                                    uiAttribute.readonly = true;
-                                    uiAttribute.hasCustomError = false;
-                                }
-                                if(validateObj && !validateObj.isReadOnly){
-                                    uiAttribute.readonly = false;
-                                    uiAttribute.hasCustomError = false;
-                                }
-                            }
-
-                            uiAttribute.hasCustomError = false;
                             if (customErrorMsg !== undefined) {
                                 uiAttribute.hasCustomError = true;
                                 uiAttribute.customErrorMsg = customErrorMsg;
@@ -837,52 +812,10 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                                 uiAttribute.hasCustomError = false;
                             }
                         }
-                        if(uiAttribute && uiAttribute.value && dependentObj && dependentObj.value !== undefined && attrJson.attributesToHide){
-                            const searchKey = uiAttribute.value.toLowerCase();
-                            const foundKey = Object.keys(attrJson.attributesToHide).find(key => key.toLowerCase() === searchKey);
-                            if (foundKey) {
-                                const attributesToHide = attrJson.attributesToHide[foundKey];
-                                this.attributes = this.attributes.filter(att => {
-                                    if (attributesToHide.includes(att.code) && uiAttribute.theRecordId === att.theRecordId) {
-                                        return false; // Filter out the element
-                                    }
-                                    return true; // Keep the element
-                                });
-                            }
-                            if(!foundKey){
-                                //const attVals = Object.keys(attrJson.attributesToHide);
-                                const output = Object.values(attrJson.attributesToHide).reduce((acc, val) => acc.concat(val), []);
-                                if(output){
-                                    const allAttFilter = this.clonedAllAttributes.filter(obj => output.includes(obj.code));
-                                    if(allAttFilter){
-                                        allAttFilter.forEach(obj => {
-                                            const found = this.attributes.some(attr => attr.therecordId === obj.therecordId && attr.code === obj.code);
-                                            if (!found) {
-                                                this.attributes.push(obj);
-                                            }
-                                        });
-                                        this.groupAttributes();
-                                    }
-                                
-                                }
-                                const allAttFilter = this.clonedAllAttributes.filter(obj => output.includes(obj.code));
-                                allAttFilter.forEach(obj => {
-                                    const found = this.attributes.some(attr => attr.therecordId === obj.therecordId && attr.code === obj.code);
-                                    if (!found) {
-                                        this.attributes.push(obj);
-                                    }
-                                });
-                                
-
-                            }
-
-                        }
-                        
-                        if (dependentObj.value === undefined || dependentObj.value === '') {
+                        else if (dependentObj.value === undefined || dependentObj.value === '') {
                             uiAttribute.hasCustomError = true;
                             uiAttribute.customErrorMsg = 'Depenendent attibute- ' + dependentObj.name + ', cannot be empty';
                         }
-                        
 
                     }
 
@@ -902,11 +835,12 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                     }
 
 
-                    // if (uiAttribute.value === undefined) {
-                    //     uiAttribute.hasCustomError = false;
-                    // }
+                    if (uiAttribute.value === undefined) {
+                        uiAttribute.hasCustomError = false;
+                    }
 
                     if (attrJson.isRequired && (uiAttribute.value === undefined || uiAttribute.value === '')) {
+                        console.log('uiAttribute.value--->' + JSON.stringify(uiAttribute));
                         uiAttribute.hasCustomError = true;
                         uiAttribute.customErrorMsg = uiAttribute.name + ' is required';
                     }
@@ -915,12 +849,10 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                 }
             })
         });
-        this.groupAttributes();
     }
     /** To return custom error message stored in the custom metadata */
     getCustomErrorMsg(attJson, uiValue) {
         let customError;
-
         if (attJson.operator === 'Range') {
             const [minValue, maxValue] = attJson.value[0].split('-').map(Number);
             let isInRange;
@@ -928,6 +860,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
             if (uiValue !== undefined) {
                 isInRange = uiValue >= minValue && uiValue <= maxValue;
             }
+            console.log('isInRange--->' + isInRange);
             if (!isInRange || uiValue === undefined) {
                 customError = attJson.error;
             }
@@ -937,8 +870,11 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
             || attJson.operator === '<=' || attJson.operator === '>=') {
 
             if (attJson.type !== 'date' && attJson.type !== 'picklist') {
+                console.log('attrJson----->' + JSON.stringify(attJson));
                 let isError = false;
                 attJson.value.forEach(val => {
+                    console.log('valArray---->?' + val);
+                    console.log('uival----->' + uiValue);
                     switch (attJson.operator) {
                         case '<':
                             if (!(uiValue < val)) {
@@ -983,6 +919,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
             if (attJson.type === 'date') {
                 uiValue = new Date(uiValue);
                 if (attJson.value[0] === 'Today') {
+                    console.log('today--->')
                     const today = new Date();
                     today.setHours(0, 0, 0, 0);
 
@@ -995,6 +932,7 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                         case '>':
 
                             if (!(uiValue.getTime() > today.getTime())) {
+                                console.log('greaterthan')
                                 customError = attJson.error;
                             }
                             break;
@@ -1032,11 +970,14 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
 
                 // Filter allAttributes to get relevant items
                 const filteredAllArray = this.clonedAllAttributes.filter(obj => obj.code === splitValues[0] && obj.therecordId === splitValues[1]);
+                console.log('attrJson----->6' + JSON.stringify(filteredAllArray));
                 // Map to filter options based on attJson.value
                 const filteredOptions = filteredAllArray.map(item => ({
                     ...item,
                     options: item.options.filter(option => attJson.value.includes(option.value))
                 }));
+
+                console.log('attrJson----->7', JSON.stringify(filteredOptions));
 
                 // Update options of relevant items in attributes
                 this.attributes.forEach(item => {
@@ -1045,70 +986,10 @@ export default class TechnicalAttributeEnrichment extends LightningElement {
                     }
                 });
             }
-
+            
         }
         return customError;
-
-    }
-
-    //to get router matrix metadata
-    async getRouterMatrix() {
-        try {
-            const fieldsToQuery = ['Cost__c', 'Is_Active__c', 'Is_Default__c', 'Is_NSH__c', 'Item_Code__c', 'Make__c', 'Max_Bandwidth__c', 'Min_Bandwidth__c', 'Model__c'];
-            const result = await getMetadataRecords({ metadataName: 'Artl_RouterMatrix__mdt', fields: fieldsToQuery });
-            this.routerMatrix = JSON.parse(JSON.stringify(result));
-        } catch (error) {
-            console.log('error:', JSON.stringify(error));
-        }
-    }
-
-    routerMatrixValidation(selectedRouterModel) {
-        const routerObj = this.routerMatrix.find(obj => obj.Model__c === selectedRouterModel);
-        const bandwidthAttObj = this.attributes.find(obj => obj.code === 'ATT_ACCESS_BANDWIDTH');
-        const routerTypeAttObj = this.attributes.find(obj => obj.code === 'ATT_ROUTER_TYPE');
-        if ((routerObj.Is_NSH__c && routerTypeAttObj.value !== 'Non-Standard') ||
-            (!routerObj.Is_NSH__c && routerTypeAttObj.value === 'Non-Standard')) {
-            this.attributes.forEach(uiAtt => {
-                if (uiAtt.code === 'ATT_ROUTER_MODEL') {
-                    uiAtt.hasCustomError = true;
-                    uiAtt.customErrorMsg = 'Router Model is not compatible with the Router Type';
-                }
-            });
-        }
-
-        if (routerObj) {
-            const bandwidth = bandwidthAttObj.value.split(' ');
-            let bandwidthVal = parseInt(bandwidth[0]);
-            if (bandwidth[1] === 'Gbps') {
-                bandwidthVal = bandwidthVal * 1000;
-            }
-            if (!(bandwidthVal >= parseInt(routerObj.Min_Bandwidth__c.trim()) && bandwidthVal <= parseInt(routerObj.Max_Bandwidth__c.trim()))) {
-                this.attributes.forEach(uiAtt => {
-                    if (uiAtt.code === 'ATT_ROUTER_MODEL') {
-                        uiAtt.hasCustomError = true;
-                        uiAtt.customErrorMsg = 'Router Model is not compatible with the selected access bandwidth';
-                    }
-                });
-            }
-
-        }
-
-
-
-
-        // if (routerObj) {
-        //     const bandwidthVal = bandwidthAttObj.value.match(/\d+/)[0];
-        //     //console.log('tet------>'+bandwidthAttObj.value.match(/\d+/)[1])
-
-        //     if (!(parseInt(bandwidthVal) >= parseInt(routerObj.Min_Bandwidth__c.trim()) && parseInt(bandwidthVal) <= parseInt(routerObj.Max_Bandwidth__c.trim()))){
-        //         this.attributes.forEach(uiAtt => {
-        //             if (uiAtt.code === 'ATT_ROUTER_MODEL') {
-        //                 uiAtt.hasCustomError = true;
-        //                 uiAtt.customErrorMsg = 'Router Model is not compatible with the selected access bandwidth';
-        //             }
-        //         });
-        //     }
-        // }
+        
     }
 
 }
