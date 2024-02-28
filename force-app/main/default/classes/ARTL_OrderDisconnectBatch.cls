@@ -15,15 +15,15 @@
 * ─────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 global class ARTL_OrderDisconnectBatch implements Database.Batchable < sObject > , Database.Stateful{
-    global String caseId;
+    global String caseNumber;
     global List<String> cartIds = new List<String>();
-    global ARTL_OrderDisconnectBatch(String caseId) {
-        system.debug('caseId'+caseId);
-        this.caseId = caseId;
+    global ARTL_OrderDisconnectBatch(String caseNumber) {
+        system.debug('caseNumber'+caseNumber);
+        this.caseNumber = caseNumber;
     }
     global Database.QueryLocator start(Database.BatchableContext BC) {
-        return Database.getQueryLocator('select Id,ARTL_LSI__c, ARTL_PTC__c from case' +
-                                        ' WHERE Id =:caseId' );
+        return Database.getQueryLocator('select Id,ARTL_LSI__c, ARTL_PTC__c,CaseNumber from case' +
+                                        ' WHERE CaseNumber =:caseNumber' );
     }
    global void execute(Database.BatchableContext BC, List <case> caseList) {
         Id assetId;
@@ -133,11 +133,12 @@ global class ARTL_OrderDisconnectBatch implements Database.Batchable < sObject >
         Map<String, Object> ipInput = new Map<String, Object> ();
         Map<String, Object> ipOutput = new Map<String, Object> ();
         Map<String, Object> ipOptions = new Map<String, Object> ();
-        ipInput.put('cartId',cartIds[0]);
-        ipInput.put('subOrderIds',cartIds);
-        System.debug('IP ipInput disconnect: ' + ipInput);
-        ipOutput = (Map<String, Object>)vlocity_cmt.IntegrationProcedureService.runIntegrationService(procedureName, ipInput, ipOptions);
-        
+        if(cartIds.size()>0){
+            ipInput.put('cartId',cartIds[0]);
+            ipInput.put('subOrderIds',cartIds);
+            System.debug('IP ipInput disconnect: ' + ipInput);
+            ipOutput = (Map<String, Object>)vlocity_cmt.IntegrationProcedureService.runIntegrationService(procedureName, ipInput, ipOptions);
+        }
     }
     
 }

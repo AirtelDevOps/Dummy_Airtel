@@ -43,8 +43,8 @@ global class ARTL_B2BFetchOrderDetails implements vlocity_cmt.VlocityOpenInterfa
             System.debug('input BCPId -->>'+input.get('BCPId'));
             System.debug('input DCPId -->>'+input.get('DCPId'));
             String BCPId = String.valueOf(input.get('BCPId'));
-            String DCPId = String.valueOf(input.get('BCPId'));
-            String accNumber = String.valueOf(input.get('BCPId'));
+            String DCPId = String.valueOf(input.get('DCPId'));
+            String accNumber = String.valueOf(input.get('NBANumber'));
             String ipResponseString = ARTL_B2BFetchBCPDCPDetails.queryB2BBCPDCPJSONResponse(BCPId,DCPId,accNumber);
             System.debug('BCPDCPResponseString -->>'+ipResponseString);
             outMap.put('BCPDCPResponse', (Map<String, Object>)JSON.deserializeUntyped(ipResponseString));
@@ -63,19 +63,26 @@ global class ARTL_B2BFetchOrderDetails implements vlocity_cmt.VlocityOpenInterfa
                               order.PM_Team_Lead_Email__c, order.PM_Email__c, order.Quote.PM__r.LastName, order.Quote.PM__r.OIM_Id__c, Order.Opportunity.Owner.ManagerId,Order.Opportunity.Owner.Email,
                               ARTL_LSI__c, vlocity_cmt__BillingAccountId__r.Billing_Level__c,Order.Opportunity.Owner.FirstName,Order.Opportunity.Owner.Manager.Phone,Order.Opportunity.Owner.Manager.Email,
                               Order.Account.ARTL_Vertical_Segment__c, Order.Account.Parent.AccountNumber, order.Account.ARTL_License_Company__c, Order.Account.Short_Code__c,
-                              order.Account.ARTL_Customer_Segment__c, order.Account.AccountNumber, order.Quote.PM__r.Phone, order.Quote.PM__r.FirstName, order.Quote.PM__r.Manager.FirstName,
+                              order.Account.ARTL_Customer_Segment__c, order.Account.AccountNumber,vlocity_cmt__BillingAccountId__r.Parent.AccountNumber, order.Quote.PM__r.Phone, order.Quote.PM__r.FirstName, order.Quote.PM__r.Manager.FirstName,
                               order.Account.ARTL_Business_Circle_Region__c, order.Account.ARTL_PAN__c, Order.Account.ARTL_Service_Segment__c from OrderItem where 
-                              Order.ARTL_SOMOrderId__c =:somOrdId and ARTL_LSI__c =:lsi and Order.vlocity_cmt__DefaultBillingAccountId__r.ParentId =:baParent LIMIT 1];
+                              Order.ARTL_SOMOrderId__c =:somOrdId  and ARTL_LSI__c =:lsi  and vlocity_cmt__BillingAccountId__r.Parent.AccountNumber =:baParent LIMIT 1];
           //  list<OrderItem> ordItmList = [Select Id,ARTL_LSI__c,vlocity_cmt__BillingAccountId__r.ParentId from OrderItem where ARTL_LSI__c='' AND vlocity_cmt__BillingAccountId__r.ParentId=''];
           			Map<String,Object> resBody = new Map<String,Object>();
             		resBody.put('StatusCode','SBL-B2B-8000');
             		resBody.put('StatusMessage','LSI details returned successfully.');
             		Map<String,Object> b2bList = new Map<String,Object>();
+              List<Map<String,Object>> b2bListadd = new List<Map<String,Object>>();
             		Map<String,Object> b2b = new Map<String,Object>();
                     if(oi != null){
                         if(oi.ARTL_Latest_PO__c != null){
                             b2b.put('PONo',oi.ARTL_Latest_PO__r.ARTL_PO_Number__c);
-                            b2b.put('PODate',oi.ARTL_Latest_PO__r.ARTL_PO_Date__c);
+                            //b2b.put('PODate',oi.ARTL_Latest_PO__r.ARTL_PO_Date__c);
+                            if(String.isNotBlank(oi.ARTL_Latest_PO__r.ARTL_PO_Date__c)){
+                              String poDt = oi.ARTL_Latest_PO__r.ARTL_PO_Date__c;
+                              list<String> lstSplitDate = poDt.split('-');
+                              Date poDate = date.newinstance(Integer.valueOf(lstSplitDate[0]), Integer.valueOf(lstSplitDate[1]), Integer.valueOf(lstSplitDate[2]));
+                              b2b.put('PODate',poDate);  
+                            }
             				b2b.put('POAmount',oi.ARTL_Latest_PO__r.Amount__c);
                         }else{
                             b2b.put('PONo','');
@@ -165,8 +172,10 @@ global class ARTL_B2BFetchOrderDetails implements vlocity_cmt.VlocityOpenInterfa
             		Map<String,Object> b2bPartyCon = new Map<String,Object>();
             		b2bPartyCon.put('FirstName','');b2bPartyCon.put('LastName','');b2bPartyCon.put('Responsibility','');
             		b2bPartyCon.put('EmailAddress','');b2bPartyCon.put('CellularPhone','');
-            		b2b.put('B2BPartyContact',b2bPartyCon);
-            		 b2bList.put('B2BLSI',b2b);
+            	//	b2b.put('B2BPartyContact',b2bPartyCon);
+            	    b2bList.put('B2BPartyContact',b2bPartyCon);
+                      b2bListadd.add(b2b);
+            		 b2bList.put('B2BLSI',b2bListadd);
             	    resBody.put('SFDCMessage',b2bList);
                     outMap.put('resBody',resBody);   
         }catch(Exception ex){
@@ -893,6 +902,9 @@ global class ARTL_B2BFetchOrderDetails implements vlocity_cmt.VlocityOpenInterfa
                 lidffAttr.put('ZSMFirstName','');
                 lidffAttr.put('KDMFirstName','');
                 lidffAttr.put('ZSMMobile','');
+                //if(String.isNotBlank(String.valueOf(oiList[0].vlocity_cmt__BillingAccountId__r.Parent.CreatedDate))){
+                //    lidffAttr.put('NBACreationDate',DateTime.valueOf(oiList[0].vlocity_cmt__BillingAccountId__r.Parent.CreatedDate));
+                //}
                 lidffAttr.put('NBACreationDate',oiList[0].vlocity_cmt__BillingAccountId__r.Parent.CreatedDate);
                 lidffAttr.put('KAMContact',oiList[0].Order.Opportunity.Owner.Name);
                 lidffAttr.put('PTM3Name','');
@@ -936,7 +948,14 @@ global class ARTL_B2BFetchOrderDetails implements vlocity_cmt.VlocityOpenInterfa
                 lidffAttr.put('LocatorId','');
                 lidffAttr.put('Taxation',oiList[0].vlocity_cmt__BillingAccountId__r.ARTL_Taxation__c);
                 lidffAttr.put('SRCreatedDate','');
-                lidffAttr.put('CustomerNeedByDate',oiList[0].CND_Date__c);
+                //lidffAttr.put('CustomerNeedByDate',oiList[0].CND_Date__c);
+                if(String.isNotBlank(oiList[0].CND_Date__c)){
+                    String dtStr = oiList[0].CND_Date__c;
+                    list<String> lstSplitDate = dtStr.split('-');
+                    Date dt = date.newinstance(Integer.valueOf(lstSplitDate[0]), Integer.valueOf(lstSplitDate[1]), Integer.valueOf(lstSplitDate[2]));
+                    system.debug('dt : '+dt);
+                    lidffAttr.put('CustomerNeedByDate',dt);  
+                }
                 //lidffAttr.put('DDOSRequired','');
                 lidffAttr.put('LocalConName','');
                 //lidffAttr.put('SubProductName','');
@@ -1098,7 +1117,7 @@ global class ARTL_B2BFetchOrderDetails implements vlocity_cmt.VlocityOpenInterfa
                 //lidffAttr.put('VPNType','');
                 //lidffAttr.put('AsSet','');
                 lidffAttr.put('TPMedia','');
-               // lidffAttr.put('OrderCreationDate',oiList[0].CreatedDate);
+                lidffAttr.put('OrderCreationDate',oiList[0].CreatedDate);
                 lidffAttr.put('AMLastName','');
                 lidffAttr.put('Multicastsourceaddr','');
                 //lidffAttr.put('LANIPv6SubnetMask','');

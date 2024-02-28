@@ -19,12 +19,12 @@
         "chainOnStep": false,
         "disOnTplt": false,
         "executionConditionalFormula": "",
-        "failOnStepError": true,
+        "failOnStepError": false,
         "failureConditionalFormula": "",
         "failureResponse": {
         },
         "label": "HTTPAction1",
-        "namedCredential": "SolaceQueue",
+        "namedCredential": "SFDCTMOInteraction",
         "postActionLogging": "",
         "preActionLogging": "%endpoint%",
         "responseJSONNode": "",
@@ -33,8 +33,6 @@
         "restOptions": {
             "clientCertificateName": "",
             "headers": {
-                "Content-Type": "application/json",
-                "accept": "*/*"
             },
             "isCompressed": false,
             "params": {

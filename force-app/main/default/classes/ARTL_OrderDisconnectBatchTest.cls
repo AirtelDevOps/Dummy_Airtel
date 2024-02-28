@@ -4,16 +4,16 @@ public class ARTL_OrderDisconnectBatchTest {
     static void testdataCreation(){
         Profile salesProf = [select id from profile where name = 'sales' limit 1];
         User u = new User(
-            Alias = 'standt', Email='systemadminuser@testorg.com',
+            Alias = 'standt', Email='systemadminuser@testorg.com',MobilePhone ='76543282829',
             EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US',
             LocaleSidKey='en_US', ProfileId = salesProf.Id,
             TimeZoneSidKey='America/Los_Angeles', UserName='systemadminuserbalic@testorg.com'
         );
         insert u;
-        Account testAccount = new Account(Name = 'Test Account',OwnerId = u.Id);
+        Account testAccount = new Account(Name = 'Test Account',OwnerId = u.Id,vlocity_cmt__Status__c = 'Approved');
         insert testAccount;
         Id recordTypeId = Schema.SObjectType.Contact.getRecordTypeInfosByName().get('MobilePhoneContact').getRecordTypeId();
-        Contact con = new Contact(Firstname = 'Test',LastName = 'Contact', Email = 'testcontact@test.com',AccountId= testAccount.id, RecordTypeId = recordTypeId, Phone = '8765337890',ARTL_Designation__c = 'Test', ARTL_Contact_Role__c='Sales Contact');
+        Contact con = new Contact(Firstname = 'Test',LastName = 'Contact', Email = 'testcontact@test.com',AccountId= testAccount.id, RecordTypeId = recordTypeId, Phone = '8765337890',ARTL_Designation__c = 'Test', ARTL_Contact_Role__c='Sales Contact',Country_Code__c='91');
         insert con;
         Product2 testProduct1 = new Product2(
             Name = 'Test Product Root',
@@ -100,8 +100,8 @@ public class ARTL_OrderDisconnectBatchTest {
             vlocity_cmt__PricebookEntryId__c = testPricebookEntry1.Id,
             Quantity = 1,
             Price = 100.00,
-            vlocity_cmt__ParentItemId__c = 'testt',
-            vlocity_cmt__RootItemId__c = 'testt',
+            vlocity_cmt__ParentItemId__c = '123',
+            vlocity_cmt__RootItemId__c = '123',
             vlocity_cmt__AssetReferenceId__c ='123',
             vlocity_cmt__AttributeSelectedValues__c = '{"ATT_NUMBER_OF_SITES":2,"ATT_CONTRACT_TERM":"3 Months","ATT_CONTROLLER_TYPE":"CISCO SD-WAN","ATT_SubProductName":"SDWAN", "attName":1}',
             vlocity_cmt__LineNumber__c = '0001',
@@ -115,10 +115,10 @@ public class ARTL_OrderDisconnectBatchTest {
             Quantity = 1,
             Price = 200.00,
             ARTL_LSI__c = 123456789,
-            vlocity_cmt__ParentItemId__c = 'testt',
-            vlocity_cmt__RootItemId__c = 'testt',
+            vlocity_cmt__ParentItemId__c = '1234',
+            vlocity_cmt__RootItemId__c = '1234',
             vlocity_cmt__AttributeSelectedValues__c = '{"ATT_NUMBER_OF_SITES":2,"ATT_CONTRACT_TERM":"3 Months","ATT_CONTROLLER_TYPE":"CISCO SD-WAN","ATT_SubProductName":"SDWAN", "attName":2}',
-            vlocity_cmt__AssetReferenceId__c ='123',
+            vlocity_cmt__AssetReferenceId__c ='1234',
             vlocity_cmt__LineNumber__c = '0002',
             vlocity_cmt__ProvisioningStatus__c = 'New',
             vlocity_cmt__ServiceAccountId__c = testAccount.Id);
@@ -126,13 +126,13 @@ public class ARTL_OrderDisconnectBatchTest {
             Name = 'Factory Test asset 3',
             AccountId = testAccount.Id,
             Product2Id = testProduct1.Id,
-            vlocity_cmt__ParentItemId__c = 'testt',
-            vlocity_cmt__RootItemId__c = 'testt',
+            vlocity_cmt__ParentItemId__c = '12345',
+            vlocity_cmt__RootItemId__c = '12345',
             vlocity_cmt__PricebookEntryId__c = testPricebookEntry1.Id,
             Quantity = 1,
             Price = 300.00,
             vlocity_cmt__AttributeSelectedValues__c = '{"ATT_NUMBER_OF_LICENCES":2,"ATT_CONTRACT_TERM":"3 Months","ATT_CONTROLLER_TYPE":"CISCO SD-WAN","ATT_SubProductName":"SDWAN", "attName":3}',            
-            vlocity_cmt__AssetReferenceId__c ='123',
+            vlocity_cmt__AssetReferenceId__c ='12345',
             vlocity_cmt__LineNumber__c = '0003',
             vlocity_cmt__ProvisioningStatus__c = 'New',
             vlocity_cmt__ServiceAccountId__c = testAccount.Id );
@@ -167,10 +167,10 @@ public class ARTL_OrderDisconnectBatchTest {
     }
     @isTest
     static void testCallOrderDisconnectBatch1() {
-        Case caseRec = [select Id,ARTL_LSI__c, ARTL_PTC__c from case limit 1];
+        Case caseRec = [select Id,ARTL_LSI__c, ARTL_PTC__c,CaseNumber from case limit 1];
         
         Test.startTest();
-        ARTL_OrderDisconnectBatch batchJob = new ARTL_OrderDisconnectBatch(String.valueof(caseRec.Id));
+        ARTL_OrderDisconnectBatch batchJob = new ARTL_OrderDisconnectBatch(String.valueof(caseRec.CaseNumber));
         Id batchJobId = Database.executeBatch(batchJob, 200);
         Test.stopTest();
     }
