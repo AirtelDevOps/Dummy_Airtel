@@ -112,6 +112,10 @@
         <enabled>true</enabled>
         <name>STD_Code__mdt</name>
     </customMetadataTypeAccesses>
+    <externalCredentialPrincipalAccesses>
+        <enabled>true</enabled>
+        <externalCredentialPrincipal>HansenOMCancelOrder-Principal</externalCredentialPrincipal>
+    </externalCredentialPrincipalAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>ARTL_LOC_Task_Approval__c.Comments__c</field>
@@ -179,7 +183,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ARTL_Task_Integration_Logs__c.ARTL_Alt_Key_API__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ARTL_Task_Integration_Logs__c.ARTL_Input_Attributes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ARTL_Task_Integration_Logs__c.ARTL_OrderId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ARTL_Task_Integration_Logs__c.ARTL_Request__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ARTL_Task_Integration_Logs__c.ARTL_Response__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6839,6 +6863,66 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>vlocity_cmt__OrderItemRelationship__c.vlocity_cmt__Action__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__OrderItemRelationship__c.vlocity_cmt__OrderItemId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__OrderItemRelationship__c.vlocity_cmt__ProductRelationshipIdentifier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__OrderItemRelationship__c.vlocity_cmt__RelatedAssetReferenceId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__OrderItemRelationship__c.vlocity_cmt__RelatedOrderItemId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__OrderItemRelationship__c.vlocity_cmt__RelationshipType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__QuoteLineItemRelationship__c.vlocity_cmt__Action__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__QuoteLineItemRelationship__c.vlocity_cmt__ProductRelationshipIdentifier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__QuoteLineItemRelationship__c.vlocity_cmt__QuoteLineItemId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__QuoteLineItemRelationship__c.vlocity_cmt__RelatedAssetReferenceId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__QuoteLineItemRelationship__c.vlocity_cmt__RelatedQuoteLineItemId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>vlocity_cmt__QuoteLineItemRelationship__c.vlocity_cmt__RelationshipType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>vlocity_cmt__ThorOrchestrationQueue__c.vlocity_cmt__GlobalKey__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6879,6 +6963,15 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>ARTL_Pincode__c</object>
         <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ARTL_Task_Integration_Logs__c</object>
+        <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>
