@@ -1,0 +1,744 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(QM:QLI:Product =='Primary Link',QM:QLI:Product,QM:QLI:QLIId)",
+        "FormulaResultPath": "QM:QLI:NeedToShow",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item28",
+        "InputFieldName": "BillingCycle",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BillingCycle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item26",
+        "InputFieldName": "BillingLevel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BillingLevel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item27",
+        "InputFieldName": "BillingType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BillingType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item32",
+        "InputFieldName": "CAFNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CAFNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item16",
+        "InputFieldName": "CompanyAddress",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CompanyAddress",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item15",
+        "InputFieldName": "CompanyCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CompanyCity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item17",
+        "InputFieldName": "CompanyCountry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CompanyCountry",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item20",
+        "InputFieldName": "CompanyName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CompanyName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item19",
+        "InputFieldName": "CompanyPinCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CompanyPinCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item18",
+        "InputFieldName": "CompanyState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CompanyState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item2",
+        "InputFieldName": "ContactEmail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContactEmail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item1",
+        "InputFieldName": "ContactMobile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContactMobile",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item22",
+        "InputFieldName": "GSTN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "GSTN",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item35",
+        "InputFieldName": "OrderRaisedBy",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderRaisedBy",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item23",
+        "InputFieldName": "PAN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PAN",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item24",
+        "InputFieldName": "PODate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PODate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item25",
+        "InputFieldName": "POExpiryDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "POExpiryDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item21",
+        "InputFieldName": "PONumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PONumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item4",
+        "InputFieldName": "QM:QLI:AccessBandwidth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QLI:AccessBandwidth",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item5",
+        "InputFieldName": "QM:QLI:Media",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QLI:Media",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item14",
+        "InputFieldName": "QM:QLI:NeedToShow",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QLI:NeedToShow",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item3",
+        "InputFieldName": "QM:QLI:PortBandwidth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QLI:PortBandwidth",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item12",
+        "InputFieldName": "QM:QLI:Product",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QLI:Product",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item13",
+        "InputFieldName": "QM:QLI:QLIId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QLI:QLIId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item8",
+        "InputFieldName": "QM:QMCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QMCity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item10",
+        "InputFieldName": "QM:QMCountry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QMCountry",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item7",
+        "InputFieldName": "QM:QMId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QMId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item6",
+        "InputFieldName": "QM:QMName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QMName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item11",
+        "InputFieldName": "QM:QMPinCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QMPinCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item9",
+        "InputFieldName": "QM:QMState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QM:QMState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item29",
+        "InputFieldName": "SalesRepCircle",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SalesRepCircle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item31",
+        "InputFieldName": "SalesRepName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SalesRepName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item30",
+        "InputFieldName": "SalesRepPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SalesRepPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item33",
+        "InputFieldName": "customerAccNum",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "customerAccNum",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item34",
+        "InputFieldName": "noOfSites",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "noOfSites",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTLTransformContractDetailsV1Copy1708590615274Custom0jI720000000SCQEA2Item36",
+        "InputFieldName": "orderType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+        "OmniDataTransformationId": {
+            "Name": "ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTLTransformContractDetailsV1Copy1708590615274",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "orderType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]
