@@ -35,6 +35,7 @@ public class ARTL_MACDLocationUpdateController {
             for(Integer i=0; i<pmList.size(); i++){
                 pmqmMap.put(pmList[i].Id,qmIdList[i]);
             }
+            
             List<vlocity_cmt__QuoteMember__c> qmList = new List<vlocity_cmt__QuoteMember__c>();
             for(vlocity_cmt__Premises__c pm : pmList){
                 vlocity_cmt__QuoteMember__c qm = new vlocity_cmt__QuoteMember__c();
@@ -50,6 +51,20 @@ public class ARTL_MACDLocationUpdateController {
                 qmList.add(qm);
             }
             Database.insert(qmList);
+            Map<String,String> qmNewOldMap = new Map<String,String>();
+            for(vlocity_cmt__QuoteMember__c qm : qmList){
+                qmNewOldMap.put(qm.vlocity_cmt__ParentQuoteMemberId__c,qm.Id);
+            }
+            
+            List<QuoteLineItem> qliList = new List<QuoteLineItem>();
+            qliList = [Select Id, vlocity_cmt__QuoteMemberId__c From QuoteLineItem 
+                       Where vlocity_cmt__QuoteMemberId__c In :qmIdList];
+            //Map<String,String> qmQLIMap = new Map<String,String>();
+            for(QuoteLineItem qli : qliList){
+                String tempQMId = qli.vlocity_cmt__QuoteMemberId__c;
+                qli.vlocity_cmt__QuoteMemberId__c = qmNewOldMap.get(tempQMId);
+            }
+            Database.update(qliList);
             recCount = qmList.size();
         }
         return recCount;
@@ -64,13 +79,15 @@ public class ARTL_MACDLocationUpdateController {
         List<Object> qliList = new List<Object>();
         qliList = (List<Object>)jsonMap.get('QuoteLineItems');
         Map<String, String> DCPqmMap = new Map<String, String>();
+        Set<Id> qlIds = new Set<Id>();
         for(Object obj : qliList){
             Map<String, Object> objRow = (Map<String, Object>)JSON.deserializeUntyped(JSON.serialize(obj));
-            String qmId = (String)objRow.get('Id');
+            String qlId = (String)objRow.get('Id');
             String newDCPstr = (String)objRow.get('NewDCP');
             String[] newDCP = newDCPstr.split('-');
             String newDCPId = newDCP[0].trim();
-            DCPqmMap.put(newDCPId,qmId);
+            DCPqmMap.put(newDCPId,qlId);
+            qlIds.add(qlId);
         }
         List<ContactPremiseRelation__c> cprList = new List<ContactPremiseRelation__c>();
         cprList = [Select Id, Premises__c, Premises__r.vlocity_cmt__StreetAddress__c, Premises__r.vlocity_cmt__City__c, 
@@ -79,6 +96,12 @@ public class ARTL_MACDLocationUpdateController {
         Map<String, ContactPremiseRelation__c> DCPcprMap = new Map<String, ContactPremiseRelation__c>();
         for(ContactPremiseRelation__c cpr : cprList){
             DCPcprMap.put(cpr.BCP_DCP_Number__c, cpr);
+        }
+        List<QuoteLineItem> qliRecList = new List<QuoteLineItem>();
+        qliRecList = [SELECT Id, vlocity_cmt__QuoteMemberId__c FROM QuoteLineItem WHERE Id IN: qlIds];
+        Map<String,String> qlIdQMId = new Map<String,String>();
+        for(QuoteLineItem qli : qliRecList){
+            qlIdQMId.put(qli.Id,qli.vlocity_cmt__QuoteMemberId__c);
         }
         List<vlocity_cmt__QuoteMember__c> qmList = new List<vlocity_cmt__QuoteMember__c>();
         for(String str : DCPqmMap.keySet()){
@@ -92,10 +115,19 @@ public class ARTL_MACDLocationUpdateController {
             qm.vlocity_cmt__MemberType__c = 'Location';
             qm.vlocity_cmt__QuoteId__c = quoteId;
             qm.vlocity_cmt__PremisesId__c = cpr.Premises__c;
-            qm.vlocity_cmt__ParentQuoteMemberId__c = DCPqmMap.get(str);
+            qm.vlocity_cmt__ParentQuoteMemberId__c = qlIdQMId.get(DCPqmMap.get(str));
             qm.DCP_Record__c = cpr.Id;
             qmList.add(qm);
         }
         Database.insert(qmList);
+        Map<String,String> qmNewOldMap = new Map<String,String>();
+        for(vlocity_cmt__QuoteMember__c qm : qmList){
+            qmNewOldMap.put(qm.vlocity_cmt__ParentQuoteMemberId__c,qm.Id);
+        }
+        for(QuoteLineItem qli : qliList){
+            String tempQMId = qli.vlocity_cmt__QuoteMemberId__c;
+            qli.vlocity_cmt__QuoteMemberId__c = qmNewOldMap.get(tempQMId);
+        }
+        Database.update(qliList);
     }*/
 }
