@@ -66,7 +66,7 @@
                                                 disabled={isDisabled}></lightning-input>
                                         </td>
                                         <td class="slds-cell-wrap">
-                                            <lightning-input class="validity" type="text" label="Pincode"
+                                            <lightning-input class="validity" type="text" label="Pincode" pattern="[0-9]{6}"
                                                 data-id={dtw.qmId} data-name={Pincode} variant="label-hidden"
                                                 placeholder="Pincode" onchange={handlechange}
                                                 disabled={isDisabled}></lightning-input>

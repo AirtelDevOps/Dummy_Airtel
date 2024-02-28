@@ -46,7 +46,7 @@ export default class Artl_MACDLocationUpdate extends LightningElement {
     closeModal(){
         this.dispatchEvent(new CustomEvent("closemodalpopup"));
         //this.isModalOpen =  false;
-        this.dispatchEvent(new CustomEvent("refreshmemberscustom"));
+        //this.dispatchEvent(new CustomEvent("refreshmemberscustom"));
         this.stopSpinner();
         this.resetFields();
         this.qmIdSet = [];
@@ -197,7 +197,7 @@ export default class Artl_MACDLocationUpdate extends LightningElement {
     closeChildModal(){
         this.dispatchEvent(new CustomEvent("closemodalpopup"));
         this.dispatchEvent(new CustomEvent("refreshmemberscustom"));
-        //this.isChildModalOpen = false;
+        this.isChildModalOpen = false;
         this.inputDataList = [];
         this.resetFields();
         this.stopSpinner();
