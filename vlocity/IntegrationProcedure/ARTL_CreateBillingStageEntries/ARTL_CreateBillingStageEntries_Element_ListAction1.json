@@ -21,19 +21,19 @@
         "advancedMergeMap": [
             {
                 "listKey": "rows",
-                "matchingPath": "Id",
+                "matchingPath": "LSI",
                 "normalizeKey": "1"
             },
             {
                 "listKey": "StageRecords",
-                "matchingPath": "quotelineItemId",
+                "matchingPath": "LSI",
                 "normalizeKey": "1"
             }
         ],
         "allowMergeNulls": true,
         "chainOnStep": false,
         "disOnTplt": false,
-        "dynamicOutputFields": "Id,BillStagingId",
+        "dynamicOutputFields": "Id,BillStagingId,LSI,qmemberId",
         "executionConditionalFormula": "",
         "failOnStepError": true,
         "failureConditionalFormula": "",

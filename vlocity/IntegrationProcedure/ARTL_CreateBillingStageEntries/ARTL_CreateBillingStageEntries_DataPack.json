@@ -1,7 +1,7 @@
 {
     "CurrencyIsoCode": "INR",
     "CustomJavaScript": "ARTL_CreateBillingStageEntries_SampleInput.json",
-    "Description": "Changes for saving BCP details on staging Adding bCp lookup on staging record Added DR to capture VANAccountNumber",
+    "Description": "Changes for saving BCP details on staging Adding bCp lookup on staging record Added DR to capture VANAccountNumber Added LSI in BS PO ID transform mapping",
     "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
     "IsIntegrationProcedure": true,
     "IsMetadataCacheDisabled": false,
@@ -31,5 +31,7 @@
     "Type": "ARTL",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
-    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntries/Procedure"
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateBillingStageEntries/Procedure",
+    "WebComponentKey": "8028fcc2-1d70-4cca-879c-2ba5dbfb577c",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001jEPEAY"
 }
