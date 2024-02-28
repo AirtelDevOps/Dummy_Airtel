@@ -4,7 +4,6 @@
         <itemInstances>
             <componentInstance>
                 <componentName>vlocity_cmt:CPQReloadTabCmp</componentName>
-                <identifier>vlocity_cmt_CPQReloadTabCmp</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -26,7 +25,6 @@
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentName>vlocity_cmt:cpqFlexCardUtils</componentName>
-                <identifier>vlocity_cmt_cpqFlexCardUtils</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -328,7 +326,11 @@
                     <value>5</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
-                <identifier>force_highlightsPanel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>aRTL_UploadAndDownloadOnQuote</componentName>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -342,7 +344,6 @@
                     <value>linear</value>
                 </componentInstanceProperties>
                 <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
-                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -353,7 +354,6 @@
         <itemInstances>
             <componentInstance>
                 <componentName>artl_MACDLocationUpdate</componentName>
-                <identifier>c_artl_MACDLocationUpdate</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -364,7 +364,6 @@
         <itemInstances>
             <componentInstance>
                 <componentName>force:detailPanel</componentName>
-                <identifier>force_detailPanel</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-a83beae6-6c42-4719-8660-1937d96d907c</name>
@@ -394,7 +393,6 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer3</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -420,13 +418,11 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer4</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>cfARTL_HierarchicalViewQLIContainer</componentName>
-                <identifier>c_cfARTL_HierarchicalViewQLIContainer</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -452,7 +448,6 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer5</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -478,7 +473,6 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer6</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -496,7 +490,6 @@
                     <value>NONE</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer9</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -522,7 +515,6 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer7</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -548,7 +540,6 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer8</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-4a5666af-8d96-42e3-b04a-dd0426fac7f5</name>
@@ -570,7 +561,6 @@
                     <value>NONE</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -588,7 +578,6 @@
                     <value>NONE</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer2</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-126506c0-e651-42d3-b1a1-d6173c7598d2</name>
@@ -606,7 +595,6 @@
                     <value>Standard.Tab.detail</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab3</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -624,7 +612,6 @@
                     <value>Related</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -642,7 +629,6 @@
                     <value>History</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab2</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -657,13 +643,11 @@
                     <value>maintabs</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>cfCpqAsyncJobStatus</componentName>
-                <identifier>c_cfCpqAsyncJobStatus</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -674,7 +658,6 @@
         <itemInstances>
             <componentInstance>
                 <componentName>aRTL_quoteValidationBatchTracker</componentName>
-                <identifier>c_aRTL_quoteValidationBatchTracker</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -684,13 +667,11 @@
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentName>runtime_sales_activities:activityPanel</componentName>
-                <identifier>runtime_sales_activities_activityPanel</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>artl_DocumentUpload</componentName>
-                <identifier>c_artl_DocumentUpload</identifier>
                 <visibilityRule>
                     <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
                     <criteria>

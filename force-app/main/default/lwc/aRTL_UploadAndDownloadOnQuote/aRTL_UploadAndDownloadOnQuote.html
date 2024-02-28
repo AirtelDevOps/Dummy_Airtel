@@ -1,0 +1,16 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-28-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-quick-action-panel >
+        <lightning-button onclick={handleBulkQLIDownload} label="Bulk Download" title="Bulk Download" icon-name="utility:download" class="slds-m-left_x-small icon-btn"></lightning-button>
+        <lightning-button onclick={handleBulkQLIUpload} label="Bulk Upload" title="Bulk Upload" icon-name="utility:upload" class="slds-m-left_x-small icon-btn"></lightning-button>
+        <template if:false={isDocUpload}>
+             <c-artl_-bulk-data-upload-comp is-modal-open={modalValue}   onclosemodal={closedUploadModal}></c-artl_-bulk-data-upload-comp>
+          </template>   
+    </lightning-quick-action-panel>
+</template>

@@ -26,7 +26,7 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
             
             this.CartId = String.valueOf(fullAdjustmentInputMap.get('CartId')); 
             this.LSITruePayload = ( Map<String,Object>)fullAdjustmentInputMap.get('LSITruePayload'); 
-            System.debug(' this.LSITruePayload  %%%'+ this.LSITruePayload);
+              System.debug(' this.LSITruePayload  %%%'+ this.LSITruePayload);
             System.debug('this.cloneSourceIdMap size  %%%'+this.cloneSourceIdMap);
             List<Object> BulkIterationLogTestList ;
             if(!Test.isRunningTest()){
@@ -108,6 +108,10 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
                     break;
                 }
             }
+            if(qliId == '' || String.isBlank(qliId)){
+                qliId = String.valueOf(adjustmentMap.get('id'));
+            }
+
             ARTL_Bulk_Iteration_Log__c bulkIterationLog = this.bulkIterationLogMap.get(qliId);
             adjustmentMap.put('id' , qliId);
             adjustmentMap.put('cartId' , this.WorkingCartId);
@@ -150,9 +154,7 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
             ipAdjustmentInput.put('RootItemIds',WorkingCartInput.get('RootItemIds'));
             ipAdjustmentInput.put('reprice',true);
             ipAdjustmentInput.put('validate',true);
-            System.debug('ARTL_BulkApplyAdjustmentBatch input CloneModifyTo_SalesQLIsWQPR before');
             if(!Test.isRunningTest()){
-                System.debug('ARTL_BulkApplyAdjustmentBatch input CloneModifyTo_SalesQLIsWQPR before');
                 ipAdjustmentOutput = (Map<String, Object>) vlocity_cmt.IntegrationProcedureService.runIntegrationService('CloneModifyTo_SalesQLIsWQPR', ipAdjustmentInput, null);
             }
             string ipAdjustmentOutputString = JSON.serialize(ipAdjustmentOutput);                
@@ -178,15 +180,27 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
             
             
             List<ARTL_Bulk_Iteration__c> bulkIterationGetUser = [select id,CreatedById from ARTL_Bulk_Iteration__c where Id =: iterationId];
-            System.debug('POAdjustmentOutput input before');
-            
+               System.debug('POAdjustmentOutput input before');
+             System.debug('POAdjustmentOutput input '+LSITruePayload);
             if(LSITruePayload !=null && !Test.isRunningTest()){
-                System.debug('POAdjustmentOutput input before inside If');
-                System.debug('POAdjustmentOutput input '+LSITruePayload);
+                  System.debug('POAdjustmentOutput input before inside If');
                 POAdjustmentOutput = (Map<String, Object>) vlocity_cmt.IntegrationProcedureService.runIntegrationService('ARTL_CreateBillingStageEntriesBulk', LSITruePayload, null);
                 System.debug('POAdjustmentOutput '+POAdjustmentOutput);
+                String ErrorMessage = String.ValueOf(POAdjustmentOutput.get('success'));
+                ARTL_Bulk_Iteration_Log__c IterationLog = New ARTL_Bulk_Iteration_Log__c();
+                IterationLog.LSI__c = 'true';
+                IterationLog.ARTL_Bulk_Iteration__c = iterationId;
+                IterationLog.Asset_Reference_Id__c = iterationId;
+                If(ErrorMessage =='false'){
+                     IterationLog.Status__c = 'Failed'; 
+                      IterationLog.ErrorMessage__c = 'Error Occured During PO ';
+                }
+               else if(ErrorMessage =='true'){
+                    IterationLog.Status__c = 'Success';
+               }
+              
+                Insert IterationLog;
             }
-            
             List<ARTL_BulkCartUpdate__c> BulkCartUpdateRecordvAR = [select id,Status__c from ARTL_BulkCartUpdate__c where (Status__c = 'Received' AND Cart_Id__c=:CartId and Sobject_Type__c='Quote')];
             System.debug('BulkCartUpdateRecordvAR '+BulkCartUpdateRecordvAR);
             if(BulkCartUpdateRecordvAR.size()>0){
@@ -194,6 +208,7 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
                 BulkCartUpdateRecordvAR[0].Status__c = 'Processed';
                 update BulkCartUpdateRecordvAR[0];
             }else if(BulkCartUpdateRecordvAR.size()==0){
+                Quote quoteRecord = [select id , name from quote where id =: CartId limit 1];
                 System.debug('size else '+BulkCartUpdateRecordvAR.size());
                 string baseUrl = System.URL.getOrgDomainUrl().toExternalForm();
                 Id typeId = [SELECT Id,CustomNotifTypeName  FROM CUstomNotificationType WHERE CustomNotifTypeName = 'ARTL_BulkQuoteUploadNotification'].Id;
@@ -204,8 +219,8 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
                 string url = baseUrl + '/lightning/r/Report/' + reportId + '/view?fv0=' + iterationId;
                 System.debug('url else '+url);
                 Messaging.CustomNotification notification = new Messaging.CustomNotification();
-                notification.setBody('Bulk Processing has been completed. Please click here for more details');
-                notification.setTitle('Uploadation Completed');
+                notification.setBody('Bulk Processing for '+quoteRecord.name+'  has been completed. Please click here for more details');
+                notification.setTitle('Update Completed');
                 if(bulkIterationGetUser.size()>0){
                     Id userId = bulkIterationGetUser[0].CreatedById;
                     notification.setSenderId(userId);

@@ -111,15 +111,18 @@ global with sharing class ARTL_GetQLIsAPI {
         RestResponse res = RestContext.response;
         String quoteId = req.requestURI.substring(req.requestURI.lastIndexOf('/')+1);
         String NBA_Number = '';
+        String customerName = '';
         String Order_Type = '';
         List<sTRING> billingBCPId = new List<STRING>(); 
         Map<String, ContactPremiseRelation__c> contactPremiseRelationMap = new Map<String, ContactPremiseRelation__c>();
         Id userId = UserInfo.getUserId();
         try {
-            
             List<QuoteLineItem> lstQLI = 
-                [SELECT Quote.ARTL_Quote_Type__c,Product2.Name ,ARTL_Feasibility__c,Quote.ARTL_NBA_Account__r.accountNumber,  Product2.ProductCode, Product2Id,Product2.ARTL_OFT_Product_Name__c,
-                vlocity_cmt__QuoteMemberId__r.DCP_Record__c, vlocity_cmt__QuoteMemberId__r.DCP_Record__r.ARTL_BCP_DCP_Search_String__c, vlocity_cmt__BillingAccountId__r.BCP_DCP_Id__c,
+                [SELECT Quote.ARTL_Quote_Type__c,Quote.Status,Quote.Account.Name, Product2.Name ,ARTL_Purchase_Order__r.PO_Group__r.name,
+                 ARTL_Feasibility__c,Quote.ARTL_NBA_Account__r.accountNumber,Quote.ARTL_NBA_Account__c,  Product2.ProductCode, Product2Id,
+                 Product2.ARTL_OFT_Product_Name__c,
+                vlocity_cmt__QuoteMemberId__r.DCP_Record__c, vlocity_cmt__QuoteMemberId__r.DCP_Record__r.ARTL_BCP_DCP_Search_String__c, 
+                 vlocity_cmt__BillingAccountId__r.BCP_DCP_Id__c,
                 ARTL_Purchase_Order__r.Tenure__c, ARTL_Purchase_Order__r.ARTL_PO_Number__c, ARTL_Purchase_Order__r.Amount__c,
                 ARTL_Purchase_Order__r.ARTL_PO_Date__c, ARTL_Purchase_Order__r.PO_Group__c,
                 vlocity_cmt__BillingAccountId__r.Billing_Level__c, vlocity_cmt__BillingAccountId__r.ARTL_Bill_Type__c,
@@ -143,10 +146,12 @@ global with sharing class ARTL_GetQLIsAPI {
                 }
             }
             sYSTEM.DEBUG('ARTL_GetQLIsAPI billingBCPId***** '+billingBCPId);
+            IF(billingBCPId.SIZE()>0){
             List<ContactPremiseRelation__c> contactPremiseRelationList = [select id,BCP_DCP_Number__c,ARTL_BCP_DCP_Search_String__c from ContactPremiseRelation__c where BCP_DCP_Number__c IN: billingBCPId ];
-            if(contactPremiseRelationList.size()>0){
-                FOR(ContactPremiseRelation__c contactPremiseRelationRecord : contactPremiseRelationList){
-                    contactPremiseRelationMap.put(contactPremiseRelationRecord.BCP_DCP_Number__c , contactPremiseRelationRecord);
+                if(contactPremiseRelationList.size()>0){
+                    FOR(ContactPremiseRelation__c contactPremiseRelationRecord : contactPremiseRelationList){
+                        contactPremiseRelationMap.put(contactPremiseRelationRecord.BCP_DCP_Number__c , contactPremiseRelationRecord);
+                    }
                 }
             }
             sYSTEM.DEBUG('ARTL_GetQLIsAPI contactPremiseRelationMap***** '+contactPremiseRelationMap);
@@ -157,6 +162,7 @@ global with sharing class ARTL_GetQLIsAPI {
             Map<String,String> mapRootItemIdToProductCode = new Map<String,String>();
             for(QuoteLineItem objQLI : lstQLI){
                 NBA_Number = objQLI.Quote.ARTL_NBA_Account__r.accountNumber;
+                customerName = objQLI.Quote.Account.Name;
                 Order_Type = objQLI.Quote.ARTL_Quote_Type__c;
                 if(objQLI.vlocity_cmt__ParentItemId__c == null){
                     mapRootItemIdToSFid.put(objQLI.vlocity_cmt__RootItemId__c, objQLI.Id);
@@ -192,6 +198,7 @@ global with sharing class ARTL_GetQLIsAPI {
             mapResp.put('SecurityKey','2345');
             mapResp.put('DownloadDateTime',System.today());
             mapResp.put('NBANumber',NBA_Number);
+            mapResp.put('customerName',customerName);
             mapResp.put('cartId',quoteId);
             mapResp.put('orderType','New');
             mapResp.put('userEmail',userRecord.email);
@@ -211,6 +218,7 @@ global with sharing class ARTL_GetQLIsAPI {
 
     @TestVisible
     private static Object getJSONForLineItemPO(QuoteLineItem lineItem , Map<String, ContactPremiseRelation__c> contactPremiseRelationMap){
+        List<String> quoteStatus = new List<String>{'Contract Generated','Customer Signed','Order Created'};
         Map<String,Object> mapLineItem = new Map<String,Object>();
         Map<String,Object> mapPrice = new Map<String,Object>();
         Map<String,Object> mapProduct = new Map<String,Object>();
@@ -238,16 +246,29 @@ global with sharing class ARTL_GetQLIsAPI {
             mapProductPO.put('POAmount',lineItem.ARTL_Purchase_Order__r.Amount__c);
             mapProductPO.put('PODate',lineItem.ARTL_Purchase_Order__r.ARTL_PO_Date__c);
             //mapProductPO.put('POId','');
-            mapProductPO.put('POGroupId',lineItem.ARTL_Purchase_Order__r.PO_Group__c);
+            mapProductPO.put('POGroupId',lineItem.ARTL_Purchase_Order__r.PO_Group__r.name);
 
 
             sYSTEM.DEBUG('ARTL_GetQLIsAPI getJSONForLineItemPO mapProductPO***** '+mapProductPO);
-            mapBillingData.put('BillingLevel',lineItem.vlocity_cmt__BillingAccountId__r.Billing_Level__c);
-            mapBillingData.put('BillingMode',lineItem.vlocity_cmt__BillingAccountId__r.ARTL_Bill_Type__c);
-            mapBillingData.put('BillFrequency',lineItem.vlocity_cmt__BillingAccountId__r.vlocity_cmt__BillFrequency__c);
-            mapBillingData.put('BillDispatchMethod',lineItem.vlocity_cmt__BillingAccountId__r.vlocity_cmt__BillDeliveryMethod__c);
-            mapBillingData.put('LegalEntity',lineItem.vlocity_cmt__BillingAccountId__r.ARTL_Legal_Entity__c);
-            mapBillingData.put('LicenseCompany',lineItem.vlocity_cmt__BillingAccountId__r.ARTL_License_Company__c);
+            if(quoteStatus.contains(lineItem.Quote.Status)){
+                sYSTEM.DEBUG('ARTL_GetQLIsAPI lineItem.Quote.Status**** '+lineItem.Quote.Status);
+                mapBillingData.put('BillingLevel',lineItem.vlocity_cmt__BillingAccountId__r.Billing_Level__c);
+                mapBillingData.put('BillingMode',lineItem.vlocity_cmt__BillingAccountId__r.ARTL_Bill_Type__c);
+                mapBillingData.put('BillFrequency',lineItem.vlocity_cmt__BillingAccountId__r.vlocity_cmt__BillFrequency__c);
+                mapBillingData.put('BillDispatchMethod',lineItem.vlocity_cmt__BillingAccountId__r.vlocity_cmt__BillDeliveryMethod__c);
+                mapBillingData.put('LegalEntity',lineItem.vlocity_cmt__BillingAccountId__r.ARTL_Legal_Entity__c);
+                mapBillingData.put('LicenseCompany',lineItem.vlocity_cmt__BillingAccountId__r.ARTL_License_Company__c);
+            }else{
+                ARTL_Billing_Staging__c billingStagingRec = [select id,NBA_Account_Number__c,Bill_Type__c, ARTL_Bill_Frequency__c, Billing_Level__c, ARTL_Bill_Dispatch_Method__c, Legal_Entity__c, License_Company__c from ARTL_Billing_Staging__c WHERE (NBA_Account_Number__c=:lineItem.Quote.ARTL_NBA_Account__c OR NBA_Account_Number__c=:lineItem.Quote.ARTL_NBA_Account__r.accountNumber) AND NBA_Account_Number__c!=null LIMIT 1];
+                sYSTEM.DEBUG('ARTL_GetQLIsAPI billingStagingRec**** '+billingStagingRec);
+                mapBillingData.put('BillingLevel',billingStagingRec.Billing_Level__c);
+                mapBillingData.put('BillingMode',billingStagingRec.Bill_Type__c);
+                mapBillingData.put('BillFrequency',billingStagingRec.ARTL_Bill_Frequency__c);
+                mapBillingData.put('BillDispatchMethod',billingStagingRec.ARTL_Bill_Dispatch_Method__c);
+                mapBillingData.put('LegalEntity',billingStagingRec.Legal_Entity__c);
+                mapBillingData.put('LicenseCompany',billingStagingRec.License_Company__c);
+            }
+           
     
             sYSTEM.DEBUG('ARTL_GetQLIsAPI getJSONForLineItemPO mapBillingData***** '+mapBillingData);
 

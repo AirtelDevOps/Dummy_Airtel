@@ -44,6 +44,41 @@ public class ARTL_BulkCartPlatformEvtTriggerTest {
         inputMap = (Map<String,object>)Json.deserializeUntyped(inputString);
         Test.startTest();
         BulkCartPlatformEvtTriggerHandler.invokeMethod( 'updateChildProductAtrributes' , inputMap,null,null);
+        BulkCartPlatformEvtTriggerHandler.invokeMethod( 'errorLogCheck' , inputMap,null,null);
         Test.stopTest();      
+    }
+    
+    
+    
+    @isTest
+    static void testErrorLogCheck() {
+        Map<String, Object> inputMapDRFail = new Map<String, Object>();
+        inputMapDRFail.put('DRReturnResponse', 'fail');
+        List<Object> drResponseList = new List<Object>();
+        Map<String, Object> drResponseEntry = new Map<String, Object>();
+        drResponseEntry.put('vlocity_cmt__AssetReferenceId__c', 'TestAssetReferenceId');
+        drResponseEntry.put('UpsertSuccess', false);
+        drResponseEntry.put('UpsertError', 'Error message for DR');
+        drResponseList.add(drResponseEntry);
+        inputMapDRFail.put('DR_Response', drResponseList);
+        inputMapDRFail.put('iterationId', 'TestIterationId');
+
+        // Example input map for failure in ESMReturnResponse
+        Map<String, Object> inputMapESMFail = new Map<String, Object>();
+        inputMapESMFail.put('ESMReturnResponse', 'fail');
+        Map<String, Object> esmResponseMap = new Map<String, Object>();
+        esmResponseMap.put('EsmCloneResponse', 'Error message for ESM');
+        inputMapESMFail.put('ESM_Response', esmResponseMap);
+        inputMapESMFail.put('iterationId', 'TestIterationId');
+
+        // Call the method to be tested
+        Test.startTest();
+        Map<String, Object> outMap = new Map<String, Object>();
+        Map<String, Object> options = new Map<String, Object>();
+        
+        ARTL_BulkCartPlatformEvtTriggerHandler.errorLogCheck(inputMapDRFail, outMap, options);
+        Test.stopTest();
+
+       
     }
 }

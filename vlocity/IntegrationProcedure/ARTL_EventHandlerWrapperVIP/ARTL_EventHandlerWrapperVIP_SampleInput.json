@@ -1,9 +1,10 @@
 {
     "LSITruePayload": {
         "%vlocity_namespace%__Action__c": "Add",
-        "%vlocity_namespace%__AssetReferenceId__c": "6e13b311-bae1-6aa6-29bf-0592ab82d7d3",
+        "%vlocity_namespace%__AssetReferenceId__c": "73ce9852-e7ce-6536-2240-d124ed0ef87b",
         "%vlocity_namespace%__AttributeSelectedValues__c": {
-            "ATT_ACCESS_BANDWIDTH": "5 Mbps",
+            "ATT_ACCESS_BANDWIDTH": "4 Mbps",
+            "ATT_AIRTEL_LOOPBACK_IP_BGPHYD": null,
             "ATT_AS_OVERRIDE_BGPHYD": null,
             "ATT_AS_SET_BGPHYD": null,
             "ATT_BFD_BGPHYD": null,
@@ -13,13 +14,11 @@
             "ATT_BGP_Log_BGPHYD": null,
             "ATT_BGP_PASSWORD_BGPHYD": null,
             "ATT_BGP_PREFIX_LIMIT_BGPHYD": null,
-            "ATT_BGP_ROUTING_TYPE_BGPHYD": null,
             "ATT_BGP_SESSION_PER_LINK_BGPHYD": null,
             "ATT_CONTRACT_TERM": "12 Months",
-            "ATT_CPE": "Single CPE",
+            "ATT_CPE": null,
             "ATT_CROSS_CONNECT_REQD": "No",
             "ATT_CUSTOMER_AS_NUMBER_BGPHYD": null,
-            "ATT_CUSTOMER_LAN_IP_BGPHYD": null,
             "ATT_CUSTOMER_LINK_TYPE": null,
             "ATT_DDOS_Mitigation_Bandwidth_CFS": null,
             "ATT_DDOS_REQUIRED": "No",
@@ -28,34 +27,27 @@
             "ATT_DEMO_DURATION": null,
             "ATT_DEPENDENT_LINK_LSI": null,
             "ATT_EBGP_MULTIHOP_BGPHYD": null,
-            "ATT_ENCAPSULATION_TYPE__BGPHYD": null,
             "ATT_ENTERPRISE_CONNECTIVITY_TYPE": "Primary",
             "ATT_FAST_DETECT_BGPHYD": null,
             "ATT_HANDOVER_TYPE": null,
-            "ATT_HOLDTIME_BGPHYD": null,
             "ATT_INTERFACE": null,
             "ATT_IP_REQUIRED": "IPv4",
             "ATT_ISDEMO_CFS": null,
-            "ATT_KEEPALIVE_BGPHYD": null,
             "ATT_LAST_MILE": "Single Last Mile",
             "ATT_LEGACY_ACCESS_BANDWIDTH": null,
             "ATT_LEGACY_PORT_BANDWIDTH": null,
-            "ATT_LOCAL_LOOPBACK_IP_BGPHYD": null,
-            "ATT_MEDIA": "Third Party",
+            "ATT_MEDIA": "FTTH",
             "ATT_MINIMUM_INTERVAL_BGPHYD": null,
             "ATT_MTU_SIZE": "1472",
             "ATT_MULTIPLIER_BGPHYD": null,
             "ATT_OFFNET_CAPEX": null,
             "ATT_PEERING_TYPE_BGPHYD": null,
-            "ATT_POP": "Dual POP",
-            "ATT_PORT_BANDWIDTH": "4 Mbps",
+            "ATT_POP": "Single POP",
+            "ATT_PORT_BANDWIDTH": "10 Mbps",
             "ATT_PROFILE_UPDATE": null,
             "ATT_REDUNDANCY": "No",
             "ATT_RELOG_REASON": null,
-            "ATT_REMOTE_LOOPBACK_IP_BGPHYD": "Default BGP",
-            "ATT_REMOTE_LOOPBACK_IP_SUBNET_BGPHYD": null,
             "ATT_REMOVE_PRIVATE_AS_BGPHYD": null,
-            "ATT_RESTART_BGPHYD": null,
             "ATT_ROUTING_PROTOCOL": "None",
             "ATT_ROUTING_TABLE_BGP": null,
             "ATT_ROUTING_TABLE_HYD": null,
@@ -63,13 +55,10 @@
             "ATT_RTBH": null,
             "ATT_Rate_Revision": null,
             "ATT_SEND_COMMUNITY_BGPHYD": null,
-            "ATT_SERVICE_TYPE": "Fully Managed",
-            "ATT_SOO_BGPHYD": null,
-            "ATT_SUB_PRODUCT_NAME_CFS": "Enterprise ILL",
+            "ATT_SERVICE_TYPE": "Unmanaged",
+            "ATT_SUB_PRODUCT_NAME_CFS": null,
             "ATT_THIRD_PARTY_TYPE": null,
-            "ATT_TIMERS_KEEPALIVE_HOLDTIME_BGPHYD": "No",
-            "ATT_UPTIME_SLA": "99%",
-            "ATT_URL_FILTERING_BGP": false
+            "ATT_UPTIME_SLA": "99%"
         },
         "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA",
         "BCP": {
@@ -84,28 +73,24 @@
             "LegalEntity": "Bharti Airtel Ltd",
             "LicenseCompany": "BAL Internet"
         },
-        "ContextId": "0Q0720000008blZCAQ",
+        "ContextId": "0Q0720000009G0jCAE",
         "DCP": {
             "DCDPStr": null,
             "DCPId": null
         },
-        "FeasibilityId": null,
-        "Id": "0QL72000000A2OkGAK",
+        "Id": "0QL72000000APEsGAO",
         "POData": {
             "POAmount": null,
             "PODate": null,
-            "POGroupId": null,
+            "POId": null,
             "PONumber": null,
             "POTerm": null
         },
         "Quantity": 1,
-        "linenumber": "0005.0001",
+        "linenumber": "0003.0001",
         "price": {
-            "%vlocity_namespace%__OneTimeCharge__c": 9898,
-            "%vlocity_namespace%__OneTimeTotal__c": 9898,
-            "%vlocity_namespace%__RecurringCharge__c": 0,
-            "%vlocity_namespace%__RecurringCostTotal__c": null,
-            "Annual_Recurring_Charge__c": 65656
+            "%vlocity_namespace%__OneTimeCharge__c": 10000,
+            "Annual_Recurring_Charge__c": 74700
         },
         "product": {
             "Name": "Primary Link",
@@ -117,31 +102,69 @@
     "SobjectType": "Quote",
     "adjustmentsList": [
     ],
-    "cartId": "0Q0720000008blZCAQ",
+    "cartId": "0Q0720000009G0jCAE",
     "ddosType": null,
     "ipAdditionChildProducts": [
+        {
+            "ProductAction": "Add",
+            "ProductAttribute": {
+                "ATT_CROSS_CONNECT_BANDWIDTH": null,
+                "ATT_CROSS_CONNECT_LOCATION_A": null,
+                "ATT_CROSS_CONNECT_LOCATION_B": null,
+                "ATT_CROSS_CONNECT_MODE-CUSTOMER": null,
+                "ATT_CROSS_CONNECT_OFFERING": null,
+                "ATT_CROSS_CONNECT_PROVIDER_NAME": null,
+                "ATT_CROSS_CONNECT_TYPE": null,
+                "ATT_THIRD_PARTY_CONTRACT_TERM": null,
+                "ATT_TYPE_OF_CONNECTOR_CUSTOMER": null
+            },
+            "ProductName": "Cross Connect"
+        },
+        {
+            "ProductAction": "Add",
+            "ProductAttribute": {
+            },
+            "ProductName": "Dual POP Charge"
+        },
+        {
+            "ProductAction": "Add",
+            "ProductAttribute": {
+                "ATT_ADDITIONAL_ITEM_CODE_1": null,
+                "ATT_ADDITIONAL_ITEM_CODE_2": null,
+                "ATT_ADDITIONAL_ITEM_CODE_3": null,
+                "ATT_ADDITIONAL_ITEM_CODE_4": null,
+                "ATT_ADDITIONAL_ITEM_CODE_5": null,
+                "ATT_ADDITIONAL_ITEM_CODE_6": null,
+                "ATT_ADDITIONAL_ITEM_CODE_7": null,
+                "ATT_HardwareRedundancyRequired": null,
+                "ATT_ITEM_CODE": null,
+                "ATT_ROUTER_MAKE": null,
+                "ATT_ROUTER_MODEL": null,
+                "ATT_ROUTER_OWNERSHIP": null,
+                "ATT_ROUTER_TYPE": null,
+                "ATT_Sale_Type": null,
+                "ATT_Secondary_CPE_ItemCode": null,
+                "ATT_Secondary_CPE_Make": null,
+                "ATT_Secondary_CPE_Model": null
+            },
+            "ProductName": "Enterprise Connectivity Routers"
+        }
     ],
-    "iterationId": "a7x720000000FLdAAM",
+    "iterationId": "a7x720000000FgbAAE",
     "payload": {
         "lineItems": [
             {
                 "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "ed26f0ac-c4d5-af9b-5a47-53ad929d8fa7",
+                "%vlocity_namespace%__AssetReferenceId__c": "7607e083-05be-205d-cd53-93e375dac806",
                 "%vlocity_namespace%__AttributeSelectedValues__c": {
-                    "ATT_HANDOVER_TYPE": null,
                     "ATT_RATIO": "1:1",
                     "ATT_SubProductName": "Enterprise ILL"
                 },
                 "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY",
-                "Id": "0QL72000000A2OjGAK",
+                "Id": "0QL72000000APErGAO",
                 "Quantity": 1,
-                "linenumber": "0005",
+                "linenumber": "0003",
                 "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 9898,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 0
                 },
                 "product": {
                     "Name": "Internet",
@@ -152,9 +175,10 @@
             },
             {
                 "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "6e13b311-bae1-6aa6-29bf-0592ab82d7d3",
+                "%vlocity_namespace%__AssetReferenceId__c": "73ce9852-e7ce-6536-2240-d124ed0ef87b",
                 "%vlocity_namespace%__AttributeSelectedValues__c": {
-                    "ATT_ACCESS_BANDWIDTH": "5 Mbps",
+                    "ATT_ACCESS_BANDWIDTH": "4 Mbps",
+                    "ATT_AIRTEL_LOOPBACK_IP_BGPHYD": null,
                     "ATT_AS_OVERRIDE_BGPHYD": null,
                     "ATT_AS_SET_BGPHYD": null,
                     "ATT_BFD_BGPHYD": null,
@@ -164,13 +188,11 @@
                     "ATT_BGP_Log_BGPHYD": null,
                     "ATT_BGP_PASSWORD_BGPHYD": null,
                     "ATT_BGP_PREFIX_LIMIT_BGPHYD": null,
-                    "ATT_BGP_ROUTING_TYPE_BGPHYD": null,
                     "ATT_BGP_SESSION_PER_LINK_BGPHYD": null,
                     "ATT_CONTRACT_TERM": "12 Months",
-                    "ATT_CPE": "Single CPE",
+                    "ATT_CPE": null,
                     "ATT_CROSS_CONNECT_REQD": "No",
                     "ATT_CUSTOMER_AS_NUMBER_BGPHYD": null,
-                    "ATT_CUSTOMER_LAN_IP_BGPHYD": null,
                     "ATT_CUSTOMER_LINK_TYPE": null,
                     "ATT_DDOS_Mitigation_Bandwidth_CFS": null,
                     "ATT_DDOS_REQUIRED": "No",
@@ -179,34 +201,27 @@
                     "ATT_DEMO_DURATION": null,
                     "ATT_DEPENDENT_LINK_LSI": null,
                     "ATT_EBGP_MULTIHOP_BGPHYD": null,
-                    "ATT_ENCAPSULATION_TYPE__BGPHYD": null,
                     "ATT_ENTERPRISE_CONNECTIVITY_TYPE": "Primary",
                     "ATT_FAST_DETECT_BGPHYD": null,
                     "ATT_HANDOVER_TYPE": null,
-                    "ATT_HOLDTIME_BGPHYD": null,
                     "ATT_INTERFACE": null,
                     "ATT_IP_REQUIRED": "IPv4",
                     "ATT_ISDEMO_CFS": null,
-                    "ATT_KEEPALIVE_BGPHYD": null,
                     "ATT_LAST_MILE": "Single Last Mile",
                     "ATT_LEGACY_ACCESS_BANDWIDTH": null,
                     "ATT_LEGACY_PORT_BANDWIDTH": null,
-                    "ATT_LOCAL_LOOPBACK_IP_BGPHYD": null,
-                    "ATT_MEDIA": "Third Party",
+                    "ATT_MEDIA": "FTTH",
                     "ATT_MINIMUM_INTERVAL_BGPHYD": null,
                     "ATT_MTU_SIZE": "1472",
                     "ATT_MULTIPLIER_BGPHYD": null,
                     "ATT_OFFNET_CAPEX": null,
                     "ATT_PEERING_TYPE_BGPHYD": null,
-                    "ATT_POP": "Dual POP",
-                    "ATT_PORT_BANDWIDTH": "4 Mbps",
+                    "ATT_POP": "Single POP",
+                    "ATT_PORT_BANDWIDTH": "10 Mbps",
                     "ATT_PROFILE_UPDATE": null,
                     "ATT_REDUNDANCY": "No",
                     "ATT_RELOG_REASON": null,
-                    "ATT_REMOTE_LOOPBACK_IP_BGPHYD": "Default BGP",
-                    "ATT_REMOTE_LOOPBACK_IP_SUBNET_BGPHYD": null,
                     "ATT_REMOVE_PRIVATE_AS_BGPHYD": null,
-                    "ATT_RESTART_BGPHYD": null,
                     "ATT_ROUTING_PROTOCOL": "None",
                     "ATT_ROUTING_TABLE_BGP": null,
                     "ATT_ROUTING_TABLE_HYD": null,
@@ -214,13 +229,10 @@
                     "ATT_RTBH": null,
                     "ATT_Rate_Revision": null,
                     "ATT_SEND_COMMUNITY_BGPHYD": null,
-                    "ATT_SERVICE_TYPE": "Fully Managed",
-                    "ATT_SOO_BGPHYD": null,
-                    "ATT_SUB_PRODUCT_NAME_CFS": "Enterprise ILL",
+                    "ATT_SERVICE_TYPE": "Unmanaged",
+                    "ATT_SUB_PRODUCT_NAME_CFS": null,
                     "ATT_THIRD_PARTY_TYPE": null,
-                    "ATT_TIMERS_KEEPALIVE_HOLDTIME_BGPHYD": "No",
-                    "ATT_UPTIME_SLA": "99%",
-                    "ATT_URL_FILTERING_BGP": false
+                    "ATT_UPTIME_SLA": "99%"
                 },
                 "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA",
                 "BCP": {
@@ -239,23 +251,19 @@
                     "DCDPStr": null,
                     "DCPId": null
                 },
-                "FeasibilityId": null,
-                "Id": "0QL72000000A2OkGAK",
+                "Id": "0QL72000000APEsGAO",
                 "POData": {
                     "POAmount": null,
                     "PODate": null,
-                    "POGroupId": null,
+                    "POId": null,
                     "PONumber": null,
                     "POTerm": null
                 },
                 "Quantity": 1,
-                "linenumber": "0005.0001",
+                "linenumber": "0003.0001",
                 "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 9898,
-                    "%vlocity_namespace%__OneTimeTotal__c": 9898,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 65656
+                    "%vlocity_namespace%__OneTimeCharge__c": 10000,
+                    "Annual_Recurring_Charge__c": 74700
                 },
                 "product": {
                     "Name": "Primary Link",
@@ -266,21 +274,16 @@
             },
             {
                 "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "36be3fd4-b13d-01f4-0eed-6d4fac735311",
+                "%vlocity_namespace%__AssetReferenceId__c": "0f113765-2217-dbb8-bb23-46d147145d4b",
                 "%vlocity_namespace%__AttributeSelectedValues__c": {
                     "ATT_LOOPBACK_IPV4_SUBNET": null,
                     "ATT_Loopback_IPV6_Subnet": null
                 },
                 "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t7200000100fNAAQ",
-                "Id": "0QL72000000A2OlGAK",
+                "Id": "0QL72000000APEtGAO",
                 "Quantity": 1,
-                "linenumber": "0005.0001.0001",
+                "linenumber": "0003.0001.0001",
                 "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 0
                 },
                 "product": {
                     "Name": "Connectivity IP Block",
@@ -291,7 +294,7 @@
             },
             {
                 "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "2ed10229-f313-d257-024d-39f6fb748cbb",
+                "%vlocity_namespace%__AssetReferenceId__c": "ec3d56da-8275-6c48-e93d-7b46a8492e34",
                 "%vlocity_namespace%__AttributeSelectedValues__c": {
                     "ATT_ADDITIONAL_IP_BLOCK": false,
                     "ATT_Add_LAN_IPV4_Subnet": null,
@@ -304,19 +307,16 @@
                     "ATT_Delete_LAN_IPv6": null,
                     "ATT_IP_Type": "IPv4",
                     "ATT_LAN_IPV4": null,
-                    "ATT_LAN_IPV4_SUBNET_MASK": "/32",
+                    "ATT_LAN_IPV4_SUBNET_MASK": null,
                     "ATT_LAN_IPV6": null,
-                    "ATT_LAN_IPV6_SUBNET_MASK": "Not Applicable"
+                    "ATT_LAN_IPV6_SUBNET_MASK": null
                 },
                 "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t7200000100fNAAQ<01t7200000100kDAAQ",
-                "Id": "0QL72000000A2OmGAK",
+                "Id": "0QL72000000APEuGAO",
                 "Quantity": 1,
-                "linenumber": "0005.0001.0001.0001",
+                "linenumber": "0003.0001.0001.0001",
                 "price": {
                     "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
                     "Annual_Recurring_Charge__c": 0
                 },
                 "product": {
@@ -328,18 +328,13 @@
             },
             {
                 "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "31d36d7f-365c-ec39-132b-a115d34b6cd7",
+                "%vlocity_namespace%__AssetReferenceId__c": "bcffce87-abef-8fc4-34e6-d1048ccfebe0",
                 "%vlocity_namespace%__AttributeSelectedValues__c": null,
                 "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t72000000zzzRAAQ",
-                "Id": "0QL72000000A2OnGAK",
+                "Id": "0QL72000000APEvGAO",
                 "Quantity": 1,
-                "linenumber": "0005.0001.0002",
+                "linenumber": "0003.0001.0002",
                 "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 0
                 },
                 "product": {
                     "Name": "Access Last Mile Charge",
@@ -350,17 +345,13 @@
             },
             {
                 "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "d44cbb3e-2add-f0e7-8628-fa8e00489c50",
+                "%vlocity_namespace%__AssetReferenceId__c": "4a4a301a-d6de-f9aa-6958-5e6a09d064d4",
                 "%vlocity_namespace%__AttributeSelectedValues__c": null,
                 "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t72000001pOqvAAE",
-                "Id": "0QL72000000A2OoGAK",
+                "Id": "0QL72000000APEwGAO",
                 "Quantity": 1,
-                "linenumber": "0005.0001.0003",
+                "linenumber": "0003.0001.0003",
                 "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
                     "Annual_Recurring_Charge__c": 0
                 },
                 "product": {
@@ -369,147 +360,10 @@
                     "ProductCode": "ARTL_Port_Bandwidth_Charge",
                     "ProductId": "01t72000001pOqvAAE"
                 }
-            },
-            {
-                "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "ab9c068c-164b-7502-40ae-107e1611cf15",
-                "%vlocity_namespace%__AttributeSelectedValues__c": null,
-                "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t72000001pOxNAAU",
-                "Id": "0QL72000000A2OpGAK",
-                "Quantity": 1,
-                "linenumber": "0005.0001.0005",
-                "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 0
-                },
-                "product": {
-                    "Name": "Dual POP Charge",
-                    "PriceBookEntryId": "01u72000000IxxhAAC",
-                    "ProductCode": "ARTL_Dual_POP_Charge",
-                    "ProductId": "01t72000001pOxNAAU"
-                }
-            },
-            {
-                "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "7ac49346-dce2-9bfe-8251-68f76ef1cdf0",
-                "%vlocity_namespace%__AttributeSelectedValues__c": {
-                    "ATT_THIRD_PARTY_TYPE": "Third Party Ip1"
-                },
-                "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t720000010b2DAAQ",
-                "Id": "0QL72000000A2OqGAK",
-                "Quantity": 1,
-                "linenumber": "0005.0001.0006",
-                "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 0
-                },
-                "product": {
-                    "Name": "Third Party",
-                    "PriceBookEntryId": "01u72000000HYuvAAG",
-                    "ProductCode": "VEPC_THIRD_PARTY",
-                    "ProductId": "01t720000010b2DAAQ"
-                }
-            },
-            {
-                "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "d6a0d4b3-a07c-f36d-463e-e01b11fc9972",
-                "%vlocity_namespace%__AttributeSelectedValues__c": null,
-                "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t720000010685AAA",
-                "Id": "0QL72000000A2OrGAK",
-                "Quantity": 1,
-                "linenumber": "0005.0001.0007",
-                "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 0
-                },
-                "product": {
-                    "Name": "Installation Charge",
-                    "PriceBookEntryId": "01u72000000HXIvAAO",
-                    "ProductCode": "VEPC_INSTALLATION_CHARGE",
-                    "ProductId": "01t720000010685AAA"
-                }
-            },
-            {
-                "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "f29c59e5-ac23-9aa0-9ad6-dc8096a3eb45",
-                "%vlocity_namespace%__AttributeSelectedValues__c": {
-                    "ATT_ADDITIONAL_ITEM_CODE_1": null,
-                    "ATT_ADDITIONAL_ITEM_CODE_2": null,
-                    "ATT_ADDITIONAL_ITEM_CODE_3": null,
-                    "ATT_ADDITIONAL_ITEM_CODE_4": null,
-                    "ATT_ADDITIONAL_ITEM_CODE_5": null,
-                    "ATT_ADDITIONAL_ITEM_CODE_6": null,
-                    "ATT_ADDITIONAL_ITEM_CODE_7": null,
-                    "ATT_HardwareRedundancyRequired_UTM": null,
-                    "ATT_ITEM_CODE": null,
-                    "ATT_Is_UTM": "No",
-                    "ATT_OPERATING_UNIT": null,
-                    "ATT_ROUSTER_HOST_NAME": null,
-                    "ATT_ROUTER_LEASE_TYPE": "Financial Lease",
-                    "ATT_ROUTER_MAKE": null,
-                    "ATT_ROUTER_MODEL": null,
-                    "ATT_ROUTER_OWNERSHIP": null,
-                    "ATT_ROUTER_PASSWORD": null,
-                    "ATT_ROUTER_SERIAL_NUMBER": null,
-                    "ATT_ROUTER_TYPE": "Standard",
-                    "ATT_ROUTER_USERNAME": null,
-                    "ATT_Sale_Type": "Outright Sale",
-                    "ATT_Secondary_CPE_ItemCode_UTM": null,
-                    "ATT_Secondary_CPE_Make_UTM": null,
-                    "ATT_Secondary_CPE_Model_UTM": null
-                },
-                "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t7200000101JhAAI",
-                "Id": "0QL72000000A2OsGAK",
-                "Quantity": 1,
-                "linenumber": "0005.0001.0008",
-                "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 0
-                },
-                "product": {
-                    "Name": "Enterprise Connectivity Routers",
-                    "PriceBookEntryId": "01u72000000HXZ3AAO",
-                    "ProductCode": "2808c41f-a83c-492d-bba9-9bf09e3d8247",
-                    "ProductId": "01t7200000101JhAAI"
-                }
-            },
-            {
-                "%vlocity_namespace%__Action__c": "Add",
-                "%vlocity_namespace%__AssetReferenceId__c": "83f6cb14-1f62-9627-cbdc-d872256caa72",
-                "%vlocity_namespace%__AttributeSelectedValues__c": null,
-                "%vlocity_namespace%__ProductHierarchyPath__c": "01t72000000znVFAAY<01t72000000zzcrAAA<01t72000001063FAAQ",
-                "Id": "0QL72000000A2OtGAK",
-                "Quantity": 1,
-                "linenumber": "0005.0001.0009",
-                "price": {
-                    "%vlocity_namespace%__OneTimeCharge__c": 0,
-                    "%vlocity_namespace%__OneTimeTotal__c": 0,
-                    "%vlocity_namespace%__RecurringCharge__c": 0,
-                    "%vlocity_namespace%__RecurringCostTotal__c": null,
-                    "Annual_Recurring_Charge__c": 0
-                },
-                "product": {
-                    "Name": "Manageability Charge",
-                    "PriceBookEntryId": "01u72000000HXFhAAO",
-                    "ProductCode": "VEPC_MANAGEABILITY_CHARGE",
-                    "ProductId": "01t72000001063FAAQ"
-                }
             }
         ],
         "productCode": "3c6df3ca-4424-4131-bde3-c3ea5d5b5925",
-        "rootItemId": "ed26f0ac-c4d5-af9b-5a47-53ad929d8fa7",
-        "rootItemSFid": "0QL72000000A2OjGAK"
+        "rootItemId": "7607e083-05be-205d-cd53-93e375dac806",
+        "rootItemSFid": "0QL72000000APErGAO"
     }
 }
