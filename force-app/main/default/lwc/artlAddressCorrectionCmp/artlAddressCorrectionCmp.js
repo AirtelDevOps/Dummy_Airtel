@@ -52,18 +52,18 @@ export default class ArtlAddressCorrectionCmp extends LightningElement {
             console.log('pnnn..this.ipResult'+JSON.stringify(this.ipResult));
             if(Array.isArray(this.ipResult)){
                 this.invalidSitesExist = true;
-                for (const obj of this.ipResult) {
+                /*for (const obj of this.ipResult) {
                     if (obj.ARTL_Feasibility_Geolocation__c !== null) {
                         this.isGeoLocation = true;
                         break; // Break out of the loop if one object has non-null value
                     }
-                }
+                }*/
                 console.log('geoLocationVal' + this.isGeoLocation);
-                if (this.isGeoLocation) {
+                //if (this.isGeoLocation) {
                     this.ipResult.forEach((item) => {
                         item.isChecked = false;
-                        item.ARTL_Feasibility_Geolocation__Latitude__s = ''; 
-                        item.ARTL_Feasibility_Geolocation__Longitude__s = ''; 
+                        //item.ARTL_Feasibility_Geolocation__Latitude__s = ''; 
+                        //item.ARTL_Feasibility_Geolocation__Longitude__s = ''; 
                     });
                     this.ipResult[0].isChecked = true;
                     //console.log('reuqstDatPN' + JSON.stringify(this.ipResult));
@@ -71,7 +71,7 @@ export default class ArtlAddressCorrectionCmp extends LightningElement {
                     this.quoteMemberId = this.ipResult[0].Id;
                     console.log('connectedCallback.urlAppendString' + urlAppendString);
                     this.iframeUrl = this.iframeUrlConst + urlAppendString;
-                }
+                //}
             }else{
                 this.invalidSitesExist = false;
             }
@@ -93,6 +93,30 @@ export default class ArtlAddressCorrectionCmp extends LightningElement {
         });
 
 
+    }
+    
+    handleChangeGeo(event){
+        let index = event.currentTarget.dataset.index;
+        let geoType = event.currentTarget.dataset.geotype;
+
+        if(geoType == 'lat'){
+            this.ipResult[index].ARTL_Feasibility_Geolocation__Latitude__s = event.currentTarget.value;
+            this.ipResult[index].ARTL_Feasibility_Geolocation__c.latitude = event.currentTarget.value;
+            
+        }else if(geoType == 'long'){
+            this.ipResult[index].ARTL_Feasibility_Geolocation__Longitude__s = event.currentTarget.value;
+            this.ipResult[index].ARTL_Feasibility_Geolocation__c.longitude = event.currentTarget.value;
+        }
+        let urlAppendString = this.constructUrlString(this.ipResult[index]);
+        //console.log('connectedCallback.urlAppendString' + urlAppendString);
+        this.iframeUrl = this.iframeUrlConst + urlAppendString;
+        console.log(this.iframeUrl);
+        
+        const updatedMap = {
+            ...this.qmIdToGeolocationMap,
+            [this.ipResult[index].id]: this.ipResult[index] 
+        };
+        this.qmIdToGeolocationMap = updatedMap;
     }
 
     handleCheckboxChange(e) {
@@ -132,8 +156,8 @@ export default class ArtlAddressCorrectionCmp extends LightningElement {
 
     constructUrlString(filteredData) {
         let urlAppendString = 'companyName=' + filteredData.vlocity_cmt__StreetAddress__c + 'Shop&city=' + filteredData.vlocity_cmt__City__c + '&pincode=' +
-            filteredData.vlocity_cmt__PostalCode__c + '&lat=' + filteredData.ARTL_Feasibility_Geolocation__c.latitude + '&long=' +
-            filteredData.ARTL_Feasibility_Geolocation__c.longitude + '&address=J-17,, ' + filteredData.vlocity_cmt__StreetAddress__c + ', ' + filteredData.vlocity_cmt__City__c + ', ' + filteredData.vlocity_cmt__State__c;
+            filteredData.vlocity_cmt__PostalCode__c + '&lat=' + filteredData.ARTL_Feasibility_Geolocation__Latitude__s + '&long=' +
+            filteredData.ARTL_Feasibility_Geolocation__Longitude__s + '&address=J-17,, ' + filteredData.vlocity_cmt__StreetAddress__c + ', ' + filteredData.vlocity_cmt__City__c + ', ' + filteredData.vlocity_cmt__State__c;
         return urlAppendString;
     }
 

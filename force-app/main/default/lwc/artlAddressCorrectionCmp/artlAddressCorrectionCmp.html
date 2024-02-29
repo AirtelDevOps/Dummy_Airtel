@@ -40,7 +40,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <template for:each={ipResult} for:item="item">
+                                    <template for:each={ipResult} for:item="item" for:index="index">
                                         <tr key={item.Id}>
                                             <td data-label="Select" >
                                                 <lightning-input type="checkbox"  label="Select"
@@ -53,19 +53,26 @@
                                                 </div>
                                             </td>
                                             <td data-label="Latitude">
-                                                <div if:true = {isGeoLocation} class="slds-truncate">
+                                                <!--<div if:true = {isGeoLocation} class="slds-truncate">
                                                     {item.ARTL_Feasibility_Geolocation__Latitude__s}
                                                 </div>
                                                 <div if:false = {isGeoLocation} class="slds-truncate">
                                                     
+                                                </div>-->
+                                                <div class="slds-truncate">
+                                                    <lightning-input type="text" data-index={index} data-geotype="lat" variant="standard" value={item.ARTL_Feasibility_Geolocation__Latitude__s} onchange={handleChangeGeo}></lightning-input>
+                                                    
                                                 </div>
                                             </td>
                                             <td data-label="Longitude" >
-                                                <div if:true = {isGeoLocation} class="slds-truncate">
+                                                <!--<div if:true = {isGeoLocation} class="slds-truncate">
                                                     {item.ARTL_Feasibility_Geolocation__Longitude__s}
                                                 </div>
                                                 <div if:false = {isGeoLocation} class="slds-truncate">
                                                     
+                                                </div>-->
+                                                <div class="slds-truncate">
+                                                    <lightning-input type="text" data-index={index} data-geotype="long" variant="standard" value={item.ARTL_Feasibility_Geolocation__Longitude__s} onchange={handleChangeGeo}></lightning-input>
                                                 </div>
                                             </td>
                                             <td data-label="Correctness" style="text-align: center;">
