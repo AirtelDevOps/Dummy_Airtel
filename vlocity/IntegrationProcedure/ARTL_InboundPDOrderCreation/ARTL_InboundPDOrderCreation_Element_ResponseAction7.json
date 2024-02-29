@@ -1,0 +1,54 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction7",
+    "OmniProcessId": {
+        "Name": "InboundPDOrderCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundPDOrderCreation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConditionalBlock3",
+        "OmniProcessId": {
+            "Name": "InboundPDOrderCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundPDOrderCreation/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundPDOrderCreation/Procedure/ConditionalBlock3",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConditionalBlock3",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "CaseId": "=%SetCaseId:id%",
+            "CaseNumber": "=%DR_Extract_CaseNumber:Case:CaseNumber%",
+            "SRNum": "=%SV_RequestJSONBody:requestbody:SRNum%",
+            "Validation Error": "%ARTL_ValidationClass:Error%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction7",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundPDOrderCreation/Procedure/ResponseAction7"
+}

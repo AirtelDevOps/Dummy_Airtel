@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SV_ForResponse",
+    "OmniProcessId": {
+        "Name": "InboundPDOrderCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundPDOrderCreation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "LSIErrorMessage": "LSI is not present",
+            "OrderErrorMessage": "=CONCAT('Open Order exist under this LSI - ', %SV_RequestJSONBody:requestbody:LSI%)"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundPDOrderCreation/Procedure/SV_ForResponse"
+}

@@ -1,0 +1,38 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction3",
+    "OmniProcessId": {
+        "Name": "InboundPDOrderCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundPDOrderCreation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "Status": "Permanent Disconnection is in Progress",
+            "batch": "=%Batch_ForCreatingOrder%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction3",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundPDOrderCreation/Procedure/ResponseAction3"
+}
