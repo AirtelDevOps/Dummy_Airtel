@@ -19,7 +19,7 @@
 global  with sharing class ARTL_GenerateLettersAndSendEmail implements vlocity_cmt.VlocityOpenInterface
 {
     //Invocable Method to call from Flow To generate Welcome Letter and Send email to customer with Attachment
-    @InvocableMethod(label='create CSV Document')
+   /* @InvocableMethod(label='create CSV Document')
     public static List<String> CreateAndSendWelcomeLetter(List<FlowInput> flowInputs) {
         String QuoteId = flowInputs.get(0).recordId;
         String AccountId;
@@ -105,7 +105,7 @@ global  with sharing class ARTL_GenerateLettersAndSendEmail implements vlocity_c
             System.debug(e.getMessage());
         }
         return idsToreturn;
-    }
+    }*/
     
     //Flow Inputs
     public class FlowInput{
@@ -130,12 +130,12 @@ global  with sharing class ARTL_GenerateLettersAndSendEmail implements vlocity_c
                 List<ARTL_TaskEmailController.FlowInput> lstinput = new List<ARTL_TaskEmailController.FlowInput>();
                 ARTL_TaskEmailController.FlowInput input = new ARTL_TaskEmailController.FlowInput();
                 input.recordId = String.valueOf(inputMap.get('OrderId'));
-                input.templateName = 'Welcome_Email1';
+                input.templateName = 'Welcome_Kickoff';
                 input.emailType = 'CreateAndSendKickOffEmail';
                 lstinput.add(input);
                 
                 if(!lstinput.isEmpty()){
-                    ARTL_TaskEmailController.sendWelcomeEmail(lstinput);
+                    ARTL_TaskEmailController.sendEmailtoDIRS(lstinput);
                 }
             }
         }
@@ -153,7 +153,7 @@ global  with sharing class ARTL_GenerateLettersAndSendEmail implements vlocity_c
 	* Method Description : Generate KickOff CSV and Send Email To Customer along with attachment
 	*******************************************************************************************************************/
     
-    public void CreateAndSendKickOffEmail( Map<String, Object> inputMap, Map<String, Object> outMap,Map<String, Object> options){
+    /*public void CreateAndSendKickOffEmail( Map<String, Object> inputMap, Map<String, Object> outMap,Map<String, Object> options){
         String OrderId = String.valueOf(inputMap.get('OrderId'));
         List<Order> orderRecords = [Select vlocity_cmt__QuoteId__c from Order where Id=:OrderId Limit 1 ];
         String QuoteId = orderRecords[0].vlocity_cmt__QuoteId__c;
@@ -235,50 +235,5 @@ global  with sharing class ARTL_GenerateLettersAndSendEmail implements vlocity_c
         } catch (Exception e) {
             System.debug(e.getMessage());
         }
-    }
-    
-    /*Public static void sendkickoffEmailthroughDIRS(String recordId, String templateName, String objectName){
-        Map<String,Object> input = new Map<String,Object>();
-        Map<String,Object> output = new Map<String,Object>();
-        String cclist = '';
-        String tolist = '';
-        String msgbody = ARTL_EmailTemplateService.TransformEmailTenplate(recordId,templateName,objectName);
-        input.put('message',msgbody);
-        
-        List<Quote> lstQuote = [select id,Quote.QuoteNumber,Quote.PM_Team_Lead_Email__c,
-                                Quote.PM_Email__c,Quote.vlocity_cmt__Type__c,Quote.PO_Value__c, 
-                                Quote.PO_Term__c,Account.AccountNumber, 
-                                quote.vlocity_cmt__PoNumber__c,quote.Opportunity.Product__c, 
-                                Quote.Account.name, 
-                                Quote.PM__r.Email,
-                                Quote.PM__r.OIM_Id__c,
-                                quote.vlocity_cmt__DefaultServiceAccountId__r.vlocity_cmt__PrimaryContactId__r.Email,
-                                Quote.PM__r.MobilePhone,Quote.PM__r.name
-                                from Quote where Id = :recordId];
-        if(!lstQuote.isEmpty()){
-                tolist ='a_Abinash.Barik@airtel.com'+';'+'a_Rishab.kalra@airtel.com'+';'+'a_sujay.dey@airtel.com' + ';'+'a_Vishal.kumar24@airtel.com'; 
-                //tolist.add('a_Vishal.kmuar24@airtel.com');
-                //tolist.add('a_Abinash.Barik@airtel.com');
-                //tolist.add('a_shashi.kumar@airtel.com');
-                //if(lstQuote[0].quote.vlocity_cmt__DefaultServiceAccountId__r.vlocity_cmt__PrimaryContactId__r.Email != null)
-                	//tolist.add(lstQuote[0].quote.vlocity_cmt__DefaultServiceAccountId__r.vlocity_cmt__PrimaryContactId__r.Email);
-                
-                input.put('custNo',lstQuote[0].Account.AccountNumber);
-                input.put('nbaId',lstQuote[0].Account.AccountNumber);
-                input.put('emailId','a_Abinash.Barik@airtel.com');
-                input.put('accountNo',lstQuote[0].Account.AccountNumber);
-                input.put('subject','Welcome Letter: Bharti Airtel - Order Reference:');
-            }
-             
-			input.put('filePath','');
-            input.put('partyId','PARTY_ID');
-            input.put('invoiceNo',lstQuote[0].Id);
-            input.put('ccList',cclist);
-            input.put('toList',tolist);
-            System.debug('input>>>'+JSON.serialize(input));
-            String submitresult = JSON.serialize(vlocity_cmt.IntegrationProcedureService.runIntegrationProcedureQueueable('ARTL_MailThroughDIRS', 
-                            input, output));
-            System.debug('submitresult>>>'+submitresult);
-            //input.put('productName',objtask.Product_Name__c);
     }*/
 }
