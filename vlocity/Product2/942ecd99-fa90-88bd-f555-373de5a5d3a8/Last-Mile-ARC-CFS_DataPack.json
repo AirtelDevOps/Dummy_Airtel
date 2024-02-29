@@ -17,7 +17,7 @@
                 "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
                 "Name": "Technical Attributes",
                 "displaySequence": 1090,
-                "id": "a0Z72000000zL7ZEAU",
+                "id": "a0Z72000000yyirEAA",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -25,7 +25,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000005tl8KAAQ",
+                            "attributeId": "a0a72000005t3bvAAA",
                             "cloneable": true,
                             "code": "ATT_BILL_COMP_ID_OTC",
                             "dataType": "text",
@@ -51,7 +51,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006aZjvAAE",
+                            "attributeId": "a0a72000006Z0g1AAC",
                             "cloneable": true,
                             "code": "ATT_TECH_FLOOR_RATE",
                             "dataType": "text",
@@ -78,7 +78,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lchgAAA",
+                            "attributeId": "a0a72000006lNtlAAE",
                             "cloneable": true,
                             "code": "ATT_PRIMARY_KEY",
                             "dataType": "text",
@@ -111,7 +111,7 @@
                 "Code__c": "VEPC_ATTRIBUTE_CATEGORY_INTERNET_DETAILS",
                 "Name": "Internet Details",
                 "displaySequence": 6220,
-                "id": "a0Z72000000wnmjEAA",
+                "id": "a0Z0T0000023iSsUAI",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -119,7 +119,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000005sQhrAAE",
+                            "attributeId": "a0a72000005r1uLAAQ",
                             "cloneable": true,
                             "code": "ATT_Type",
                             "dataType": "text",
@@ -145,7 +145,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005sQhlAAE",
+                            "attributeId": "a0a72000005r20nAAA",
                             "cloneable": true,
                             "code": "ATT_StartDate",
                             "dataType": "date",
@@ -230,13 +230,32 @@
     "%vlocity_namespace%__VersionEndDateTime__c": "",
     "%vlocity_namespace%__VersionLabel__c": "",
     "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_AnnualRecurringCharge__c": "",
+    "ARTL_Component_Id__c": "",
+    "ARTL_CustomerNeedByDate__c": "",
+    "ARTL_Demo_Duration__c": "",
+    "ARTL_FeasibilityID__c": "",
+    "ARTL_FeasibilityIdCrossConnect__c": "",
+    "ARTL_FeasibilityStatus__c": "",
+    "ARTL_FeasibiltyRemarks__c": "",
     "ARTL_Hansen_Primary_Key__c": "3413d7eb-fada-44b7-a2f8-1312ee8402fc",
     "ARTL_LSIRequiredForHansen__c": false,
     "ARTL_LSIRequired__c": false,
+    "ARTL_ManageBy__c": "",
     "ARTL_NRCRebilling__c": false,
+    "ARTL_OFT_Product_Name__c": "",
+    "ARTL_OneTimeCharge__c": "",
+    "ARTL_OperatingUnit__c": "",
+    "ARTL_Parent_Products__c": "VEPC_E_IIL_CFS,VEPC_PRIMARY_LINK_CFS,ARTL_INTERNET_CFS,ARTL_EMPLS_CFS,VEPC_E_MPLS_CFS,VEPC_MPLS_LINK_CFS",
+    "ARTL_Quantity__c": "",
+    "ARTL_RouterMake__c": "",
+    "ARTL_RouterModel__c": "",
     "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SiteReadinessStatus__c": "",
     "ARTL_SubProductName__c": "Enterprise ILL",
     "ARTL_TechnicalProduct__c": "",
+    "ARTL_Terms_and_Conditions__c": "",
+    "ARTL_ThirdPartyName__c": "",
     "CanUseQuantitySchedule": false,
     "CanUseRevenueSchedule": false,
     "CurrencyIsoCode": "INR",
@@ -260,5 +279,6 @@
     "StockKeepingUnit": "",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "Product2",
-    "VlocityRecordSourceKey": "Product2/942ecd99-fa90-88bd-f555-373de5a5d3a8"
+    "VlocityRecordSourceKey": "Product2/942ecd99-fa90-88bd-f555-373de5a5d3a8",
+    "sourceOrgUrl": "/01t72000001G058AAC"
 }

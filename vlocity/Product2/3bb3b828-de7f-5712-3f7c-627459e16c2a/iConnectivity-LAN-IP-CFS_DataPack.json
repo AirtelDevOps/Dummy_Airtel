@@ -20,7 +20,7 @@
                 "Code__c": "ATC_ENTERPRISE_DETAILS",
                 "Name": "Details",
                 "displaySequence": 300,
-                "id": "a0Z72000000xoooEAA",
+                "id": "a0Z72000000v9Y2EAI",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -28,7 +28,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000005aEZsAAM",
+                            "attributeId": "a0a720000059cZRAAY",
                             "cloneable": true,
                             "code": "ATT_LAN_IPV4",
                             "dataType": "text",
@@ -54,7 +54,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005aEZtAAM",
+                            "attributeId": "a0a720000059cmLAAQ",
                             "cloneable": true,
                             "code": "ATT_LAN_IPV6",
                             "dataType": "text",
@@ -80,7 +80,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abF5AAI",
+                            "attributeId": "a0a720000059ZoUAAU",
                             "cloneable": true,
                             "code": "ATT_IPV6_REQUIRED",
                             "dataType": "text",
@@ -122,7 +122,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abF6AAI",
+                            "attributeId": "a0a72000005KjPYAA0",
                             "cloneable": true,
                             "code": "ATT_LAN_IPV4_SUBNET_MASK",
                             "dataType": "text",
@@ -484,7 +484,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abF7AAI",
+                            "attributeId": "a0a72000005KkoeAAC",
                             "cloneable": true,
                             "code": "ATT_LAN_IPV6_SUBNET_MASK",
                             "dataType": "text",
@@ -1313,7 +1313,7 @@
                 "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
                 "Name": "Technical Attributes",
                 "displaySequence": 1090,
-                "id": "a0Z72000000zL7ZEAU",
+                "id": "a0Z72000000yyirEAA",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -1321,7 +1321,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000006lcg4AAA",
+                            "attributeId": "a0a72000006ken2AAA",
                             "cloneable": true,
                             "code": "ATT_LAN_IPv4_Address_Block",
                             "dataType": "text",
@@ -1347,7 +1347,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcg5AAA",
+                            "attributeId": "a0a72000006keINAAY",
                             "cloneable": true,
                             "code": "ATT_LAN_IPv6_Address_Block",
                             "dataType": "text",
@@ -1373,7 +1373,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lchgAAA",
+                            "attributeId": "a0a72000006lNtlAAE",
                             "cloneable": true,
                             "code": "ATT_PRIMARY_KEY",
                             "dataType": "text",
@@ -1458,12 +1458,32 @@
     "%vlocity_namespace%__VersionEndDateTime__c": "",
     "%vlocity_namespace%__VersionLabel__c": "",
     "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_AnnualRecurringCharge__c": "",
+    "ARTL_Component_Id__c": "",
+    "ARTL_CustomerNeedByDate__c": "",
+    "ARTL_Demo_Duration__c": "",
+    "ARTL_FeasibilityID__c": "",
+    "ARTL_FeasibilityIdCrossConnect__c": "",
+    "ARTL_FeasibilityStatus__c": "",
+    "ARTL_FeasibiltyRemarks__c": "",
     "ARTL_Hansen_Primary_Key__c": "a877d7a3-af3f-482e-ba48-bb1e99e8978b",
     "ARTL_LSIRequiredForHansen__c": false,
     "ARTL_LSIRequired__c": false,
+    "ARTL_ManageBy__c": "",
     "ARTL_NRCRebilling__c": false,
-    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_OFT_Product_Name__c": "",
+    "ARTL_OneTimeCharge__c": "",
+    "ARTL_OperatingUnit__c": "",
+    "ARTL_Parent_Products__c": "VEPC_SERVICE_CFS,VEPC_E_IIL_CFS,VEPC_PRIMARY_LINK_CFS,ARTL_INTERNET_CFS,ARTL_EMPLS_CFS,VEPC_E_MPLS_CFS,VEPC_MPLS_LINK_CFS,VEPC_EMPLS_SERVICE_CFS,VEPC_ICONNECTIVITY_IP_BLOCK_CFS",
+    "ARTL_Quantity__c": "",
+    "ARTL_RouterMake__c": "",
+    "ARTL_RouterModel__c": "",
+    "ARTL_SDWAN_SubProductName__c": "",
+    "ARTL_SiteReadinessStatus__c": "",
+    "ARTL_SubProductName__c": "",
     "ARTL_TechnicalProduct__c": "",
+    "ARTL_Terms_and_Conditions__c": "",
+    "ARTL_ThirdPartyName__c": "",
     "CanUseQuantitySchedule": false,
     "CanUseRevenueSchedule": false,
     "CurrencyIsoCode": "INR",
@@ -1493,5 +1513,6 @@
     "StockKeepingUnit": "",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "Product2",
-    "VlocityRecordSourceKey": "Product2/3bb3b828-de7f-5712-3f7c-627459e16c2a"
+    "VlocityRecordSourceKey": "Product2/3bb3b828-de7f-5712-3f7c-627459e16c2a",
+    "sourceOrgUrl": "/01t72000001DDRvAAO"
 }

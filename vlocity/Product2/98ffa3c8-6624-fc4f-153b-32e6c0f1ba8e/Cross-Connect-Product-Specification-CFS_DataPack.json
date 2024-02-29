@@ -25,7 +25,7 @@
                 "Code__c": "ATC_ENTERPRISE_DETAILS",
                 "Name": "Details",
                 "displaySequence": 300,
-                "id": "a0Z72000000xoooEAA",
+                "id": "a0Z72000000v9Y2EAI",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -33,7 +33,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000005abEsAAI",
+                            "attributeId": "a0a72000005D0tlAAC",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_MODE-CUSTOMER",
                             "dataType": "text",
@@ -75,7 +75,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEtAAI",
+                            "attributeId": "a0a72000005D11pAAC",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_OFFERING",
                             "dataType": "text",
@@ -117,7 +117,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEvAAI",
+                            "attributeId": "a0a72000005D16fAAC",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_TYPE",
                             "dataType": "text",
@@ -159,7 +159,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEpAAI",
+                            "attributeId": "a0a72000005D19tAAC",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_BANDWIDTH",
                             "dataType": "text",
@@ -180,7 +180,7 @@
                             "values": null
                         },
                         {
-                            "attributeId": "a0a72000005abEqAAI",
+                            "attributeId": "a0a72000005KkDXAA0",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_LOCATION_A",
                             "dataType": "text",
@@ -206,7 +206,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abErAAI",
+                            "attributeId": "a0a72000005KlRKAA0",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_LOCATION_B",
                             "dataType": "text",
@@ -232,7 +232,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEuAAI",
+                            "attributeId": "a0a72000005KlKsAAK",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_PROVIDER_NAME",
                             "dataType": "text",
@@ -258,7 +258,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006Lzt5AAC",
+                            "attributeId": "a0a72000005D1BVAA0",
                             "cloneable": true,
                             "code": "ATT_THIRD_PARTY_CONTRACT_TERM",
                             "dataType": "text",
@@ -279,7 +279,7 @@
                             "values": null
                         },
                         {
-                            "attributeId": "a0a72000005abExAAI",
+                            "attributeId": "a0a72000005KjNuAAK",
                             "cloneable": true,
                             "code": "ATT_TYPE_OF_CONNECTOR_CUSTOMER",
                             "dataType": "text",
@@ -338,7 +338,7 @@
                 "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
                 "Name": "Technical Attributes",
                 "displaySequence": 1090,
-                "id": "a0Z72000000zL7ZEAU",
+                "id": "a0Z72000000yyirEAA",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -346,7 +346,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000005sQhDAAU",
+                            "attributeId": "a0a72000005qoabAAA",
                             "cloneable": true,
                             "code": "ATT_FEASIBILITY_ID_CROSS_CONNECT",
                             "dataType": "text",
@@ -372,7 +372,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005sQhAAAU",
+                            "attributeId": "a0a72000005qrVBAAY",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_OTC",
                             "dataType": "text",
@@ -398,7 +398,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005sQh9AAE",
+                            "attributeId": "a0a72000005qqXXAAY",
                             "cloneable": true,
                             "code": "ATT_CROSS_CONNECT_ARC",
                             "dataType": "text",
@@ -424,7 +424,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lchgAAA",
+                            "attributeId": "a0a72000006lNtlAAE",
                             "cloneable": true,
                             "code": "ATT_PRIMARY_KEY",
                             "dataType": "text",
@@ -509,12 +509,32 @@
     "%vlocity_namespace%__VersionEndDateTime__c": "",
     "%vlocity_namespace%__VersionLabel__c": "",
     "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_AnnualRecurringCharge__c": "",
+    "ARTL_Component_Id__c": "",
+    "ARTL_CustomerNeedByDate__c": "",
+    "ARTL_Demo_Duration__c": "",
+    "ARTL_FeasibilityID__c": "",
+    "ARTL_FeasibilityIdCrossConnect__c": "",
+    "ARTL_FeasibilityStatus__c": "",
+    "ARTL_FeasibiltyRemarks__c": "",
     "ARTL_Hansen_Primary_Key__c": "3631b36e-7fa8-4ecc-9f98-88a30c39c623",
     "ARTL_LSIRequiredForHansen__c": false,
     "ARTL_LSIRequired__c": false,
+    "ARTL_ManageBy__c": "",
     "ARTL_NRCRebilling__c": false,
-    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_OFT_Product_Name__c": "",
+    "ARTL_OneTimeCharge__c": "",
+    "ARTL_OperatingUnit__c": "",
+    "ARTL_Parent_Products__c": "ARTL_EMPLS_CFS,VEPC_E_MPLS_CFS,VEPC_MPLS_LINK_CFS,VEPC_E_IIL_CFS,ARTL_INTERNET_CFS,VEPC_PRIMARY_LINK_CFS",
+    "ARTL_Quantity__c": "",
+    "ARTL_RouterMake__c": "",
+    "ARTL_RouterModel__c": "",
+    "ARTL_SDWAN_SubProductName__c": "",
+    "ARTL_SiteReadinessStatus__c": "",
+    "ARTL_SubProductName__c": "",
     "ARTL_TechnicalProduct__c": "",
+    "ARTL_Terms_and_Conditions__c": "",
+    "ARTL_ThirdPartyName__c": "",
     "CanUseQuantitySchedule": false,
     "CanUseRevenueSchedule": false,
     "CurrencyIsoCode": "INR",
@@ -544,5 +564,6 @@
     "StockKeepingUnit": "",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "Product2",
-    "VlocityRecordSourceKey": "Product2/98ffa3c8-6624-fc4f-153b-32e6c0f1ba8e"
+    "VlocityRecordSourceKey": "Product2/98ffa3c8-6624-fc4f-153b-32e6c0f1ba8e",
+    "sourceOrgUrl": "/01t72000001DDwYAAW"
 }

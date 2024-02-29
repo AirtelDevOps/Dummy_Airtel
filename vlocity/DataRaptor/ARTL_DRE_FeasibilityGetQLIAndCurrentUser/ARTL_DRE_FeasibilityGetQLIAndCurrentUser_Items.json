@@ -123,6 +123,28 @@
     },
     {
         "CurrencyIsoCode": "INR",
+        "FormulaExpression": "DESERIALIZE(%thirdPartyQLI%)",
+        "FormulaResultPath": "thirdPartyQLIAttr",
+        "FormulaSequence": 10,
+        "GlobalKey": "ARTL_DRE_FeasibilityGetQLIAndCurrentUserCustom1523",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
         "FormulaExpression": "IF(ISNOTBLANK(%QuoteLineItem:%vlocity_namespace%__QuoteMemberId__r.%vlocity_namespace%__City__c%),\n(CONCAT(%QuoteLineItem:quoteMember:streetAddress%,\n%QuoteLineItem:%vlocity_namespace%__QuoteMemberId__r.%vlocity_namespace%__City__c%,\n', '\n)),'')",
         "FormulaResultPath": "QuoteLineItem:quoteMember:streetCity",
         "FormulaSequence": 2,
@@ -255,10 +277,54 @@
     },
     {
         "CurrencyIsoCode": "INR",
-        "FormulaExpression": "IF(QuoteLineItem:ProductAttributes:ATT_MEDIA == 'Copper' || QuoteLineItem:ProductAttributes:ATT_MEDIA == 'Fiber Off-Net' || QuoteLineItem:ProductAttributes:ATT_MEDIA == 'FTTH', 'WIRELINE',  IF(QuoteLineItem:ProductAttributes:ATT_MEDIA == 'Fiber On-Net', 'FTTB', IF( QuoteLineItem:ProductAttributes:ATT_MEDIA == 'RF P2P' || QuoteLineItem:ProductAttributes:ATT_MEDIA == 'RF P2MP', 'WIRELESS', IF( QuoteLineItem:ProductAttributes:ATT_MEDIA == 'Third Party', 'AIRTEL_THIRD_PARTY', ''))))",
+        "FormulaExpression": "IF(ISNOTBLANK(thirdPartyQLIAttr:ATT_THIRD_PARTY_TYPE), LIST(thirdPartyQLIAttr:ATT_THIRD_PARTY_TYPE), '')",
+        "FormulaResultPath": "QuoteLineItem:thirdPartyType",
+        "FormulaSequence": 11,
+        "GlobalKey": "ARTL_DRE_FeasibilityGetQLIAndCurrentUserCustom8205",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(QuoteLineItem:ProductAttributes:ATT_MEDIA == 'Copper' || QuoteLineItem:ProductAttributes:ATT_MEDIA == 'Fiber Off-Net' || QuoteLineItem:ProductAttributes:ATT_MEDIA == 'FTTH', 'WIRELINE',  IF(QuoteLineItem:ProductAttributes:ATT_MEDIA == 'Fiber On-Net', 'FTTB', IF( QuoteLineItem:ProductAttributes:ATT_MEDIA == 'RF P2P' || QuoteLineItem:ProductAttributes:ATT_MEDIA == 'RF P2MP', 'WIRELESS', IF( QuoteLineItem:ProductAttributes:ATT_MEDIA == 'Third Party', 'AIRTEL_THIRD_PARTY', IF( QuoteLineItem:ProductAttributes:ATT_MEDIA == '4G', 'FOUR_G', IF( QuoteLineItem:ProductAttributes:ATT_MEDIA == '5G', 'FIVE_G', ''))))))",
         "FormulaResultPath": "QuoteLineItem:transformedMedia",
         "FormulaSequence": 7,
         "GlobalKey": "ARTL_DRE_FeasibilityGetQLIAndCurrentUserCustom7909",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(QuoteLineItem:transformedMedia == 'AIRTEL_THIRD_PARTY', QUERY( \"SELECT %vlocity_namespace%__AttributeSelectedValues__c FROM QuoteLineItem WHERE quoteId = '{0}' AND %vlocity_namespace%__ParentItemId__c = '{1}' AND %vlocity_namespace%__Product2Id__r.Name = 'Third Party'\", quoteId, %QuoteLineItem:%vlocity_namespace%__AssetReferenceId__c% ), '')",
+        "FormulaResultPath": "thirdPartyQLI",
+        "FormulaSequence": 9,
+        "GlobalKey": "ARTL_DRE_FeasibilityGetQLIAndCurrentUserCustom9345",
         "IsDisabled": false,
         "IsRequiredForUpsert": false,
         "IsUpsertKey": false,
@@ -881,6 +947,26 @@
         "OutputCreationSequence": 1,
         "OutputFieldFormat": "Boolean",
         "OutputFieldName": "testAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_FeasibilityGetQLIAndCurrentUserCustom5231",
+        "InputFieldName": "QuoteLineItem:thirdPartyType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FeasibilityGetQLIAndCurrentUser",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "thirdPartyProviderList",
         "OutputObjectName": "json",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "OmniDataTransformItem"

@@ -17,7 +17,7 @@
                 "Code__c": "ATC_ENTERPRISE_DETAILS",
                 "Name": "Details",
                 "displaySequence": 300,
-                "id": "a0Z72000000xoooEAA",
+                "id": "a0Z72000000v9Y2EAI",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -25,7 +25,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000005abF0AAI",
+                            "attributeId": "a0a720000059HwQAAU",
                             "cloneable": true,
                             "code": "ATT_DDOS_TYPE",
                             "dataType": "text",
@@ -84,7 +84,7 @@
                 "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
                 "Name": "Technical Attributes",
                 "displaySequence": 1090,
-                "id": "a0Z72000000zL7ZEAU",
+                "id": "a0Z72000000yyirEAA",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -92,7 +92,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000006aaETAAY",
+                            "attributeId": "a0a72000006YVNkAAO",
                             "cloneable": true,
                             "code": "ATT_DDOS_Mitigation_Bandwidth_CFS",
                             "dataType": "text",
@@ -644,7 +644,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000007IQUgAAO",
+                            "attributeId": "a0a72000007FmgFAAS",
                             "cloneable": true,
                             "code": "DDOS_ARC_CFS_EILL_MPLS",
                             "dataType": "text",
@@ -670,7 +670,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000007IQUhAAO",
+                            "attributeId": "a0a72000007FnKYAA0",
                             "cloneable": true,
                             "code": "DDOS_OTC_CFS_EILL_MPLS",
                             "dataType": "text",
@@ -696,7 +696,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lchgAAA",
+                            "attributeId": "a0a72000006lNtlAAE",
                             "cloneable": true,
                             "code": "ATT_PRIMARY_KEY",
                             "dataType": "text",
@@ -728,7 +728,7 @@
         ],
         "totalSize": 2
     },
-    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributeRules__c": "",
     "%vlocity_namespace%__AttributesMarkupConfig__c": "",
     "%vlocity_namespace%__CategoryData__c": "",
     "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
@@ -781,13 +781,32 @@
     "%vlocity_namespace%__VersionEndDateTime__c": "",
     "%vlocity_namespace%__VersionLabel__c": "",
     "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_AnnualRecurringCharge__c": "",
+    "ARTL_Component_Id__c": "",
+    "ARTL_CustomerNeedByDate__c": "",
+    "ARTL_Demo_Duration__c": "",
+    "ARTL_FeasibilityID__c": "",
+    "ARTL_FeasibilityIdCrossConnect__c": "",
+    "ARTL_FeasibilityStatus__c": "",
+    "ARTL_FeasibiltyRemarks__c": "",
     "ARTL_Hansen_Primary_Key__c": "efc78d6b-cb3d-4506-a486-6b4a505b006e",
     "ARTL_LSIRequiredForHansen__c": false,
     "ARTL_LSIRequired__c": false,
+    "ARTL_ManageBy__c": "",
     "ARTL_NRCRebilling__c": false,
+    "ARTL_OFT_Product_Name__c": "",
+    "ARTL_OneTimeCharge__c": "",
+    "ARTL_OperatingUnit__c": "",
+    "ARTL_Parent_Products__c": "VEPC_E_IIL_CFS,VEPC_PRIMARY_LINK_CFS,ARTL_INTERNET_CFS,ARTL_EMPLS_CFS,VEPC_E_MPLS_CFS,VEPC_MPLS_LINK_CFS",
+    "ARTL_Quantity__c": "",
+    "ARTL_RouterMake__c": "",
+    "ARTL_RouterModel__c": "",
     "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SiteReadinessStatus__c": "",
     "ARTL_SubProductName__c": "Enterprise ILL",
     "ARTL_TechnicalProduct__c": "",
+    "ARTL_Terms_and_Conditions__c": "",
+    "ARTL_ThirdPartyName__c": "",
     "CanUseQuantitySchedule": false,
     "CanUseRevenueSchedule": false,
     "CurrencyIsoCode": "INR",
@@ -811,5 +830,6 @@
     "StockKeepingUnit": "",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "Product2",
-    "VlocityRecordSourceKey": "Product2/d34cafc9-b4ae-3ad2-c2b5-c4e11e3b65ea"
+    "VlocityRecordSourceKey": "Product2/d34cafc9-b4ae-3ad2-c2b5-c4e11e3b65ea",
+    "sourceOrgUrl": "/01t72000001FxlaAAC"
 }

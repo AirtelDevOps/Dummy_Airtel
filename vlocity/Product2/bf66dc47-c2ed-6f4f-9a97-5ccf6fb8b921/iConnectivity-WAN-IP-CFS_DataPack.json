@@ -24,7 +24,7 @@
                 "Code__c": "ATC_ENTERPRISE_DETAILS",
                 "Name": "Details",
                 "displaySequence": 300,
-                "id": "a0Z72000000xoooEAA",
+                "id": "a0Z72000000v9Y2EAI",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -32,7 +32,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000005aEb7AAE",
+                            "attributeId": "a0a720000059csnAAA",
                             "cloneable": true,
                             "code": "ATT_WAN_IPV4_CE",
                             "dataType": "text",
@@ -58,7 +58,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005aEb8AAE",
+                            "attributeId": "a0a720000059cRPAAY",
                             "cloneable": true,
                             "code": "ATT_WAN_IPV4_PE",
                             "dataType": "text",
@@ -84,7 +84,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005aEb9AAE",
+                            "attributeId": "a0a720000059ar0AAA",
                             "cloneable": true,
                             "code": "ATT_WAN_IPV6_CE",
                             "dataType": "text",
@@ -110,7 +110,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005aEbAAAU",
+                            "attributeId": "a0a720000059aW2AAI",
                             "cloneable": true,
                             "code": "ATT_WAN_IPV6_PE",
                             "dataType": "text",
@@ -136,7 +136,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abF5AAI",
+                            "attributeId": "a0a720000059ZoUAAU",
                             "cloneable": true,
                             "code": "ATT_IPV6_REQUIRED",
                             "dataType": "text",
@@ -178,7 +178,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abF8AAI",
+                            "attributeId": "a0a72000005KlJFAA0",
                             "cloneable": true,
                             "code": "ATT_WAN_IPV4_CE_SUBNET_MASK",
                             "dataType": "text",
@@ -540,7 +540,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abF9AAI",
+                            "attributeId": "a0a72000005KkofAAC",
                             "cloneable": true,
                             "code": "ATT_WAN_IPV4_PE_SUBNET_MASK",
                             "dataType": "text",
@@ -902,7 +902,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abFAAAY",
+                            "attributeId": "a0a72000005KiICAA0",
                             "cloneable": true,
                             "code": "ATT_WAN_IPV6_CE_SUBNET_MASK",
                             "dataType": "text",
@@ -1724,7 +1724,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abFBAAY",
+                            "attributeId": "a0a72000005KjxOAAS",
                             "cloneable": true,
                             "code": "ATT_WAN_IPV6_PE_SUBNET_MASK",
                             "dataType": "text",
@@ -2553,7 +2553,7 @@
                 "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
                 "Name": "Technical Attributes",
                 "displaySequence": 1090,
-                "id": "a0Z72000000zL7ZEAU",
+                "id": "a0Z72000000yyirEAA",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -2561,7 +2561,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000006lcjOAAQ",
+                            "attributeId": "a0a72000006kg2QAAQ",
                             "cloneable": true,
                             "code": "ATT_WAN_Ipv4_Address_Block",
                             "dataType": "text",
@@ -2587,7 +2587,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcJLAAY",
+                            "attributeId": "a0a72000006kf7zAAA",
                             "cloneable": true,
                             "code": "ATT_WAN_Ipv6_Address_Block",
                             "dataType": "text",
@@ -2613,7 +2613,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lchgAAA",
+                            "attributeId": "a0a72000006lNtlAAE",
                             "cloneable": true,
                             "code": "ATT_PRIMARY_KEY",
                             "dataType": "text",
@@ -2698,12 +2698,32 @@
     "%vlocity_namespace%__VersionEndDateTime__c": "",
     "%vlocity_namespace%__VersionLabel__c": "",
     "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_AnnualRecurringCharge__c": "",
+    "ARTL_Component_Id__c": "",
+    "ARTL_CustomerNeedByDate__c": "",
+    "ARTL_Demo_Duration__c": "",
+    "ARTL_FeasibilityID__c": "",
+    "ARTL_FeasibilityIdCrossConnect__c": "",
+    "ARTL_FeasibilityStatus__c": "",
+    "ARTL_FeasibiltyRemarks__c": "",
     "ARTL_Hansen_Primary_Key__c": "ce80751e-9a16-4379-a64b-2844ee6ab885",
     "ARTL_LSIRequiredForHansen__c": false,
     "ARTL_LSIRequired__c": false,
+    "ARTL_ManageBy__c": "",
     "ARTL_NRCRebilling__c": false,
-    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_OFT_Product_Name__c": "",
+    "ARTL_OneTimeCharge__c": "",
+    "ARTL_OperatingUnit__c": "",
+    "ARTL_Parent_Products__c": "VEPC_SERVICE_CFS,VEPC_E_IIL_CFS,VEPC_PRIMARY_LINK_CFS,ARTL_INTERNET_CFS,ARTL_EMPLS_CFS,VEPC_E_MPLS_CFS,VEPC_MPLS_LINK_CFS,VEPC_EMPLS_SERVICE_CFS,VEPC_ICONNECTIVITY_IP_BLOCK_CFS",
+    "ARTL_Quantity__c": "",
+    "ARTL_RouterMake__c": "",
+    "ARTL_RouterModel__c": "",
+    "ARTL_SDWAN_SubProductName__c": "",
+    "ARTL_SiteReadinessStatus__c": "",
+    "ARTL_SubProductName__c": "",
     "ARTL_TechnicalProduct__c": "",
+    "ARTL_Terms_and_Conditions__c": "",
+    "ARTL_ThirdPartyName__c": "",
     "CanUseQuantitySchedule": false,
     "CanUseRevenueSchedule": false,
     "CurrencyIsoCode": "INR",
@@ -2733,5 +2753,6 @@
     "StockKeepingUnit": "",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "Product2",
-    "VlocityRecordSourceKey": "Product2/bf66dc47-c2ed-6f4f-9a97-5ccf6fb8b921"
+    "VlocityRecordSourceKey": "Product2/bf66dc47-c2ed-6f4f-9a97-5ccf6fb8b921",
+    "sourceOrgUrl": "/01t72000001DEiwAAG"
 }

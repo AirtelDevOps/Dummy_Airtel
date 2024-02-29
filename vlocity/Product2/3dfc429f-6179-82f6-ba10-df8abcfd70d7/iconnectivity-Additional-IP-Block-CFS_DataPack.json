@@ -24,7 +24,7 @@
                 "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
                 "Name": "Technical Attributes",
                 "displaySequence": 1090,
-                "id": "a0Z72000000zL7ZEAU",
+                "id": "a0Z72000000yyirEAA",
                 "messages": [
                 ],
                 "productAttributes": {
@@ -32,7 +32,7 @@
                     ],
                     "records": [
                         {
-                            "attributeId": "a0a72000006lcCvAAI",
+                            "attributeId": "a0a72000006kc3fAAA",
                             "cloneable": true,
                             "code": "ATT_Add_LAN_IPv4",
                             "dataType": "text",
@@ -58,7 +58,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcCtAAI",
+                            "attributeId": "a0a72000006kf37AAA",
                             "cloneable": true,
                             "code": "ATT_Add_LAN_IPV4_Subnet",
                             "dataType": "text",
@@ -84,7 +84,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcCwAAI",
+                            "attributeId": "a0a72000006kb7aAAA",
                             "cloneable": true,
                             "code": "ATT_Add_LAN_IPv6",
                             "dataType": "text",
@@ -110,7 +110,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcCuAAI",
+                            "attributeId": "a0a72000006kcYLAAY",
                             "cloneable": true,
                             "code": "ATT_Add_LAN_IPV6_Subnet",
                             "dataType": "text",
@@ -136,7 +136,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcCxAAI",
+                            "attributeId": "a0a72000006ken0AAA",
                             "cloneable": true,
                             "code": "ATT_Additional_LAN_IPv4",
                             "dataType": "text",
@@ -162,7 +162,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcCyAAI",
+                            "attributeId": "a0a72000006kctQAAQ",
                             "cloneable": true,
                             "code": "ATT_Additional_LAN_IPv6",
                             "dataType": "text",
@@ -188,7 +188,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcfyAAA",
+                            "attributeId": "a0a72000006kd1KAAQ",
                             "cloneable": true,
                             "code": "ATT_Delete_LAN_IPv4",
                             "dataType": "text",
@@ -214,7 +214,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lcfzAAA",
+                            "attributeId": "a0a72000006kebiAAA",
                             "cloneable": true,
                             "code": "ATT_Delete_LAN_IPv6",
                             "dataType": "text",
@@ -240,7 +240,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005sQhGAAU",
+                            "attributeId": "a0a72000005r17zAAA",
                             "cloneable": true,
                             "code": "ATT_IP_Charge_OTC",
                             "dataType": "text",
@@ -267,7 +267,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005sQhFAAU",
+                            "attributeId": "a0a72000005qtf3AAA",
                             "cloneable": true,
                             "code": "ATT_IP_CHARGE_ARC",
                             "dataType": "text",
@@ -294,7 +294,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006lchgAAA",
+                            "attributeId": "a0a72000006lNtlAAE",
                             "cloneable": true,
                             "code": "ATT_PRIMARY_KEY",
                             "dataType": "text",
@@ -320,7 +320,7 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000006q8sTAAQ",
+                            "attributeId": "a0a72000006pHRZAA2",
                             "cloneable": true,
                             "code": "ATT_TECHNICAL_PROPERTY",
                             "dataType": "text",
@@ -405,13 +405,32 @@
     "%vlocity_namespace%__VersionEndDateTime__c": "",
     "%vlocity_namespace%__VersionLabel__c": "",
     "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_AnnualRecurringCharge__c": "",
+    "ARTL_Component_Id__c": "",
+    "ARTL_CustomerNeedByDate__c": "",
+    "ARTL_Demo_Duration__c": "",
+    "ARTL_FeasibilityID__c": "",
+    "ARTL_FeasibilityIdCrossConnect__c": "",
+    "ARTL_FeasibilityStatus__c": "",
+    "ARTL_FeasibiltyRemarks__c": "",
     "ARTL_Hansen_Primary_Key__c": "8497c8a7-b071-44b4-a9fe-c61e4da1a842",
     "ARTL_LSIRequiredForHansen__c": false,
     "ARTL_LSIRequired__c": false,
+    "ARTL_ManageBy__c": "",
     "ARTL_NRCRebilling__c": false,
+    "ARTL_OFT_Product_Name__c": "",
+    "ARTL_OneTimeCharge__c": "",
+    "ARTL_OperatingUnit__c": "",
+    "ARTL_Parent_Products__c": "VEPC_SERVICE_CFS,VEPC_E_IIL_CFS,VEPC_PRIMARY_LINK_CFS,ARTL_EMPLS_CFS,VEPC_E_MPLS_CFS,VEPC_MPLS_LINK_CFS,VEPC_EMPLS_SERVICE_CFS,ARTL_INTERNET_CFS",
+    "ARTL_Quantity__c": "",
+    "ARTL_RouterMake__c": "",
+    "ARTL_RouterModel__c": "",
     "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SiteReadinessStatus__c": "",
     "ARTL_SubProductName__c": "Enterprise ILL",
     "ARTL_TechnicalProduct__c": "",
+    "ARTL_Terms_and_Conditions__c": "",
+    "ARTL_ThirdPartyName__c": "",
     "CanUseQuantitySchedule": false,
     "CanUseRevenueSchedule": false,
     "CurrencyIsoCode": "INR",
@@ -435,5 +454,6 @@
     "StockKeepingUnit": "",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "Product2",
-    "VlocityRecordSourceKey": "Product2/3dfc429f-6179-82f6-ba10-df8abcfd70d7"
+    "VlocityRecordSourceKey": "Product2/3dfc429f-6179-82f6-ba10-df8abcfd70d7",
+    "sourceOrgUrl": "/01t72000001Fy1hAAC"
 }
