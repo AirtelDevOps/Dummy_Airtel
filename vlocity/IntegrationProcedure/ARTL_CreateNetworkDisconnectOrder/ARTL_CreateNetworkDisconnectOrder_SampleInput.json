@@ -1,0 +1,78 @@
+{
+    "ChildProducts": [
+        {
+            "Attributes": {
+                "IP Required": "",
+                "RTBH": "",
+                "Routing Protocol": "",
+                "Routing Type": ""
+            },
+            "FeasibilityId": "",
+            "ParentProduct": "MPLS",
+            "Product": "Primary MPLS Link"
+        },
+        {
+            "Attributes": {
+                "ASN Type": "",
+                "Airtel Loopback IP": "",
+                "Area Id": "",
+                "As Override": "",
+                "As Set": "",
+                "BFD": "",
+                "BGP Input Type": "",
+                "BGP Password": "",
+                "BGP Prefix Limit": "",
+                "BGP Session Per Link": "",
+                "BGP dampening": "",
+                "BGP log": "",
+                "Customer AS Number": "",
+                "Customer LAN IP": "",
+                "Customer Loopback IP": "",
+                "Default Originate": "",
+                "EIGRP-Password": "",
+                "EIGRP-Password Required": "",
+                "Fast Detect": "",
+                "Holdtime": "",
+                "Keepalive": "",
+                "LAN IPV4": "",
+                "LAN IPV6": "",
+                "LAN IPv4 Subnet Mask": "",
+                "LAN IPv6 Subnet Mask": "",
+                "Minimum Interval": "",
+                "Multiplier": "",
+                "OSPF Network Type": "",
+                "Peering Type": "",
+                "Remove Private As": "",
+                "Routing Table": "",
+                "SOO": "",
+                "Send Community eBGP": "",
+                "TTL Security": "",
+                "Timers(Keepalive,Holdtime)": "",
+                "bgp-Replace AS": "",
+                "eBGP multihop": ""
+            },
+            "ParentProduct": "Primary MPLS Link",
+            "Product": "iConnectivity LAN IP Block"
+        },
+        {
+            "Attributes": {
+                "WAN IPV4 CE": "",
+                "WAN IPV4 PE": "",
+                "WAN IPV6 CE": "",
+                "WAN IPV6 PE": "",
+                "WAN IPV6 PE Subnet Mask": "",
+                "WAN IPv4 CE Subnet Mask": "",
+                "WAN IPv4 PE Subnet Mask": "",
+                "WAN IPv6 CE Subnet Mask": ""
+            },
+            "ParentProduct": "Primary MPLS Link",
+            "Product": "iConnectivity WAN IP Block"
+        }
+    ],
+    "Downtime End": "",
+    "Downtime Start": "",
+    "LSI": "800026122362382",
+    "RootProduct": "MPLS",
+    "SRNum": "SR12345",
+    "Transaction Type": "Network Change"
+}
