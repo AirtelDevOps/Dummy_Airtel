@@ -3,17 +3,22 @@
     <label>ATT_WAN_IPV6_CE_SUBNET_MASK</label>
     <protected>false</protected>
     <values>
+        <field>ARTL_Object__c</field>
+        <value xsi:type="xsd:string">Quote and Order</value>
+    </values>
+    <values>
         <field>AttributeCode__c</field>
         <value xsi:type="xsd:string">ATT_WAN_IPV6_CE_SUBNET_MASK</value>
     </values>
     <values>
         <field>Attribute_JSON__c</field>
         <value xsi:type="xsd:string">{
-  &quot;isRequired&quot;: true,
-  &quot;regex&quot;: &quot;&quot;,
-  &quot;isDependentValue&quot;: false,
-  &quot;dependentAttribtue&quot;: &quot;&quot;,
-  &quot;value&quot;: &quot;&quot;
+  "isRequired": true,
+  "regex": "",
+  "isDependentValue": false,
+  "dependentAttribtue": "",
+  "value": "",
+  "defaultValue":"/126"
 }</value>
     </values>
     <values>

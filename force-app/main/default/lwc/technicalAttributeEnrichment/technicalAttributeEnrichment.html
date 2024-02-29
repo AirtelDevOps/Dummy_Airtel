@@ -33,104 +33,119 @@
 
         <div class="c-container">
             <lightning-layout multiple-rows=true>
-                <template for:each={attributes} for:item="attribute">
-                    <lightning-layout-item size="2" class="" padding="around-small" key={attribute.code}>
-                        <div class="slds-var-m-around_medium" key={attribute.code}>
-                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>
-                                {attribute.name}
-                            </span> -->
-                            <label class="slds-form-element__label slds-truncate" title={attribute.name}
-                                for={attribute.code}>{attribute.name}</label>
-                            <template if:true={attribute.is_field}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-input type="text" data-code={attribute.code} variant="label-hidden"
-                                    label={attribute.name} title={attribute.fieldValue} value={attribute.fieldValue}
-                                    name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    disabled={attribute.readonly}></lightning-input>
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
+                <template for:each={groupedAttributes} for:item="group">
+                    <lightning-layout-item size="12" key={group.productName}>
+                        <template if:true={group.productName}>
+                            <!-- <h1>{group.productName}</h1> -->
+                            <div class="slds-text-heading_medium">
+                                {group.productName}
+                            </div>
+                        </template>
+                        <lightning-layout multiple-rows=true>
+                            <template for:each={group.attributes} for:item="attribute">
+                                <lightning-layout-item size="2" class="" padding="around-small" key={attribute.code}>
+                                    <div class="slds-var-m-around_medium" key={attribute.code}>
+                                        <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>
+                                            {attribute.name}
+                                        </span> -->
+                                        <label class="slds-form-element__label slds-truncate" title={attribute.name}
+                                            for={attribute.code}>{attribute.name}</label>
+                                        <template if:true={attribute.is_field}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-input type="text" data-code={attribute.code} variant="label-hidden"
+                                                label={attribute.name} title={attribute.fieldValue} value={attribute.fieldValue}
+                                                name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                disabled={attribute.readonly}></lightning-input>
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                        <template if:true={attribute.is_input}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-input type="text" data-code={attribute.code} variant="label-hidden"
+                                                label={attribute.name} title={attribute.value} value={attribute.value}
+                                                name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                disabled={attribute.readonly}></lightning-input>
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                        <template if:true={attribute.is_date}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-input type="date" data-code={attribute.code} variant="label-hidden"
+                                                label={attribute.name} title={attribute.value} value={attribute.value}
+                                                name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                disabled={attribute.readonly} class="slds-float_left"></lightning-input>
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                        <template if:true={attribute.is_datetime}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-input type="datetime" data-code={attribute.code} variant="label-hidden"
+                                                time-style="medium" title={attribute.value} label={attribute.name}
+                                                value={attribute.value} name="inputAttributeValue"
+                                                onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                readonly={attribute.readonly}></lightning-input>
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                        <template if:true={attribute.is_number}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-input label={attribute.name} data-code={attribute.code}
+                                                variant="label-hidden" value={attribute.value} title={attribute.value} type="number"
+                                                name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                disabled={attribute.readonly} min={attribute.min} max={attribute.max}></lightning-input>
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                        <template if:true={attribute.is_currency}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-input label={attribute.name} data-code={attribute.code}
+                                                variant="label-hidden" value={attribute.value} title={attribute.value} type="number"
+                                                formatter="currency" name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                readonly={attribute.readonly}></lightning-input>
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                        <template if:true={attribute.is_percent}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-input label={attribute.name} data-code={attribute.code}
+                                                variant="label-hidden" value={attribute.value} type="number"
+                                                name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                readonly={attribute.readonly}>sf</lightning-input>
+                                            <!--
+                                            <lightning-input label={attribute.name} value={attribute.value} type="number" formatter="percent" step=".01" name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
+                                            -->
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                        <template if:true={attribute.is_checkbox}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-input style="margin-top: .5rem" data-code={attribute.code}
+                                                variant="label-hidden" label={attribute.name} title={attribute.value}
+                                                checked={attribute.value} type="checkbox" name="inputAttributeValue"
+                                                onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                readonly={attribute.readonly}></lightning-input>
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                        <template if:true={attribute.is_picklist}>
+                                            <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
+                                            <lightning-combobox label={attribute.name} data-code={attribute.code}
+                                                variant="label-hidden" value={attribute.value} title={attribute.value}
+                                                options={attribute.options} name="inputAttributeValue"
+                                                onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
+                                                readonly={attribute.readonly} onclick={handleInputClick}></lightning-combobox>
+                                            <span lwc:if={attribute.hasCustomError}
+                                                class="error-message">{attribute.customErrorMsg}</span>
+                                        </template>
+                                    </div>
+                                </lightning-layout-item>
                             </template>
-                            <template if:true={attribute.is_input}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-input type="text" data-code={attribute.code} variant="label-hidden"
-                                    label={attribute.name} title={attribute.value} value={attribute.value}
-                                    name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    disabled={attribute.readonly}></lightning-input>
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
-                            </template>
-                            <template if:true={attribute.is_date}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-input type="date" data-code={attribute.code} variant="label-hidden"
-                                    label={attribute.name} title={attribute.value} value={attribute.value}
-                                    name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    disabled={attribute.readonly} class="slds-float_left"></lightning-input>
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
-                            </template>
-                            <template if:true={attribute.is_datetime}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-input type="datetime" data-code={attribute.code} variant="label-hidden"
-                                    time-style="medium" title={attribute.value} label={attribute.name}
-                                    value={attribute.value} name="inputAttributeValue"
-                                    onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    readonly={attribute.readonly}></lightning-input>
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
-                            </template>
-                            <template if:true={attribute.is_number}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-input label={attribute.name} data-code={attribute.code}
-                                    variant="label-hidden" value={attribute.value} title={attribute.value} type="number"
-                                    name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    disabled={attribute.readonly} min={attribute.min} max={attribute.max}></lightning-input>
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
-                            </template>
-                            <template if:true={attribute.is_currency}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-input label={attribute.name} data-code={attribute.code}
-                                    variant="label-hidden" value={attribute.value} title={attribute.value} type="number"
-                                    formatter="currency" name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    readonly={attribute.readonly}></lightning-input>
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
-                            </template>
-                            <template if:true={attribute.is_percent}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-input label={attribute.name} data-code={attribute.code}
-                                    variant="label-hidden" value={attribute.value} type="number"
-                                    name="inputAttributeValue" onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    readonly={attribute.readonly}>sf</lightning-input>
-                                <!--
-                                <lightning-input label={attribute.name} value={attribute.value} type="number" formatter="percent" step=".01" name="inputAttributeValue" onchange={handleAttribueValueChange}></lightning-input>
-                                -->
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
-                            </template>
-                            <template if:true={attribute.is_checkbox}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-input style="margin-top: .5rem" data-code={attribute.code}
-                                    variant="label-hidden" label={attribute.name} title={attribute.value}
-                                    checked={attribute.value} type="checkbox" name="inputAttributeValue"
-                                    onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    readonly={attribute.readonly}></lightning-input>
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
-                            </template>
-                            <template if:true={attribute.is_picklist}>
-                                <!-- <span class="slds-truncate slds-form-element" title={attribute.name}>{attribute.name}</span> -->
-                                <lightning-combobox label={attribute.name} data-code={attribute.code}
-                                    variant="label-hidden" value={attribute.value} title={attribute.value}
-                                    options={attribute.options} name="inputAttributeValue"
-                                    onchange={handleAttribueValueChange} data-record-id={attribute.therecordId}
-                                    readonly={attribute.readonly}></lightning-combobox>
-                                <span lwc:if={attribute.hasCustomError}
-                                    class="error-message">{attribute.customErrorMsg}</span>
-                            </template>
-                        </div>
+                        </lightning-layout>
+
                     </lightning-layout-item>
+
                 </template>
+                
             </lightning-layout>
         </div>
     </lightning-card>

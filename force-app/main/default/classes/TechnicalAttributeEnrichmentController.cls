@@ -218,6 +218,7 @@ public class TechnicalAttributeEnrichmentController {
            customfieldMap.put('code', fieldCode);
            customfieldMap.put('label', fieldCode);
            customfieldMap.put('fieldValue', value);
+           customfieldMap.put('value', value);
            customfieldMap.put('theRecordId', recId);
           
          
@@ -394,7 +395,8 @@ public class TechnicalAttributeEnrichmentController {
                            quote.opportunity.pm__r.lastname,quote.opportunity.pm__r.email,quote.account.artl_business_circle_region__c,
                            ARTL_Purchase_Order__r.start_date__c,CND__c,RFS__c,quote.opportunity.pm__r.Phone,
                            quote.CreatedDate,ARTL_FeasibiltyRemarks__c,quote.account.ARTL_Legal_Entity__c,quote.opportunity.pm__r.Contact.FirstName,
-                           quote.opportunity.pm__r.contact.LastName,quote.opportunity.pm__r.contact.Phone,quote.opportunity.pm__r.contact.Email
+                           quote.opportunity.pm__r.contact.LastName,quote.opportunity.pm__r.contact.Phone,
+                           quote.opportunity.pm__r.Name
                            FROM QuoteLineItem 
                            WHERE QuoteID =: quoteId  AND vlocity_cmt__RootItemId__c =: getAssetRef  AND Product2.ARTL_LSIRequired__c =true ]; 
                // system.debug('qliList 388 ::' + qliList);
@@ -460,10 +462,10 @@ public class TechnicalAttributeEnrichmentController {
                     qliDataMap.put('Customer Segment' , 'EGB'); // q.quote.Account.artl_customer_segment__c for now
                     qliDataMap.put('Hardware Legal Entity' , q.quote.account.ARTL_Legal_Entity__c);                             // ?? xl : ARTL_Billing_Staging__c.Legal_Entity__c
                     qliDataMap.put('TP Feasibility Remarks' , q.ARTL_FeasibiltyRemarks__c);
-                    qliDataMap.put('Customer PM First Name' , q.quote.opportunity.pm__r.Contact.FirstName);
-                    qliDataMap.put('Customer PM Last Name' ,  q.quote.opportunity.pm__r.Contact.LastName);
-                    qliDataMap.put('Customer PM Number' ,  q.quote.opportunity.pm__r.Contact.Phone);
-                    qliDataMap.put('Customer PM Email' ,  q.quote.opportunity.pm__r.contact.Email);
+                    qliDataMap.put('Customer PM Name' , q.quote.opportunity.pm__r.Name);
+                    //qliDataMap.put('Customer PM Last Name' ,  q.quote.opportunity.pm__r.Contact.LastName);
+                    qliDataMap.put('Customer PM Number' ,  q.quote.opportunity.pm__r.Phone);
+                    qliDataMap.put('Customer PM Email' ,  q.quote.opportunity.pm__r.Email);
                 }
             }
             // For Order Item  
@@ -491,7 +493,7 @@ public class TechnicalAttributeEnrichmentController {
                     qliDataMap.put('Hardware Legal Entity' , ol.order.account.ARTL_Legal_Entity__c);
                     qliDataMap.put('TP Feasibility Remarks' , ol.ARTL_FeasibiltyRemarks__c);
                     qliDataMap.put('Customer PM First Name' , ol.order.opportunity.pm__r.Contact.FirstName);
-                    qliDataMap.put('Customer PM Last Name' ,  ol.order.opportunity.pm__r.Contact.LastName);
+                   // qliDataMap.put('Customer PM Last Name' ,  ol.order.opportunity.pm__r.Contact.LastName);
                     qliDataMap.put('Customer PM Number' ,  ol.order.opportunity.pm__r.Contact.Phone);
                     qliDataMap.put('Customer PM Email' ,  ol.order.opportunity.pm__r.Contact.Email);
                     
@@ -528,13 +530,13 @@ public class TechnicalAttributeEnrichmentController {
             throw new AuraHandledException('Error querying metadata: ' + e.getMessage());
         }
     }
-    // @AuraEnabled(cacheable=true)
-    // public static Task getTaskDetails(String recordId) {
+    @AuraEnabled(cacheable=true)
+    public static Task getTaskDetails(String recordId) {
         
-    //     try {
-    //         return [Select Id,Order_Product__c,Subject FROM Task WHERE Id=:recordId limit 1];
-    //     } catch (Exception e) {
-    //         throw new AuraHandledException('Error querying metadata: ' + e.getMessage());
-    //     }
-    // }
+        try {
+            return [Select Id,Order_Product__c,Subject FROM Task WHERE Id=:recordId limit 1];
+        } catch (Exception e) {
+            throw new AuraHandledException('Error querying metadata: ' + e.getMessage());
+        }
+    }
 }

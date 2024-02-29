@@ -863,6 +863,34 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ARTL_OrderTriggerHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ARTL_PDOrderCreationBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ARTL_PDOrderCreationBatch_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ARTL_PD_OrderCreation</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ARTL_PD_OrderCreation_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ARTL_PD_OrderValidation</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ARTL_PD_OrderValidation_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ARTL_PMUserMatrixTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -17709,6 +17737,10 @@
     <classAccesses>
         <apexClass>vlocity_cmt__StageTriggerHandler</apexClass>
         <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>vlocity_cmt__StandardCartAPIsDataSetupValidation</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>vlocity_cmt__StateActionBatchJob</apexClass>
@@ -58260,6 +58292,15 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>ARTL_Billing_Staging__c</object>
         <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ARTL_Feasibility__c</object>
+        <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>

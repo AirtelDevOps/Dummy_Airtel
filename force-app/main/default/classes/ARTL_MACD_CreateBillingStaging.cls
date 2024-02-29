@@ -62,7 +62,7 @@ public with sharing class ARTL_MACD_CreateBillingStaging {
             List< Id > allAccList = new List< Id >(); 
             List< Account > allBASAList = new List< Account > ();
             if(astIdBAIdMap != null && astIdBAIdMap.values().size() > 0){
-                billingAccountMap = new Map< Id , Account > ([Select id,ParentId,BCP_DCP_Id__c,ARTL_Usage_Flag__c,Billing_Level__c,vlocity_cmt__BillFormat__c, Exempt_Reason__c,ARTL_GST_Applicable__c,ARTL_Store__c,ARTL_Taxation__c,ARTL_License_Company__c,ARTL_Legal_Entity__c,ARTL_Credit_Period__c,ARTL_Bill_Franchise_Tax_Code__c,ARTL_Bill_Type__c, BillingStreet, BillingState, BillingPostalCode, BillingCity, BillingCountry, AccountNumber, MD5Hash__c from Account where Id In : astIdBAIdMap.values()]);
+                billingAccountMap = new Map< Id , Account > ([Select id,vlocity_cmt__BillDeliveryMethod__c,vlocity_cmt__BillFrequency__c,ParentId,BCP_DCP_Id__c,ARTL_Usage_Flag__c,Billing_Level__c,vlocity_cmt__BillFormat__c, Exempt_Reason__c,ARTL_GST_Applicable__c,ARTL_Store__c,ARTL_Taxation__c,ARTL_License_Company__c,ARTL_Legal_Entity__c,ARTL_Credit_Period__c,ARTL_Bill_Franchise_Tax_Code__c,ARTL_Bill_Type__c, BillingStreet, BillingState, BillingPostalCode, BillingCity, BillingCountry, AccountNumber, MD5Hash__c from Account where Id In : astIdBAIdMap.values()]);
                 allAccList.addAll(astIdBAIdMap.values());
                 allBASAList.addAll(billingAccountMap.values());
             }
@@ -137,6 +137,8 @@ public with sharing class ARTL_MACD_CreateBillingStaging {
                             bS.Bill_Format__c = tBA.vlocity_cmt__BillFormat__c;
                             bS.Billing_Level__c = tBA.Billing_Level__c;
                            bS.NBA_Account_Number__c = tBA.ParentId;
+                           bS.ARTL_Bill_Frequency__c = tBA.vlocity_cmt__BillFrequency__c;
+                           bS.ARTL_Bill_Dispatch_Method__c = tBA.vlocity_cmt__BillDeliveryMethod__c;
 
                            if(tBA.ARTL_Usage_Flag__c != null && tBA.ARTL_Usage_Flag__c.isNumeric()){
                                bS.Usage_Flag__c = Decimal.valueOf(tBA.ARTL_Usage_Flag__c); 
@@ -160,6 +162,7 @@ public with sharing class ARTL_MACD_CreateBillingStaging {
                     if(astIdSAIdMap != null && astIdSAIdMap.containsKey(qLI.vlocity_cmt__AssetId__c)){
                         if(serviceAccountMap != null && serviceAccountMap.containsKey(astIdSAIdMap.get(qLI.vlocity_cmt__AssetId__c))){
                             Account tSA = serviceAccountMap.get(astIdSAIdMap.get(qLI.vlocity_cmt__AssetId__c));
+                            bS.Service_Account_Id__c = tSA.Id;
                             bS.Shipping_Street__c = tSA.ShippingStreet;
                             bS.Shipping_State__c = tSA.ShippingState;
                             bS.Shipping_PinCode__c = tSA.ShippingPostalCode;

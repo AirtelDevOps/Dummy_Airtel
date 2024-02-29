@@ -75,6 +75,7 @@ private class ARTL_MACD_CreateBillingStagingTest {
             qouteLine.Product2Id = products[0].Id;
             qouteLine.vlocity_cmt__Product2Id__c = products[0].Id;
             qouteLine.QuoteId =qtest.Id;
+            qouteLine.ARTL_LSI__c = 1234;
             qouteLine.PricebookEntryId=pbes[0].Id;
             qouteLine.vlocity_cmt__ServiceAccountId__c =acc.id;
             insert qouteLine;
@@ -94,6 +95,7 @@ private class ARTL_MACD_CreateBillingStagingTest {
             insert ast;  
             QuoteLineItem  qouteLine2 = new QuoteLineItem ();
             qouteLine2.UnitPrice = 1;
+            qouteLine2.ARTL_LSI__c = 1235;
             qouteLine2.Quantity = 1;
             qouteLine2.vlocity_cmt__AssetId__c = ast.id;
             qouteLine2.Product2Id = products[1].Id;

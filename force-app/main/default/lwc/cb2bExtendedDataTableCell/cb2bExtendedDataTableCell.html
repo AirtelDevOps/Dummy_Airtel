@@ -1,7 +1,7 @@
 <template>
     <div if:true={cellData} onclick={onClickFieldValue} data-cell-position={cellData.position}
         data-editable={cellData.editable} data-field-name={columnData.fieldName}
-        data-row-original-index={cellData.originalItemIndex} class={dataTableCellClass} style="min-width: 130px;">
+        data-row-original-index={cellData.originalItemIndex} class={dataTableCellClass} style="max-width: 115px;margin-left: -15px;">
         <div if:false={cellData.editMode} class="slds-hyphenate b2b-table-cell-field-wrapper">
             <!--<span class="slds-truncate" title={getCellValue}>{getCellValue}</span>
             <vlocity_cmt-icon tabindex="0" if:true={isPicklistCellEditable} class="b2b-hover-icon slds-transition-hide" icon-name="utility:edit"

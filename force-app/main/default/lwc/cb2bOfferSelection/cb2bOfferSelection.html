@@ -17,11 +17,11 @@
       </div>
     </div>
     <slot name="totalBarSelectionSlot">
-      <vlocity_cmt-b2b-total-bar route-back="memberUpload" due-total={oneTimeTotal} recurring-total={recurringTotal}>
+      <c-extended-b2b-total-bar route-back="memberUpload" due-total={oneTimeTotal} recurring-total={recurringTotal}>
         <span if:true={showBackButton} slot="totalbarBtn">
           <button class="slds-button slds-button_brand" onclick={navigateToCart}>{labels.CMEXBackToCart}</button>
         </span>
-      </vlocity_cmt-b2b-total-bar>
+      </c-extended-b2b-total-bar>
     </slot>
   </div>
 </template>

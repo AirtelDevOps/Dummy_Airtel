@@ -18,9 +18,11 @@ export default class ExtendedB2bConfigCard extends b2bConfigCard {
     super.offer.columns.forEach(col => {
       if(col.dataType === "Currency"){
         let unformataCurrency = col.value.value.replace("$", "").split(".")[0].replaceAll(",", "").replace("₹","");
+        let unformataCurrencyOriginal =  (col.value.originalValue !== null  && col.value.originalValue !== undefined) ? col.value.originalValue.replace("$", "").split(".")[0].replaceAll(",", "").replace("₹","") : null ;
         console.log("unformataCurrecny " , unformataCurrency);
-        console.log("col.value.value " , col.value.value);
+        console.log("unformataCurrencyOriginal " , unformataCurrencyOriginal);
         col.value.value = formatCurrencyESM(unformataCurrency);
+        col.value.originalValue = (col.value.originalValue !== null  && col.value.originalValue !== undefined) ? formatCurrencyESM(unformataCurrencyOriginal) : null;
       }
       
     });
@@ -31,6 +33,7 @@ export default class ExtendedB2bConfigCard extends b2bConfigCard {
   renderedCallback() {
     console.log("config card: this.route.Quote.id", this.route.Quote.id);
     this.fetchQuoteDetails(this.route.Quote.id);
+    console.log('enablePriceFields '+this.enablePriceFields);
 }
 fetchQuoteDetails(quoteId) {
     const datasourcedef = JSON.stringify({
