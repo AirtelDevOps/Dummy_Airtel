@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CreateProforma_SampleInput.json",
+    "Description": "Input to this IP --  OrderId",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateProforma",
+    "OmniProcessElement": [
+        "ARTL_CreateProforma_Element_RApayload.json",
+        "ARTL_CreateProforma_Element_CreateProformaCall.json",
+        "ARTL_CreateProforma_Element_IPCreateIncident.json",
+        "ARTL_CreateProforma_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_CreateProforma",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CreateProforma_PropertySetConfig.json",
+    "SubType": "CreateProforma",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateProforma/Procedure",
+    "WebComponentKey": "6d430504-e88f-aadc-4f93-6b72b5d89892",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN7200000011i1EAA"
+}
