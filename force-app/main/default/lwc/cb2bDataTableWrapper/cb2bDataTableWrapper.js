@@ -7,6 +7,7 @@ export default class cb2bDataTableWrapper extends b2bDataTableWrapper{
     @api recordId;
     originalTableColumns = [];
     showLocation=false;
+    showLOcationButton = false;
     isShiftingQuote=false;
     quoteType='';
     connectedCallback(){
@@ -50,6 +51,11 @@ export default class cb2bDataTableWrapper extends b2bDataTableWrapper{
                 this.isShiftingQuote=true;
               }else{
                 this.isShiftingQuote=false;
+              }
+              if(quoteType != "Upgrade" && quoteType != "Downgrade" && quoteType != "Rate Revision" && quoteType != "Rebilling" && quoteType != "PO Renewal"){
+                this.showLOcationButton = true;
+              }else{
+                this.showLOcationButton = false;
               }
           }).catch(error => {
               console.log('fetchQuoteDetails', error);

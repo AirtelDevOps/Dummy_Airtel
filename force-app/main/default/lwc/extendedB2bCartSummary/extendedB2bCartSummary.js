@@ -65,7 +65,7 @@ export default class ExtendedB2bCartSummary extends NavigationMixin(B2bCartSumma
     fetchCodeTotalQli = 0;
     fetchItemCodeText = "Fetch Item Code";
     rfEvent;
-
+    
     connectedCallback() {
         this.recordId = this.getUrlParams('c__cartId');
         super.connectedCallback();
@@ -121,7 +121,7 @@ export default class ExtendedB2bCartSummary extends NavigationMixin(B2bCartSumma
                 //    modifying existing utility actions (add or remove)
                 this.actionList.splice(0, 0,
                     // {label:'Sample Action 3',method:'sampleAction3',showItem: this.quoteStatus == "Draft" ? true : false},
-                    { label: 'GST Taggings', method: 'gstTagging' },
+                  //  { label: 'GST Taggings', method: 'gstTagging' },
                   //Enrich Quote is commented as part of Usability Enhancements story by Prakash Sahu
                   //  { label: 'Enrich Quote', method: 'downloadAndUploadAction' },
                     /*{ label: 'Download POC', method: 'downloadPOC' }, */
@@ -142,24 +142,36 @@ export default class ExtendedB2bCartSummary extends NavigationMixin(B2bCartSumma
                 //Removing Check servicability and validate address buttons
                 this.actionList =  this.actionList.filter(item =>item.label != 'Check Serviceability');
                 this.actionList =  this.actionList.filter(item => item.label != 'Validate Addresses');
-                if((this.quoteStatus == "Feasibility Completed" && this.quoteNeedDoaApproval == false &&  this.quoteNeedCapexApproval == false) || (this.quoteStatus == "DOA Approved" && (this.quoteNeedDoaApproval == true ||  this.quoteNeedCapexApproval == true)) ){
+                if(((this.quoteStatus == "Feasibility Completed" && this.quoteNeedDoaApproval == false &&  this.quoteNeedCapexApproval == false) || (this.quoteStatus == "DOA Approved" && (this.quoteNeedDoaApproval == true ||  this.quoteNeedCapexApproval == true)) || ((this.quoteType == "Upgrade" || this.quoteType == "Downgrade" || this.quoteType == "Rate Revision") &&  this.quoteStatus == "Negotiation") ) && (this.quoteType != "Rebilling" && this.quoteType != "PO Renewal") ){
                 }else{
                     this.actionList =  this.actionList.filter(item => item.label != 'Create Proposal');
                 }
 
                 if(this.quoteStatus == "Proposal Sent" || this.quoteStatus == "Proposal Accepted"){
-                    this.actionList.splice(0, 0,
-                        { label: 'Enrich Quote - UI', method: 'openOmniscript' },
-                        { label: 'Create DCP', method: 'openDCPModal' });
+                    if((this.quoteType != "Upgrade" && this.quoteType != "Downgrade" && this.quoteType != "Rate Revision" && this.quoteType != "Rebilling" && this.quoteType != "PO Renewal")){
+                        this.actionList.splice(0, 0,
+                            { label: 'Create DCP', method: 'openDCPModal' });
+                    }
+                    if(this.quoteType != "Rebilling" && this.quoteType != "PO Renewal"){
+                        this.actionList.splice(0, 0,
+                            { label: 'Enrich Quote - UI', method: 'openOmniscript' });  
+                    }
+                  
+                    
+                }
+
+                if((this.quoteType == "Rebilling" || this.quoteType == "PO Renewal") && this.quoteStatus == "Draft"){
+                      this.actionList.splice(0, 0,
+                            { label: 'Enrich Quote - UI', method: 'openOmniscript' });       
                 }
 
 
-                this.showVerifyAddress =  (this.addressAndFeasibilityStatus == "None" || this.addressAndFeasibilityStatus == "Feasibility in Progress" ) ? false : true ;
-                this.showAddressCorrection =  (this.addressAndFeasibilityStatus == "Coordinate Validations Completed" || this.addressAndFeasibilityStatus == "Feasibility Completed" ) ? true : false ;
-                this.showCheckFeasibility =  (this.addressAndFeasibilityStatus == "Coordinate Validations Completed" || this.addressAndFeasibilityStatus == "Feasibility Completed" ) ? true : false ;
+                this.showVerifyAddress =  (this.addressAndFeasibilityStatus == "None" || this.addressAndFeasibilityStatus == "Feasibility in Progress" || this.quoteType == "Upgrade" || this.quoteType == "Downgrade" || this.quoteType == "Rate Revision" || this.quoteType == "Rebilling" || this.quoteType == "PO Renewal") ? false : true ;
+                this.showAddressCorrection =  ((this.addressAndFeasibilityStatus == "Coordinate Validations Completed" || this.addressAndFeasibilityStatus == "Feasibility Completed") && (this.quoteType != "Upgrade" && this.quoteType != "Downgrade" && this.quoteType != "Rate Revision" && this.quoteType != "Rebilling" && this.quoteType != "PO Renewal") ) ? true : false ;
+                this.showCheckFeasibility =  ((this.addressAndFeasibilityStatus == "Coordinate Validations Completed" || this.addressAndFeasibilityStatus == "Feasibility Completed" ) && (this.quoteType != "Upgrade" && this.quoteType != "Downgrade" && this.quoteType != "Rate Revision" && this.quoteType != "Rebilling" && this.quoteType != "PO Renewal")) ? true : false ;
 
-                this.showSubmitForPriceApproval =  (this.quoteStatus != "DOA Approval in Progress" && this.quoteNeedDoaApproval == true && this.quoteType != "Demo") ? true : false ;
-                this.showSubmitForOVApproval =  (this.quoteStatus == "Proposal Accepted" && this.quoteType != "Demo") ? true : false ;
+                this.showSubmitForPriceApproval =  (this.quoteStatus != "DOA Approval in Progress" && this.quoteNeedDoaApproval == true && this.quoteType != "Demo" && this.quoteType != "Rebilling" && this.quoteType != "PO Renewal") ? true : false ;
+                this.showSubmitForOVApproval =  ((this.quoteStatus == "Proposal Accepted" && this.quoteType != "Demo") || this.quoteType == "Rebilling" || this.quoteType == "PO Renewal") ? true : false ;
                 this.showAddProductBtn = (this.quoteType == "Rebilling" || this.quoteType == "Rate Revision") ? false : true ;     
             }).catch(error => {
                 console.log('fetchQuoteDetails', error);
@@ -577,6 +589,7 @@ export default class ExtendedB2bCartSummary extends NavigationMixin(B2bCartSumma
             window.open(generatedUrl, '_blank');
         });
     }
+
     // submitForPriceApproval(){
     //     //this.isInvokeSubmitForPriceApproval = true;
     //     console.log('clickedsubmitForPriceApproval');

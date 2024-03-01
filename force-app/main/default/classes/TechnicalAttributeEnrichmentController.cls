@@ -425,7 +425,7 @@ public class TechnicalAttributeEnrichmentController {
                            order.PoDate,CND__c,RFS__c,order.opportunity.pm__r.Phone,
                            order.CreatedDate,ARTL_FeasibiltyRemarks__c,order.account.ARTL_Legal_Entity__c,order.opportunity.pm__r.contact.FirstName,
                            order.opportunity.pm__r.Contact.LastName,order.opportunity.pm__r.Contact.Phone,order.opportunity.pm__r.Contact.Email,
-                           QuoteLineItem.ARTL_Feasibility__r.ARTL_Feasibility_ID__c,QuoteLineItemId
+                           QuoteLineItem.ARTL_Feasibility__r.ARTL_Feasibility_ID__c,QuoteLineItemId, order.opportunity.pm__r.Name
                            FROM OrderItem 
                            WHERE OrderID =: orderId  AND vlocity_cmt__RootItemId__c =: getAssetRef  AND Product2.ARTL_LSIRequired__c =true];
                 system.debug('oliList 417 ::' + oliList);
@@ -492,10 +492,10 @@ public class TechnicalAttributeEnrichmentController {
                     qliDataMap.put('Customer Segment' , 'EGB'); // ol.order.Account.ARTL_Customer_Segment__c for now
                     qliDataMap.put('Hardware Legal Entity' , ol.order.account.ARTL_Legal_Entity__c);
                     qliDataMap.put('TP Feasibility Remarks' , ol.ARTL_FeasibiltyRemarks__c);
-                    qliDataMap.put('Customer PM First Name' , ol.order.opportunity.pm__r.Contact.FirstName);
-                   // qliDataMap.put('Customer PM Last Name' ,  ol.order.opportunity.pm__r.Contact.LastName);
-                    qliDataMap.put('Customer PM Number' ,  ol.order.opportunity.pm__r.Contact.Phone);
-                    qliDataMap.put('Customer PM Email' ,  ol.order.opportunity.pm__r.Contact.Email);
+                    qliDataMap.put('Customer PM Name' , ol.order.opportunity.pm__r.Name);
+                    //qliDataMap.put('Customer PM Last Name' ,  q.quote.opportunity.pm__r.Contact.LastName);
+                    qliDataMap.put('Customer PM Number' ,  ol.order.opportunity.pm__r.Phone);
+                    qliDataMap.put('Customer PM Email' ,  ol.order.opportunity.pm__r.Email);
                     
                 }
             }    

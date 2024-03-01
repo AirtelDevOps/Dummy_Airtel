@@ -38,11 +38,14 @@
 				</div>
 				<template if:false={showCartSummary}>
 					<!--kanchan-->
-					<div class="slds-grid slds-grid_reverse">
-						<lightning-button theme="slds" variant="neutral" label="Add Locations"
-							icon-size="x-small" onclick={handleLinkAddressClick}>
-						</lightning-button>
-					</div>
+					<template if:true={showLOcationButton}>
+						<div class="slds-grid slds-grid_reverse">
+							<lightning-button theme="slds" variant="neutral" label="Add Locations"
+								icon-size="x-small" onclick={handleLinkAddressClick}>
+							</lightning-button>
+						</div>
+					</template>
+					
 					<template if:true={showLocation}>
 						<template if:true={isShiftingQuote}>
 							<c-artl_-m-a-c-d-location-update record-id={masterQuote} is-modal-open=true onclosemodalpopup={closeModal}
