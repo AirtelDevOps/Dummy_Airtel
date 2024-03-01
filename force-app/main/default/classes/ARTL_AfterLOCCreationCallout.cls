@@ -50,14 +50,18 @@ global with sharing class ARTL_AfterLOCCreationCallout {
         }
         if(tskIntLog.size() > 0){
             if(tskIntLog[0].ARTL_Input_Attributes__c != null){
-                List<Object> attrList = (List<Object>) JSON.deserializeUntyped(tskIntLog[0].ARTL_Input_Attributes__c);
-                // Iterate through the list and populate the map
-                for (Object data : attrList) {
-                    Map<String, Object> dataItem = (Map<String, Object>)data;
-                    String name = (String)dataItem.get('Name');
-                    String value = (String)dataItem.get('Value');
-                    attrDataMap.put(name, value);
+                Map<String, Object> attrObject = (Map<String, Object>)JSON.deserializeUntyped(tskIntLog[0].ARTL_Input_Attributes__c);
+                for (String key : attrObject.keySet()) {
+                    Object innerData = attrObject.get(key);
+                    List<Object> attrList = (List<Object>)innerData;
+                    for (Object data : attrList) {
+                        Map<String, Object> dataItem = (Map<String, Object>)data;
+                        String name = (String)dataItem.get('Name');
+                        String value = (String)dataItem.get('Value');
+                        attrDataMap.put(name, value);
+                    }
                 }
+                system.debug('attrDataMap--->'+attrDataMap);
             }
         }
         Map<String, Object> ipInput = new Map<String, Object> ();
