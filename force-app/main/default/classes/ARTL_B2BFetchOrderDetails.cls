@@ -59,8 +59,8 @@ ARTL_Logger.error(ARTL_Constants.CONTROLLER, 'ARTL_B2BFetchOrderDetails:fetchBCP
         Double lsi = input.containsKey('lsi') ? Double.valueOf(input.get('lsi')) : 0;
         String baParent = input.containsKey('baParent') ? String.valueOf(input.get('baParent')) : '';
         List<OrderItem> oiList = [select id,ARTL_Latest_PO__r.ARTL_PO_Number__c, ARTL_Latest_PO__r.ARTL_PO_Date__c,ARTL_Latest_PO__r.Amount__c,Order.Account.Name, 
-                                  Order.Opportunity.Owner.Name,Order.Account.ARTL_Taxation__c,Order.Account.ARTL_GST_IN__c, Order.Opportunity.Owner.LastName, vlocity_cmt__BillingAccountId__r.AccountNumber, vlocity_cmt__BillingAccountId__r.Account_Number__c,
-                                  order.PM_Team_Lead_Email__c, order.PM_Email__c, order.Quote.PM__r.LastName, order.Quote.PM__r.OIM_Id__c,order.Quote.PM__r.manager.OIM_Id__c, Order.Opportunity.Owner.ManagerId,Order.Opportunity.Owner.Email,
+                                  Order.Opportunity.Owner.Name,Order.Account.ARTL_Taxation__c,Order.Account.ARTL_GST_IN__c, Order.Opportunity.Owner.LastName,Order.Opportunity.Owner.manager.LastName, vlocity_cmt__BillingAccountId__r.AccountNumber, vlocity_cmt__BillingAccountId__r.Account_Number__c,
+                                  order.PM_Team_Lead_Email__c, order.PM_Email__c, order.Quote.PM__r.LastName,order.Quote.PM__r.manager.LastName, order.Quote.PM__r.OIM_Id__c,order.Quote.PM__r.manager.OIM_Id__c, Order.Opportunity.Owner.ManagerId,Order.Opportunity.Owner.Email,
                                   ARTL_LSI__c, vlocity_cmt__BillingAccountId__r.Billing_Level__c,Order.Opportunity.Owner.FirstName,Order.Opportunity.Owner.Manager.FirstName,Order.Opportunity.Owner.Manager.Phone,Order.Opportunity.Owner.Manager.Email,
                                   Order.Account.ARTL_Vertical_Segment__c,vlocity_cmt__BillingAccountId__r.ARTL_Taxation__c,vlocity_cmt__ServiceAccountId__r.AccountNumber, Order.Account.Parent.AccountNumber, order.Account.ARTL_License_Company__c, Order.Account.Short_Code__c,
                                   order.Account.ARTL_Customer_Segment__c, order.Account.AccountNumber,Order.Opportunity.Owner.MobilePhone,vlocity_cmt__BillingAccountId__r.Parent.AccountNumber, order.Quote.PM__r.Phone, order.Quote.PM__r.FirstName, order.Quote.PM__r.Manager.FirstName,
@@ -199,11 +199,11 @@ ARTL_Logger.error(ARTL_Constants.CONTROLLER, 'ARTL_B2BFetchOrderDetails:fetchBCP
         Map<String,Object> sfdcMsg = new Map<String,Object>();
         Map<String,Object> lidffAttr = new Map<String,Object>();
         List<OrderItem> oiList = [select id,vlocity_cmt__AttributeSelectedValues__c, Order.Downtime_End__c, Order.PM_Email__c, Order.PM_Name__c,
-                                  Order.Account.ARTL_Service_Segment__c,Order.ARTL_Currency_ISO_Code__c,Order.Opportunity.Owner.LastName,Order.Opportunity.Owner.FirstName,Order.Opportunity.Owner.Email, vlocity_cmt__BillingAccountId__r.Parent.CreatedDate,
+                                  Order.Account.ARTL_Service_Segment__c,Order.ARTL_Currency_ISO_Code__c,Order.Opportunity.Owner.LastName,Order.Opportunity.Owner.manager.LastName,Order.Opportunity.Owner.FirstName,Order.Opportunity.Owner.Email, vlocity_cmt__BillingAccountId__r.Parent.CreatedDate,
                                   Order.Opportunity.OwnerId,Order.Account.ARTL_Customer_Segment__c,Order.Opportunity.Owner.Manager.OIM_Id__c,Order.Opportunity.Owner.OIM_Id__c, Order.Opportunity.Owner.Name,Order.Opportunity.Owner.MobilePhone,order.Account.ARTL_Last_Account_Coverage_Date__c, Order.PM_Phone__c, ARTL_Latest_PO__r.ARTL_PO_Number__c, ARTL_Latest_PO__c,
                                   Order.Account.ARTL_Business_Circle_Region__c,vlocity_cmt__BillingAccountId__r.ARTL_License_Company__c, ARTL_Feasibility__c, vlocity_cmt__BillingAccountId__r.ARTL_Taxation__c, CND__c, CND_Date__c,
                                   Order.Account.ARTL_Legal_Entity__c,vlocity_cmt__BillingAccountId__r.ARTL_Bill_Franchise_Tax_Code__c, Order.ARTL_SOMOrderId__c,Order.vlocity_cmt__QuoteId__r.PM__r.OIM_Id__c,Order.vlocity_cmt__QuoteId__r.PM__r.manager.OIM_Id__c,Order.PM_Team_Lead_Email__c,Order.PM_Team_Lead_Phone__c,Order.PM_Team_Lead__c,ARTL_FeasibilityIdCrossConnect__c, vlocity_cmt__BillingAccountId__c,
-                                  Order.Account.BillingCity, Order.Account.BillingAddress,vlocity_cmt__BillingAccountId__r.ARTL_FX_Leo_Account_Number__c,RFS__c,order.account.vlocity_cmt__PrimaryContactId__r.FirstName,order.account.vlocity_cmt__PrimaryContactId__r.LastName,order.account.vlocity_cmt__PrimaryContactId__r.Email,order.account.vlocity_cmt__PrimaryContactId__r.Phone ,
+                                  Order.Account.BillingCity, Order.Account.BillingAddress,vlocity_cmt__BillingAccountId__r.ARTL_billingId__c,RFS__c,order.account.vlocity_cmt__PrimaryContactId__r.FirstName,order.account.vlocity_cmt__PrimaryContactId__r.LastName,order.account.vlocity_cmt__PrimaryContactId__r.Email,order.account.vlocity_cmt__PrimaryContactId__r.Phone ,
                                   RFS_Date__c, Order.ARTL_Order_Type__c, vlocity_cmt__BillingAccountId__r.vlocity_cmt__PartyId__c,order.CreatedDate,
                                   vlocity_cmt__BillingAccountId__r.Account_Number__c,Order.Account.ARTL_License_Company__c,Order.Account.ARTL_Bill_Franchise_Tax_Code__c,Order.Account.ARTL_FX_Leo_Account_Number__c,Order.Account.ARTL_Virtual_Account_Number__c, CreatedDate, Order.Customer_Email__c, vlocity_cmt__BillingAccountId__r.ARTL_Billing_Pincode__c  
                                   from OrderItem where Order.ARTL_SOMOrderId__c =:somOrdId and ARTL_LSI__c =:lsi];
@@ -925,7 +925,7 @@ ARTL_Logger.error(ARTL_Constants.CONTROLLER, 'ARTL_B2BFetchOrderDetails:fetchBCP
             lidffAttr.put('CVLAN','');
             //lidffAttr.put('CrossConnectLocB','');
             //lidffAttr.put('CrossConnectLocA','');
-            lidffAttr.put('FXLeoAcntNo',oiList[0].vlocity_cmt__BillingAccountId__r.ARTL_FX_Leo_Account_Number__c);
+            lidffAttr.put('FXLeoAcntNo',oiList[0].vlocity_cmt__BillingAccountId__r.ARTL_billingId__c);
             //lidffAttr.put('OSPFProcessId','');
             lidffAttr.put('SendCommunityeBGP','');
             lidffAttr.put('BulkImpIdNew','');

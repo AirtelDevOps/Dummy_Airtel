@@ -3,12 +3,16 @@
     <label>ATT_LAN_IPV4</label>
     <protected>false</protected>
     <values>
+        <field>ARTL_Object__c</field>
+        <value xsi:type="xsd:string">Quote and Order</value>
+    </values>
+    <values>
         <field>AttributeCode__c</field>
         <value xsi:type="xsd:string">ATT_LAN_IPV4</value>
     </values>
     <values>
         <field>Attribute_JSON__c</field>
-        <value xsi:type="xsd:string">{&quot;isRequired&quot;:false,&quot;regex&quot;:&quot;^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$&quot;,&quot;isDependentValue&quot;:false,&quot;dependentAttribtue&quot;:&quot;&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;Invalid IPV4 value&quot;}}</value>
+        <value xsi:type="xsd:string">{"isRequired":true,"regex":"^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$","isDependentValue":false,"dependentAttribtue":"","value":{"error":"Invalid IPV4 value"}}</value>
     </values>
     <values>
         <field>Object__c</field>
