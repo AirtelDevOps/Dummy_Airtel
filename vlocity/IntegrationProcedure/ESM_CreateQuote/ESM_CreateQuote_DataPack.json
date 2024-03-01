@@ -1,7 +1,7 @@
 {
     "CurrencyIsoCode": "INR",
     "CustomJavaScript": "ESM_CreateQuote_SampleInput.json",
-    "Description": "This Integration Procedure is used to create Quote from Asset.",
+    "Description": "This Integration Procedure is used to create Quote from Asset. Removed Existing Opportunity Button, changes added",
     "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
     "IsIntegrationProcedure": true,
     "IsMetadataCacheDisabled": false,
@@ -11,6 +11,7 @@
     "Language": "Procedure",
     "Name": "ESMCreateQuote",
     "OmniProcessElement": [
+        "ESM_CreateQuote_Element_GetPriceList.json",
         "ESM_CreateQuote_Element_CreateOpportunityRecord.json",
         "ESM_CreateQuote_Element_CreateQuoteRequestData.json",
         "ESM_CreateQuote_Element_CreateQuoteRecord.json",
@@ -25,5 +26,7 @@
     "Type": "ESM",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
-    "VlocityRecordSourceKey": "OmniProcess/ESM/CreateQuote/Procedure"
+    "VlocityRecordSourceKey": "OmniProcess/ESM/CreateQuote/Procedure",
+    "WebComponentKey": "3b18f7e0-3c11-1919-5762-024cc677f351",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001jPhEAI"
 }

@@ -12,7 +12,7 @@
     "PropertySetConfig": {
         "additionalOutput": {
             "AssetIds": "=LIST(%CreateSelectQuote:AssetIds%)",
-            "OpportunityId": "=IF(CreateSelectQuote:selectQuoteType == \"createOpportunity\", %CreateOpportunityRecord:Opportunity_1:Id% , CreateSelectQuote:selectOpportunity)",
+            "OpportunityId": "=%CreateOpportunityRecord:Opportunity_1:Id% ",
             "QuoteId": "=IF(CreateSelectQuote:selectType == \"createQuote\", %CreateQuoteRecord:records:Id% , CreateSelectQuote:selectQuoteName)",
             "createQuoteMessages": "%CreateQuoteRecord:messages%"
         },

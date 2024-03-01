@@ -51,6 +51,31 @@
     },
     {
         "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "POGroupName",
+        "GlobalKey": "GetPOBillingStageCustom3126",
+        "InputFieldName": "PO_Group__r.Name",
+        "InputObjectName": "ARTL_Purchase_Order__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPOBillingStage",
+        "OmniDataTransformationId": {
+            "Name": "GetPOBillingStage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPOBillingStage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "POresult",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
         "GlobalKey": "GetPOBillingStageCustom3941",
         "InputFieldName": "POresult:PO_Group__c",
         "IsDisabled": false,

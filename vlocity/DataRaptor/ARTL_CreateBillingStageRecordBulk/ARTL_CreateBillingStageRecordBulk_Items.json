@@ -916,7 +916,7 @@
             "VlocityRecordSObjectType": "OmniDataTransform"
         },
         "OutputCreationSequence": 1,
-        "OutputFieldName": "Quote_Line_Item__c",
+        "OutputFieldName": "QuoteLineItem__c",
         "OutputObjectName": "ARTL_Billing_Staging__c",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "OmniDataTransformItem"
@@ -945,6 +945,25 @@
         "CurrencyIsoCode": "INR",
         "GlobalKey": "ARTL_CreateBillingStageRecordBulkCustom0jI720000000Q8zEAEItem38",
         "InputFieldName": "Stage:Quote_Line_Item__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_CreateBillingStageRecordBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_CreateBillingStageRecordBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_CreateBillingStageRecordBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote_Line_Item__c",
+        "OutputObjectName": "ARTL_Billing_Staging__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_CreateBillingStageRecordBulkCustom9494",
         "IsDisabled": false,
         "IsRequiredForUpsert": false,
         "IsUpsertKey": false,

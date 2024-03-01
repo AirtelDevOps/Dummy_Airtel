@@ -12,7 +12,8 @@
     "PropertySetConfig": {
         "actionMessage": "",
         "additionalInput": {
-            "opportunityId": "==IF(CreateSelectQuote:selectQuoteType == \"createOpportunity\", %CreateOpportunityRecord:Opportunity_1:Id% , CreateSelectQuote:selectOpportunity)"
+            "PriceList": "%GetPriceList:Id%",
+            "opportunityId": "=%CreateOpportunityRecord:Opportunity_1:Id% "
         },
         "additionalOutput": {
         },

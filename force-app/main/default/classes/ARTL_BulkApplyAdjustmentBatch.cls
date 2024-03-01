@@ -152,8 +152,11 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
             ipAdjustmentInput.put('callBatch',callBatch);
             ipAdjustmentInput.put('SalesQuoteId',WorkingCartInput.get('SalesQuoteId'));
             ipAdjustmentInput.put('RootItemIds',WorkingCartInput.get('RootItemIds'));
+            ipAdjustmentInput.put('LSITruePayload',LSITruePayload);
             ipAdjustmentInput.put('reprice',true);
             ipAdjustmentInput.put('validate',true);
+            string ipAdjustmentInputString = JSON.serialize(ipAdjustmentInput);                
+            System.debug('ARTL_BulkApplyAdjustmentBatch final ipAdjustmentOutputString  '+ipAdjustmentInputString);
             if(!Test.isRunningTest()){
                 ipAdjustmentOutput = (Map<String, Object>) vlocity_cmt.IntegrationProcedureService.runIntegrationService('CloneModifyTo_SalesQLIsWQPR', ipAdjustmentInput, null);
             }
@@ -182,7 +185,7 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
             List<ARTL_Bulk_Iteration__c> bulkIterationGetUser = [select id,CreatedById from ARTL_Bulk_Iteration__c where Id =: iterationId];
                System.debug('POAdjustmentOutput input before');
              System.debug('POAdjustmentOutput input '+LSITruePayload);
-            if(LSITruePayload !=null && !Test.isRunningTest()){
+            /*if(LSITruePayload !=null && !Test.isRunningTest()){
                   System.debug('POAdjustmentOutput input before inside If');
                 POAdjustmentOutput = (Map<String, Object>) vlocity_cmt.IntegrationProcedureService.runIntegrationService('ARTL_CreateBillingStageEntriesBulk', LSITruePayload, null);
                 System.debug('POAdjustmentOutput '+POAdjustmentOutput);
@@ -200,7 +203,7 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
                }
               
                 Insert IterationLog;
-            }
+            }*/
             List<ARTL_BulkCartUpdate__c> BulkCartUpdateRecordvAR = [select id,Status__c from ARTL_BulkCartUpdate__c where (Status__c = 'Received' AND Cart_Id__c=:CartId and Sobject_Type__c='Quote')];
             System.debug('BulkCartUpdateRecordvAR '+BulkCartUpdateRecordvAR);
             if(BulkCartUpdateRecordvAR.size()>0){
@@ -242,6 +245,11 @@ public class ARTL_BulkApplyAdjustmentBatch implements Database.Batchable<Object>
                     System.debug('Userinfo.getUserId() else '+Userinfo.getUserId());
                     notification.send(new Set<String> { Userinfo.getUserId() });
                 }
+                Bulk_Cart_Update_Notification__e stagingPlatformEvent = new Bulk_Cart_Update_Notification__e();
+                stagingPlatformEvent.Cart_Id__c = quoteRecord.id;
+                stagingPlatformEvent.SobjectType__c = 'ARTL_Billing_Staging__c';
+                // Call method to publish events
+                EventBus.publish(stagingPlatformEvent);
                 
             }
         } catch (Exception e) {

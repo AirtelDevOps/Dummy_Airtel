@@ -1,6 +1,6 @@
 [
     {
-        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
         "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
         "%vlocity_namespace%__GlobalKey__c": "95575bf5-ffe9-06c9-5a80-b4623448c232",
         "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
@@ -25,7 +25,7 @@
         "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/DDOS/95575bf5-ffe9-06c9-5a80-b4623448c232/Product2/b1ce97f2-eff4-76d7-182a-bd8611d209a3"
     },
     {
-        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
         "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
         "%vlocity_namespace%__GlobalKey__c": "e32d6b60-9e09-ba19-50a6-bc8218c9db06",
         "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {

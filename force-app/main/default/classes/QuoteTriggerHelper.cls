@@ -74,16 +74,25 @@ public without Sharing class QuoteTriggerHelper {
             for(Quote quoteObj:qlist){              
                 qStatus=(string)quoteObj.get('status');
                 doaApproved=quoteObj.ARTL_DOAApproved__c; 
-                
+                /*
                 if(qStatus=='Proposal Sent') {
                     quoteId=(Id)quoteObj.Id;
                     //Generate LSI and populate that in QLI	
                     updateLSI(quoteId,allQLIList);
+                }*/
+                if(oldQuoteRec.get(quoteObj.id).Status != quoteObj.Status && quoteObj.Status == System.label.ARTL_Quote_Status_Proposal_Sent){
+                    updateLSI((Id)quoteObj.Id,allQLIList);                   
                 }
+                
                 // to update assigned date based on status changed to ov assigned
                 if(oldQuoteRec.get(quoteObj.id).Status != quoteObj.Status && quoteObj.Status == System.label.ARTL_Quote_Status_Assigned_to_OV  ){
                     quoteObj.ARTL_OV_Assigned_Date__c = system.now();                    
                 }
+                // to update assigned date based on status changed to ov approved
+                 /*
+                if(oldQuoteRec.get(quoteObj.id).Status != quoteObj.Status && quoteObj.Status == System.label.ARTL_Quote_Status_OV_Approved){
+                    quoteObj.ARTL_OVApprovedDate__c = system.now();                    
+                }*/
 
                 // update 'Address and Feasibility Status' to '	Feasibility in Progress' when Quote status changed to 'Feasibility in Progress'
                 if(oldQuoteRec.get(quoteObj.id).Status != quoteObj.Status && quoteObj.Status == System.label.ARTL_Quote_Status_Feasibility_in_Progress  ){
@@ -179,7 +188,8 @@ public without Sharing class QuoteTriggerHelper {
     public static void createBASABatch(Set<Id> quoteIds){
         try{          
             if(quoteIds.size()>0){
-                Database.executeBatch(new ARTL_BACreationPreProcessBatch(quoteIds)); 
+                //Database.executeBatch(new ARTL_BACreationPreProcessBatch(quoteIds), 1); 
+                System.enqueueJob(new ARTL_BASACreationBatchQueueable(quoteIds));
             }    
         }
         catch(Exception e){
@@ -313,7 +323,7 @@ public without Sharing class QuoteTriggerHelper {
         Set<Id> qliIds = new Set<Id>();
         Set<Id> relOIIds = new Set<Id>();
         for(QuoteLineItem qli : qliList){
-            if((qli.Product2.Name == 'Primary MPLS Link' || qli.Product2.Name == 'Secondary MPLS Link') && (qli.ARTL_Media__c == '4G')){
+            if((qli.Product2.Name == 'Primary MPLS Link' || qli.Product2.Name == 'Secondary MPLS Link') && (qli.ARTL_Media__c == '4G' || qli.ARTL_Media__c == '5G')){
                     is4G = true;
                     relOIIds.add(qli.Id);
             }

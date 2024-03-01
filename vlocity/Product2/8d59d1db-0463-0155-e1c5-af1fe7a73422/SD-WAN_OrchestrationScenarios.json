@@ -1,6 +1,6 @@
 [
     {
-        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
         "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
         "%vlocity_namespace%__GlobalKey__c": "064508-d1c4c4-687c12-6986cf-a1e2ed80d",
         "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
@@ -25,7 +25,7 @@
         "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Provisioning SD-WAN/064508-d1c4c4-687c12-6986cf-a1e2ed80d/Product2/8d59d1db-0463-0155-e1c5-af1fe7a73422"
     },
     {
-        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
         "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"Order.Type\",\"left-side-type\":\"field-OrderItem\",\"left-side-datatype\":\"picklist\",\"op\":\"!=\",\"right-side\":\"PO Renewal\"}",
         "%vlocity_namespace%__GlobalKey__c": "f36028-85268b-51e119-4a676b-ada421559",
         "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {

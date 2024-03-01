@@ -63,8 +63,8 @@
     },
     {
         "CurrencyIsoCode": "INR",
-        "GlobalKey": "ESMCreateQuoteRequestDataCustoma00Dn000008fkIiIAIItem3",
-        "InputFieldName": "createQuotePriceList",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustom690",
+        "InputFieldName": "PriceList",
         "IsDisabled": false,
         "IsRequiredForUpsert": false,
         "IsUpsertKey": false,
@@ -77,6 +77,46 @@
         },
         "OutputCreationSequence": 1,
         "OutputFieldName": "%vlocity_namespace%__pricelistid__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustoma00Dn000008fkIiIAIItem3",
+        "InputFieldName": "createQuotePriceList",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMCreateQuoteRequestData",
+        "OmniDataTransformationId": {
+            "Name": "ESMCreateQuoteRequestData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMCreateQuoteRequestData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__pricelistid__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustom3986",
+        "InputFieldName": "nbaAccountId",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMCreateQuoteRequestData",
+        "OmniDataTransformationId": {
+            "Name": "ESMCreateQuoteRequestData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMCreateQuoteRequestData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_NBA_Account__c",
         "OutputObjectName": "json",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "OmniDataTransformItem"

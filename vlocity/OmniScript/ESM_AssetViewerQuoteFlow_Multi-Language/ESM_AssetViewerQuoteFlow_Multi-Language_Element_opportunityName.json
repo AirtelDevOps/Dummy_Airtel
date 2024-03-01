@@ -29,7 +29,7 @@
         "conditionType": "Hide if False",
         "controlWidth": 12,
         "debounceValue": 0,
-        "defaultValue": null,
+        "defaultValue": "",
         "disOnTplt": false,
         "help": false,
         "helpText": null,
@@ -57,9 +57,26 @@
                         "field": "selectType"
                     },
                     {
-                        "condition": "=",
-                        "data": "createOpportunity",
-                        "field": "selectQuoteType"
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": "Rate Revision",
+                                    "field": "transactionType"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "Rebilling",
+                                    "field": "transactionType"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "PO Renewal",
+                                    "field": "transactionType"
+                                }
+                            ]
+                        }
                     }
                 ]
             }

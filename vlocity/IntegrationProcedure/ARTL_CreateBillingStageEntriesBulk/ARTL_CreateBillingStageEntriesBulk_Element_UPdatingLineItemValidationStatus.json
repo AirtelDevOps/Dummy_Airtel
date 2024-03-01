@@ -12,6 +12,7 @@
     "PropertySetConfig": {
         "actionMessage": "",
         "additionalInput": {
+            "BillingStage": "%ARTL_CreateBillingStageRecordBulk:ARTL_Billing_Staging__c_1|1:Id%",
             "Id": "%GetESMQUoteLineItemId:LintItemId%",
             "ValidateStatus": "To be Validated"
         },

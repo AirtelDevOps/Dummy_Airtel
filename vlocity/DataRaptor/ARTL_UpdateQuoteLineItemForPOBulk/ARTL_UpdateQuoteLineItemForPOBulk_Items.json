@@ -25,6 +25,26 @@
     },
     {
         "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_UpdateQuoteLineItemForPOBulkCustom6201",
+        "InputFieldName": "BillingStage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_UpdateQuoteLineItemForPOBulk",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_UpdateQuoteLineItemForPOBulk",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_UpdateQuoteLineItemForPOBulk",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_BIllingStageId__c",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
         "GlobalKey": "ARTL_UpdateQuoteLineItemForPOBulkCustom5530",
         "InputFieldName": "ValidateStatus",
         "IsDisabled": false,

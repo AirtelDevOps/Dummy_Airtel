@@ -6,8 +6,6 @@
 * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vlocity_cmt.VlocityOpenInterface{
-    
-    
     global Boolean invokeMethod(String methodName, Map<String,Object> input, Map<String,Object> outMap, Map<String,Object> options){
         try{
             if(methodName.equals('callIPBatch')){
@@ -27,286 +25,405 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
         return false;
     }
     
-    
     public static String NS = 'vlocity_cmt';
     public static void processAfterInsert(List<Bulk_Cart_Update_Notification__e> platformEventRecords){
         
         try{
-            Map<String,Object> LSITruePayload = New Map<String,Object>();
-            Map<String, Object> POAdjustmentOutput = new Map<String, Object>();
-            List<String> quoteStatus = new List<String>{'Draft','Negotiation','Feasibility in Progress','Feasibility Completed','DOA Approval in Progress','DOA Approved','DOA Rejected'};
-                List<Object> removeObjectList = new List<Object>();
-            String currentStatus = '';
-            Map<ID, QuoteLineItem> mapQLIs = 
-                new Map<ID, QuoteLineItem>([SELECT Product2.Name ,Quote.Status, Product2.ProductCode, Product2Id, PricebookEntryId, vlocity_cmt__RootItemId__c,vlocity_cmt__ParentItemId__c,vlocity_cmt__AssetReferenceId__c, 
-                                            vlocity_cmt__LineNumber__c,Quantity,  vlocity_cmt__ProductHierarchyPath__c,  
-                                            vlocity_cmt__RecurringCharge__c,vlocity_cmt__RecurringCostTotal__c,  
-                                            Annual_Recurring_Charge__c,vlocity_cmt__OneTimeCharge__c,vlocity_cmt__OneTimeTotal__c,
-                                            vlocity_cmt__AttributeSelectedValues__c,vlocity_cmt__Action__c ,Product2.ARTL_LSIRequired__c
-                                            FROM QuoteLineItem  
-                                            WHERE Quote.RecordType.DeveloperName= 'EnterpriseQuote'  
-                                            AND QuoteId =: platformEventRecords[0].Cart_Id__c ]);
-            
-            IF(Test.isRunningTest()){
-                QuoteLineItem quoteLine = new QuoteLineItem();
-                quoteLine.Id = '0QL7200000087qqGAA';
-                quoteLine.vlocity_cmt__AttributeSelectedValues__c = '{"ATT_INVOICE_SHIPMENT_ID":null,"ATT_NBA_ID_CFS":null,"ATT_DDOS_Mitigation_Bandwidth_CFS":"20 Mbps","ATT_RELOG_REASON":null,"ATT_RFS_Date":null,"ATT_DDOS_TYPE":"ADVANCE_ARBOR","ATT_CROSS_CONNECT_REQD":"No","ATT_DDOS_REQUIRED":"ADVANCE_ARBOR","ATT_IP_REQUIRED":"IPv4","ATT_UPTIME_SLA":"99%","ATT_CPE":null,"ATT_SERVICE_TYPE":"Unmanaged","ATT_REDUNDANCY":"No","ATT_BGP_PREFIX_LIMIT_BGPHYD":null,"ATT_OFFNET_CAPEX":null,"ATT_LAST_MILE":"Single Last Mile","ATT_POP":"Single POP","ATT_INTERFACE":null,"ATT_MEDIA":"Copper","ATT_MTU_SIZE":"1472","ATT_ENTERPRISE_CONNECTIVITY_TYPE":"Primary","ATT_ROUTING_TYPE":"None","ATT_PORT_BANDWIDTH":null,"ATT_ACCESS_BANDWIDTH":"2 Mbps","ATT_CONTRACT_TERM":"12 Months"}';
-                quoteLine.vlocity_cmt__OneTimeCharge__c = 999999;
-                quoteLine.Annual_Recurring_Charge__c = 666666;
-                mapQLIs.put('0QL7200000087qqGAA' , quoteLine);
-            }
-            
-            for(Bulk_Cart_Update_Notification__e platformEventRec : platformEventRecords){
+            if(platformEventRecords[0].SobjectType__c == 'Quote' ){
+                Map<String,Object> LSITruePayload = New Map<String,Object>();
+                Map<String, Object> POAdjustmentOutput = new Map<String, Object>();
+                List<String> quoteStatus = new List<String>{'Draft','Negotiation','Feasibility in Progress','Feasibility Completed','DOA Approval in Progress','DOA Approved','DOA Rejected','Proposal Sent'};
+                    List<Object> removeObjectList = new List<Object>();
+                String currentStatus = '';
+                Map<ID, QuoteLineItem> mapQLIs = 
+                    new Map<ID, QuoteLineItem>([SELECT Product2.Name ,Quote.Status, Product2.ProductCode, Product2Id, PricebookEntryId, vlocity_cmt__RootItemId__c,vlocity_cmt__ParentItemId__c,vlocity_cmt__AssetReferenceId__c, 
+                                                vlocity_cmt__LineNumber__c,Quantity,  vlocity_cmt__ProductHierarchyPath__c,  
+                                                vlocity_cmt__RecurringCharge__c,vlocity_cmt__RecurringCostTotal__c,  
+                                                Annual_Recurring_Charge__c,vlocity_cmt__OneTimeCharge__c,vlocity_cmt__OneTimeTotal__c,
+                                                vlocity_cmt__AttributeSelectedValues__c,vlocity_cmt__Action__c ,Product2.ARTL_LSIRequired__c
+                                                FROM QuoteLineItem  
+                                                WHERE Quote.RecordType.DeveloperName= 'EnterpriseQuote'  
+                                                AND QuoteId =: platformEventRecords[0].Cart_Id__c ]);
                 
-                Map<String,Object> payload = (Map<String,Object>) JSON.deserializeUntyped(platformEventRec.Request_JSON_Payload__c);
-                Map<String, Object> ipInput = new Map<String, Object>();
-                Map<String, Object> ipOutput = new Map<String, Object>();
-                Map<String, Object> ipOptions = new Map<String, Object>();
-                List<Object> ipAdditionChildProducts = new List<Object>();
-                //ipOptions.put('isDebug',false);
-                ipOptions.put('queueableChainable',true);
-                ipOptions.put('useQueueableApexRemoting',true);
-                List<Map<String, Object>> adjustmentList = new List<Map<String, Object>>();
-                //ipInput.put('lineItems', payload);
-                String ddosType;
-                List<ARTL_Bulk_Iteration_Log__c> bulkIterationLogList = new List<ARTL_Bulk_Iteration_Log__c>();
-                ipInput.put('payload', payload);
-                ipInput.put('cartId', platformEventRec.Cart_Id__c);
-                ipInput.put('SobjectType', platformEventRec.SobjectType__c);
-                List<Object> UpdatedLineItremList = New List<Object>();
-                UpdatedLineItremList = (List<Object>)payload.get('lineItems');
-                String iterationId =  platformEventRec.Iteration_Id__c;
-                for(Object obj : UpdatedLineItremList){
-                    System.debug('obj ###  '+obj);
-                    //Map<String, Object> ipAdjustmentOption = new Map<String, Object>();
-                    //Map<String, Object> ipAdjustmentOutput = new Map<String, Object>();
-                    Map<String,Object> updatedLineItemJson = (Map<String,Object>)obj;
-                    if(updatedLineItemJson.get('Id')!=null){
-                        String ItemId = String.valueOf(updatedLineItemJson.get('Id'));
-                        QuoteLineItem QLI = mapQLIs.get(ItemId);
-                        currentStatus = QLI.Quote.Status;
-                        //Upadting the selected attributes
-                        System.debug('QLI ###  '+QLI);
-                        String attributes ;
-                        Map<String,object> objMap = new Map<String,object>();
-                        objMap  = (Map<String,object>)obj;
-                        Map<String, Object> inputProductValue = new Map<String, Object>();
-                        inputProductValue = (Map<String, Object>)objMap.get('product');
+                IF(Test.isRunningTest()){
+                    QuoteLineItem quoteLine = new QuoteLineItem();
+                    quoteLine.Id = '0QL7200000087qqGAA';
+                    quoteLine.vlocity_cmt__AttributeSelectedValues__c = '{"ATT_INVOICE_SHIPMENT_ID":null,"ATT_NBA_ID_CFS":null,"ATT_DDOS_Mitigation_Bandwidth_CFS":"20 Mbps","ATT_RELOG_REASON":null,"ATT_RFS_Date":null,"ATT_DDOS_TYPE":"ADVANCE_ARBOR","ATT_CROSS_CONNECT_REQD":"No","ATT_DDOS_REQUIRED":"ADVANCE_ARBOR","ATT_IP_REQUIRED":"IPv4","ATT_UPTIME_SLA":"99%","ATT_CPE":null,"ATT_SERVICE_TYPE":"Unmanaged","ATT_REDUNDANCY":"No","ATT_BGP_PREFIX_LIMIT_BGPHYD":null,"ATT_OFFNET_CAPEX":null,"ATT_LAST_MILE":"Single Last Mile","ATT_POP":"Single POP","ATT_INTERFACE":null,"ATT_MEDIA":"Copper","ATT_MTU_SIZE":"1472","ATT_ENTERPRISE_CONNECTIVITY_TYPE":"Primary","ATT_ROUTING_TYPE":"None","ATT_PORT_BANDWIDTH":null,"ATT_ACCESS_BANDWIDTH":"2 Mbps","ATT_CONTRACT_TERM":"12 Months"}';
+                    quoteLine.vlocity_cmt__OneTimeCharge__c = 999999;
+                    quoteLine.Annual_Recurring_Charge__c = 666666;
+                    mapQLIs.put('0QL7200000087qqGAA' , quoteLine);
+                }
+                
+                for(Bulk_Cart_Update_Notification__e platformEventRec : platformEventRecords){
+                    Map<String,Object> payload = (Map<String,Object>) JSON.deserializeUntyped(platformEventRec.Request_JSON_Payload__c);
+                    //START: Ishita:: Order Type = 'Shifting'
+                    String orderType 	= platformEventRec.Order_Type__c ;
+                    String cartId 	 	= platformEventRec.Cart_Id__c;
+                    String iterationId 	= platformEventRec.Iteration_Id__c;
+                    String sObjectType  = platformEventRec.SobjectType__c;
+                    if(sObjectType == 'Quote' && orderType == 'Shifting'){
+                        Map<String,Object> jsonMap = new Map<String,Object>{'cartId'=>cartId ,'lineItems' => new List<Object>{(List<Object>)payload.get('lineItems')},'mapQLIs'=>mapQLIs,'iterationId'=>iterationId};
+                        ARTL_MACDLocationUpdateController.transformShiftingOrderTypeJSON(JSON.serialize(jsonMap));
                         
-                        System.debug('attributes ###  '+attributes);
-                        
-                        ARTL_Bulk_Iteration_Log__c bulkIterationLog = new ARTL_Bulk_Iteration_Log__c();
-                        bulkIterationLog.ARTL_Bulk_Iteration__c = platformEventRec.Iteration_Id__c;
-                        bulkIterationLog.Product__c = String.valueOf(inputProductValue.get('Name'));
-                        bulkIterationLog.Quote_Line_Item__c = QLI.id;
-                        bulkIterationLog.Status__c = 'In Progress';
-                        bulkIterationLog.LSI__c = String.valueOf(QLI.Product2.ARTL_LSIRequired__c);
-                        bulkIterationLog.Asset_Reference_Id__c = QLI.vlocity_cmt__AssetReferenceId__c;
-                        bulkIterationLogList.add(bulkIterationLog);
-                        
-                        if(platformEventRec.SobjectType__c == 'Quote'){
-                            Map<String,Object> PriceMap = (Map<String,Object>)updatedLineItemJson.get('price');
-                            IF(PriceMap.containsKey('Annual_Recurring_Charge__c')){
-                                if(PriceMap.get('Annual_Recurring_Charge__c') != QLI.Annual_Recurring_Charge__c){
-                                    Map<String, Object> ipAdjustmentInput = new Map<String, Object>();
-                                    String annualPrice = string.valueOf(PriceMap.get('Annual_Recurring_Charge__c'));
-                                    Decimal annualChangePrice = Decimal.valueOf(annualPrice);
-                                    ipAdjustmentInput.put('id',ItemId);
-                                    ipAdjustmentInput.put('cartId',platformEventRec.Cart_Id__c);
-                                    ipAdjustmentInput.put('PricingVariableCode','REC_YRLY_STD_PRC');
-                                    ipAdjustmentInput.put('AdjustmentValue',annualChangePrice);
-                                    ipAdjustmentInput.put('Field','Annual_Recurring_Charge__c');
-                                    adjustmentList.add(ipAdjustmentInput);
-                                    string inputString = JSON.serialize(ipAdjustmentInput);
-                                }
+                        List<ARTL_Bulk_Iteration__c> bulkIterationGetUser = [select id,CreatedById from ARTL_Bulk_Iteration__c where Id =: iterationId];
+                        List<ARTL_BulkCartUpdate__c> BulkCartUpdateRecordvAR = new List<ARTL_BulkCartUpdate__c>();
+                        BulkCartUpdateRecordvAR = [select id,Status__c from ARTL_BulkCartUpdate__c where (Status__c = 'Received' AND Cart_Id__c=:cartId and Sobject_Type__c='Quote')];
+                        System.debug('BulkCartUpdateRecordvAR '+BulkCartUpdateRecordvAR);
+                        if(!BulkCartUpdateRecordvAR.isEmpty()){
+                            System.debug('size if '+BulkCartUpdateRecordvAR.size());
+                            BulkCartUpdateRecordvAR[0].Status__c = 'Processed';
+                            update BulkCartUpdateRecordvAR[0];
+                        }else if(BulkCartUpdateRecordvAR.size()==0){
+                            Quote quoteRecord = [select id , name from quote where id =: cartId limit 1];
+                            System.debug('size else '+BulkCartUpdateRecordvAR.size());
+                            string baseUrl = System.URL.getOrgDomainUrl().toExternalForm();
+                            Id typeId = [SELECT Id,CustomNotifTypeName  FROM CUstomNotificationType WHERE CustomNotifTypeName = 'ARTL_BulkQuoteUploadNotification'].Id;
+                            Id reportId = Test.isRunningTest() ? null : [SELECT Id FROM Report WHERE DeveloperName = 'ARTL_Bulk_Quote_Upload_Reports'].Id;
+                            System.debug('typeId else '+typeId);
+                            System.debug('reportId else '+reportId);
+                            System.debug('iterationId else '+iterationId);
+                            string url = baseUrl + '/lightning/r/Report/' + reportId + '/view?fv0=' + iterationId;
+                            System.debug('url else '+url);
+                            Messaging.CustomNotification notification = new Messaging.CustomNotification();
+                            notification.setBody('Bulk Processing for '+quoteRecord.name+'  has been completed. Please click here for more details');
+                            notification.setTitle('Update Completed');
+                            if(bulkIterationGetUser.size()>0){
+                                Id userId = bulkIterationGetUser[0].CreatedById;
+                                notification.setSenderId(userId);
+                            }else{
+                                notification.setSenderId(Userinfo.getUserId());
                             }
-                            IF(PriceMap.containsKey('vlocity_cmt__OneTimeCharge__c')){
-                                if(PriceMap.get('vlocity_cmt__OneTimeCharge__c') != QLI.vlocity_cmt__OneTimeCharge__c){
-                                    Map<String, Object> ipAdjustmentInput = new Map<String, Object>();
-                                    String oneTimePrice = string.valueOf(PriceMap.get('vlocity_cmt__OneTimeCharge__c'));
-                                    Decimal oneTimeChangePrice = Decimal.valueOf(oneTimePrice);
-                                    ipAdjustmentInput.put('id',ItemId);
-                                    ipAdjustmentInput.put('cartId',platformEventRec.Cart_Id__c);
-                                    ipAdjustmentInput.put('PricingVariableCode','OT_STD_PRC');
-                                    ipAdjustmentInput.put('AdjustmentValue',oneTimeChangePrice);
-                                    ipAdjustmentInput.put('Field','vlocity_cmt__OneTimeCharge__c');
-                                    adjustmentList.add(ipAdjustmentInput);
-                                    string inputString = JSON.serialize(ipAdjustmentInput);
-                                }
-                            }
+                            notification.setNotificationTypeId(typeId);
+                            String pgRef = '{type: "standard__webPage",attributes: {url: "' + url + '"}}';
+                            notification.setTargetPageRef(pgRef);
+                            System.debug('notification else '+notification);
+                            System.debug('pgRef else '+pgRef);
                             
-                        }    
-                        
-                        
-                        if(QLI.vlocity_cmt__AttributeSelectedValues__c != null){
-                            attributes =  String.valueOf(QLI.vlocity_cmt__AttributeSelectedValues__c);
-                            Map<String, Object> attributeValue = (Map<String,Object>) JSON.deserializeUntyped(attributes);
-                            Map<String, Object> inputattributeValue = new Map<String, Object>();
-                            
-                            if(objMap.containsKey('vlocity_cmt__AttributeSelectedValues__c')){
+                            if(bulkIterationGetUser.size()>0){
+                                Id userId = bulkIterationGetUser[0].CreatedById;
+                                System.debug('userId else '+userId);
+                                notification.send(new Set<String> { userId });
+                            }else{
+                                System.debug('Userinfo.getUserId() else '+Userinfo.getUserId());
+                                notification.send(new Set<String> { Userinfo.getUserId() });
+                            } 
+                        }
+                    } 
+                    //END: Ishita
+                    else{
+                        Map<String, Object> ipInput = new Map<String, Object>();
+                        Map<String, Object> ipOutput = new Map<String, Object>();
+                        Map<String, Object> ipOptions = new Map<String, Object>();
+                        List<Object> ipAdditionChildProducts = new List<Object>();
+                        //ipOptions.put('isDebug',false);
+                        ipOptions.put('queueableChainable',true);
+                        ipOptions.put('useQueueableApexRemoting',true);
+                        List<Map<String, Object>> adjustmentList = new List<Map<String, Object>>();
+                        //ipInput.put('lineItems', payload);
+                        String ddosType;
+                        List<ARTL_Bulk_Iteration_Log__c> bulkIterationLogList = new List<ARTL_Bulk_Iteration_Log__c>();
+                        ipInput.put('payload', payload);
+                        ipInput.put('cartId', platformEventRec.Cart_Id__c);
+                        ipInput.put('SobjectType', platformEventRec.SobjectType__c);
+                        List<Object> UpdatedLineItremList = New List<Object>();
+                        UpdatedLineItremList = (List<Object>)payload.get('lineItems');
+                        //String iterationId =  platformEventRec.Iteration_Id__c; commented by Ishita as it is initialised at top
+                        for(Object obj : UpdatedLineItremList){
+                            System.debug('obj ###  '+obj);
+                            //Map<String, Object> ipAdjustmentOption = new Map<String, Object>();
+                            //Map<String, Object> ipAdjustmentOutput = new Map<String, Object>();
+                            Map<String,Object> updatedLineItemJson = (Map<String,Object>)obj;
+                            if(updatedLineItemJson.get('Id')!=null){
+                                String ItemId = String.valueOf(updatedLineItemJson.get('Id'));
+                                QuoteLineItem QLI = mapQLIs.get(ItemId);
+                                currentStatus = QLI.Quote.Status;
+                                //Upadting the selected attributes
+                                System.debug('QLI ###  '+QLI);
+                                String attributes ;
+                                Map<String,object> objMap = new Map<String,object>();
+                                objMap  = (Map<String,object>)obj;
+                                Map<String, Object> inputProductValue = new Map<String, Object>();
+                                inputProductValue = (Map<String, Object>)objMap.get('product');
                                 
-                                inputattributeValue = (Map<String, Object>)objMap.get('vlocity_cmt__AttributeSelectedValues__c');
-                                if(inputattributeValue.keySet().size()>0 || inputattributeValue != null){
-                                    for(String key:inputattributeValue.keySet()){
-                                        if(attributeValue.containsKey(key))
-                                        {
-                                            attributeValue.put(key,inputattributeValue.get(key));
-                                        }      
-                                        if(String.valueOf(inputProductValue.get('Name')) == 'Primary Link'){
-                                            system.debug('Inside Primary Link attributeValue    '+attributeValue);
-                                        } 
+                                System.debug('attributes ###  '+attributes);
+                                
+                                ARTL_Bulk_Iteration_Log__c bulkIterationLog = new ARTL_Bulk_Iteration_Log__c();
+                                bulkIterationLog.ARTL_Bulk_Iteration__c = platformEventRec.Iteration_Id__c;
+                                bulkIterationLog.Product__c = String.valueOf(inputProductValue.get('Name'));
+                                bulkIterationLog.Quote_Line_Item__c = QLI.id;
+                                bulkIterationLog.Status__c = 'In Progress';
+                                bulkIterationLog.LSI__c = String.valueOf(QLI.Product2.ARTL_LSIRequired__c);
+                                bulkIterationLog.Asset_Reference_Id__c = QLI.vlocity_cmt__AssetReferenceId__c;
+                                bulkIterationLogList.add(bulkIterationLog);
+                                
+                                if(platformEventRec.SobjectType__c == 'Quote'){
+                                    Map<String,Object> PriceMap = (Map<String,Object>)updatedLineItemJson.get('price');
+                                    IF(PriceMap.containsKey('Annual_Recurring_Charge__c')){
+                                        if(PriceMap.get('Annual_Recurring_Charge__c') != QLI.Annual_Recurring_Charge__c){
+                                            Map<String, Object> ipAdjustmentInput = new Map<String, Object>();
+                                            String annualPrice = string.valueOf(PriceMap.get('Annual_Recurring_Charge__c'));
+                                            Decimal annualChangePrice = Decimal.valueOf(annualPrice);
+                                            ipAdjustmentInput.put('id',ItemId);
+                                            ipAdjustmentInput.put('cartId',platformEventRec.Cart_Id__c);
+                                            ipAdjustmentInput.put('PricingVariableCode','REC_YRLY_STD_PRC');
+                                            ipAdjustmentInput.put('AdjustmentValue',annualChangePrice);
+                                            ipAdjustmentInput.put('Field','Annual_Recurring_Charge__c');
+                                            adjustmentList.add(ipAdjustmentInput);
+                                            string inputString = JSON.serialize(ipAdjustmentInput);
+                                        }
+                                    }
+                                    IF(PriceMap.containsKey('vlocity_cmt__OneTimeCharge__c')){
+                                        if(PriceMap.get('vlocity_cmt__OneTimeCharge__c') != QLI.vlocity_cmt__OneTimeCharge__c){
+                                            Map<String, Object> ipAdjustmentInput = new Map<String, Object>();
+                                            String oneTimePrice = string.valueOf(PriceMap.get('vlocity_cmt__OneTimeCharge__c'));
+                                            Decimal oneTimeChangePrice = Decimal.valueOf(oneTimePrice);
+                                            ipAdjustmentInput.put('id',ItemId);
+                                            ipAdjustmentInput.put('cartId',platformEventRec.Cart_Id__c);
+                                            ipAdjustmentInput.put('PricingVariableCode','OT_STD_PRC');
+                                            ipAdjustmentInput.put('AdjustmentValue',oneTimeChangePrice);
+                                            ipAdjustmentInput.put('Field','vlocity_cmt__OneTimeCharge__c');
+                                            adjustmentList.add(ipAdjustmentInput);
+                                            string inputString = JSON.serialize(ipAdjustmentInput);
+                                        }
+                                    } 
+                                }    
+                                
+                                if(QLI.vlocity_cmt__AttributeSelectedValues__c != null){
+                                    attributes =  String.valueOf(QLI.vlocity_cmt__AttributeSelectedValues__c);
+                                    Map<String, Object> attributeValue = (Map<String,Object>) JSON.deserializeUntyped(attributes);
+                                    Map<String, Object> inputattributeValue = new Map<String, Object>();
+                                    
+                                    if(objMap.containsKey('vlocity_cmt__AttributeSelectedValues__c')){
+                                        
+                                        inputattributeValue = (Map<String, Object>)objMap.get('vlocity_cmt__AttributeSelectedValues__c');
+                                        if(inputattributeValue.keySet().size()>0 || inputattributeValue != null){
+                                            for(String key:inputattributeValue.keySet()){
+                                                if(attributeValue.containsKey(key))
+                                                {
+                                                    attributeValue.put(key,inputattributeValue.get(key));
+                                                }      
+                                                if(String.valueOf(inputProductValue.get('Name')) == 'Primary Link'){
+                                                    system.debug('Inside Primary Link attributeValue    '+attributeValue);
+                                                } 
+                                            } 
+                                        }else{
+                                            objMap.put('vlocity_cmt__AttributeSelectedValues__c',null );
+                                            obj = (Object)objMap;
+                                        }
+                                        objMap.put('vlocity_cmt__AttributeSelectedValues__c',attributeValue );
+                                        obj = (Object)objMap;
+                                    }else{
+                                        attributeValue =(Map<String,Object>) JSON.deserializeUntyped(attributes);
                                     }
                                     
-                                }else{
+                                }else if(QLI.vlocity_cmt__AttributeSelectedValues__c == null){
                                     objMap.put('vlocity_cmt__AttributeSelectedValues__c',null );
                                     obj = (Object)objMap;
                                 }
-                                objMap.put('vlocity_cmt__AttributeSelectedValues__c',attributeValue );
-                                obj = (Object)objMap;
-                            }else{
-                                attributeValue =(Map<String,Object>) JSON.deserializeUntyped(attributes);
+                                
+                                ipInput.put('adjustmentsList', adjustmentList);
+                                
+                            }ELSE IF(updatedLineItemJson.get('Id')==null && String.valueOf(updatedLineItemJson.get('vlocity_cmt__Action__c')) == 'Add'){
+                                if(platformEventRec.SobjectType__c == 'Quote'){
+                                    Integer objIndex =UpdatedLineItremList.indexOf(obj);
+                                    //removeObjectList.add(obj);
+                                    Map<String,object> objMap = new Map<String,object>();
+                                    objMap  = (Map<String,object>)obj;
+                                    Map<String, Object> inputattributeValue = new Map<String, Object>();
+                                    Map<String, Object> inputProductValue = new Map<String, Object>();
+                                    if(objMap.containsKey('vlocity_cmt__AttributeSelectedValues__c') && objMap.get('vlocity_cmt__AttributeSelectedValues__c') != null){
+                                        inputattributeValue = (Map<String, Object>)objMap.get('vlocity_cmt__AttributeSelectedValues__c');
+                                        inputProductValue = (Map<String, Object>)objMap.get('product');
+                                        
+                                        //generic code for all child product
+                                        Map<String, Object> ipadditionalChildProduct = new Map<String, Object>();
+                                        ipadditionalChildProduct.put('ProductName' , inputProductValue.get('Name'));
+                                        ipadditionalChildProduct.put('ProductAction' , objMap.get('vlocity_cmt__Action__c'));
+                                        ipadditionalChildProduct.put('ProductAttribute' ,objMap.get('vlocity_cmt__AttributeSelectedValues__c'));
+                                        ipadditionalChildProduct.put('price' ,objMap.get('price'));
+                                        
+                                        ipAdditionChildProducts.add(ipadditionalChildProduct);
+                                    }
+                                    removeObjectList.add(obj);  
+                                }
+                            }
+                            else{
+                                Integer objIndex =UpdatedLineItremList.indexOf(obj);
+                                removeObjectList.add(obj); 
                             }
                             
-                        }else if(QLI.vlocity_cmt__AttributeSelectedValues__c == null){
-                            objMap.put('vlocity_cmt__AttributeSelectedValues__c',null );
-                            obj = (Object)objMap;
-                        }
-                        
-                        ipInput.put('adjustmentsList', adjustmentList);
-                        
-                    }ELSE IF(updatedLineItemJson.get('Id')==null && String.valueOf(updatedLineItemJson.get('vlocity_cmt__Action__c')) == 'Add'){
-                        if(platformEventRec.SobjectType__c == 'Quote'){
-                            Integer objIndex =UpdatedLineItremList.indexOf(obj);
-                            //removeObjectList.add(obj);
-                            Map<String,object> objMap = new Map<String,object>();
-                            objMap  = (Map<String,object>)obj;
-                            Map<String, Object> inputattributeValue = new Map<String, Object>();
-                            Map<String, Object> inputProductValue = new Map<String, Object>();
-                            if(objMap.containsKey('vlocity_cmt__AttributeSelectedValues__c') && objMap.get('vlocity_cmt__AttributeSelectedValues__c') != null){
-                                inputattributeValue = (Map<String, Object>)objMap.get('vlocity_cmt__AttributeSelectedValues__c');
-                                inputProductValue = (Map<String, Object>)objMap.get('product');
-                                
-                                //generic code for all child product
-                                Map<String, Object> ipadditionalChildProduct = new Map<String, Object>();
-                                ipadditionalChildProduct.put('ProductName' , inputProductValue.get('Name'));
-                                ipadditionalChildProduct.put('ProductAction' , objMap.get('vlocity_cmt__Action__c'));
-                                ipadditionalChildProduct.put('ProductAttribute' ,objMap.get('vlocity_cmt__AttributeSelectedValues__c'));
-                                ipadditionalChildProduct.put('price' ,objMap.get('price'));
-                                
-                                ipAdditionChildProducts.add(ipadditionalChildProduct);
-                            }
-                            removeObjectList.add(obj); 
+                            Map<String,Object> updatedLineItemPOJson = (Map<String,Object>)obj;
                             
+                            Map<String,Object> PODataCheck = (Map<String,Object>)updatedLineItemPOJson.get('POData');
+                            Map<String,Object> DCpDataCheck = (Map<String,Object>)updatedLineItemPOJson.get('DCP');
+                            Map<String,Object> BCPDataCheck = (Map<String,Object>)updatedLineItemPOJson.get('BCP');
+                            Map<String,Object> BDDataCheck = (Map<String,Object>)updatedLineItemPOJson.get('BillingData');                       
+                            If(PODataCheck !=null){
+                                System.debug('inside if PO check');
+                                String PoId = String.valueOf(PODataCheck.get('POId'));
+                                String PoNumber = String.valueOf(PODataCheck.get('PONumber'));
+                                if(PoNumber != null && PoId != null){
+                                LSITruePayload = updatedLineItemPOJson.clone();
+                                LSITruePayload.put('ContextId',platformEventRec.Cart_Id__c);
+                                ipInput.put('LSITruePayload', LSITruePayload);
+                                System.debug('inside if PO check LSITruePayload');
+                                }
+                            }
+                            System.debug('ARTL_EventHandlerWrapperVIP LSITruePayload  '+LSITruePayload); 
                         }
-                    }
-                    else{
-                        Integer objIndex =UpdatedLineItremList.indexOf(obj);
-                        removeObjectList.add(obj); 
-                    }
-                    
-                    Map<String,Object> updatedLineItemPOJson = (Map<String,Object>)obj;
-                    
-                    Map<String,Object> PODataCheck = (Map<String,Object>)updatedLineItemPOJson.get('POData');
-                    Map<String,Object> DCpDataCheck = (Map<String,Object>)updatedLineItemPOJson.get('DCP');
-                    Map<String,Object> BCPDataCheck = (Map<String,Object>)updatedLineItemPOJson.get('BCP');
-                    Map<String,Object> BDDataCheck = (Map<String,Object>)updatedLineItemPOJson.get('BillingData');
-                    If(PODataCheck !=null){
-                        LSITruePayload = updatedLineItemPOJson.clone();
-                        LSITruePayload.put('ContextId',platformEventRec.Cart_Id__c);
-                        ipInput.put('LSITruePayload', LSITruePayload);
-                    }
-                    System.debug('ARTL_EventHandlerWrapperVIP LSITruePayload  '+LSITruePayload);
-                    
-                    
-                }
-                for(Object obj : removeObjectList){
-                    System.debug('ARTL_EventHandlerWrapperVIP removeObjectList UpdatedLineItremList  '+UpdatedLineItremList);
-                    Integer objIndex =UpdatedLineItremList.indexOf(obj);                    
-                    UpdatedLineItremList.remove(objIndex);
-                }
-                
-                Database.SaveResult[] saveResultList = Database.insert(bulkIterationLogList,false);
-                for (Database.SaveResult sr : saveResultList) {
-                    if (sr.isSuccess()) {
-                        // Operation was successful, so get the ID of the record that was processed
-                        System.debug('Successfully inserted bulkIterationLogList. bulkIterationLogList ID: ' + sr.getId());
-                    }
-                    else {
-                        // Operation failed, so get all errors                
-                        for(Database.Error err : sr.getErrors()) {
-                            System.debug('bulkIterationLogList &&  ' + err.getStatusCode() + ': ' + err.getMessage());
-                            System.debug('bulkIterationLogList fields that affected this error: ' + err.getFields());
+                        for(Object obj : removeObjectList){
+                            System.debug('ARTL_EventHandlerWrapperVIP removeObjectList UpdatedLineItremList  '+UpdatedLineItremList);
+                            Integer objIndex =UpdatedLineItremList.indexOf(obj);                    
+                            UpdatedLineItremList.remove(objIndex);
                         }
+                        
+                        Database.SaveResult[] saveResultList = Database.insert(bulkIterationLogList,false);
+                        for (Database.SaveResult sr : saveResultList) {
+                            if (sr.isSuccess()) {
+                                // Operation was successful, so get the ID of the record that was processed
+                                System.debug('Successfully inserted bulkIterationLogList. bulkIterationLogList ID: ' + sr.getId());
+                            }
+                            else {
+                                // Operation failed, so get all errors                
+                                for(Database.Error err : sr.getErrors()) {
+                                    System.debug('bulkIterationLogList &&  ' + err.getStatusCode() + ': ' + err.getMessage());
+                                    System.debug('bulkIterationLogList fields that affected this error: ' + err.getFields());
+                                }
+                            }
+                        }
+                        
+                        payload.put('lineItems' , UpdatedLineItremList);
+                        //ipInput.put('bulkIterationLogList' , bulkIterationLogList);
+                        ipInput.put('iterationId' , iterationId);
+                        ipInput.put('payload', payload);
+                        ipInput.put('ddosType', ddosType);
+                        ipInput.put('ipAdditionChildProducts', ipAdditionChildProducts);               
+                        string ipInputString = JSON.serialize(ipInput);               
+                        System.debug('ARTL_EventHandlerWrapperVIP ipInputString  '+ipInputString);
+                        System.debug('ARTL_EventHandlerWrapperVIP currentStatus  '+currentStatus);
+                        if(currentStatus != '' && !(String.isBlank(currentStatus)) && quoteStatus.contains(currentStatus)){
+                        if(LSITruePayload !=null && !Test.isRunningTest()){
+                                System.debug('POAdjustmentOutput input before inside If');
+                                POAdjustmentOutput = (Map<String, Object>) vlocity_cmt.IntegrationProcedureService.runIntegrationService('ARTL_CreateBillingStageEntriesBulk', LSITruePayload, null);
+                                System.debug('POAdjustmentOutput '+POAdjustmentOutput);
+                                String ErrorMessage = String.ValueOf(POAdjustmentOutput.get('success'));
+                                ARTL_Bulk_Iteration_Log__c IterationLog = New ARTL_Bulk_Iteration_Log__c();
+                                IterationLog.LSI__c = 'true';
+                                IterationLog.ARTL_Bulk_Iteration__c = iterationId;
+                                IterationLog.Asset_Reference_Id__c = iterationId;
+                                If(ErrorMessage =='false'){
+                                    IterationLog.Status__c = 'Failed'; 
+                                    IterationLog.ErrorMessage__c = 'Error Occured During PO ';
+                                    System.debug('Inside PO Error iteration  ');
+                                }
+                                else {
+                                    IterationLog.Status__c = 'Success';
+                                    System.debug('Inside PO success iteration  ');
+                            }
+                            
+                                Insert IterationLog;
+                            }
+                            System.debug('ARTL_EventHandlerWrapperVIP currentStatus true  ');
+                            ipOutput = (Map<String,Object>)vlocity_cmt.IntegrationProcedureService.runIntegrationService('ARTL_EventHandlerWrapperVIP', ipInput, ipOptions);
+                        }else{
+                            List<ARTL_Bulk_Iteration__c> bulkIterationGetUser = [select id,CreatedById from ARTL_Bulk_Iteration__c where Id =: iterationId];
+                            System.debug('ARTL_EventHandlerWrapperVIP currentStatus false  ');
+                            if(LSITruePayload !=null && !Test.isRunningTest()){
+                                System.debug('POAdjustmentOutput input before inside If');
+                                POAdjustmentOutput = (Map<String, Object>) vlocity_cmt.IntegrationProcedureService.runIntegrationService('ARTL_CreateBillingStageEntriesBulk', LSITruePayload, null);
+                                System.debug('POAdjustmentOutput in helper class'+POAdjustmentOutput);
+                                //update bulk cart
+                                String ErrorMessage = String.ValueOf(POAdjustmentOutput.get('success'));
+                                ARTL_Bulk_Iteration_Log__c IterationLog = New ARTL_Bulk_Iteration_Log__c();
+                                IterationLog.LSI__c = 'true';
+                                IterationLog.ARTL_Bulk_Iteration__c = iterationId;
+                                IterationLog.Asset_Reference_Id__c = iterationId;
+                                If(ErrorMessage =='false'){
+                                    IterationLog.Status__c = 'Failed'; 
+                                    IterationLog.ErrorMessage__c = 'Error Occured During PO ';
+                                    System.debug('Inside PO Error iteration  ');
+                                }
+                                else {
+                                    IterationLog.Status__c = 'Success';
+                                    System.debug('Inside PO success iteration  ');
+                            }
+                            
+                                Insert IterationLog;
+
+                                List<ARTL_BulkCartUpdate__c> BulkCartUpdateRecordvAR = [select id,Status__c from ARTL_BulkCartUpdate__c where (Status__c = 'Received' AND Cart_Id__c=:platformEventRecords[0].Cart_Id__c and Sobject_Type__c='Quote')];
+                                System.debug('BulkCartUpdateRecordvAR '+BulkCartUpdateRecordvAR);
+                                if(BulkCartUpdateRecordvAR.size()>0){
+                                    System.debug('size if '+BulkCartUpdateRecordvAR.size());
+                                    BulkCartUpdateRecordvAR[0].Status__c = 'Processed';
+                                    update BulkCartUpdateRecordvAR[0];
+                                }else if(BulkCartUpdateRecordvAR.size()==0){
+                                    Quote quoteRecord = [select id , name from quote where id =: platformEventRecords[0].Cart_Id__c limit 1];
+                                    System.debug('size else '+BulkCartUpdateRecordvAR.size());
+                                    string baseUrl = System.URL.getOrgDomainUrl().toExternalForm();
+                                    Id typeId = [SELECT Id,CustomNotifTypeName  FROM CUstomNotificationType WHERE CustomNotifTypeName = 'ARTL_BulkQuoteUploadNotification'].Id;
+                                    Id reportId = Test.isRunningTest() ? null : [SELECT Id FROM Report WHERE DeveloperName = 'ARTL_Bulk_Quote_Upload_Reports'].Id;
+                                    System.debug('typeId else '+typeId);
+                                    System.debug('reportId else '+reportId);
+                                    System.debug('iterationId else '+iterationId);
+                                    string url = baseUrl + '/lightning/r/Report/' + reportId + '/view?fv0=' + iterationId;
+                                    System.debug('url else '+url);
+                                    Messaging.CustomNotification notification = new Messaging.CustomNotification();
+                                    notification.setBody('Bulk Processing for '+quoteRecord.name+' : '+quoteRecord.id+'  has been completed. Please click here for more details');
+                                    notification.setTitle('Update Completed');
+                                    if(bulkIterationGetUser.size()>0){
+                                        Id userId = bulkIterationGetUser[0].CreatedById;
+                                        notification.setSenderId(userId);
+                                    }else{
+                                        notification.setSenderId(Userinfo.getUserId());
+                                    }
+                                    notification.setNotificationTypeId(typeId );
+                                    String pgRef = '{type: "standard__webPage",attributes: {url: "' + url + '"}}';
+                                    notification.setTargetPageRef(pgRef);
+                                    System.debug('notification else '+notification);
+                                    System.debug('pgRef else '+pgRef);
+                                    
+                                    if(bulkIterationGetUser.size()>0){
+                                        Id userId = bulkIterationGetUser[0].CreatedById;
+                                        System.debug('userId else '+userId);
+                                        notification.send(new Set<String> { userId });
+                                    }else{
+                                        System.debug('Userinfo.getUserId() else '+Userinfo.getUserId());
+                                        notification.send(new Set<String> { Userinfo.getUserId() });
+                                    } 
+
+                                    Bulk_Cart_Update_Notification__e stagingPlatformEvent = new Bulk_Cart_Update_Notification__e();
+                                    stagingPlatformEvent.Cart_Id__c = quoteRecord.id;
+                                    stagingPlatformEvent.SobjectType__c = 'ARTL_Billing_Staging__c';
+                                    // Call method to publish events
+                                    EventBus.publish(stagingPlatformEvent);
+
+
+                                }
+                            }
+                        }
+                        string ipOutputString = JSON.serialize(ipOutput);                
+                        System.debug('ARTL_EventHandlerWrapperVIP ipOutputString  '+ipOutputString);
                     }
                 }
-                
-                payload.put('lineItems' , UpdatedLineItremList);
-                //ipInput.put('bulkIterationLogList' , bulkIterationLogList);
-                ipInput.put('iterationId' , iterationId);
-                ipInput.put('payload', payload);
-                ipInput.put('ddosType', ddosType);
-                ipInput.put('ipAdditionChildProducts', ipAdditionChildProducts);               
-                string ipInputString = JSON.serialize(ipInput);               
-                System.debug('ARTL_EventHandlerWrapperVIP ipInputString  '+ipInputString);
-                System.debug('ARTL_EventHandlerWrapperVIP currentStatus  '+currentStatus);
-                if(currentStatus != '' && !(String.isBlank(currentStatus)) && quoteStatus.contains(currentStatus)){
-                    System.debug('ARTL_EventHandlerWrapperVIP currentStatus true  ');
-                    ipOutput = (Map<String,Object>)vlocity_cmt.IntegrationProcedureService.runIntegrationService('ARTL_EventHandlerWrapperVIP', ipInput, ipOptions);
-                }else{
-                    List<ARTL_Bulk_Iteration__c> bulkIterationGetUser = [select id,CreatedById from ARTL_Bulk_Iteration__c where Id =: iterationId];
-                    System.debug('ARTL_EventHandlerWrapperVIP currentStatus false  ');
-                    if(LSITruePayload !=null && !Test.isRunningTest()){
-                        System.debug('POAdjustmentOutput input before inside If');
-                        POAdjustmentOutput = (Map<String, Object>) vlocity_cmt.IntegrationProcedureService.runIntegrationService('ARTL_CreateBillingStageEntriesBulk', LSITruePayload, null);
-                        System.debug('POAdjustmentOutput in helper class'+POAdjustmentOutput);
-                        //update bulk cart
-                         List<ARTL_BulkCartUpdate__c> BulkCartUpdateRecordvAR = [select id,Status__c from ARTL_BulkCartUpdate__c where (Status__c = 'Received' AND Cart_Id__c=:platformEventRecords[0].Cart_Id__c and Sobject_Type__c='Quote')];
-            System.debug('BulkCartUpdateRecordvAR '+BulkCartUpdateRecordvAR);
-            if(BulkCartUpdateRecordvAR.size()>0){
-                System.debug('size if '+BulkCartUpdateRecordvAR.size());
-                BulkCartUpdateRecordvAR[0].Status__c = 'Processed';
-                update BulkCartUpdateRecordvAR[0];
-            }else if(BulkCartUpdateRecordvAR.size()==0){
-                Quote quoteRecord = [select id , name from quote where id =: platformEventRecords[0].Cart_Id__c limit 1];
-                System.debug('size else '+BulkCartUpdateRecordvAR.size());
-                string baseUrl = System.URL.getOrgDomainUrl().toExternalForm();
-                Id typeId = [SELECT Id,CustomNotifTypeName  FROM CUstomNotificationType WHERE CustomNotifTypeName = 'ARTL_BulkQuoteUploadNotification'].Id;
-                Id reportId = Test.isRunningTest() ? null : [SELECT Id FROM Report WHERE DeveloperName = 'ARTL_Bulk_Quote_Upload_Reports'].Id;
-                System.debug('typeId else '+typeId);
-                System.debug('reportId else '+reportId);
-                System.debug('iterationId else '+iterationId);
-                string url = baseUrl + '/lightning/r/Report/' + reportId + '/view?fv0=' + iterationId;
-                System.debug('url else '+url);
-                Messaging.CustomNotification notification = new Messaging.CustomNotification();
-                notification.setBody('Bulk Processing for '+quoteRecord.name+'  has been completed. Please click here for more details');
-                notification.setTitle('Update Completed');
-                if(bulkIterationGetUser.size()>0){
-                    Id userId = bulkIterationGetUser[0].CreatedById;
-                    notification.setSenderId(userId);
-                }else{
-                    notification.setSenderId(Userinfo.getUserId());
-                }
-                notification.setNotificationTypeId(typeId );
-                String pgRef = '{type: "standard__webPage",attributes: {url: "' + url + '"}}';
-                notification.setTargetPageRef(pgRef);
-                System.debug('notification else '+notification);
-                System.debug('pgRef else '+pgRef);
-                
-                if(bulkIterationGetUser.size()>0){
-                    Id userId = bulkIterationGetUser[0].CreatedById;
-                    System.debug('userId else '+userId);
-                    notification.send(new Set<String> { userId });
-                    
-                }else{
-                    System.debug('Userinfo.getUserId() else '+Userinfo.getUserId());
-                    notification.send(new Set<String> { Userinfo.getUserId() });
-                }
-                
-            }
+            }else if(platformEventRecords[0].SobjectType__c == 'ARTL_Billing_Staging__c'){
+                System.debug('platformEventRecords[0].SobjectType__c  ARTL_Billing_Staging__c '+platformEventRecords[0].SobjectType__c);
+                Map<string , string> stagingMap = new Map<String , string>();
+                List<QuoteLineItem> qliList = [select id,ARTL_BIllingStageId__c from QuoteLineItem where quoteId =: platformEventRecords[0].Cart_Id__c and ARTL_BIllingStageId__c != null and Product2.ARTL_LSIRequired__c = true];
+                System.debug('qliList  ARTL_Billing_Staging__c '+qliList);
+                for(QuoteLineItem qliRec : qliList){
+                    stagingMap.put(qliRec.ARTL_BIllingStageId__c , qliRec.id); 
+                } 
+                System.debug('stagingMap  ARTL_Billing_Staging__c '+stagingMap);
+                List<ARTL_Billing_Staging__c> billingStagingList = [select id,Quote_Line_Item__c from ARTL_Billing_Staging__c where id IN: stagingMap.keySet()];
+                System.debug('billingStagingList  ARTL_Billing_Staging__c '+billingStagingList);
+                if(billingStagingList.size()>0){
+                    for(ARTL_Billing_Staging__c billingStagingRec : billingStagingList){
+                        billingStagingRec.Quote_Line_Item__c = stagingMap.get(billingStagingRec.id);
                     }
+                    System.debug('billingStagingList  ARTL_Billing_Staging__c  second'+billingStagingList);
+
+                    Database.update(billingStagingList);
                 }
-                string ipOutputString = JSON.serialize(ipOutput);                
-                System.debug('ARTL_EventHandlerWrapperVIP ipOutputString  '+ipOutputString);
             }
         }catch (Exception e) {
             System.debug('error msg### ' + e.getMessage());
@@ -315,9 +432,7 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
         //call queuable future - 
         //create a working cart CloneEQLIsToWCPriceCopyEQLIs, reprice =true and validate = true
         //write back to EQ.
-        
     }
-    
     
     public static void callIPBatch( Map < String, Object > inputMap, Map < String, Object > outMap, Map < String, Object > options){
         try{
@@ -331,9 +446,6 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
         }catch (Exception e) {
             System.debug('error msg### ' + e.getMessage());        }
     }
-    
-    
-    
     
     public static void updateChildProductAtrributes( Map < String, Object > inputMap, Map < String, Object > outMap, Map < String, Object > options){
         try{
@@ -442,7 +554,6 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
         }catch (Exception e) {
             System.debug('error msg### ' + e.getMessage()); 
             System.debug('error msg### getStackTraceString ' + e.getStackTraceString());        
-            
             System.debug('error msg### getLineNumber ' + e.getLineNumber());        
         }
     }
@@ -471,7 +582,6 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
                         bulkIteration.Status__c = 'Failed';
                         bulkIterationLogUpdate.add(bulkIteration);
                     }
-                    
                 }
             }
             if(ESMReturnResponse == 'fail'){
@@ -486,12 +596,9 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
                 System.debug('bulkIterationLogUpdate size  %%%'+bulkIterationLogUpdate.size());
                 Database.update(bulkIterationLogUpdate,false);
             }
-            
-            
         }catch (Exception e) {
             System.debug('error msg### ' + e.getMessage()); 
             System.debug('error msg### getStackTraceString ' + e.getStackTraceString());        
-            
             System.debug('error msg### getLineNumber ' + e.getLineNumber());             
         }
     }
