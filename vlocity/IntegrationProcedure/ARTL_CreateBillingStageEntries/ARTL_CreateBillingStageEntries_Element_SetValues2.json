@@ -21,7 +21,7 @@
             "bState": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPAddress-Block:State%,%PODetailsStep:BCPDetails:BCPState%)",
             "bStdReason": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPStandardReasonEdit%,%PODetailsStep:BCPDetails:BCPStandardReason%)",
             "bStreet": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:BCPAddress-Block:Street%,%PODetailsStep:BCPDetails:BCPStreet%)",
-            "bcpId": "=IF(%PODetailsStep:BCPCreateFlag%,%ContactPremiseRelation__c_3|1:Id%,%PODetailsStep:BillingContactPerson-Block:BCPId%)",
+            "bcpId": "=IF(%PODetailsStep:BCPCreateFlag%,%ContactPremiseRelation__c_3|1:Id%,%PODetailsStep:BillingContactPersonBlock:BillingContactPerson-Block:BCPId%)",
             "bfirstname": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:FirstNameEdit%,%PODetailsStep:BCPDetails:BCPFirstName%)",
             "blastname": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:LastNameEdit%,%PODetailsStep:BCPDetails:BCPLastName%)",
             "bmobile": "=IF(%PODetailsStep:BCPCreateFlag%,%PODetailsStep:BCPDetailsEdit:MobileEdit%,%PODetailsStep:BCPDetails:BCPPhone%)",

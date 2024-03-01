@@ -142,7 +142,28 @@
         "repeatClone": false,
         "repeatLimit": null,
         "required": true,
-        "show": null,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "NIPS Hardware",
+                        "field": "Family"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "NIPS Service",
+                        "field": "Family"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isSDWAN"
+                    }
+                ]
+            }
+        },
         "showInputWidth": false
     },
     "Type": "Select",

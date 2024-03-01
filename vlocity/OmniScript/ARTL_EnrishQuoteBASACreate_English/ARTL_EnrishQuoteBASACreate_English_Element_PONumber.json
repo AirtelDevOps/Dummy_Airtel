@@ -26,7 +26,6 @@
     "PropertySetConfig": {
         "HTMLTemplateId": "",
         "accessibleInFutureSteps": false,
-        "autocomplete": null,
         "conditionType": "Hide if False",
         "controlWidth": 4,
         "debounceValue": 0,
@@ -34,13 +33,13 @@
         "disOnTplt": false,
         "help": false,
         "helpText": "",
-        "helpTextPos": "",
         "hide": false,
         "inputWidth": 12,
         "label": "PO# / LOI",
-        "mask": null,
+        "mask": "",
+        "maxLength": 255,
+        "minLength": 0,
         "pattern": "",
-        "placeholder": "",
         "ptrnErrText": "",
         "readOnly": false,
         "repeat": false,
@@ -50,7 +49,7 @@
         "show": null,
         "showInputWidth": false
     },
-    "Type": "Number",
+    "Type": "Text",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
     "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/PONumber"

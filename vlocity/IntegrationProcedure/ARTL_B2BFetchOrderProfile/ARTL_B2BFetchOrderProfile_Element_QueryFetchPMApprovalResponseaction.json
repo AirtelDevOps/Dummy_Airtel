@@ -2,18 +2,18 @@
     "CurrencyIsoCode": "INR",
     "IsActive": true,
     "IsOmniScriptEmbeddable": false,
-    "Name": "TaskResponse",
+    "Name": "QueryFetchPMApprovalResponseaction",
     "OmniProcessId": {
-        "Name": "ARTL_QueryfetchPMApproval",
+        "Name": "ARTL_B2BFetchOrderProfile",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/QueryfetchPMApproval/Procedure",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/B2BFetchOrderProfile/Procedure",
         "VlocityRecordSObjectType": "OmniProcess"
     },
     "PropertySetConfig": {
         "additionalOutput": {
         },
         "disOnTplt": false,
-        "executionConditionalFormula": "",
+        "executionConditionalFormula": "%body:fetchCriteria% == \"fetchPMApproval\"",
         "label": "ResponseAction1",
         "responseDefaultData": {
         },
@@ -23,7 +23,7 @@
         "returnFullDataJSON": false,
         "returnOnlyAdditionalOutput": false,
         "sendJSONNode": "",
-        "sendJSONPath": "RA_FetchTaskDetails:resBody",
+        "sendJSONPath": "QueryFetchPMApproval",
         "show": null,
         "useFormulas": true,
         "vlcResponseHeaders": {
@@ -32,5 +32,5 @@
     "Type": "Response Action",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/QueryfetchPMApproval/Procedure/TaskResponse"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/B2BFetchOrderProfile/Procedure/QueryFetchPMApprovalResponseaction"
 }

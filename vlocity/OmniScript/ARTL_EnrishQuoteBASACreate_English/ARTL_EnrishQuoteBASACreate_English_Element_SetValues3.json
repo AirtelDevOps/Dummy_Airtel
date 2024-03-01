@@ -16,7 +16,10 @@
             "BillingGSTValidated": false,
             "ClickedFirstNext": true,
             "DeliveryGSTValidated": false,
+            "Family": "=%rows|1:family%",
+            "GSTApplicableForBillingNC": "=IF(%rows|1:family%=='Internet','Delivery GST','Billing GST')",
             "QuoteLineItemId": "=%rows%",
+            "contractTermValuesplit": "=IF(%rows|1:contractTerm%!=null, SPLIT(%rows|1:contractTerm%,' '),0)",
             "state": "'California'"
         },
         "label": "SetValues3",

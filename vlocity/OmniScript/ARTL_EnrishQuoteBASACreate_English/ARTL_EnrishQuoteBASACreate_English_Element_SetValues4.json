@@ -13,7 +13,7 @@
         "HTMLTemplateId": "",
         "controlWidth": 12,
         "elementValueMap": {
-            "contractTermValue": "=IF(%QLIs|1:ContractTerm%!=null, SPLIT(%QLIs|1:ContractTerm%,' '),0)|0"
+            "contractTermValue": "=IF(%contractTermValuesplit%!=null, %contractTermValuesplit|1%,0)"
         },
         "label": "SetValues4",
         "message": {

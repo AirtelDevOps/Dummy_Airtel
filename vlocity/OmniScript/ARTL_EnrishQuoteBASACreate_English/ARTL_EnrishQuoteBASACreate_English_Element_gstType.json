@@ -29,7 +29,7 @@
         "dataType": null,
         "dateFormat": "MM-dd-yyyy",
         "disOnTplt": false,
-        "expression": "IF(\n        OR(\n            %BCPStandardReasonEdit% == 'SEZ',\n            %BCPStandardReasonEdit% == 'SEZ with taxes'\n        ),\n        'SEZ',\n        IF(\n            OR(\n                %BCPStandardReasonEdit% == 'Non-SEZ',\n                %BCPStandardReasonEdit% == 'Zero rated Supply - FTWZ',\n                %BCPStandardReasonEdit% == 'Non Taxable as transactions within same Company'\n            ),\n            'Non-SEZ',\n            IF(\n                %BCPStandardReasonEdit% == 'UIN',\n                'UIN',\n                ''\n            )\n        )\n    )",
+        "expression": "IF(\n        OR(\n            %BCPStandardReasonEdit% == 'SEZ',\n            %BCPStandardReasonEdit% == 'SEZ with Taxes'\n        ),\n        'SEZ',\n        IF(\n            OR(\n                %BCPStandardReasonEdit% == 'Non-SEZ',\n                %BCPStandardReasonEdit% == 'Zero rated Supply - FTWZ',\n                %BCPStandardReasonEdit% == 'Non taxable as transactions within same company'\n            ),\n            'Non-SEZ',\n            IF(\n                %BCPStandardReasonEdit% == 'UIN',\n                'UIN',\n                ''\n            )\n        )\n    )",
         "hide": true,
         "hideGroupSep": false,
         "inputWidth": 12,

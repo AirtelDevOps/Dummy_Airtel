@@ -2,7 +2,7 @@
     "CurrencyIsoCode": "INR",
     "IsActive": true,
     "IsOmniScriptEmbeddable": false,
-    "Name": "BillingDetailsBlock",
+    "Name": "isPOValid",
     "OmniProcessId": {
         "Name": "ARTL/EnrishQuoteBASACreate",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
@@ -25,30 +25,21 @@
     "ParentElementType": "Step",
     "PropertySetConfig": {
         "HTMLTemplateId": "",
-        "accessibleInFutureSteps": false,
-        "collapse": false,
-        "conditionType": "Hide if False",
         "controlWidth": 12,
-        "hide": false,
-        "label": null,
-        "repeat": false,
-        "repeatClone": false,
-        "repeatLimit": null,
-        "show": {
-            "group": {
-                "operator": "AND",
-                "rules": [
-                    {
-                        "condition": "=",
-                        "data": "true",
-                        "field": "UpdateBillingDetailsCheckbox"
-                    }
-                ]
-            }
-        }
+        "dataType": null,
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "INTEGER(%POTerms%)>INTEGER(%contractTermValue%)",
+        "hide": true,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "Formula69",
+        "mask": null,
+        "show": null,
+        "showInputWidth": false
     },
-    "Type": "Block",
+    "Type": "Formula",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/BillingDetailsBlock"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/isPOValid"
 }

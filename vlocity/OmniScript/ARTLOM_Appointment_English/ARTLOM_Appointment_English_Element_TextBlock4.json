@@ -4,37 +4,37 @@
     "IsOmniScriptEmbeddable": false,
     "Name": "TextBlock4",
     "OmniProcessId": {
-        "Name": "ARTL/EnrishQuoteBASACreate",
+        "Name": "BookRescheduleAppointment",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTLOM/Appointment/English",
         "VlocityRecordSObjectType": "OmniProcess"
     },
     "ParentElementId": {
-        "Name": "PODetailsStep",
+        "Name": "Step4",
         "OmniProcessId": {
-            "Name": "ARTL/EnrishQuoteBASACreate",
+            "Name": "BookRescheduleAppointment",
             "VlocityDataPackType": "VlocityMatchingKeyObject",
-            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrishQuoteBASACreate/English",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTLOM/Appointment/English",
             "VlocityRecordSObjectType": "OmniProcess"
         },
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/PODetailsStep",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTLOM/Appointment/English/Step4",
         "VlocityRecordSObjectType": "OmniProcessElement"
     },
-    "ParentElementName": "PODetailsStep",
+    "ParentElementName": "Step4",
     "ParentElementType": "Step",
     "PropertySetConfig": {
         "HTMLTemplateId": "",
         "controlWidth": 12,
         "dataJSON": false,
-        "label": "TextBlock3",
+        "label": "TextBlock4",
         "sanitize": false,
         "show": null,
-        "text": "<h3 style=\"height: 30px; background: #5abaa6; border-radius: 5px; padding-left: 40px;\"><span style=\"color: #000000;\"><strong>Invoice Shipment Details</strong></span></h3>",
+        "text": "<p>Your appointment has been scheduled.</p>\n<p>Our technician will arrive between %SelectedSlot:startTimeIP% and %SelectedSlot:endTimeIP%.</p>",
         "textKey": ""
     },
     "Type": "Text Block",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrishQuoteBASACreate/English/TextBlock4"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTLOM/Appointment/English/TextBlock4"
 }

@@ -1,6 +1,6 @@
 {
     "CurrencyIsoCode": "INR",
-    "IsActive": false,
+    "IsActive": true,
     "IsOmniScriptEmbeddable": false,
     "Name": "SEPOTerms",
     "OmniProcessId": {
@@ -24,9 +24,9 @@
                 "operator": "AND",
                 "rules": [
                     {
-                        "condition": "<",
-                        "data": "%contractTermValue%",
-                        "field": "POTerms"
+                        "condition": "=",
+                        "data": "false",
+                        "field": "isPOValid"
                     }
                 ]
             }

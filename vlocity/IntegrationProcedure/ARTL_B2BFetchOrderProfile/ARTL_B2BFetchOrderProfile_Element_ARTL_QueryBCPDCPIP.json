@@ -12,6 +12,9 @@
     "PropertySetConfig": {
         "actionMessage": "",
         "additionalInput": {
+            "BCPId": "=%body:BCPId%",
+            "DCPId": "=%body:DCPId%",
+            "SecondNBANumber": "=%body:SecondNBANumber%"
         },
         "additionalOutput": {
         },
@@ -33,7 +36,7 @@
         "returnOnlyFailureResponse": false,
         "sendJSONNode": "",
         "sendJSONPath": "",
-        "sendOnlyAdditionalInput": false,
+        "sendOnlyAdditionalInput": true,
         "show": null,
         "useFormulas": true
     },

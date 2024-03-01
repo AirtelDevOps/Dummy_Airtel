@@ -2,7 +2,7 @@
     "CurrencyIsoCode": "INR",
     "IsActive": true,
     "IsOmniScriptEmbeddable": false,
-    "Name": "ARTL_QueryPartyIP",
+    "Name": "ARTL_QueryPartyIPResponseAction",
     "OmniProcessId": {
         "Name": "ARTL_B2BFetchOrderProfile",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
@@ -10,37 +10,27 @@
         "VlocityRecordSObjectType": "OmniProcess"
     },
     "PropertySetConfig": {
-        "actionMessage": "",
-        "additionalInput": {
-            "OrderId": "=%body:OrderId%",
-            "SecondNBANumber": "=%body:SecondNBANumber%"
-        },
         "additionalOutput": {
         },
-        "chainOnStep": false,
         "disOnTplt": false,
-        "disableChainable": false,
         "executionConditionalFormula": "%body:fetchCriteria% == \"QueryParty\"",
-        "failOnStepError": false,
-        "failureConditionalFormula": "",
-        "failureResponse": {
+        "label": "ResponseAction3",
+        "responseDefaultData": {
         },
-        "integrationProcedureKey": "ARTL_QueryPartyIP",
-        "label": "IntegrationProcedureAction1",
-        "remoteOptions": {
-        },
+        "responseFormat": "JSON",
         "responseJSONNode": "",
         "responseJSONPath": "",
+        "returnFullDataJSON": false,
         "returnOnlyAdditionalOutput": false,
-        "returnOnlyFailureResponse": false,
         "sendJSONNode": "",
-        "sendJSONPath": "",
-        "sendOnlyAdditionalInput": true,
+        "sendJSONPath": "ARTL_QueryPartyIP",
         "show": null,
-        "useFormulas": true
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
     },
-    "Type": "Integration Procedure Action",
+    "Type": "Response Action",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/B2BFetchOrderProfile/Procedure/ARTL_QueryPartyIP"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/B2BFetchOrderProfile/Procedure/ARTL_QueryPartyIPResponseAction"
 }

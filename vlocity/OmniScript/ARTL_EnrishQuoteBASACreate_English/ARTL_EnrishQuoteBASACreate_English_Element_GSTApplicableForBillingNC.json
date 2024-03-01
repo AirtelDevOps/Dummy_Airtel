@@ -25,7 +25,7 @@
     "ParentElementType": "Step",
     "PropertySetConfig": {
         "HTMLTemplateId": "",
-        "accessibleInFutureSteps": false,
+        "accessibleInFutureSteps": true,
         "conditionType": "Hide if False",
         "controlWidth": 12,
         "controllingField": {
@@ -64,23 +64,12 @@
                 "value": "Delivery GST"
             }
         ],
-        "readOnly": false,
+        "readOnly": true,
         "repeat": false,
         "repeatClone": false,
         "repeatLimit": null,
         "required": true,
-        "show": {
-            "group": {
-                "operator": "AND",
-                "rules": [
-                    {
-                        "condition": "<>",
-                        "data": "Internet",
-                        "field": "family"
-                    }
-                ]
-            }
-        }
+        "show": null
     },
     "Type": "Radio",
     "VlocityDataPackType": "SObject",

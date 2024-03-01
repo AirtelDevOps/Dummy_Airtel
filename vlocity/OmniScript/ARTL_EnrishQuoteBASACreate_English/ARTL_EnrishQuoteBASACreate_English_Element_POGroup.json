@@ -63,6 +63,11 @@
                 "operator": "AND",
                 "rules": [
                     {
+                        "condition": "=",
+                        "data": "PO Level",
+                        "field": "BillingLevel"
+                    },
+                    {
                         "condition": "<>",
                         "data": "true",
                         "field": "CreateNewPO"

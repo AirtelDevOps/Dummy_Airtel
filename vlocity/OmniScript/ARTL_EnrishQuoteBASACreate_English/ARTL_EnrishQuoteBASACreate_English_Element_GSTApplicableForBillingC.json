@@ -1,6 +1,6 @@
 {
     "CurrencyIsoCode": "INR",
-    "IsActive": true,
+    "IsActive": false,
     "IsOmniScriptEmbeddable": false,
     "Name": "GSTApplicableForBillingC",
     "OmniProcessId": {
@@ -63,18 +63,7 @@
         "repeatClone": false,
         "repeatLimit": null,
         "required": true,
-        "show": {
-            "group": {
-                "operator": "AND",
-                "rules": [
-                    {
-                        "condition": "=",
-                        "data": "Internet",
-                        "field": "family"
-                    }
-                ]
-            }
-        }
+        "show": null
     },
     "Type": "Radio",
     "VlocityDataPackType": "SObject",

@@ -11,9 +11,13 @@
     "Name": "ARTL_B2BFetchOrderProfile",
     "OmniProcessElement": [
         "ARTL_B2BFetchOrderProfile_Element_ARTL_QueryPartyIP.json",
+        "ARTL_B2BFetchOrderProfile_Element_ARTL_QueryPartyIPResponseAction.json",
         "ARTL_B2BFetchOrderProfile_Element_ARTL_QueryBCPDCPIP.json",
+        "ARTL_B2BFetchOrderProfile_Element_ARTL_QueryBCPDCPIPResponseAction.json",
         "ARTL_B2BFetchOrderProfile_Element_QueryLSI.json",
-        "ARTL_B2BFetchOrderProfile_Element_QueryFetchPMApproval.json"
+        "ARTL_B2BFetchOrderProfile_Element_QueryLSIResponseAction.json",
+        "ARTL_B2BFetchOrderProfile_Element_QueryFetchPMApproval.json",
+        "ARTL_B2BFetchOrderProfile_Element_QueryFetchPMApprovalResponseaction.json"
     ],
     "OmniProcessKey": "ARTL_B2BFetchOrderProfile",
     "OmniProcessType": "Integration Procedure",
@@ -22,5 +26,7 @@
     "Type": "ARTL",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
-    "VlocityRecordSourceKey": "OmniProcess/ARTL/B2BFetchOrderProfile/Procedure"
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/B2BFetchOrderProfile/Procedure",
+    "WebComponentKey": "7489d59f-eb8d-b262-6d94-73b146172de4",
+    "sourceOrgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_cmt__integrationproceduredesigner?id=0jN720000001kOzEAI"
 }
