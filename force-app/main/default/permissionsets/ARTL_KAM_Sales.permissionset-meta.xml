@@ -20,6 +20,10 @@
         <apexClass>ARTL_AssetController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+<classAccesses>
+        <apexClass>ARTL_BASACreationBatchQueueable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <classAccesses>
         <apexClass>ARTL_BillingStaging_DwnldUpld</apexClass>
         <enabled>true</enabled>
@@ -11254,6 +11258,11 @@
         <field>ARTL_Billing_Staging__c.Product_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
+<fieldPermissions>
+        <editable>true</editable>
+        <field>ARTL_Billing_Staging__c.QuoteLineItem__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>ARTL_Billing_Staging__c.Quote_Line_Item__c</field>
@@ -18857,6 +18866,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>QuoteLineItem.ARTL_AnnualRecurringManualDiscount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+<fieldPermissions>
+        <editable>true</editable>
+        <field>QuoteLineItem.ARTL_BIllingStageId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
