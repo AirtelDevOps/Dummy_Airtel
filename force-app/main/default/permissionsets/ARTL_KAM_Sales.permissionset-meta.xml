@@ -11355,6 +11355,11 @@
         <field>ARTL_Billing_Staging__c.Usage_Flag__c</field>
         <readable>true</readable>
     </fieldPermissions>
+<fieldPermissions>
+        <editable>true</editable>
+        <field>ARTL_Billing_Staging__c.VAN_Account_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>ARTL_Billing_Staging__c.Validation_Message__c</field>
@@ -12188,6 +12193,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.ARTL_Vertical_Segment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+<fieldPermissions>
+        <editable>true</editable>
+        <field>Account.ARTL_Virtual_Account_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13852,6 +13862,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case_Tracking_Detail__c.Solace_Json_Request__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case_Tracking_Detail__c.Step1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -15023,6 +15038,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Customer_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.DSG_Owner_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.DSG_Owner_OLM__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
