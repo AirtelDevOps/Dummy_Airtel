@@ -43,7 +43,7 @@
                                     <operator>EQUAL</operator>
                                     <rightValue>Feasibility Completed</rightValue>
                                 </criteria>
-<criteria>
+                                <criteria>
                                     <leftValue>{!Record.Status}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>DOA Approved</rightValue>
@@ -104,7 +104,7 @@
                                     <operator>EQUAL</operator>
                                     <rightValue>Proposal Accepted</rightValue>
                                 </criteria>
-<criteria>
+                                <criteria>
                                     <leftValue>{!Record.vlocity_cmt__Type__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>Rebilling</rightValue>
@@ -145,7 +145,7 @@
                                     <operator>EQUAL</operator>
                                     <rightValue>Proposal Accepted</rightValue>
                                 </criteria>
-<criteria>
+                                <criteria>
                                     <leftValue>{!Record.vlocity_cmt__Type__c}</leftValue>
                                     <operator>NE</operator>
                                     <rightValue>Upgrade</rightValue>
@@ -191,7 +191,7 @@
                                     <operator>NE</operator>
                                     <rightValue>Demo</rightValue>
                                 </criteria>
-<criteria>
+                                <criteria>
                                     <leftValue>{!Record.vlocity_cmt__Type__c}</leftValue>
                                     <operator>NE</operator>
                                     <rightValue>Rebilling</rightValue>
@@ -227,7 +227,7 @@
                                     <operator>EQUAL</operator>
                                     <rightValue>Passed</rightValue>
                                 </criteria>
-<criteria>
+                                <criteria>
                                     <leftValue>{!Record.vlocity_cmt__Type__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>Rebilling</rightValue>
@@ -367,7 +367,7 @@
                         <valueListItems>
                             <value>Quote.Validate_Attributes</value>
                             <visibilityRule>
-                                <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7</booleanFilter>
+                                <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.Status}</leftValue>
                                     <operator>EQUAL</operator>
@@ -402,6 +402,11 @@
                                     <leftValue>{!Record.Status}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>DOA Rejected</rightValue>
+                                </criteria>
+<criteria>
+                                    <leftValue>{!Record.vlocity_cmt__Type__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>PO Renewal</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
