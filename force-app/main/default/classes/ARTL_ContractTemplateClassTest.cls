@@ -18,19 +18,24 @@ private class ARTL_ContractTemplateClassTest {
             Circle__c='NCR'
         );
         insert testUser1;
-        
+        /*
         // Create an account owned by the test user
         Account acc = new Account(
             Name = 'Test Account',
             OwnerId=testUser1.Id
-        );
-        insert acc; 
+        );*/
+        List<Account> accountList = ARTL_TestDataFactory.createAccount('Business', true, 1);
+            accountList[0].vlocity_cmt__Active__c ='Yes';
+            accountList[0].vlocity_cmt__Status__c ='Active';
+            update accountList;
+        Account acc=accountList[0];
+        //insert acc; 
         
         // Create a product
         Product2 prod = new Product2(Name = 'Test product1', family = 'Internet',ProductCode='VEPC_E_IIL');
         insert prod;
         
-        Product2 prod2 = new Product2(Name = 'Test product2', family = 'Internet',ProductCode='VEPC_PRIMARY_LINK',ARTL_LSIRequired__c=true);
+        Product2 prod2 = new Product2(Name = 'Primary Link', family = 'Internet',ProductCode='VEPC_PRIMARY_LINK',ARTL_LSIRequired__c=true);
         insert prod2;
         
         // Create a price book entry
@@ -64,6 +69,7 @@ private class ARTL_ContractTemplateClassTest {
         opp.CloseDate= System.Today();
         opp.StageName='Prospecting';
         opp.Pricebook2Id = Test.getStandardPricebookId();
+        opp.Opportunity_Type__c='New'; 
         insert opp;
         
         // Create a quote
@@ -112,7 +118,7 @@ private class ARTL_ContractTemplateClassTest {
             vlocity_cmt__ParentItemId__c=qli.Id,
             Annual_Recurring_Total__c=50000,
             vlocity_cmt__OneTimeTotal__c=10000,
-            vlocity_cmt__AttributeSelectedValues__c='{"ATT_ACCESS_BANDWIDTH":"12"  ,   "ATT_CPE":"ATT_CPE"  ,  "ATT_IP_Type":"ATT_IP_Type"  ,  "ATT_MEDIA":"ATT_MEDIA" , "ATT_POP":"ATT_POP"  ,  "ATT_PORT_BANDWIDTH":"2"  , "ATT_ROUTING_TYPE":"ATT_ROUTING_TYPE"  ,  "ATT_SERVICE_TYPE":"ATT_SERVICE_TYPE" ,  "ATT_CONTRACT_TERM":"ATT_CONTRACT_TERM"  ,  "ATT_LAST_MILE":"ATT_LAST_MILE"  ,  "ATT_IP_REQUIRED":true }'
+            vlocity_cmt__AttributeSelectedValues__c='{"ATT_ACCESS_BANDWIDTH":"12"  ,   "ATT_CPE":"ATT_CPE"  ,  "ATT_IP_Type":"ATT_IP_Type"  ,  "ATT_MEDIA":"ATT_MEDIA" , "ATT_POP":"ATT_POP"  ,  "ATT_PORT_BANDWIDTH":"2"  , "ATT_ROUTING_TYPE":"ATT_ROUTING_TYPE"  ,  "ATT_SERVICE_TYPE":"ATT_SERVICE_TYPE" ,  "ATT_CONTRACT_TERM":"ATT_CONTRACT_TERM"  ,  "ATT_LAST_MILE":"ATT_LAST_MILE"  ,  "ATT_IP_REQUIRED":true,"ATT_ROUTING_PROTOCOL":"ATT_ROUTING_PROTOCO","ATT_QOS_PRT_MBPS_CFS":"ATT_QOS_PRT_MBPS_CFS","ATT_QOS_PnRT_MBPS_CFS":"ATT_QOS_PnRT_MBPS_CFS","ATT_VPN_TYPE":"ATT_VPN_TYPE","ATT_LinkTopology":"ATT_LinkTopology","ATT_WAN_IPV6_PE_SUBNET_MASK":"ATT_WAN_IPV6_PE_SUBNET_MASK","ATT_VPN_TOPOLOGY":"ATT_VPN_TOPOLOGY","ATT_WAN_IPV4_CE_SUBNET_MASK":"ATT_WAN_IPV4_CE_SUBNET_MASK","ATT_LAN_IPV6_SUBNET_MASK":"ATT_LAN_IPV6_SUBNET_MASK","ATT_LAN_IPV4_SUBNET_MASK":"ATT_LAN_IPV4_SUBNET_MASK","ATT_LAN_IPV4":"ATT_LAN_IPV4","ATT_LAN_IPV6":"ATT_LAN_IPV6","ATT_WAN_IPV4_CE":"ATT_WAN_IPV4_CE","ATT_WAN_IPV4_PE":"ATT_WAN_IPV4_PE","ATT_WAN_IPV6_CE":"ATT_WAN_IPV6_CE","ATT_WAN_IPV6_PE":"ATT_WAN_IPV6_PE" }'
             //vlocity_cmt__RootItemId__c=qli.Id
         );
         insert qli2;

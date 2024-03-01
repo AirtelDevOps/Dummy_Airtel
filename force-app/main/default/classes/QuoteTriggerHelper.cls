@@ -404,7 +404,8 @@ public without Sharing class QuoteTriggerHelper {
                 oppInstance.StageName = 'Proposal Stage';
                 oppListToUpdate.add(oppInstance);
             }
-            if( qte.Status != null && qte.Status != quoteOldMap.get(qte.Id).Status && qte.Status == System.label.ARTL_Quote_Status_Customer_Signed && oppMap != null && oppMap.get(qte.OpportunityId).StageName == 'PO Stage'){
+           // if( qte.Status != null && qte.Status != quoteOldMap.get(qte.Id).Status && qte.Status == System.label.ARTL_Quote_Status_Customer_Signed && oppMap != null && oppMap.get(qte.OpportunityId).StageName == 'PO Stage'){
+            if( qte.Status != null && qte.Status != quoteOldMap.get(qte.Id).Status && qte.Status == 'Order Created' && oppMap != null && oppMap.get(qte.OpportunityId).StageName == 'PO Stage'){
                 Opportunity oppInstance = new Opportunity();
                 oppInstance.Id = qte.OpportunityId;
                 oppInstance.StageName = 'Closed Won';

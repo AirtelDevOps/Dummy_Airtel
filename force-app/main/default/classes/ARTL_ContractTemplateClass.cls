@@ -46,7 +46,11 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
                                         FROM Contract 
                                         WHERE Id=:contractId];
                 String quoteId = contractRec.vlocity_cmt__QuoteId__c;
-                Quote thisQuote = [select id, ARTL_AnnualRecurringTotal__c,vlocity_cmt__EffectiveOneTimeTotal__c from quote where id=:quoteId Limit 1];				
+
+                Quote thisQuote = [select id, ARTL_AnnualRecurringTotal__c,vlocity_cmt__EffectiveOneTimeTotal__c,opportunity.Opportunity_Type__c from quote where id=:quoteId Limit 1];				
+                //sm added
+                String OppOrderType=thisQuote.opportunity.Opportunity_Type__c;
+
                 Map<String,ARTL_Billing_Staging__c>  QuotelineStagingMap=getBillStagingRecords(quoteId);
                 List<QuoteLineItem> lineitemlist = new List<QuoteLineItem>();
                 
@@ -79,10 +83,18 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
                 Map<string,Integer> LSIWanMap=new Map<string,Integer>();
                 Integer LSILanCount=0;
                 Integer LSIWanCount=0;
+                List<String> assetRefIdList=new List<String>();
+                Map<String,Id> assetRefIdToQLIIdMap=new Map<String,Id>();
                 for(QuoteLineItem qLI: lineitemlist)
                 {
+                    
                     If(qli.product2.Name=='Primary Link' )
                     {
+                        //sm
+                        if(qli.vlocity_cmt__AssetReferenceId__c != null){
+                            assetRefIdList.add(qli.vlocity_cmt__AssetReferenceId__c);
+                            assetRefIdToQLIIdMap.put(qli.vlocity_cmt__AssetReferenceId__c,qli.Id);
+                        }
                         system.debug('first if');
                           ///Contract period at link level
                         if(qli.vlocity_cmt__AttributeSelectedValues__c!= null){
@@ -95,6 +107,10 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
                             }
                         }     
                     }
+                }
+                Map<Id,Map< String, Object >> qliIdToAssetAttributeMap=new Map<Id,Map< String, Object >>();
+                if(OppOrderType=='Upgrade' || OppOrderType=='Downgrade' || OppOrderType=='Shifting'){
+                    qliIdToAssetAttributeMap=constructOldQLIATTMap(assetRefIdToQLIIdMap);
                 }
                 
                 for(QuoteLineItem qLI: lineitemlist){
@@ -187,6 +203,7 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
                         alsQM.put('MemberId',qM);
                         siteWrapper siteRec= memberSiteMap.get(qM);
                         siteRec.PrimaryAccess=new List<Map<String, Object>> ();
+                        siteRec.MACDPrimaryAccess=new List<Map<String, Object>> ();
                         List< Map< String, Object > > primarylinks = new  List< Map< String, Object > >();
                         Map< String, Object > attrMap = new Map< String, Object >();
                         
@@ -214,9 +231,16 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
                                     attrMap.put('ATT_VPN_TYPE',PrimaryMplsMap.get(qm+'ATT_VPN_TYPE'));
                                     attrMap.put('ATT_VPN_TOPOLOGY',PrimaryMplsMap.get(qm+'ATT_VPN_TOPOLOGY'));
                                     attrMap.put('ATT_LinkTopology',PrimaryMplsMap.get(qm+'ATT_LinkTopology'));*/
-                                    
-                                    siteRec.PrimaryAccess.add(attrMap);
-                                    alsQM.put('PrimaryAccess',primarylinks);
+                                    if(OppOrderType=='New' || OppOrderType=='Rate Revision'){
+                                        siteRec.PrimaryAccess.add(attrMap);
+                                        alsQM.put('PrimaryAccess',primarylinks);
+                                    }else if(OppOrderType=='Upgrade' || OppOrderType=='Downgrade' || OppOrderType=='Shifting'){
+                                        //MACD CAF Primary Access
+                                        system.debug('upgrade attrMap=>'+JSON.serializePretty(attrMap));
+                                        system.debug('upgrade qliIdToAssetAttributeMap=>'+JSON.serializePretty(qliIdToAssetAttributeMap));
+                                        attrMap.putall(qliIdToAssetAttributeMap.get(qLI.Id));
+                                        siteRec.MACDPrimaryAccess.add(attrMap);
+                                    }
                                 }  
                             }
                         }
@@ -241,12 +265,17 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
                     //pW.put('OtherDetails',myTransformResult);
                     pw.putAll(myTransformResult);
                     pW.put('SiteDetails',clsQuoteList);
+                    
+                    if(OppOrderType=='Upgrade' || OppOrderType=='Downgrade' || OppOrderType=='Shifting'){
+                        pW.put('orderType','Change Order');
+                    }
+                    
                     system.debug('memberAndRootItemMap pW=>'+JSON.serializePretty(pW));
                 }
                 
                 
                 output.put(CONST_tokenMap, pW);
-                system.debug('***Contract Class Output: ' + JSON.serialize(output));
+                system.debug('***Contract Class Output: ' + JSON.serializePretty(output));
                 success = true;
                 
                 
@@ -376,6 +405,52 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
         }
         return attrMap;
     }
+    
+    
+    
+    private Map<Id,Map<String,Object>> constructOldQLIATTMap(Map<String,Id> assetRefIdToQLIIdMap){
+        
+        try{
+            
+            
+            system.debug('upgrade assetRefIdToQLIIdMap=>'+JSON.serializePretty(assetRefIdToQLIIdMap));
+            Map<Id,Map<String,Object>> oldQLIATTMap=new Map<Id,Map<String,Object>>();
+            
+            List< Asset > assetQLIList = [SELECT id,vlocity_cmt__AttributeSelectedValues__c ,vlocity_cmt__AssetReferenceId__c
+                                          FROM Asset 
+                                          WHERE vlocity_cmt__AssetReferenceId__c in: assetRefIdToQLIIdMap.KeySet()];
+            system.debug('upgrade assetQLIList=>'+JSON.serializePretty(assetQLIList));
+            
+            For(Asset assetObjRecord: assetQLIList){
+                Map< String, Object >  assetAttributeMap =  (Map< String, Object >)JSON.deserializeUntyped(assetObjRecord.vlocity_cmt__AttributeSelectedValues__c);
+                Map< String, Object >  oldQLIAttributeMap = New Map< String, Object >();
+                system.debug('upgrade assetAttributeMap=>'+JSON.serializePretty(assetAttributeMap));
+                if(assetAttributeMap !=  null && assetAttributeMap.keySet().size() > 0){
+                    
+                    if(assetAttributeMap.containsKey('ATT_ACCESS_BANDWIDTH') && assetAttributeMap.get('ATT_ACCESS_BANDWIDTH')!=null){
+                        oldQLIAttributeMap.put('ATT_OLD_BANDWIDTH',assetAttributeMap.get('ATT_ACCESS_BANDWIDTH'));
+                    }
+                    if(assetAttributeMap.containsKey('ATT_SERVICE_TYPE') && assetAttributeMap.get('ATT_SERVICE_TYPE')!=null){
+                        oldQLIAttributeMap.put('ATT_OLD_SERVICE_TYPE',assetAttributeMap.get('ATT_SERVICE_TYPE'));
+                    }
+                    if(assetAttributeMap.containsKey('ATT_MEDIA') && assetAttributeMap.get('ATT_MEDIA')!=null){
+                        oldQLIAttributeMap.put('ATT_OLD_MEDIA',assetAttributeMap.get('ATT_MEDIA'));
+                    }
+                }
+                system.debug('upgrade oldQLIAttributeMap=>'+JSON.serializePretty(oldQLIAttributeMap));
+                oldQLIATTMap.put(assetRefIdToQLIIdMap.get(assetObjRecord.vlocity_cmt__AssetReferenceId__c),oldQLIAttributeMap);
+                system.debug('upgrade oldQLIATTMap=>'+JSON.serializePretty(oldQLIATTMap));
+            }
+            return oldQLIATTMap;
+        }Catch(Exception e){
+            System.debug('Exception ARTL_ContractTemplateClass::constructOldQLIATTMap --Msg--'+e.getMessage()+' L No-'+e.getLineNumber() +e.getStackTraceString());
+            return null;
+        }
+        
+    }
+    
+    
+    
     class sitewrapper{
         public string streetAddress;
         public string sitePincode;
@@ -403,6 +478,7 @@ global with sharing class ARTL_ContractTemplateClass implements vlocity_cmt.Vloc
         public String RequestedDateOfDelivery;
         
         List<Map<String, Object>> PrimaryAccess;
+        List<Map<String, Object>> MACDPrimaryAccess;
         
         public sitewrapper(string RequestedDateOfDelivery,string ServiceType,string streetAddress,string sitePincode,string siteCity,string siteState,string siteCountry,string CompanyName,
                            string billingAddress,string billingCity,string billingState,string billingCountry,String billingPincode,string inchargeName,string inchargePhone,

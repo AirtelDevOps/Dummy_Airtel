@@ -1,0 +1,16 @@
+<template>
+    <lightning-quick-action-panel header="Upload for Bulk Enrichment">
+        <div class="slds-modal__content slds-p-around_large" id="modal-content-id-1">
+            <div class="slds-m-around_medium" style=" text-align: center;  ">
+                <lightning-input type="file" id="bulkupload" accept=".xlsm , .xlsx" onchange={openfileUpload} value={UploadedDocs}></lightning-input>
+            </div>       
+            <template if:true={fileData}>
+                <p style="text-align: center; color: green; font-weight: bold;">{fileData.filename}</p>
+            </template>
+        </div>
+        <div slot="footer">
+            <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+            <button class="slds-button slds-button_brand" onclick={submitDetails} title="OK"  disabled={disableButton}>Upload</button>
+        </div>
+    </lightning-quick-action-panel>
+</template>

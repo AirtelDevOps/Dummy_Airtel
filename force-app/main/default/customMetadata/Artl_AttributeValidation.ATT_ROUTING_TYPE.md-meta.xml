@@ -3,38 +3,44 @@
     <label>ATT_ROUTING_TYPE</label>
     <protected>false</protected>
     <values>
+        <field>ARTL_Object__c</field>
+        <value xsi:type="xsd:string">Quote and Order</value>
+    </values>
+    <values>
         <field>AttributeCode__c</field>
         <value xsi:type="xsd:string">ATT_ROUTING_TYPE</value>
     </values>
     <values>
         <field>Attribute_JSON__c</field>
         <value xsi:type="xsd:string">{
-  &quot;isRequired&quot;: true,
-  &quot;regex&quot;: &quot;&quot;,
-  &quot;isDependentValue&quot;: true,
-  &quot;dependentAttribtue&quot;: &quot;ATT_SERVICE_TYPE&quot;,
-  &quot;value&quot;: {
-    &quot;Fully Managed&quot;: {
-      &quot;type&quot;: &quot;&quot;,
-      &quot;operator&quot;: &quot;!=&quot;,
-      &quot;value&quot;: [
-        &quot;None&quot;
+  "isRequired": true,
+  "regex": "",
+  "isDependentValue": true,
+  "dependentAttribtue": "ATT_SERVICE_TYPE",
+  "value": {
+    "Fully Managed": {
+      "type": "",
+      "operator": "!=",
+      "value": [
+        "None"
       ],
-      &quot;attributesToHide&quot;: &quot;&quot;,
-      &quot;error&quot;: &quot;Routing Type None is only allowed for Unmanaged Service Type&quot;
+      "attributesToHide": "",
+      "defaultValue":"Static",
+      "error": "Routing Type None is only allowed for Unmanaged Service Type"
     },
-    &quot;Partially Managed&quot;: {
-      &quot;type&quot;: &quot;&quot;,
-      &quot;operator&quot;: &quot;!=&quot;,
-      &quot;value&quot;: [
-        &quot;None&quot;
+    "Partially Managed": {
+      "type": "",
+      "operator": "!=",
+      "value": [
+        "None"
       ],
-      &quot;attributesToHide&quot;: &quot;&quot;,
-      &quot;error&quot;: &quot;Routing Type None is only allowed for Unmanaged Service Type&quot;
+      "defaultValue":"Static",
+      "attributesToHide": "",
+      "error": "Routing Type None is only allowed for Unmanaged Service Type"
     }
   },
-  &quot;attributesToHide&quot;:{
-    &quot;None&quot;:[&quot;ATT_Add_LAN_IPV6_Subnet&quot;, &quot;ATT_Add_LAN_IPV4_Subnet&quot;]
+  "attributesToHide":{
+    "None":["ATT_LAN_IPV4_SUBNET_MASK"]
   }
 }</value>
     </values>
