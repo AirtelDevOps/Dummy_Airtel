@@ -57,11 +57,11 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
                 for(Bulk_Cart_Update_Notification__e platformEventRec : platformEventRecords){
                     Map<String,Object> payload = (Map<String,Object>) JSON.deserializeUntyped(platformEventRec.Request_JSON_Payload__c);
                     //START: Ishita:: Order Type = 'Shifting'
-                    String orderType 	= platformEventRec.Order_Type__c ;
+                    //String orderType 	= platformEventRec.Order_Type__c ;
                     String cartId 	 	= platformEventRec.Cart_Id__c;
                     String iterationId 	= platformEventRec.Iteration_Id__c;
                     String sObjectType  = platformEventRec.SobjectType__c;
-                    if(sObjectType == 'Quote' && orderType == 'Shifting'){
+                   /* if(sObjectType == 'Quote' && orderType == 'Shifting'){
                         Map<String,Object> jsonMap = new Map<String,Object>{'cartId'=>cartId ,'lineItems' => new List<Object>{(List<Object>)payload.get('lineItems')},'mapQLIs'=>mapQLIs,'iterationId'=>iterationId};
                         ARTL_MACDLocationUpdateController.transformShiftingOrderTypeJSON(JSON.serialize(jsonMap));
                         
@@ -108,9 +108,9 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
                                 notification.send(new Set<String> { Userinfo.getUserId() });
                             } 
                         }
-                    } 
+                    } */
                     //END: Ishita
-                    else{
+                   // else{
                         Map<String, Object> ipInput = new Map<String, Object>();
                         Map<String, Object> ipOutput = new Map<String, Object>();
                         Map<String, Object> ipOptions = new Map<String, Object>();
@@ -404,7 +404,7 @@ global with sharing class ARTL_BulkCartPlatformEvtTriggerHandler implements vloc
                         string ipOutputString = JSON.serialize(ipOutput);                
                         System.debug('ARTL_EventHandlerWrapperVIP ipOutputString  '+ipOutputString);
                     }
-                }
+                //}
             }else if(platformEventRecords[0].SobjectType__c == 'ARTL_Billing_Staging__c'){
                 System.debug('platformEventRecords[0].SobjectType__c  ARTL_Billing_Staging__c '+platformEventRecords[0].SobjectType__c);
                 Map<string , string> stagingMap = new Map<String , string>();
