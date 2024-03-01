@@ -141,6 +141,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ARTL_MACDLocationUpdateController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ARTL_QuoteValidationController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -11355,7 +11359,7 @@
         <field>ARTL_Billing_Staging__c.Usage_Flag__c</field>
         <readable>true</readable>
     </fieldPermissions>
-<fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ARTL_Billing_Staging__c.VAN_Account_Number__c</field>
         <readable>true</readable>
@@ -12195,7 +12199,7 @@
         <field>Account.ARTL_Vertical_Segment__c</field>
         <readable>true</readable>
     </fieldPermissions>
-<fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.ARTL_Virtual_Account_Number__c</field>
         <readable>true</readable>
