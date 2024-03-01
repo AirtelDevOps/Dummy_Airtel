@@ -1,0 +1,56 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock7",
+    "OmniProcessId": {
+        "Name": "ARTL/EnrichQuoteForMACD",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteForMACD/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Confirmation",
+        "OmniProcessId": {
+            "Name": "ARTL/EnrichQuoteForMACD",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteForMACD/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/Confirmation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Confirmation",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock7",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isBSUpdate"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isQLIUpdate"
+                    }
+                ]
+            }
+        },
+        "text": "<h3><span style=\"color: #2dc26b;\">Request submitted successfully.</span></h3>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/TextBlock7"
+}

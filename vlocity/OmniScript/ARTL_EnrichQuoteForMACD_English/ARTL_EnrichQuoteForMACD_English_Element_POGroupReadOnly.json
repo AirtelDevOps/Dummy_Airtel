@@ -2,7 +2,7 @@
     "CurrencyIsoCode": "INR",
     "IsActive": true,
     "IsOmniScriptEmbeddable": false,
-    "Name": "POAmount",
+    "Name": "POGroupReadOnly",
     "OmniProcessId": {
         "Name": "ARTL/EnrichQuoteForMACD",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
@@ -26,45 +26,56 @@
     "PropertySetConfig": {
         "HTMLTemplateId": "",
         "accessibleInFutureSteps": false,
-        "allowNegative": false,
+        "callFrequency": 300,
         "conditionType": "Hide if False",
         "controlWidth": 4,
+        "dataJsonPath": "PopulatePOGroup:POGroup",
+        "dataProcessorFunction": "",
         "debounceValue": 0,
-        "defaultValue": null,
-        "disOnTplt": false,
-        "displayCurrencyCode": false,
+        "disableDataFilter": false,
+        "editMode": false,
+        "enableGoogleMapsAutocomplete": false,
+        "enableLookup": false,
+        "googleAddressCountry": "all",
+        "googleMapsAPIKey": "",
+        "googleTransformation": {
+            "administrative_area_level_1": "",
+            "administrative_area_level_2": "",
+            "country": "",
+            "locality": "",
+            "postal_code": "",
+            "street": ""
+        },
         "help": false,
         "helpText": "",
         "helpTextPos": "",
-        "hide": false,
-        "hideGroupSep": false,
+        "hideEditButton": true,
+        "hideMap": true,
         "inputWidth": 12,
-        "label": "PO Amount",
-        "mask": null,
-        "max": null,
-        "min": null,
-        "placeholder": "",
-        "readOnly": false,
-        "repeat": false,
-        "repeatClone": false,
-        "repeatLimit": null,
+        "label": "PO Group",
+        "maxLength": 255,
+        "minLength": 0,
+        "newItemLabel": "New",
+        "readOnly": true,
         "required": true,
         "show": {
             "group": {
                 "operator": "AND",
                 "rules": [
                     {
-                        "condition": "<>",
+                        "condition": "=",
                         "data": "PO Renewal",
                         "field": "QuoteType"
                     }
                 ]
             }
         },
-        "showInputWidth": false
+        "showInputWidth": false,
+        "typeAheadKey": "Name",
+        "useDataJson": true
     },
-    "Type": "Currency",
+    "Type": "Type Ahead Block",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/POAmount"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/POGroupReadOnly"
 }

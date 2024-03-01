@@ -1,0 +1,56 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock8",
+    "OmniProcessId": {
+        "Name": "ARTL/EnrichQuoteForMACD",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteForMACD/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Confirmation",
+        "OmniProcessId": {
+            "Name": "ARTL/EnrichQuoteForMACD",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteForMACD/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/Confirmation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Confirmation",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock7",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "isQLIUpdate"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "isBSUpdate"
+                    }
+                ]
+            }
+        },
+        "text": "<h3><span style=\"color: #e03e2d;\">Some error occurred during processing, please resubmit the request!</span></h3>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/TextBlock8"
+}

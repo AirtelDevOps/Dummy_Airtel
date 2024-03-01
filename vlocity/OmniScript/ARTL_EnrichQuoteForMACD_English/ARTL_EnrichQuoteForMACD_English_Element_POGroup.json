@@ -60,12 +60,24 @@
         "required": true,
         "show": {
             "group": {
-                "operator": "AND",
+                "operator": "OR",
                 "rules": [
                     {
-                        "condition": "<>",
-                        "data": "true",
-                        "field": "CreateNewPO"
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "=",
+                                    "data": "PO Level",
+                                    "field": "BillingLevel"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "true",
+                                    "field": "CreateNewPO"
+                                }
+                            ]
+                        }
                     }
                 ]
             }

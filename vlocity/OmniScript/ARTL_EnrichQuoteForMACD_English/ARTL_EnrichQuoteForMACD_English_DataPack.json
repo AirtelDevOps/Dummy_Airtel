@@ -10,12 +10,12 @@
     "Language": "English",
     "Name": "ARTL/EnrichQuoteForMACD",
     "OmniProcessElement": [
-        "ARTL_EnrichQuoteForMACD_English_Element_CANCEL.json",
         "ARTL_EnrichQuoteForMACD_English_Element_ARTL_IPGetQuoteDetailsForEnrich.json",
         "ARTL_EnrichQuoteForMACD_English_Element_Step1.json",
         "ARTL_EnrichQuoteForMACD_English_Element_TextBlock5.json",
         "ARTL_EnrichQuoteForMACD_English_Element_CustomLWC1.json",
         "ARTL_EnrichQuoteForMACD_English_Element_SetErrors1.json",
+        "ARTL_EnrichQuoteForMACD_English_Element_GetPrePopulatedPODetails.json",
         "ARTL_EnrichQuoteForMACD_English_Element_PopulatePOGroups.json",
         "ARTL_EnrichQuoteForMACD_English_Element_GetPOGroupDetails.json",
         "ARTL_EnrichQuoteForMACD_English_Element_PopulatePOGroup.json",
@@ -89,8 +89,11 @@
         "ARTL_EnrichQuoteForMACD_English_Element_PONumber.json",
         "ARTL_EnrichQuoteForMACD_English_Element_POStartDate.json",
         "ARTL_EnrichQuoteForMACD_English_Element_POTerms.json",
+        "ARTL_EnrichQuoteForMACD_English_Element_POTermsReadOnly.json",
         "ARTL_EnrichQuoteForMACD_English_Element_POAmount.json",
+        "ARTL_EnrichQuoteForMACD_English_Element_POAmountReadOnly.json",
         "ARTL_EnrichQuoteForMACD_English_Element_POGroup.json",
+        "ARTL_EnrichQuoteForMACD_English_Element_POGroupReadOnly.json",
         "ARTL_EnrichQuoteForMACD_English_Element_CreateNewPO.json",
         "ARTL_EnrichQuoteForMACD_English_Element_SetErrors2.json",
         "ARTL_EnrichQuoteForMACD_English_Element_CreateBCPContacts.json",
@@ -98,6 +101,9 @@
         "ARTL_EnrichQuoteForMACD_English_Element_UpdatePODetail.json",
         "ARTL_EnrichQuoteForMACD_English_Element_UpdateQLIForMACD.json",
         "ARTL_EnrichQuoteForMACD_English_Element_UpdateBSDetails.json",
+        "ARTL_EnrichQuoteForMACD_English_Element_Confirmation.json",
+        "ARTL_EnrichQuoteForMACD_English_Element_TextBlock7.json",
+        "ARTL_EnrichQuoteForMACD_English_Element_TextBlock8.json",
         "ARTL_EnrichQuoteForMACD_English_Element_NavigateToRecordPage.json"
     ],
     "OmniProcessType": "OmniScript",
@@ -106,5 +112,7 @@
     "Type": "ARTL",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
-    "VlocityRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteForMACD/English"
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/EnrichQuoteForMACD/English",
+    "WebComponentKey": "c3469b38-f0d3-ffca-081f-9842847ebbba",
+    "sourceOrgUrl": "/lightning/cmp/vlocity_cmt__OmniDesignerAuraWrapper?c__recordId=0jN720000001idJEAQ"
 }

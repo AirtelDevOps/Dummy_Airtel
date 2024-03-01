@@ -2,7 +2,7 @@
     "CurrencyIsoCode": "INR",
     "IsActive": true,
     "IsOmniScriptEmbeddable": false,
-    "Name": "POAmount",
+    "Name": "POAmountReadOnly",
     "OmniProcessId": {
         "Name": "ARTL/EnrichQuoteForMACD",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
@@ -44,7 +44,7 @@
         "max": null,
         "min": null,
         "placeholder": "",
-        "readOnly": false,
+        "readOnly": true,
         "repeat": false,
         "repeatClone": false,
         "repeatLimit": null,
@@ -54,7 +54,7 @@
                 "operator": "AND",
                 "rules": [
                     {
-                        "condition": "<>",
+                        "condition": "=",
                         "data": "PO Renewal",
                         "field": "QuoteType"
                     }
@@ -66,5 +66,5 @@
     "Type": "Currency",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/POAmount"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/POAmountReadOnly"
 }

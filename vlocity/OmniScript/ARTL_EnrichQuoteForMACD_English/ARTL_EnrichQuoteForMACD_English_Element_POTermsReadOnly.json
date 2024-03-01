@@ -2,7 +2,7 @@
     "CurrencyIsoCode": "INR",
     "IsActive": true,
     "IsOmniScriptEmbeddable": false,
-    "Name": "POAmount",
+    "Name": "POTermsReadOnly",
     "OmniProcessId": {
         "Name": "ARTL/EnrichQuoteForMACD",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
@@ -26,25 +26,28 @@
     "PropertySetConfig": {
         "HTMLTemplateId": "",
         "accessibleInFutureSteps": false,
-        "allowNegative": false,
         "conditionType": "Hide if False",
         "controlWidth": 4,
-        "debounceValue": 0,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
         "defaultValue": null,
         "disOnTplt": false,
-        "displayCurrencyCode": false,
         "help": false,
         "helpText": "",
         "helpTextPos": "",
         "hide": false,
-        "hideGroupSep": false,
         "inputWidth": 12,
-        "label": "PO Amount",
-        "mask": null,
-        "max": null,
-        "min": null,
-        "placeholder": "",
-        "readOnly": false,
+        "label": "PO Terms (In Months)",
+        "optionSource": {
+            "source": "ARTL_Purchase_Order__c.Tenure__c",
+            "type": "SObject"
+        },
+        "options": [
+        ],
+        "readOnly": true,
         "repeat": false,
         "repeatClone": false,
         "repeatLimit": null,
@@ -54,7 +57,7 @@
                 "operator": "AND",
                 "rules": [
                     {
-                        "condition": "<>",
+                        "condition": "=",
                         "data": "PO Renewal",
                         "field": "QuoteType"
                     }
@@ -63,8 +66,8 @@
         },
         "showInputWidth": false
     },
-    "Type": "Currency",
+    "Type": "Select",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcessElement",
-    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/POAmount"
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/EnrichQuoteForMACD/English/POTermsReadOnly"
 }

@@ -52,7 +52,18 @@
         "repeatClone": false,
         "repeatLimit": null,
         "required": true,
-        "show": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "PO Renewal",
+                        "field": "QuoteType"
+                    }
+                ]
+            }
+        },
         "showInputWidth": false
     },
     "Type": "Select",
