@@ -26,7 +26,7 @@
     "PropertySetConfig": {
         "actionMessage": "",
         "additionalInput": {
-            "B2BOutcome": "=%body:Message:B2B Action PM Workbench Thin BC:B2BOutcome%",
+            "B2BOutcome": "=%body:SFDCMessage:B2B Action PM Workbench Thin BC:B2BOutcome%",
             "TaskId": "=%GetTaskRecord:TaskId%"
         },
         "additionalOutput": {

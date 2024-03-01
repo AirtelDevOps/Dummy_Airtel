@@ -11,7 +11,7 @@
     },
     "PropertySetConfig": {
         "disOnTplt": false,
-        "executionConditionalFormula": "%body:Message:MessageType% == \"TaskCreation\" || %body:SiebelMessage:MessageType% == \"Integration Object\"",
+        "executionConditionalFormula": "%body:SFDCMessage:MessageType% == \"TaskCreation\" || %body:SFDCMessage:MessageType% == \"Integration Object\"",
         "isIfElseBlock": false,
         "label": "ConditionalBlock1",
         "show": null

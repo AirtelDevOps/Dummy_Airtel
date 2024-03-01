@@ -1,4 +1,130 @@
 {
-    "orderId": "1234",
-    "response": "Accept"
+    "body": {
+        "SFDCMessage": {
+            "IntObjectName": "B2B PMW Create Task IO",
+            "ListOfB2B PMW Create Task IO": {
+                "B2B Action PM Workbench Thin BC": {
+                    "Activity UID": "1-4RHEY73",
+                    "AltKey": "2312187050333_8944155_T004",
+                    "B2BOutcome": "Open",
+                    "Jeopardy Code": "ACC1",
+                    "LSI": "2312187050333",
+                    "ListOfB2B Input Task DFF BC": {
+                        "B2B Input Task DFF BC": [
+                            {
+                                "Name": "WAN IPv4 Subnet",
+                                "Value": "/30"
+                            },
+                            {
+                                "Name": "Customer Need By Date",
+                                "Value": "2024-01-04"
+                            },
+                            {
+                                "Name": "ISP/MPLS POP Network Location Code",
+                                "Value": "GRG/UVI/003"
+                            },
+                            {
+                                "Name": "Routing Type",
+                                "Value": "Static"
+                            },
+                            {
+                                "Name": "Access POP Network Location Code",
+                                "Value": "GRG/GUV/901"
+                            },
+                            {
+                                "Name": "productName",
+                                "Value": "Internet"
+                            },
+                            {
+                                "Name": "Port_Bandwidth",
+                                "Value": "2 Mbps"
+                            },
+                            {
+                                "Name": "Business Circle",
+                                "Value": "NCR"
+                            },
+                            {
+                                "Name": "RSU Network Location Code",
+                                "Value": "GRG/G16/901"
+                            },
+                            {
+                                "Name": "Jeopardy Remarks",
+                                "Value": "ACC1 testing"
+                            },
+                            {
+                                "Name": "LSI",
+                                "Value": "2312187050333"
+                            },
+                            {
+                                "Name": "Media",
+                                "Value": "FTTH"
+                            },
+                            {
+                                "Name": "Access Bandwidth",
+                                "Value": "2 Mbps"
+                            },
+                            {
+                                "Name": "Order Type",
+                                "Value": "New"
+                            },
+                            {
+                                "Name": "Circuit ID",
+                                "Value": "NEW01-ILL-2312187050333"
+                            },
+                            {
+                                "Name": "Implementation Circle",
+                                "Value": "DELHI NCR"
+                            },
+                            {
+                                "Name": "RFS Date",
+                                "Value": "2023-12-28"
+                            },
+                            {
+                                "Name": "Service_Type",
+                                "Value": "Fully Managed"
+                            },
+                            {
+                                "Name": "Activity UID",
+                                "Value": "1-4RHEY73"
+                            },
+                            {
+                                "Name": "subProductName",
+                                "Value": "Internet"
+                            },
+                            {
+                                "Name": "Address Line 1",
+                                "Value": "EIL R D Complex Sector 16 Gurgaon 122001"
+                            },
+                            {
+                                "Name": "Address Line 2",
+                                "Value": "Plot No.4,Phase-I Udyog Vihar,Sector-20"
+                            },
+                            {
+                                "Name": "LAN IPv4 Subnet",
+                                "Value": "/29"
+                            },
+                            {
+                                "Name": "Address Line 3",
+                                "Value": "HARYANA India"
+                            },
+                            {
+                                "Name": "Jeopardy Code",
+                                "Value": "ACC1"
+                            },
+                            {
+                                "Name": "Jeopardy Code Description",
+                                "Value": "PMJ - LC Details Required (Not Available in IB2B/PM)"
+                            }
+                        ]
+                    },
+                    "OMTaskId": "T004",
+                    "Order Id": "730501",
+                    "Task Name": "PM NW Jeopardy",
+                    "TaskCreationTime": "22/12/2023 15:41:13",
+                    "TaskType": "PMWTask"
+                }
+            },
+            "MessageType": "Integration Object"
+        }
+    }
 }

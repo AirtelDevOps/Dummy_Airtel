@@ -11,7 +11,7 @@
     },
     "PropertySetConfig": {
         "disOnTplt": false,
-        "executionConditionalFormula": "%body:Message:MessageType% == \"OrderStatus\"",
+        "executionConditionalFormula": "%body:SFDCMessage:MessageType% == \"OrderStatus\"",
         "isIfElseBlock": false,
         "label": "ConditionalBlock1",
         "show": null

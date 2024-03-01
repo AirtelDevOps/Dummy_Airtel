@@ -29,7 +29,7 @@
         },
         "additionalInput": {
             "OrderIdValue": "=%GetOrderDetails:OrderId%",
-            "OrderStatus": "=%body:Message:ListOfB2BUpdateOmOrderReq:B2BOrderUpdate:OrderStatus%"
+            "OrderStatus": "=%body:SFDCMessage:ListOfB2BUpdateOmOrderReq:B2BOrderUpdate:OrderStatus%"
         },
         "additionalOutput": {
         },

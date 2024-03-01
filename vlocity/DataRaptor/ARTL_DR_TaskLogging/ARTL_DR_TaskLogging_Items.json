@@ -21,6 +21,46 @@
     },
     {
         "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DR_TaskLoggingCustom7442",
+        "InputFieldName": "InputAttributes",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_TaskLogging",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_TaskLogging",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_TaskLogging",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Input_Attributes__c",
+        "OutputObjectName": "ARTL_Task_Integration_Logs__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DR_TaskLoggingCustom3961",
+        "InputFieldName": "Interface",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_TaskLogging",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_TaskLogging",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_TaskLogging",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Interface__c",
+        "OutputObjectName": "ARTL_Task_Integration_Logs__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
         "GlobalKey": "ARTL_DR_TaskLoggingCustom4780",
         "InputFieldName": "OrderId",
         "IsDisabled": false,
@@ -81,6 +121,26 @@
     },
     {
         "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DR_TaskLoggingCustom2008",
+        "InputFieldName": "Source",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_TaskLogging",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_TaskLogging",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_TaskLogging",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Source__c",
+        "OutputObjectName": "ARTL_Task_Integration_Logs__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
         "FilterOperator": "=",
         "GlobalKey": "ARTL_DR_TaskLoggingCustom1081",
         "IsDisabled": true,
@@ -96,6 +156,26 @@
         },
         "OutputCreationSequence": 1,
         "OutputFieldName": "Id",
+        "OutputObjectName": "ARTL_Task_Integration_Logs__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DR_TaskLoggingCustom8420",
+        "InputFieldName": "TaskRecordId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_TaskLogging",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_TaskLogging",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_TaskLogging",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TaskRecordId__c",
         "OutputObjectName": "ARTL_Task_Integration_Logs__c",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "OmniDataTransformItem"

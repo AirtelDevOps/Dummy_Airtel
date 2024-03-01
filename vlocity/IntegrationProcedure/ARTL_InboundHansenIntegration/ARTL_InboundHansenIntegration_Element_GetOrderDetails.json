@@ -12,7 +12,7 @@
     "PropertySetConfig": {
         "actionMessage": "",
         "additionalInput": {
-            "SOMOrder": "=IF(%body:Message:MessageType% == \"TaskCreation\" || %body:Message:MessageType% == \"OrderStatus\" || %body:Message:MessageType% == \"TaskUpdate\" ,%body:Message:ListOfB2BUpdateOmOrderReq:B2BOrderUpdate:OMOrderId%,IF(%body:SiebelMessage:MessageType% == \"Integration Object\",%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:Order Id%,%SiebelMessage:ListOfCreateTaskDetails:CreateTask:OrderId%))"
+            "SOMOrder": "=IF(%body:SFDCMessage:MessageType% == \"TaskCreation\" || %body:SFDCMessage:MessageType% == \"TaskUpdate\" ,\r\n%body:SFDCMessage:B2B Action PM Workbench Thin BC:Order Id%,IF(%body:SFDCMessage:MessageType% == \"Integration Object\",%body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:Order Id%,IF(%body:SFDCMessage:MessageType% == \"OrderStatus\",%body:SFDCMessage:ListOfB2BUpdateOmOrderReq:B2BOrderUpdate:OMOrderId%,\r\n%SiebelMessage:ListOfCreateTaskDetails:CreateTask:OrderId%)))"
         },
         "additionalOutput": {
         },

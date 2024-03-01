@@ -29,16 +29,17 @@
             "ExecutionLogId": "=%GetPayLoad:Execution_Log__c_1:Id%"
         },
         "additionalInput": {
-            "AltKey": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:AltKey%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:AltKey%)",
-            "B2BOutcome": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:B2BOutcome%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:B2BOutcome%)",
-            "OMTaskId": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:OMTaskId%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:OMTaskId%)",
+            "AltKey": "=IF(%body:SFDCMessage:MessageType% == \"TaskCreation\",%body:SFDCMessage:B2B Action PM Workbench Thin BC:AltKey%,%body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:AltKey%)",
+            "B2BOutcome": "=IF(%body:SFDCMessage:MessageType% == \"TaskCreation\",%body:SFDCMessage:B2B Action PM Workbench Thin BC:B2BOutcome%,%body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:B2BOutcome%)",
+            "OMTaskId": "=IF(%body:SFDCMessage:MessageType% == \"TaskCreation\",%body:SFDCMessage:B2B Action PM Workbench Thin BC:OMTaskId%,%body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:OMTaskId%)",
             "OrderId": "=%GetOrderDetails:OrderId%",
             "PM": "=%GetOrderDetails:PM%",
-            "RecordTypeId": "=IF(%body:Message:B2B Action PM Workbench Thin BC:OMTaskId%=='T001' || %body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:OMTaskId%=='T001',%GetOrderDetails:RecordTypeId%,'')",
-            "TaskName": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:Task Name%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:Task Name%)",
-            "TaskType": "=IF(%body:Message:MessageType% == \"TaskCreation\",%body:Message:B2B Action PM Workbench Thin BC:TaskType%,%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:TaskType%)"
+            "RecordTypeId": "=IF(%body:SFDCMessage:B2B Action PM Workbench Thin BC:OMTaskId%=='T001' || %body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:OMTaskId%=='T001',%GetOrderDetails:RecordTypeId%,'')",
+            "TaskName": "=IF(%body:SFDCMessage:MessageType% == \"TaskCreation\",%body:SFDCMessage:B2B Action PM Workbench Thin BC:Task Name%,%body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:Task Name%)",
+            "TaskType": "=IF(%body:SFDCMessage:MessageType% == \"TaskCreation\",%body:SFDCMessage:B2B Action PM Workbench Thin BC:TaskType%,%body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:TaskType%)"
         },
         "additionalOutput": {
+            "TaskId": "=%Create_Task:Task_1|1:Id%"
         },
         "bundle": "ARTL_DR_LoadTask",
         "chainOnStep": false,

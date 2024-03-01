@@ -12,9 +12,13 @@
     "PropertySetConfig": {
         "actionMessage": "",
         "additionalInput": {
-            "ALTKey": "=IF(%body:Message:MessageType% == \"TaskCreation\" || %body:Message:MessageType% == \"OrderStatus\" || %body:Message:MessageType% == \"TaskUpdate\" ,%body:Message:B2B Action PM Workbench Thin BC:AltKey%, IF(%body:SiebelMessage:MessageType% == \"Integration Object\",%body:SiebelMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:AltKey%,%SiebelMessage:ListOfCreateTaskDetails:CreateTask:ALTkey%))",
+            "ALTKey": "=IF(%body:SFDCMessage:MessageType% == \"Integration Object\",%body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:AltKey%,IF(%body:SFDCMessage:MessageType% == \"TaskCreation\" || %body:SFDCMessage:MessageType% == \"TaskUpdate\" ,\r\n%body:SFDCMessage:B2B Action PM Workbench Thin BC:AltKey%,\r\n%SiebelMessage:ListOfCreateTaskDetails:CreateTask:ALTkey%))",
+            "InputAttributes": "=IF(%body:SFDCMessage:MessageType% != \"Integration Object\",%body:SFDCMessage:B2B Action PM Workbench Thin BC:ListOfB2B Input Task DFF BC%,%body:SFDCMessage:ListOfB2B PMW Create Task IO:B2B Action PM Workbench Thin BC:ListOfB2B Input Task DFF BC%)",
+            "Interface": "Inbound",
             "OrderId": "%GetOrderDetails:OrderId%",
-            "Request": "%body%"
+            "Request": "%body%",
+            "Source": "Hansen",
+            "TaskRecordId": "=IF(ISNOTBLANK(%Create_Task:TaskId%),%Create_Task:TaskId%,%GetTaskRecord:TaskId%)"
         },
         "additionalOutput": {
         },
