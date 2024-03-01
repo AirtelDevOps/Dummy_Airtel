@@ -231,7 +231,7 @@ update toBeUpdatedPOs;
 * Description: used to create billing account and update it on QLI
 * @Author: Sagar Sadhnani 
 */
-    public static void createBillingAccounts(List<ARTL_Billing_Staging__c> billingAccountBStaggingList, String bARecordTypeId, Map<String, QuoteLineItem> lsiQLIMap, Map<String, String> toBeBASyncedQLIs, Boolean baAssociatedSuccessfully){
+    public static Integer createBillingAccounts(List<ARTL_Billing_Staging__c> billingAccountBStaggingList, String bARecordTypeId, Map<String, QuoteLineItem> lsiQLIMap, Map<String, String> toBeBASyncedQLIs, Integer baAssociatedSuccessCount){
 
             
         Map<String, String> existingBAMap = new Map<String, String>();
@@ -366,7 +366,7 @@ update toBeUpdatedPOs;
                         lsiQLIMap.get(obj.LSI__c).ARTL_Validation_Status__c = 'BA Associated';
                        
                         toBeBASyncedQLIs.put((String)lsiQLIMap.get(obj.LSI__c).id, obj.Billing_Account_Id__c);
-                        baAssociatedSuccessfully = true;
+                        baAssociatedSuccessCount++;
                         
                     }    
                 }
@@ -384,12 +384,13 @@ update toBeUpdatedPOs;
                         obj.Billing_Account_Id__c = existingBAMap.get(uniqueKey) != null ? existingBAMap.get(uniqueKey) : null;
                         lsiQLIMap.get(obj.LSI__c).vlocity_cmt__BillingAccountId__c = obj.Billing_Account_Id__c;
                         lsiQLIMap.get(obj.LSI__c).ARTL_Validation_Status__c = 'BA Associated';
-                        baAssociatedSuccessfully = true;
+                        baAssociatedSuccessCount++;
                        
                     }    
                 }
             }
         }
+        return baAssociatedSuccessCount;
     }
 
     

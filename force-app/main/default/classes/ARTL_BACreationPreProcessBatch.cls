@@ -23,7 +23,7 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
     public Map<String, String> toBeBASyncedQLIs = new Map<String, String>();
     public static Boolean bypassFromBACreationBatch = false;
     //public Map<String, String> onlyBAAssociatedQLIs = new Map<String, String>();
-    public Boolean baAssociatedSuccessfully = false;
+    public  Integer baAssociatedSuccessCount;
     
 
     Exception[] errors = new Exception[0];
@@ -36,6 +36,7 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
     
     public ARTL_BACreationPreProcessBatch(Set<Id> quoteIds){
         this.quoteIds = quoteIds;
+        baAssociatedSuccessCount = 0;
     }
     
     public Database.QueryLocator start(Database.BatchableContext BC){
@@ -171,8 +172,8 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
             ARTL_BACreationPreProcessBatchHelper.getPOOrCreate(POMap, lsiQLIMap);
        
             //Step 9-10-11 BA Creation 
-           ARTL_BACreationPreProcessBatchHelper.createBillingAccounts(billingAccountBStaggingList, billingAccRecordType, lsiQLIMap, toBeBASyncedQLIs, baAssociatedSuccessfully);
-          
+           baAssociatedSuccessCount = ARTL_BACreationPreProcessBatchHelper.createBillingAccounts(billingAccountBStaggingList, billingAccRecordType, lsiQLIMap, toBeBASyncedQLIs, baAssociatedSuccessCount);
+           system.debug('$$$ = '+ baAssociatedSuccessCount);
            
             //Step 8: Creation of Service Account
             ARTL_BACreationPreProcessBatchHelper.createServiceAccounts(serviceAccountBStaggingList, serviceAccRecordType, lsiQLIMap);
@@ -336,7 +337,7 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
             
         }
 
-        if(baAssociatedSuccessfully){
+        if(baAssociatedSuccessCount > 0){
             bypassFromBACreationBatch = true;
             update new Quote(id = new List<Id>(quoteIds).get(0), vlocity_cmt__ValidationStatus__c = (!billingSyncFailedOverall && errors.isEmpty() ? 'Ready for Order': 'Billing Sync Failed'));
             bypassFromBACreationBatch = false;
