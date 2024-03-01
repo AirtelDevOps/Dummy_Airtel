@@ -9,10 +9,10 @@ public class ARTL_GetQLIsAPITest {
         Account grandParent = new Account(name='GrandparentTest');
         insert grandParent;
         
-        Account parent = new Account(name='ParentTest', ParentId = grandParent.id);
+        Account parent = new Account(name='ParentTest', ParentId = grandParent.id, vlocity_cmt__Status__c= 'Active');
         insert parent;
         
-        Account acc = new Account(name='Test', ParentId = parent.id, ARTL_Business_Unit__c='EGB');
+        Account acc = new Account(name='Test', ParentId = parent.id, ARTL_Business_Unit__c='EGB', vlocity_cmt__Status__c= 'Active');
         insert acc;
         
         Id pbId = Test.getStandardPricebookId();
@@ -67,6 +67,7 @@ public class ARTL_GetQLIsAPITest {
         qouteLine.vlocity_cmt__Product2Id__c = products[0].Id;
         qouteLine.QuoteId =qtest.Id;
         qouteLine.PricebookEntryId=pbes[0].Id;
+        qouteLine.vlocity_cmt__BillingAccountId__c = acc.id;
         insert qouteLine;
     }
     

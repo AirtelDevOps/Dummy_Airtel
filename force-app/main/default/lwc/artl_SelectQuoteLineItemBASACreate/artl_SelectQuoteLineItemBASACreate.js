@@ -5,6 +5,7 @@ export default class Artl_SelectQuoteLineItemBASACreate extends OmniscriptBaseMi
     data = [];
     hasAddressError = false;
     _state = '';
+     prodFamily = new Set();
     columns = [
         { label: 'Line Number', fieldName: 'LineNumber' },
         { label: 'Address', fieldName: 'Address' },
@@ -13,6 +14,8 @@ export default class Artl_SelectQuoteLineItemBASACreate extends OmniscriptBaseMi
     ];
     @track resp = {
         restrictNext: true,
+        showFamilyError:false,
+        isSDWAN:false,
         state: '',
         showAddressError: false,
         rows: [
@@ -49,12 +52,6 @@ export default class Artl_SelectQuoteLineItemBASACreate extends OmniscriptBaseMi
             else {
                 if (state != element['State']) {
                     this.hasAddressError = true;
-                    // this.resp.showAddressError = true;
-                    // //this.selectedIds.push(element.Id);
-                    // this.resp.rows.push({Id:element.Id});
-                    // this.omniApplyCallResp(this.resp);
-                    // //break;
-                    // return;
                 }
             }
             //this.selectedIds.push(element.Id);
@@ -66,64 +63,28 @@ export default class Artl_SelectQuoteLineItemBASACreate extends OmniscriptBaseMi
             this.resp.state = state;
             let obj = {
                 Id: element.Id,
-                Product: element.Product
+                Product: element.Product,
+                LSI:element.LSI,
+                qmemberId:element.qmemberId,
+                family:element.Family,
+                contractTerm:element.ContractTerm
             };
+           this.prodFamily.add(element.Family);
+           if(element.Product=='SD-WAN Controller'){
+            this.resp.isSDWAN=true;
+           }
             this.resp.rows.push(obj);
-
-
             this.omniApplyCallResp(this.resp);
             i++;
 
         });
+        if(this.prodFamily.size>1){
+            this.resp.showFamilyError=true;
+        }else{
+            this.resp.showFamilyError=false;
+        }
         console.log('this.resp.pn' + JSON.stringify(this.resp));
         this.omniApplyCallResp(this.resp);
-        // if(evt.detail.config.action == 'rowSelect' || evt.detail.config.action == 'selectAllRows'){
-        //     let selectedRows = this.template.querySelector('[data-id="qlitable"]').getSelectedRows();
-        //     console.log('selectedRows'+JSON.stringify(selectedRows));
-        //     let i=0;
-        //     let address = '';
-        //     selectedRows.forEach(element => {
-        //         //let row = {};
-        //         if(i==0){
-        //             address = element['Address'];
-        //             this.selectedIds.push(element.Id);
-        //             this.resp.rows.push({Id:element.Id});
-        //         }
-        //         else{
-        //             if(address == element['Address']){
-        //                 this.selectedIds.push(element.Id);
-        //                 this.resp.rows.push({Id:element.Id});
-
-        //             }
-        //             else{
-        //                 this.resp.showAddressError = true;
-        //                 this.omniApplyCallResp(this.resp);
-        //                 return;
-        //             }
-        //         }
-        //         i++;
-        //     });
-
-        // }
-        // else if(evt.detail.config.action == 'deselectAllRows' || evt.detail.config.action == 'rowDeselect'){
-        //     if(evt.detail.config.action == 'rowDeselect'){
-        //         console.log(evt.detail.config.value);
-        //         const index = this.selectedIds.indexOf(evt.detail.config.value);
-        //         this.selectedIds.splice(index,1);
-        //         this.resp.rows.splice(index,1);
-
-        //     }else{
-        //         this.selectedData = [];
-        //         this.selectedIds=[];
-        //         let rows = {
-        //             data : this.selectedData
-        //         }
-
-        //     }
-
-        // }
-        // this.omniApplyCallResp(this.resp);
-
     }
     handleSave() {
         let rows = {

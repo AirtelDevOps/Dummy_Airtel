@@ -13,6 +13,8 @@
 ******************************************************************************************************************************************************************************************************************/
 
 public class ARTL_BACreationPreProcessBatchHelper {
+    
+    
     /** 
 * Description: used to call from BA SA Batch to handle PO Group 
 * @Author: Sagar Sadhnani 
@@ -93,10 +95,12 @@ POGroupNumIdMap.put(pog.name, pog.id);
 * @Author: Sagar Sadhnani 
 */
     public static void getPOOrCreate(Map<String, List<ARTL_Billing_Staging__c>> POMap, Map<String, QuoteLineItem> lsiQLIMap){
+
+        
         Map<String, ARTL_Purchase_Order__c> toBeCreatedPOs = new Map<String, ARTL_Purchase_Order__c>();
         //List<ARTL_Purchase_Order__c> toBeUpdatedPOs = new List<ARTL_Purchase_Order__c>();
         //List<QuoteLineItem> toBeUpdatedQLIs = new List<QuoteLineItem>();
-        
+       
         if(!POMap.isEmpty()){
             Set<String> onlyPOIds = new Set<String>();
             for(String key: POMap.keySet()){
@@ -107,6 +111,12 @@ POGroupNumIdMap.put(pog.name, pog.id);
                 for(ARTL_Billing_Staging__c bs : POMap.get(po.ARTL_PO_Number__c + '___' + po.ARTL_Account__c)){
                     bs.ARTL_PO_Id__c = po.id;
                     lsiQLIMap.get(bs.LSI__c).ARTL_Purchase_Order__c = po.id;
+
+                    
+                    
+                    
+
+                    
                 }
                 
             }
@@ -130,9 +140,7 @@ update toBeUpdatedPOs;
                                             PO_Group__c = bs.ARTL_PO_Group_Id__c,
                                             ARTL_Account__c = bs.Quote__r.AccountId
                                            )
-                                          );
-                        
-                        
+                                          );                       
                     }
                 }
             }
@@ -142,7 +150,7 @@ update toBeUpdatedPOs;
                 for(ARTL_Purchase_Order__c po : toBeCreatedPOs.values()){
                     for(ARTL_Billing_Staging__c bs : POMap.get(po.ARTL_PO_Number__c + '___' + po.ARTL_Account__c)){
                         bs.ARTL_PO_Id__c = po.id;
-                        lsiQLIMap.get(bs.LSI__c).ARTL_Purchase_Order__c = po.id;
+                        lsiQLIMap.get(bs.LSI__c).ARTL_Purchase_Order__c = po.id;                    
                     }
                     //POMap.get(po.ARTL_PO_Number__c).ARTL_PO_Id__c = po.id;
                     //toBeUpdatedQLIs.add(new QuoteLineItem(Id = POMap.get(po.ARTL_PO_Number__c).Quote_Line_Item__c, ARTL_Purchase_Order__c = po.id));
@@ -161,6 +169,9 @@ update toBeUpdatedPOs;
 * @Author: Sagar Sadhnani 
 */
     public static void createServiceAccounts(List<ARTL_Billing_Staging__c> serviceAccountBStaggingList, String sARecordTypeId, Map<String, QuoteLineItem> lsiQLIMap){
+        /*public static void createServiceAccounts(List<ARTL_Billing_Staging__c> serviceAccountBStaggingList, String sARecordTypeId, Map<String, QuoteLineItem> lsiQLIMap, Map<String,List<QuoteLineItem>> bundleMap){*/
+
+            
         Map<String, Account> uniqueSAMap = new Map<String, Account>();
         List<QuoteLineItem> toBeUpdatedQLIs = new List<QuoteLineItem>();
         
@@ -173,11 +184,21 @@ update toBeUpdatedPOs;
                     if(!uniqueSAMap.containsKey(uniqueKey)){
                         Account SA = new Account(Name = obj.Quote__r.Account.name +' (Service Account)', 
                                                  recordTypeId = sARecordTypeId,
-                                                 ShippingStreet = obj.Shipping_Street__c,
-                                                 ShippingState = obj.Shipping_State__c,
-                                                 ShippingPostalCode = obj.Shipping_PinCode__c,
-                                                 ShippingCity = obj.Shipping_City__c,
-                                                 ShippingCountry = obj.Shipping_Country__c,
+                                                //  ShippingStreet = obj.Shipping_Street__c,
+                                                //  ShippingState = obj.Shipping_State__c,
+                                                //  ShippingPostalCode = obj.Shipping_PinCode__c,
+                                                //  ShippingCity = obj.Shipping_City__c,
+                                                //  ShippingCountry = obj.Shipping_Country__c,
+                                                 ShippingStreet = obj.Quote_Member__r.DCP_Record__r.Premises__r.vlocity_cmt__StreetAddress__c,
+
+                                                 ShippingState = obj.Quote_Member__r.DCP_Record__r.Premises__r.vlocity_cmt__State__c,
+
+                                                 ShippingPostalCode = obj.Quote_Member__r.DCP_Record__r.Premises__r.ARTL_Pincode__r.Name,
+
+                                                 ShippingCity = obj.Quote_Member__r.DCP_Record__r.Premises__r.vlocity_cmt__City__c,
+
+                                                 ShippingCountry = obj.Quote_Member__r.DCP_Record__r.Premises__r.vlocity_cmt__Country__c,
+                                                 
                                                  ParentId = obj.Billing_Account_Id__c,
                                                  BCP_DCP_Id__c = obj.Quote_Member__r.DCP_Record__c 
                                                 );
@@ -194,7 +215,7 @@ update toBeUpdatedPOs;
                     if(obj.Shipping_Street__c != null){
                         String uniqueKey = obj.Shipping_Street__c + obj.Shipping_State__c + obj.Shipping_PinCode__c + obj.Shipping_City__c + obj.Shipping_Country__c;
                         obj.Service_Account_Id__c = uniqueSAMap.get(uniqueKey).id;
-                        lsiQLIMap.get(obj.LSI__c).vlocity_cmt__ServiceAccountId__c = uniqueSAMap.get(uniqueKey).id;
+                        lsiQLIMap.get(obj.LSI__c).vlocity_cmt__ServiceAccountId__c = uniqueSAMap.get(uniqueKey).id;                       
                     }    
                 }
                 //KB: Update QLIs with Service Accounts
@@ -210,7 +231,9 @@ update toBeUpdatedPOs;
 * Description: used to create billing account and update it on QLI
 * @Author: Sagar Sadhnani 
 */
-    public static void createBillingAccounts(List<ARTL_Billing_Staging__c> billingAccountBStaggingList, String bARecordTypeId, Map<String, QuoteLineItem> lsiQLIMap, Map<String, String> toBeBASyncedQLIs){
+    public static void createBillingAccounts(List<ARTL_Billing_Staging__c> billingAccountBStaggingList, String bARecordTypeId, Map<String, QuoteLineItem> lsiQLIMap, Map<String, String> toBeBASyncedQLIs, Boolean baAssociatedSuccessfully){
+
+            
         Map<String, String> existingBAMap = new Map<String, String>();
         Map<String, Account> uniqueBAMap = new Map<String, Account>();
         //List<QuoteLineItem> toBeUpdatedQLIs = new List<QuoteLineItem>();
@@ -323,7 +346,7 @@ update toBeUpdatedPOs;
                         if(billFormatMap.containsKey(lsiQLIMap.get(obj.LSI__c).vlocity_cmt__Product2Id__r.Name) && usageFlagMap.containsKey(lsiQLIMap.get(obj.LSI__c).vlocity_cmt__Product2Id__r.Name)){
                             BA.ARTL_Usage_Flag__c = usageFlagMap.get(lsiQLIMap.get(obj.LSI__c).vlocity_cmt__Product2Id__r.Name);
                             BA.vlocity_cmt__BillFormat__c = billFormatMap.get(lsiQLIMap.get(obj.LSI__c).vlocity_cmt__Product2Id__r.Name);
-                            
+  
                         }
 
                         uniqueBAMap.put(uniqueKey, BA);
@@ -341,7 +364,10 @@ update toBeUpdatedPOs;
                         obj.Billing_Account_Id__c = uniqueBAMap.get(uniqueKey).id;
                         lsiQLIMap.get(obj.LSI__c).vlocity_cmt__BillingAccountId__c = obj.Billing_Account_Id__c;
                         lsiQLIMap.get(obj.LSI__c).ARTL_Validation_Status__c = 'BA Associated';
+                       
                         toBeBASyncedQLIs.put((String)lsiQLIMap.get(obj.LSI__c).id, obj.Billing_Account_Id__c);
+                        baAssociatedSuccessfully = true;
+                        
                     }    
                 }
                 //KB: Update QLIs with Service Accounts
@@ -358,11 +384,14 @@ update toBeUpdatedPOs;
                         obj.Billing_Account_Id__c = existingBAMap.get(uniqueKey) != null ? existingBAMap.get(uniqueKey) : null;
                         lsiQLIMap.get(obj.LSI__c).vlocity_cmt__BillingAccountId__c = obj.Billing_Account_Id__c;
                         lsiQLIMap.get(obj.LSI__c).ARTL_Validation_Status__c = 'BA Associated';
+                        baAssociatedSuccessfully = true;
+                       
                     }    
                 }
             }
         }
     }
+
     
     
     /** 

@@ -23,9 +23,16 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
     public Map<String, String> toBeBASyncedQLIs = new Map<String, String>();
     public static Boolean bypassFromBACreationBatch = false;
     //public Map<String, String> onlyBAAssociatedQLIs = new Map<String, String>();
+    public Boolean baAssociatedSuccessfully = false;
     
 
     Exception[] errors = new Exception[0];
+
+
+
+    
+    List<QuoteLineItem> innerBundleList = new List<QuoteLineItem>();
+    String rootItemId =''; //todo
     
     public ARTL_BACreationPreProcessBatch(Set<Id> quoteIds){
         this.quoteIds = quoteIds;
@@ -61,7 +68,8 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
             Quote__r.AccountId,  Quote_Member__r.DCP_Record__c,
             Quote__r.Account.ARTL_Business_Circle_Region__c, Quote__r.Account.ARTL_Customer_Segment__c,
             Quote__r.ARTL_NBA_Account__c, Quote__r.ARTL_NBA_Account__r.AccountNumber, VAN_Account_Number__c,
-            LSI__c
+            LSI__c,Quote_Member__r.DCP_Record__r.Premises__r.vlocity_cmt__StreetAddress__c,Quote_Member__r.DCP_Record__r.Premises__r.vlocity_cmt__State__c,Quote_Member__r.DCP_Record__r.Premises__r.vlocity_cmt__Country__c ,Quote_Member__r.DCP_Record__r.Premises__r.ARTL_Pincode__r.Name,
+            Quote_Member__r.DCP_Record__r.Premises__r.vlocity_cmt__City__c
 
             FROM ARTL_Billing_Staging__c
             WHERE Quote__c IN :quoteIds AND Status__c = 'Success' AND LSI__c != null]); 
@@ -81,19 +89,28 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
             List<ARTL_Billing_Staging__c> bcpBStaggingList = new List<ARTL_Billing_Staging__c>();
             List<ARTL_Billing_Staging__c> dcpBStaggingList = new List<ARTL_Billing_Staging__c>();
             Map<String, QuoteLineItem> lsiQLIMap = new Map<String, QuoteLineItem>();
-
+            Map<String, List<QuoteLineItem>> bundleMap = new Map<String,List<QuoteLineItem>>(); //todo
+            Map<String,String> lsiRootItemIdMap = new Map<String,String>();
             //KB: As QLI reference wont be there on Billing Staging, retieving correcponding QLIs
             for(ARTL_Billing_Staging__c obj : scope){
                 lsiQLIMap.put(obj.LSI__c, null);
             }
-            for(QuoteLineItem obj : [SELECT ARTL_LSI_OLI_Formula__c, vlocity_cmt__ServiceAccountId__c, vlocity_cmt__BillingAccountId__c,
+            for(QuoteLineItem obj : [SELECT ARTL_LSI_OLI_Formula__c, vlocity_cmt__ServiceAccountId__c, vlocity_cmt__BillingAccountId__c,vlocity_cmt__RootItemId__c,vlocity_cmt__ParentItemId__c,
                                     ARTL_Purchase_Order__c, vlocity_cmt__Product2Id__r.Name
                                     FROM QuoteLineItem 
                                     WHERE quoteId = :new List<Id> (quoteIds).get(0)  AND ARTL_LSI_OLI_Formula__c IN: lsiQLIMap.keySet() ]
             ){
                 lsiQLIMap.put(obj.ARTL_LSI_OLI_Formula__c, obj);
+                lsiRootItemIdMap.put(obj.ARTL_LSI_OLI_Formula__c, obj.vlocity_cmt__RootItemId__c);    
+
             }
 
+            bundleMap = fetchBundleMapQLIs(lsiRootItemIdMap, new List<Id> (quoteIds).get(0));
+
+            system.debug('bundleMap @@ -->'+JSON.serializePretty(bundleMap));
+
+            system.debug('lsiQLIMap @@  -->'+JSON.serializePretty(lsiQLIMap));
+            
             //KB: ------------Below the main processing is started--------------
             for(ARTL_Billing_Staging__c obj : scope){
                 /*Step 1 & 2: Check PO Group and PO, If exist add the reference otherwise create those records and then
@@ -112,6 +129,7 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
                     
                 }
                 
+                
                 //Step 8: Creation of Service Account -- Adding into Collection
                 if(lsiQLIMap.get(obj.LSI__c).vlocity_cmt__ServiceAccountId__c == null || lsiQLIMap.get(obj.LSI__c).vlocity_cmt__ServiceAccountId__c == obj.Quote__r.AccountId){ 
                     serviceAccountBStaggingList.add(obj);
@@ -119,6 +137,7 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
                 else{
                     obj.Service_Account_Id__c=	lsiQLIMap.get(obj.LSI__c).vlocity_cmt__ServiceAccountId__c;
                 }
+               
                 
                 //Step 9 BA Creation -- adding into collection
                 if(lsiQLIMap.get(obj.LSI__c).vlocity_cmt__BillingAccountId__c == null  || lsiQLIMap.get(obj.LSI__c).vlocity_cmt__BillingAccountId__c == obj.Quote__r.AccountId){
@@ -134,24 +153,65 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
                 if(obj.DCP_Id__c == null){
                     dcpBStaggingList.add(obj);
                 }
+
+                system.debug('obj @@'+JSON.serializePretty(obj ));
             }
 
+            //system.debug('parent class POMap @@'+POMap);  // issue PO group ID and PO_Group__c (blank) 
+            //system.debug('parent class POGroupMap @@'+POGroupMap);
+           // system.debug('parent class lsiQLIMap @@'+lsiQLIMap);
+           // system.debug('parent class billingAccountBStaggingList @@'+billingAccountBStaggingList);
+           // system.debug('parent class serviceAccountBStaggingList @@'+serviceAccountBStaggingList);
+           // system.debug('parent class toBeBASyncedQLIs @@'+toBeBASyncedQLIs);
+            
             //Step 1 & 2
             ARTL_BACreationPreProcessBatchHelper.getPOGroupOrCreate(POGroupMap);
             //KB: Assign PO Group ID to Rest of the Billing Staging Records
             ARTL_BACreationPreProcessBatchHelper.updateRestStagingWithPOGroup(POMap, POGroupMap);
             ARTL_BACreationPreProcessBatchHelper.getPOOrCreate(POMap, lsiQLIMap);
+       
             //Step 9-10-11 BA Creation 
-            ARTL_BACreationPreProcessBatchHelper.createBillingAccounts(billingAccountBStaggingList, billingAccRecordType, lsiQLIMap, toBeBASyncedQLIs);
+           ARTL_BACreationPreProcessBatchHelper.createBillingAccounts(billingAccountBStaggingList, billingAccRecordType, lsiQLIMap, toBeBASyncedQLIs, baAssociatedSuccessfully);
+          
+           
             //Step 8: Creation of Service Account
             ARTL_BACreationPreProcessBatchHelper.createServiceAccounts(serviceAccountBStaggingList, serviceAccRecordType, lsiQLIMap);
+
             //Step 12 BCP Creation
             //ARTL_BACreationPreProcessBatchHelper.createBCPContacts(bcpBStaggingList);
             //Step 12 BCP Creation
             //ARTL_BACreationPreProcessBatchHelper.createDCPContacts(dcpBStaggingList);
+            //system.debug('construct bundleMap @@ '+JSON.serializePretty(bundleMap));
+            //system.debug('construct bundleMap @@ '+JSON.serializePretty(lsiQLIMap));
+            //system.debug('construct bundleMap @@ '+JSON.serializePretty(bundleMap));
             
+            
+
+            for(QuoteLineItem bundleQli : lsiQLIMap.values()){
+
+                updateBAIdOnQLIs(bundleMap, bundleQli);
+            }
+
+
+            List<QuoteLineItem> wrapperQLiList = new List<QuoteLineItem>();
+            wrapperQLiList.addAll(lsiQLIMap.values());
+
+        
+            
+            for( List<QuoteLineItem> tempQliVal :bundleMap.values() ){
+                wrapperQLiList.addAll(tempQliVal);
+            }
+
+           
+            update wrapperQLiList;
+
+
+                        // method 
+            //update lsiQLIMap.values();
             update scope; 
-            update lsiQLIMap.values();
+
+
+           
             /*
 //Step 12: Send BCP & DCP to Siebel 
 */
@@ -163,6 +223,56 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
             errors.add(e);
         }
         
+    }
+
+    public Map<String, List<QuoteLineItem>> fetchBundleMapQLIs(Map<String, String> lsiRootItemIdMap, Id quoteId){
+
+
+        Map<String, List<QuotelineItem>> tempQliBundleMap = new Map<String, List<QuotelineItem>>();
+
+        for(QuoteLineItem lsiQli : [SELECT ARTL_LSI_OLI_Formula__c, vlocity_cmt__ServiceAccountId__c, vlocity_cmt__BillingAccountId__c,vlocity_cmt__RootItemId__c,vlocity_cmt__ParentItemId__c,
+                                    ARTL_Purchase_Order__c, vlocity_cmt__Product2Id__r.Name,ARTL_Purchase_Order__r.Id
+                                    FROM QuoteLineItem 
+                                    WHERE quoteId = :quoteId AND vlocity_cmt__RootItemId__c IN :lsiRootItemIdMap.values() AND ARTL_LSI_OLI_Formula__c =null]){
+
+                                    if(!tempQliBundleMap.containsKey(lsiQli.vlocity_cmt__RootItemId__c)){
+                                        tempQliBundleMap.put(lsiQli.vlocity_cmt__RootItemId__c ,new List<QuoteLineItem>{lsiQli});
+                                    }
+                                    else{
+
+                                        tempQliBundleMap.get(lsiQli.vlocity_cmt__RootItemId__c).add(lsiQli);
+                                    }      
+
+
+        }
+        return tempQliBundleMap;
+        //return null;
+    }
+
+
+        /** 
+    * Description: update the billing Account Id on all the child QLIs
+    * @Author:Shishir Bansal 
+    */
+    private static void updateBAIdOnQLIs(Map<String, List<QuoteLineItem>> bundleMap, QuoteLineItem qliRec){
+        
+        system.debug('## qliRec'+qliRec);
+        for(QuoteLineItem cqli: bundleMap.get(qliRec.vlocity_cmt__RootItemId__c)){
+            
+            if(qliRec.vlocity_cmt__BillingAccountId__c != null){
+                cqli.vlocity_cmt__BillingAccountId__c = qliRec.vlocity_cmt__BillingAccountId__c;
+                cqli.ARTL_Validation_Status__c = 'BA Associated';
+            }
+            if(qliRec.vlocity_cmt__ServiceAccountId__c != null){
+                 cqli.vlocity_cmt__ServiceAccountId__c = qliRec.vlocity_cmt__ServiceAccountId__c;
+            }
+            if(qliRec.ARTL_Purchase_Order__c != null){
+                cqli.ARTL_Purchase_Order__c = qliRec.ARTL_Purchase_Order__c;
+            }
+            
+            
+        }
+
     }
     
     public void finish(Database.BatchableContext BC){
@@ -184,6 +294,8 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
                
 
                 Object result = vlocity_cmt.IntegrationProcedureService.runIntegrationService(ipName,inputMap,optionsMap);
+
+                system.debug('result @@'+JSON.serializePretty(result));
                 //outputMap.put('Result', result);
                 Map<String, Object> resultMap = (Map<String, Object>) result;
                 if(resultMap.containsKey('VlocityNoRootNode')){
@@ -209,9 +321,9 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
                     toBeUpdatedQLIMap.put(qliId, new QuoteLineItem(id = qliId, ARTL_Validation_Status__c = 'Billing Sync Failed'));
                     billingSyncFailedOverall = true;
                 }
-                if(!billingSyncAccMap.containsKey(accountId)){
+                /*if(!billingSyncAccMap.containsKey(accountId)){
                     billingSyncAccMap.put(accountId, new account(id = accountId, ARTL_FXSynch__c = true));
-                }
+                }*/
 
             }
             if(!toBeUpdatedQLIMap.isEmpty()){
@@ -224,8 +336,11 @@ public class ARTL_BACreationPreProcessBatch implements Database.Batchable<sObjec
             
         }
 
-        bypassFromBACreationBatch = true;
-        update new Quote(id = new List<Id>(quoteIds).get(0), vlocity_cmt__ValidationStatus__c = (!billingSyncFailedOverall && errors.isEmpty() ? 'Ready for Order': 'Billing Sync Failed'));
-        bypassFromBACreationBatch = false;
+        if(baAssociatedSuccessfully){
+            bypassFromBACreationBatch = true;
+            update new Quote(id = new List<Id>(quoteIds).get(0), vlocity_cmt__ValidationStatus__c = (!billingSyncFailedOverall && errors.isEmpty() ? 'Ready for Order': 'Billing Sync Failed'));
+            bypassFromBACreationBatch = false;
+        }    
+        
     }
 }
